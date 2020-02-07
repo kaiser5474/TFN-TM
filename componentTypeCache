@@ -33,7 +33,6 @@
 {DashBoard_Grafico_MedioTransportacion_Certificados.a5wcmp}|Dialog2
 {DashBoard_Grafico_Entidad_Riesgo.a5wcmp}|Dialog2
 {DashBoard_Grafico_RRHHVacunas.a5wcmp}|Dialog2
-{CambiarContrasena2.a5wcmp}|Dialog2
 {EditarUsuario3.a5wcmp}|Dialog2
 {ReporteCargas_ParaClientes.a5wcmp}|Grid
 {RecorridosMediosTransporte_Pasajeros_Cliente.a5wcmp}|Grid
@@ -87,7 +86,6 @@
 {Mapa.a5wcmp}|Grid
 {GSATTRACK.a5wcmp}|PageLayout
 {CalendaioEntidadesPrueba.a5wcmp}|Calendar
-{CargaAsociadaAlMedio.a5wcmp}|Pagelayout
 {Contactos_Correos.a5wcmp}|Grid
 {Contactos_Detalles.a5wcmp}|Grid
 {Contactos_Direcciones.a5wcmp}|Grid
