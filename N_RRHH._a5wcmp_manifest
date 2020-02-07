@@ -1,0 +1,17 @@
+A5SaveTimeStamp:20200206122546237
+css:<Project>
+subComponent:RRHH_Detalles
+subComponent:RRHH_Observaciones
+subComponent:RRHH_Direcciones
+subComponent:RRHH_Telefonos
+subComponent:RRHH_Documentos
+subComponent:RRHH_TrabajadorEPP
+subComponent:RRHH_Contrato
+subComponent:RRHH_Salud_Agrupa
+subComponent:RRHH_Pasaporte
+subComponent:RRHH_LicenciaConduccion
+subComponent:EditarDatosTrabajador
+subComponent:N_FichaTrabajador_DiasTrabajo
+copyfile:{C:\4-Trabajos\TFN\TFN\TFN.WebProjects\Default.WebProject\Ficha_del_Trabajador.a5rpt}
+copyfile:{C:\4-Trabajos\TFN\TFN\TFN.WebProjects\Default.WebProject\Lista_Trabajador.a5rpt}
+copyfile:{C:\4-Trabajos\TFN\TFN\TFN.WebProjects\Default.WebProject\Ficha_del_TrabajadorExterno.a5rpt}

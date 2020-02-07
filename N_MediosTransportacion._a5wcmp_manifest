@@ -1,0 +1,12 @@
+A5SaveTimeStamp:20180808113933497
+css:<Project>
+subComponent:MediosTransportacion_Detalles
+subComponent:MediosTransportacion_PesoDimension
+subComponent:MediosTransportacion_MotorVelocidad
+subComponent:MediosTransportacion_Seguro
+subComponent:MediosTransportacion_Comunicacion
+subComponent:DetailPrefetch
+subComponent:MediosTransportacion_Imagenes
+subComponent:MediosTransportacion_Documentos
+subComponent:N_SeguroMedioTransporte
+copyfile:{C:\Users\ASUS\Desktop\Nibble-TM\Nibble-TM.WebProjects\Default.WebProject\Reporte_MediosTransportacion.a5rpt}
