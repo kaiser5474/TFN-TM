@@ -45,7 +45,7 @@
 <default_page="index.a5w">
 <lan<webroot="">
 <target_folder="">
-<hostname="http://tfntm.com">
+<hostname="https://tfntm.com">
 <server_port=80>
 >
 <ftp<address="66.6.106.242">
