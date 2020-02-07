@@ -40,7 +40,6 @@
 {DashBoardEstadoRecorridos.a5wcmp}|Dialog2
 {CambiarContrasena2.a5wcmp}|Dialog2
 {EditarUsuario3.a5wcmp}|Dialog2
-{A_Prueba.a5wcmp}|Dialog2
 {ReporteCargas_ParaClientes.a5wcmp}|Grid
 {RecorridosMediosTransporte_Pasajeros_Cliente.a5wcmp}|Grid
 {EvaluacionDesempeno_Documento.a5wcmp}|Grid
@@ -57,7 +56,6 @@
 {EvaluacionDesempeno_Categorias.a5wcmp}|Grid
 {Nomenclador_Area.a5wcmp}|Grid
 {N_Direccion.a5wcmp}|Grid
-{B.a5wcmp}|Grid
 {app_Prueba.a5wcmp}|Dialog2
 {Recorridos_MediosTransportacion_Ultima.a5wcmp}|Grid
 {app_Login.a5wcmp}|Dialog2
