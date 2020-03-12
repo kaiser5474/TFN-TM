@@ -1,10 +1,8 @@
-A5SaveTimeStamp:20200312171701120
+A5SaveTimeStamp:20200312173425382
 css:<Project>
 subComponent:Recorridos_Detalles
-subComponent:Recorridos_MediosTransportacion_Ultima
 subComponent:RecorridosMediosTransporte_ReporteActividades
 subComponent:RecorridosMediosTransporte_Observaciones
-subComponent:Recorridos_Responsables
 subComponent:RecorridosMediosTransporte_Documentos
 subComponent:Recorridos_Validaciones
 copyfile:{C:\4-Trabajos\TFN\TFN\TFN.WebProjects\TFN.WebProject\Reporte_InformeSupervision.a5rpt}
