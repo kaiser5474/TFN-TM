@@ -1,4 +1,4 @@
-A5SaveTimeStamp:20200306184140907
+A5SaveTimeStamp:20200312171701120
 css:<Project>
 subComponent:Recorridos_Detalles
 subComponent:Recorridos_MediosTransportacion_Ultima
@@ -9,8 +9,6 @@ subComponent:RecorridosMediosTransporte_Documentos
 subComponent:Recorridos_Validaciones
 copyfile:{C:\4-Trabajos\TFN\TFN\TFN.WebProjects\TFN.WebProject\Reporte_InformeSupervision.a5rpt}
 copyfile:{C:\4-Trabajos\TFN\TFN\TFN.WebProjects\TFN.WebProject\Reporte_InformeSupervisionMultimodal_Cliente.a5rpt}
-copyfile:{C:\4-Trabajos\TFN\TFN\TFN.WebProjects\TFN.WebProject\Reporte_ManifiestoCarga_Multimodal.a5rpt}
-copyfile:{C:\4-Trabajos\TFN\TFN\TFN.WebProjects\TFN.WebProject\ReporteActividades_LugaresPredefinidosMultimodal.a5rpt}
 copyfile:{C:\4-Trabajos\TFN\TFN\TFN.WebProjects\TFN.WebProject\ReporteActividades_LugaresPredefinidos.a5rpt}
 copyfile:{C:\4-Trabajos\TFN\TFN\TFN.WebProjects\TFN.WebProject\Lista_Pasajeros.a5rpt}
 copyfile:{C:\4-Trabajos\TFN\TFN\TFN.WebProjects\TFN.WebProject\Reporte_DiarioTripulantes.a5rpt}

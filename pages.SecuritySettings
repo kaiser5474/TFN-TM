@@ -2154,4 +2154,12 @@
 <action="allow">
 <groups="">
 >
+<[540]<page="Email_List_Multimodal.a5wcmp">
+<action="allow">
+<groups="">
+>
+<[541]<page="Email_List_Multimodal_Contrato.a5wcmp">
+<action="allow">
+<groups="">
+>
 >
