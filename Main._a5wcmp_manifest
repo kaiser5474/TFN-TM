@@ -1,4 +1,4 @@
-A5SaveTimeStamp:20200312160334633
+A5SaveTimeStamp:20200325135900547
 css:GrBlue
 subComponent:MarinePictures.a5wcmp
 subComponent:DashBoard.a5wcmp
@@ -44,6 +44,7 @@ subComponent:N_NivelAcademico.a5wcmp
 subComponent:N_RRHH_TipoEvaluacionDesempeno.a5wcmp
 subComponent:EvaluacionDesempeno_TipoCategoria.a5wcmp
 subComponent:EvaluacionDesempeno_Categorias.a5wcmp
+subComponent:Registro_Entrada_Salida.a5wcmp
 subComponent:Email_List_Multimodal.a5wcmp
 subComponent:N_Cargas.a5wcmp
 subComponent:N_Contratos.a5wcmp
@@ -103,6 +104,7 @@ subComponent:N_NivelAcademico
 subComponent:N_RRHH_TipoEvaluacionDesempeno
 subComponent:EvaluacionDesempeno_TipoCategoria
 subComponent:EvaluacionDesempeno_Categorias
+subComponent:Registro_Entrada_Salida
 subComponent:Email_List_Multimodal
 subComponent:N_Cargas
 subComponent:N_Contratos
