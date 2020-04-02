@@ -418,3 +418,9 @@
 {Email_List_Multimodal.a5wcmp}|Grid
 {Email_List_Multimodal_Contrato.a5wcmp}|Grid
 {Registro_Entrada_Salida.a5wcmp}|Grid
+{N_Monitoreo_Sintomas.a5wcmp}|Grid
+{N_Monitoreo_Sintomas_Familiar.a5wcmp}|Grid
+{N_Monitoreo_Sintomas_Trabajador.a5wcmp}|Grid
+{N_MonitoreoSalud.a5wcmp}|Grid
+{N_MonitoreoTrabajador.a5wcmp}|Grid
+{N_Sintomas.a5wcmp}|Grid
