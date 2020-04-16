@@ -428,3 +428,5 @@
 {N_MonitoreoSalud_Imagen.a5wcmp}|Grid
 {N_MonitoreoSintomas_Global.a5wcmp}|Grid
 {N_MonitoreoTrabajador_Global.a5wcmp}|Grid
+{N_Monitoreo_Trabajador_Encomienda.a5wcmp}|Grid
+{N_MonitoreoGlobal_Hora.a5wcmp}|Grid
