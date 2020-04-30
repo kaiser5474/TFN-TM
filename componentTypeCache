@@ -430,3 +430,7 @@
 {N_MonitoreoTrabajador_Global.a5wcmp}|Grid
 {N_Monitoreo_Trabajador_Encomienda.a5wcmp}|Grid
 {N_MonitoreoGlobal_Hora.a5wcmp}|Grid
+{N_SubTareas.a5wcmp}|Grid
+{N_Tareas.a5wcmp}|Grid
+{N_Tareas2.a5wcmp}|Grid
+{N_Tareas_Detalles.a5wcmp}|Grid

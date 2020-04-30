@@ -2314,4 +2314,8 @@
 <action="allow">
 <groups="">
 >
+<[580]<page="N_MonitoreoSalud_Encomienda.a5rpt">
+<action="allow">
+<groups="">
+>
 >
