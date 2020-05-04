@@ -434,3 +434,5 @@
 {N_Tareas.a5wcmp}|Grid
 {N_Tareas2.a5wcmp}|Grid
 {N_Tareas_Detalles.a5wcmp}|Grid
+{Registro_Eventos_Acuerdos_Pendientes2.a5wcmp}|Grid
+{Tareas_PorUsuario.a5wcmp}|Dialog2
