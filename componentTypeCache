@@ -1,3 +1,4 @@
+{N_Monitoreo_Prueba.a5wcmp}|Grid
 {N_FichaTrabajador_DiasTrabajo_PDF.a5wcmp}|Grid
 {N_FichaTrabajador_DiasTrabajo.a5wcmp}|Grid
 {Tabla_1.a5wcmp}|Grid
@@ -436,3 +437,7 @@
 {N_Tareas_Detalles.a5wcmp}|Grid
 {Registro_Eventos_Acuerdos_Pendientes2.a5wcmp}|Grid
 {Tareas_PorUsuario.a5wcmp}|Dialog2
+{RRHH_Drogas2.a5wcmp}|Grid
+{RRHH_Drogas_Documentos.a5wcmp}|Grid
+{RRHH_Drogas_Puntual.a5wcmp}|Grid
+{N_Monitoreo_Prueba2.a5wcmp}|Grid
