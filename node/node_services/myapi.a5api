@@ -1,0 +1,12 @@
+{
+    "methods": [
+        {
+            "name": "myfun",
+            "returns": {
+                "type": "string"
+            },
+            "arguments": [],
+            "description": "description of my function"
+        }
+    ]
+}

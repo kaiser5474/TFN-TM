@@ -1,3 +1,4 @@
+{aaa.a5wcmp}|Dialog2
 {N_Monitoreo_Prueba.a5wcmp}|Grid
 {N_FichaTrabajador_DiasTrabajo_PDF.a5wcmp}|Grid
 {N_FichaTrabajador_DiasTrabajo.a5wcmp}|Grid
@@ -441,3 +442,8 @@
 {RRHH_Drogas_Documentos.a5wcmp}|Grid
 {RRHH_Drogas_Puntual.a5wcmp}|Grid
 {N_Monitoreo_Prueba2.a5wcmp}|Grid
+{N_Monitoreo_PruebaPCR.a5wcmp}|Grid
+{N_Monitoreo_PruebaPCR2.a5wcmp}|Grid
+{N_FichaTrabajador_Preexistencias.a5wcmp}|Grid
+{N_Monitoreo_TipoPrueba.a5wcmp}|Grid
+{N_Monitoreo_Certificado.a5wcmp}|Grid
