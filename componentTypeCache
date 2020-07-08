@@ -447,3 +447,8 @@
 {N_FichaTrabajador_Preexistencias.a5wcmp}|Grid
 {N_Monitoreo_TipoPrueba.a5wcmp}|Grid
 {N_Monitoreo_Certificado.a5wcmp}|Grid
+{N_Medicacion.a5wcmp}|Grid
+{N_EPP_Monitoreo.a5wcmp}|Grid
+{N_Monitoreo_Trabajador_Medicacion.a5wcmp}|Grid
+{monitoreo_sintomas_graficos.a5wcmp}|Dialog2
+{Monitoreo_Trabajador_Medicamentos.a5wcmp}|Dialog2
