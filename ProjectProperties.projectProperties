@@ -104,7 +104,7 @@
 <beforePrint="">
 >
 <useBSONforSQLreporting=.T.>
-<PDFOptions="DIM Concatenate as L||DIM HasWatermark as L||DIM MultilingualSupport as L = .T.||DIM EmbedFonts as L = .T.||DIM LinearizeForWeb as L = .T.||DIM Colors2GrayScale as L||DIM ConvertHyperlinks as L||DIM WatermarkType as C = \"Text\"||DIM WatermarkText as C = \"D R A F T\"||DIM WatermarkFontName as C = \"Times New Roman\"||DIM WatermarkFontSize as N = 172||DIM WatermarkRotation as N = 450||DIM WatermarkColorHex as C = \"E8FED2\"||DIM WatermarkHorizPos as N = 120||DIM WatermarkVertPos as N = -120||DIM WatermarkOnTop as L||DIM WatermarkPDF as C||DIM Encrypt as L||DIM OwnerPassword as C||DIM UserPassword as C||DIM CanPrint as L = .T.||DIM CanModifyDocument as L = .T.||DIM CanCopy as L = .T.||DIM CanAddNotes as L = .T.||DIM Use128BitKey as L = .T.||DIM JpegQuality as C = \"Low\"||">
+<PDFOptions="DIM Concatenate as L||DIM HasWatermark as L||DIM MultilingualSupport as L = .T.||DIM EmbedFonts as L = .T.||DIM LinearizeForWeb as L = .T.||DIM Colors2GrayScale as L||DIM ConvertHyperlinks as L||DIM WatermarkType as C = \"Text\"||DIM WatermarkText as C = \"D R A F T\"||DIM WatermarkFontName as C = \"Times New Roman\"||DIM WatermarkFontSize as N = 172||DIM WatermarkRotation as N = 450||DIM WatermarkColorHex as C = \"E8FED2\"||DIM WatermarkHorizPos as N = 120||DIM WatermarkVertPos as N = -120||DIM WatermarkOnTop as L||DIM WatermarkPDF as C||DIM Encrypt as L||DIM OwnerPassword as C||DIM UserPassword as C||DIM CanPrint as L = .T.||DIM CanModifyDocument as L = .T.||DIM CanCopy as L = .T.||DIM CanAddNotes as L = .T.||DIM Use128BitKey as L = .T.||DIM JpegQuality as C = \"High\"||">
 <websocket<enable=.T.>
 <port="+10">
 <using="Simple">

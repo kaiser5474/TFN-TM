@@ -2450,4 +2450,16 @@
 <action="allow">
 <groups="">
 >
+<[614]<page="N_Monitoreo_Trabajador_PCR.a5rpt">
+<action="allow">
+<groups="">
+>
+<[615]<page="N_Monitoreo_Trabajador_EPP.a5wcmp">
+<action="allow">
+<groups="">
+>
+<[616]<page="Monitoreo_Trabajador_RenunciaCuarentena.a5rpt">
+<action="allow">
+<groups="">
+>
 >
