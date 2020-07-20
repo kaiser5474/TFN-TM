@@ -1,4 +1,4 @@
-A5SaveTimeStamp:20180808114921047
+A5SaveTimeStamp:20200720111943456
 css:<Project>
 subComponent:EvaluacionDesempeno_Detalles
 subComponent:EvaluacionDesempeno_Documento
@@ -12,5 +12,5 @@ subComponent:EvaluacionDesempeno_Categoria7
 subComponent:EvaluacionDesempeno_Categoria8
 subComponent:EvaluacionDesempeno_Categoria9
 subComponent:EvaluacionDesempeno_Categoria10
-copyfile:{C:\Users\ASUS\Desktop\Nibble-TM\Nibble-TM.WebProjects\Default.WebProject\Reporte_EvaluacionDesempeno.a5rpt}
-copyfile:{C:\Users\ASUS\Desktop\Nibble-TM\Nibble-TM.WebProjects\Default.WebProject\Lista_EvaluacionDesempeno.a5rpt}
+copyfile:{C:\4-Trabajos\TFN\TFN\TFN.WebProjects\TFN.WebProject\Reporte_EvaluacionDesempeno.a5rpt}
+copyfile:{C:\4-Trabajos\TFN\TFN\TFN.WebProjects\TFN.WebProject\Lista_EvaluacionDesempeno.a5rpt}

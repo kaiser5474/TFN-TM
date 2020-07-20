@@ -1,4 +1,3 @@
-{aaa.a5wcmp}|Dialog2
 {N_Monitoreo_Prueba.a5wcmp}|Grid
 {N_FichaTrabajador_DiasTrabajo_PDF.a5wcmp}|Grid
 {N_FichaTrabajador_DiasTrabajo.a5wcmp}|Grid
@@ -453,3 +452,4 @@
 {monitoreo_sintomas_graficos.a5wcmp}|Dialog2
 {Monitoreo_Trabajador_Medicamentos.a5wcmp}|Dialog2
 {N_Monitoreo_Trabajador_EPP.a5wcmp}|Grid
+{N_Monitoreo_Trabajador_Cobro.a5wcmp}|Grid

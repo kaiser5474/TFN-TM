@@ -1,4 +1,4 @@
-A5SaveTimeStamp:20200615160242748
+A5SaveTimeStamp:20200717155719525
 css:GrBlue
 subComponent:MarinePictures.a5wcmp
 subComponent:DashBoard.a5wcmp
@@ -12,6 +12,7 @@ subComponent:RRHH_TrabajadorDesempenoAdmin.a5wcmp
 subComponent:RRHH_TrabajadorDesempenoUsuarios.a5wcmp
 subComponent:Registro_Eventos.a5wcmp
 subComponent:Registro_Entrada_Salida.a5wcmp
+subComponent:N_Cargas.a5wcmp
 subComponent:N_Tareas.a5wcmp
 subComponent:N_SubTareas.a5wcmp
 subComponent:N_MonitoreoSalud.a5wcmp
@@ -51,7 +52,6 @@ subComponent:N_RRHH_TipoEvaluacionDesempeno.a5wcmp
 subComponent:EvaluacionDesempeno_TipoCategoria.a5wcmp
 subComponent:EvaluacionDesempeno_Categorias.a5wcmp
 subComponent:Email_List_Multimodal.a5wcmp
-subComponent:N_Cargas.a5wcmp
 subComponent:N_Contratos.a5wcmp
 subComponent:Ingreso_de_Usuario.a5wcmp
 subComponent:N_FichaTrabajador_DiasTrabajo_PDF.a5wcmp
@@ -77,6 +77,7 @@ subComponent:RRHH_TrabajadorDesempenoAdmin
 subComponent:RRHH_TrabajadorDesempenoUsuarios
 subComponent:Registro_Eventos
 subComponent:Registro_Entrada_Salida
+subComponent:N_Cargas
 subComponent:N_Tareas
 subComponent:N_SubTareas
 subComponent:N_MonitoreoSalud
@@ -116,7 +117,6 @@ subComponent:N_RRHH_TipoEvaluacionDesempeno
 subComponent:EvaluacionDesempeno_TipoCategoria
 subComponent:EvaluacionDesempeno_Categorias
 subComponent:Email_List_Multimodal
-subComponent:N_Cargas
 subComponent:N_Contratos
 subComponent:Ingreso_de_Usuario
 subComponent:N_FichaTrabajador_DiasTrabajo_PDF
