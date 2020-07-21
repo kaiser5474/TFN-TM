@@ -2490,4 +2490,12 @@
 <action="allow">
 <groups="">
 >
+<[624]<page="N_Monitoreo_ParaPago.a5wcmp">
+<action="allow">
+<groups="">
+>
+<[625]<page="N_Monitoreo_ParaPago2.a5wcmp">
+<action="allow">
+<groups="">
+>
 >

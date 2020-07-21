@@ -453,3 +453,5 @@
 {Monitoreo_Trabajador_Medicamentos.a5wcmp}|Dialog2
 {N_Monitoreo_Trabajador_EPP.a5wcmp}|Grid
 {N_Monitoreo_Trabajador_Cobro.a5wcmp}|Grid
+{N_Monitoreo_ParaPago2.a5wcmp}|Grid
+{N_Monitoreo_ParaPago.a5wcmp}|Grid
