@@ -1,3 +1,4 @@
+{N_MonitoreoTrabajador_Cobro.a5wcmp}|Grid
 {N_Monitoreo_Prueba.a5wcmp}|Grid
 {N_FichaTrabajador_DiasTrabajo_PDF.a5wcmp}|Grid
 {N_FichaTrabajador_DiasTrabajo.a5wcmp}|Grid
@@ -455,3 +456,5 @@
 {N_Monitoreo_Trabajador_Cobro.a5wcmp}|Grid
 {N_Monitoreo_ParaPago2.a5wcmp}|Grid
 {N_Monitoreo_ParaPago.a5wcmp}|Grid
+{N_Monitoreo_ParaPago3.a5wcmp}|Grid
+{monitoreo.a5wcmp}|Pagelayout

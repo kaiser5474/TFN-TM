@@ -2498,4 +2498,16 @@
 <action="allow">
 <groups="">
 >
+<[626]<page="N_Monitoreo_ParaPago3.a5wcmp">
+<action="allow">
+<groups="">
+>
+<[627]<page="N_MonitoreoTrabajador_Cobro.a5wcmp">
+<action="allow">
+<groups="">
+>
+<[628]<page="monitoreo.a5wcmp">
+<action="allow">
+<groups="">
+>
 >

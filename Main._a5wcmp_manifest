@@ -1,4 +1,4 @@
-A5SaveTimeStamp:20200717155719525
+A5SaveTimeStamp:20200721115919186
 css:GrBlue
 subComponent:MarinePictures.a5wcmp
 subComponent:DashBoard.a5wcmp
@@ -15,9 +15,10 @@ subComponent:Registro_Entrada_Salida.a5wcmp
 subComponent:N_Cargas.a5wcmp
 subComponent:N_Tareas.a5wcmp
 subComponent:N_SubTareas.a5wcmp
-subComponent:N_MonitoreoSalud.a5wcmp
+subComponent:monitoreo.a5wcmp
 subComponent:N_MonitoreoSalud_Global.a5wcmp
 subComponent:N_Sintomas.a5wcmp
+subComponent:N_Monitoreo_ParaPago3.a5wcmp
 subComponent:Nomenclador_DocumentosMariloginsa.a5wcmp
 subComponent:N_ClasificacionContactos.a5wcmp
 subComponent:N_PosNombreContactos.a5wcmp
@@ -58,6 +59,7 @@ subComponent:N_FichaTrabajador_DiasTrabajo_PDF.a5wcmp
 subComponent:help.a5wcmp
 subComponent:N_Diccionario.a5wcmp
 subComponent:N_Empresas.a5wcmp
+subComponent:N_Monitoreo_ParaPago.a5wcmp
 subComponent:CrearUsuarioSistema2.a5wcmp
 subComponent:Empresas_Usuarios.a5wcmp
 suba5wPage:serverInformationPage.a5w
@@ -80,9 +82,9 @@ subComponent:Registro_Entrada_Salida
 subComponent:N_Cargas
 subComponent:N_Tareas
 subComponent:N_SubTareas
-subComponent:N_MonitoreoSalud
 subComponent:N_MonitoreoSalud_Global
 subComponent:N_Sintomas
+subComponent:N_Monitoreo_ParaPago3
 subComponent:Nomenclador_DocumentosMariloginsa
 subComponent:N_ClasificacionContactos
 subComponent:N_PosNombreContactos
@@ -123,7 +125,9 @@ subComponent:N_FichaTrabajador_DiasTrabajo_PDF
 subComponent:help
 subComponent:N_Diccionario
 subComponent:N_Empresas
+subComponent:N_Monitoreo_ParaPago
 subComponent:CrearUsuarioSistema2
 subComponent:Empresas_Usuarios
 subComponent:MarinePictures
 subComponent:DashBoard
+subComponent:monitoreo
