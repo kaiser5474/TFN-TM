@@ -1,4 +1,4 @@
-A5SaveTimeStamp:20200721115919186
+A5SaveTimeStamp:20200723025257621
 css:GrBlue
 subComponent:MarinePictures.a5wcmp
 subComponent:DashBoard.a5wcmp
@@ -18,7 +18,6 @@ subComponent:N_SubTareas.a5wcmp
 subComponent:monitoreo.a5wcmp
 subComponent:N_MonitoreoSalud_Global.a5wcmp
 subComponent:N_Sintomas.a5wcmp
-subComponent:N_Monitoreo_ParaPago3.a5wcmp
 subComponent:Nomenclador_DocumentosMariloginsa.a5wcmp
 subComponent:N_ClasificacionContactos.a5wcmp
 subComponent:N_PosNombreContactos.a5wcmp
@@ -84,7 +83,6 @@ subComponent:N_Tareas
 subComponent:N_SubTareas
 subComponent:N_MonitoreoSalud_Global
 subComponent:N_Sintomas
-subComponent:N_Monitoreo_ParaPago3
 subComponent:Nomenclador_DocumentosMariloginsa
 subComponent:N_ClasificacionContactos
 subComponent:N_PosNombreContactos

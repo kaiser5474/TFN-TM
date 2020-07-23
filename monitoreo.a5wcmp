@@ -1,39 +1,41 @@
 {
     "$schema": "UX",
     "$definition": {
-        "builderType": "PageLayout",
+        "style_name": "GrBlue",
+        "style_type": "Alpha Five",
+        "resolveAbstractClassNames": true,
+        "builderVersionNumber": 1,
+        "overrideStyleName": "Default",
+        "FontSize": "Medium",
+        "A5ContainerClassPadding": "4px",
+        "layoutType": "ControlWidth",
+        "pageTitle": "PageLayout",
+        "activeLanguage": "<Default>",
+        "clientSideDateFormat": "MM/dd/yyyy",
         "info": {
             "createdBy": "ASUS",
             "dateCreated": "2020-7-21",
-            "dateLastEdited": "2020-7-21",
-            "revisionnumber": 4
+            "dateLastEdited": "2020-7-23",
+            "revisionnumber": 6
         },
-        "flagOptimizedUXTree": false,
-        "flagReanalyzeContainers": false,
-        "minimumBuildNumber": "",
-        "_display": "",
-        "guid": "d05967b1-1ff7-435f-88be-09e9c95366b0",
-        "style_name": "GrBlue",
-        "componentName": "monitoreo",
-        "componentFilename": "C:\\4-Trabajos\\TFN\\TFN\\TFN.WebProjects\\TFN.WebProject\\monitoreo.a5wcmp",
         "page_fields": [
             {
-                "controltype": "layout_directive_TabControl",
+                "controlType": "layout_directive_TabControl",
                 "display": "{C=#0+0+127,White}{B=White,Light Blue}{F=+B}{Data=50d9412a-dd35-4b7d-b94c-23dcc17ed3f3}{I:'$a5_control_tab'} [Tab Control: TAB_1]",
                 "displayODFlat": "{Data=50d9412a-dd35-4b7d-b94c-23dcc17ed3f3}{I:'$a5_control_tab'} [Tab Control: TAB_1]",
-                "displayOD": "{Data=50d9412a-dd35-4b7d-b94c-23dcc17ed3f3}{I:'$a5_control_tab'} [Tab Control: TAB_1]",
-                "displayODtree": "{C=#0+0+127,White}{B=White,Light Blue}{F=+B}{Data=50d9412a-dd35-4b7d-b94c-23dcc17ed3f3}{I:'$a5_control_tab'} [Tab Control: TAB_1]",
                 "idInternal": "50d9412a-dd35-4b7d-b94c-23dcc17ed3f3",
                 "lastIndex": 8,
                 "parentContainer": -1,
-                "errorInDefinition": false,
-                "childTabPanes": "2\n4\n6\n",
+                "displayOD": "{Data=50d9412a-dd35-4b7d-b94c-23dcc17ed3f3}{I:'$a5_control_tab'} [Tab Control: TAB_1]",
                 "repeatingSectionParentId": -1,
+                "displayODtree": "{C=#0+0+127,White}{B=White,Light Blue}{F=+B}{Data=50d9412a-dd35-4b7d-b94c-23dcc17ed3f3}{I:'$a5_control_tab'} [Tab Control: TAB_1]",
                 "indentTree": 0,
                 "precalc": {
-                    "ControlHTML": "<div class=\"A5container [theme:tab.Top.className|{grid.style}TabT]\" id=\"{grid.componentname}.TAB_1\"><!--Tab Start {grid.componentname}.TAB_1-->\n\t<div id=\"{grid.componentname}.TAB_1.TABBAND\" class=\"[theme:tab.Top.tabsClassName|{grid.style}TabTBand]\"><!--Tab Buttons Start {grid.componentname}.TAB_1-->\n\t\t<a id=\"{grid.componentname}.TAB_1.0.TAB\" class=\"\" href=\"#\">Monitoreo Salud</a>\n\t\t<a id=\"{grid.componentname}.TAB_1.1.TAB\" class=\"\" href=\"#\"> Monitoreo Gastos</a>\n\t\t<a id=\"{grid.componentname}.TAB_1.2.TAB\" class=\"\" href=\"#\">Certificado de Cuarentena</a>\n\t<br style=\"clear: both;\" />\n\t</div><!--Tab Buttons Start {grid.componentname}.TAB_1-->\n\t<div id=\"{grid.componentname}.TAB_1.PANES\" class=\"[theme:tab.Top.panesClassName|{grid.style}TabTPanes]\"><!--Tab Panes Start {grid.componentname}.TAB_1-->",
-                    "controlJS": "window['{grid.componentName}.TAB_1Obj'] = new A5.Tab('{grid.componentName}.TAB_1',[\n{ \thtml: 'Monitoreo Salud', \tvalue: '1', \tonDynamicLoadDelay: 0, \tshow: true, \tdisabled: false, \tonDynamicLoad: function() {action_{alias}_07d326d3_7c7e_4f4a_a4fe_bc1d8025b58a();} }, \n{ \thtml: ' Monitoreo Gastos', \tvalue: '2', \tonDynamicLoadDelay: 0, \tshow: true, \tdisabled: false, \tonDynamicLoad: function() {action_{alias}_fcfed2bd_2936_4acf_879d_9c6df63fb7c1();} }, \n{ \thtml: 'Certificado de Cuarentena', \tvalue: '3', \tonDynamicLoadDelay: 0, \tshow: true, \tdisabled: false, \tonDynamicLoad: function() {action_{alias}_0f8c0049_6511_402d_b766_993f66ce5703();} }\n],\n\t{\n\ttheme: '{grid.style}:Top'\n}\n\n);\n\n\twindow['{grid.componentName}.TAB_1Obj'].select('1');\n\n"
+                    "ControlHTML": "<div class=\"A5container [theme:tab.Top.className|{grid.style}TabT]\" id=\"{grid.componentname}.TAB_1\"><!--Tab Start {grid.componentname}.TAB_1-->\n\t<div id=\"{grid.componentname}.TAB_1.TABBAND\" class=\"[theme:tab.Top.tabsClassName|{grid.style}TabTBand]\"><!--Tab Buttons Start {grid.componentname}.TAB_1-->\n\t\t<a id=\"{grid.componentname}.TAB_1.0.TAB\" class=\"\" href=\"#\">Monitoreo Salud</a>\n\t\t<a id=\"{grid.componentname}.TAB_1.1.TAB\" class=\"\" href=\"#\">Cierre Cuarentena</a>\n\t\t<a id=\"{grid.componentname}.TAB_1.2.TAB\" class=\"\" href=\"#\">Cuarentenas</a>\n\t<br style=\"clear: both;\" />\n\t</div><!--Tab Buttons Start {grid.componentname}.TAB_1-->\n\t<div id=\"{grid.componentname}.TAB_1.PANES\" class=\"[theme:tab.Top.panesClassName|{grid.style}TabTPanes]\"><!--Tab Panes Start {grid.componentname}.TAB_1-->",
+                    "controlJS": "window['{grid.componentName}.TAB_1Obj'] = new A5.Tab('{grid.componentName}.TAB_1',[\n{ \thtml: 'Monitoreo Salud', \tvalue: '1', \tonDynamicLoadDelay: 0, \tshow: true, \tdisabled: false, \tonDynamicLoad: function() {action_{alias}_07d326d3_7c7e_4f4a_a4fe_bc1d8025b58a();} }, \n{ \thtml: 'Cierre Cuarentena', \tvalue: '2', \tonDynamicLoadDelay: 0, \tshow: true, \tdisabled: false, \tonDynamicLoad: function() {action_{alias}_fcfed2bd_2936_4acf_879d_9c6df63fb7c1();} }, \n{ \thtml: 'Cuarentenas', \tvalue: '3', \tonDynamicLoadDelay: 0, \tshow: true, \tdisabled: false, \tonDynamicLoad: function() {action_{alias}_edffdaab_80a4_43ba_9a27_c860e376af9c();} }\n],\n\t{\n\ttheme: '{grid.style}:Top'\n}\n\n);\n\n\twindow['{grid.componentName}.TAB_1Obj'].select('1');\n\n"
                 },
+                "errorInDefinition": false,
+                "childTabPanes": "2\n4\n6\n",
                 "v": {
                     "TabControl": {
                         "useModernTabs": true,
@@ -76,23 +78,15 @@
                 }
             },
             {
-                "controltype": "layout_directive_TabPane",
+                "controlType": "layout_directive_TabPane",
                 "display": "{C=#110+179+236,White}{B=White,#110+179+236}{F=+B}{I:'vertLine'}{Data=8992666f-2280-4a5e-bc13-ebf00eb47819}{I:'$$control.tab.pane'} [TabPane: Monitoreo Salud]",
                 "displayODFlat": "{Data=8992666f-2280-4a5e-bc13-ebf00eb47819}{I:'$$control.tab.pane'} [TabPane: Monitoreo 2]",
-                "displayOD": "{Data=8992666f-2280-4a5e-bc13-ebf00eb47819}{I:'$$control.tab.pane'} [TabPane: Monitoreo 2]",
-                "displayODtree": "{C=#110+179+236,White}{B=White,#110+179+236}{F=+B}{I:'vertLine'}{Data=8992666f-2280-4a5e-bc13-ebf00eb47819}{I:'$$control.tab.pane'} [TabPane: Monitoreo Salud]",
                 "idInternal": "8992666f-2280-4a5e-bc13-ebf00eb47819",
                 "lastIndex": 3,
                 "parentContainer": 1,
-                "parentTabIndex": 1,
-                "tabPaneNumber": 1,
+                "displayOD": "{Data=8992666f-2280-4a5e-bc13-ebf00eb47819}{I:'$$control.tab.pane'} [TabPane: Monitoreo 2]",
                 "repeatingSectionParentId": -1,
-                "indentTree": 1,
-                "precalc": {
-                    "controlHTML": "<div id=\"{grid.componentName}.TAB_1.0.PANE\"><!--TabPaneBegin {grid.componentName}.TAB_1.0-->\n",
-                    "DesignViewHTML": "<div id=\"{grid.componentName}.TAB_1.0.PANE\"><!--TabPaneBegin {grid.componentName}.TAB_1.0-->\n"
-                },
-                "iscollapsed": false,
+                "displayODtree": "{C=#110+179+236,White}{B=White,#110+179+236}{F=+B}{I:'vertLine'}{Data=8992666f-2280-4a5e-bc13-ebf00eb47819}{I:'$$control.tab.pane'} [TabPane: Monitoreo Salud]",
                 "v": {
                     "title": "Monitoreo Salud",
                     "tabPane": {
@@ -106,21 +100,26 @@
                         "renderChildren": "action_{alias}_07d326d3_7c7e_4f4a_a4fe_bc1d8025b58a();\n"
                     },
                     "_displayText": "[TabPane: Monitoreo Salud]"
-                }
+                },
+                "indentTree": 1,
+                "precalc": {
+                    "ControlHTML": "<div id=\"{grid.componentName}.TAB_1.0.PANE\"><!--TabPaneBegin {grid.componentName}.TAB_1.0-->\n",
+                    "DesignViewHTML": "<div id=\"{grid.componentName}.TAB_1.0.PANE\"><!--TabPaneBegin {grid.componentName}.TAB_1.0-->\n"
+                },
+                "isCollapsed": false,
+                "parentTabIndex": 1,
+                "tabPaneNumber": 1
             },
             {
-                "controltype": "PageLayoutPart",
+                "controlType": "PageLayoutPart",
                 "display": "{B=White,Light Blue}{I:'vertLine'}{I:'vertLine'}{Data=07d326d3-7c7e-4f4a-a4fe-bc1d8025b58a}{I:'$$control.html.advButton'} [Page Layout Part: N_MonitoreoSalud (Grid Component)] ¶",
                 "displayODFlat": "{Data=07d326d3-7c7e-4f4a-a4fe-bc1d8025b58a}{I:'$$control.html.advButton'} [Page Layout Part: N_MonitoreoSalud] ¶",
-                "displayOD": "{Data=07d326d3-7c7e-4f4a-a4fe-bc1d8025b58a}{I:'$$control.html.advButton'} [Page Layout Part: N_MonitoreoSalud] ¶",
-                "displayODtree": "{B=White,Light Blue}{I:'vertLine'}{I:'vertLine'}{Data=07d326d3-7c7e-4f4a-a4fe-bc1d8025b58a}{I:'$$control.html.advButton'} [Page Layout Part: N_MonitoreoSalud (Grid Component)] ¶",
                 "idInternal": "07d326d3-7c7e-4f4a-a4fe-bc1d8025b58a",
                 "parentContainer": 1,
-                "inPanelCard": false,
-                "inTreeControl": false,
                 "parentTabPaneIndex": 2,
+                "displayOD": "{Data=07d326d3-7c7e-4f4a-a4fe-bc1d8025b58a}{I:'$$control.html.advButton'} [Page Layout Part: N_MonitoreoSalud] ¶",
                 "repeatingSectionParentId": -1,
-                "indentTree": 2,
+                "displayODtree": "{B=White,Light Blue}{I:'vertLine'}{I:'vertLine'}{Data=07d326d3-7c7e-4f4a-a4fe-bc1d8025b58a}{I:'$$control.html.advButton'} [Page Layout Part: N_MonitoreoSalud (Grid Component)] ¶",
                 "v": {
                     "pageLayoutPart": {
                         "showMode": "When page is loaded",
@@ -141,9 +140,9 @@
                             "gridName": "N_MonitoreoSalud",
                             "componentType": "Grid",
                             "alias": "<DefaultAlias>",
-                            "customSettingOverridesJSON": "",
                             "useMasterStyle": true,
-                            "workingMessage": "<img src=\"css/A5System/Images/wait.gif\" /> Working..."
+                            "workingMessage": "<img src=\"css/A5System/Images/wait.gif\" /> Working...",
+                            "customSettingOverridesJSON": ""
                         },
                         "report": {
                             "workingMessage": "<img src=\"css/A5System/Images/wait.gif\" /> Working...",
@@ -262,33 +261,36 @@
                     },
                     "_displayText": "[Page Layout Part: N_MonitoreoSalud (Grid Component)]"
                 },
+                "indentTree": 2,
                 "precalc": {
                     "ControlHTML": "\t<div class=\"A5container\">\n\t\t<div id=\"{alias}_DIVCONTAINER_07d326d3_7c7e_4f4a_a4fe_bc1d8025b58a\"   ><img src=\"css/A5System/Images/wait.gif\" /> Working...</div>\n\t</div><!--breakbegin--><br  style=\"clear:both; \" /><div  style=\"height:.1in; font: 0pt;\"></div><!--breakend-->\n\t\t",
                     "pageLayoutPartJavascript": "window['action_{alias}_07d326d3_7c7e_4f4a_a4fe_bc1d8025b58a'] = function() {\n\t\n\t\n\tvar onCompleteCode = '';\n\tvar callbackId = A5.UUID();\n\tif(typeof objx == 'undefined') objx = {};\n\tobjx[callbackId] = Function(onCompleteCode);\n\t\n\n\n\tvar go = new Object();\n\tgo.gridName = 'N_MonitoreoSalud';\n\tgo.alias = '{alias}_N_MONITORE_115035FCAR';\n\tgo.workingMessage = '<img src=\"css/A5System/Images/wait.gif\" /> Working...';\n\tgo.flagTimer = 'F';\n\tgo.flagQueryEcho = 'F';\n\tgo.flagDebugMode = 'F';\n\tgo.userFilter = '';\n\tgo.baseFilter = '';\n\tgo.userOrder = '';\n\tgo.overrideSettings = 'style_name=`{pageLayout.style}`'+'||';\n\tgo.arguments = '';\n\t\n\t\n\tgo.localArguments = '';\n\tgo.linkDefinition = '';\n\tgo.placeHolderValues = '';\n\tgo.parameterBucket = $gvs('{alias}.PARAMETERBUCKET');\n\tgo.argumentValueBucket = $gvs('{alias}.ARGUMENTVALUES');\n\tgo.a5_default_path = '{PageLayout.a5_default_path}';\n\tgo.onLoadCompleteJavascript = 'run:'+callbackId;\n\t\n\t\n\tif(typeof tbiObj != 'undefined' && typeof tbiObj._workingPreviewHost != 'undefined') { \n\t\tgo._workingPreviewHost = tbiObj._workingPreviewHost;\n\t}\n\n\n\tgo.gridDiv = '{alias}_DIVCONTAINER_07d326d3_7c7e_4f4a_a4fe_bc1d8025b58a';\n\tA5.component.runGrid(go);\n\t\n}\n"
                 },
+                "isCollapsed": false,
+                "inPanelCard": false,
+                "inTreeControl": false,
                 "hasParentTab": true,
-                "parentTabId": "8992666f-2280-4a5e-bc13-ebf00eb47819",
-                "iscollapsed": false
+                "parentTabId": "8992666f-2280-4a5e-bc13-ebf00eb47819"
             },
             {
                 "controlType": "layout_directive_TabPane",
-                "display": "{C=#110+179+236,White}{B=White,#110+179+236}{F=+B}{I:'vertLine'}{Data=5a53145b-d04f-4f0e-af14-dc6f52d5ef8b}{I:'$$control.tab.pane'} [TabPane:  Monitoreo Gastos]",
+                "display": "{C=#110+179+236,White}{B=White,#110+179+236}{F=+B}{I:'vertLine'}{Data=5a53145b-d04f-4f0e-af14-dc6f52d5ef8b}{I:'$$control.tab.pane'} [TabPane: Cierre Cuarentena]",
                 "displayODFlat": "{Data=5a53145b-d04f-4f0e-af14-dc6f52d5ef8b}{I:'$$control.tab.pane'} [TabPane: Monitoreo]",
                 "idInternal": "5a53145b-d04f-4f0e-af14-dc6f52d5ef8b",
                 "lastIndex": 5,
                 "parentContainer": 1,
-                "parentTabIndex": 1,
-                "tabPaneNumber": 2,
                 "displayOD": "{Data=5a53145b-d04f-4f0e-af14-dc6f52d5ef8b}{I:'$$control.tab.pane'} [TabPane: Monitoreo]",
                 "repeatingSectionParentId": -1,
-                "displayODtree": "{C=#110+179+236,White}{B=White,#110+179+236}{F=+B}{I:'vertLine'}{Data=5a53145b-d04f-4f0e-af14-dc6f52d5ef8b}{I:'$$control.tab.pane'} [TabPane:  Monitoreo Gastos]",
+                "displayODtree": "{C=#110+179+236,White}{B=White,#110+179+236}{F=+B}{I:'vertLine'}{Data=5a53145b-d04f-4f0e-af14-dc6f52d5ef8b}{I:'$$control.tab.pane'} [TabPane: Cierre Cuarentena]",
                 "indentTree": 1,
                 "precalc": {
-                    "controlHTML": "<div id=\"{grid.componentName}.TAB_1.1.PANE\"><!--TabPaneBegin {grid.componentName}.TAB_1.1-->\n",
+                    "ControlHTML": "<div id=\"{grid.componentName}.TAB_1.1.PANE\"><!--TabPaneBegin {grid.componentName}.TAB_1.1-->\n",
                     "DesignViewHTML": "<div id=\"{grid.componentName}.TAB_1.1.PANE\"><!--TabPaneBegin {grid.componentName}.TAB_1.1-->\n"
                 },
+                "parentTabIndex": 1,
+                "tabPaneNumber": 2,
                 "v": {
-                    "title": " Monitoreo Gastos",
+                    "title": "Cierre Cuarentena",
                     "tabPane": {
                         "show": true,
                         "JS": {
@@ -298,22 +300,19 @@
                     "javascript": {
                         "renderChildren": "action_{alias}_fcfed2bd_2936_4acf_879d_9c6df63fb7c1();\n"
                     },
-                    "_displayText": "[TabPane:  Monitoreo Gastos]"
+                    "_displayText": "[TabPane: Cierre Cuarentena]"
                 }
             },
             {
-                "controltype": "PageLayoutPart",
+                "controlType": "PageLayoutPart",
                 "display": "{B=White,Light Blue}{I:'vertLine'}{I:'vertLine'}{Data=fcfed2bd-2936-4acf-879d-9c6df63fb7c1}{I:'$$control.html.advButton'} [Page Layout Part: N_Monitoreo_ParaPago3 (Grid Component)] ¶",
                 "displayODFlat": "{Data=fcfed2bd-2936-4acf-879d-9c6df63fb7c1}{I:'$$control.html.advButton'} [Page Layout Part: N_Monitoreo_ParaPago3] ¶",
-                "displayOD": "{Data=fcfed2bd-2936-4acf-879d-9c6df63fb7c1}{I:'$$control.html.advButton'} [Page Layout Part: N_Monitoreo_ParaPago3] ¶",
-                "displayODtree": "{B=White,Light Blue}{I:'vertLine'}{I:'vertLine'}{Data=fcfed2bd-2936-4acf-879d-9c6df63fb7c1}{I:'$$control.html.advButton'} [Page Layout Part: N_Monitoreo_ParaPago3 (Grid Component)] ¶",
                 "idInternal": "fcfed2bd-2936-4acf-879d-9c6df63fb7c1",
                 "parentContainer": 1,
-                "inPanelCard": false,
-                "inTreeControl": false,
                 "parentTabPaneIndex": 4,
+                "displayOD": "{Data=fcfed2bd-2936-4acf-879d-9c6df63fb7c1}{I:'$$control.html.advButton'} [Page Layout Part: N_Monitoreo_ParaPago3] ¶",
                 "repeatingSectionParentId": -1,
-                "indentTree": 2,
+                "displayODtree": "{B=White,Light Blue}{I:'vertLine'}{I:'vertLine'}{Data=fcfed2bd-2936-4acf-879d-9c6df63fb7c1}{I:'$$control.html.advButton'} [Page Layout Part: N_Monitoreo_ParaPago3 (Grid Component)] ¶",
                 "v": {
                     "pageLayoutPart": {
                         "showMode": "When page is loaded",
@@ -334,9 +333,9 @@
                             "gridName": "N_Monitoreo_ParaPago3",
                             "componentType": "Grid",
                             "alias": "<DefaultAlias>",
-                            "customSettingOverridesJSON": "",
                             "useMasterStyle": true,
-                            "workingMessage": "<img src=\"css/A5System/Images/wait.gif\" /> Working..."
+                            "workingMessage": "<img src=\"css/A5System/Images/wait.gif\" /> Working...",
+                            "customSettingOverridesJSON": ""
                         },
                         "report": {
                             "workingMessage": "<img src=\"css/A5System/Images/wait.gif\" /> Working...",
@@ -455,54 +454,57 @@
                     },
                     "_displayText": "[Page Layout Part: N_Monitoreo_ParaPago3 (Grid Component)]"
                 },
+                "indentTree": 2,
                 "precalc": {
                     "ControlHTML": "\t<div class=\"A5container\">\n\t\t<div id=\"{alias}_DIVCONTAINER_fcfed2bd_2936_4acf_879d_9c6df63fb7c1\"   ><img src=\"css/A5System/Images/wait.gif\" /> Working...</div>\n\t</div><!--breakbegin--><br  style=\"clear:both; \" /><div  style=\"height:.1in; font: 0pt;\"></div><!--breakend-->\n\t\t",
                     "pageLayoutPartJavascript": "window['action_{alias}_fcfed2bd_2936_4acf_879d_9c6df63fb7c1'] = function() {\n\t\n\t\n\tvar onCompleteCode = '';\n\tvar callbackId = A5.UUID();\n\tif(typeof objx == 'undefined') objx = {};\n\tobjx[callbackId] = Function(onCompleteCode);\n\t\n\n\n\tvar go = new Object();\n\tgo.gridName = 'N_Monitoreo_ParaPago3';\n\tgo.alias = '{alias}_N_MONITORE_114923APJL';\n\tgo.workingMessage = '<img src=\"css/A5System/Images/wait.gif\" /> Working...';\n\tgo.flagTimer = 'F';\n\tgo.flagQueryEcho = 'F';\n\tgo.flagDebugMode = 'F';\n\tgo.userFilter = '';\n\tgo.baseFilter = '';\n\tgo.userOrder = '';\n\tgo.overrideSettings = 'style_name=`{pageLayout.style}`'+'||';\n\tgo.arguments = '';\n\t\n\t\n\tgo.localArguments = '';\n\tgo.linkDefinition = '';\n\tgo.placeHolderValues = '';\n\tgo.parameterBucket = $gvs('{alias}.PARAMETERBUCKET');\n\tgo.argumentValueBucket = $gvs('{alias}.ARGUMENTVALUES');\n\tgo.a5_default_path = '{PageLayout.a5_default_path}';\n\tgo.onLoadCompleteJavascript = 'run:'+callbackId;\n\t\n\t\n\tif(typeof tbiObj != 'undefined' && typeof tbiObj._workingPreviewHost != 'undefined') { \n\t\tgo._workingPreviewHost = tbiObj._workingPreviewHost;\n\t}\n\n\n\tgo.gridDiv = '{alias}_DIVCONTAINER_fcfed2bd_2936_4acf_879d_9c6df63fb7c1';\n\tA5.component.runGrid(go);\n\t\n}\n"
                 },
+                "isCollapsed": false,
+                "inPanelCard": false,
+                "inTreeControl": false,
                 "hasParentTab": true,
-                "parentTabId": "5a53145b-d04f-4f0e-af14-dc6f52d5ef8b",
-                "iscollapsed": false
+                "parentTabId": "5a53145b-d04f-4f0e-af14-dc6f52d5ef8b"
             },
             {
-                "controltype": "layout_directive_TabPane",
-                "display": "{C=#110+179+236,White}{B=White,#110+179+236}{F=+B}{I:'vertLine'}{Data=7c3cbdfa-2cd7-4040-b4b6-7acc0325a023}{I:'$$control.tab.pane'} [TabPane: Certificado de Cuarentena]",
+                "controlType": "layout_directive_TabPane",
+                "display": "{C=#110+179+236,White}{B=White,#110+179+236}{F=+B}{I:'vertLine'}{Data=7c3cbdfa-2cd7-4040-b4b6-7acc0325a023}{I:'$$control.tab.pane'} [TabPane: Cuarentenas]",
                 "displayODFlat": "{Data=7c3cbdfa-2cd7-4040-b4b6-7acc0325a023}{I:'$$control.tab.pane'} [TabPane: Certificado de Cuarentena]",
-                "displayOD": "{Data=7c3cbdfa-2cd7-4040-b4b6-7acc0325a023}{I:'$$control.tab.pane'} [TabPane: Certificado de Cuarentena]",
-                "displayODtree": "{C=#110+179+236,White}{B=White,#110+179+236}{F=+B}{I:'vertLine'}{Data=7c3cbdfa-2cd7-4040-b4b6-7acc0325a023}{I:'$$control.tab.pane'} [TabPane: Certificado de Cuarentena]",
                 "idInternal": "7c3cbdfa-2cd7-4040-b4b6-7acc0325a023",
                 "lastIndex": 7,
                 "parentContainer": 1,
+                "displayOD": "{Data=7c3cbdfa-2cd7-4040-b4b6-7acc0325a023}{I:'$$control.tab.pane'} [TabPane: Certificado de Cuarentena]",
+                "repeatingSectionParentId": -1,
+                "displayODtree": "{C=#110+179+236,White}{B=White,#110+179+236}{F=+B}{I:'vertLine'}{Data=7c3cbdfa-2cd7-4040-b4b6-7acc0325a023}{I:'$$control.tab.pane'} [TabPane: Cuarentenas]",
+                "indentTree": 1,
+                "precalc": {
+                    "ControlHTML": "<div id=\"{grid.componentName}.TAB_1.2.PANE\"><!--TabPaneBegin {grid.componentName}.TAB_1.2-->\n",
+                    "DesignViewHTML": "<div id=\"{grid.componentName}.TAB_1.2.PANE\"><!--TabPaneBegin {grid.componentName}.TAB_1.2-->\n"
+                },
+                "isCollapsed": false,
                 "parentTabIndex": 1,
                 "tabPaneNumber": 3,
-                "repeatingSectionParentId": -1,
-                "indentTree": 1,
                 "v": {
-                    "title": "Certificado de Cuarentena",
+                    "title": "Cuarentenas",
                     "tabPane": {
                         "show": true,
                         "JS": {
-                            "onDynamicLoad": "action_{alias}_0f8c0049_6511_402d_b766_993f66ce5703();"
+                            "onDynamicLoad": "action_{alias}_edffdaab_80a4_43ba_9a27_c860e376af9c();"
                         },
                         "id": "PANE_3"
                     },
                     "javascript": {
-                        "renderChildren": "action_{alias}_0f8c0049_6511_402d_b766_993f66ce5703();\n"
+                        "renderChildren": "action_{alias}_edffdaab_80a4_43ba_9a27_c860e376af9c();\n"
                     },
-                    "_displayText": "[TabPane: Certificado de Cuarentena]"
-                },
-                "precalc": {
-                    "controlHTML": "<div id=\"{grid.componentName}.TAB_1.2.PANE\"><!--TabPaneBegin {grid.componentName}.TAB_1.2-->\n",
-                    "DesignViewHTML": "<div id=\"{grid.componentName}.TAB_1.2.PANE\"><!--TabPaneBegin {grid.componentName}.TAB_1.2-->\n"
-                },
-                "iscollapsed": false
+                    "_displayText": "[TabPane: Cuarentenas]"
+                }
             },
             {
                 "controltype": "PageLayoutPart",
-                "display": "{B=White,Light Blue}{I:'vertLine'}{I:'vertLine'}{Data=0f8c0049-6511-402d-b766-993f66ce5703}{I:'$$control.html.advButton'} [Page Layout Part:  (UX Component)] ¶",
-                "displayODFlat": "{Data=0f8c0049-6511-402d-b766-993f66ce5703}{I:'$$control.html.advButton'} [Page Layout Part: ]",
-                "displayOD": "{Data=0f8c0049-6511-402d-b766-993f66ce5703}{I:'$$control.html.advButton'} [Page Layout Part: ]",
-                "displayODtree": "{B=White,Light Blue}{I:'vertLine'}{I:'vertLine'}{Data=0f8c0049-6511-402d-b766-993f66ce5703}{I:'$$control.html.advButton'} [Page Layout Part:  (UX Component)] ¶",
-                "idInternal": "0f8c0049-6511-402d-b766-993f66ce5703",
+                "display": "{B=White,Light Blue}{I:'vertLine'}{I:'vertLine'}{Data=edffdaab-80a4-43ba-9a27-c860e376af9c}{I:'$$control.html.advButton'} [Page Layout Part: N_MonitoreoTrabajador_Cobro (Grid Component)] ¶",
+                "displayODFlat": "{Data=edffdaab-80a4-43ba-9a27-c860e376af9c}{I:'$$control.html.advButton'} [Page Layout Part: N_MonitoreoTrabajador_Cobro]",
+                "displayOD": "{Data=edffdaab-80a4-43ba-9a27-c860e376af9c}{I:'$$control.html.advButton'} [Page Layout Part: N_MonitoreoTrabajador_Cobro]",
+                "displayODtree": "{B=White,Light Blue}{I:'vertLine'}{I:'vertLine'}{Data=edffdaab-80a4-43ba-9a27-c860e376af9c}{I:'$$control.html.advButton'} [Page Layout Part: N_MonitoreoTrabajador_Cobro (Grid Component)] ¶",
+                "idInternal": "edffdaab-80a4-43ba-9a27-c860e376af9c",
                 "parentContainer": 1,
                 "inPanelCard": false,
                 "inTreeControl": false,
@@ -520,13 +522,14 @@
                         "paneTitle": "Pane",
                         "reuseExistingPane": true,
                         "buttonType": "Button",
+                        "buttonText": "N_MonitoreoTrabajador_Cobro",
                         "actionType": "Component",
                         "optimization": {
                             "method": "AjaxCallback"
                         },
                         "grid": {
-                            "gridName": "Monitoreo_Trabajador_Medicamentos",
-                            "componentType": "UX",
+                            "gridName": "N_MonitoreoTrabajador_Cobro",
+                            "componentType": "Grid",
                             "alias": "<DefaultAlias>",
                             "customSettingOverridesJSON": "",
                             "useMasterStyle": true,
@@ -608,7 +611,7 @@
                         "onChange": "",
                         "onFocus": "",
                         "onSelect": "",
-                        "immediate": "action_{alias}_0f8c0049_6511_402d_b766_993f66ce5703();"
+                        "immediate": "action_{alias}_edffdaab_80a4_43ba_9a27_c860e376af9c();"
                     },
                     "Window": {
                         "onInitialize": "",
@@ -649,17 +652,21 @@
                     }
                 },
                 "precalc": {
-                    "ControlHTML": "\t<div class=\"A5container\">\n\t\t<div id=\"{alias}_DIVCONTAINER_0f8c0049_6511_402d_b766_993f66ce5703\"   ><img src=\"css/A5System/Images/wait.gif\" /> Working...</div>\n\t</div><!--breakbegin--><br  style=\"clear:both; \" /><div  style=\"height:.1in; font: 0pt;\"></div><!--breakend-->\n\t\t",
-                    "pageLayoutPartJavascript": "window['action_{alias}_0f8c0049_6511_402d_b766_993f66ce5703'] = function() {\n\t\n\t\n\tvar onCompleteCode = '';\n\tvar callbackId = A5.UUID();\n\tif(typeof objx == 'undefined') objx = {};\n\tobjx[callbackId] = Function(onCompleteCode);\n\t\n\n\n\tvar go = new Object();\n\t\tgo.dialog2Name = 'Monitoreo_Trabajador_Medicamentos';\n\tgo.type = 'dialog2';\n\t\n\tgo.alias = '{alias}_MONITOREO__121334PPSW';\n\tgo.workingMessage = '<img src=\"css/A5System/Images/wait.gif\" /> Working...';\n\tgo.flagTimer = 'F';\n\tgo.flagQueryEcho = 'F';\n\tgo.flagDebugMode = 'F';\n\tgo.userFilter = '';\n\tgo.baseFilter = '';\n\tgo.userOrder = '';\n\tgo.overrideSettings = 'style_name=`{pageLayout.style}`'+'||';\n\tgo.arguments = '';\n\t\n\t\n\tgo.localArguments = '';\n\tgo.linkDefinition = '';\n\tgo.placeHolderValues = '';\n\tgo.parameterBucket = $gvs('{alias}.PARAMETERBUCKET');\n\tgo.argumentValueBucket = $gvs('{alias}.ARGUMENTVALUES');\n\tgo.a5_default_path = '{PageLayout.a5_default_path}';\n\tgo.onLoadCompleteJavascript = 'run:'+callbackId;\n\t\n\t\n\tif(typeof tbiObj != 'undefined' && typeof tbiObj._workingPreviewHost != 'undefined') { \n\t\tgo._workingPreviewHost = tbiObj._workingPreviewHost;\n\t}\n\n\n\tgo.dialog2Div = '{alias}_DIVCONTAINER_0f8c0049_6511_402d_b766_993f66ce5703';\n\tA5.component.runGenericComponent(go);\n\t\n}\n"
+                    "ControlHTML": "\t<div class=\"A5container\">\n\t\t<div id=\"{alias}_DIVCONTAINER_edffdaab_80a4_43ba_9a27_c860e376af9c\"   ><img src=\"css/A5System/Images/wait.gif\" /> Working...</div>\n\t</div><!--breakbegin--><br  style=\"clear:both; \" /><div  style=\"height:.1in; font: 0pt;\"></div><!--breakend-->\n\t\t",
+                    "pageLayoutPartJavascript": "window['action_{alias}_edffdaab_80a4_43ba_9a27_c860e376af9c'] = function() {\n\t\n\t\n\tvar onCompleteCode = '';\n\tvar callbackId = A5.UUID();\n\tif(typeof objx == 'undefined') objx = {};\n\tobjx[callbackId] = Function(onCompleteCode);\n\t\n\n\n\tvar go = new Object();\n\tgo.gridName = 'N_MonitoreoTrabajador_Cobro';\n\tgo.alias = '{alias}_N_MONITORE_01039GMHN';\n\tgo.workingMessage = '<img src=\"css/A5System/Images/wait.gif\" /> Working...';\n\tgo.flagTimer = 'F';\n\tgo.flagQueryEcho = 'F';\n\tgo.flagDebugMode = 'F';\n\tgo.userFilter = '';\n\tgo.baseFilter = '';\n\tgo.userOrder = '';\n\tgo.overrideSettings = 'style_name=`{pageLayout.style}`'+'||';\n\tgo.arguments = '';\n\t\n\t\n\tgo.localArguments = '';\n\tgo.linkDefinition = '';\n\tgo.placeHolderValues = '';\n\tgo.parameterBucket = $gvs('{alias}.PARAMETERBUCKET');\n\tgo.argumentValueBucket = $gvs('{alias}.ARGUMENTVALUES');\n\tgo.a5_default_path = '{PageLayout.a5_default_path}';\n\tgo.onLoadCompleteJavascript = 'run:'+callbackId;\n\t\n\t\n\tif(typeof tbiObj != 'undefined' && typeof tbiObj._workingPreviewHost != 'undefined') { \n\t\tgo._workingPreviewHost = tbiObj._workingPreviewHost;\n\t}\n\n\n\tgo.gridDiv = '{alias}_DIVCONTAINER_edffdaab_80a4_43ba_9a27_c860e376af9c';\n\tA5.component.runGrid(go);\n\t\n}\n"
                 },
                 "hasParentTab": true,
                 "parentTabId": "7c3cbdfa-2cd7-4040-b4b6-7acc0325a023"
             },
             {
-                "controltype": "layout_directive_TabControlEnd",
+                "controlType": "layout_directive_TabControlEnd",
                 "display": "{C=#0+0+127,White}{B=White,Light Blue}{F=+B}{Data=a1c2b434-e159-4f8c-85e5-907fe245ca87}{I:'vertLineCap'} [Tab Control End - TAB_1] ¶",
                 "displayODFlat": "{Data=a1c2b434-e159-4f8c-85e5-907fe245ca87}{I:'$a5_control_tab'} [Tab Control End] ¶",
                 "idInternal": "a1c2b434-e159-4f8c-85e5-907fe245ca87",
+                "parentContainer": -1,
+                "displayOD": "{Data=a1c2b434-e159-4f8c-85e5-907fe245ca87}{I:'$a5_control_tab'} [Tab Control End] ¶",
+                "repeatingSectionParentId": -1,
+                "displayODtree": "{C=#0+0+127,White}{B=White,Light Blue}{F=+B}{Data=a1c2b434-e159-4f8c-85e5-907fe245ca87}{I:'vertLineCap'} [Tab Control End - TAB_1] ¶",
                 "v": {
                     "TabControl": {
                         "BreakType": "After",
@@ -668,78 +675,72 @@
                     },
                     "_displayText": "[Tab Control End - TAB_1]"
                 },
-                "containerStartIndex": 1,
-                "parentContainer": -1,
-                "displayOD": "{Data=a1c2b434-e159-4f8c-85e5-907fe245ca87}{I:'$a5_control_tab'} [Tab Control End] ¶",
-                "repeatingSectionParentId": -1,
-                "displayODtree": "{C=#0+0+127,White}{B=White,Light Blue}{F=+B}{Data=a1c2b434-e159-4f8c-85e5-907fe245ca87}{I:'vertLineCap'} [Tab Control End - TAB_1] ¶",
                 "indentTree": 0,
                 "precalc": {
-                    "controlHTML": "</div><!--Tab Panes End {grid.componentName}.TAB_1-->\n</div><!--Tab End {grid.componentName}.TAB_1--><!--breakbegin--><br  style=\"clear:both; \" /><div  style=\"height:.1in; font: 0pt;\"></div><!--breakend-->"
-                }
+                    "ControlHTML": "</div><!--Tab Panes End {grid.componentName}.TAB_1-->\n</div><!--Tab End {grid.componentName}.TAB_1--><!--breakbegin--><br  style=\"clear:both; \" /><div  style=\"height:.1in; font: 0pt;\"></div><!--breakend-->"
+                },
+                "containerStartIndex": 1
             }
         ],
-        "flagShowDeleteConfirmation": true,
-        "useCompactTheme": false,
-        "showPulseEffect": true,
-        "style_type": "Alpha Five",
-        "resolveAbstractClassNames": true,
-        "overrideStyleName": "Default",
-        "FontSize": "Medium",
-        "linkedResources": "",
-        "clientSideDateFormat": "MM/dd/yyyy",
-        "activeLanguage": "<Default>",
-        "A5ContainerClassPadding": "4px",
-        "masterTemplate": "",
-        "saveFileType": "Formatted JSON",
-        "pageTitle": "PageLayout",
-        "selected": "0f8c0049-6511-402d-b766-993f66ce5703\n",
-        "designPaneIndex": 1,
-        "masterPaneC": "controls",
-        "__WPhostName": "Chrome",
-        "__LPhostName": "Internet Explorer",
-        "clientSideEventIndexC": "",
-        "embeddedMode": false,
+        "builderType": "PageLayout",
+        "guid": "d05967b1-1ff7-435f-88be-09e9c95366b0",
+        "componentName": "monitoreo",
+        "componentFilename": "C:\\4-Trabajos\\TFN\\TFN\\TFN.WebProjects\\TFN.WebProject\\monitoreo.a5wcmp",
         "_style_versionNumber": 2,
         "_style_hasSassOverrides": false,
         "_style_hasCSSTweaks": false,
-        "_style_hassubthemeTweaks": false,
         "_style_hasCSS_or_subtheme_tweaks": false,
-        "_style_isInherited": false,
-        "layouttype": "ControlWidth",
+        "useCompactTheme": false,
+        "SVGLinkedFiles": "",
+        "saveFileType": "Formatted JSON",
+        "selected": "edffdaab-80a4-43ba-9a27-c860e376af9c\n",
+        "designPaneIndex": 1,
+        "masterPaneC": "controls",
+        "clientSideEventIndexC": "",
+        "__WPhostName": "Chrome",
+        "embeddedMode": false,
+        "_style_hassubthemeTweaks": false,
         "repeatingSectionsAreDirty": true,
-        "_flagDoTreeview": true,
-        "_move": {
-            "index": 3,
-            "targetIndex": 2,
-            "count": 2
-        },
         "flagDropdownCascadingChanged": false,
-        "_flagForceRecalcChildren": true,
         "toolBox_value": "pageLayoutComponentButton_GridComponent",
         "addinBuildNumber": "5436",
         "addinBuildNumberHighestUsed": "5436",
         "alphaFiveBuildNumber": "12",
         "openedFromTemplate": false,
-        "builderVersionNumber": 1,
         "builtWithVersionNumer": 1,
-        "_buildCount": "3",
-        "cachecomponent": false,
-        "_treeErrors": "",
+        "_buildCount": "5",
         "securityEnabled": false,
         "showHideIsUsed": false,
         "precalc": {
             "pageLayout": {
-                "HTML": "<div class=\"A5container [theme:tab.Top.className|{grid.style}TabT]\" id=\"{pageLayout.alias}.TAB_1\"><!--Tab Start {pageLayout.alias}.TAB_1-->\n\t<div id=\"{pageLayout.alias}.TAB_1.TABBAND\" class=\"[theme:tab.Top.tabsClassName|{grid.style}TabTBand]\"><!--Tab Buttons Start {pageLayout.alias}.TAB_1-->\n\t\t<a id=\"{pageLayout.alias}.TAB_1.0.TAB\" class=\"\" href=\"#\">Monitoreo Salud</a>\n\t\t<a id=\"{pageLayout.alias}.TAB_1.1.TAB\" class=\"\" href=\"#\"> Monitoreo Gastos</a>\n\t\t<a id=\"{pageLayout.alias}.TAB_1.2.TAB\" class=\"\" href=\"#\">Certificado de Cuarentena</a>\n\t<br style=\"clear: both;\" />\n\t</div><!--Tab Buttons Start {pageLayout.alias}.TAB_1-->\n\t<div id=\"{pageLayout.alias}.TAB_1.PANES\" class=\"[theme:tab.Top.panesClassName|{grid.style}TabTPanes]\"><!--Tab Panes Start {pageLayout.alias}.TAB_1-->\n<div id=\"{pageLayout.alias}.TAB_1.0.PANE\"><!--TabPaneBegin {pageLayout.alias}.TAB_1.0-->\n\t<div class=\"A5container\">\n\t\t<div id=\"{alias}_DIVCONTAINER_07d326d3_7c7e_4f4a_a4fe_bc1d8025b58a\"   ><img src=\"css/A5System/Images/wait.gif\" /> Working...</div>\n\t</div><div class=\"A5floatClear\"></div>\n</div><!--end DIV for tab pane-->\n<div id=\"{pageLayout.alias}.TAB_1.1.PANE\"><!--TabPaneBegin {pageLayout.alias}.TAB_1.1-->\n\t<div class=\"A5container\">\n\t\t<div id=\"{alias}_DIVCONTAINER_fcfed2bd_2936_4acf_879d_9c6df63fb7c1\"   ><img src=\"css/A5System/Images/wait.gif\" /> Working...</div>\n\t</div><div class=\"A5floatClear\"></div>\n</div><!--end DIV for tab pane-->\n<div id=\"{pageLayout.alias}.TAB_1.2.PANE\"><!--TabPaneBegin {pageLayout.alias}.TAB_1.2-->\n\t<div class=\"A5container\">\n\t\t<div id=\"{alias}_DIVCONTAINER_0f8c0049_6511_402d_b766_993f66ce5703\"   ><img src=\"css/A5System/Images/wait.gif\" /> Working...</div>\n\t</div><div class=\"A5floatClear\"></div>\n</div><!--end DIV for tab pane-->\n</div><!--Tab Panes End {pageLayout.alias}.TAB_1-->\n</div><!--Tab End {pageLayout.alias}.TAB_1--><!--breakbegin--><br  style=\"clear:both; \" /><div  style=\"height:.1in; font: 0pt;\"></div><!--breakend-->",
-                "JS": "window['{pageLayout.alias}.TAB_1Obj'] = new A5.Tab('{pageLayout.alias}.TAB_1',[\n{ \thtml: 'Monitoreo Salud', \tvalue: '1', \tonDynamicLoadDelay: 0, \tshow: true, \tdisabled: false, \tonDynamicLoad: function() {action_{alias}_07d326d3_7c7e_4f4a_a4fe_bc1d8025b58a();} }, \n{ \thtml: ' Monitoreo Gastos', \tvalue: '2', \tonDynamicLoadDelay: 0, \tshow: true, \tdisabled: false, \tonDynamicLoad: function() {action_{alias}_fcfed2bd_2936_4acf_879d_9c6df63fb7c1();} }, \n{ \thtml: 'Certificado de Cuarentena', \tvalue: '3', \tonDynamicLoadDelay: 0, \tshow: true, \tdisabled: false, \tonDynamicLoad: function() {action_{alias}_0f8c0049_6511_402d_b766_993f66ce5703();} }\n],\n\t{\n\ttheme: '{grid.style}:Top'\n}\n);\n\twindow['{pageLayout.alias}.TAB_1Obj'].select('1');"
+                "HTML": "<div class=\"A5container [theme:tab.Top.className|{grid.style}TabT]\" id=\"{pageLayout.alias}.TAB_1\"><!--Tab Start {pageLayout.alias}.TAB_1-->\n\t<div id=\"{pageLayout.alias}.TAB_1.TABBAND\" class=\"[theme:tab.Top.tabsClassName|{grid.style}TabTBand]\"><!--Tab Buttons Start {pageLayout.alias}.TAB_1-->\n\t\t<a id=\"{pageLayout.alias}.TAB_1.0.TAB\" class=\"\" href=\"#\">Monitoreo Salud</a>\n\t\t<a id=\"{pageLayout.alias}.TAB_1.1.TAB\" class=\"\" href=\"#\">Cierre Cuarentena</a>\n\t\t<a id=\"{pageLayout.alias}.TAB_1.2.TAB\" class=\"\" href=\"#\">Cuarentenas</a>\n\t<br style=\"clear: both;\" />\n\t</div><!--Tab Buttons Start {pageLayout.alias}.TAB_1-->\n\t<div id=\"{pageLayout.alias}.TAB_1.PANES\" class=\"[theme:tab.Top.panesClassName|{grid.style}TabTPanes]\"><!--Tab Panes Start {pageLayout.alias}.TAB_1-->\n<div id=\"{pageLayout.alias}.TAB_1.0.PANE\"><!--TabPaneBegin {pageLayout.alias}.TAB_1.0-->\n\t<div class=\"A5container\">\n\t\t<div id=\"{alias}_DIVCONTAINER_07d326d3_7c7e_4f4a_a4fe_bc1d8025b58a\"   ><img src=\"css/A5System/Images/wait.gif\" /> Working...</div>\n\t</div><div class=\"A5floatClear\"></div>\n</div><!--end DIV for tab pane-->\n<div id=\"{pageLayout.alias}.TAB_1.1.PANE\"><!--TabPaneBegin {pageLayout.alias}.TAB_1.1-->\n\t<div class=\"A5container\">\n\t\t<div id=\"{alias}_DIVCONTAINER_fcfed2bd_2936_4acf_879d_9c6df63fb7c1\"   ><img src=\"css/A5System/Images/wait.gif\" /> Working...</div>\n\t</div><div class=\"A5floatClear\"></div>\n</div><!--end DIV for tab pane-->\n<div id=\"{pageLayout.alias}.TAB_1.2.PANE\"><!--TabPaneBegin {pageLayout.alias}.TAB_1.2-->\n\t<div class=\"A5container\">\n\t\t<div id=\"{alias}_DIVCONTAINER_edffdaab_80a4_43ba_9a27_c860e376af9c\"   ><img src=\"css/A5System/Images/wait.gif\" /> Working...</div>\n\t</div><div class=\"A5floatClear\"></div>\n</div><!--end DIV for tab pane-->\n</div><!--Tab Panes End {pageLayout.alias}.TAB_1-->\n</div><!--Tab End {pageLayout.alias}.TAB_1--><!--breakbegin--><br  style=\"clear:both; \" /><div  style=\"height:.1in; font: 0pt;\"></div><!--breakend-->",
+                "JS": "window['{pageLayout.alias}.TAB_1Obj'] = new A5.Tab('{pageLayout.alias}.TAB_1',[\n{ \thtml: 'Monitoreo Salud', \tvalue: '1', \tonDynamicLoadDelay: 0, \tshow: true, \tdisabled: false, \tonDynamicLoad: function() {action_{alias}_07d326d3_7c7e_4f4a_a4fe_bc1d8025b58a();} }, \n{ \thtml: 'Cierre Cuarentena', \tvalue: '2', \tonDynamicLoadDelay: 0, \tshow: true, \tdisabled: false, \tonDynamicLoad: function() {action_{alias}_fcfed2bd_2936_4acf_879d_9c6df63fb7c1();} }, \n{ \thtml: 'Cuarentenas', \tvalue: '3', \tonDynamicLoadDelay: 0, \tshow: true, \tdisabled: false, \tonDynamicLoad: function() {action_{alias}_edffdaab_80a4_43ba_9a27_c860e376af9c();} }\n],\n\t{\n\ttheme: '{grid.style}:Top'\n}\n);\n\twindow['{pageLayout.alias}.TAB_1Obj'].select('1');"
             },
             "PageLayoutMasterTemplate": "<div id=\"{alias}.PAGELAYOUT\">\n\t<input type=\"hidden\" value=\"{parameterBucket}\" id=\"{alias}.PARAMETERBUCKET\"/>\n\t<input type=\"hidden\" value=\"{savedArgValues}\" id=\"{alias}.ARGUMENTVALUES\"/>\n\n\t{pageLayout.contentsHTML}\n</div>\n",
             "PageSetupJavascript": ""
         },
         "componentType": "PageLayout",
         "version": 1,
-        "A5SaveTimeStamp": "20200721121335854",
+        "linkedResources": "",
+        "A5SaveTimeStamp": "20200723001041854",
+        "_flagDoTreeview": true,
         "style_color_palette": "",
-        "SVGLinkedFiles": ""
+        "showPulseEffect": true,
+        "flagShowDeleteConfirmation": true,
+        "minimumBuildNumber": "",
+        "flagOptimizedUXTree": false,
+        "flagReanalyzeContainers": false,
+        "_display": "",
+        "__LPhostName": "Internet Explorer",
+        "_style_isInherited": false,
+        "cachecomponent": false,
+        "_treeErrors": "",
+        "_move": {
+            "index": 3,
+            "targetIndex": 2,
+            "count": 2
+        },
+        "_flagForceRecalcChildren": true,
+        "masterTemplate": ""
     }
 }
