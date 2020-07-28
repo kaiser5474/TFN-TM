@@ -1,4 +1,4 @@
-A5SaveTimeStamp:20200414011815818
+A5SaveTimeStamp:20200727094302836
 css:<Project>
 subComponent:Contactos_Detalles
 subComponent:Contactos_Observaciones
@@ -6,6 +6,7 @@ subComponent:Contactos_Direcciones
 subComponent:Contactos_Telefonos
 subComponent:Contactos_Faxes
 subComponent:Contactos_Correos
+subComponent:N_Contactos_Salud
 subComponent:Contactos_Documentos
 subComponent:EditarDatosCont
 copyfile:{C:\4-Trabajos\TFN\TFN\TFN.WebProjects\TFN.WebProject\Reporte_ListaContactos2.a5rpt}

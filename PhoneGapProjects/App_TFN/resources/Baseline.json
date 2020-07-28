@@ -1,0 +1,1342 @@
+{
+	"files": [
+	{
+		"crc": 4294945677,
+		"name": "\\a5images\\boxsize8x8fillUp5FDiagonalWhite3A232552C2392C239.png"
+	},
+	{
+		"crc": 4294940004,
+		"name": "\\a5images\\logo.png"
+	},
+	{
+		"crc": 4294923674,
+		"name": "\\a5images\\windowbuttonclose.png"
+	},
+	{
+		"crc": 4294927921,
+		"name": "\\css\\A5System\\default\\tree\\b.png"
+	},
+	{
+		"crc": 4294909348,
+		"name": "\\css\\A5System\\default\\tree\\bc.png"
+	},
+	{
+		"crc": 4294909303,
+		"name": "\\css\\A5System\\default\\tree\\bcf.png"
+	},
+	{
+		"crc": 4294914058,
+		"name": "\\css\\A5System\\default\\tree\\bcl.png"
+	},
+	{
+		"crc": 4294938159,
+		"name": "\\css\\A5System\\default\\tree\\bo.png"
+	},
+	{
+		"crc": 4294957071,
+		"name": "\\css\\A5System\\default\\tree\\bof.png"
+	},
+	{
+		"crc": 4294941259,
+		"name": "\\css\\A5System\\default\\tree\\bol.png"
+	},
+	{
+		"crc": 4294929256,
+		"name": "\\css\\A5System\\default\\tree\\l.png"
+	},
+	{
+		"crc": 4294916953,
+		"name": "\\css\\A5System\\default\\tree\\lf.png"
+	},
+	{
+		"crc": 4294903220,
+		"name": "\\css\\A5System\\default\\tree\\ll.png"
+	},
+	{
+		"crc": 4294919144,
+		"name": "\\css\\A5System\\default\\tree\\n.png"
+	},
+	{
+		"crc": 4294908896,
+		"name": "\\css\\A5System\\default\\theme.css"
+	},
+	{
+		"crc": 4294909217,
+		"name": "\\css\\A5System\\default\\theme.js"
+	},
+	{
+		"crc": 4294922985,
+		"name": "\\css\\A5System\\GenericStyles\\Default\\AccordionTitle.png"
+	},
+	{
+		"crc": 4294936083,
+		"name": "\\css\\A5System\\GenericStyles\\Default\\AccordionTitleHover.png"
+	},
+	{
+		"crc": 4294950106,
+		"name": "\\css\\A5System\\GenericStyles\\Default\\ListHighlight.png"
+	},
+	{
+		"crc": 4294954835,
+		"name": "\\css\\A5System\\GenericStyles\\Default\\ListSelected.png"
+	},
+	{
+		"crc": 4294954441,
+		"name": "\\css\\A5System\\GenericStyles\\Default\\style.css"
+	},
+	{
+		"crc": 4294956957,
+		"name": "\\css\\A5System\\GenericStyles\\Default\\TabbandBackground.png"
+	},
+	{
+		"crc": 4294965882,
+		"name": "\\css\\A5System\\GenericStyles\\Default\\TabBottomSelected.png"
+	},
+	{
+		"crc": 4294944905,
+		"name": "\\css\\A5System\\GenericStyles\\Default\\TabLeftSelected.png"
+	},
+	{
+		"crc": 4294925567,
+		"name": "\\css\\A5System\\GenericStyles\\Default\\TabRightSelected.png"
+	},
+	{
+		"crc": 4294960819,
+		"name": "\\css\\A5System\\GenericStyles\\Default\\TabTopSelected.png"
+	},
+	{
+		"crc": 4294956715,
+		"name": "\\css\\A5System\\GenericStyles\\Default\\WindowButtonGrad.png"
+	},
+	{
+		"crc": 4294913413,
+		"name": "\\css\\A5System\\GenericStyles\\Default\\WindowButtonsGrad.png"
+	},
+	{
+		"crc": 4294910645,
+		"name": "\\css\\A5System\\GenericStyles\\Default\\WindowMainGrad.png"
+	},
+	{
+		"crc": 4294945047,
+		"name": "\\css\\A5System\\GenericStyles\\Default\\WindowTrans.png"
+	},
+	{
+		"crc": 4294958673,
+		"name": "\\css\\A5System\\GenericStyles\\Default\\WindowTransHighlight.png"
+	},
+	{
+		"crc": 4294951311,
+		"name": "\\css\\A5System\\GenericStyles\\Default\\WindowTransHighlightBottom.png"
+	},
+	{
+		"crc": 4294935742,
+		"name": "\\css\\A5System\\Images\\designModeDropOff.png"
+	},
+	{
+		"crc": 4294915462,
+		"name": "\\css\\A5System\\Images\\designModeDropOn.png"
+	},
+	{
+		"crc": 4294935632,
+		"name": "\\css\\A5System\\Images\\designModeIcons.png"
+	},
+	{
+		"crc": 4294957364,
+		"name": "\\css\\A5System\\Images\\designModeIconsHover.png"
+	},
+	{
+		"crc": 4294921354,
+		"name": "\\css\\A5System\\Images\\designModeTip.png"
+	},
+	{
+		"crc": 4294933586,
+		"name": "\\css\\A5System\\Images\\menuCheck.png"
+	},
+	{
+		"crc": 4294909206,
+		"name": "\\css\\A5System\\Images\\menuRadio.png"
+	},
+	{
+		"crc": 4294953499,
+		"name": "\\css\\A5System\\Images\\resizeThumb.gif"
+	},
+	{
+		"crc": 4294927960,
+		"name": "\\css\\A5System\\Images\\spinner1.gif"
+	},
+	{
+		"crc": 4294936000,
+		"name": "\\css\\A5System\\Images\\spinner2.gif"
+	},
+	{
+		"crc": 4294911799,
+		"name": "\\css\\A5System\\Images\\tabclose.png"
+	},
+	{
+		"crc": 4294909818,
+		"name": "\\css\\A5System\\Images\\tabcloseHover.png"
+	},
+	{
+		"crc": 4294933880,
+		"name": "\\css\\A5System\\Images\\wait.gif"
+	},
+	{
+		"crc": 4294903606,
+		"name": "\\css\\A5System\\reportStyles\\Minimal.css"
+	},
+	{
+		"crc": 4294950924,
+		"name": "\\css\\A5System\\reportStyles\\RoundedBandedBlue.css"
+	},
+	{
+		"crc": 4294940112,
+		"name": "\\css\\A5System\\reportStyles\\RoundedBandedGray.css"
+	},
+	{
+		"crc": 4294938419,
+		"name": "\\css\\A5System\\reportStyles\\RoundedBandedOlive.css"
+	},
+	{
+		"crc": 4294934040,
+		"name": "\\css\\A5System\\reportStyles\\RoundedBandedTan.css"
+	},
+	{
+		"crc": 4294964361,
+		"name": "\\css\\A5System\\reportStyles\\RoundedBlue.css"
+	},
+	{
+		"crc": 4294933081,
+		"name": "\\css\\A5System\\reportStyles\\RoundedGray.css"
+	},
+	{
+		"crc": 4294912374,
+		"name": "\\css\\A5System\\reportStyles\\RoundedOlive.css"
+	},
+	{
+		"crc": 4294927566,
+		"name": "\\css\\A5System\\reportStyles\\RoundedTan.css"
+	},
+	{
+		"crc": 4294926328,
+		"name": "\\css\\A5System\\reportStyles\\SquareBanded.css"
+	},
+	{
+		"crc": 4294926328,
+		"name": "\\css\\A5System\\reportStyles\\SquareBandedBlue.css"
+	},
+	{
+		"crc": 4294905782,
+		"name": "\\css\\A5System\\reportStyles\\SquareBandedGray.css"
+	},
+	{
+		"crc": 4294926611,
+		"name": "\\css\\A5System\\reportStyles\\SquareBandedOlive.css"
+	},
+	{
+		"crc": 4294941724,
+		"name": "\\css\\A5System\\reportStyles\\SquareBandedTan.css"
+	},
+	{
+		"crc": 4294956534,
+		"name": "\\css\\A5System\\reportStyles\\SquareBlue.css"
+	},
+	{
+		"crc": 4294966834,
+		"name": "\\css\\A5System\\reportStyles\\SquareGray.css"
+	},
+	{
+		"crc": 4294912486,
+		"name": "\\css\\A5System\\reportStyles\\SquareOlive.css"
+	},
+	{
+		"crc": 4294958704,
+		"name": "\\css\\A5System\\reportStyles\\SquareTan.css"
+	},
+	{
+		"crc": 4294948370,
+		"name": "\\css\\A5System\\Vista\\tree\\bc.png"
+	},
+	{
+		"crc": 4294905713,
+		"name": "\\css\\A5System\\Vista\\tree\\bch.png"
+	},
+	{
+		"crc": 4294958833,
+		"name": "\\css\\A5System\\Vista\\tree\\bo.png"
+	},
+	{
+		"crc": 4294961763,
+		"name": "\\css\\A5System\\Vista\\tree\\boh.png"
+	},
+	{
+		"crc": 4294965591,
+		"name": "\\css\\A5System\\Vista\\tree\\n.png"
+	},
+	{
+		"crc": 4294952751,
+		"name": "\\css\\A5System\\Vista\\theme.css"
+	},
+	{
+		"crc": 4294929490,
+		"name": "\\css\\A5System\\Vista\\theme.js"
+	},
+	{
+		"crc": 4294948287,
+		"name": "\\css\\GrBlue\\ButtonDDArrow.png"
+	},
+	{
+		"crc": 4294952344,
+		"name": "\\css\\GrBlue\\Collapse.png"
+	},
+	{
+		"crc": 4294930082,
+		"name": "\\css\\GrBlue\\DDWinClose.png"
+	},
+	{
+		"crc": 4294955132,
+		"name": "\\css\\GrBlue\\DDWinCloseHover.png"
+	},
+	{
+		"crc": 4294903184,
+		"name": "\\css\\GrBlue\\DDWinClosePressed.png"
+	},
+	{
+		"crc": 4294960599,
+		"name": "\\css\\GrBlue\\DDWinResizeThumb.png"
+	},
+	{
+		"crc": 4294955586,
+		"name": "\\css\\GrBlue\\DialogRSRowAdd.png"
+	},
+	{
+		"crc": 4294922560,
+		"name": "\\css\\GrBlue\\DialogRSRowDelete.png"
+	},
+	{
+		"crc": 4294949210,
+		"name": "\\css\\GrBlue\\DialogRSRowError.png"
+	},
+	{
+		"crc": 4294905770,
+		"name": "\\css\\GrBlue\\DialogRSRowSelected.png"
+	},
+	{
+		"crc": 4294917018,
+		"name": "\\css\\GrBlue\\DPNext.png"
+	},
+	{
+		"crc": 4294913981,
+		"name": "\\css\\GrBlue\\DPPrev.png"
+	},
+	{
+		"crc": 4294935617,
+		"name": "\\css\\GrBlue\\EditDDArrow.png"
+	},
+	{
+		"crc": 4294956451,
+		"name": "\\css\\GrBlue\\EditDP.png"
+	},
+	{
+		"crc": 4294920938,
+		"name": "\\css\\GrBlue\\EditDTP.png"
+	},
+	{
+		"crc": 4294949210,
+		"name": "\\css\\GrBlue\\EditError.png"
+	},
+	{
+		"crc": 4294928260,
+		"name": "\\css\\GrBlue\\EditHelp.png"
+	},
+	{
+		"crc": 4294936362,
+		"name": "\\css\\GrBlue\\EditLookup.png"
+	},
+	{
+		"crc": 4294964161,
+		"name": "\\css\\GrBlue\\EditTP.png"
+	},
+	{
+		"crc": 4294943812,
+		"name": "\\css\\GrBlue\\Expand.png"
+	},
+	{
+		"crc": 4294918991,
+		"name": "\\css\\GrBlue\\GridPageFirst.png"
+	},
+	{
+		"crc": 4294942734,
+		"name": "\\css\\GrBlue\\GridPageFirstDisabled.png"
+	},
+	{
+		"crc": 4294940259,
+		"name": "\\css\\GrBlue\\GridPageLast.png"
+	},
+	{
+		"crc": 4294953105,
+		"name": "\\css\\GrBlue\\GridPageLastDisabled.png"
+	},
+	{
+		"crc": 4294952589,
+		"name": "\\css\\GrBlue\\GridPageNext.png"
+	},
+	{
+		"crc": 4294931410,
+		"name": "\\css\\GrBlue\\GridPageNextDisabled.png"
+	},
+	{
+		"crc": 4294964778,
+		"name": "\\css\\GrBlue\\GridPagePrev.png"
+	},
+	{
+		"crc": 4294953451,
+		"name": "\\css\\GrBlue\\GridPagePrevDisabled.png"
+	},
+	{
+		"crc": 4294909899,
+		"name": "\\css\\GrBlue\\GridQBEMenu.png"
+	},
+	{
+		"crc": 4294909899,
+		"name": "\\css\\GrBlue\\GridQBEToggle.png"
+	},
+	{
+		"crc": 4294907560,
+		"name": "\\css\\GrBlue\\GridRecordCancelEdits.png"
+	},
+	{
+		"crc": 4294925792,
+		"name": "\\css\\GrBlue\\GridRecordCancelEditsDisabled.png"
+	},
+	{
+		"crc": 4294949508,
+		"name": "\\css\\GrBlue\\GridRecordClose.png"
+	},
+	{
+		"crc": 4294922560,
+		"name": "\\css\\GrBlue\\GridRecordDelete.png"
+	},
+	{
+		"crc": 4294925753,
+		"name": "\\css\\GrBlue\\GridRecordDeleteDisabled.png"
+	},
+	{
+		"crc": 4294930238,
+		"name": "\\css\\GrBlue\\GridRecordFirst.png"
+	},
+	{
+		"crc": 4294931967,
+		"name": "\\css\\GrBlue\\GridRecordFirstDisabled.png"
+	},
+	{
+		"crc": 4294932075,
+		"name": "\\css\\GrBlue\\GridRecordLast.png"
+	},
+	{
+		"crc": 4294940085,
+		"name": "\\css\\GrBlue\\GridRecordLastDisabled.png"
+	},
+	{
+		"crc": 4294907661,
+		"name": "\\css\\GrBlue\\GridRecordNew.png"
+	},
+	{
+		"crc": 4294929636,
+		"name": "\\css\\GrBlue\\GridRecordNewCancelEdits.png"
+	},
+	{
+		"crc": 4294938548,
+		"name": "\\css\\GrBlue\\GridRecordNext.png"
+	},
+	{
+		"crc": 4294902711,
+		"name": "\\css\\GrBlue\\GridRecordNextDisabled.png"
+	},
+	{
+		"crc": 4294913981,
+		"name": "\\css\\GrBlue\\GridRecordPrev.png"
+	},
+	{
+		"crc": 4294925743,
+		"name": "\\css\\GrBlue\\GridRecordPrevDisabled.png"
+	},
+	{
+		"crc": 4294923751,
+		"name": "\\css\\GrBlue\\GridRecordSave.png"
+	},
+	{
+		"crc": 4294941512,
+		"name": "\\css\\GrBlue\\GridRecordSaveAndEnter.png"
+	},
+	{
+		"crc": 4294921811,
+		"name": "\\css\\GrBlue\\GridRecordSaveAndEnterDisabled.png"
+	},
+	{
+		"crc": 4294915976,
+		"name": "\\css\\GrBlue\\GridRecordSaveDisabled.png"
+	},
+	{
+		"crc": 4294943337,
+		"name": "\\css\\GrBlue\\GridRecordSwitchToEdit.png"
+	},
+	{
+		"crc": 4294916012,
+		"name": "\\css\\GrBlue\\GridRecordSwitchToView.png"
+	},
+	{
+		"crc": 4294936895,
+		"name": "\\css\\GrBlue\\GridRow.png"
+	},
+	{
+		"crc": 4294916012,
+		"name": "\\css\\GrBlue\\GridRowCancelEdits.png"
+	},
+	{
+		"crc": 4294952344,
+		"name": "\\css\\GrBlue\\GridRowCollapse.png"
+	},
+	{
+		"crc": 4294922560,
+		"name": "\\css\\GrBlue\\GridRowDelete.png"
+	},
+	{
+		"crc": 4294948716,
+		"name": "\\css\\GrBlue\\GridRowEdit.png"
+	},
+	{
+		"crc": 4294945749,
+		"name": "\\css\\GrBlue\\GridRowEditDisabled.png"
+	},
+	{
+		"crc": 4294949210,
+		"name": "\\css\\GrBlue\\GridRowError.png"
+	},
+	{
+		"crc": 4294962892,
+		"name": "\\css\\GrBlue\\GridRowExpand.png"
+	},
+	{
+		"crc": 4294902628,
+		"name": "\\css\\GrBlue\\GridRowNew.png"
+	},
+	{
+		"crc": 4294933646,
+		"name": "\\css\\GrBlue\\GridRowNewSelected.png"
+	},
+	{
+		"crc": 4294923751,
+		"name": "\\css\\GrBlue\\GridRowSave.png"
+	},
+	{
+		"crc": 4294915976,
+		"name": "\\css\\GrBlue\\GridRowSaveDisabled.png"
+	},
+	{
+		"crc": 4294905770,
+		"name": "\\css\\GrBlue\\GridRowSelected.png"
+	},
+	{
+		"crc": 4294906301,
+		"name": "\\css\\GrBlue\\GridRowUndoEdits.png"
+	},
+	{
+		"crc": 4294923340,
+		"name": "\\css\\GrBlue\\GridRowUndoEditsDisabled.png"
+	},
+	{
+		"crc": 4294903479,
+		"name": "\\css\\GrBlue\\GridSearch.png"
+	},
+	{
+		"crc": 4294917307,
+		"name": "\\css\\GrBlue\\GridSearchClear.png"
+	},
+	{
+		"crc": 4294964083,
+		"name": "\\css\\GrBlue\\GridSearchLoad.png"
+	},
+	{
+		"crc": 4294923751,
+		"name": "\\css\\GrBlue\\GridSearchSave.png"
+	},
+	{
+		"crc": 4294909899,
+		"name": "\\css\\GrBlue\\GridSearchToggle.png"
+	},
+	{
+		"crc": 4294903671,
+		"name": "\\css\\GrBlue\\GridSortAsc.PNG"
+	},
+	{
+		"crc": 4294940489,
+		"name": "\\css\\GrBlue\\GridSortAscDisabled.png"
+	},
+	{
+		"crc": 4294912641,
+		"name": "\\css\\GrBlue\\GridSortDesc.PNG"
+	},
+	{
+		"crc": 4294917567,
+		"name": "\\css\\GrBlue\\GridSortDescDisabled.png"
+	},
+	{
+		"crc": 4294938548,
+		"name": "\\css\\GrBlue\\ListNav.png"
+	},
+	{
+		"crc": 4294962621,
+		"name": "\\css\\GrBlue\\ListNavSubtle.png"
+	},
+	{
+		"crc": 4294951633,
+		"name": "\\css\\GrBlue\\MenubarHCascade.png"
+	},
+	{
+		"crc": 4294948856,
+		"name": "\\css\\GrBlue\\MenubarHCascadeDisabled.png"
+	},
+	{
+		"crc": 4294930244,
+		"name": "\\css\\GrBlue\\MenubarHCascadeHover.png"
+	},
+	{
+		"crc": 4294930244,
+		"name": "\\css\\GrBlue\\MenubarHCascadePressed.png"
+	},
+	{
+		"crc": 4294937654,
+		"name": "\\css\\GrBlue\\MenubarVCascade.png"
+	},
+	{
+		"crc": 4294917099,
+		"name": "\\css\\GrBlue\\MenubarVCascadeDisabled.png"
+	},
+	{
+		"crc": 4294945087,
+		"name": "\\css\\GrBlue\\MenubarVCascadeHover.png"
+	},
+	{
+		"crc": 4294945087,
+		"name": "\\css\\GrBlue\\MenubarVCascadePressed.png"
+	},
+	{
+		"crc": 4294942527,
+		"name": "\\css\\GrBlue\\MenuCascade.png"
+	},
+	{
+		"crc": 4294954229,
+		"name": "\\css\\GrBlue\\MenuCascadeDisabled.png"
+	},
+	{
+		"crc": 4294931657,
+		"name": "\\css\\GrBlue\\MenuCascadeHover.png"
+	},
+	{
+		"crc": 4294930424,
+		"name": "\\css\\GrBlue\\MenuCheck.png"
+	},
+	{
+		"crc": 4294945020,
+		"name": "\\css\\GrBlue\\MenuIconColBack.png"
+	},
+	{
+		"crc": 4294958113,
+		"name": "\\css\\GrBlue\\MenuRadio.png"
+	},
+	{
+		"crc": 4294910561,
+		"name": "\\css\\GrBlue\\MessageError.png"
+	},
+	{
+		"crc": 4294909516,
+		"name": "\\css\\GrBlue\\MessageInfo.png"
+	},
+	{
+		"crc": 4294958607,
+		"name": "\\css\\GrBlue\\MessageQuestion.png"
+	},
+	{
+		"crc": 4294961161,
+		"name": "\\css\\GrBlue\\MessageWarning.png"
+	},
+	{
+		"crc": 4294942209,
+		"name": "\\css\\GrBlue\\PanelLeftCollapse.png"
+	},
+	{
+		"crc": 4294932015,
+		"name": "\\css\\GrBlue\\PanelLeftExpand.png"
+	},
+	{
+		"crc": 4294932015,
+		"name": "\\css\\GrBlue\\PanelRightCollapse.png"
+	},
+	{
+		"crc": 4294942209,
+		"name": "\\css\\GrBlue\\PanelRightExpand.png"
+	},
+	{
+		"crc": 4294933567,
+		"name": "\\css\\GrBlue\\spinListShadow.png"
+	},
+	{
+		"crc": 4294961970,
+		"name": "\\css\\GrBlue\\style.css"
+	},
+	{
+		"crc": 4294923703,
+		"name": "\\css\\GrBlue\\style.dat"
+	},
+	{
+		"crc": 4294965951,
+		"name": "\\css\\GrBlue\\style.js"
+	},
+	{
+		"crc": 4294913196,
+		"name": "\\css\\GrBlue\\TabbandClose.png"
+	},
+	{
+		"crc": 4294917942,
+		"name": "\\css\\GrBlue\\TabbandCloseHover.png"
+	},
+	{
+		"crc": 4294938548,
+		"name": "\\css\\GrBlue\\TabbandNext.png"
+	},
+	{
+		"crc": 4294927359,
+		"name": "\\css\\GrBlue\\TabbandNextDisabled.png"
+	},
+	{
+		"crc": 4294913981,
+		"name": "\\css\\GrBlue\\TabbandPrev.png"
+	},
+	{
+		"crc": 4294925743,
+		"name": "\\css\\GrBlue\\TabbandPrevDisabled.png"
+	},
+	{
+		"crc": 4294939646,
+		"name": "\\css\\GrBlue\\TPEditDDArrow.png"
+	},
+	{
+		"crc": 4294940533,
+		"name": "\\css\\GrBlue\\TreeBranchCollapse.PNG"
+	},
+	{
+		"crc": 4294906541,
+		"name": "\\css\\GrBlue\\TreeBranchCollapseHover.png"
+	},
+	{
+		"crc": 4294936237,
+		"name": "\\css\\GrBlue\\TreeBranchExpand.PNG"
+	},
+	{
+		"crc": 4294955740,
+		"name": "\\css\\GrBlue\\TreeBranchExpandHover.png"
+	},
+	{
+		"crc": 4294932935,
+		"name": "\\css\\GrBlue\\TreeNull.PNG"
+	},
+	{
+		"crc": 4294933880,
+		"name": "\\css\\GrBlue\\wait.gif"
+	},
+	{
+		"crc": 4294930082,
+		"name": "\\css\\GrBlue\\WinClose.png"
+	},
+	{
+		"crc": 4294955132,
+		"name": "\\css\\GrBlue\\WinCloseHover.png"
+	},
+	{
+		"crc": 4294917847,
+		"name": "\\css\\GrBlue\\WinClosePressed.png"
+	},
+	{
+		"crc": 4294946804,
+		"name": "\\css\\GrBlue\\WinResizeThumb.png"
+	},
+	{
+		"crc": 4294948503,
+		"name": "\\css\\MobBlue\\ButtonDDArrow.png"
+	},
+	{
+		"crc": 4294927220,
+		"name": "\\css\\MobBlue\\Collapse.png"
+	},
+	{
+		"crc": 4294915562,
+		"name": "\\css\\MobBlue\\DDWinClose.png"
+	},
+	{
+		"crc": 4294905392,
+		"name": "\\css\\MobBlue\\DDWinCloseHover.png"
+	},
+	{
+		"crc": 4294929259,
+		"name": "\\css\\MobBlue\\DDWinClosePressed.png"
+	},
+	{
+		"crc": 4294939808,
+		"name": "\\css\\MobBlue\\DDWinResizeThumb.png"
+	},
+	{
+		"crc": 4294920011,
+		"name": "\\css\\MobBlue\\DialogRSRowAdd.png"
+	},
+	{
+		"crc": 4294950397,
+		"name": "\\css\\MobBlue\\DialogRSRowDelete.png"
+	},
+	{
+		"crc": 4294955819,
+		"name": "\\css\\MobBlue\\DialogRSRowError.png"
+	},
+	{
+		"crc": 4294961670,
+		"name": "\\css\\MobBlue\\DialogRSRowSelected.png"
+	},
+	{
+		"crc": 4294961670,
+		"name": "\\css\\MobBlue\\DPNext.png"
+	},
+	{
+		"crc": 4294906762,
+		"name": "\\css\\MobBlue\\DPPrev.png"
+	},
+	{
+		"crc": 4294948503,
+		"name": "\\css\\MobBlue\\EditDDArrow.png"
+	},
+	{
+		"crc": 4294935260,
+		"name": "\\css\\MobBlue\\EditDP.png"
+	},
+	{
+		"crc": 4294917412,
+		"name": "\\css\\MobBlue\\EditDTP.png"
+	},
+	{
+		"crc": 4294955819,
+		"name": "\\css\\MobBlue\\EditError.png"
+	},
+	{
+		"crc": 4294948418,
+		"name": "\\css\\MobBlue\\EditHelp.png"
+	},
+	{
+		"crc": 4294917079,
+		"name": "\\css\\MobBlue\\EditLookup.png"
+	},
+	{
+		"crc": 4294940744,
+		"name": "\\css\\MobBlue\\EditTP.png"
+	},
+	{
+		"crc": 4294928347,
+		"name": "\\css\\MobBlue\\Expand.png"
+	},
+	{
+		"crc": 4294961113,
+		"name": "\\css\\MobBlue\\GridPageFirst.png"
+	},
+	{
+		"crc": 4294930446,
+		"name": "\\css\\MobBlue\\GridPageFirstDisabled.png"
+	},
+	{
+		"crc": 4294931047,
+		"name": "\\css\\MobBlue\\GridPageLast.png"
+	},
+	{
+		"crc": 4294955116,
+		"name": "\\css\\MobBlue\\GridPageLastDisabled.png"
+	},
+	{
+		"crc": 4294961670,
+		"name": "\\css\\MobBlue\\GridPageNext.png"
+	},
+	{
+		"crc": 4294927107,
+		"name": "\\css\\MobBlue\\GridPageNextDisabled.png"
+	},
+	{
+		"crc": 4294906762,
+		"name": "\\css\\MobBlue\\GridPagePrev.png"
+	},
+	{
+		"crc": 4294907875,
+		"name": "\\css\\MobBlue\\GridPagePrevDisabled.png"
+	},
+	{
+		"crc": 4294963760,
+		"name": "\\css\\MobBlue\\GridQBEMenu.png"
+	},
+	{
+		"crc": 4294963760,
+		"name": "\\css\\MobBlue\\GridQBEToggle.png"
+	},
+	{
+		"crc": 4294964310,
+		"name": "\\css\\MobBlue\\GridRecordCancelEdits.png"
+	},
+	{
+		"crc": 4294904279,
+		"name": "\\css\\MobBlue\\GridRecordCancelEditsDisabled.png"
+	},
+	{
+		"crc": 4294933965,
+		"name": "\\css\\MobBlue\\GridRecordClose.png"
+	},
+	{
+		"crc": 4294950397,
+		"name": "\\css\\MobBlue\\GridRecordDelete.png"
+	},
+	{
+		"crc": 4294913768,
+		"name": "\\css\\MobBlue\\GridRecordDeleteDisabled.png"
+	},
+	{
+		"crc": 4294961113,
+		"name": "\\css\\MobBlue\\GridRecordFirst.png"
+	},
+	{
+		"crc": 4294930446,
+		"name": "\\css\\MobBlue\\GridRecordFirstDisabled.png"
+	},
+	{
+		"crc": 4294931047,
+		"name": "\\css\\MobBlue\\GridRecordLast.png"
+	},
+	{
+		"crc": 4294955116,
+		"name": "\\css\\MobBlue\\GridRecordLastDisabled.png"
+	},
+	{
+		"crc": 4294926241,
+		"name": "\\css\\MobBlue\\GridRecordNew.png"
+	},
+	{
+		"crc": 4294963718,
+		"name": "\\css\\MobBlue\\GridRecordNewCancelEdits.png"
+	},
+	{
+		"crc": 4294961670,
+		"name": "\\css\\MobBlue\\GridRecordNext.png"
+	},
+	{
+		"crc": 4294927107,
+		"name": "\\css\\MobBlue\\GridRecordNextDisabled.png"
+	},
+	{
+		"crc": 4294906762,
+		"name": "\\css\\MobBlue\\GridRecordPrev.png"
+	},
+	{
+		"crc": 4294907875,
+		"name": "\\css\\MobBlue\\GridRecordPrevDisabled.png"
+	},
+	{
+		"crc": 4294947899,
+		"name": "\\css\\MobBlue\\GridRecordSave.png"
+	},
+	{
+		"crc": 4294919331,
+		"name": "\\css\\MobBlue\\GridRecordSaveAndEnter.png"
+	},
+	{
+		"crc": 4294915601,
+		"name": "\\css\\MobBlue\\GridRecordSaveAndEnterDisabled.png"
+	},
+	{
+		"crc": 4294940934,
+		"name": "\\css\\MobBlue\\GridRecordSaveDisabled.png"
+	},
+	{
+		"crc": 4294941463,
+		"name": "\\css\\MobBlue\\GridRecordSwitchToEdit.png"
+	},
+	{
+		"crc": 4294915562,
+		"name": "\\css\\MobBlue\\GridRecordSwitchToView.png"
+	},
+	{
+		"crc": 4294905174,
+		"name": "\\css\\MobBlue\\GridRow.png"
+	},
+	{
+		"crc": 4294915562,
+		"name": "\\css\\MobBlue\\GridRowCancelEdits.png"
+	},
+	{
+		"crc": 4294927220,
+		"name": "\\css\\MobBlue\\GridRowCollapse.png"
+	},
+	{
+		"crc": 4294950397,
+		"name": "\\css\\MobBlue\\GridRowDelete.png"
+	},
+	{
+		"crc": 4294957185,
+		"name": "\\css\\MobBlue\\GridRowEdit.png"
+	},
+	{
+		"crc": 4294918703,
+		"name": "\\css\\MobBlue\\GridRowEditDisabled.png"
+	},
+	{
+		"crc": 4294955819,
+		"name": "\\css\\MobBlue\\GridRowError.png"
+	},
+	{
+		"crc": 4294928347,
+		"name": "\\css\\MobBlue\\GridRowExpand.png"
+	},
+	{
+		"crc": 4294940514,
+		"name": "\\css\\MobBlue\\GridRowNew.png"
+	},
+	{
+		"crc": 4294907921,
+		"name": "\\css\\MobBlue\\GridRowNewSelected.png"
+	},
+	{
+		"crc": 4294947899,
+		"name": "\\css\\MobBlue\\GridRowSave.png"
+	},
+	{
+		"crc": 4294940934,
+		"name": "\\css\\MobBlue\\GridRowSaveDisabled.png"
+	},
+	{
+		"crc": 4294963080,
+		"name": "\\css\\MobBlue\\GridRowSelected.png"
+	},
+	{
+		"crc": 4294927047,
+		"name": "\\css\\MobBlue\\GridRowUndoEdits.png"
+	},
+	{
+		"crc": 4294934996,
+		"name": "\\css\\MobBlue\\GridRowUndoEditsDisabled.png"
+	},
+	{
+		"crc": 4294946529,
+		"name": "\\css\\MobBlue\\GridSearch.png"
+	},
+	{
+		"crc": 4294951770,
+		"name": "\\css\\MobBlue\\GridSearchClear.png"
+	},
+	{
+		"crc": 4294908799,
+		"name": "\\css\\MobBlue\\GridSearchLoad.png"
+	},
+	{
+		"crc": 4294947899,
+		"name": "\\css\\MobBlue\\GridSearchSave.png"
+	},
+	{
+		"crc": 4294963760,
+		"name": "\\css\\MobBlue\\GridSearchToggle.png"
+	},
+	{
+		"crc": 4294907840,
+		"name": "\\css\\MobBlue\\GridSortAsc.png"
+	},
+	{
+		"crc": 4294927356,
+		"name": "\\css\\MobBlue\\GridSortAscDisabled.png"
+	},
+	{
+		"crc": 4294948503,
+		"name": "\\css\\MobBlue\\GridSortDesc.png"
+	},
+	{
+		"crc": 4294904800,
+		"name": "\\css\\MobBlue\\GridSortDescDisabled.png"
+	},
+	{
+		"crc": 4294961670,
+		"name": "\\css\\MobBlue\\ListNav.png"
+	},
+	{
+		"crc": 4294931016,
+		"name": "\\css\\MobBlue\\ListNavSubtle.png"
+	},
+	{
+		"crc": 4294907978,
+		"name": "\\css\\MobBlue\\MenubarHCascade.png"
+	},
+	{
+		"crc": 4294931717,
+		"name": "\\css\\MobBlue\\MenubarHCascadeDisabled.png"
+	},
+	{
+		"crc": 4294949211,
+		"name": "\\css\\MobBlue\\MenubarHCascadeHover.png"
+	},
+	{
+		"crc": 4294949211,
+		"name": "\\css\\MobBlue\\MenubarHCascadePressed.png"
+	},
+	{
+		"crc": 4294914457,
+		"name": "\\css\\MobBlue\\MenubarVCascade.png"
+	},
+	{
+		"crc": 4294956685,
+		"name": "\\css\\MobBlue\\MenubarVCascadeDisabled.png"
+	},
+	{
+		"crc": 4294902292,
+		"name": "\\css\\MobBlue\\MenubarVCascadeHover.png"
+	},
+	{
+		"crc": 4294902292,
+		"name": "\\css\\MobBlue\\MenubarVCascadePressed.png"
+	},
+	{
+		"crc": 4294914457,
+		"name": "\\css\\MobBlue\\MenuCascade.png"
+	},
+	{
+		"crc": 4294956685,
+		"name": "\\css\\MobBlue\\MenuCascadeDisabled.png"
+	},
+	{
+		"crc": 4294902292,
+		"name": "\\css\\MobBlue\\MenuCascadeHover.png"
+	},
+	{
+		"crc": 4294945828,
+		"name": "\\css\\MobBlue\\MenuCheck.png"
+	},
+	{
+		"crc": 4294912558,
+		"name": "\\css\\MobBlue\\MenuRadio.png"
+	},
+	{
+		"crc": 4294962567,
+		"name": "\\css\\MobBlue\\MessageError.png"
+	},
+	{
+		"crc": 4294950119,
+		"name": "\\css\\MobBlue\\MessageInfo.png"
+	},
+	{
+		"crc": 4294932898,
+		"name": "\\css\\MobBlue\\MessageQuestion.png"
+	},
+	{
+		"crc": 4294958771,
+		"name": "\\css\\MobBlue\\MessageWarning.png"
+	},
+	{
+		"crc": 4294932982,
+		"name": "\\css\\MobBlue\\PanelLeftCollapse.png"
+	},
+	{
+		"crc": 4294959088,
+		"name": "\\css\\MobBlue\\PanelLeftExpand.png"
+	},
+	{
+		"crc": 4294959088,
+		"name": "\\css\\MobBlue\\PanelRightCollapse.png"
+	},
+	{
+		"crc": 4294932982,
+		"name": "\\css\\MobBlue\\PanelRightExpand.png"
+	},
+	{
+		"crc": 4294953164,
+		"name": "\\css\\MobBlue\\spinListShadow.png"
+	},
+	{
+		"crc": 4294903369,
+		"name": "\\css\\MobBlue\\style.css"
+	},
+	{
+		"crc": 4294942064,
+		"name": "\\css\\MobBlue\\style.dat"
+	},
+	{
+		"crc": 4294932481,
+		"name": "\\css\\MobBlue\\style.js"
+	},
+	{
+		"crc": 4294915562,
+		"name": "\\css\\MobBlue\\TabbandClose.png"
+	},
+	{
+		"crc": 4294905392,
+		"name": "\\css\\MobBlue\\TabbandCloseHover.png"
+	},
+	{
+		"crc": 4294961670,
+		"name": "\\css\\MobBlue\\TabbandNext.png"
+	},
+	{
+		"crc": 4294927107,
+		"name": "\\css\\MobBlue\\TabbandNextDisabled.png"
+	},
+	{
+		"crc": 4294906762,
+		"name": "\\css\\MobBlue\\TabbandPrev.png"
+	},
+	{
+		"crc": 4294907875,
+		"name": "\\css\\MobBlue\\TabbandPrevDisabled.png"
+	},
+	{
+		"crc": 4294914348,
+		"name": "\\css\\MobBlue\\TPEditDDArrow.png"
+	},
+	{
+		"crc": 4294927268,
+		"name": "\\css\\MobBlue\\TreeBranchCollapse.png"
+	},
+	{
+		"crc": 4294933852,
+		"name": "\\css\\MobBlue\\TreeBranchCollapseHover.png"
+	},
+	{
+		"crc": 4294929913,
+		"name": "\\css\\MobBlue\\TreeBranchExpand.png"
+	},
+	{
+		"crc": 4294909485,
+		"name": "\\css\\MobBlue\\TreeBranchExpandHover.png"
+	},
+	{
+		"crc": 4294929366,
+		"name": "\\css\\MobBlue\\TreeNull.png"
+	},
+	{
+		"crc": 4294933880,
+		"name": "\\css\\MobBlue\\wait.gif"
+	},
+	{
+		"crc": 4294915562,
+		"name": "\\css\\MobBlue\\WinClose.png"
+	},
+	{
+		"crc": 4294905392,
+		"name": "\\css\\MobBlue\\WinCloseHover.png"
+	},
+	{
+		"crc": 4294929259,
+		"name": "\\css\\MobBlue\\WinClosePressed.png"
+	},
+	{
+		"crc": 4294944810,
+		"name": "\\css\\MobBlue\\WinResizeThumb.png"
+	},
+	{
+		"crc": 4294922602,
+		"name": "\\css\\_sharedStyles\\style.css"
+	},
+	{
+		"crc": 4294966173,
+		"name": "\\css\\demoapp_index.css"
+	},
+	{
+		"crc": 4294916996,
+		"name": "\\javascript\\a5.js"
+	},
+	{
+		"crc": 4294910896,
+		"name": "\\javascript\\A5jQueryWithUI.js"
+	},
+	{
+		"crc": 4294925972,
+		"name": "\\javascript\\a5_url.js"
+	}],
+	"rootfiles": [
+	{
+		"crc": 4294966275,
+		"name": "\\baseline.zip"
+	},
+	{
+		"crc": 4294935535,
+		"name": "\\config.xml"
+	},
+	{
+		"crc": 4294961204,
+		"name": "\\icon.png"
+	},
+	{
+		"crc": 4294924188,
+		"name": "\\index.html"
+	},
+	{
+		"crc": 4294957646,
+		"name": "\\screen.png"
+	},
+	{
+		"crc": 4294936128,
+		"name": "\\splash.png"
+	},
+	{
+		"crc": 4294934300,
+		"name": "\\version.json"
+	},
+	{
+		"crc": 4294966321,
+		"name": "\\_instantUpdateSettings.js"
+	},
+	{
+		"crc": 4294938616,
+		"name": "\\_phoneGapSettings.js"
+	}],
+	"plugins": [
+	{
+		"name": "cordova-plugin-device",
+		"source": "npm",
+		"version": "1.1.7"
+	},
+	{
+		"name": "cordova-plugin-network-information",
+		"source": "npm",
+		"version": "1.3.4"
+	},
+	{
+		"name": "cordova-plugin-splashscreen",
+		"source": "npm",
+		"version": "5.0.2"
+	},
+	{
+		"name": "cordova-plugin-whitelist",
+		"source": "npm",
+		"version": "1.3.3"
+	},
+	{
+		"name": "cordova-plugin-file",
+		"source": "npm",
+		"version": "4.3.3"
+	},
+	{
+		"name": "cordova-plugin-file-transfer",
+		"source": "npm",
+		"version": "1.5.1"
+	},
+	{
+		"name": "cordova-plugin-dialogs",
+		"source": "npm",
+		"version": "1.3.4"
+	},
+	{
+		"name": "cordova-plugin-zip",
+		"source": "npm",
+		"version": "3.1.0"
+	},
+	{
+		"name": "cordova-plugin-x-toast",
+		"source": "npm",
+		"version": "2.6.0"
+	}]
+}

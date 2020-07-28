@@ -393,7 +393,7 @@
 		"name": "\\css\\A5System\\default\\theme.css"
 	},
 	{
-		"crc": 4294909217,
+		"crc": 4294919532,
 		"name": "\\css\\A5System\\default\\theme.js"
 	},
 	{
@@ -609,7 +609,7 @@
 		"name": "\\css\\A5System\\Vista\\theme.css"
 	},
 	{
-		"crc": 4294929490,
+		"crc": 4294923357,
 		"name": "\\css\\A5System\\Vista\\theme.js"
 	},
 	{
@@ -2365,7 +2365,7 @@
 		"name": "\\Images\\Pic6.jpg"
 	},
 	{
-		"crc": 4294954200,
+		"crc": 4294916996,
 		"name": "\\javascript\\a5.js"
 	},
 	{
@@ -2426,7 +2426,7 @@
 		"name": "\\icon.png"
 	},
 	{
-		"crc": 4294925439,
+		"crc": 4294927483,
 		"name": "\\index.html"
 	},
 	{
@@ -2434,7 +2434,7 @@
 		"name": "\\login2-20180511194638030._a5wcmp_manifest"
 	},
 	{
-		"crc": 4294918309,
+		"crc": 4294902148,
 		"name": "\\login2.a5wcmp"
 	},
 	{
@@ -2454,7 +2454,7 @@
 		"name": "\\splash.png"
 	},
 	{
-		"crc": 4294922182,
+		"crc": 4294915386,
 		"name": "\\version.json"
 	},
 	{
@@ -2462,7 +2462,7 @@
 		"name": "\\_instantUpdateSettings.js"
 	},
 	{
-		"crc": 4294947649,
+		"crc": 4294926515,
 		"name": "\\_phoneGapSettings.js"
 	}],
 	"plugins": [

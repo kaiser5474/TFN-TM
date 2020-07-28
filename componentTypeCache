@@ -1,3 +1,4 @@
+{app_TFN.a5wcmp}|Dialog2
 {N_MonitoreoTrabajador_Cobro.a5wcmp}|Grid
 {N_Monitoreo_Prueba.a5wcmp}|Grid
 {N_FichaTrabajador_DiasTrabajo_PDF.a5wcmp}|Grid
@@ -27,7 +28,6 @@
 {DashBoard_Grafico_RRHHVacunas2.a5wcmp}|Grid
 {DashBoard_Grafico_RRHH_VencimientoSalud2.a5wcmp}|Grid
 {DashBoard_Grafico_UltimosSieteDias.a5wcmp}|Grid
-{_2.a5wcmp}|Grid
 {aa.a5wcmp}|Grid
 {VideosInd.a5wcmp}|PageLayout
 {Videos.a5wcmp}|Dialog2
@@ -54,7 +54,6 @@
 {N_Direccion.a5wcmp}|Grid
 {app_Prueba.a5wcmp}|Dialog2
 {Recorridos_MediosTransportacion_Ultima.a5wcmp}|Grid
-{app_Login.a5wcmp}|Dialog2
 {ProyectoMovil.a5wcmp}|Dialog2
 {saludo.a5wcmp}|Dialog2
 {DashBoard_Cumples.a5wcmp}|Grid
@@ -329,7 +328,6 @@
 {RecorridosMediosTransporte_ListaPasajeros_Clientes.a5wcmp}|Grid
 {ReporteActividad_Clientes.a5wcmp}|Grid
 {DashBoard_Cliente.a5wcmp}|Pagelayout
-{app_Cliente.a5wcmp}|Dialog2
 {EditarUsuario2.a5wcmp}|Dialog2
 {saludo2.a5wcmp}|Dialog2
 {ReporteCargas_ParaMariloginsa.a5wcmp}|Grid
@@ -459,3 +457,4 @@
 {N_Monitoreo_ParaPago3.a5wcmp}|Grid
 {monitoreo.a5wcmp}|Pagelayout
 {N_MonitoreoTrabajador_Cobro2.a5wcmp}|Grid
+{N_Contactos_Salud.a5wcmp}|Grid
