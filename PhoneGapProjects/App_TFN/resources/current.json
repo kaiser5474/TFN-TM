@@ -1370,8 +1370,12 @@
 		"name": "\\icon.png"
 	},
 	{
-		"crc": 4294911244,
+		"crc": 4294905365,
 		"name": "\\index.html"
+	},
+	{
+		"crc": 4294914307,
+		"name": "\\Logo.jpeg"
 	},
 	{
 		"crc": 4294957646,
@@ -1382,7 +1386,7 @@
 		"name": "\\splash.png"
 	},
 	{
-		"crc": 4294942074,
+		"crc": 4294902268,
 		"name": "\\version.json"
 	},
 	{

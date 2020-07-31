@@ -7,8 +7,8 @@
 	"_ssA9": "",
 	"_genStoryboardImages": false,
 	"_gen9PatchImages": false,
-	"_initialUxComponent": "app_TFN",
-	"_componentLastUpdated": "27-07-2020 04:01:56 55 pm",
+	"_initialUxComponent": "app_TFN_Login",
+	"_componentLastUpdated": "30-07-2020 01:21:45 70 am",
 	"_ajaxUrl": "https://www.mariloginsa.net/TFN",
 	"_additionalFiles": "",
 	"_userName": "7hoiNYL4WfxmTZsfcA5Ozyu1x3OZfMJK6Udbzsszyyg=",
@@ -47,13 +47,14 @@
 	"_channel": "",
 	"_newAjaxURL": "",
 	"_changeAjaxURL": false,
-	"_baseLineGuid": "3198e9854a0349a9b55ae245465c6193",
+	"_baseLineGuid": "08e2c5dacd60481a98549f12044eb546",
 	"enableInstantUpdate": true,
 	"instantUpdateSettingsJSON": "",
 	"launchAppManager": true,
 	"baseline": {
-		"_initialUXcomponent": "app_TFN",
+		"_initialUXcomponent": "app_TFN_Login",
 		"_ajaxurl": "https://www.mariloginsa.net/TFN"
 	},
-	"_sqlitedbdefined": false
+	"_sqlitedbdefined": false,
+	"_channels": ""
 }

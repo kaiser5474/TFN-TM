@@ -1,7 +1,28 @@
 [
 {
 	"internalVersionC": "1",
-	"description": "Version Inicial",
+	"description": "Baseline version",
 	"version": "1.0.0",
-	"date": "2020-07-27 04:06 PM"
+	"date": "2020-07-30 01:23 AM"
+},
+{
+	"internalVersionC": "2",
+	"description": "",
+	"version": "1.1",
+	"channel": "",
+	"date": "2020-07-30 01:29 AM"
+},
+{
+	"internalVersionC": "3",
+	"description": "",
+	"version": "",
+	"channel": "",
+	"date": "2020-07-30 01:35 AM"
+},
+{
+	"internalVersionC": "4",
+	"description": "",
+	"version": "",
+	"channel": "",
+	"date": "2020-07-30 01:38 AM"
 }]
