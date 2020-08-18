@@ -54,7 +54,11 @@ function _phoneGapSettings() {
         "cordova-plugin-file-transfer": "npm",
         "cordova-plugin-dialogs": "npm",
         "cordova-plugin-zip": "npm",
-        "cordova-plugin-x-toast": "npm"
+        "cordova-plugin-x-toast": "npm",
+        "cordova-plugin-camera": "npm",
+        "cordova-plugin-media-capture": "npm",
+        "https://github.com/remoorejr/cordova-open.git": "git",
+        "cordova-plugin-file-opener2-base64": "npm"
     }
 };
 }

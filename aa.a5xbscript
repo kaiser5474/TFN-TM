@@ -1,0 +1,17 @@
+	dim cn as sql::Connection
+	cn.open("::Name::Nibble")
+	
+	dim sql as c
+	dim rs as sql::ResultSet	
+	
+	'** Aqui comienzo a buscar el tipo de evento
+	dim args2 as sql::Arguments
+	
+	sql = <<%sql%
+	INSERT INTO a
+	(imagen) 
+	VALUES (NULL)
+	%sql%
+	cn.Execute(sql, args2)
+	
+	cn.Close()

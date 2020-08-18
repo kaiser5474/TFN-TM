@@ -2546,4 +2546,16 @@
 <action="allow">
 <groups="">
 >
+<[638]<page="app_InformeMonitoreoTrabajdor.a5rpt">
+<action="allow">
+<groups="">
+>
+<[639]<page="Monitoreo_CobroProveedores2.a5rpt">
+<action="allow">
+<groups="">
+>
+<[640]<page="Monitoreo_Trabajador_Medicamento_Grafico2.a5rpt">
+<action="allow">
+<groups="">
+>
 >

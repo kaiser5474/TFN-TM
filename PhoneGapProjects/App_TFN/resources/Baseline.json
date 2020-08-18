@@ -1358,11 +1358,11 @@
 	}],
 	"rootfiles": [
 	{
-		"crc": 4294934604,
+		"crc": 4294954313,
 		"name": "\\baseline.zip"
 	},
 	{
-		"crc": 4294935535,
+		"crc": 4294958262,
 		"name": "\\config.xml"
 	},
 	{
@@ -1370,8 +1370,12 @@
 		"name": "\\icon.png"
 	},
 	{
-		"crc": 4294911244,
+		"crc": 4294921948,
 		"name": "\\index.html"
+	},
+	{
+		"crc": 4294914307,
+		"name": "\\Logo.jpeg"
 	},
 	{
 		"crc": 4294957646,
@@ -1382,15 +1386,15 @@
 		"name": "\\splash.png"
 	},
 	{
-		"crc": 4294942074,
+		"crc": 4294959644,
 		"name": "\\version.json"
 	},
 	{
-		"crc": 4294909142,
+		"crc": 4294921675,
 		"name": "\\_instantUpdateSettings.js"
 	},
 	{
-		"crc": 4294938616,
+		"crc": 4294927407,
 		"name": "\\_phoneGapSettings.js"
 	}],
 	"plugins": [
@@ -1438,5 +1442,25 @@
 		"name": "cordova-plugin-x-toast",
 		"source": "npm",
 		"version": "2.6.0"
+	},
+	{
+		"name": "cordova-plugin-camera",
+		"source": "npm",
+		"version": "2.4.1"
+	},
+	{
+		"name": "cordova-plugin-media-capture",
+		"source": "npm",
+		"version": "1.4.3"
+	},
+	{
+		"name": "",
+		"source": "git",
+		"version": ""
+	},
+	{
+		"name": "cordova-plugin-file-opener2-base64",
+		"source": "npm",
+		"version": ""
 	}]
 }

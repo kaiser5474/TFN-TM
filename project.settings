@@ -147,8 +147,6 @@
 <version="2.0.0.0">
 <RequireClientCertificate=.F.>
 <hashAlgorithm="SHA1">
-<providerClassParameters<[1]>
->
 >
 <role<type="SameAsMembershipProvider">
 <connectionString="">
@@ -163,8 +161,6 @@
 <publishDataSource="SQLServer">
 <publishDifferentThanConfiguration=.F.>
 <version="">
-<providerClassParameters<[1]>
->
 >
 <sessionState<type="LocalStateServer">
 <connectionString="">
@@ -183,8 +179,6 @@
 <storageType="In Session Provider">
 <storageConnectionString="">
 <storageScope="Only this application">
-<providerClassParameters<[1]>
->
 >
 <profile<type="None">
 <connectionString="">
@@ -199,8 +193,6 @@
 <publishDataSource="SQLServer">
 <publishDifferentThanConfiguration=.F.>
 <version="">
-<providerClassParameters<[1]>
->
 >
 >
 <remoteErrorDetailShow=.F.>
@@ -243,9 +235,7 @@
 <connectionString="">
 <useImpersonation=.F.>
 >
-<websocket>
 >
 >
 <debugger<allow=.F.>
 >
-<activeDirectory>
