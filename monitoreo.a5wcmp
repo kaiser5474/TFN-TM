@@ -15,8 +15,8 @@
         "info": {
             "createdBy": "ASUS",
             "dateCreated": "2020-7-21",
-            "dateLastEdited": "2020-7-23",
-            "revisionnumber": 6
+            "dateLastEdited": "2020-8-25",
+            "revisionnumber": 7
         },
         "page_fields": [
             {
@@ -297,6 +297,7 @@
                             "onDynamicLoad": "action_{alias}_fcfed2bd_2936_4acf_879d_9c6df63fb7c1();"
                         }
                     },
+                    "securityGroups": "da586b2303dd48c78e9dc23b8e65e5e3,MonitoreoSalud_Delete",
                     "javascript": {
                         "renderChildren": "action_{alias}_fcfed2bd_2936_4acf_879d_9c6df63fb7c1();\n"
                     },
@@ -492,6 +493,7 @@
                         },
                         "id": "PANE_3"
                     },
+                    "securityGroups": "da586b2303dd48c78e9dc23b8e65e5e3,MonitoreoSalud_Delete",
                     "javascript": {
                         "renderChildren": "action_{alias}_edffdaab_80a4_43ba_9a27_c860e376af9c();\n"
                     },
@@ -499,18 +501,15 @@
                 }
             },
             {
-                "controltype": "PageLayoutPart",
+                "controlType": "PageLayoutPart",
                 "display": "{B=White,Light Blue}{I:'vertLine'}{I:'vertLine'}{Data=edffdaab-80a4-43ba-9a27-c860e376af9c}{I:'$$control.html.advButton'} [Page Layout Part: N_MonitoreoTrabajador_Cobro (Grid Component)] ¶",
                 "displayODFlat": "{Data=edffdaab-80a4-43ba-9a27-c860e376af9c}{I:'$$control.html.advButton'} [Page Layout Part: N_MonitoreoTrabajador_Cobro]",
-                "displayOD": "{Data=edffdaab-80a4-43ba-9a27-c860e376af9c}{I:'$$control.html.advButton'} [Page Layout Part: N_MonitoreoTrabajador_Cobro]",
-                "displayODtree": "{B=White,Light Blue}{I:'vertLine'}{I:'vertLine'}{Data=edffdaab-80a4-43ba-9a27-c860e376af9c}{I:'$$control.html.advButton'} [Page Layout Part: N_MonitoreoTrabajador_Cobro (Grid Component)] ¶",
                 "idInternal": "edffdaab-80a4-43ba-9a27-c860e376af9c",
                 "parentContainer": 1,
-                "inPanelCard": false,
-                "inTreeControl": false,
                 "parentTabPaneIndex": 6,
+                "displayOD": "{Data=edffdaab-80a4-43ba-9a27-c860e376af9c}{I:'$$control.html.advButton'} [Page Layout Part: N_MonitoreoTrabajador_Cobro]",
                 "repeatingSectionParentId": -1,
-                "indentTree": 2,
+                "displayODtree": "{B=White,Light Blue}{I:'vertLine'}{I:'vertLine'}{Data=edffdaab-80a4-43ba-9a27-c860e376af9c}{I:'$$control.html.advButton'} [Page Layout Part: N_MonitoreoTrabajador_Cobro (Grid Component)] ¶",
                 "v": {
                     "pageLayoutPart": {
                         "showMode": "When page is loaded",
@@ -531,9 +530,9 @@
                             "gridName": "N_MonitoreoTrabajador_Cobro",
                             "componentType": "Grid",
                             "alias": "<DefaultAlias>",
-                            "customSettingOverridesJSON": "",
                             "useMasterStyle": true,
-                            "workingMessage": "<img src=\"css/A5System/Images/wait.gif\" /> Working..."
+                            "workingMessage": "<img src=\"css/A5System/Images/wait.gif\" /> Working...",
+                            "customSettingOverridesJSON": ""
                         },
                         "report": {
                             "workingMessage": "<img src=\"css/A5System/Images/wait.gif\" /> Working...",
@@ -651,10 +650,13 @@
                         "autoRefreshOnFocus": false
                     }
                 },
+                "indentTree": 2,
                 "precalc": {
                     "ControlHTML": "\t<div class=\"A5container\">\n\t\t<div id=\"{alias}_DIVCONTAINER_edffdaab_80a4_43ba_9a27_c860e376af9c\"   ><img src=\"css/A5System/Images/wait.gif\" /> Working...</div>\n\t</div><!--breakbegin--><br  style=\"clear:both; \" /><div  style=\"height:.1in; font: 0pt;\"></div><!--breakend-->\n\t\t",
                     "pageLayoutPartJavascript": "window['action_{alias}_edffdaab_80a4_43ba_9a27_c860e376af9c'] = function() {\n\t\n\t\n\tvar onCompleteCode = '';\n\tvar callbackId = A5.UUID();\n\tif(typeof objx == 'undefined') objx = {};\n\tobjx[callbackId] = Function(onCompleteCode);\n\t\n\n\n\tvar go = new Object();\n\tgo.gridName = 'N_MonitoreoTrabajador_Cobro';\n\tgo.alias = '{alias}_N_MONITORE_01039GMHN';\n\tgo.workingMessage = '<img src=\"css/A5System/Images/wait.gif\" /> Working...';\n\tgo.flagTimer = 'F';\n\tgo.flagQueryEcho = 'F';\n\tgo.flagDebugMode = 'F';\n\tgo.userFilter = '';\n\tgo.baseFilter = '';\n\tgo.userOrder = '';\n\tgo.overrideSettings = 'style_name=`{pageLayout.style}`'+'||';\n\tgo.arguments = '';\n\t\n\t\n\tgo.localArguments = '';\n\tgo.linkDefinition = '';\n\tgo.placeHolderValues = '';\n\tgo.parameterBucket = $gvs('{alias}.PARAMETERBUCKET');\n\tgo.argumentValueBucket = $gvs('{alias}.ARGUMENTVALUES');\n\tgo.a5_default_path = '{PageLayout.a5_default_path}';\n\tgo.onLoadCompleteJavascript = 'run:'+callbackId;\n\t\n\t\n\tif(typeof tbiObj != 'undefined' && typeof tbiObj._workingPreviewHost != 'undefined') { \n\t\tgo._workingPreviewHost = tbiObj._workingPreviewHost;\n\t}\n\n\n\tgo.gridDiv = '{alias}_DIVCONTAINER_edffdaab_80a4_43ba_9a27_c860e376af9c';\n\tA5.component.runGrid(go);\n\t\n}\n"
                 },
+                "inPanelCard": false,
+                "inTreeControl": false,
                 "hasParentTab": true,
                 "parentTabId": "7c3cbdfa-2cd7-4040-b4b6-7acc0325a023"
             },
@@ -693,7 +695,7 @@
         "useCompactTheme": false,
         "SVGLinkedFiles": "",
         "saveFileType": "Formatted JSON",
-        "selected": "edffdaab-80a4-43ba-9a27-c860e376af9c\n",
+        "selected": "7c3cbdfa-2cd7-4040-b4b6-7acc0325a023\n",
         "designPaneIndex": 1,
         "masterPaneC": "controls",
         "clientSideEventIndexC": "",
@@ -708,8 +710,8 @@
         "alphaFiveBuildNumber": "12",
         "openedFromTemplate": false,
         "builtWithVersionNumer": 1,
-        "_buildCount": "5",
-        "securityEnabled": false,
+        "_buildCount": "6",
+        "securityEnabled": true,
         "showHideIsUsed": false,
         "precalc": {
             "pageLayout": {
@@ -722,16 +724,16 @@
         "componentType": "PageLayout",
         "version": 1,
         "linkedResources": "",
-        "A5SaveTimeStamp": "20200723001041854",
+        "A5SaveTimeStamp": "20200825094227962",
+        "minimumBuildNumber": "",
+        "__LPhostName": "Internet Explorer",
         "_flagDoTreeview": true,
         "style_color_palette": "",
         "showPulseEffect": true,
         "flagShowDeleteConfirmation": true,
-        "minimumBuildNumber": "",
         "flagOptimizedUXTree": false,
         "flagReanalyzeContainers": false,
         "_display": "",
-        "__LPhostName": "Internet Explorer",
         "_style_isInherited": false,
         "cachecomponent": false,
         "_treeErrors": "",

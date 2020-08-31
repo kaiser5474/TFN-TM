@@ -1,4 +1,4 @@
-A5SaveTimeStamp:20200811234700181
+A5SaveTimeStamp:20200825130931414
 css:GrBlue
 subComponent:MarinePictures.a5wcmp
 subComponent:DashBoard.a5wcmp
@@ -55,6 +55,7 @@ subComponent:help.a5wcmp
 subComponent:N_Empresas.a5wcmp
 subComponent:Ingreso_de_Usuario.a5wcmp
 subComponent:CrearUsuarioSistema2.a5wcmp
+subComponent:Empresas_Usuarios.a5wcmp
 subComponent:N_Monitoreo_ParaPago.a5wcmp
 subComponent:Empresas_Usuarios.a5wcmp
 subComponent:N_Diccionario.a5wcmp
@@ -120,8 +121,8 @@ subComponent:help
 subComponent:N_Empresas
 subComponent:Ingreso_de_Usuario
 subComponent:CrearUsuarioSistema2
-subComponent:N_Monitoreo_ParaPago
 subComponent:Empresas_Usuarios
+subComponent:N_Monitoreo_ParaPago
 subComponent:N_Diccionario
 subComponent:N_FichaTrabajador_DiasTrabajo_PDF
 subComponent:N_Contratos

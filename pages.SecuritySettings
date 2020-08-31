@@ -2558,4 +2558,12 @@
 <action="allow">
 <groups="">
 >
+<[641]<page="Resumen_Planilla_Mensual.a5rpt">
+<action="allow">
+<groups="">
+>
+<[642]<page="N_FichaTrabajador_PlanillaMensual.a5wcmp">
+<action="allow">
+<groups="">
+>
 >

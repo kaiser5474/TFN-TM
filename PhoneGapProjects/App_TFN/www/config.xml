@@ -209,4 +209,7 @@
 
 	<plugin spec="https://github.com/remoorejr/cordova-open.git" source="git" />
 	<plugin name="cordova-plugin-file-opener2-base64" source="npm" />
+	<plugin spec="https://github.com/zho/phonegap-imeiplugin.git" source="git" />
+	<platform name="winphone" />
+	<plugin spec="https://github.com/ivanchaz/cordova-plugin-uid" source="git" />
 </widget>
