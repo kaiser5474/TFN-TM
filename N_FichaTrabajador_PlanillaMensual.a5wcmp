@@ -9,7 +9,7 @@
         "flagTreeViewGrid": true,
         "flagTreeViewDV": true,
         "componentType": "Grid",
-        "Xbasic": "dim tmpl as p\ntmpl.ComponentName = \"N_FichaTrabajador_PlanillaMensual\"\ntmpl.ComponentType = \"Grid\"\ntmpl.AjaxOn = .t.\ntmpl.LayoutColumns = 1\ntmpl.useCompactTheme = .t.\ntmpl.showPulseEffect = .t.\ntmpl.queryEcho = .f.\ntmpl.connectToWebSocketServer = .f.\ntmpl.flagAddPKToORDER = .t.\ntmpl.saveFileType = \"Formatted JSON\"\ntmpl.captureJSErrorStackTrace = .f.\ntmpl.pusherApp = .f.\ntmpl.pusherConfigJSON = \"\"\ntmpl.SecurityModel = \"Group Based\"\ntmpl.SecurityMode = \"\"\ntmpl.PreCalcMode = \"Standard\"\ntmpl.clientSideDateFormat = \"dd/MM/yyyy\"\ntmpl.publishedServerVariables = \"\"\ntmpl.datePicker.dayNames = \"Sun,Mon,Tue,Wed,Thu,Fri,Sat\"\ntmpl.datePicker.firstDayOfWeek = 1\ntmpl.datePicker.monthNames = \"January,February,March,April,May,June,July,August,September,October,November,December\"\ntmpl.datePicker.todayButtonText = \"Today\"\ntmpl.datePicker.closeButtonText = \"Close\"\ntmpl.datePicker.closeButtonText = \"Close\"\ntmpl.friendlydatesCustomizationJSON = \"\"\ntmpl.customizationString.javascriptDialogs = \"\"\ntmpl.iconMapOverrides = \"\"\ntmpl.DataSourceType = \"CS\"\ntmpl.CS.database_type = \"CS\"\ntmpl.CS.type = \"connectionstring\"\ntmpl.cs.ConnectionString  = \"::name::Nibble\"\ntmpl.CS.SQL = \"SELECT [Id_FichaTrabajadorResumen], [Id_Trabajador], [fechaDesde], [fechaHasta], [horasExtras], [diasLaborados], [valorDiaLaborado], [diasCuarentena], [valorDiaCuarentena] FROM [N_FichaTrabajadores_ResumenPlanilla]\"\nDIM tmpl.Arguments[0] AS P\nDIM tmpl.ArgumentsPage AS P\nwith tmpl.ArgumentsPage\n\t.PromptTextAbove = \"\"\nend with\ntmpl.CS.PrimaryKeyColumns = \"Id_FichaTrabajadorResumen\"\ntmpl.CS.IdentitySequenceName  = \"\"\ntmpl.CS.primaryKeyTopAliasIsAutoIncrement  = .t.\ntmpl.grid_is_editable = .t.\ntmpl.edit.allow_update = .t.\ntmpl.edit.allow_insert = .t.\ntmpl.edit.number_of_insert_rows = 3\ntmpl.edit.allow_delete = .t.\ntmpl.edit.validateFieldsSetting = \"Dirty Fields Only\"\ntmpl.ShowNewRecordsOnLastPageOnly = .f.\ntmpl.AddNewRecordRowsPosition = \"Bottom\"\ntmpl.SecurityMode = \"\"\ntmpl.edit.delete_checkbox_label = \"Delete\"\ntmpl.edit.delete_checkbox_allowDeleteAll = .f.\ntmpl.edit.delete_checkbox_label_position = \"Left\"\ntmpl.edit.has_Cancel_button = .f.\ntmpl.edit.cancel_button_text = \"Cancel\"\ntmpl.edit.submit_button_text = \"Submit\"\ntmpl.edit.cancel_button_inlinestyle = \"\"\ntmpl.edit.submit_button_inlinestyle = \"\"\ntmpl.edit.confirm_before_submit = .f.\ntmpl.edit.confirm_before_submit_message = \"Submit changes?\"\ntmpl.edit.check_for_write_conflicts = .t.\ntmpl.edit.write_conflict_check_type = 2\ntmpl.edit.save_original_values  = .t.\ntmpl.edit.Show_Update_Commands = .f.\ntmpl.edit.Execute_Update_Commands = .t.\ntmpl.edit.TargetPage = \"<Self>\"\ntmpl.autoNumberColumnLabel = \"Auto\"\ntmpl.edit.RowEditStyle = \"AllRows\"\ntmpl.edit.NewRecordsEditStyle = \"AlwaysShown\"\ntmpl.edit.HideNewRecordsAfterInsert = .f.\ntmpl.edit.NewRecordsButtonLabel = \"New Records\"\ntmpl.edit.DeleteRecordControl = \"Checkbox\"\ntmpl.edit.HasRowStatusColumn = .t.\ntmpl.edit.OneEditableRowAtATime = .t.\ntmpl.edit.field_error_style.type = \"Icon\"\ntmpl.edit.field_error_style.icon = \"images/$$generic.error.png.a5image\"\ntmpl.edit.field_error_style.control_classname = \"\"\ntmpl.edit.field_error_style.error_classname = \"\"\ntmpl.edit.field_error_style.control_hover_classname = \"\"\ntmpl.edit.field_error_style.error_hover_classname = \"\"\ntmpl.edit.show_row_errors_in_popup = .f.\ntmpl.edit.row_errors_window_title = \"Errors\"\ntmpl.edit.row_errors_window_style = \"color: red; width: 6in; height: 2in;\"\ntmpl.edit.RefreshRowMethod = \"AutoSelect\"\ntmpl.edit.Editable_GridRow_Options_Style = \"Icons\"\ntmpl.edit.RefreshRowOnDirty = .t.\ntmpl.edit.LazyEdit = .t.\ntmpl.edit.abortGridUpdateIfAnyRowHasError = .f.\nDIM tmpl.update.tables[1] as p\nWith tmpl.update.tables[1]\n\t.Name = \"N_FichaTrabajadores_ResumenPlanilla\"\n\t.Table_Alias = \"N_FichaTrabajadores_ResumenPlanilla\"\n\t.PrimaryKey = \"Id_FichaTrabajadorResumen\"\nEnd With\ntmpl.grid_layout_style = 1\ntmpl.add_records_only = .f.\ntmpl.rows = 10\ntmpl.maxRowsPerPage = 200\ntmpl.rowsWhenSearchActive = -1\ntmpl.suppress_empty_rows = .t.\ntmpl.has_row_separator = .t.\ntmpl.alternate_bands = .f.\ntmpl.even_band_size = 1\ntmpl.odd_band_size = 1\ntmpl.alternate_column_bands = .f.\ntmpl.even_column_band_size = 1\ntmpl.odd_column_band_size = 1\ntmpl.conditionalStyle = \"\"\ntmpl.clientSideConditionalStyle = \"\"\ntmpl.show_title = .f.\ntmpl.title = \"\"\ntmpl.FontSize = \"Medium\"\ntmpl.No_records_message = \"No records in query\"\ntmpl.total_records_row_position = 1\ntmpl.total_records_row = \"Records:&nbsp; {Total_Records}&nbsp;\"\ntmpl.show_column_titles = 1\ntmpl.suppress_titles_if_no_records = .f.\ntmpl.show_row_labels = .t.\ntmpl.snakingLayout_suppressRepeatedLabels = .f.\ntmpl.sort_style = 3\ntmpl.reset_page_number_when_sorting = .t.\ntmpl.allowGridBodyScrolling = .f.\ntmpl.scrollableRegionHeight = \"2in\"\ntmpl.scrollableRegionWidth = \"100%\"\ntmpl.fixedWidthColumns = .f.\ntmpl.defaultColumnWidth = \"1in\"\ntmpl.columnWidthSettings = \"\"\ntmpl.EditRegion.Grid.Top = <<%editregion%\n%editregion%\ntmpl.EditRegion.Grid.Bottom = <<%editregion%\n%editregion%\ntmpl.EditRegion.Grid.Left = <<%editregion%\n%editregion%\ntmpl.EditRegion.Grid.Right = <<%editregion%\n%editregion%\ntmpl.HasNewRecordsTitle = .f.\ntmpl.NewRecordsTitle = \"<tr><td class=\\\"[class.gridData]\\\" colspan=\\\"{a5_colspan}\\\" style=\\\"padding: 0px;\\\" >New Records</td></tr>\"\ntmpl.HasExistingRecordsTitle = .f.\ntmpl.ExistingRecordsTitle = \"<tr><td class=\\\"[class.gridData]\\\" colspan=\\\"{a5_colspan}\\\" style=\\\"padding: 0px;\\\" >Existing Records</td></tr>\"\ntmpl.Highlight_row_onHover =  .t.\ntmpl.Highlight_row_onSelect =  .t.\ntmpl.HasRecordsPerPageSelector = .t.\ntmpl.RecordsPerPageChoices =   \"1,2,5,10,25,50,75,100\"\ntmpl.RecordsPerPageSelectorTemplate = \"&nbsp;&nbsp;{Grid.RecordsPerPageSelector} Records per page\"\ntmpl.has_qbe_row = .f.\ntmpl.qbe.initial_display = \"Hidden\"\ntmpl.qbe.toggleQBERowHyperlinkText = \"Show/Hide QBE Row\"\ntmpl.has_advancedSearch = .f.\ntmpl.hasLinkedContent = .f.\ntmpl.hasExternalNavigators = .f.\ntmpl.hasRowExpandColumn = .f.\ntmpl.hasSelectedRowColumn = .t.\ntmpl.hasCheckboxSelectColumn = .f.\ntmpl.AdditionalGridStyles = \"\"\ntmpl.LocalCss = \"\"\ntmpl.CSSLinkedFiles = \"\"\ntmpl.localsvg = \"\"\ntmpl.SVGLinkedFiles = \"\"\ntmpl.CSSIcons = \"\"\ntmpl.JavaScriptLinkedFiles = \"\"\ntmpl.useMasterTemplate = .f.\ntmpl.MasterTemplateStyle = \"Table - Vertical Layout\"\ntmpl.MasterLayoutTemplate = \"\"\ntmpl.MasterLayoutTemplateJavascript = \"\"\ntmpl.MasterLayout.PaneLabel.Search = \"Search\"\ntmpl.MasterLayout.PaneLabel.Grid = \"Grid\"\ntmpl.MasterLayout.PaneLabel.DetailView = \"Detail\"\ntmpl.MasterLayout.AccordionStyle = \"Multiple\"\ntmpl.MasterLayout.InitialOpenPanes = \"Search,Grid,DetailView\"\ntmpl.verticalAlignDataInColumns = \"Middle\"\ntmpl.CanCollapseGrid = .f.\ntmpl.CollapseBar.Title = \"Collapse Grid\"\ntmpl.CollapseBar.OpenIcon = \"\"\ntmpl.CollapseBar.ClosedIcon = \"\"\ntmpl.CollapseBar.Style = \"\"\ntmpl.Collapsebar.Class = \"\"\ntmpl.Collapsebar.ContainerStyle = \"\"\ntmpl.Collapsebar.ContainerClass = \"\"\ntmpl.Collapsebar.InitialState = \"open\"\ntmpl.languageTags_RemoveUnConsumedTags = .t.\ntmpl.activeLanguage = \"<Default>\"\ntmpl.search.highlightSearchStrings = .f.\ntmpl.autoRefreshGrid = .f.\ntmpl.autoRefreshInterval = 60\ntmpl.helpTableType = \"DBF\"\ntmpl.helpTableName = \"\"\ntmpl.helpConnectionString = \"\"\ntmpl.helpIDfield = \"\"\ntmpl.helpContentsField = \"\"\ntmpl.fieldHelpWindowStyle = \"modal-resizeable\"\ntmpl.fields = 9\nDIM tmpl.field_info[tmpl.fields] as P \nwith tmpl.field_info[1]\n\t.Fieldname = \"Id_FichaTrabajadorResumen\"\n\t.Scope = \"Local\"\n\t.DisplayFormat = \"\"\n\t.DisplayUnFormat = \"\"\n\t.ConditionalStyle = \"\"\n\t.ConditionalStyleLevel = \"Cell\"\n\t.ClientSideConditionalStyle = \"\"\n\t.ClientSideConditionalStyleLevel = \"Cell\"\n\t.QBEDisable = .f.\n\t.QBEInlineStyle = \"\"\n\t.QBEOptionsJSON = \"\"\n\t.canBeUsedInWhereClause = .t.\n\t.autoincrement = .t.\n\t.portableType = \"Integer32\"\n\t.nativeType = \"int\"\n\t.Type = \"N\"\n\t.UserDefinedClientSideValidationJavascript = \"\"\n\t.onChange_ValidationOption = \"None\"\n\t.Updateable = .t.\n\t.TreatBlankAsNull = .f.\n\t.Table_Alias = \"N_FichaTrabajadores_ResumenPlanilla\"\n\t.FieldToUpdate = \"Id_FichaTrabajadorResumen\"\n\t.Varname = \"ID_FICHATRABAJADORRESUMEN\"\n\t.Initial_Value = \"NULL\"\n\t.Column.LabelPosition = \"Left\"\n\t.Controltype = \"Textbox\"\n\t.Textbox.Size = 20\n\t.Textbox.HTML5Type = \"\"\n\t.Textbox.customAttributes = \"\"\n\t.Textbox.readonly = .f.\n\t.Textbox.MaxLength = 20\n\t.Textbox.InLineStyle = \"text-align: right;\"\n\t.Textbox.className = \"\"\n\t.Textbox.ContainerInlineStyle = \"\"\n\t.Textbox.IsPassword = .f.\n\t.hasWatermark= .f.\n\t.BreakType = \"None\"\n\t.nCols = 1\n\t.Column.Hide = .f.\n\t.BaseFieldExpression = \"Id_FichaTrabajadorResumen\"\n\t.SourceAlias = \"\"\n\t.Column.Heading = \"Id Ficha Trabajador Resumen\"\n\t.Column.Sort = \"Id_FichaTrabajadorResumen\"\n\t.Column.FirstClickDirection = \"A\"\nend with\nwith tmpl.field_info[2]\n\t.Fieldname = \"Id_Trabajador\"\n\t.Scope = \"Local\"\n\t.DisplayFormat = \"\"\n\t.DisplayUnFormat = \"\"\n\t.ConditionalStyle = \"\"\n\t.ConditionalStyleLevel = \"Cell\"\n\t.ClientSideConditionalStyle = \"\"\n\t.ClientSideConditionalStyleLevel = \"Cell\"\n\t.QBEDisable = .f.\n\t.QBEInlineStyle = \"\"\n\t.QBEOptionsJSON = \"\"\n\t.canBeUsedInWhereClause = .t.\n\t.autoincrement = .f.\n\t.portableType = \"Integer32\"\n\t.nativeType = \"int\"\n\t.Type = \"N\"\n\t.UserDefinedClientSideValidationJavascript = \"\"\n\t.onChange_ValidationOption = \"None\"\n\t.Updateable = .t.\n\t.TreatBlankAsNull = .f.\n\t.Table_Alias = \"N_FichaTrabajadores_ResumenPlanilla\"\n\t.FieldToUpdate = \"Id_Trabajador\"\n\t.Varname = \"ID_TRABAJADOR\"\n\t.Initial_Value = \"NULL\"\n\t.Column.LabelPosition = \"Left\"\n\t.Controltype = \"Textbox\"\n\t.Textbox.Size = 20\n\t.Textbox.HTML5Type = \"\"\n\t.Textbox.customAttributes = \"\"\n\t.Textbox.readonly = .f.\n\t.Textbox.MaxLength = 20\n\t.Textbox.InLineStyle = \"text-align: right;\"\n\t.Textbox.className = \"\"\n\t.Textbox.ContainerInlineStyle = \"\"\n\t.Textbox.IsPassword = .f.\n\t.hasWatermark= .f.\n\t.BreakType = \"None\"\n\t.nCols = 1\n\t.Column.Hide = .t.\n\t.BaseFieldExpression = \"Id_Trabajador\"\n\t.SourceAlias = \"\"\n\t.Column.Heading = \"Id Trabajador\"\nend with\nwith tmpl.field_info[3]\n\t.Fieldname = \"fechaDesde\"\n\t.Scope = \"Local\"\n\t.DisplayFormat = \"time(\\\"{grid.clientSideDateFormat}\\\",<value>)\"\n\t.DisplayUnFormat = \"\"\n\t.ConditionalStyle = \"\"\n\t.ConditionalStyleLevel = \"Cell\"\n\t.ClientSideConditionalStyle = \"\"\n\t.ClientSideConditionalStyleLevel = \"Cell\"\n\t.QBEDisable = .f.\n\t.QBEInlineStyle = \"\"\n\t.QBEOptionsJSON = \"\"\n\t.canBeUsedInWhereClause = .t.\n\t.autoincrement = .f.\n\t.portableType = \"Date\"\n\t.nativeType = \"Date\"\n\t.Type = \"D\"\n\t.UserDefinedClientSideValidationJavascript = \"\"\n\t.onChange_ValidationOption = \"None\"\n\t.Updateable = .t.\n\t.TreatBlankAsNull = .f.\n\t.Table_Alias = \"N_FichaTrabajadores_ResumenPlanilla\"\n\t.FieldToUpdate = \"fechaDesde\"\n\t.Varname = \"FECHADESDE\"\n\t.Initial_Value = \"NULL\"\n\t.Column.LabelPosition = \"Left\"\n\t.Controltype = \"Textbox\"\n\t.Textbox.Size = 20\n\t.Textbox.HTML5Type = \"\"\n\t.Textbox.customAttributes = \"\"\n\t.Textbox.readonly = .f.\n\t.Textbox.MaxLength = 20\n\t.Textbox.InLineStyle = \"\"\n\t.Textbox.className = \"\"\n\t.Textbox.ContainerInlineStyle = \"\"\n\t.Textbox.IsPassword = .f.\n\t.hasWatermark= .f.\n\t.DatePicker.Display = .t.\n\t.DatePicker.UseComboBoxes = .t.\n\t.DatePicker.DateFormat = \"<DefaultDateOnlyFormat>\"\n\t.DatePicker.LowYear = 1950\n\t.DatePicker.HighYear = 2050\n\t.DatePicker.SwitchYear = 20\n\t.DatePicker.IconNumber = 2\n\t.DatePicker.OpenMethod = \"ClickIcon\"\n\t.DatePicker.lowDate = \"\"\n\t.DatePicker.highDate = \"\"\n\t.DatePicker.disabledDays = \"\"\n\t.DatePicker.showDaysOfWeek = .t.\n\t.DatePicker.showTodayButton = .t.\n\t.DatePicker.showWeeksOfYear = .f.\n\t.DatePicker.OKButtonLabel = \"OK\"\n\t.DatePicker.CancelButtonLabel = \"Cancel\"\n\t.DatePicker.lockColumnWidths = .f.\n\t.DatePicker.userMustSelectFromDatePicker = .f.\n\t.DatePicker.hasEvents = .f.\n\t.DatePicker.event.onItemDraw = \"\"\n\t.DatePicker.event.onClick = \"\"\n\t.DatePicker.event.onRightClick = \"\"\n\t.DatePicker.event.onSelect = \"\"\n\t.DatePicker.event.onNavigate = \"\"\n\t.DatePicker.event.onMonthNavigate = \"\"\n\t.DatePicker.event.onYearNavigate = \"\"\n\t.DatePicker.showPreDefinedDates = .f.\n\t.DatePicker.preDefinedDatesJSON = \"\"\n\t.BreakType = \"None\"\n\t.nCols = 1\n\t.Column.Hide = .f.\n\t.BaseFieldExpression = \"fechaDesde\"\n\t.SourceAlias = \"\"\n\t.Column.Heading = \"Fecha Desde\"\n\t.Column.Sort = \"fechaDesde\"\n\t.Column.FirstClickDirection = \"A\"\nend with\nwith tmpl.field_info[4]\n\t.Fieldname = \"fechaHasta\"\n\t.Scope = \"Local\"\n\t.DisplayFormat = \"time(\\\"{grid.clientSideDateFormat}\\\",<value>)\"\n\t.DisplayUnFormat = \"\"\n\t.ConditionalStyle = \"\"\n\t.ConditionalStyleLevel = \"Cell\"\n\t.ClientSideConditionalStyle = \"\"\n\t.ClientSideConditionalStyleLevel = \"Cell\"\n\t.QBEDisable = .f.\n\t.QBEInlineStyle = \"\"\n\t.QBEOptionsJSON = \"\"\n\t.canBeUsedInWhereClause = .t.\n\t.autoincrement = .f.\n\t.portableType = \"Date\"\n\t.nativeType = \"Date\"\n\t.Type = \"D\"\n\t.UserDefinedClientSideValidationJavascript = \"\"\n\t.onChange_ValidationOption = \"None\"\n\t.Updateable = .t.\n\t.TreatBlankAsNull = .f.\n\t.Table_Alias = \"N_FichaTrabajadores_ResumenPlanilla\"\n\t.FieldToUpdate = \"fechaHasta\"\n\t.Varname = \"FECHAHASTA\"\n\t.Initial_Value = \"NULL\"\n\t.Column.LabelPosition = \"Left\"\n\t.Controltype = \"Textbox\"\n\t.Textbox.Size = 20\n\t.Textbox.HTML5Type = \"\"\n\t.Textbox.customAttributes = \"\"\n\t.Textbox.readonly = .f.\n\t.Textbox.MaxLength = 20\n\t.Textbox.InLineStyle = \"\"\n\t.Textbox.className = \"\"\n\t.Textbox.ContainerInlineStyle = \"\"\n\t.Textbox.IsPassword = .f.\n\t.hasWatermark= .f.\n\t.DatePicker.Display = .t.\n\t.DatePicker.UseComboBoxes = .t.\n\t.DatePicker.DateFormat = \"<DefaultDateOnlyFormat>\"\n\t.DatePicker.LowYear = 1950\n\t.DatePicker.HighYear = 2050\n\t.DatePicker.SwitchYear = 20\n\t.DatePicker.IconNumber = 2\n\t.DatePicker.OpenMethod = \"ClickIcon\"\n\t.DatePicker.lowDate = \"\"\n\t.DatePicker.highDate = \"\"\n\t.DatePicker.disabledDays = \"\"\n\t.DatePicker.showDaysOfWeek = .t.\n\t.DatePicker.showTodayButton = .t.\n\t.DatePicker.showWeeksOfYear = .f.\n\t.DatePicker.OKButtonLabel = \"OK\"\n\t.DatePicker.CancelButtonLabel = \"Cancel\"\n\t.DatePicker.lockColumnWidths = .f.\n\t.DatePicker.userMustSelectFromDatePicker = .f.\n\t.DatePicker.hasEvents = .f.\n\t.DatePicker.event.onItemDraw = \"\"\n\t.DatePicker.event.onClick = \"\"\n\t.DatePicker.event.onRightClick = \"\"\n\t.DatePicker.event.onSelect = \"\"\n\t.DatePicker.event.onNavigate = \"\"\n\t.DatePicker.event.onMonthNavigate = \"\"\n\t.DatePicker.event.onYearNavigate = \"\"\n\t.DatePicker.showPreDefinedDates = .f.\n\t.DatePicker.preDefinedDatesJSON = \"\"\n\t.BreakType = \"None\"\n\t.nCols = 1\n\t.Column.Hide = .f.\n\t.BaseFieldExpression = \"fechaHasta\"\n\t.SourceAlias = \"\"\n\t.Column.Heading = \"Fecha Hasta\"\n\t.Column.Sort = \"fechaHasta\"\n\t.Column.FirstClickDirection = \"A\"\nend with\nwith tmpl.field_info[5]\n\t.Fieldname = \"horasExtras\"\n\t.Scope = \"Local\"\n\t.DisplayFormat = \"\"\n\t.DisplayUnFormat = \"\"\n\t.ConditionalStyle = \"\"\n\t.ConditionalStyleLevel = \"Cell\"\n\t.ClientSideConditionalStyle = \"\"\n\t.ClientSideConditionalStyleLevel = \"Cell\"\n\t.QBEDisable = .f.\n\t.QBEInlineStyle = \"\"\n\t.QBEOptionsJSON = \"\"\n\t.canBeUsedInWhereClause = .t.\n\t.autoincrement = .f.\n\t.portableType = \"Double\"\n\t.nativeType = \"float\"\n\t.Type = \"N\"\n\t.UserDefinedClientSideValidationJavascript = \"\"\n\t.onChange_ValidationOption = \"None\"\n\t.Updateable = .t.\n\t.TreatBlankAsNull = .f.\n\t.Table_Alias = \"N_FichaTrabajadores_ResumenPlanilla\"\n\t.FieldToUpdate = \"horasExtras\"\n\t.Varname = \"HORASEXTRAS\"\n\t.Initial_Value = \"NULL\"\n\t.Column.LabelPosition = \"Left\"\n\t.Controltype = \"Textbox\"\n\t.Textbox.Size = 20\n\t.Textbox.HTML5Type = \"\"\n\t.Textbox.customAttributes = \"\"\n\t.Textbox.readonly = .f.\n\t.Textbox.MaxLength = 20\n\t.Textbox.InLineStyle = \"text-align: right;\"\n\t.Textbox.className = \"\"\n\t.Textbox.ContainerInlineStyle = \"\"\n\t.Textbox.IsPassword = .f.\n\t.hasWatermark= .f.\n\t.BreakType = \"None\"\n\t.nCols = 1\n\t.Column.Hide = .f.\n\t.BaseFieldExpression = \"horasExtras\"\n\t.SourceAlias = \"\"\n\t.Column.Heading = \"Horas Extras\"\n\t.Column.Sort = \"horasExtras\"\n\t.Column.FirstClickDirection = \"A\"\nend with\nwith tmpl.field_info[6]\n\t.Fieldname = \"diasLaborados\"\n\t.Scope = \"Local\"\n\t.DisplayFormat = \"\"\n\t.DisplayUnFormat = \"\"\n\t.ConditionalStyle = \"\"\n\t.ConditionalStyleLevel = \"Cell\"\n\t.ClientSideConditionalStyle = \"\"\n\t.ClientSideConditionalStyleLevel = \"Cell\"\n\t.QBEDisable = .f.\n\t.QBEInlineStyle = \"\"\n\t.QBEOptionsJSON = \"\"\n\t.canBeUsedInWhereClause = .t.\n\t.autoincrement = .f.\n\t.portableType = \"Double\"\n\t.nativeType = \"float\"\n\t.Type = \"N\"\n\t.UserDefinedClientSideValidationJavascript = \"\"\n\t.onChange_ValidationOption = \"None\"\n\t.Updateable = .t.\n\t.TreatBlankAsNull = .f.\n\t.Table_Alias = \"N_FichaTrabajadores_ResumenPlanilla\"\n\t.FieldToUpdate = \"diasLaborados\"\n\t.Varname = \"DIASLABORADOS\"\n\t.Initial_Value = \"NULL\"\n\t.Column.LabelPosition = \"Left\"\n\t.Controltype = \"Textbox\"\n\t.Textbox.Size = 20\n\t.Textbox.HTML5Type = \"\"\n\t.Textbox.customAttributes = \"\"\n\t.Textbox.readonly = .f.\n\t.Textbox.MaxLength = 20\n\t.Textbox.InLineStyle = \"text-align: right;\"\n\t.Textbox.className = \"\"\n\t.Textbox.ContainerInlineStyle = \"\"\n\t.Textbox.IsPassword = .f.\n\t.hasWatermark= .f.\n\t.BreakType = \"None\"\n\t.nCols = 1\n\t.Column.Hide = .f.\n\t.BaseFieldExpression = \"diasLaborados\"\n\t.SourceAlias = \"\"\n\t.Column.Heading = \"Dias Laborados\"\n\t.Column.Sort = \"diasLaborados\"\n\t.Column.FirstClickDirection = \"A\"\nend with\nwith tmpl.field_info[7]\n\t.Fieldname = \"valorDiaLaborado\"\n\t.Scope = \"Local\"\n\t.DisplayFormat = \"\"\n\t.DisplayUnFormat = \"\"\n\t.ConditionalStyle = \"\"\n\t.ConditionalStyleLevel = \"Cell\"\n\t.ClientSideConditionalStyle = \"\"\n\t.ClientSideConditionalStyleLevel = \"Cell\"\n\t.QBEDisable = .f.\n\t.QBEInlineStyle = \"\"\n\t.QBEOptionsJSON = \"\"\n\t.canBeUsedInWhereClause = .t.\n\t.autoincrement = .f.\n\t.portableType = \"Double\"\n\t.nativeType = \"float\"\n\t.Type = \"N\"\n\t.UserDefinedClientSideValidationJavascript = \"\"\n\t.onChange_ValidationOption = \"None\"\n\t.Updateable = .t.\n\t.TreatBlankAsNull = .f.\n\t.Table_Alias = \"N_FichaTrabajadores_ResumenPlanilla\"\n\t.FieldToUpdate = \"valorDiaLaborado\"\n\t.Varname = \"VALORDIALABORADO\"\n\t.Initial_Value = \"NULL\"\n\t.Column.LabelPosition = \"Left\"\n\t.Controltype = \"Textbox\"\n\t.Textbox.Size = 20\n\t.Textbox.HTML5Type = \"\"\n\t.Textbox.customAttributes = \"\"\n\t.Textbox.readonly = .f.\n\t.Textbox.MaxLength = 20\n\t.Textbox.InLineStyle = \"text-align: right;\"\n\t.Textbox.className = \"\"\n\t.Textbox.ContainerInlineStyle = \"\"\n\t.Textbox.IsPassword = .f.\n\t.hasWatermark= .f.\n\t.BreakType = \"None\"\n\t.nCols = 1\n\t.Column.Hide = .f.\n\t.BaseFieldExpression = \"valorDiaLaborado\"\n\t.SourceAlias = \"\"\n\t.Column.Heading = \"Valor Dia Laborado\"\n\t.Column.Sort = \"valorDiaLaborado\"\n\t.Column.FirstClickDirection = \"A\"\nend with\nwith tmpl.field_info[8]\n\t.Fieldname = \"diasCuarentena\"\n\t.Scope = \"Local\"\n\t.DisplayFormat = \"\"\n\t.DisplayUnFormat = \"\"\n\t.ConditionalStyle = \"\"\n\t.ConditionalStyleLevel = \"Cell\"\n\t.ClientSideConditionalStyle = \"\"\n\t.ClientSideConditionalStyleLevel = \"Cell\"\n\t.QBEDisable = .f.\n\t.QBEInlineStyle = \"\"\n\t.QBEOptionsJSON = \"\"\n\t.canBeUsedInWhereClause = .t.\n\t.autoincrement = .f.\n\t.portableType = \"Double\"\n\t.nativeType = \"float\"\n\t.Type = \"N\"\n\t.UserDefinedClientSideValidationJavascript = \"\"\n\t.onChange_ValidationOption = \"None\"\n\t.Updateable = .t.\n\t.TreatBlankAsNull = .f.\n\t.Table_Alias = \"N_FichaTrabajadores_ResumenPlanilla\"\n\t.FieldToUpdate = \"diasCuarentena\"\n\t.Varname = \"DIASCUARENTENA\"\n\t.Initial_Value = \"NULL\"\n\t.Column.LabelPosition = \"Left\"\n\t.Controltype = \"Textbox\"\n\t.Textbox.Size = 20\n\t.Textbox.HTML5Type = \"\"\n\t.Textbox.customAttributes = \"\"\n\t.Textbox.readonly = .f.\n\t.Textbox.MaxLength = 20\n\t.Textbox.InLineStyle = \"text-align: right;\"\n\t.Textbox.className = \"\"\n\t.Textbox.ContainerInlineStyle = \"\"\n\t.Textbox.IsPassword = .f.\n\t.hasWatermark= .f.\n\t.BreakType = \"None\"\n\t.nCols = 1\n\t.Column.Hide = .f.\n\t.BaseFieldExpression = \"diasCuarentena\"\n\t.SourceAlias = \"\"\n\t.Column.Heading = \"Dias Cuarentena\"\n\t.Column.Sort = \"diasCuarentena\"\n\t.Column.FirstClickDirection = \"A\"\nend with\nwith tmpl.field_info[9]\n\t.Fieldname = \"valorDiaCuarentena\"\n\t.Scope = \"Local\"\n\t.DisplayFormat = \"\"\n\t.DisplayUnFormat = \"\"\n\t.ConditionalStyle = \"\"\n\t.ConditionalStyleLevel = \"Cell\"\n\t.ClientSideConditionalStyle = \"\"\n\t.ClientSideConditionalStyleLevel = \"Cell\"\n\t.QBEDisable = .f.\n\t.QBEInlineStyle = \"\"\n\t.QBEOptionsJSON = \"\"\n\t.canBeUsedInWhereClause = .t.\n\t.autoincrement = .f.\n\t.portableType = \"Double\"\n\t.nativeType = \"float\"\n\t.Type = \"N\"\n\t.UserDefinedClientSideValidationJavascript = \"\"\n\t.onChange_ValidationOption = \"None\"\n\t.Updateable = .t.\n\t.TreatBlankAsNull = .f.\n\t.Table_Alias = \"N_FichaTrabajadores_ResumenPlanilla\"\n\t.FieldToUpdate = \"valorDiaCuarentena\"\n\t.Varname = \"VALORDIACUARENTENA\"\n\t.Initial_Value = \"NULL\"\n\t.Column.LabelPosition = \"Left\"\n\t.Controltype = \"Textbox\"\n\t.Textbox.Size = 20\n\t.Textbox.HTML5Type = \"\"\n\t.Textbox.customAttributes = \"\"\n\t.Textbox.readonly = .f.\n\t.Textbox.MaxLength = 20\n\t.Textbox.InLineStyle = \"text-align: right;\"\n\t.Textbox.className = \"\"\n\t.Textbox.ContainerInlineStyle = \"\"\n\t.Textbox.IsPassword = .f.\n\t.hasWatermark= .f.\n\t.BreakType = \"None\"\n\t.nCols = 1\n\t.Column.Hide = .f.\n\t.BaseFieldExpression = \"valorDiaCuarentena\"\n\t.SourceAlias = \"\"\n\t.Column.Heading = \"Valor Dia Cuarentena\"\n\t.Column.Sort = \"valorDiaCuarentena\"\n\t.Column.FirstClickDirection = \"A\"\nend with\ntmpl.RecordNavigationStyle = \"NavigationButtons\"\ntmpl.fetchMoreRecordsButton.text = \"More Records\"\ntmpl.fetchMoreRecordsButton.style = \"\"\ntmpl.RecNav.SuppressIfOnlyOnePage = .t.\ntmpl.RecNav.First_Label = \"First\"\ntmpl.RecNav.Has_First_Button = .t.\ntmpl.RecNav.Has_Last_Button = .t.\ntmpl.RecNav.Has_Next_Button = .t.\ntmpl.RecNav.Has_Prev_Button = .t.\ntmpl.RecNav.HTML_Template_source = \"Computed\"\ntmpl.RecNav.Justify = \"Left\"\ntmpl.RecNav.Last_Label = \"Last\"\ntmpl.RecNav.Next_Label = \"Next\"\ntmpl.RecNav.Number_of_page_links = 10\ntmpl.RecNav.Page_Numbering_Style = 3\ntmpl.RecNav.PagesTemplate_w_PageCount = \"{PageNumber} of {PageCount}\"\ntmpl.RecNav.PagesTemplate_wout_PageCount = \"{PageNumber}\"\ntmpl.RecNav.Position = 1\ntmpl.RecNav.suppress_recNavBar_if_no_records = .f.\ntmpl.RecNav.Prev_Label = \"Prev\"\ntmpl.RecNav.Show_disabled_controls = .t.\ntmpl.RecNav.Show_Page_Count = .t.\ntmpl.RecNav.Use_Images = .f.\ntmpl.gridToolbarTemplate = <<%html%\n%html%\ntmpl.gridToolbarTemplateEditable = <<%html%\n%html%\ntmpl.style_name = \"GrBlue\"\ntmpl.resolveAbstractClassNames = .t.\ntmpl.style_type = \"Alpha Five\"\ntmpl.UseSimpleStyles = .f.\ntmpl.overrideStylesForJavascriptObjects = .f.\ntmpl.searchBehavior = \"\"\ntmpl.GUID = \"233180f4-7a78-43f2-9e3b-a49ffc6195f7\"\ntmpl.onlyIncludeSelectedFieldsInQuery = .t.\ntmpl.hasGroupBreaks = .f.\ntmpl.groupBreaks.expression1 = \"\"\ntmpl.groupBreaks.direction1 = \"\"\ntmpl.groupBreaks.header1 = <<%HTML%\n%HTML%\ntmpl.groupBreaks.footer1 = <<%HTML%\n%HTML%\ntmpl.groupBreaks.collapseAllGroupsOnInitialDisplay = .f.\ntmpl.timestamp = \"2020-08-31:01-34-49.868\"\ntmpl.resolveAbstractClassNamesAtDesignTime  = .f.\ntmpl.resolveAbstractIconNamesAtDesignTime = .f. \ntmpl.useLegacyDatePicker = .f.\ntmpl.javascriptUnboundActionDefinitions = <<%javascriptActions%\n%javascriptActions%\n\ntmpl.precalc.sessionVarsInShowHideExpns = <<%sessionvars%\n%sessionvars%\ntmpl.precalc.unboundActionsXbasicFunctions = \"\"\ntmpl.precalc.includeS3Javascript = .f.",
+        "Xbasic": "dim tmpl as p\ntmpl.ComponentName = \"N_FichaTrabajador_PlanillaMensual\"\ntmpl.ComponentType = \"Grid\"\ntmpl.AjaxOn = .t.\ntmpl.LayoutColumns = 1\ntmpl.useCompactTheme = .t.\ntmpl.showPulseEffect = .t.\ntmpl.queryEcho = .f.\ntmpl.connectToWebSocketServer = .f.\ntmpl.flagAddPKToORDER = .t.\ntmpl.saveFileType = \"Formatted JSON\"\ntmpl.captureJSErrorStackTrace = .f.\ntmpl.pusherApp = .f.\ntmpl.pusherConfigJSON = \"\"\ntmpl.SecurityModel = \"Group Based\"\ntmpl.SecurityMode = \"\"\ntmpl.PreCalcMode = \"Standard\"\ntmpl.clientSideDateFormat = \"dd/MM/yyyy\"\ntmpl.publishedServerVariables = \"\"\ntmpl.datePicker.dayNames = \"Sun,Mon,Tue,Wed,Thu,Fri,Sat\"\ntmpl.datePicker.firstDayOfWeek = 1\ntmpl.datePicker.monthNames = \"January,February,March,April,May,June,July,August,September,October,November,December\"\ntmpl.datePicker.todayButtonText = \"Today\"\ntmpl.datePicker.closeButtonText = \"Close\"\ntmpl.datePicker.closeButtonText = \"Close\"\ntmpl.friendlydatesCustomizationJSON = \"\"\ntmpl.customizationString.javascriptDialogs = \"\"\ntmpl.iconMapOverrides = \"\"\ntmpl.DataSourceType = \"CS\"\ntmpl.CS.database_type = \"CS\"\ntmpl.CS.type = \"connectionstring\"\ntmpl.cs.ConnectionString  = \"::name::Nibble\"\ntmpl.CS.SQL = \"SELECT [Id_FichaTrabajadorResumen], [Id_Trabajador], [fechaDesde], [fechaHasta], [horasExtras], [diasLaborados], [valorDiaLaborado], [diasCuarentena], [valorDiaCuarentena], [totalDiasLaborados] FROM [N_FichaTrabajadores_ResumenPlanilla]\"\nDIM tmpl.Arguments[1] AS P\nwith tmpl.Arguments[1]\n\t.Name = \"\"\n\t.DataType = \"\"\n\t.Source = \"\"\n\t.SourceDisplay = \"\"\n\t.VariableScope = \"\"\n\t.VariableName = \"\"\n\t.VariableWithScope = \"\"\n\t.DefaultValue = \"\"\n\t.Prompt = .f.\n\t.PromptText = \"\"\n\t.PromptControlType = \"\"\n\t.PromptChoices = \"\"\n\t.PromptDlgTitle = \"\"\n\t.PromptTextAbove = \"\"\n\t.PreviewValue = \"\"\nend with\nDIM tmpl.ArgumentsPage AS P\nwith tmpl.ArgumentsPage\n\t.PromptTextAbove = \"\"\nend with\ntmpl.CS.PrimaryKeyColumns = \"Id_FichaTrabajadorResumen\"\ntmpl.CS.IdentitySequenceName  = \"\"\ntmpl.CS.primaryKeyTopAliasIsAutoIncrement  = .t.\ntmpl.grid_is_editable = .t.\ntmpl.edit.allow_update = .t.\ntmpl.edit.allow_insert = .t.\ntmpl.edit.number_of_insert_rows = 1\ntmpl.edit.allow_delete = .t.\ntmpl.edit.validateFieldsSetting = \"Dirty Fields Only\"\ntmpl.ShowNewRecordsOnLastPageOnly = .f.\ntmpl.AddNewRecordRowsPosition = \"Bottom\"\ntmpl.SecurityMode = \"\"\ntmpl.edit.delete_checkbox_label = \"Delete\"\ntmpl.edit.delete_checkbox_allowDeleteAll = .f.\ntmpl.edit.delete_checkbox_label_position = \"Left\"\ntmpl.edit.has_Cancel_button = .t.\ntmpl.edit.cancel_button_text = \"<a5:t>Cancel</a5:t>\"\ntmpl.edit.submit_button_text = \"<a5:t>Submit</a5:t>\"\ntmpl.edit.cancel_button_inlinestyle = \"\"\ntmpl.edit.submit_button_inlinestyle = \"\"\ntmpl.edit.confirm_before_submit = .f.\ntmpl.edit.confirm_before_submit_message = \"Submit changes?\"\ntmpl.edit.check_for_write_conflicts = .t.\ntmpl.edit.write_conflict_check_type = 2\ntmpl.edit.save_original_values  = .t.\ntmpl.edit.Show_Update_Commands = .f.\ntmpl.edit.Execute_Update_Commands = .t.\ntmpl.edit.TargetPage = \"<Self>\"\ntmpl.autoNumberColumnLabel = \"Auto\"\ntmpl.edit.RowEditStyle = \"AllRows\"\ntmpl.edit.NewRecordsEditStyle = \"AlwaysShown\"\ntmpl.edit.HideNewRecordsAfterInsert = .f.\ntmpl.edit.NewRecordsButtonLabel = \"New Records\"\ntmpl.edit.DeleteRecordControl = \"Icon\"\ntmpl.edit.HasRowStatusColumn = .t.\ntmpl.edit.OneEditableRowAtATime = .t.\ntmpl.edit.field_error_style.type = \"Icon\"\ntmpl.edit.field_error_style.icon = \"images/$$generic.error.png.a5image\"\ntmpl.edit.field_error_style.control_classname = \"\"\ntmpl.edit.field_error_style.error_classname = \"\"\ntmpl.edit.field_error_style.control_hover_classname = \"\"\ntmpl.edit.field_error_style.error_hover_classname = \"\"\ntmpl.edit.show_row_errors_in_popup = .f.\ntmpl.edit.row_errors_window_title = \"Errors\"\ntmpl.edit.row_errors_window_style = \"color: red; width: 6in; height: 2in;\"\ntmpl.edit.RefreshRowMethod = \"AutoSelect\"\ntmpl.edit.Editable_GridRow_Options_Style = \"Icons\"\ntmpl.edit.RefreshRowOnDirty = .t.\ntmpl.edit.LazyEdit = .t.\ntmpl.edit.abortGridUpdateIfAnyRowHasError = .f.\nDIM tmpl.update.tables[1] as p\nWith tmpl.update.tables[1]\n\t.Name = \"N_FichaTrabajadores_ResumenPlanilla\"\n\t.Table_Alias = \"N_FichaTrabajadores_ResumenPlanilla\"\n\t.PrimaryKey = \"Id_FichaTrabajadorResumen\"\nEnd With\ntmpl.grid_layout_style = 1\ntmpl.add_records_only = .f.\ntmpl.rows = 10\ntmpl.maxRowsPerPage = 200\ntmpl.rowsWhenSearchActive = -1\ntmpl.suppress_empty_rows = .t.\ntmpl.has_row_separator = .t.\ntmpl.alternate_bands = .f.\ntmpl.even_band_size = 1\ntmpl.odd_band_size = 1\ntmpl.alternate_column_bands = .f.\ntmpl.even_column_band_size = 1\ntmpl.odd_column_band_size = 1\ntmpl.conditionalStyle = \"\"\ntmpl.clientSideConditionalStyle = \"\"\ntmpl.show_title = .f.\ntmpl.title = \"\"\ntmpl.FontSize = \"Medium\"\ntmpl.No_records_message = \"<a5:t>No records in query</a5:t>\"\ntmpl.total_records_row_position = 1\ntmpl.total_records_row = \"<a5:t>Records</a5:t>:&nbsp; {Total_Records}&nbsp;\"\ntmpl.show_column_titles = 1\ntmpl.suppress_titles_if_no_records = .f.\ntmpl.show_row_labels = .t.\ntmpl.snakingLayout_suppressRepeatedLabels = .f.\ntmpl.sort_style = 3\ntmpl.reset_page_number_when_sorting = .t.\ntmpl.allowGridBodyScrolling = .f.\ntmpl.scrollableRegionHeight = \"2in\"\ntmpl.scrollableRegionWidth = \"100%\"\ntmpl.fixedWidthColumns = .f.\ntmpl.defaultColumnWidth = \"1in\"\ntmpl.columnWidthSettings = \"\"\ntmpl.EditRegion.Grid.Top = <<%editregion%\n%editregion%\ntmpl.EditRegion.Grid.Bottom = <<%editregion%\n%editregion%\ntmpl.EditRegion.Grid.Left = <<%editregion%\n%editregion%\ntmpl.EditRegion.Grid.Right = <<%editregion%\n%editregion%\ntmpl.HasNewRecordsTitle = .f.\ntmpl.NewRecordsTitle = \"<tr><td class=\\\"[class.gridData]\\\" colspan=\\\"{a5_colspan}\\\" style=\\\"padding: 0px;\\\" >New Records</td></tr>\"\ntmpl.HasExistingRecordsTitle = .f.\ntmpl.ExistingRecordsTitle = \"<tr><td class=\\\"[class.gridData]\\\" colspan=\\\"{a5_colspan}\\\" style=\\\"padding: 0px;\\\" >Existing Records</td></tr>\"\ntmpl.Highlight_row_onHover =  .t.\ntmpl.Highlight_row_onSelect =  .t.\ntmpl.HasRecordsPerPageSelector = .t.\ntmpl.RecordsPerPageChoices =   \"1,2,5,10,25,50,75,100\"\ntmpl.RecordsPerPageSelectorTemplate = \"&nbsp;&nbsp;{Grid.RecordsPerPageSelector} <a5:t>Records per page</a5:t>\"\ntmpl.has_qbe_row = .f.\ntmpl.qbe.initial_display = \"Hidden\"\ntmpl.qbe.toggleQBERowHyperlinkText = \"Show/Hide QBE Row\"\ntmpl.has_advancedSearch = .f.\ntmpl.hasLinkedContent = .f.\ntmpl.hasExternalNavigators = .f.\ntmpl.hasRowExpandColumn = .f.\ntmpl.hasSelectedRowColumn = .t.\ntmpl.hasCheckboxSelectColumn = .f.\ntmpl.AdditionalGridStyles = \"\"\ntmpl.LocalCss = \"\"\ntmpl.CSSLinkedFiles = \"\"\ntmpl.localsvg = \"\"\ntmpl.SVGLinkedFiles = \"\"\ntmpl.CSSIcons = \"\"\ntmpl.JavaScriptLinkedFiles = \"\"\ntmpl.useMasterTemplate = .f.\ntmpl.MasterTemplateStyle = \"Table - Vertical Layout\"\ntmpl.MasterLayoutTemplate = \"\"\ntmpl.MasterLayoutTemplateJavascript = \"\"\ntmpl.MasterLayout.PaneLabel.Search = \"Search\"\ntmpl.MasterLayout.PaneLabel.Grid = \"Grid\"\ntmpl.MasterLayout.PaneLabel.DetailView = \"Detail\"\ntmpl.MasterLayout.AccordionStyle = \"Multiple\"\ntmpl.MasterLayout.InitialOpenPanes = \"Search,Grid,DetailView\"\ntmpl.verticalAlignDataInColumns = \"Middle\"\ntmpl.CanCollapseGrid = .f.\ntmpl.CollapseBar.Title = \"Collapse Grid\"\ntmpl.CollapseBar.OpenIcon = \"\"\ntmpl.CollapseBar.ClosedIcon = \"\"\ntmpl.CollapseBar.Style = \"\"\ntmpl.Collapsebar.Class = \"\"\ntmpl.Collapsebar.ContainerStyle = \"\"\ntmpl.Collapsebar.ContainerClass = \"\"\ntmpl.Collapsebar.InitialState = \"open\"\ntmpl.languageTags_RemoveUnConsumedTags = .t.\ntmpl.activeLanguage = \"<Default>\"\ntmpl.search.highlightSearchStrings = .f.\ntmpl.autoRefreshGrid = .f.\ntmpl.autoRefreshInterval = 60\ntmpl.helpTableType = \"DBF\"\ntmpl.helpTableName = \"\"\ntmpl.helpConnectionString = \"\"\ntmpl.helpIDfield = \"\"\ntmpl.helpContentsField = \"\"\ntmpl.fieldHelpWindowStyle = \"modal-resizeable\"\ntmpl.fields = 10\nDIM tmpl.field_info[tmpl.fields] as P \nwith tmpl.field_info[1]\n\t.Fieldname = \"Id_FichaTrabajadorResumen\"\n\t.Scope = \"Local\"\n\t.DisplayFormat = \"\"\n\t.DisplayUnFormat = \"\"\n\t.ConditionalStyle = \"\"\n\t.ConditionalStyleLevel = \"Cell\"\n\t.ClientSideConditionalStyle = \"\"\n\t.ClientSideConditionalStyleLevel = \"Cell\"\n\t.QBEDisable = .f.\n\t.QBEInlineStyle = \"\"\n\t.QBEOptionsJSON = \"\"\n\t.canBeUsedInWhereClause = .t.\n\t.autoincrement = .t.\n\t.portableType = \"Integer32\"\n\t.nativeType = \"int\"\n\t.Type = \"N\"\n\t.UserDefinedClientSideValidationJavascript = \"\"\n\t.onChange_ValidationOption = \"None\"\n\t.Updateable = .t.\n\t.TreatBlankAsNull = .f.\n\t.Table_Alias = \"N_FichaTrabajadores_ResumenPlanilla\"\n\t.FieldToUpdate = \"Id_FichaTrabajadorResumen\"\n\t.Varname = \"ID_FICHATRABAJADORRESUMEN\"\n\t.Initial_Value = \"NULL\"\n\t.Column.LabelPosition = \"Left\"\n\t.Controltype = \"Textbox\"\n\t.Textbox.Size = 20\n\t.Textbox.HTML5Type = \"\"\n\t.Textbox.customAttributes = \"\"\n\t.Textbox.readonly = .f.\n\t.Textbox.MaxLength = 20\n\t.Textbox.InLineStyle = \"text-align: right;\"\n\t.Textbox.className = \"\"\n\t.Textbox.ContainerInlineStyle = \"\"\n\t.Textbox.IsPassword = .f.\n\t.hasWatermark= .f.\n\t.BreakType = \"None\"\n\t.nCols = 1\n\t.Column.Hide = .t.\n\t.BaseFieldExpression = \"Id_FichaTrabajadorResumen\"\n\t.SourceAlias = \"\"\n\t.Column.Heading = \"Id Ficha Trabajador Resumen\"\nend with\nwith tmpl.field_info[2]\n\t.Fieldname = \"Id_Trabajador\"\n\t.Scope = \"Local\"\n\t.DisplayFormat = \"\"\n\t.DisplayUnFormat = \"\"\n\t.ConditionalStyle = \"\"\n\t.ConditionalStyleLevel = \"Cell\"\n\t.ClientSideConditionalStyle = \"\"\n\t.ClientSideConditionalStyleLevel = \"Cell\"\n\t.QBEDisable = .f.\n\t.QBEInlineStyle = \"\"\n\t.QBEOptionsJSON = \"\"\n\t.canBeUsedInWhereClause = .t.\n\t.autoincrement = .f.\n\t.portableType = \"Integer32\"\n\t.nativeType = \"int\"\n\t.Type = \"N\"\n\t.UserDefinedClientSideValidationJavascript = \"\"\n\t.onChange_ValidationOption = \"None\"\n\t.Updateable = .t.\n\t.TreatBlankAsNull = .f.\n\t.Table_Alias = \"N_FichaTrabajadores_ResumenPlanilla\"\n\t.FieldToUpdate = \"Id_Trabajador\"\n\t.Varname = \"ID_TRABAJADOR\"\n\t.Initial_Value = \"NULL\"\n\t.Column.LabelPosition = \"Left\"\n\t.Controltype = \"Textbox\"\n\t.Textbox.Size = 20\n\t.Textbox.HTML5Type = \"\"\n\t.Textbox.customAttributes = \"\"\n\t.Textbox.readonly = .f.\n\t.Textbox.MaxLength = 20\n\t.Textbox.InLineStyle = \"text-align: right;\"\n\t.Textbox.className = \"\"\n\t.Textbox.ContainerInlineStyle = \"\"\n\t.Textbox.IsPassword = .f.\n\t.hasWatermark= .f.\n\t.BreakType = \"None\"\n\t.nCols = 1\n\t.Column.Hide = .t.\n\t.BaseFieldExpression = \"Id_Trabajador\"\n\t.SourceAlias = \"\"\n\t.Column.Heading = \"Id Trabajador\"\nend with\nwith tmpl.field_info[3]\n\t.Fieldname = \"fechaDesde\"\n\t.Scope = \"Local\"\n\t.DisplayFormat = \"time(\\\"{grid.clientSideDateFormat}\\\",<value>)\"\n\t.DisplayUnFormat = \"\"\n\t.ConditionalStyle = \"\"\n\t.ConditionalStyleLevel = \"Cell\"\n\t.ClientSideConditionalStyle = \"\"\n\t.ClientSideConditionalStyleLevel = \"Cell\"\n\t.QBEDisable = .f.\n\t.QBEInlineStyle = \"\"\n\t.QBEOptionsJSON = \"\"\n\t.canBeUsedInWhereClause = .t.\n\t.autoincrement = .f.\n\t.portableType = \"Date\"\n\t.nativeType = \"Date\"\n\t.Type = \"D\"\n\t.UserDefinedClientSideValidationJavascript = \"\"\n\t.onChange_ValidationOption = \"None\"\n\t.Updateable = .t.\n\t.TreatBlankAsNull = .f.\n\t.Table_Alias = \"N_FichaTrabajadores_ResumenPlanilla\"\n\t.FieldToUpdate = \"fechaDesde\"\n\t.Varname = \"FECHADESDE\"\n\t.Initial_Value = \"NULL\"\n\t.Column.LabelPosition = \"Left\"\n\t.Controltype = \"Textbox\"\n\t.Textbox.Size = 10\n\t.Textbox.HTML5Type = \"\"\n\t.Textbox.customAttributes = \"\"\n\t.Textbox.readonly = .f.\n\t.Textbox.MaxLength = 20\n\t.Textbox.InLineStyle = \"\"\n\t.Textbox.className = \"\"\n\t.Textbox.ContainerInlineStyle = \"\"\n\t.Textbox.IsPassword = .f.\n\t.hasWatermark= .f.\n\t.DatePicker.Display = .t.\n\t.DatePicker.UseComboBoxes = .t.\n\t.DatePicker.DateFormat = \"<DefaultDateOnlyFormat>\"\n\t.DatePicker.LowYear = 1950\n\t.DatePicker.HighYear = 2050\n\t.DatePicker.SwitchYear = 20\n\t.DatePicker.IconNumber = 2\n\t.DatePicker.OpenMethod = \"ClickIcon\"\n\t.DatePicker.lowDate = \"\"\n\t.DatePicker.highDate = \"\"\n\t.DatePicker.disabledDays = \"\"\n\t.DatePicker.showDaysOfWeek = .t.\n\t.DatePicker.showTodayButton = .t.\n\t.DatePicker.showWeeksOfYear = .f.\n\t.DatePicker.OKButtonLabel = \"OK\"\n\t.DatePicker.CancelButtonLabel = \"Cancel\"\n\t.DatePicker.lockColumnWidths = .f.\n\t.DatePicker.userMustSelectFromDatePicker = .f.\n\t.DatePicker.hasEvents = .f.\n\t.DatePicker.event.onItemDraw = \"\"\n\t.DatePicker.event.onClick = \"\"\n\t.DatePicker.event.onRightClick = \"\"\n\t.DatePicker.event.onSelect = \"\"\n\t.DatePicker.event.onNavigate = \"\"\n\t.DatePicker.event.onMonthNavigate = \"\"\n\t.DatePicker.event.onYearNavigate = \"\"\n\t.DatePicker.showPreDefinedDates = .f.\n\t.DatePicker.preDefinedDatesJSON = \"\"\n\t.BreakType = \"None\"\n\t.nCols = 1\n\t.Column.Hide = .f.\n\t.BaseFieldExpression = \"fechaDesde\"\n\t.SourceAlias = \"\"\n\t.Column.Heading = \"Fecha Desde\"\n\t.Column.Sort = \"fechaDesde\"\n\t.Column.FirstClickDirection = \"A\"\n\t.HasValidationRules = .t.\n\tDIM validationSettings as P\n\tWith ValidationSettings\n\t\t.general.require_value = .t.\n\t\t.general.error_msg = \"Campo obligatorio\"\n\t\t.general.invalid_data_type_message = \"\"\n\tEnd With\n\t.Enable_ClientSideValidation = .f.\n\t.Validate_OnBlur = .f.\nend with\nwith tmpl.field_info[4]\n\t.Fieldname = \"fechaHasta\"\n\t.Scope = \"Local\"\n\t.DisplayFormat = \"time(\\\"{grid.clientSideDateFormat}\\\",<value>)\"\n\t.DisplayUnFormat = \"\"\n\t.ConditionalStyle = \"\"\n\t.ConditionalStyleLevel = \"Cell\"\n\t.ClientSideConditionalStyle = \"\"\n\t.ClientSideConditionalStyleLevel = \"Cell\"\n\t.QBEDisable = .f.\n\t.QBEInlineStyle = \"\"\n\t.QBEOptionsJSON = \"\"\n\t.canBeUsedInWhereClause = .t.\n\t.autoincrement = .f.\n\t.portableType = \"Date\"\n\t.nativeType = \"Date\"\n\t.Type = \"D\"\n\t.UserDefinedClientSideValidationJavascript = \"\"\n\t.onChange_ValidationOption = \"None\"\n\t.Updateable = .t.\n\t.TreatBlankAsNull = .f.\n\t.Table_Alias = \"N_FichaTrabajadores_ResumenPlanilla\"\n\t.FieldToUpdate = \"fechaHasta\"\n\t.Varname = \"FECHAHASTA\"\n\t.Initial_Value = \"NULL\"\n\t.Column.LabelPosition = \"Left\"\n\t.Controltype = \"Textbox\"\n\t.Textbox.Size = 10\n\t.Textbox.HTML5Type = \"\"\n\t.Textbox.customAttributes = \"\"\n\t.Textbox.readonly = .f.\n\t.Textbox.MaxLength = 20\n\t.Textbox.InLineStyle = \"\"\n\t.Textbox.className = \"\"\n\t.Textbox.ContainerInlineStyle = \"\"\n\t.Textbox.IsPassword = .f.\n\t.hasWatermark= .f.\n\t.DatePicker.Display = .t.\n\t.DatePicker.UseComboBoxes = .t.\n\t.DatePicker.DateFormat = \"<DefaultDateOnlyFormat>\"\n\t.DatePicker.LowYear = 1950\n\t.DatePicker.HighYear = 2050\n\t.DatePicker.SwitchYear = 20\n\t.DatePicker.IconNumber = 2\n\t.DatePicker.OpenMethod = \"ClickIcon\"\n\t.DatePicker.lowDate = \"\"\n\t.DatePicker.highDate = \"\"\n\t.DatePicker.disabledDays = \"\"\n\t.DatePicker.showDaysOfWeek = .t.\n\t.DatePicker.showTodayButton = .t.\n\t.DatePicker.showWeeksOfYear = .f.\n\t.DatePicker.OKButtonLabel = \"OK\"\n\t.DatePicker.CancelButtonLabel = \"Cancel\"\n\t.DatePicker.lockColumnWidths = .f.\n\t.DatePicker.userMustSelectFromDatePicker = .f.\n\t.DatePicker.hasEvents = .f.\n\t.DatePicker.event.onItemDraw = \"\"\n\t.DatePicker.event.onClick = \"\"\n\t.DatePicker.event.onRightClick = \"\"\n\t.DatePicker.event.onSelect = \"\"\n\t.DatePicker.event.onNavigate = \"\"\n\t.DatePicker.event.onMonthNavigate = \"\"\n\t.DatePicker.event.onYearNavigate = \"\"\n\t.DatePicker.showPreDefinedDates = .f.\n\t.DatePicker.preDefinedDatesJSON = \"\"\n\t.BreakType = \"None\"\n\t.nCols = 1\n\t.Column.Hide = .f.\n\t.BaseFieldExpression = \"fechaHasta\"\n\t.SourceAlias = \"\"\n\t.Column.Heading = \"Fecha Hasta\"\n\t.Column.Sort = \"fechaHasta\"\n\t.Column.FirstClickDirection = \"A\"\n\t.HasValidationRules = .t.\n\tDIM validationSettings as P\n\tWith ValidationSettings\n\t\t.general.require_value = .t.\n\t\t.general.error_msg = \"Campo obligatorio\"\n\t\t.general.invalid_data_type_message = \"\"\n\tEnd With\n\t.Enable_ClientSideValidation = .f.\n\t.Validate_OnBlur = .f.\nend with\nwith tmpl.field_info[5]\n\t.Fieldname = \"horasExtras\"\n\t.Scope = \"Local\"\n\t.DisplayFormat = \"\"\n\t.DisplayUnFormat = \"\"\n\t.ConditionalStyle = \"\"\n\t.ConditionalStyleLevel = \"Cell\"\n\t.ClientSideConditionalStyle = \"\"\n\t.ClientSideConditionalStyleLevel = \"Cell\"\n\t.QBEDisable = .f.\n\t.QBEInlineStyle = \"\"\n\t.QBEOptionsJSON = \"\"\n\t.canBeUsedInWhereClause = .t.\n\t.autoincrement = .f.\n\t.portableType = \"Double\"\n\t.nativeType = \"float\"\n\t.Type = \"N\"\n\t.UserDefinedClientSideValidationJavascript = \"\"\n\t.onChange_ValidationOption = \"None\"\n\t.Updateable = .t.\n\t.TreatBlankAsNull = .f.\n\t.Table_Alias = \"N_FichaTrabajadores_ResumenPlanilla\"\n\t.FieldToUpdate = \"horasExtras\"\n\t.Varname = \"HORASEXTRAS\"\n\t.Initial_Value = \"NULL\"\n\t.Column.LabelPosition = \"Left\"\n\t.Controltype = \"Textbox\"\n\t.Textbox.Size = 10\n\t.Textbox.HTML5Type = \"\"\n\t.Textbox.customAttributes = \"\"\n\t.Textbox.readonly = .f.\n\t.Textbox.MaxLength = 20\n\t.Textbox.InLineStyle = \"text-align: right;\"\n\t.Textbox.className = \"\"\n\t.Textbox.ContainerInlineStyle = \"\"\n\t.Textbox.IsPassword = .f.\n\t.hasWatermark= .f.\n\t.BreakType = \"None\"\n\t.nCols = 1\n\t.Column.Hide = .f.\n\t.BaseFieldExpression = \"horasExtras\"\n\t.SourceAlias = \"\"\n\t.Column.Heading = \"Horas Extras\"\n\t.Column.Sort = \"horasExtras\"\n\t.Column.FirstClickDirection = \"A\"\nend with\nwith tmpl.field_info[6]\n\t.Fieldname = \"diasLaborados\"\n\t.Scope = \"Local\"\n\t.DisplayFormat = \"\"\n\t.DisplayUnFormat = \"\"\n\t.ConditionalStyle = \"\"\n\t.ConditionalStyleLevel = \"Cell\"\n\t.ClientSideConditionalStyle = \"\"\n\t.ClientSideConditionalStyleLevel = \"Cell\"\n\t.QBEDisable = .f.\n\t.QBEInlineStyle = \"\"\n\t.QBEOptionsJSON = \"\"\n\t.canBeUsedInWhereClause = .t.\n\t.autoincrement = .f.\n\t.portableType = \"Double\"\n\t.nativeType = \"float\"\n\t.Type = \"N\"\n\t.UserDefinedClientSideValidationJavascript = \"\"\n\t.onChange_ValidationOption = \"None\"\n\t.Updateable = .t.\n\t.TreatBlankAsNull = .f.\n\t.Table_Alias = \"N_FichaTrabajadores_ResumenPlanilla\"\n\t.FieldToUpdate = \"diasLaborados\"\n\t.Varname = \"DIASLABORADOS\"\n\t.Initial_Value = \"NULL\"\n\t.Column.LabelPosition = \"Left\"\n\t.Controltype = \"Textbox\"\n\t.Textbox.Size = 10\n\t.Textbox.HTML5Type = \"\"\n\t.Textbox.customAttributes = \"\"\n\t.Textbox.readonly = .f.\n\t.Textbox.MaxLength = 20\n\t.Textbox.InLineStyle = \"text-align: right;\"\n\t.Textbox.className = \"\"\n\t.Textbox.ContainerInlineStyle = \"\"\n\t.Textbox.IsPassword = .f.\n\t.hasWatermark= .f.\n\t.BreakType = \"None\"\n\t.nCols = 1\n\t.Column.Hide = .f.\n\t.BaseFieldExpression = \"diasLaborados\"\n\t.SourceAlias = \"\"\n\t.Column.Heading = \"Dias Laborados\"\n\t.Column.Sort = \"diasLaborados\"\n\t.Column.FirstClickDirection = \"A\"\n\t.HasValidationRules = .t.\n\tDIM validationSettings as P\n\tWith ValidationSettings\n\t\t.general.require_value = .t.\n\t\t.general.error_msg = \"Campo obligatorio\"\n\t\t.general.invalid_data_type_message = \"\"\n\tEnd With\n\t.Enable_ClientSideValidation = .f.\n\t.Validate_OnBlur = .f.\nend with\nwith tmpl.field_info[7]\n\t.Fieldname = \"valorDiaLaborado\"\n\t.Scope = \"Local\"\n\t.DisplayFormat = \"\"\n\t.DisplayUnFormat = \"\"\n\t.ConditionalStyle = \"\"\n\t.ConditionalStyleLevel = \"Cell\"\n\t.ClientSideConditionalStyle = \"\"\n\t.ClientSideConditionalStyleLevel = \"Cell\"\n\t.QBEDisable = .f.\n\t.QBEInlineStyle = \"\"\n\t.QBEOptionsJSON = \"\"\n\t.canBeUsedInWhereClause = .t.\n\t.autoincrement = .f.\n\t.portableType = \"Double\"\n\t.nativeType = \"float\"\n\t.Type = \"N\"\n\t.UserDefinedClientSideValidationJavascript = \"\"\n\t.onChange_ValidationOption = \"None\"\n\t.Updateable = .t.\n\t.TreatBlankAsNull = .f.\n\t.Table_Alias = \"N_FichaTrabajadores_ResumenPlanilla\"\n\t.FieldToUpdate = \"valorDiaLaborado\"\n\t.Varname = \"VALORDIALABORADO\"\n\t.Initial_Value = \"NULL\"\n\t.Column.LabelPosition = \"Left\"\n\t.Controltype = \"Textbox\"\n\t.Textbox.Size = 10\n\t.Textbox.HTML5Type = \"\"\n\t.Textbox.customAttributes = \"\"\n\t.Textbox.readonly = .f.\n\t.Textbox.MaxLength = 20\n\t.Textbox.InLineStyle = \"text-align: right;\"\n\t.Textbox.className = \"\"\n\t.Textbox.ContainerInlineStyle = \"\"\n\t.Textbox.IsPassword = .f.\n\t.hasWatermark= .f.\n\t.BreakType = \"None\"\n\t.nCols = 1\n\t.Column.Hide = .f.\n\t.BaseFieldExpression = \"valorDiaLaborado\"\n\t.SourceAlias = \"\"\n\t.Column.Heading = \"Valor Dia Laborado\"\n\t.Column.Sort = \"valorDiaLaborado\"\n\t.Column.FirstClickDirection = \"A\"\n\t.HasValidationRules = .t.\n\tDIM validationSettings as P\n\tWith ValidationSettings\n\t\t.general.require_value = .t.\n\t\t.general.error_msg = \"Campo obligatorio\"\n\t\t.general.invalid_data_type_message = \"\"\n\tEnd With\n\t.Enable_ClientSideValidation = .f.\n\t.Validate_OnBlur = .f.\nend with\nwith tmpl.field_info[8]\n\t.Fieldname = \"diasCuarentena\"\n\t.Scope = \"Local\"\n\t.DisplayFormat = \"\"\n\t.DisplayUnFormat = \"\"\n\t.ConditionalStyle = \"\"\n\t.ConditionalStyleLevel = \"Cell\"\n\t.ClientSideConditionalStyle = \"\"\n\t.ClientSideConditionalStyleLevel = \"Cell\"\n\t.QBEDisable = .f.\n\t.QBEInlineStyle = \"\"\n\t.QBEOptionsJSON = \"\"\n\t.canBeUsedInWhereClause = .t.\n\t.autoincrement = .f.\n\t.portableType = \"Double\"\n\t.nativeType = \"float\"\n\t.Type = \"N\"\n\t.UserDefinedClientSideValidationJavascript = \"\"\n\t.onChange_ValidationOption = \"None\"\n\t.Updateable = .t.\n\t.TreatBlankAsNull = .f.\n\t.Table_Alias = \"N_FichaTrabajadores_ResumenPlanilla\"\n\t.FieldToUpdate = \"diasCuarentena\"\n\t.Varname = \"DIASCUARENTENA\"\n\t.Initial_Value = \"NULL\"\n\t.Column.LabelPosition = \"Left\"\n\t.Controltype = \"Textbox\"\n\t.Textbox.Size = 10\n\t.Textbox.HTML5Type = \"\"\n\t.Textbox.customAttributes = \"\"\n\t.Textbox.readonly = .f.\n\t.Textbox.MaxLength = 20\n\t.Textbox.InLineStyle = \"text-align: right;\"\n\t.Textbox.className = \"\"\n\t.Textbox.ContainerInlineStyle = \"\"\n\t.Textbox.IsPassword = .f.\n\t.hasWatermark= .f.\n\t.BreakType = \"None\"\n\t.nCols = 1\n\t.Column.Hide = .f.\n\t.BaseFieldExpression = \"diasCuarentena\"\n\t.SourceAlias = \"\"\n\t.Column.Heading = \"Dias Cuarentena\"\n\t.Column.Sort = \"diasCuarentena\"\n\t.Column.FirstClickDirection = \"A\"\n\t.HasValidationRules = .t.\n\tDIM validationSettings as P\n\tWith ValidationSettings\n\t\t.general.require_value = .t.\n\t\t.general.error_msg = \"Campo obligatorio\"\n\t\t.general.invalid_data_type_message = \"\"\n\tEnd With\n\t.Enable_ClientSideValidation = .f.\n\t.Validate_OnBlur = .f.\nend with\nwith tmpl.field_info[9]\n\t.Fieldname = \"valorDiaCuarentena\"\n\t.Scope = \"Local\"\n\t.DisplayFormat = \"\"\n\t.DisplayUnFormat = \"\"\n\t.ConditionalStyle = \"\"\n\t.ConditionalStyleLevel = \"Cell\"\n\t.ClientSideConditionalStyle = \"\"\n\t.ClientSideConditionalStyleLevel = \"Cell\"\n\t.QBEDisable = .f.\n\t.QBEInlineStyle = \"\"\n\t.QBEOptionsJSON = \"\"\n\t.canBeUsedInWhereClause = .t.\n\t.autoincrement = .f.\n\t.portableType = \"Double\"\n\t.nativeType = \"float\"\n\t.Type = \"N\"\n\t.UserDefinedClientSideValidationJavascript = \"\"\n\t.onChange_ValidationOption = \"None\"\n\t.Updateable = .t.\n\t.TreatBlankAsNull = .f.\n\t.Table_Alias = \"N_FichaTrabajadores_ResumenPlanilla\"\n\t.FieldToUpdate = \"valorDiaCuarentena\"\n\t.Varname = \"VALORDIACUARENTENA\"\n\t.Initial_Value = \"NULL\"\n\t.Column.LabelPosition = \"Left\"\n\t.Controltype = \"Textbox\"\n\t.Textbox.Size = 10\n\t.Textbox.HTML5Type = \"\"\n\t.Textbox.customAttributes = \"\"\n\t.Textbox.readonly = .f.\n\t.Textbox.MaxLength = 20\n\t.Textbox.InLineStyle = \"text-align: right;\"\n\t.Textbox.className = \"\"\n\t.Textbox.ContainerInlineStyle = \"\"\n\t.Textbox.IsPassword = .f.\n\t.hasWatermark= .f.\n\t.BreakType = \"None\"\n\t.nCols = 1\n\t.Column.Hide = .f.\n\t.BaseFieldExpression = \"valorDiaCuarentena\"\n\t.SourceAlias = \"\"\n\t.Column.Heading = \"Valor Dia Cuarentena\"\n\t.Column.Sort = \"valorDiaCuarentena\"\n\t.Column.FirstClickDirection = \"A\"\n\t.HasValidationRules = .t.\n\tDIM validationSettings as P\n\tWith ValidationSettings\n\t\t.general.require_value = .t.\n\t\t.general.error_msg = \"Campo obligatorio\"\n\t\t.general.invalid_data_type_message = \"\"\n\tEnd With\n\t.Enable_ClientSideValidation = .f.\n\t.Validate_OnBlur = .f.\nend with\nwith tmpl.field_info[10]\n\t.Fieldname = \"totalDiasLaborados\"\n\t.Scope = \"Local\"\n\t.DisplayFormat = \"\"\n\t.DisplayUnFormat = \"\"\n\t.ConditionalStyle = \"\"\n\t.ConditionalStyleLevel = \"Cell\"\n\t.ClientSideConditionalStyle = \"\"\n\t.ClientSideConditionalStyleLevel = \"Cell\"\n\t.QBEDisable = .f.\n\t.QBEInlineStyle = \"\"\n\t.QBEOptionsJSON = \"\"\n\t.canBeUsedInWhereClause = .t.\n\t.autoincrement = .f.\n\t.portableType = \"Integer32\"\n\t.nativeType = \"int\"\n\t.Type = \"N\"\n\t.UserDefinedClientSideValidationJavascript = \"\"\n\t.onChange_ValidationOption = \"None\"\n\t.Updateable = .t.\n\t.TreatBlankAsNull = .f.\n\t.Table_Alias = \"N_FichaTrabajadores_ResumenPlanilla\"\n\t.FieldToUpdate = \"totalDiasLaborados\"\n\t.Varname = \"TOTALDIASLABORADOS\"\n\t.Initial_Value = \"NULL\"\n\t.Column.LabelPosition = \"Left\"\n\t.Controltype = \"TextBox\"\n\t.CalcField = .T.\n\t.CalcExpression = \"diasLaborados + diasCuarentena \"\n\t.Textbox.Size = 10\n\t.Textbox.HTML5Type = \"\"\n\t.Textbox.customAttributes = \"\"\n\t.Textbox.readonly = .f.\n\t.Textbox.MaxLength = 11\n\t.Textbox.InLineStyle = \"text-align: right;\"\n\t.Textbox.className = \"\"\n\t.Textbox.ContainerInlineStyle = \"\"\n\t.Textbox.IsPassword = .f.\n\t.hasWatermark= .f.\n\t.BreakType = \"None\"\n\t.nCols = 1\n\t.Column.Hide = .f.\n\t.BaseFieldExpression = \"totalDiasLaborados\"\n\t.SourceAlias = \"\"\n\t.Column.Heading = \"Total Dias Laborados\"\n\t.Column.Sort = \"totalDiasLaborados\"\n\t.Column.FirstClickDirection = \"A\"\n\t.HasValidationRules = .t.\n\tDIM validationSettings as P\n\tWith ValidationSettings\n\t\t.general.require_value = .t.\n\t\t.general.error_msg = \"Campo obligatorio\"\n\t\t.general.invalid_data_type_message = \"\"\n\t\t.oldValue = \"__a5_notAvailable__\"\n\tEnd With\n\t.Enable_ClientSideValidation = .f.\n\t.Validate_OnBlur = .f.\nend with\ntmpl.RecordNavigationStyle = \"NavigationButtons\"\ntmpl.fetchMoreRecordsButton.text = \"More Records\"\ntmpl.fetchMoreRecordsButton.style = \"\"\ntmpl.RecNav.SuppressIfOnlyOnePage = .t.\ntmpl.RecNav.First_Label = \"First\"\ntmpl.RecNav.Has_First_Button = .t.\ntmpl.RecNav.Has_Last_Button = .t.\ntmpl.RecNav.Has_Next_Button = .t.\ntmpl.RecNav.Has_Prev_Button = .t.\ntmpl.RecNav.HTML_Template_source = \"Computed\"\ntmpl.RecNav.Justify = \"Left\"\ntmpl.RecNav.Last_Label = \"Last\"\ntmpl.RecNav.Next_Label = \"Next\"\ntmpl.RecNav.Number_of_page_links = 10\ntmpl.RecNav.Page_Numbering_Style = 3\ntmpl.RecNav.PagesTemplate_w_PageCount = \"{PageNumber} of {PageCount}\"\ntmpl.RecNav.PagesTemplate_wout_PageCount = \"{PageNumber}\"\ntmpl.RecNav.Position = 1\ntmpl.RecNav.suppress_recNavBar_if_no_records = .f.\ntmpl.RecNav.Prev_Label = \"Prev\"\ntmpl.RecNav.Show_disabled_controls = .t.\ntmpl.RecNav.Show_Page_Count = .t.\ntmpl.RecNav.Use_Images = .f.\ntmpl.gridToolbarTemplate = <<%html%\n%html%\ntmpl.gridToolbarTemplateEditable = <<%html%\n%html%\ntmpl.ToolbarActionButtons = <<%html%\n{ActionButton:REFRESH}\n%html%\ntmpl.style_name = \"GrBlue\"\ntmpl.resolveAbstractClassNames = .t.\ntmpl.style_type = \"Alpha Five\"\ntmpl.UseSimpleStyles = .f.\ntmpl.overrideStylesForJavascriptObjects = .f.\ntmpl.searchBehavior = \"\"\ntmpl.GUID = \"233180f4-7a78-43f2-9e3b-a49ffc6195f7\"\ntmpl.EventCode = <<%code%\n\nfunction CanUpdateRecord as v (DataSubmitted as P, Args as p, PageVariables as p, Result as p )\nwith PageVariables\nResult.Cancel = .f.\nResult.ErrorHTML = \"\"\ndim fechaDesde as d\nfechaDesde = DataSubmitted.fechaDesde\ndim fechaHasta as d\nfechaHasta = DataSubmitted.fechaHasta\ndim totalDiasMes as n\ntotalDiasMes = fechaHasta - fechaDesde + 1\ndim totalDiasLaborados as n\ntotalDiasLaborados = DataSubmitted.totalDiasLaborados\nif totalDiasMes < 28 .OR. totalDiasMes > 31 then\n\tResult.Cancel = .t.\n\tResult.ErrorHTML = \"Seleccione las fechas correctamente.\"\nend if\nif totalDiasLaborados > totalDiasMes then\n\tResult.Cancel = .t.\n\tResult.ErrorHTML = \"El total de Dias Laborados no puede ser mayor al total de dias del mes.\" + totalDiasMes\nend if\nend with\nend function\nfunction CanInsertRecord as v (DataSubmitted as P, Args as p, PageVariables as p, Result as p)\nwith PageVariables\nResult.Cancel = .f.\nResult.ErrorHTML = \"\"\ndim fechaDesde as d\nfechaDesde = DataSubmitted.fechaDesde\ndim fechaHasta as d\nfechaHasta = DataSubmitted.fechaHasta\ndim totalDiasMes as n\ntotalDiasMes = fechaHasta - fechaDesde\nif totalDiasMes < 28 .OR. totalDiasMes > 31 then\n\tResult.Cancel = .t.\n\tResult.ErrorHTML = \"Seleccione bien las fechas.\"\nend if\nend with\nend function\n%code%\n\ntmpl.onlyIncludeSelectedFieldsInQuery = .t.\nDIM tmpl.controls[1] as P\nwith  tmpl.controls[1]\n\t.idInternal = \"d893db12-3cf3-4c0f-abfd-6955de6fb684\"\n\t.type = \"Button\"\n\t.Name = \"REFRESH\"\n\t.trailingSeparator = .T.\n\t.bubbleHelp = \"\"\n\t.readDataFrom = \"GridPart\"\n\t.actionJSAttribute = <<%str%\n/* actionJavascript:bdb511e0-bff7-45be-acdd-7e7f578eab0b */\nfunction tempfunction_2ef78636_3dd9_4604_af74_388c545f5119() {\nvar dropDownType = 'wait';\nvar title = 'Espere por favor';\nvar msgBody = '';\nvar width = '250px';\nvar oKButtonLabel = '';\nvar cancelButtonLabel = '';\nvar loc = 'center';\nvar onOK = function() { alert('pressed ok'); };\nvar onCancel = function() { };\n{grid.object}.dropDownMessage(dropDownType,title,msgBody,width,oKButtonLabel,cancelButtonLabel,onOK,onCancel, loc);\n}\nfunction tempfunction_44d22228_2e86_47b8_b62d_3c94e8e7af24() {\n{grid.object}.refresh();\n}\nfunction tempfunction_6dbc519b_ddeb_4eca_9be2_ea23a717532c() {\n{grid.object}.dropDownMessageHide();\n}\nA5.executeThisThenThat(tempfunction_2ef78636_3dd9_4604_af74_388c545f5119,tempfunction_44d22228_2e86_47b8_b62d_3c94e8e7af24,tempfunction_6dbc519b_ddeb_4eca_9be2_ea23a717532c);%str%\n\t.actionJSGlobal = \"\"\n\t.actionXbasic = \"\"\n\t.actionClientSideXbasic = \"\"\n\t.buttonStyle = \"Image only\"\n\t.buttonClass = \"[class.gridButton]\"\n\t.buttonClassHover = \"[class.gridButtonHover]\"\n\t.buttonClassPressed = \"[class.gridButtonPressed]\"\n\t.buttonClassDisabled = \"[class.gridButtonDisabled]\"\n\t.buttonInlineStyle = \"\"\n\t.buttonText = \"BUTTON\"\n\t.hyperlinkClass = \"[class.gridHyperlinkButton]\"\n\t.hyperlinkInlineStyle = \"\"\n\t.hyperlinkImagePosition = \"None\"\n\t.textClass = \"\"\n\t.textInlineStyle = \"\"\n\t.imageName = \"images/$$generic.refresh.color.png.a5image\"\n\t.hoverImageName = \"\"\n\t.pressedImageName = \"\"\n\t.disabledimageName = \"\"\n\t.imageClass = \"\"\n\t.imageInlineStyle = \"\"\n\t.securityGroups = \"\"\n\t.serverSideShowHideExpression = \"\"\n\t.readDataFromForClientSideExpns = \"GridPart\"\n\t.clientSideShowHideExpression = \"\"\n\t.clientSideEnableExpression = \"\"\n\t.precalc.watchJavascriptShowHide = \"\"\n\t.precalc.watchJavascriptEnable = \"\"\n\t.precalc.watchColumnsShowHide = \"\"\n\t.precalc.watchColumnsEnable = \"\"\n\t.precalc.JStoSetupWatchEvents = \"\"\n\t.precalc.buttonObjectJavascript = <<%str%\nwindow['{grid.componentName}_BUTTONS_REFRESH'] = new A5.Button({\n\tlayout: 'icon',\n\tclassName: '[class.gridButton]',\n\thoverClassName: '[class.gridButtonHover]',\n\tpressedClassName: '[class.gridButtonPressed]',\n\tdisabledClassName: '[class.gridButtonDisabled]',\n\thtml: 'BUTTON',\n\ticon: 'images/$$generic.refresh.color.png.a5image',\n\tdisabledIcon: 'images/disabled/$$generic.refresh.color.png.a5image',\n\tonClick: function() { /* actionJavascript:bdb511e0-bff7-45be-acdd-7e7f578eab0b */\nfunction tempfunction_2ef78636_3dd9_4604_af74_388c545f5119() {\nvar dropDownType = 'wait';\nvar title = 'Espere por favor';\nvar msgBody = '';\nvar width = '250px';\nvar oKButtonLabel = '';\nvar cancelButtonLabel = '';\nvar loc = 'center';\nvar onOK = function() { alert('pressed ok'); };\nvar onCancel = function() { };\n{grid.object}.dropDownMessage(dropDownType,title,msgBody,width,oKButtonLabel,cancelButtonLabel,onOK,onCancel, loc);\n}\nfunction tempfunction_44d22228_2e86_47b8_b62d_3c94e8e7af24() {\n{grid.object}.refresh();\n}\nfunction tempfunction_6dbc519b_ddeb_4eca_9be2_ea23a717532c() {\n{grid.object}.dropDownMessageHide();\n}\nA5.executeThisThenThat(tempfunction_2ef78636_3dd9_4604_af74_388c545f5119,tempfunction_44d22228_2e86_47b8_b62d_3c94e8e7af24,tempfunction_6dbc519b_ddeb_4eca_9be2_ea23a717532c);\n},\n\ttheme: '{grid.style}'\n});%str%\n\t.precalc.objectHTML = \"<button type=\\\"button\\\" id=\\\"{id}\\\"></button>&nbsp;\"\n\t.precalc.objectName = \"{grid.componentName}_BUTTONS_REFRESH\"\n\t.precalc.bindJS = \"{grid.componentName}_BUTTONS_REFRESH.bind({bindIdList});\"\nend with\ntmpl.hasGroupBreaks = .f.\ntmpl.groupBreaks.expression1 = \"\"\ntmpl.groupBreaks.direction1 = \"\"\ntmpl.groupBreaks.header1 = <<%HTML%\n%HTML%\ntmpl.groupBreaks.footer1 = <<%HTML%\n%HTML%\ntmpl.groupBreaks.collapseAllGroupsOnInitialDisplay = .f.\ntmpl.timestamp = \"2020-09-01:14-13-47.335\"\ntmpl.resolveAbstractClassNamesAtDesignTime  = .f.\ntmpl.resolveAbstractIconNamesAtDesignTime = .f. \ntmpl.useLegacyDatePicker = .f.\ntmpl.javascriptUnboundActionDefinitions = <<%javascriptActions%\n%javascriptActions%\n\ntmpl.precalc.sessionVarsInShowHideExpns = <<%sessionvars%\n%sessionvars%\ntmpl.precalc.unboundActionsXbasicFunctions = \"\"\ntmpl.precalc.includeS3Javascript = .f.",
         "datasourceType": 3,
         "componentName": "N_FichaTrabajador_PlanillaMensual",
         "query_ado": {
@@ -26,15 +26,15 @@
             "table_alias": "N_FichaTrabajadores_ResumenPlanilla",
             "database_type": "CS",
             "surrogate_primary_key": "Id_FichaTrabajadorResumen",
-            "FieldInfo": "<a_expn<[1]<a5_type=\"Numeric\">\n<a5_shorttype=\"N\">\n<CS_type=\"int\">\n<portable_type=\"Integer32\">\n<autoincrement=.T.>\n<identity=.T.>\n<identitySequenceName=\"\">\n<definedsize=11>\n<name=\"Id_FichaTrabajadorResumen\">\n<basecolumn=\"Id_FichaTrabajadorResumen\">\n<varname=\"Id_FichaTrabajadorResumen\">\n<basetable=\"N_FichaTrabajadores_ResumenPlanilla\">\n<alias_to_update=\"N_FichaTrabajadores_ResumenPlanilla\">\n<Precision=11>\n<NumericScale=0>\n<CanBeUsedInWhereClause=.T.>\n<SQLExpression=\"\">\n<basealias=\"\">\n<searchSortExpression=\"Id_FichaTrabajadorResumen\">\n<searchExpression=\"Id_FichaTrabajadorResumen\">\n>\n<[2]<a5_type=\"Date\">\n<a5_shorttype=\"D\">\n<CS_type=\"Date\">\n<portable_type=\"Date\">\n<autoincrement=.F.>\n<identity=.F.>\n<identitySequenceName=\"\">\n<definedsize=8>\n<name=\"fechaDesde\">\n<basecolumn=\"fechaDesde\">\n<varname=\"fechaDesde\">\n<basetable=\"N_FichaTrabajadores_ResumenPlanilla\">\n<alias_to_update=\"N_FichaTrabajadores_ResumenPlanilla\">\n<Precision=8>\n<NumericScale=0>\n<CanBeUsedInWhereClause=.T.>\n<SQLExpression=\"\">\n<basealias=\"\">\n<searchSortExpression=\"fechaDesde\">\n<searchExpression=\"fechaDesde\">\n>\n<[3]<a5_type=\"Date\">\n<a5_shorttype=\"D\">\n<CS_type=\"Date\">\n<portable_type=\"Date\">\n<autoincrement=.F.>\n<identity=.F.>\n<identitySequenceName=\"\">\n<definedsize=8>\n<name=\"fechaHasta\">\n<basecolumn=\"fechaHasta\">\n<varname=\"fechaHasta\">\n<basetable=\"N_FichaTrabajadores_ResumenPlanilla\">\n<alias_to_update=\"N_FichaTrabajadores_ResumenPlanilla\">\n<Precision=8>\n<NumericScale=0>\n<CanBeUsedInWhereClause=.T.>\n<SQLExpression=\"\">\n<basealias=\"\">\n<searchSortExpression=\"fechaHasta\">\n<searchExpression=\"fechaHasta\">\n>\n<[4]<a5_type=\"Numeric\">\n<a5_shorttype=\"N\">\n<CS_type=\"float\">\n<portable_type=\"Double\">\n<autoincrement=.F.>\n<identity=.F.>\n<identitySequenceName=\"\">\n<definedsize=20>\n<name=\"horasExtras\">\n<basecolumn=\"horasExtras\">\n<varname=\"horasExtras\">\n<basetable=\"N_FichaTrabajadores_ResumenPlanilla\">\n<alias_to_update=\"N_FichaTrabajadores_ResumenPlanilla\">\n<Precision=20>\n<NumericScale=0>\n<CanBeUsedInWhereClause=.T.>\n<SQLExpression=\"\">\n<basealias=\"\">\n<searchSortExpression=\"horasExtras\">\n<searchExpression=\"horasExtras\">\n>\n<[5]<a5_type=\"Numeric\">\n<a5_shorttype=\"N\">\n<CS_type=\"float\">\n<portable_type=\"Double\">\n<autoincrement=.F.>\n<identity=.F.>\n<identitySequenceName=\"\">\n<definedsize=20>\n<name=\"diasLaborados\">\n<basecolumn=\"diasLaborados\">\n<varname=\"diasLaborados\">\n<basetable=\"N_FichaTrabajadores_ResumenPlanilla\">\n<alias_to_update=\"N_FichaTrabajadores_ResumenPlanilla\">\n<Precision=20>\n<NumericScale=0>\n<CanBeUsedInWhereClause=.T.>\n<SQLExpression=\"\">\n<basealias=\"\">\n<searchSortExpression=\"diasLaborados\">\n<searchExpression=\"diasLaborados\">\n>\n<[6]<a5_type=\"Numeric\">\n<a5_shorttype=\"N\">\n<CS_type=\"float\">\n<portable_type=\"Double\">\n<autoincrement=.F.>\n<identity=.F.>\n<identitySequenceName=\"\">\n<definedsize=20>\n<name=\"valorDiaLaborado\">\n<basecolumn=\"valorDiaLaborado\">\n<varname=\"valorDiaLaborado\">\n<basetable=\"N_FichaTrabajadores_ResumenPlanilla\">\n<alias_to_update=\"N_FichaTrabajadores_ResumenPlanilla\">\n<Precision=20>\n<NumericScale=0>\n<CanBeUsedInWhereClause=.T.>\n<SQLExpression=\"\">\n<basealias=\"\">\n<searchSortExpression=\"valorDiaLaborado\">\n<searchExpression=\"valorDiaLaborado\">\n>\n<[7]<a5_type=\"Numeric\">\n<a5_shorttype=\"N\">\n<CS_type=\"float\">\n<portable_type=\"Double\">\n<autoincrement=.F.>\n<identity=.F.>\n<identitySequenceName=\"\">\n<definedsize=20>\n<name=\"diasCuarentena\">\n<basecolumn=\"diasCuarentena\">\n<varname=\"diasCuarentena\">\n<basetable=\"N_FichaTrabajadores_ResumenPlanilla\">\n<alias_to_update=\"N_FichaTrabajadores_ResumenPlanilla\">\n<Precision=20>\n<NumericScale=0>\n<CanBeUsedInWhereClause=.T.>\n<SQLExpression=\"\">\n<basealias=\"\">\n<searchSortExpression=\"diasCuarentena\">\n<searchExpression=\"diasCuarentena\">\n>\n<[8]<a5_type=\"Numeric\">\n<a5_shorttype=\"N\">\n<CS_type=\"float\">\n<portable_type=\"Double\">\n<autoincrement=.F.>\n<identity=.F.>\n<identitySequenceName=\"\">\n<definedsize=20>\n<name=\"valorDiaCuarentena\">\n<basecolumn=\"valorDiaCuarentena\">\n<varname=\"valorDiaCuarentena\">\n<basetable=\"N_FichaTrabajadores_ResumenPlanilla\">\n<alias_to_update=\"N_FichaTrabajadores_ResumenPlanilla\">\n<Precision=20>\n<NumericScale=0>\n<CanBeUsedInWhereClause=.T.>\n<SQLExpression=\"\">\n<basealias=\"\">\n<searchSortExpression=\"valorDiaCuarentena\">\n<searchExpression=\"valorDiaCuarentena\">\n>\n<[9]<a5_type=\"Numeric\">\n<a5_shorttype=\"N\">\n<CS_type=\"int\">\n<portable_type=\"Integer32\">\n<autoincrement=.F.>\n<identity=.F.>\n<identitySequenceName=\"\">\n<definedsize=11>\n<name=\"Id_Trabajador\">\n<basecolumn=\"Id_Trabajador\">\n<varname=\"Id_Trabajador\">\n<basetable=\"N_FichaTrabajadores_ResumenPlanilla\">\n<alias_to_update=\"N_FichaTrabajadores_ResumenPlanilla\">\n<Precision=11>\n<NumericScale=0>\n<CanBeUsedInWhereClause=.T.>\n<SQLExpression=\"\">\n<basealias=\"\">\n<searchSortExpression=\"Id_Trabajador\">\n<searchExpression=\"Id_Trabajador\">\n>\n>\n",
+            "FieldInfo": "<a_expn<[1]<a5_type=\"Numeric\">\n<a5_shorttype=\"N\">\n<CS_type=\"int\">\n<portable_type=\"Integer32\">\n<autoincrement=.T.>\n<identity=.T.>\n<identitySequenceName=\"\">\n<definedsize=11>\n<name=\"Id_FichaTrabajadorResumen\">\n<basecolumn=\"Id_FichaTrabajadorResumen\">\n<varname=\"Id_FichaTrabajadorResumen\">\n<basetable=\"N_FichaTrabajadores_ResumenPlanilla\">\n<alias_to_update=\"N_FichaTrabajadores_ResumenPlanilla\">\n<Precision=11>\n<NumericScale=0>\n<CanBeUsedInWhereClause=.T.>\n<SQLExpression=\"\">\n<basealias=\"\">\n<searchSortExpression=\"Id_FichaTrabajadorResumen\">\n<searchExpression=\"Id_FichaTrabajadorResumen\">\n>\n<[2]<a5_type=\"Date\">\n<a5_shorttype=\"D\">\n<CS_type=\"Date\">\n<portable_type=\"Date\">\n<autoincrement=.F.>\n<identity=.F.>\n<identitySequenceName=\"\">\n<definedsize=8>\n<name=\"fechaDesde\">\n<basecolumn=\"fechaDesde\">\n<varname=\"fechaDesde\">\n<basetable=\"N_FichaTrabajadores_ResumenPlanilla\">\n<alias_to_update=\"N_FichaTrabajadores_ResumenPlanilla\">\n<Precision=8>\n<NumericScale=0>\n<CanBeUsedInWhereClause=.T.>\n<SQLExpression=\"\">\n<basealias=\"\">\n<searchSortExpression=\"fechaDesde\">\n<searchExpression=\"fechaDesde\">\n>\n<[3]<a5_type=\"Date\">\n<a5_shorttype=\"D\">\n<CS_type=\"Date\">\n<portable_type=\"Date\">\n<autoincrement=.F.>\n<identity=.F.>\n<identitySequenceName=\"\">\n<definedsize=8>\n<name=\"fechaHasta\">\n<basecolumn=\"fechaHasta\">\n<varname=\"fechaHasta\">\n<basetable=\"N_FichaTrabajadores_ResumenPlanilla\">\n<alias_to_update=\"N_FichaTrabajadores_ResumenPlanilla\">\n<Precision=8>\n<NumericScale=0>\n<CanBeUsedInWhereClause=.T.>\n<SQLExpression=\"\">\n<basealias=\"\">\n<searchSortExpression=\"fechaHasta\">\n<searchExpression=\"fechaHasta\">\n>\n<[4]<a5_type=\"Numeric\">\n<a5_shorttype=\"N\">\n<CS_type=\"float\">\n<portable_type=\"Double\">\n<autoincrement=.F.>\n<identity=.F.>\n<identitySequenceName=\"\">\n<definedsize=20>\n<name=\"horasExtras\">\n<basecolumn=\"horasExtras\">\n<varname=\"horasExtras\">\n<basetable=\"N_FichaTrabajadores_ResumenPlanilla\">\n<alias_to_update=\"N_FichaTrabajadores_ResumenPlanilla\">\n<Precision=20>\n<NumericScale=0>\n<CanBeUsedInWhereClause=.T.>\n<SQLExpression=\"\">\n<basealias=\"\">\n<searchSortExpression=\"horasExtras\">\n<searchExpression=\"horasExtras\">\n>\n<[5]<a5_type=\"Numeric\">\n<a5_shorttype=\"N\">\n<CS_type=\"float\">\n<portable_type=\"Double\">\n<autoincrement=.F.>\n<identity=.F.>\n<identitySequenceName=\"\">\n<definedsize=20>\n<name=\"diasLaborados\">\n<basecolumn=\"diasLaborados\">\n<varname=\"diasLaborados\">\n<basetable=\"N_FichaTrabajadores_ResumenPlanilla\">\n<alias_to_update=\"N_FichaTrabajadores_ResumenPlanilla\">\n<Precision=20>\n<NumericScale=0>\n<CanBeUsedInWhereClause=.T.>\n<SQLExpression=\"\">\n<basealias=\"\">\n<searchSortExpression=\"diasLaborados\">\n<searchExpression=\"diasLaborados\">\n>\n<[6]<a5_type=\"Numeric\">\n<a5_shorttype=\"N\">\n<CS_type=\"float\">\n<portable_type=\"Double\">\n<autoincrement=.F.>\n<identity=.F.>\n<identitySequenceName=\"\">\n<definedsize=20>\n<name=\"valorDiaLaborado\">\n<basecolumn=\"valorDiaLaborado\">\n<varname=\"valorDiaLaborado\">\n<basetable=\"N_FichaTrabajadores_ResumenPlanilla\">\n<alias_to_update=\"N_FichaTrabajadores_ResumenPlanilla\">\n<Precision=20>\n<NumericScale=0>\n<CanBeUsedInWhereClause=.T.>\n<SQLExpression=\"\">\n<basealias=\"\">\n<searchSortExpression=\"valorDiaLaborado\">\n<searchExpression=\"valorDiaLaborado\">\n>\n<[7]<a5_type=\"Numeric\">\n<a5_shorttype=\"N\">\n<CS_type=\"float\">\n<portable_type=\"Double\">\n<autoincrement=.F.>\n<identity=.F.>\n<identitySequenceName=\"\">\n<definedsize=20>\n<name=\"diasCuarentena\">\n<basecolumn=\"diasCuarentena\">\n<varname=\"diasCuarentena\">\n<basetable=\"N_FichaTrabajadores_ResumenPlanilla\">\n<alias_to_update=\"N_FichaTrabajadores_ResumenPlanilla\">\n<Precision=20>\n<NumericScale=0>\n<CanBeUsedInWhereClause=.T.>\n<SQLExpression=\"\">\n<basealias=\"\">\n<searchSortExpression=\"diasCuarentena\">\n<searchExpression=\"diasCuarentena\">\n>\n<[8]<a5_type=\"Numeric\">\n<a5_shorttype=\"N\">\n<CS_type=\"float\">\n<portable_type=\"Double\">\n<autoincrement=.F.>\n<identity=.F.>\n<identitySequenceName=\"\">\n<definedsize=20>\n<name=\"valorDiaCuarentena\">\n<basecolumn=\"valorDiaCuarentena\">\n<varname=\"valorDiaCuarentena\">\n<basetable=\"N_FichaTrabajadores_ResumenPlanilla\">\n<alias_to_update=\"N_FichaTrabajadores_ResumenPlanilla\">\n<Precision=20>\n<NumericScale=0>\n<CanBeUsedInWhereClause=.T.>\n<SQLExpression=\"\">\n<basealias=\"\">\n<searchSortExpression=\"valorDiaCuarentena\">\n<searchExpression=\"valorDiaCuarentena\">\n>\n<[9]<a5_type=\"Numeric\">\n<a5_shorttype=\"N\">\n<CS_type=\"int\">\n<portable_type=\"Integer32\">\n<autoincrement=.F.>\n<identity=.F.>\n<identitySequenceName=\"\">\n<definedsize=11>\n<name=\"Id_Trabajador\">\n<basecolumn=\"Id_Trabajador\">\n<varname=\"Id_Trabajador\">\n<basetable=\"N_FichaTrabajadores_ResumenPlanilla\">\n<alias_to_update=\"N_FichaTrabajadores_ResumenPlanilla\">\n<Precision=11>\n<NumericScale=0>\n<CanBeUsedInWhereClause=.T.>\n<SQLExpression=\"\">\n<basealias=\"\">\n<searchSortExpression=\"Id_Trabajador\">\n<searchExpression=\"Id_Trabajador\">\n>\n<[10]<a5_type=\"Numeric\">\n<a5_shorttype=\"N\">\n<CS_type=\"int\">\n<portable_type=\"Integer32\">\n<autoincrement=.F.>\n<identity=.F.>\n<identitySequenceName=\"\">\n<definedsize=11>\n<name=\"totalDiasLaborados\">\n<basecolumn=\"totalDiasLaborados\">\n<varname=\"totalDiasLaborados\">\n<basetable=\"N_FichaTrabajadores_ResumenPlanilla\">\n<alias_to_update=\"N_FichaTrabajadores_ResumenPlanilla\">\n<Precision=11>\n<NumericScale=0>\n<CanBeUsedInWhereClause=.T.>\n<SQLExpression=\"\">\n<basealias=\"\">\n<searchSortExpression=\"totalDiasLaborados\">\n<searchExpression=\"totalDiasLaborados\">\n>\n>\n",
             "SurrogatePrimaryKeyData": "<arrTables<[1]<Primary_Key=\"Id_FichaTrabajadorResumen\">\n<Name=\"N_FichaTrabajadores_ResumenPlanilla\">\n<Alias=\"N_FichaTrabajadores_ResumenPlanilla\">\n>\n>\n",
             "SQLBuilder": {
-                "ColumnAliases": "Id_FichaTrabajadorResumen|||||||Id_FichaTrabajadorResumen\nfechaDesde|||||||fechaDesde\nfechaHasta|||||||fechaHasta\nhorasExtras|||||||horasExtras\ndiasLaborados|||||||diasLaborados\nvalorDiaLaborado|||||||valorDiaLaborado\ndiasCuarentena|||||||diasCuarentena\nvalorDiaCuarentena|||||||valorDiaCuarentena\nId_Trabajador|||||||Id_Trabajador\n",
-                "ColumnTypes": "Id_FichaTrabajadorResumen=N\nfechaDesde=D\nfechaHasta=D\nhorasExtras=N\ndiasLaborados=N\nvalorDiaLaborado=N\ndiasCuarentena=N\nvalorDiaCuarentena=N\nId_Trabajador=N\n",
-                "ColumnNativeTypes": "Id_FichaTrabajadorResumen=int\nfechaDesde=Date\nfechaHasta=Date\nhorasExtras=float\ndiasLaborados=float\nvalorDiaLaborado=float\ndiasCuarentena=float\nvalorDiaCuarentena=float\nId_Trabajador=int\n",
-                "ColumnPortableTypes": "Id_FichaTrabajadorResumen=Integer32\nfechaDesde=Date\nfechaHasta=Date\nhorasExtras=Double\ndiasLaborados=Double\nvalorDiaLaborado=Double\ndiasCuarentena=Double\nvalorDiaCuarentena=Double\nId_Trabajador=Integer32\n",
+                "ColumnAliases": "Id_FichaTrabajadorResumen|||||||Id_FichaTrabajadorResumen\nfechaDesde|||||||fechaDesde\nfechaHasta|||||||fechaHasta\nhorasExtras|||||||horasExtras\ndiasLaborados|||||||diasLaborados\nvalorDiaLaborado|||||||valorDiaLaborado\ndiasCuarentena|||||||diasCuarentena\nvalorDiaCuarentena|||||||valorDiaCuarentena\nId_Trabajador|||||||Id_Trabajador\ntotalDiasLaborados|||||||totalDiasLaborados\n",
+                "ColumnTypes": "Id_FichaTrabajadorResumen=N\nfechaDesde=D\nfechaHasta=D\nhorasExtras=N\ndiasLaborados=N\nvalorDiaLaborado=N\ndiasCuarentena=N\nvalorDiaCuarentena=N\nId_Trabajador=N\ntotalDiasLaborados=N\n",
+                "ColumnNativeTypes": "Id_FichaTrabajadorResumen=int\nfechaDesde=Date\nfechaHasta=Date\nhorasExtras=float\ndiasLaborados=float\nvalorDiaLaborado=float\ndiasCuarentena=float\nvalorDiaCuarentena=float\nId_Trabajador=int\ntotalDiasLaborados=int\n",
+                "ColumnPortableTypes": "Id_FichaTrabajadorResumen=Integer32\nfechaDesde=Date\nfechaHasta=Date\nhorasExtras=Double\ndiasLaborados=Double\nvalorDiaLaborado=Double\ndiasCuarentena=Double\nvalorDiaCuarentena=Double\nId_Trabajador=Integer32\ntotalDiasLaborados=Integer32\n",
                 "AutoIncrementFields": "Id_FichaTrabajadorResumen\n",
-                "CanBeUsedInWhereClauseFields": "Id_FichaTrabajadorResumen\nfechaDesde\nfechaHasta\nhorasExtras\ndiasLaborados\nvalorDiaLaborado\ndiasCuarentena\nvalorDiaCuarentena\nId_Trabajador\n"
+                "CanBeUsedInWhereClauseFields": "Id_FichaTrabajadorResumen\nfechaDesde\nfechaHasta\nhorasExtras\ndiasLaborados\nvalorDiaLaborado\ndiasCuarentena\nvalorDiaCuarentena\nId_Trabajador\ntotalDiasLaborados\n"
             },
             "Arguments": [
                 {}
@@ -46,9 +46,6 @@
         "query_dbf": {
             "type": "Table",
             "Direction": "Ascending",
-            "JoinInfo": {
-                "a_tables": []
-            },
             "Arguments": []
         },
         "grid": {
@@ -123,11 +120,11 @@
                     },
                     "TextBox": {
                         "InLineStyle": "text-align: right;",
-                        "className": "",
                         "Size": 20,
-                        "readonly": false,
                         "MaxLength": 20,
-                        "stylefieldiferror": true
+                        "stylefieldiferror": true,
+                        "className": "",
+                        "readonly": false
                     },
                     "Watermark": {
                         "text": "<FieldLabel>"
@@ -147,9 +144,9 @@
                                 "width": "2in"
                             },
                             "style": "font: 9pt Arial;",
+                            "editButtonText": "Edit...",
                             "toolbaricons": "",
-                            "toolbardefinition": "",
-                            "editButtonText": "Edit..."
+                            "toolbardefinition": ""
                         }
                     },
                     "radiobutton": {
@@ -188,12 +185,6 @@
                         "OpenMethod": "ClickIcon",
                         "UseComboBoxes": true,
                         "DateFormat": "<DefaultTimeFormat>",
-                        "friendlyDisplay": {
-                            "settingsJSON": "",
-                            "enabled": false
-                        },
-                        "showPreDefinedDates": false,
-                        "preDefinedDatesJSON": "",
                         "LowYear": 1950,
                         "HighYear": 2050,
                         "SwitchYear": 20,
@@ -201,9 +192,16 @@
                         "showDaysOfWeek": true,
                         "showTodayButton": true,
                         "OKButtonLabel": "OK",
-                        "CancelButtonLabel": "Cancel"
+                        "CancelButtonLabel": "Cancel",
+                        "friendlyDisplay": {
+                            "settingsJSON": "",
+                            "enabled": false
+                        },
+                        "showPreDefinedDates": false,
+                        "preDefinedDatesJSON": ""
                     },
                     "column": {
+                        "Hide": true,
                         "heading": "Id Ficha Trabajador Resumen",
                         "LabelPosition": "Left",
                         "CanSort": true,
@@ -213,7 +211,6 @@
                     "initial_value": "NULL",
                     "BreakType": "None",
                     "nCols": 1,
-                    "columnQBEOptionsJSON": "",
                     "link": {
                         "StaticImageInlineStyle": "border-style: none;",
                         "DisplayType": "Value in Field",
@@ -272,12 +269,13 @@
                     "width": 11,
                     "varname": "Id_FichaTrabajadorResumen",
                     "Display": "Id_FichaTrabajadorResumen",
-                    "displayOD": "{F=Tahoma,8}{I:'$a5_control_field'}{T=.2}{C=}{DATA=Id_FichaTrabajadorResumen}Id_FichaTrabajadorResumen",
-                    "displayODFlat": "{F=Tahoma,8}{I:'$a5_control_field'}{T=.2}{C=}{DATA=Id_FichaTrabajadorResumen}Id_FichaTrabajadorResumen",
+                    "displayOD": "{F=Tahoma,8}{I:'$a5_control_field'}{T=.2}{C=#130,130,130}{DATA=Id_FichaTrabajadorResumen}Id_FichaTrabajadorResumen",
+                    "displayODFlat": "{F=Tahoma,8}{I:'$a5_control_field'}{T=.2}{C=#130,130,130}{DATA=Id_FichaTrabajadorResumen}Id_FichaTrabajadorResumen",
                     "scope": "Local",
                     "tmplTxtComputed": true,
-                    "tmplTxt": "with tmpl.field_info[_fieldNumber_]\n\t.Fieldname = \"Id_FichaTrabajadorResumen\"\n\t.Scope = \"Local\"\n\t.DisplayFormat = \"\"\n\t.DisplayUnFormat = \"\"\n\t.ConditionalStyle = \"\"\n\t.ConditionalStyleLevel = \"Cell\"\n\t.ClientSideConditionalStyle = \"\"\n\t.ClientSideConditionalStyleLevel = \"Cell\"\n\t.QBEDisable = .f.\n\t.QBEInlineStyle = \"\"\n\t.QBEOptionsJSON = \"\"\n\t.canBeUsedInWhereClause = .t.\n\t.autoincrement = .t.\n\t.portableType = \"Integer32\"\n\t.nativeType = \"int\"\n\t.Type = \"N\"\n\t.UserDefinedClientSideValidationJavascript = \"\"\n\t.onChange_ValidationOption = \"None\"\n\t.Updateable = .t.\n\t.TreatBlankAsNull = .f.\n\t.Table_Alias = \"N_FichaTrabajadores_ResumenPlanilla\"\n\t.FieldToUpdate = \"Id_FichaTrabajadorResumen\"\n\t.Varname = \"ID_FICHATRABAJADORRESUMEN\"\n\t.Initial_Value = \"NULL\"\n\t.Column.LabelPosition = \"Left\"\n\t.Controltype = \"Textbox\"\n\t.Textbox.Size = 20\n\t.Textbox.HTML5Type = \"\"\n\t.Textbox.customAttributes = \"\"\n\t.Textbox.readonly = .f.\n\t.Textbox.MaxLength = 20\n\t.Textbox.InLineStyle = \"text-align: right;\"\n\t.Textbox.className = \"\"\n\t.Textbox.ContainerInlineStyle = \"\"\n\t.Textbox.IsPassword = .f.\n\t.hasWatermark= .f.\n\t.BreakType = \"None\"\n\t.nCols = 1\n\t.Column.Hide = .f.\n\t.BaseFieldExpression = \"Id_FichaTrabajadorResumen\"\n\t.SourceAlias = \"\"\n\t.Column.Heading = \"Id Ficha Trabajador Resumen\"\n\t.Column.Sort = \"Id_FichaTrabajadorResumen\"\n\t.Column.FirstClickDirection = \"A\"\n\nend with\n",
-                    "index": 2000
+                    "tmplTxt": "with tmpl.field_info[_fieldNumber_]\n\t.Fieldname = \"Id_FichaTrabajadorResumen\"\n\t.Scope = \"Local\"\n\t.DisplayFormat = \"\"\n\t.DisplayUnFormat = \"\"\n\t.ConditionalStyle = \"\"\n\t.ConditionalStyleLevel = \"Cell\"\n\t.ClientSideConditionalStyle = \"\"\n\t.ClientSideConditionalStyleLevel = \"Cell\"\n\t.QBEDisable = .f.\n\t.QBEInlineStyle = \"\"\n\t.QBEOptionsJSON = \"\"\n\t.canBeUsedInWhereClause = .t.\n\t.autoincrement = .t.\n\t.portableType = \"Integer32\"\n\t.nativeType = \"int\"\n\t.Type = \"N\"\n\t.UserDefinedClientSideValidationJavascript = \"\"\n\t.onChange_ValidationOption = \"None\"\n\t.Updateable = .t.\n\t.TreatBlankAsNull = .f.\n\t.Table_Alias = \"N_FichaTrabajadores_ResumenPlanilla\"\n\t.FieldToUpdate = \"Id_FichaTrabajadorResumen\"\n\t.Varname = \"ID_FICHATRABAJADORRESUMEN\"\n\t.Initial_Value = \"NULL\"\n\t.Column.LabelPosition = \"Left\"\n\t.Controltype = \"Textbox\"\n\t.Textbox.Size = 20\n\t.Textbox.HTML5Type = \"\"\n\t.Textbox.customAttributes = \"\"\n\t.Textbox.readonly = .f.\n\t.Textbox.MaxLength = 20\n\t.Textbox.InLineStyle = \"text-align: right;\"\n\t.Textbox.className = \"\"\n\t.Textbox.ContainerInlineStyle = \"\"\n\t.Textbox.IsPassword = .f.\n\t.hasWatermark= .f.\n\t.BreakType = \"None\"\n\t.nCols = 1\n\t.Column.Hide = .t.\n\t.BaseFieldExpression = \"Id_FichaTrabajadorResumen\"\n\t.SourceAlias = \"\"\n\t.Column.Heading = \"Id Ficha Trabajador Resumen\"\nend with\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n",
+                    "index": 2000,
+                    "columnQBEOptionsJSON": ""
                 },
                 {
                     "fieldname": "Id_Trabajador",
@@ -346,11 +344,11 @@
                     },
                     "TextBox": {
                         "InLineStyle": "text-align: right;",
-                        "className": "",
                         "Size": 20,
-                        "readonly": false,
                         "MaxLength": 20,
-                        "stylefieldiferror": true
+                        "stylefieldiferror": true,
+                        "className": "",
+                        "readonly": false
                     },
                     "Watermark": {
                         "text": "<FieldLabel>"
@@ -370,9 +368,9 @@
                                 "width": "2in"
                             },
                             "style": "font: 9pt Arial;",
+                            "editButtonText": "Edit...",
                             "toolbaricons": "",
-                            "toolbardefinition": "",
-                            "editButtonText": "Edit..."
+                            "toolbardefinition": ""
                         }
                     },
                     "radiobutton": {
@@ -411,12 +409,6 @@
                         "OpenMethod": "ClickIcon",
                         "UseComboBoxes": true,
                         "DateFormat": "<DefaultTimeFormat>",
-                        "friendlyDisplay": {
-                            "settingsJSON": "",
-                            "enabled": false
-                        },
-                        "showPreDefinedDates": false,
-                        "preDefinedDatesJSON": "",
                         "LowYear": 1950,
                         "HighYear": 2050,
                         "SwitchYear": 20,
@@ -424,7 +416,13 @@
                         "showDaysOfWeek": true,
                         "showTodayButton": true,
                         "OKButtonLabel": "OK",
-                        "CancelButtonLabel": "Cancel"
+                        "CancelButtonLabel": "Cancel",
+                        "friendlyDisplay": {
+                            "settingsJSON": "",
+                            "enabled": false
+                        },
+                        "showPreDefinedDates": false,
+                        "preDefinedDatesJSON": ""
                     },
                     "column": {
                         "Hide": true,
@@ -437,7 +435,6 @@
                     "initial_value": "NULL",
                     "BreakType": "None",
                     "nCols": 1,
-                    "columnQBEOptionsJSON": "",
                     "link": {
                         "StaticImageInlineStyle": "border-style: none;",
                         "DisplayType": "Value in Field",
@@ -499,11 +496,13 @@
                     "displayODFlat": "{F=Tahoma,8}{I:'$a5_control_field'}{T=.2}{C=#130,130,130}{DATA=Id_Trabajador}Id_Trabajador",
                     "scope": "Local",
                     "tmplTxtComputed": true,
-                    "tmplTxt": "with tmpl.field_info[_fieldNumber_]\n\t.Fieldname = \"Id_Trabajador\"\n\t.Scope = \"Local\"\n\t.DisplayFormat = \"\"\n\t.DisplayUnFormat = \"\"\n\t.ConditionalStyle = \"\"\n\t.ConditionalStyleLevel = \"Cell\"\n\t.ClientSideConditionalStyle = \"\"\n\t.ClientSideConditionalStyleLevel = \"Cell\"\n\t.QBEDisable = .f.\n\t.QBEInlineStyle = \"\"\n\t.QBEOptionsJSON = \"\"\n\t.canBeUsedInWhereClause = .t.\n\t.autoincrement = .f.\n\t.portableType = \"Integer32\"\n\t.nativeType = \"int\"\n\t.Type = \"N\"\n\t.UserDefinedClientSideValidationJavascript = \"\"\n\t.onChange_ValidationOption = \"None\"\n\t.Updateable = .t.\n\t.TreatBlankAsNull = .f.\n\t.Table_Alias = \"N_FichaTrabajadores_ResumenPlanilla\"\n\t.FieldToUpdate = \"Id_Trabajador\"\n\t.Varname = \"ID_TRABAJADOR\"\n\t.Initial_Value = \"NULL\"\n\t.Column.LabelPosition = \"Left\"\n\t.Controltype = \"Textbox\"\n\t.Textbox.Size = 20\n\t.Textbox.HTML5Type = \"\"\n\t.Textbox.customAttributes = \"\"\n\t.Textbox.readonly = .f.\n\t.Textbox.MaxLength = 20\n\t.Textbox.InLineStyle = \"text-align: right;\"\n\t.Textbox.className = \"\"\n\t.Textbox.ContainerInlineStyle = \"\"\n\t.Textbox.IsPassword = .f.\n\t.hasWatermark= .f.\n\t.BreakType = \"None\"\n\t.nCols = 1\n\t.Column.Hide = .t.\n\t.BaseFieldExpression = \"Id_Trabajador\"\n\t.SourceAlias = \"\"\n\t.Column.Heading = \"Id Trabajador\"\nend with\n",
-                    "index": 2001
+                    "tmplTxt": "with tmpl.field_info[_fieldNumber_]\n\t.Fieldname = \"Id_Trabajador\"\n\t.Scope = \"Local\"\n\t.DisplayFormat = \"\"\n\t.DisplayUnFormat = \"\"\n\t.ConditionalStyle = \"\"\n\t.ConditionalStyleLevel = \"Cell\"\n\t.ClientSideConditionalStyle = \"\"\n\t.ClientSideConditionalStyleLevel = \"Cell\"\n\t.QBEDisable = .f.\n\t.QBEInlineStyle = \"\"\n\t.QBEOptionsJSON = \"\"\n\t.canBeUsedInWhereClause = .t.\n\t.autoincrement = .f.\n\t.portableType = \"Integer32\"\n\t.nativeType = \"int\"\n\t.Type = \"N\"\n\t.UserDefinedClientSideValidationJavascript = \"\"\n\t.onChange_ValidationOption = \"None\"\n\t.Updateable = .t.\n\t.TreatBlankAsNull = .f.\n\t.Table_Alias = \"N_FichaTrabajadores_ResumenPlanilla\"\n\t.FieldToUpdate = \"Id_Trabajador\"\n\t.Varname = \"ID_TRABAJADOR\"\n\t.Initial_Value = \"NULL\"\n\t.Column.LabelPosition = \"Left\"\n\t.Controltype = \"Textbox\"\n\t.Textbox.Size = 20\n\t.Textbox.HTML5Type = \"\"\n\t.Textbox.customAttributes = \"\"\n\t.Textbox.readonly = .f.\n\t.Textbox.MaxLength = 20\n\t.Textbox.InLineStyle = \"text-align: right;\"\n\t.Textbox.className = \"\"\n\t.Textbox.ContainerInlineStyle = \"\"\n\t.Textbox.IsPassword = .f.\n\t.hasWatermark= .f.\n\t.BreakType = \"None\"\n\t.nCols = 1\n\t.Column.Hide = .t.\n\t.BaseFieldExpression = \"Id_Trabajador\"\n\t.SourceAlias = \"\"\n\t.Column.Heading = \"Id Trabajador\"\nend with\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n",
+                    "index": 2001,
+                    "columnQBEOptionsJSON": ""
                 },
                 {
                     "fieldname": "fechaDesde",
+                    "HasValidationRules": true,
                     "showHelpIcon": "None",
                     "helpIconBehavior": "ShowHelpOnClick",
                     "onChange_ValidationOption": "None",
@@ -548,6 +547,7 @@
                         "nCols": 1
                     },
                     "controltype": "Textbox",
+                    "ValidationRules": "<general<EnableRules=.T.>\n<require_value=.T.>\n<error_msg=\"Campo obligatorio\">\n<invalid_data_type_message=\"\">\n>\n<data_type=\"Date\">\n<text_format<lLetters=.T.>\n<lDigits=.T.>\n<lWhitespace=.T.>\n<lOther=.T.>\n<lSpecial=.T.>\n<use_simple_mask=.F.>\n<simple_mask=\"\">\n<place_holder=\"_\">\n<regex=\"\">\n<error_msg=\"\">\n>\n<numeric_format<numeric_type=\"Integer\">\n<grouping=\"Comma\">\n<decimal=\"Period\">\n<decimal_places=0>\n<error_msg=\"\">\n>\n<logical_format<terms=<<%str%\nTrue\nFalse\nT\nF\nYes\nNo\nY\nN\n1\n0\n.T.\n.F.%str%>\n<error_msg=\"\">\n>\n<data_length<lRequired=.F.>\n<min_length=0>\n<max_length=0>\n<error_msg=\"\">\n>\n<data_value<expression_type=\"None\">\n<equality=\"Greater than or equal\">\n<value=\"\">\n<value1=\"\">\n<value2=\"\">\n<expression=\"\">\n<error_msg=\"\">\n>\n<xfile<source=\"None\">\n<dbf<table=\"\">\n<field=\"\">\n>\n<validation_type=\"Exist\">\n<ado<cs=\"\">\n<connection_type=\"Access Database\">\n<table=\"\">\n<field=\"\">\n<access_fn=\"\">\n<use_saved_connection_string=.F.>\n<saved_connection_string=\"\">\n>\n<cs<cs=\"\">\n<table=\"\">\n<field=\"\">\n<use_saved_connection_string=.F.>\n<saved_connection_string=\"\">\n>\n<error_msg=\"\">\n>\n",
                     "Search": {
                         "FromLabel": "From:",
                         "ToLabel": "To:"
@@ -567,11 +567,11 @@
                         "HighYear": 2050
                     },
                     "TextBox": {
-                        "className": "",
-                        "Size": 20,
-                        "readonly": false,
+                        "Size": 10,
                         "MaxLength": 20,
-                        "stylefieldiferror": true
+                        "stylefieldiferror": true,
+                        "className": "",
+                        "readonly": false
                     },
                     "Watermark": {
                         "text": "<FieldLabel>"
@@ -591,9 +591,9 @@
                                 "width": "2in"
                             },
                             "style": "font: 9pt Arial;",
+                            "editButtonText": "Edit...",
                             "toolbaricons": "",
-                            "toolbardefinition": "",
-                            "editButtonText": "Edit..."
+                            "toolbardefinition": ""
                         }
                     },
                     "radiobutton": {
@@ -633,12 +633,6 @@
                         "OpenMethod": "ClickIcon",
                         "UseComboBoxes": true,
                         "DateFormat": "<DefaultDateOnlyFormat>",
-                        "friendlyDisplay": {
-                            "settingsJSON": "",
-                            "enabled": false
-                        },
-                        "showPreDefinedDates": false,
-                        "preDefinedDatesJSON": "",
                         "LowYear": 1950,
                         "HighYear": 2050,
                         "SwitchYear": 20,
@@ -646,7 +640,13 @@
                         "showDaysOfWeek": true,
                         "showTodayButton": true,
                         "OKButtonLabel": "OK",
-                        "CancelButtonLabel": "Cancel"
+                        "CancelButtonLabel": "Cancel",
+                        "friendlyDisplay": {
+                            "settingsJSON": "",
+                            "enabled": false
+                        },
+                        "showPreDefinedDates": false,
+                        "preDefinedDatesJSON": ""
                     },
                     "column": {
                         "heading": "Fecha Desde",
@@ -658,7 +658,6 @@
                     "initial_value": "NULL",
                     "BreakType": "None",
                     "nCols": 1,
-                    "columnQBEOptionsJSON": "",
                     "link": {
                         "StaticImageInlineStyle": "border-style: none;",
                         "DisplayType": "Value in Field",
@@ -721,11 +720,13 @@
                     "displayODFlat": "{F=Tahoma,8}{I:'$a5_control_field'}{T=.2}{C=}{DATA=fechaDesde}fechaDesde",
                     "scope": "Local",
                     "tmplTxtComputed": true,
-                    "tmplTxt": "with tmpl.field_info[_fieldNumber_]\n\t.Fieldname = \"fechaDesde\"\n\t.Scope = \"Local\"\n\t.DisplayFormat = \"time(\\\"{grid.clientSideDateFormat}\\\",<value>)\"\n\t.DisplayUnFormat = \"\"\n\t.ConditionalStyle = \"\"\n\t.ConditionalStyleLevel = \"Cell\"\n\t.ClientSideConditionalStyle = \"\"\n\t.ClientSideConditionalStyleLevel = \"Cell\"\n\t.QBEDisable = .f.\n\t.QBEInlineStyle = \"\"\n\t.QBEOptionsJSON = \"\"\n\t.canBeUsedInWhereClause = .t.\n\t.autoincrement = .f.\n\t.portableType = \"Date\"\n\t.nativeType = \"Date\"\n\t.Type = \"D\"\n\t.UserDefinedClientSideValidationJavascript = \"\"\n\t.onChange_ValidationOption = \"None\"\n\t.Updateable = .t.\n\t.TreatBlankAsNull = .f.\n\t.Table_Alias = \"N_FichaTrabajadores_ResumenPlanilla\"\n\t.FieldToUpdate = \"fechaDesde\"\n\t.Varname = \"FECHADESDE\"\n\t.Initial_Value = \"NULL\"\n\t.Column.LabelPosition = \"Left\"\n\t.Controltype = \"Textbox\"\n\t.Textbox.Size = 20\n\t.Textbox.HTML5Type = \"\"\n\t.Textbox.customAttributes = \"\"\n\t.Textbox.readonly = .f.\n\t.Textbox.MaxLength = 20\n\t.Textbox.InLineStyle = \"\"\n\t.Textbox.className = \"\"\n\t.Textbox.ContainerInlineStyle = \"\"\n\t.Textbox.IsPassword = .f.\n\t.hasWatermark= .f.\n\t.DatePicker.Display = .t.\n\t.DatePicker.UseComboBoxes = .t.\n\t.DatePicker.DateFormat = \"<DefaultDateOnlyFormat>\"\n\t.DatePicker.LowYear = 1950\n\t.DatePicker.HighYear = 2050\n\t.DatePicker.SwitchYear = 20\n\t.DatePicker.IconNumber = 2\n\t.DatePicker.OpenMethod = \"ClickIcon\"\n\t.DatePicker.lowDate = \"\"\n\t.DatePicker.highDate = \"\"\n\t.DatePicker.disabledDays = \"\"\n\t.DatePicker.showDaysOfWeek = .t.\n\t.DatePicker.showTodayButton = .t.\n\t.DatePicker.showWeeksOfYear = .f.\n\t.DatePicker.OKButtonLabel = \"OK\"\n\t.DatePicker.CancelButtonLabel = \"Cancel\"\n\t.DatePicker.lockColumnWidths = .f.\n\t.DatePicker.userMustSelectFromDatePicker = .f.\n\t.DatePicker.hasEvents = .f.\n\t.DatePicker.event.onItemDraw = \"\"\n\t.DatePicker.event.onClick = \"\"\n\t.DatePicker.event.onRightClick = \"\"\n\t.DatePicker.event.onSelect = \"\"\n\t.DatePicker.event.onNavigate = \"\"\n\t.DatePicker.event.onMonthNavigate = \"\"\n\t.DatePicker.event.onYearNavigate = \"\"\n\t.DatePicker.showPreDefinedDates = .f.\n\t.DatePicker.preDefinedDatesJSON = \"\"\n\t.BreakType = \"None\"\n\t.nCols = 1\n\t.Column.Hide = .f.\n\t.BaseFieldExpression = \"fechaDesde\"\n\t.SourceAlias = \"\"\n\t.Column.Heading = \"Fecha Desde\"\n\t.Column.Sort = \"fechaDesde\"\n\t.Column.FirstClickDirection = \"A\"\n\nend with\n",
-                    "index": 3000
+                    "tmplTxt": "with tmpl.field_info[_fieldNumber_]\n\t.Fieldname = \"fechaDesde\"\n\t.Scope = \"Local\"\n\t.DisplayFormat = \"time(\\\"{grid.clientSideDateFormat}\\\",<value>)\"\n\t.DisplayUnFormat = \"\"\n\t.ConditionalStyle = \"\"\n\t.ConditionalStyleLevel = \"Cell\"\n\t.ClientSideConditionalStyle = \"\"\n\t.ClientSideConditionalStyleLevel = \"Cell\"\n\t.QBEDisable = .f.\n\t.QBEInlineStyle = \"\"\n\t.QBEOptionsJSON = \"\"\n\t.canBeUsedInWhereClause = .t.\n\t.autoincrement = .f.\n\t.portableType = \"Date\"\n\t.nativeType = \"Date\"\n\t.Type = \"D\"\n\t.UserDefinedClientSideValidationJavascript = \"\"\n\t.onChange_ValidationOption = \"None\"\n\t.Updateable = .t.\n\t.TreatBlankAsNull = .f.\n\t.Table_Alias = \"N_FichaTrabajadores_ResumenPlanilla\"\n\t.FieldToUpdate = \"fechaDesde\"\n\t.Varname = \"FECHADESDE\"\n\t.Initial_Value = \"NULL\"\n\t.Column.LabelPosition = \"Left\"\n\t.Controltype = \"Textbox\"\n\t.Textbox.Size = 10\n\t.Textbox.HTML5Type = \"\"\n\t.Textbox.customAttributes = \"\"\n\t.Textbox.readonly = .f.\n\t.Textbox.MaxLength = 20\n\t.Textbox.InLineStyle = \"\"\n\t.Textbox.className = \"\"\n\t.Textbox.ContainerInlineStyle = \"\"\n\t.Textbox.IsPassword = .f.\n\t.hasWatermark= .f.\n\t.DatePicker.Display = .t.\n\t.DatePicker.UseComboBoxes = .t.\n\t.DatePicker.DateFormat = \"<DefaultDateOnlyFormat>\"\n\t.DatePicker.LowYear = 1950\n\t.DatePicker.HighYear = 2050\n\t.DatePicker.SwitchYear = 20\n\t.DatePicker.IconNumber = 2\n\t.DatePicker.OpenMethod = \"ClickIcon\"\n\t.DatePicker.lowDate = \"\"\n\t.DatePicker.highDate = \"\"\n\t.DatePicker.disabledDays = \"\"\n\t.DatePicker.showDaysOfWeek = .t.\n\t.DatePicker.showTodayButton = .t.\n\t.DatePicker.showWeeksOfYear = .f.\n\t.DatePicker.OKButtonLabel = \"OK\"\n\t.DatePicker.CancelButtonLabel = \"Cancel\"\n\t.DatePicker.lockColumnWidths = .f.\n\t.DatePicker.userMustSelectFromDatePicker = .f.\n\t.DatePicker.hasEvents = .f.\n\t.DatePicker.event.onItemDraw = \"\"\n\t.DatePicker.event.onClick = \"\"\n\t.DatePicker.event.onRightClick = \"\"\n\t.DatePicker.event.onSelect = \"\"\n\t.DatePicker.event.onNavigate = \"\"\n\t.DatePicker.event.onMonthNavigate = \"\"\n\t.DatePicker.event.onYearNavigate = \"\"\n\t.DatePicker.showPreDefinedDates = .f.\n\t.DatePicker.preDefinedDatesJSON = \"\"\n\t.BreakType = \"None\"\n\t.nCols = 1\n\t.Column.Hide = .f.\n\t.BaseFieldExpression = \"fechaDesde\"\n\t.SourceAlias = \"\"\n\t.Column.Heading = \"Fecha Desde\"\n\t.Column.Sort = \"fechaDesde\"\n\t.Column.FirstClickDirection = \"A\"\n\t.HasValidationRules = .t.\n\tDIM validationSettings as P\n\tWith ValidationSettings\n\t\t.general.require_value = .t.\n\t\t.general.error_msg = \"Campo obligatorio\"\n\t\t.general.invalid_data_type_message = \"\"\n\tEnd With\n\t.Enable_ClientSideValidation = .f.\n\t.Validate_OnBlur = .f.\nend with\n\n",
+                    "index": 3000,
+                    "columnQBEOptionsJSON": ""
                 },
                 {
                     "fieldname": "fechaHasta",
+                    "HasValidationRules": true,
                     "showHelpIcon": "None",
                     "helpIconBehavior": "ShowHelpOnClick",
                     "onChange_ValidationOption": "None",
@@ -770,6 +771,7 @@
                         "nCols": 1
                     },
                     "controltype": "Textbox",
+                    "ValidationRules": "<general<EnableRules=.T.>\n<require_value=.T.>\n<error_msg=\"Campo obligatorio\">\n<invalid_data_type_message=\"\">\n>\n<data_type=\"Date\">\n<text_format<lLetters=.T.>\n<lDigits=.T.>\n<lWhitespace=.T.>\n<lOther=.T.>\n<lSpecial=.T.>\n<use_simple_mask=.F.>\n<simple_mask=\"\">\n<place_holder=\"_\">\n<regex=\"\">\n<error_msg=\"\">\n>\n<numeric_format<numeric_type=\"Integer\">\n<grouping=\"Comma\">\n<decimal=\"Period\">\n<decimal_places=0>\n<error_msg=\"\">\n>\n<logical_format<terms=<<%str%\nTrue\nFalse\nT\nF\nYes\nNo\nY\nN\n1\n0\n.T.\n.F.%str%>\n<error_msg=\"\">\n>\n<data_length<lRequired=.F.>\n<min_length=0>\n<max_length=0>\n<error_msg=\"\">\n>\n<data_value<expression_type=\"None\">\n<equality=\"Greater than or equal\">\n<value=\"\">\n<value1=\"\">\n<value2=\"\">\n<expression=\"\">\n<error_msg=\"\">\n>\n<xfile<source=\"None\">\n<dbf<table=\"\">\n<field=\"\">\n>\n<validation_type=\"Exist\">\n<ado<cs=\"\">\n<connection_type=\"Access Database\">\n<table=\"\">\n<field=\"\">\n<access_fn=\"\">\n<use_saved_connection_string=.F.>\n<saved_connection_string=\"\">\n>\n<cs<cs=\"\">\n<table=\"\">\n<field=\"\">\n<use_saved_connection_string=.F.>\n<saved_connection_string=\"\">\n>\n<error_msg=\"\">\n>\n",
                     "Search": {
                         "FromLabel": "From:",
                         "ToLabel": "To:"
@@ -789,11 +791,11 @@
                         "HighYear": 2050
                     },
                     "TextBox": {
-                        "className": "",
-                        "Size": 20,
-                        "readonly": false,
+                        "Size": 10,
                         "MaxLength": 20,
-                        "stylefieldiferror": true
+                        "stylefieldiferror": true,
+                        "className": "",
+                        "readonly": false
                     },
                     "Watermark": {
                         "text": "<FieldLabel>"
@@ -813,9 +815,9 @@
                                 "width": "2in"
                             },
                             "style": "font: 9pt Arial;",
+                            "editButtonText": "Edit...",
                             "toolbaricons": "",
-                            "toolbardefinition": "",
-                            "editButtonText": "Edit..."
+                            "toolbardefinition": ""
                         }
                     },
                     "radiobutton": {
@@ -855,12 +857,6 @@
                         "OpenMethod": "ClickIcon",
                         "UseComboBoxes": true,
                         "DateFormat": "<DefaultDateOnlyFormat>",
-                        "friendlyDisplay": {
-                            "settingsJSON": "",
-                            "enabled": false
-                        },
-                        "showPreDefinedDates": false,
-                        "preDefinedDatesJSON": "",
                         "LowYear": 1950,
                         "HighYear": 2050,
                         "SwitchYear": 20,
@@ -868,7 +864,13 @@
                         "showDaysOfWeek": true,
                         "showTodayButton": true,
                         "OKButtonLabel": "OK",
-                        "CancelButtonLabel": "Cancel"
+                        "CancelButtonLabel": "Cancel",
+                        "friendlyDisplay": {
+                            "settingsJSON": "",
+                            "enabled": false
+                        },
+                        "showPreDefinedDates": false,
+                        "preDefinedDatesJSON": ""
                     },
                     "column": {
                         "heading": "Fecha Hasta",
@@ -880,7 +882,6 @@
                     "initial_value": "NULL",
                     "BreakType": "None",
                     "nCols": 1,
-                    "columnQBEOptionsJSON": "",
                     "link": {
                         "StaticImageInlineStyle": "border-style: none;",
                         "DisplayType": "Value in Field",
@@ -943,8 +944,9 @@
                     "displayODFlat": "{F=Tahoma,8}{I:'$a5_control_field'}{T=.2}{C=}{DATA=fechaHasta}fechaHasta",
                     "scope": "Local",
                     "tmplTxtComputed": true,
-                    "tmplTxt": "with tmpl.field_info[_fieldNumber_]\n\t.Fieldname = \"fechaHasta\"\n\t.Scope = \"Local\"\n\t.DisplayFormat = \"time(\\\"{grid.clientSideDateFormat}\\\",<value>)\"\n\t.DisplayUnFormat = \"\"\n\t.ConditionalStyle = \"\"\n\t.ConditionalStyleLevel = \"Cell\"\n\t.ClientSideConditionalStyle = \"\"\n\t.ClientSideConditionalStyleLevel = \"Cell\"\n\t.QBEDisable = .f.\n\t.QBEInlineStyle = \"\"\n\t.QBEOptionsJSON = \"\"\n\t.canBeUsedInWhereClause = .t.\n\t.autoincrement = .f.\n\t.portableType = \"Date\"\n\t.nativeType = \"Date\"\n\t.Type = \"D\"\n\t.UserDefinedClientSideValidationJavascript = \"\"\n\t.onChange_ValidationOption = \"None\"\n\t.Updateable = .t.\n\t.TreatBlankAsNull = .f.\n\t.Table_Alias = \"N_FichaTrabajadores_ResumenPlanilla\"\n\t.FieldToUpdate = \"fechaHasta\"\n\t.Varname = \"FECHAHASTA\"\n\t.Initial_Value = \"NULL\"\n\t.Column.LabelPosition = \"Left\"\n\t.Controltype = \"Textbox\"\n\t.Textbox.Size = 20\n\t.Textbox.HTML5Type = \"\"\n\t.Textbox.customAttributes = \"\"\n\t.Textbox.readonly = .f.\n\t.Textbox.MaxLength = 20\n\t.Textbox.InLineStyle = \"\"\n\t.Textbox.className = \"\"\n\t.Textbox.ContainerInlineStyle = \"\"\n\t.Textbox.IsPassword = .f.\n\t.hasWatermark= .f.\n\t.DatePicker.Display = .t.\n\t.DatePicker.UseComboBoxes = .t.\n\t.DatePicker.DateFormat = \"<DefaultDateOnlyFormat>\"\n\t.DatePicker.LowYear = 1950\n\t.DatePicker.HighYear = 2050\n\t.DatePicker.SwitchYear = 20\n\t.DatePicker.IconNumber = 2\n\t.DatePicker.OpenMethod = \"ClickIcon\"\n\t.DatePicker.lowDate = \"\"\n\t.DatePicker.highDate = \"\"\n\t.DatePicker.disabledDays = \"\"\n\t.DatePicker.showDaysOfWeek = .t.\n\t.DatePicker.showTodayButton = .t.\n\t.DatePicker.showWeeksOfYear = .f.\n\t.DatePicker.OKButtonLabel = \"OK\"\n\t.DatePicker.CancelButtonLabel = \"Cancel\"\n\t.DatePicker.lockColumnWidths = .f.\n\t.DatePicker.userMustSelectFromDatePicker = .f.\n\t.DatePicker.hasEvents = .f.\n\t.DatePicker.event.onItemDraw = \"\"\n\t.DatePicker.event.onClick = \"\"\n\t.DatePicker.event.onRightClick = \"\"\n\t.DatePicker.event.onSelect = \"\"\n\t.DatePicker.event.onNavigate = \"\"\n\t.DatePicker.event.onMonthNavigate = \"\"\n\t.DatePicker.event.onYearNavigate = \"\"\n\t.DatePicker.showPreDefinedDates = .f.\n\t.DatePicker.preDefinedDatesJSON = \"\"\n\t.BreakType = \"None\"\n\t.nCols = 1\n\t.Column.Hide = .f.\n\t.BaseFieldExpression = \"fechaHasta\"\n\t.SourceAlias = \"\"\n\t.Column.Heading = \"Fecha Hasta\"\n\t.Column.Sort = \"fechaHasta\"\n\t.Column.FirstClickDirection = \"A\"\n\nend with\n",
-                    "index": 4000
+                    "tmplTxt": "with tmpl.field_info[_fieldNumber_]\n\t.Fieldname = \"fechaHasta\"\n\t.Scope = \"Local\"\n\t.DisplayFormat = \"time(\\\"{grid.clientSideDateFormat}\\\",<value>)\"\n\t.DisplayUnFormat = \"\"\n\t.ConditionalStyle = \"\"\n\t.ConditionalStyleLevel = \"Cell\"\n\t.ClientSideConditionalStyle = \"\"\n\t.ClientSideConditionalStyleLevel = \"Cell\"\n\t.QBEDisable = .f.\n\t.QBEInlineStyle = \"\"\n\t.QBEOptionsJSON = \"\"\n\t.canBeUsedInWhereClause = .t.\n\t.autoincrement = .f.\n\t.portableType = \"Date\"\n\t.nativeType = \"Date\"\n\t.Type = \"D\"\n\t.UserDefinedClientSideValidationJavascript = \"\"\n\t.onChange_ValidationOption = \"None\"\n\t.Updateable = .t.\n\t.TreatBlankAsNull = .f.\n\t.Table_Alias = \"N_FichaTrabajadores_ResumenPlanilla\"\n\t.FieldToUpdate = \"fechaHasta\"\n\t.Varname = \"FECHAHASTA\"\n\t.Initial_Value = \"NULL\"\n\t.Column.LabelPosition = \"Left\"\n\t.Controltype = \"Textbox\"\n\t.Textbox.Size = 10\n\t.Textbox.HTML5Type = \"\"\n\t.Textbox.customAttributes = \"\"\n\t.Textbox.readonly = .f.\n\t.Textbox.MaxLength = 20\n\t.Textbox.InLineStyle = \"\"\n\t.Textbox.className = \"\"\n\t.Textbox.ContainerInlineStyle = \"\"\n\t.Textbox.IsPassword = .f.\n\t.hasWatermark= .f.\n\t.DatePicker.Display = .t.\n\t.DatePicker.UseComboBoxes = .t.\n\t.DatePicker.DateFormat = \"<DefaultDateOnlyFormat>\"\n\t.DatePicker.LowYear = 1950\n\t.DatePicker.HighYear = 2050\n\t.DatePicker.SwitchYear = 20\n\t.DatePicker.IconNumber = 2\n\t.DatePicker.OpenMethod = \"ClickIcon\"\n\t.DatePicker.lowDate = \"\"\n\t.DatePicker.highDate = \"\"\n\t.DatePicker.disabledDays = \"\"\n\t.DatePicker.showDaysOfWeek = .t.\n\t.DatePicker.showTodayButton = .t.\n\t.DatePicker.showWeeksOfYear = .f.\n\t.DatePicker.OKButtonLabel = \"OK\"\n\t.DatePicker.CancelButtonLabel = \"Cancel\"\n\t.DatePicker.lockColumnWidths = .f.\n\t.DatePicker.userMustSelectFromDatePicker = .f.\n\t.DatePicker.hasEvents = .f.\n\t.DatePicker.event.onItemDraw = \"\"\n\t.DatePicker.event.onClick = \"\"\n\t.DatePicker.event.onRightClick = \"\"\n\t.DatePicker.event.onSelect = \"\"\n\t.DatePicker.event.onNavigate = \"\"\n\t.DatePicker.event.onMonthNavigate = \"\"\n\t.DatePicker.event.onYearNavigate = \"\"\n\t.DatePicker.showPreDefinedDates = .f.\n\t.DatePicker.preDefinedDatesJSON = \"\"\n\t.BreakType = \"None\"\n\t.nCols = 1\n\t.Column.Hide = .f.\n\t.BaseFieldExpression = \"fechaHasta\"\n\t.SourceAlias = \"\"\n\t.Column.Heading = \"Fecha Hasta\"\n\t.Column.Sort = \"fechaHasta\"\n\t.Column.FirstClickDirection = \"A\"\n\t.HasValidationRules = .t.\n\tDIM validationSettings as P\n\tWith ValidationSettings\n\t\t.general.require_value = .t.\n\t\t.general.error_msg = \"Campo obligatorio\"\n\t\t.general.invalid_data_type_message = \"\"\n\tEnd With\n\t.Enable_ClientSideValidation = .f.\n\t.Validate_OnBlur = .f.\nend with\n",
+                    "index": 4000,
+                    "columnQBEOptionsJSON": ""
                 },
                 {
                     "fieldname": "horasExtras",
@@ -1013,11 +1015,11 @@
                     },
                     "TextBox": {
                         "InLineStyle": "text-align: right;",
-                        "className": "",
-                        "Size": 20,
-                        "readonly": false,
+                        "Size": 10,
                         "MaxLength": 20,
-                        "stylefieldiferror": true
+                        "stylefieldiferror": true,
+                        "className": "",
+                        "readonly": false
                     },
                     "Watermark": {
                         "text": "<FieldLabel>"
@@ -1037,9 +1039,9 @@
                                 "width": "2in"
                             },
                             "style": "font: 9pt Arial;",
+                            "editButtonText": "Edit...",
                             "toolbaricons": "",
-                            "toolbardefinition": "",
-                            "editButtonText": "Edit..."
+                            "toolbardefinition": ""
                         }
                     },
                     "radiobutton": {
@@ -1078,12 +1080,6 @@
                         "OpenMethod": "ClickIcon",
                         "UseComboBoxes": true,
                         "DateFormat": "<DefaultTimeFormat>",
-                        "friendlyDisplay": {
-                            "settingsJSON": "",
-                            "enabled": false
-                        },
-                        "showPreDefinedDates": false,
-                        "preDefinedDatesJSON": "",
                         "LowYear": 1950,
                         "HighYear": 2050,
                         "SwitchYear": 20,
@@ -1091,7 +1087,13 @@
                         "showDaysOfWeek": true,
                         "showTodayButton": true,
                         "OKButtonLabel": "OK",
-                        "CancelButtonLabel": "Cancel"
+                        "CancelButtonLabel": "Cancel",
+                        "friendlyDisplay": {
+                            "settingsJSON": "",
+                            "enabled": false
+                        },
+                        "showPreDefinedDates": false,
+                        "preDefinedDatesJSON": ""
                     },
                     "column": {
                         "heading": "Horas Extras",
@@ -1103,7 +1105,6 @@
                     "initial_value": "NULL",
                     "BreakType": "None",
                     "nCols": 1,
-                    "columnQBEOptionsJSON": "",
                     "link": {
                         "StaticImageInlineStyle": "border-style: none;",
                         "DisplayType": "Value in Field",
@@ -1165,11 +1166,13 @@
                     "displayODFlat": "{F=Tahoma,8}{I:'$a5_control_field'}{T=.2}{C=}{DATA=horasExtras}horasExtras",
                     "scope": "Local",
                     "tmplTxtComputed": true,
-                    "tmplTxt": "with tmpl.field_info[_fieldNumber_]\n\t.Fieldname = \"horasExtras\"\n\t.Scope = \"Local\"\n\t.DisplayFormat = \"\"\n\t.DisplayUnFormat = \"\"\n\t.ConditionalStyle = \"\"\n\t.ConditionalStyleLevel = \"Cell\"\n\t.ClientSideConditionalStyle = \"\"\n\t.ClientSideConditionalStyleLevel = \"Cell\"\n\t.QBEDisable = .f.\n\t.QBEInlineStyle = \"\"\n\t.QBEOptionsJSON = \"\"\n\t.canBeUsedInWhereClause = .t.\n\t.autoincrement = .f.\n\t.portableType = \"Double\"\n\t.nativeType = \"float\"\n\t.Type = \"N\"\n\t.UserDefinedClientSideValidationJavascript = \"\"\n\t.onChange_ValidationOption = \"None\"\n\t.Updateable = .t.\n\t.TreatBlankAsNull = .f.\n\t.Table_Alias = \"N_FichaTrabajadores_ResumenPlanilla\"\n\t.FieldToUpdate = \"horasExtras\"\n\t.Varname = \"HORASEXTRAS\"\n\t.Initial_Value = \"NULL\"\n\t.Column.LabelPosition = \"Left\"\n\t.Controltype = \"Textbox\"\n\t.Textbox.Size = 20\n\t.Textbox.HTML5Type = \"\"\n\t.Textbox.customAttributes = \"\"\n\t.Textbox.readonly = .f.\n\t.Textbox.MaxLength = 20\n\t.Textbox.InLineStyle = \"text-align: right;\"\n\t.Textbox.className = \"\"\n\t.Textbox.ContainerInlineStyle = \"\"\n\t.Textbox.IsPassword = .f.\n\t.hasWatermark= .f.\n\t.BreakType = \"None\"\n\t.nCols = 1\n\t.Column.Hide = .f.\n\t.BaseFieldExpression = \"horasExtras\"\n\t.SourceAlias = \"\"\n\t.Column.Heading = \"Horas Extras\"\n\t.Column.Sort = \"horasExtras\"\n\t.Column.FirstClickDirection = \"A\"\n\nend with\n",
-                    "index": 5000
+                    "tmplTxt": "with tmpl.field_info[_fieldNumber_]\n\t.Fieldname = \"horasExtras\"\n\t.Scope = \"Local\"\n\t.DisplayFormat = \"\"\n\t.DisplayUnFormat = \"\"\n\t.ConditionalStyle = \"\"\n\t.ConditionalStyleLevel = \"Cell\"\n\t.ClientSideConditionalStyle = \"\"\n\t.ClientSideConditionalStyleLevel = \"Cell\"\n\t.QBEDisable = .f.\n\t.QBEInlineStyle = \"\"\n\t.QBEOptionsJSON = \"\"\n\t.canBeUsedInWhereClause = .t.\n\t.autoincrement = .f.\n\t.portableType = \"Double\"\n\t.nativeType = \"float\"\n\t.Type = \"N\"\n\t.UserDefinedClientSideValidationJavascript = \"\"\n\t.onChange_ValidationOption = \"None\"\n\t.Updateable = .t.\n\t.TreatBlankAsNull = .f.\n\t.Table_Alias = \"N_FichaTrabajadores_ResumenPlanilla\"\n\t.FieldToUpdate = \"horasExtras\"\n\t.Varname = \"HORASEXTRAS\"\n\t.Initial_Value = \"NULL\"\n\t.Column.LabelPosition = \"Left\"\n\t.Controltype = \"Textbox\"\n\t.Textbox.Size = 10\n\t.Textbox.HTML5Type = \"\"\n\t.Textbox.customAttributes = \"\"\n\t.Textbox.readonly = .f.\n\t.Textbox.MaxLength = 20\n\t.Textbox.InLineStyle = \"text-align: right;\"\n\t.Textbox.className = \"\"\n\t.Textbox.ContainerInlineStyle = \"\"\n\t.Textbox.IsPassword = .f.\n\t.hasWatermark= .f.\n\t.BreakType = \"None\"\n\t.nCols = 1\n\t.Column.Hide = .f.\n\t.BaseFieldExpression = \"horasExtras\"\n\t.SourceAlias = \"\"\n\t.Column.Heading = \"Horas Extras\"\n\t.Column.Sort = \"horasExtras\"\n\t.Column.FirstClickDirection = \"A\"\nend with\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n",
+                    "index": 5000,
+                    "columnQBEOptionsJSON": ""
                 },
                 {
                     "fieldname": "diasLaborados",
+                    "HasValidationRules": true,
                     "showHelpIcon": "None",
                     "helpIconBehavior": "ShowHelpOnClick",
                     "onChange_ValidationOption": "None",
@@ -1214,6 +1217,7 @@
                         "nCols": 1
                     },
                     "controltype": "Textbox",
+                    "ValidationRules": "<general<EnableRules=.T.>\n<require_value=.T.>\n<error_msg=\"Campo obligatorio\">\n<invalid_data_type_message=\"\">\n>\n<data_type=\"Numeric\">\n<text_format<lLetters=.T.>\n<lDigits=.T.>\n<lWhitespace=.T.>\n<lOther=.T.>\n<lSpecial=.T.>\n<use_simple_mask=.F.>\n<simple_mask=\"\">\n<place_holder=\"_\">\n<regex=\"\">\n<error_msg=\"\">\n>\n<numeric_format<numeric_type=\"Integer\">\n<grouping=\"Comma\">\n<decimal=\"Period\">\n<decimal_places=0>\n<error_msg=\"\">\n>\n<logical_format<terms=<<%str%\nTrue\nFalse\nT\nF\nYes\nNo\nY\nN\n1\n0\n.T.\n.F.%str%>\n<error_msg=\"\">\n>\n<data_length<lRequired=.F.>\n<min_length=0>\n<max_length=0>\n<error_msg=\"\">\n>\n<data_value<expression_type=\"None\">\n<equality=\"Greater than or equal\">\n<value=\"\">\n<value1=\"\">\n<value2=\"\">\n<expression=\"\">\n<error_msg=\"\">\n>\n<xfile<source=\"None\">\n<dbf<table=\"\">\n<field=\"\">\n>\n<validation_type=\"Exist\">\n<ado<cs=\"\">\n<connection_type=\"Access Database\">\n<table=\"\">\n<field=\"\">\n<access_fn=\"\">\n<use_saved_connection_string=.F.>\n<saved_connection_string=\"\">\n>\n<cs<cs=\"\">\n<table=\"\">\n<field=\"\">\n<use_saved_connection_string=.F.>\n<saved_connection_string=\"\">\n>\n<error_msg=\"\">\n>\n",
                     "Search": {
                         "FromLabel": "From:",
                         "ToLabel": "To:"
@@ -1235,11 +1239,11 @@
                     },
                     "TextBox": {
                         "InLineStyle": "text-align: right;",
-                        "className": "",
-                        "Size": 20,
-                        "readonly": false,
+                        "Size": 10,
                         "MaxLength": 20,
-                        "stylefieldiferror": true
+                        "stylefieldiferror": true,
+                        "className": "",
+                        "readonly": false
                     },
                     "Watermark": {
                         "text": "<FieldLabel>"
@@ -1259,9 +1263,9 @@
                                 "width": "2in"
                             },
                             "style": "font: 9pt Arial;",
+                            "editButtonText": "Edit...",
                             "toolbaricons": "",
-                            "toolbardefinition": "",
-                            "editButtonText": "Edit..."
+                            "toolbardefinition": ""
                         }
                     },
                     "radiobutton": {
@@ -1300,12 +1304,6 @@
                         "OpenMethod": "ClickIcon",
                         "UseComboBoxes": true,
                         "DateFormat": "<DefaultTimeFormat>",
-                        "friendlyDisplay": {
-                            "settingsJSON": "",
-                            "enabled": false
-                        },
-                        "showPreDefinedDates": false,
-                        "preDefinedDatesJSON": "",
                         "LowYear": 1950,
                         "HighYear": 2050,
                         "SwitchYear": 20,
@@ -1313,7 +1311,13 @@
                         "showDaysOfWeek": true,
                         "showTodayButton": true,
                         "OKButtonLabel": "OK",
-                        "CancelButtonLabel": "Cancel"
+                        "CancelButtonLabel": "Cancel",
+                        "friendlyDisplay": {
+                            "settingsJSON": "",
+                            "enabled": false
+                        },
+                        "showPreDefinedDates": false,
+                        "preDefinedDatesJSON": ""
                     },
                     "column": {
                         "heading": "Dias Laborados",
@@ -1325,7 +1329,6 @@
                     "initial_value": "NULL",
                     "BreakType": "None",
                     "nCols": 1,
-                    "columnQBEOptionsJSON": "",
                     "link": {
                         "StaticImageInlineStyle": "border-style: none;",
                         "DisplayType": "Value in Field",
@@ -1387,11 +1390,13 @@
                     "displayODFlat": "{F=Tahoma,8}{I:'$a5_control_field'}{T=.2}{C=}{DATA=diasLaborados}diasLaborados",
                     "scope": "Local",
                     "tmplTxtComputed": true,
-                    "tmplTxt": "with tmpl.field_info[_fieldNumber_]\n\t.Fieldname = \"diasLaborados\"\n\t.Scope = \"Local\"\n\t.DisplayFormat = \"\"\n\t.DisplayUnFormat = \"\"\n\t.ConditionalStyle = \"\"\n\t.ConditionalStyleLevel = \"Cell\"\n\t.ClientSideConditionalStyle = \"\"\n\t.ClientSideConditionalStyleLevel = \"Cell\"\n\t.QBEDisable = .f.\n\t.QBEInlineStyle = \"\"\n\t.QBEOptionsJSON = \"\"\n\t.canBeUsedInWhereClause = .t.\n\t.autoincrement = .f.\n\t.portableType = \"Double\"\n\t.nativeType = \"float\"\n\t.Type = \"N\"\n\t.UserDefinedClientSideValidationJavascript = \"\"\n\t.onChange_ValidationOption = \"None\"\n\t.Updateable = .t.\n\t.TreatBlankAsNull = .f.\n\t.Table_Alias = \"N_FichaTrabajadores_ResumenPlanilla\"\n\t.FieldToUpdate = \"diasLaborados\"\n\t.Varname = \"DIASLABORADOS\"\n\t.Initial_Value = \"NULL\"\n\t.Column.LabelPosition = \"Left\"\n\t.Controltype = \"Textbox\"\n\t.Textbox.Size = 20\n\t.Textbox.HTML5Type = \"\"\n\t.Textbox.customAttributes = \"\"\n\t.Textbox.readonly = .f.\n\t.Textbox.MaxLength = 20\n\t.Textbox.InLineStyle = \"text-align: right;\"\n\t.Textbox.className = \"\"\n\t.Textbox.ContainerInlineStyle = \"\"\n\t.Textbox.IsPassword = .f.\n\t.hasWatermark= .f.\n\t.BreakType = \"None\"\n\t.nCols = 1\n\t.Column.Hide = .f.\n\t.BaseFieldExpression = \"diasLaborados\"\n\t.SourceAlias = \"\"\n\t.Column.Heading = \"Dias Laborados\"\n\t.Column.Sort = \"diasLaborados\"\n\t.Column.FirstClickDirection = \"A\"\n\nend with\n",
-                    "index": 6000
+                    "tmplTxt": "with tmpl.field_info[_fieldNumber_]\n\t.Fieldname = \"diasLaborados\"\n\t.Scope = \"Local\"\n\t.DisplayFormat = \"\"\n\t.DisplayUnFormat = \"\"\n\t.ConditionalStyle = \"\"\n\t.ConditionalStyleLevel = \"Cell\"\n\t.ClientSideConditionalStyle = \"\"\n\t.ClientSideConditionalStyleLevel = \"Cell\"\n\t.QBEDisable = .f.\n\t.QBEInlineStyle = \"\"\n\t.QBEOptionsJSON = \"\"\n\t.canBeUsedInWhereClause = .t.\n\t.autoincrement = .f.\n\t.portableType = \"Double\"\n\t.nativeType = \"float\"\n\t.Type = \"N\"\n\t.UserDefinedClientSideValidationJavascript = \"\"\n\t.onChange_ValidationOption = \"None\"\n\t.Updateable = .t.\n\t.TreatBlankAsNull = .f.\n\t.Table_Alias = \"N_FichaTrabajadores_ResumenPlanilla\"\n\t.FieldToUpdate = \"diasLaborados\"\n\t.Varname = \"DIASLABORADOS\"\n\t.Initial_Value = \"NULL\"\n\t.Column.LabelPosition = \"Left\"\n\t.Controltype = \"Textbox\"\n\t.Textbox.Size = 10\n\t.Textbox.HTML5Type = \"\"\n\t.Textbox.customAttributes = \"\"\n\t.Textbox.readonly = .f.\n\t.Textbox.MaxLength = 20\n\t.Textbox.InLineStyle = \"text-align: right;\"\n\t.Textbox.className = \"\"\n\t.Textbox.ContainerInlineStyle = \"\"\n\t.Textbox.IsPassword = .f.\n\t.hasWatermark= .f.\n\t.BreakType = \"None\"\n\t.nCols = 1\n\t.Column.Hide = .f.\n\t.BaseFieldExpression = \"diasLaborados\"\n\t.SourceAlias = \"\"\n\t.Column.Heading = \"Dias Laborados\"\n\t.Column.Sort = \"diasLaborados\"\n\t.Column.FirstClickDirection = \"A\"\n\t.HasValidationRules = .t.\n\tDIM validationSettings as P\n\tWith ValidationSettings\n\t\t.general.require_value = .t.\n\t\t.general.error_msg = \"Campo obligatorio\"\n\t\t.general.invalid_data_type_message = \"\"\n\tEnd With\n\t.Enable_ClientSideValidation = .f.\n\t.Validate_OnBlur = .f.\nend with\n\n",
+                    "index": 6000,
+                    "columnQBEOptionsJSON": ""
                 },
                 {
                     "fieldname": "valorDiaLaborado",
+                    "HasValidationRules": true,
                     "showHelpIcon": "None",
                     "helpIconBehavior": "ShowHelpOnClick",
                     "onChange_ValidationOption": "None",
@@ -1436,6 +1441,7 @@
                         "nCols": 1
                     },
                     "controltype": "Textbox",
+                    "ValidationRules": "<general<EnableRules=.T.>\n<require_value=.T.>\n<error_msg=\"Campo obligatorio\">\n<invalid_data_type_message=\"\">\n>\n<data_type=\"Numeric\">\n<text_format<lLetters=.T.>\n<lDigits=.T.>\n<lWhitespace=.T.>\n<lOther=.T.>\n<lSpecial=.T.>\n<use_simple_mask=.F.>\n<simple_mask=\"\">\n<place_holder=\"_\">\n<regex=\"\">\n<error_msg=\"\">\n>\n<numeric_format<numeric_type=\"Integer\">\n<grouping=\"Comma\">\n<decimal=\"Period\">\n<decimal_places=0>\n<error_msg=\"\">\n>\n<logical_format<terms=<<%str%\nTrue\nFalse\nT\nF\nYes\nNo\nY\nN\n1\n0\n.T.\n.F.%str%>\n<error_msg=\"\">\n>\n<data_length<lRequired=.F.>\n<min_length=0>\n<max_length=0>\n<error_msg=\"\">\n>\n<data_value<expression_type=\"None\">\n<equality=\"Greater than or equal\">\n<value=\"\">\n<value1=\"\">\n<value2=\"\">\n<expression=\"\">\n<error_msg=\"\">\n>\n<xfile<source=\"None\">\n<dbf<table=\"\">\n<field=\"\">\n>\n<validation_type=\"Exist\">\n<ado<cs=\"\">\n<connection_type=\"Access Database\">\n<table=\"\">\n<field=\"\">\n<access_fn=\"\">\n<use_saved_connection_string=.F.>\n<saved_connection_string=\"\">\n>\n<cs<cs=\"\">\n<table=\"\">\n<field=\"\">\n<use_saved_connection_string=.F.>\n<saved_connection_string=\"\">\n>\n<error_msg=\"\">\n>\n",
                     "Search": {
                         "FromLabel": "From:",
                         "ToLabel": "To:"
@@ -1457,11 +1463,11 @@
                     },
                     "TextBox": {
                         "InLineStyle": "text-align: right;",
-                        "className": "",
-                        "Size": 20,
-                        "readonly": false,
+                        "Size": 10,
                         "MaxLength": 20,
-                        "stylefieldiferror": true
+                        "stylefieldiferror": true,
+                        "className": "",
+                        "readonly": false
                     },
                     "Watermark": {
                         "text": "<FieldLabel>"
@@ -1481,9 +1487,9 @@
                                 "width": "2in"
                             },
                             "style": "font: 9pt Arial;",
+                            "editButtonText": "Edit...",
                             "toolbaricons": "",
-                            "toolbardefinition": "",
-                            "editButtonText": "Edit..."
+                            "toolbardefinition": ""
                         }
                     },
                     "radiobutton": {
@@ -1522,12 +1528,6 @@
                         "OpenMethod": "ClickIcon",
                         "UseComboBoxes": true,
                         "DateFormat": "<DefaultTimeFormat>",
-                        "friendlyDisplay": {
-                            "settingsJSON": "",
-                            "enabled": false
-                        },
-                        "showPreDefinedDates": false,
-                        "preDefinedDatesJSON": "",
                         "LowYear": 1950,
                         "HighYear": 2050,
                         "SwitchYear": 20,
@@ -1535,7 +1535,13 @@
                         "showDaysOfWeek": true,
                         "showTodayButton": true,
                         "OKButtonLabel": "OK",
-                        "CancelButtonLabel": "Cancel"
+                        "CancelButtonLabel": "Cancel",
+                        "friendlyDisplay": {
+                            "settingsJSON": "",
+                            "enabled": false
+                        },
+                        "showPreDefinedDates": false,
+                        "preDefinedDatesJSON": ""
                     },
                     "column": {
                         "heading": "Valor Dia Laborado",
@@ -1547,7 +1553,6 @@
                     "initial_value": "NULL",
                     "BreakType": "None",
                     "nCols": 1,
-                    "columnQBEOptionsJSON": "",
                     "link": {
                         "StaticImageInlineStyle": "border-style: none;",
                         "DisplayType": "Value in Field",
@@ -1609,11 +1614,13 @@
                     "displayODFlat": "{F=Tahoma,8}{I:'$a5_control_field'}{T=.2}{C=}{DATA=valorDiaLaborado}valorDiaLaborado",
                     "scope": "Local",
                     "tmplTxtComputed": true,
-                    "tmplTxt": "with tmpl.field_info[_fieldNumber_]\n\t.Fieldname = \"valorDiaLaborado\"\n\t.Scope = \"Local\"\n\t.DisplayFormat = \"\"\n\t.DisplayUnFormat = \"\"\n\t.ConditionalStyle = \"\"\n\t.ConditionalStyleLevel = \"Cell\"\n\t.ClientSideConditionalStyle = \"\"\n\t.ClientSideConditionalStyleLevel = \"Cell\"\n\t.QBEDisable = .f.\n\t.QBEInlineStyle = \"\"\n\t.QBEOptionsJSON = \"\"\n\t.canBeUsedInWhereClause = .t.\n\t.autoincrement = .f.\n\t.portableType = \"Double\"\n\t.nativeType = \"float\"\n\t.Type = \"N\"\n\t.UserDefinedClientSideValidationJavascript = \"\"\n\t.onChange_ValidationOption = \"None\"\n\t.Updateable = .t.\n\t.TreatBlankAsNull = .f.\n\t.Table_Alias = \"N_FichaTrabajadores_ResumenPlanilla\"\n\t.FieldToUpdate = \"valorDiaLaborado\"\n\t.Varname = \"VALORDIALABORADO\"\n\t.Initial_Value = \"NULL\"\n\t.Column.LabelPosition = \"Left\"\n\t.Controltype = \"Textbox\"\n\t.Textbox.Size = 20\n\t.Textbox.HTML5Type = \"\"\n\t.Textbox.customAttributes = \"\"\n\t.Textbox.readonly = .f.\n\t.Textbox.MaxLength = 20\n\t.Textbox.InLineStyle = \"text-align: right;\"\n\t.Textbox.className = \"\"\n\t.Textbox.ContainerInlineStyle = \"\"\n\t.Textbox.IsPassword = .f.\n\t.hasWatermark= .f.\n\t.BreakType = \"None\"\n\t.nCols = 1\n\t.Column.Hide = .f.\n\t.BaseFieldExpression = \"valorDiaLaborado\"\n\t.SourceAlias = \"\"\n\t.Column.Heading = \"Valor Dia Laborado\"\n\t.Column.Sort = \"valorDiaLaborado\"\n\t.Column.FirstClickDirection = \"A\"\n\nend with\n",
-                    "index": 7000
+                    "tmplTxt": "with tmpl.field_info[_fieldNumber_]\n\t.Fieldname = \"valorDiaLaborado\"\n\t.Scope = \"Local\"\n\t.DisplayFormat = \"\"\n\t.DisplayUnFormat = \"\"\n\t.ConditionalStyle = \"\"\n\t.ConditionalStyleLevel = \"Cell\"\n\t.ClientSideConditionalStyle = \"\"\n\t.ClientSideConditionalStyleLevel = \"Cell\"\n\t.QBEDisable = .f.\n\t.QBEInlineStyle = \"\"\n\t.QBEOptionsJSON = \"\"\n\t.canBeUsedInWhereClause = .t.\n\t.autoincrement = .f.\n\t.portableType = \"Double\"\n\t.nativeType = \"float\"\n\t.Type = \"N\"\n\t.UserDefinedClientSideValidationJavascript = \"\"\n\t.onChange_ValidationOption = \"None\"\n\t.Updateable = .t.\n\t.TreatBlankAsNull = .f.\n\t.Table_Alias = \"N_FichaTrabajadores_ResumenPlanilla\"\n\t.FieldToUpdate = \"valorDiaLaborado\"\n\t.Varname = \"VALORDIALABORADO\"\n\t.Initial_Value = \"NULL\"\n\t.Column.LabelPosition = \"Left\"\n\t.Controltype = \"Textbox\"\n\t.Textbox.Size = 10\n\t.Textbox.HTML5Type = \"\"\n\t.Textbox.customAttributes = \"\"\n\t.Textbox.readonly = .f.\n\t.Textbox.MaxLength = 20\n\t.Textbox.InLineStyle = \"text-align: right;\"\n\t.Textbox.className = \"\"\n\t.Textbox.ContainerInlineStyle = \"\"\n\t.Textbox.IsPassword = .f.\n\t.hasWatermark= .f.\n\t.BreakType = \"None\"\n\t.nCols = 1\n\t.Column.Hide = .f.\n\t.BaseFieldExpression = \"valorDiaLaborado\"\n\t.SourceAlias = \"\"\n\t.Column.Heading = \"Valor Dia Laborado\"\n\t.Column.Sort = \"valorDiaLaborado\"\n\t.Column.FirstClickDirection = \"A\"\n\t.HasValidationRules = .t.\n\tDIM validationSettings as P\n\tWith ValidationSettings\n\t\t.general.require_value = .t.\n\t\t.general.error_msg = \"Campo obligatorio\"\n\t\t.general.invalid_data_type_message = \"\"\n\tEnd With\n\t.Enable_ClientSideValidation = .f.\n\t.Validate_OnBlur = .f.\nend with\n\n",
+                    "index": 7000,
+                    "columnQBEOptionsJSON": ""
                 },
                 {
                     "fieldname": "diasCuarentena",
+                    "HasValidationRules": true,
                     "showHelpIcon": "None",
                     "helpIconBehavior": "ShowHelpOnClick",
                     "onChange_ValidationOption": "None",
@@ -1658,6 +1665,7 @@
                         "nCols": 1
                     },
                     "controltype": "Textbox",
+                    "ValidationRules": "<general<EnableRules=.T.>\n<require_value=.T.>\n<error_msg=\"Campo obligatorio\">\n<invalid_data_type_message=\"\">\n>\n<data_type=\"Numeric\">\n<text_format<lLetters=.T.>\n<lDigits=.T.>\n<lWhitespace=.T.>\n<lOther=.T.>\n<lSpecial=.T.>\n<use_simple_mask=.F.>\n<simple_mask=\"\">\n<place_holder=\"_\">\n<regex=\"\">\n<error_msg=\"\">\n>\n<numeric_format<numeric_type=\"Integer\">\n<grouping=\"Comma\">\n<decimal=\"Period\">\n<decimal_places=0>\n<error_msg=\"\">\n>\n<logical_format<terms=<<%str%\nTrue\nFalse\nT\nF\nYes\nNo\nY\nN\n1\n0\n.T.\n.F.%str%>\n<error_msg=\"\">\n>\n<data_length<lRequired=.F.>\n<min_length=0>\n<max_length=0>\n<error_msg=\"\">\n>\n<data_value<expression_type=\"None\">\n<equality=\"Greater than or equal\">\n<value=\"\">\n<value1=\"\">\n<value2=\"\">\n<expression=\"\">\n<error_msg=\"\">\n>\n<xfile<source=\"None\">\n<dbf<table=\"\">\n<field=\"\">\n>\n<validation_type=\"Exist\">\n<ado<cs=\"\">\n<connection_type=\"Access Database\">\n<table=\"\">\n<field=\"\">\n<access_fn=\"\">\n<use_saved_connection_string=.F.>\n<saved_connection_string=\"\">\n>\n<cs<cs=\"\">\n<table=\"\">\n<field=\"\">\n<use_saved_connection_string=.F.>\n<saved_connection_string=\"\">\n>\n<error_msg=\"\">\n>\n",
                     "Search": {
                         "FromLabel": "From:",
                         "ToLabel": "To:"
@@ -1679,11 +1687,11 @@
                     },
                     "TextBox": {
                         "InLineStyle": "text-align: right;",
-                        "className": "",
-                        "Size": 20,
-                        "readonly": false,
+                        "Size": 10,
                         "MaxLength": 20,
-                        "stylefieldiferror": true
+                        "stylefieldiferror": true,
+                        "className": "",
+                        "readonly": false
                     },
                     "Watermark": {
                         "text": "<FieldLabel>"
@@ -1703,9 +1711,9 @@
                                 "width": "2in"
                             },
                             "style": "font: 9pt Arial;",
+                            "editButtonText": "Edit...",
                             "toolbaricons": "",
-                            "toolbardefinition": "",
-                            "editButtonText": "Edit..."
+                            "toolbardefinition": ""
                         }
                     },
                     "radiobutton": {
@@ -1744,12 +1752,6 @@
                         "OpenMethod": "ClickIcon",
                         "UseComboBoxes": true,
                         "DateFormat": "<DefaultTimeFormat>",
-                        "friendlyDisplay": {
-                            "settingsJSON": "",
-                            "enabled": false
-                        },
-                        "showPreDefinedDates": false,
-                        "preDefinedDatesJSON": "",
                         "LowYear": 1950,
                         "HighYear": 2050,
                         "SwitchYear": 20,
@@ -1757,7 +1759,13 @@
                         "showDaysOfWeek": true,
                         "showTodayButton": true,
                         "OKButtonLabel": "OK",
-                        "CancelButtonLabel": "Cancel"
+                        "CancelButtonLabel": "Cancel",
+                        "friendlyDisplay": {
+                            "settingsJSON": "",
+                            "enabled": false
+                        },
+                        "showPreDefinedDates": false,
+                        "preDefinedDatesJSON": ""
                     },
                     "column": {
                         "heading": "Dias Cuarentena",
@@ -1769,7 +1777,6 @@
                     "initial_value": "NULL",
                     "BreakType": "None",
                     "nCols": 1,
-                    "columnQBEOptionsJSON": "",
                     "link": {
                         "StaticImageInlineStyle": "border-style: none;",
                         "DisplayType": "Value in Field",
@@ -1831,11 +1838,13 @@
                     "displayODFlat": "{F=Tahoma,8}{I:'$a5_control_field'}{T=.2}{C=}{DATA=diasCuarentena}diasCuarentena",
                     "scope": "Local",
                     "tmplTxtComputed": true,
-                    "tmplTxt": "with tmpl.field_info[_fieldNumber_]\n\t.Fieldname = \"diasCuarentena\"\n\t.Scope = \"Local\"\n\t.DisplayFormat = \"\"\n\t.DisplayUnFormat = \"\"\n\t.ConditionalStyle = \"\"\n\t.ConditionalStyleLevel = \"Cell\"\n\t.ClientSideConditionalStyle = \"\"\n\t.ClientSideConditionalStyleLevel = \"Cell\"\n\t.QBEDisable = .f.\n\t.QBEInlineStyle = \"\"\n\t.QBEOptionsJSON = \"\"\n\t.canBeUsedInWhereClause = .t.\n\t.autoincrement = .f.\n\t.portableType = \"Double\"\n\t.nativeType = \"float\"\n\t.Type = \"N\"\n\t.UserDefinedClientSideValidationJavascript = \"\"\n\t.onChange_ValidationOption = \"None\"\n\t.Updateable = .t.\n\t.TreatBlankAsNull = .f.\n\t.Table_Alias = \"N_FichaTrabajadores_ResumenPlanilla\"\n\t.FieldToUpdate = \"diasCuarentena\"\n\t.Varname = \"DIASCUARENTENA\"\n\t.Initial_Value = \"NULL\"\n\t.Column.LabelPosition = \"Left\"\n\t.Controltype = \"Textbox\"\n\t.Textbox.Size = 20\n\t.Textbox.HTML5Type = \"\"\n\t.Textbox.customAttributes = \"\"\n\t.Textbox.readonly = .f.\n\t.Textbox.MaxLength = 20\n\t.Textbox.InLineStyle = \"text-align: right;\"\n\t.Textbox.className = \"\"\n\t.Textbox.ContainerInlineStyle = \"\"\n\t.Textbox.IsPassword = .f.\n\t.hasWatermark= .f.\n\t.BreakType = \"None\"\n\t.nCols = 1\n\t.Column.Hide = .f.\n\t.BaseFieldExpression = \"diasCuarentena\"\n\t.SourceAlias = \"\"\n\t.Column.Heading = \"Dias Cuarentena\"\n\t.Column.Sort = \"diasCuarentena\"\n\t.Column.FirstClickDirection = \"A\"\n\nend with\n",
-                    "index": 8000
+                    "tmplTxt": "with tmpl.field_info[_fieldNumber_]\n\t.Fieldname = \"diasCuarentena\"\n\t.Scope = \"Local\"\n\t.DisplayFormat = \"\"\n\t.DisplayUnFormat = \"\"\n\t.ConditionalStyle = \"\"\n\t.ConditionalStyleLevel = \"Cell\"\n\t.ClientSideConditionalStyle = \"\"\n\t.ClientSideConditionalStyleLevel = \"Cell\"\n\t.QBEDisable = .f.\n\t.QBEInlineStyle = \"\"\n\t.QBEOptionsJSON = \"\"\n\t.canBeUsedInWhereClause = .t.\n\t.autoincrement = .f.\n\t.portableType = \"Double\"\n\t.nativeType = \"float\"\n\t.Type = \"N\"\n\t.UserDefinedClientSideValidationJavascript = \"\"\n\t.onChange_ValidationOption = \"None\"\n\t.Updateable = .t.\n\t.TreatBlankAsNull = .f.\n\t.Table_Alias = \"N_FichaTrabajadores_ResumenPlanilla\"\n\t.FieldToUpdate = \"diasCuarentena\"\n\t.Varname = \"DIASCUARENTENA\"\n\t.Initial_Value = \"NULL\"\n\t.Column.LabelPosition = \"Left\"\n\t.Controltype = \"Textbox\"\n\t.Textbox.Size = 10\n\t.Textbox.HTML5Type = \"\"\n\t.Textbox.customAttributes = \"\"\n\t.Textbox.readonly = .f.\n\t.Textbox.MaxLength = 20\n\t.Textbox.InLineStyle = \"text-align: right;\"\n\t.Textbox.className = \"\"\n\t.Textbox.ContainerInlineStyle = \"\"\n\t.Textbox.IsPassword = .f.\n\t.hasWatermark= .f.\n\t.BreakType = \"None\"\n\t.nCols = 1\n\t.Column.Hide = .f.\n\t.BaseFieldExpression = \"diasCuarentena\"\n\t.SourceAlias = \"\"\n\t.Column.Heading = \"Dias Cuarentena\"\n\t.Column.Sort = \"diasCuarentena\"\n\t.Column.FirstClickDirection = \"A\"\n\t.HasValidationRules = .t.\n\tDIM validationSettings as P\n\tWith ValidationSettings\n\t\t.general.require_value = .t.\n\t\t.general.error_msg = \"Campo obligatorio\"\n\t\t.general.invalid_data_type_message = \"\"\n\tEnd With\n\t.Enable_ClientSideValidation = .f.\n\t.Validate_OnBlur = .f.\nend with\n\n",
+                    "index": 8000,
+                    "columnQBEOptionsJSON": ""
                 },
                 {
                     "fieldname": "valorDiaCuarentena",
+                    "HasValidationRules": true,
                     "showHelpIcon": "None",
                     "helpIconBehavior": "ShowHelpOnClick",
                     "onChange_ValidationOption": "None",
@@ -1880,6 +1889,232 @@
                         "nCols": 1
                     },
                     "controltype": "Textbox",
+                    "ValidationRules": "<general<EnableRules=.T.>\n<require_value=.T.>\n<error_msg=\"Campo obligatorio\">\n<invalid_data_type_message=\"\">\n>\n<data_type=\"Numeric\">\n<text_format<lLetters=.T.>\n<lDigits=.T.>\n<lWhitespace=.T.>\n<lOther=.T.>\n<lSpecial=.T.>\n<use_simple_mask=.F.>\n<simple_mask=\"\">\n<place_holder=\"_\">\n<regex=\"\">\n<error_msg=\"\">\n>\n<numeric_format<numeric_type=\"Integer\">\n<grouping=\"Comma\">\n<decimal=\"Period\">\n<decimal_places=0>\n<error_msg=\"\">\n>\n<logical_format<terms=<<%str%\nTrue\nFalse\nT\nF\nYes\nNo\nY\nN\n1\n0\n.T.\n.F.%str%>\n<error_msg=\"\">\n>\n<data_length<lRequired=.F.>\n<min_length=0>\n<max_length=0>\n<error_msg=\"\">\n>\n<data_value<expression_type=\"None\">\n<equality=\"Greater than or equal\">\n<value=\"\">\n<value1=\"\">\n<value2=\"\">\n<expression=\"\">\n<error_msg=\"\">\n>\n<xfile<source=\"None\">\n<dbf<table=\"\">\n<field=\"\">\n>\n<validation_type=\"Exist\">\n<ado<cs=\"\">\n<connection_type=\"Access Database\">\n<table=\"\">\n<field=\"\">\n<access_fn=\"\">\n<use_saved_connection_string=.F.>\n<saved_connection_string=\"\">\n>\n<cs<cs=\"\">\n<table=\"\">\n<field=\"\">\n<use_saved_connection_string=.F.>\n<saved_connection_string=\"\">\n>\n<error_msg=\"\">\n>\n",
+                    "Search": {
+                        "FromLabel": "From:",
+                        "ToLabel": "To:"
+                    },
+                    "Label": {
+                        "InLineStyle": "text-align: right;",
+                        "className": ""
+                    },
+                    "Image": {
+                        "noImageFoundImage": "<None>",
+                        "newRecordImage": "<None>"
+                    },
+                    "calendar": {
+                        "DateFormat": "mm/dd/yy",
+                        "SwitchYear": 20,
+                        "UseComboBoxes": true,
+                        "LowYear": 1950,
+                        "HighYear": 2050
+                    },
+                    "TextBox": {
+                        "InLineStyle": "text-align: right;",
+                        "Size": 10,
+                        "MaxLength": 20,
+                        "stylefieldiferror": true,
+                        "className": "",
+                        "readonly": false
+                    },
+                    "Watermark": {
+                        "text": "<FieldLabel>"
+                    },
+                    "clientSideFormat": {
+                        "type": "Mask"
+                    },
+                    "Lookup": {
+                        "Type": "Grid Component"
+                    },
+                    "TextArea": {
+                        "rows": 2,
+                        "cols": 20,
+                        "RichText": {
+                            "display": {
+                                "height": "1in",
+                                "width": "2in"
+                            },
+                            "style": "font: 9pt Arial;",
+                            "editButtonText": "Edit...",
+                            "toolbaricons": "",
+                            "toolbardefinition": ""
+                        }
+                    },
+                    "radiobutton": {
+                        "datasource": "DBF-Table",
+                        "NotInListRule": "Add to List",
+                        "orientation": "Horizontal",
+                        "columnFlow": "LRTB",
+                        "columnCount": 3,
+                        "rowCount": 3,
+                        "stylefieldiferror": true,
+                        "type": "Static"
+                    },
+                    "CheckBox": {
+                        "type": "Static",
+                        "datasource": "DBF-Table",
+                        "stylefieldiferror": true,
+                        "NotInListRule": "Add to List",
+                        "orientation": "Horizontal",
+                        "columnFlow": "LRTB",
+                        "columnCount": 3,
+                        "rowCount": 3,
+                        "initial_value": "False"
+                    },
+                    "connection_type": "Access Database",
+                    "dropdownbox": {
+                        "Size": 1,
+                        "type": "Static",
+                        "selectStyle": "Single",
+                        "datasource": "DBF-Table",
+                        "stylefieldiferror": true,
+                        "NotInListRule": "Add to List",
+                        "fieldNameOfFieldLinkedToParentControl": "<Auto>",
+                        "methodForComputingCascadingFilter": "<Auto>"
+                    },
+                    "DatePicker": {
+                        "OpenMethod": "ClickIcon",
+                        "UseComboBoxes": true,
+                        "DateFormat": "<DefaultTimeFormat>",
+                        "LowYear": 1950,
+                        "HighYear": 2050,
+                        "SwitchYear": 20,
+                        "IconNumber": 2,
+                        "showDaysOfWeek": true,
+                        "showTodayButton": true,
+                        "OKButtonLabel": "OK",
+                        "CancelButtonLabel": "Cancel",
+                        "friendlyDisplay": {
+                            "settingsJSON": "",
+                            "enabled": false
+                        },
+                        "showPreDefinedDates": false,
+                        "preDefinedDatesJSON": ""
+                    },
+                    "column": {
+                        "heading": "Valor Dia Cuarentena",
+                        "LabelPosition": "Left",
+                        "CanSort": true,
+                        "sort": "valorDiaCuarentena",
+                        "firstclickdirection": "Ascending"
+                    },
+                    "initial_value": "NULL",
+                    "BreakType": "None",
+                    "nCols": 1,
+                    "link": {
+                        "StaticImageInlineStyle": "border-style: none;",
+                        "DisplayType": "Value in Field",
+                        "Type": "Field value is link address",
+                        "ajaxWindowType": "Modal-Popup",
+                        "ajaxWindowTitle": "Window",
+                        "ajaxWindowHeight": "3in",
+                        "ajaxWindowWidth": "4in",
+                        "ajaxWindowisResizable": true,
+                        "ajaxWindowWorkingMessage": "Working...",
+                        "ajaxWindowWorkingMessageIcon": "css/A5System/Images/wait.gif",
+                        "ajaxWindowRefreshGridOnClose": "None",
+                        "targetDIVHideHyperlink": "Close"
+                    },
+                    "BaseFieldExpression": "valorDiaCuarentena",
+                    "type": "N",
+                    "ConditionalStyleLevel": "Cell",
+                    "ClientSideConditionalStyleLevel": "Cell",
+                    "Updateable": true,
+                    "TableAlias": "N_FichaTrabajadores_ResumenPlanilla",
+                    "canBeUsedInWhereClause": true,
+                    "nativeType": "float",
+                    "table": "N_FichaTrabajadores_ResumenPlanilla",
+                    "FieldToUpdate": "valorDiaCuarentena",
+                    "summary": {
+                        "total": {
+                            "inlinestyle": "text-align: right;"
+                        },
+                        "count": {
+                            "inlinestyle": "text-align: right;"
+                        },
+                        "average": {
+                            "inlinestyle": "text-align: right;"
+                        },
+                        "min": {
+                            "inlinestyle": "text-align: right;"
+                        },
+                        "max": {
+                            "inlinestyle": "text-align: right;"
+                        },
+                        "StdDev": {
+                            "inlinestyle": "text-align: right;"
+                        },
+                        "Var": {
+                            "inlinestyle": "text-align: right;"
+                        },
+                        "First": {
+                            "inlinestyle": "text-align: right;"
+                        },
+                        "Last": {
+                            "inlinestyle": "text-align: right;"
+                        }
+                    },
+                    "PortableType": "Double",
+                    "width": 20,
+                    "varname": "valorDiaCuarentena",
+                    "Display": "valorDiaCuarentena",
+                    "displayOD": "{F=Tahoma,8}{I:'$a5_control_field'}{T=.2}{C=}{DATA=valorDiaCuarentena}valorDiaCuarentena",
+                    "displayODFlat": "{F=Tahoma,8}{I:'$a5_control_field'}{T=.2}{C=}{DATA=valorDiaCuarentena}valorDiaCuarentena",
+                    "scope": "Local",
+                    "tmplTxtComputed": true,
+                    "tmplTxt": "with tmpl.field_info[_fieldNumber_]\n\t.Fieldname = \"valorDiaCuarentena\"\n\t.Scope = \"Local\"\n\t.DisplayFormat = \"\"\n\t.DisplayUnFormat = \"\"\n\t.ConditionalStyle = \"\"\n\t.ConditionalStyleLevel = \"Cell\"\n\t.ClientSideConditionalStyle = \"\"\n\t.ClientSideConditionalStyleLevel = \"Cell\"\n\t.QBEDisable = .f.\n\t.QBEInlineStyle = \"\"\n\t.QBEOptionsJSON = \"\"\n\t.canBeUsedInWhereClause = .t.\n\t.autoincrement = .f.\n\t.portableType = \"Double\"\n\t.nativeType = \"float\"\n\t.Type = \"N\"\n\t.UserDefinedClientSideValidationJavascript = \"\"\n\t.onChange_ValidationOption = \"None\"\n\t.Updateable = .t.\n\t.TreatBlankAsNull = .f.\n\t.Table_Alias = \"N_FichaTrabajadores_ResumenPlanilla\"\n\t.FieldToUpdate = \"valorDiaCuarentena\"\n\t.Varname = \"VALORDIACUARENTENA\"\n\t.Initial_Value = \"NULL\"\n\t.Column.LabelPosition = \"Left\"\n\t.Controltype = \"Textbox\"\n\t.Textbox.Size = 10\n\t.Textbox.HTML5Type = \"\"\n\t.Textbox.customAttributes = \"\"\n\t.Textbox.readonly = .f.\n\t.Textbox.MaxLength = 20\n\t.Textbox.InLineStyle = \"text-align: right;\"\n\t.Textbox.className = \"\"\n\t.Textbox.ContainerInlineStyle = \"\"\n\t.Textbox.IsPassword = .f.\n\t.hasWatermark= .f.\n\t.BreakType = \"None\"\n\t.nCols = 1\n\t.Column.Hide = .f.\n\t.BaseFieldExpression = \"valorDiaCuarentena\"\n\t.SourceAlias = \"\"\n\t.Column.Heading = \"Valor Dia Cuarentena\"\n\t.Column.Sort = \"valorDiaCuarentena\"\n\t.Column.FirstClickDirection = \"A\"\n\t.HasValidationRules = .t.\n\tDIM validationSettings as P\n\tWith ValidationSettings\n\t\t.general.require_value = .t.\n\t\t.general.error_msg = \"Campo obligatorio\"\n\t\t.general.invalid_data_type_message = \"\"\n\tEnd With\n\t.Enable_ClientSideValidation = .f.\n\t.Validate_OnBlur = .f.\nend with\n\n",
+                    "index": 9000,
+                    "columnQBEOptionsJSON": ""
+                },
+                {
+                    "fieldname": "totalDiasLaborados",
+                    "CalcExpression": "diasLaborados + diasCuarentena ",
+                    "HasValidationRules": true,
+                    "showHelpIcon": "None",
+                    "helpIconBehavior": "ShowHelpOnClick",
+                    "onChange_ValidationOption": "None",
+                    "Layout": {
+                        "Title": "Tab label",
+                        "TabPane": {
+                            "show": true
+                        },
+                        "TabControl": {
+                            "useModernTabs": true,
+                            "Type": "Tab",
+                            "TabPosition": "Top",
+                            "AccordionType": "Single",
+                            "InitialPane": 1,
+                            "BreakType": "After",
+                            "animation": {
+                                "show": {
+                                    "method": "Suggested",
+                                    "speed": "Slow"
+                                },
+                                "hide": {
+                                    "method": "Suggested",
+                                    "speed": "Slow"
+                                }
+                            }
+                        },
+                        "FrameTitle": "Frame Label",
+                        "Frame": {
+                            "BreakType": "After",
+                            "type": "Simple",
+                            "initialState": "Shown"
+                        },
+                        "Container": {
+                            "BreakType": "After"
+                        },
+                        "ButtonText": "Button",
+                        "HyperlinkText": "Hyperlink",
+                        "Spacer": {
+                            "Horizontal": ".1in",
+                            "Vertical": ".1in"
+                        },
+                        "nCols": 1
+                    },
+                    "controltype": "TextBox",
+                    "ValidationRules": "<general<EnableRules=.T.>\n<require_value=.T.>\n<error_msg=\"Campo obligatorio\">\n<invalid_data_type_message=\"\">\n>\n<data_type=\"Numeric\">\n<text_format<lLetters=.T.>\n<lDigits=.T.>\n<lWhitespace=.T.>\n<lOther=.T.>\n<lSpecial=.T.>\n<use_simple_mask=.F.>\n<simple_mask=\"\">\n<place_holder=\"_\">\n<regex=\"\">\n<error_msg=\"\">\n>\n<numeric_format<numeric_type=\"Integer\">\n<grouping=\"Comma\">\n<decimal=\"Period\">\n<decimal_places=0>\n<error_msg=\"\">\n>\n<logical_format<terms=<<%str%\nTrue\nFalse\nT\nF\nYes\nNo\nY\nN\n1\n0\n.T.\n.F.%str%>\n<error_msg=\"\">\n>\n<data_length<lRequired=.F.>\n<min_length=0>\n<max_length=0>\n<error_msg=\"\">\n>\n<data_value<expression_type=\"None\">\n<equality=\"Greater than or equal\">\n<value=\"\">\n<value1=\"\">\n<value2=\"\">\n<expression=\"\">\n<error_msg=\"\">\n>\n<xfile<source=\"None\">\n<dbf<table=\"\">\n<field=\"\">\n>\n<validation_type=\"Exist\">\n<ado<cs=\"\">\n<connection_type=\"Access Database\">\n<table=\"\">\n<field=\"\">\n<access_fn=\"\">\n<use_saved_connection_string=.F.>\n<saved_connection_string=\"\">\n>\n<cs<cs=\"\">\n<table=\"\">\n<field=\"\">\n<use_saved_connection_string=.F.>\n<saved_connection_string=\"\">\n>\n<error_msg=\"\">\n>\n<oldValue=\"__a5_notAvailable__\">\n",
                     "Search": {
                         "FromLabel": "From:",
                         "ToLabel": "To:"
@@ -1902,9 +2137,9 @@
                     "TextBox": {
                         "InLineStyle": "text-align: right;",
                         "className": "",
-                        "Size": 20,
+                        "Size": 10,
                         "readonly": false,
-                        "MaxLength": 20,
+                        "MaxLength": 11,
                         "stylefieldiferror": true
                     },
                     "Watermark": {
@@ -1982,10 +2217,10 @@
                         "CancelButtonLabel": "Cancel"
                     },
                     "column": {
-                        "heading": "Valor Dia Cuarentena",
+                        "heading": "Total Dias Laborados",
                         "LabelPosition": "Left",
                         "CanSort": true,
-                        "sort": "valorDiaCuarentena",
+                        "sort": "totalDiasLaborados",
                         "firstclickdirection": "Ascending"
                     },
                     "initial_value": "NULL",
@@ -2006,16 +2241,16 @@
                         "ajaxWindowRefreshGridOnClose": "None",
                         "targetDIVHideHyperlink": "Close"
                     },
-                    "BaseFieldExpression": "valorDiaCuarentena",
+                    "BaseFieldExpression": "totalDiasLaborados",
                     "type": "N",
                     "ConditionalStyleLevel": "Cell",
                     "ClientSideConditionalStyleLevel": "Cell",
                     "Updateable": true,
                     "TableAlias": "N_FichaTrabajadores_ResumenPlanilla",
                     "canBeUsedInWhereClause": true,
-                    "nativeType": "float",
+                    "nativeType": "int",
                     "table": "N_FichaTrabajadores_ResumenPlanilla",
-                    "FieldToUpdate": "valorDiaCuarentena",
+                    "FieldToUpdate": "totalDiasLaborados",
                     "summary": {
                         "total": {
                             "inlinestyle": "text-align: right;"
@@ -2045,15 +2280,15 @@
                             "inlinestyle": "text-align: right;"
                         }
                     },
-                    "PortableType": "Double",
-                    "width": 20,
-                    "varname": "valorDiaCuarentena",
-                    "Display": "valorDiaCuarentena",
-                    "displayOD": "{F=Tahoma,8}{I:'$a5_control_field'}{T=.2}{C=}{DATA=valorDiaCuarentena}valorDiaCuarentena",
-                    "displayODFlat": "{F=Tahoma,8}{I:'$a5_control_field'}{T=.2}{C=}{DATA=valorDiaCuarentena}valorDiaCuarentena",
+                    "PortableType": "Integer32",
+                    "width": 11,
+                    "varname": "totalDiasLaborados",
+                    "Display": "totalDiasLaborados",
+                    "displayOD": "{F=Tahoma,8}{I:'$a5_control_field'}{T=.2}{C=}{DATA=totalDiasLaborados}totalDiasLaborados",
+                    "displayODFlat": "{F=Tahoma,8}{I:'$a5_control_field'}{T=.2}{C=}{DATA=totalDiasLaborados}totalDiasLaborados",
                     "scope": "Local",
                     "tmplTxtComputed": true,
-                    "tmplTxt": "with tmpl.field_info[_fieldNumber_]\n\t.Fieldname = \"valorDiaCuarentena\"\n\t.Scope = \"Local\"\n\t.DisplayFormat = \"\"\n\t.DisplayUnFormat = \"\"\n\t.ConditionalStyle = \"\"\n\t.ConditionalStyleLevel = \"Cell\"\n\t.ClientSideConditionalStyle = \"\"\n\t.ClientSideConditionalStyleLevel = \"Cell\"\n\t.QBEDisable = .f.\n\t.QBEInlineStyle = \"\"\n\t.QBEOptionsJSON = \"\"\n\t.canBeUsedInWhereClause = .t.\n\t.autoincrement = .f.\n\t.portableType = \"Double\"\n\t.nativeType = \"float\"\n\t.Type = \"N\"\n\t.UserDefinedClientSideValidationJavascript = \"\"\n\t.onChange_ValidationOption = \"None\"\n\t.Updateable = .t.\n\t.TreatBlankAsNull = .f.\n\t.Table_Alias = \"N_FichaTrabajadores_ResumenPlanilla\"\n\t.FieldToUpdate = \"valorDiaCuarentena\"\n\t.Varname = \"VALORDIACUARENTENA\"\n\t.Initial_Value = \"NULL\"\n\t.Column.LabelPosition = \"Left\"\n\t.Controltype = \"Textbox\"\n\t.Textbox.Size = 20\n\t.Textbox.HTML5Type = \"\"\n\t.Textbox.customAttributes = \"\"\n\t.Textbox.readonly = .f.\n\t.Textbox.MaxLength = 20\n\t.Textbox.InLineStyle = \"text-align: right;\"\n\t.Textbox.className = \"\"\n\t.Textbox.ContainerInlineStyle = \"\"\n\t.Textbox.IsPassword = .f.\n\t.hasWatermark= .f.\n\t.BreakType = \"None\"\n\t.nCols = 1\n\t.Column.Hide = .f.\n\t.BaseFieldExpression = \"valorDiaCuarentena\"\n\t.SourceAlias = \"\"\n\t.Column.Heading = \"Valor Dia Cuarentena\"\n\t.Column.Sort = \"valorDiaCuarentena\"\n\t.Column.FirstClickDirection = \"A\"\n\nend with\n",
+                    "tmplTxt": "with tmpl.field_info[_fieldNumber_]\n\t.Fieldname = \"totalDiasLaborados\"\n\t.Scope = \"Local\"\n\t.DisplayFormat = \"\"\n\t.DisplayUnFormat = \"\"\n\t.ConditionalStyle = \"\"\n\t.ConditionalStyleLevel = \"Cell\"\n\t.ClientSideConditionalStyle = \"\"\n\t.ClientSideConditionalStyleLevel = \"Cell\"\n\t.QBEDisable = .f.\n\t.QBEInlineStyle = \"\"\n\t.QBEOptionsJSON = \"\"\n\t.canBeUsedInWhereClause = .t.\n\t.autoincrement = .f.\n\t.portableType = \"Integer32\"\n\t.nativeType = \"int\"\n\t.Type = \"N\"\n\t.UserDefinedClientSideValidationJavascript = \"\"\n\t.onChange_ValidationOption = \"None\"\n\t.Updateable = .t.\n\t.TreatBlankAsNull = .f.\n\t.Table_Alias = \"N_FichaTrabajadores_ResumenPlanilla\"\n\t.FieldToUpdate = \"totalDiasLaborados\"\n\t.Varname = \"TOTALDIASLABORADOS\"\n\t.Initial_Value = \"NULL\"\n\t.Column.LabelPosition = \"Left\"\n\t.Controltype = \"TextBox\"\n\t.CalcField = .T.\n\t.CalcExpression = \"diasLaborados + diasCuarentena \"\n\t.Textbox.Size = 10\n\t.Textbox.HTML5Type = \"\"\n\t.Textbox.customAttributes = \"\"\n\t.Textbox.readonly = .f.\n\t.Textbox.MaxLength = 11\n\t.Textbox.InLineStyle = \"text-align: right;\"\n\t.Textbox.className = \"\"\n\t.Textbox.ContainerInlineStyle = \"\"\n\t.Textbox.IsPassword = .f.\n\t.hasWatermark= .f.\n\t.BreakType = \"None\"\n\t.nCols = 1\n\t.Column.Hide = .f.\n\t.BaseFieldExpression = \"totalDiasLaborados\"\n\t.SourceAlias = \"\"\n\t.Column.Heading = \"Total Dias Laborados\"\n\t.Column.Sort = \"totalDiasLaborados\"\n\t.Column.FirstClickDirection = \"A\"\n\t.HasValidationRules = .t.\n\tDIM validationSettings as P\n\tWith ValidationSettings\n\t\t.general.require_value = .t.\n\t\t.general.error_msg = \"Campo obligatorio\"\n\t\t.general.invalid_data_type_message = \"\"\n\t\t.oldValue = \"__a5_notAvailable__\"\n\tEnd With\n\t.Enable_ClientSideValidation = .f.\n\t.Validate_OnBlur = .f.\nend with\n\n\n\n\n\n\n\n\n\n\n\n",
                     "index": 9000
                 }
             ]
@@ -2129,9 +2364,6 @@
                 }
             }
         },
-        "detailfields": {
-            "a_fields": []
-        },
         "detailViewToolbar": {
             "helpButtonIcon": "images/$$generic.help.png.a5image",
             "helpButtonBubbleHelp": "Open help window."
@@ -2206,15 +2438,14 @@
             "helpButtonIcon": "images/$$generic.help.png.a5image",
             "helpButtonBubbleHelp": "Open help window."
         },
-        "searchFields": {
-            "a_fields": []
-        },
         "searchField_index": 1,
         "events": {
+            "CanUpdateRecord": "function CanUpdateRecord as v (DataSubmitted as P, Args as p, PageVariables as p, Result as p )\nwith PageVariables\nResult.Cancel = .f.\nResult.ErrorHTML = \"\"\n\ndim fechaDesde as d\nfechaDesde = DataSubmitted.fechaDesde\ndim fechaHasta as d\nfechaHasta = DataSubmitted.fechaHasta\n\ndim totalDiasMes as n\ntotalDiasMes = fechaHasta - fechaDesde + 1\n\ndim totalDiasLaborados as n\ntotalDiasLaborados = DataSubmitted.totalDiasLaborados\n\nif totalDiasMes < 28 .OR. totalDiasMes > 31 then\n\tResult.Cancel = .t.\n\tResult.ErrorHTML = \"Seleccione las fechas correctamente.\"\nend if\n\nif totalDiasLaborados > totalDiasMes then\n\tResult.Cancel = .t.\n\tResult.ErrorHTML = \"El total de Dias Laborados no puede ser mayor al total de dias del mes.\" + totalDiasMes\nend if\n\nend with\nend function\n",
+            "CanInsertRecord": "function CanInsertRecord as v (DataSubmitted as P, Args as p, PageVariables as p, Result as p)\nwith PageVariables\nResult.Cancel = .f.\nResult.ErrorHTML = \"\"\n\ndim fechaDesde as d\nfechaDesde = DataSubmitted.fechaDesde\ndim fechaHasta as d\nfechaHasta = DataSubmitted.fechaHasta\n\ndim totalDiasMes as n\ntotalDiasMes = fechaHasta - fechaDesde\n\nif totalDiasMes < 28 .OR. totalDiasMes > 31 then\n\tResult.Cancel = .t.\n\tResult.ErrorHTML = \"Seleccione bien las fechas.\"\nend if\n\nend with\nend function\n",
             "canAjaxCallback": "",
             "afterAjaxCallback": ""
         },
-        "eventIndex": 1,
+        "eventIndex": 26,
         "activeLanguage": "<Default>",
         "LayoutColumns": 1,
         "DetailLayoutColumns": 1,
@@ -2242,10 +2473,10 @@
         "RepeatingColumns": 1,
         "snaking": "TBLR",
         "total_records_row_position": 1,
-        "total_records_row": "Records:&nbsp; {Total_Records}&nbsp;",
+        "total_records_row": "<a5:t>Records</a5:t>:&nbsp; {Total_Records}&nbsp;",
         "grid_layout_style": 1,
         "grid_layout_template_computation_method": "Automatic",
-        "No_records_message": "No records in query",
+        "No_records_message": "<a5:t>No records in query</a5:t>",
         "Show_Add_Records_Confirmation_Message": true,
         "summary": {
             "total": {
@@ -2295,7 +2526,7 @@
         "highlight_row_onSelect": true,
         "hasRecordsPerPageSelector": true,
         "RecordsPerPageChoices": "1,2,5,10,25,50,75,100",
-        "RecordsPerPageSelectorTemplate": "&nbsp;&nbsp;{Grid.RecordsPerPageSelector} Records per page",
+        "RecordsPerPageSelectorTemplate": "&nbsp;&nbsp;{Grid.RecordsPerPageSelector} <a5:t>Records per page</a5:t>",
         "alphabet_button": {
             "style": "Hyperlink",
             "has_ALL_option": true,
@@ -2352,6 +2583,7 @@
             "closeButtonText": "Close"
         },
         "friendlydatesCustomizationJSON": "",
+        "ToolbarActionButtons": "{ActionButton:REFRESH}\n",
         "gridToolbar": {
             "ExportButtonIcon": "images/$$application.ms.excel.png.a5image",
             "ExportButtonHelp": "Export data in Grid to Excel",
@@ -2410,14 +2642,15 @@
             "Execute_Update_Commands": true,
             "allow_update": true,
             "allow_insert": true,
-            "number_of_insert_rows": 3,
+            "number_of_insert_rows": 1,
             "allow_delete": true,
             "validateFieldsSetting": "Dirty Fields Only",
             "delete_checkbox_label": "Delete",
             "delete_checkbox_label_position": "Left",
             "delete_checkbox_allowDeleteAll": false,
-            "cancel_button_text": "Cancel",
-            "submit_button_text": "Submit",
+            "has_Cancel_button": true,
+            "cancel_button_text": "<a5:t>Cancel</a5:t>",
+            "submit_button_text": "<a5:t>Submit</a5:t>",
             "confirm_before_submit_message": "Submit changes?",
             "check_for_write_conflicts": true,
             "write_conflict_check_type": 2,
@@ -2436,7 +2669,7 @@
             "RowEditStyle": "AllRows",
             "NewRecordsEditStyle": "AlwaysShown",
             "NewRecordsButtonLabel": "New Records",
-            "DeleteRecordControl": "Checkbox",
+            "DeleteRecordControl": "Icon",
             "HasRowStatusColumn": true,
             "OneEditableRowAtATime": true,
             "LazyEdit": true
@@ -2473,16 +2706,16 @@
         "info": {
             "createdBy": "ASUS",
             "LastUpdatedBy": "ASUS",
-            "DateUpdated": "31-08-2020 01:34:49 74 am",
+            "DateUpdated": "01-09-2020 02:13:47 08 pm",
             "DateCreated": "31-08-2020 01:32:55 42 am"
         },
         "BuilderVersion": 2,
-        "current_pane_tree": "Grid.Fields",
+        "current_pane_tree": "Code.Xbasic Functions",
+        "hasActionButtons": true,
         "embeddedMode": false,
         "_style_versionNumber": 2,
         "AjaxOn": true,
         "fpInstalled": "/J9SKAmrHowDQK/uW8QePubMUb1rMfRWsbavNpyprxxfbB4mtlSWTcS61WidlLBa9mknM42BQXF5SLqkaxqDCK/mFD3YZDT1OsoQ5vqc6hgx7TW/IadJylcyQwTe/LJM4e+e7Si6lmmszkP6x840X9kGBMNp+HFBya7+/g8mCAC6g8X4+gBdlG7PdsWexeIoGbZLLYUPoO+oMLYidOLX0+uwHDeaZXyWOucHfR6XG1p5PqCa6S5D+BNJQeBHjkzIPPlYlk9j4H3Yv+GqzgWGd4bysULW12C2uSpR9Y30tc0LezliMcpBKFfJ4pZimEp+GyPe+bPuu12ofCilPrtMjZN/d1tdFzUcGqvnP8LoATQEoTUSDWsEgxeACLbWv+OTZAGLD/pHgcdzYhIjUr4zU1LIJgxjsFmSyBYyrCQcQ9xXJrJLNpXcVntGvDiINBYgivQM1NEY2BdKwscytR67fHHzQ5ldyZ6LVJoJqBTGktVPLkoQEua3v0xi1MOOvRrkGgVi6EI8DK+MANbwqOB6tPkNWrYHKhZNIoM48E1+9k02fUEPlz0tCkgwjjRabFYDyDQ54WBCWG6xIgHQkrKr8Sf2nAZXZQDhp+2zwbZs3qVQyGzTBKSPG9Zn81j3xbHj4pPt5hBU+5de4KJIccbHJm6eZM8XEJ9rx/GDhUVnjUUBxOnUWDV0CeBLVDmJx1IV3UWJYEGkomjvi+bR/vOibrfZ3QjwULidp3ZjyT8IpfLG1whvoWb77M8ZVH71Nqd0UbXCDUqMh9UM4gSeBCKlwe3TO63Q1yoVI1CkEYEHCfTFivzspt72EWEmEh2AgtuVq+t8GjLVA+KCul+0R+bGxZnI5xOa1sw55etW9XhOVUGVlvq5GlJQEiY4hDcSTEGzpv9Qzjd4AgpIRJOy6hy3oPL13OWJkVvCL0HeAXjEBJhMFnPPSogTKO4JfRBuoBVMherQnMdTDeVxUeTnRdtzoMhXkb3F0Jl5CLbaX2jp7eX23LbKhi9Pg0X05bQhiiuzoZOdbC2Ec4G2nwv+C8Q/HZa8x/ZRZHrObw/llZTi5OxuVBE6GmjYEPm7SoPVpa3pUJMILki/A5SUWgO7yGJZo+yVv7XSIIoDP66RoQkUDe9tENB5tREaZyoKmAaFE/aksqzPr3clGbIEjtAz7ELWCB306I1jYyZhafPwr/8kd+MAd/KfEQ9CvzFEh2Z/qcOqUkpXB63/XdX3CtpfVNSgMft2xEJ5Xf79r0vxoKiuEZpKO9qe1YJ3ruhHDkLfouoqM/Hu9FqdDONqRnD5LoEy4qqceVYAzLVzRfJVmSC5AVODI31NDI9oRZnkdm4d/KHGr8dCCA+96iEtF941eQd6KSI5YkBxQrdo6VR5JBdxX440mW+v8gR6dugILwoGhNp/KcbSdGpwvcLVedCH3b+vBiussrtKCemuetX3YLgOmuu1s1/QweUMANzwgg5Wlr866LW3a1A5CcYPJPnVbHL15Lbb5wGRa9YRyMuyClvXSfC9wruxsOcO+JWlyhKBNT+rEwSRA0ZAK7h8RhXak5yPQw+8TmGvaXbxaaBSns+Rg7pXmLh/++dUIK2HeWiNcoOc8xOMpNQcUg3UJgJDcNR3Xgy4A8EyRNmHjliZ7i6hH1oTMKXyYwW7+RgkFhpZUZhMlmT/Wnn65LQgiQG3KEC6f/r2XPRRC15KIr9J5lrYRvYPj4Ede3bilH/ibMfmiJLlAOp7j1YWjf+YYhxGEJzvJsYQ9EnKaJg1UsmQmpKQ9Ukp9DBBlV1Rt1//KVjQacUwafizAdv8lUEiXHBYK5gzXM2oEAnfF67FPYOLZpHTycZvTo9B0H4v/gjIzBlz5xOGbeO34xzMpyqEjfy11DEomfm0Qqy1XoNHSJHExzmeXBXU/G97Unn6NcyBKkNEKiIGBo3ANe7rPHeZee44mtel77jW5U/BEaTOtVELtOZtweHEiGwXYfzpX4djrDQXeK/aj6lmwcdXHVJb/+P8unGXq1HYytv0crjpJKWKodKeq9ucHKGpQ/AlEAD3O4QQ/zwor0z5J7ZbF91qyUOEQZ76+VAfrFH+6gff0Zr6C6h25ARVop7e67ifRkYi+uegfD0ANZNVQW39ySPlpxuakFIKGrT7FDqe1tpOSUs3H1CJWJu4ukKnKs3geCA+cn6kjyWHPg1nfK0rXXWs9PhHpzZTkFhm959B1Rr5ZlUQWcKm9HZpgUU0lCxpY+2550RCVGoJnnO1FZYCzjJP0loV9OT5zRP3Lb6BLFTtQI9Ip0rnPtqmHcV5YFUHnXo7gcV8bCjP3EoVOp7OWHLbB98ioAR7L/nlOedHyjLJE/LJ7EVyev6S2nj64jTmBXdxlYFcz5ezP+1FpDdsAAPKCUTQ5xZkI/dvl2PZTzSRSMjvKgBjWajCHQPb83K1LpW0O5xiMpC6muoQMBzBdYrhYuBabaCWzdrscvmrhUH7+X3V8jSkB7nSYyCe2mWWZw3kNmdyVPqK/ThlpelHpM/zo53ICHE46QpvAf+ThZgumXTvYcxY9APTD9yrb7sWPTJ2awZkbw7XS99JwWFb1/KhNBtpoHOYDGyesrsoD+6O8xLW1VtlCZ4hOa9z3OOmvIE3h28Wi/c2QdWIbdIhpcx+DD9KyWWUXEvNJN2rF3JTExE8i9BsVtVfMPpgrxQux5bU1EGWVg9F16SYs8QhsKDCnQwVM09zulo6f/MUa373uE1hkgX84E32w8tWN5dd0mX3+2i9pgYmhf9n1D/Y7EtqzW9pkVJLZ0buqqLJZmtuteghvyXQ02TwFIEsdLt3XdOVnjFum8+y+gSUzOc2ytBKvS5XUwtyprUjaPF+nc5FZpUpXWOQMIyrF2Htl9MBH3ca+Db6Va/E3v0fRqaq+gPY7FGG7Yj6eNg/rxmVxO/L1hpi0Z3DjhzFVYUIP/5KEQFqaG1FjZxHauFKGQN76XxiRFbUDeYhvXI2xiJuXLqW+5PxWRT5NcIsV7NtryNdei6iZqbkmG880OTiLEe3PKaRdXQzfbX/ioFDoH3+HBRVMS2mJJ1TiZrg2c95EGeSZa2z4ASAqRdmZ/rpL5dQSSutwjfqrkPoFi7jqWovVlhjrtoCSxvCI4E4g291OYq/aHzeIq+HGWJ7d42ZmxTHthu03BjQjSmzEyaFogjRKmbkrxV+Sepy/5KgEBfyPnRfi1D3U1puX5DxLhyJ5eDXy5iTqC3yFzQ8KYON+1qlUZ6z09AuqtAmRzTKbcplfUXiqLDvkF/GFo97NbNlwQW9HGHXVhfDgjYyHsC8AuixM9YxDJeqNAv3mkLQCdhCFdtpHouzVqT7PrkgDzeYT4jCAKCATRuH6WGm0VNcjMzOkruM7UZBoq6b75iMbEsyUXPN9A9hM0Mfcw7DYvPM150eYggu8lKBrwVBCYV+Yuop2DdjG6rLfc5QOAaN0CuXXPeGFIeRndEevj29e4AUQ6+b48xWUG5QWtqFiVlrwWOUjfLeT9UFkK7Xsof0UZ4sTsJBJrW17Aef3l61cVIvfEQO4Jr2QLGaQlVLt8mx49yfGt28GpXu+GDfRtUVZ3HLZDdzqautPSo/sV7ikwkGwE7ItpJhuE22jEc1MzIpjcrv3HGghAC4fX5cTWWjrdwfjyTmCEiyUZtkmcgLiIkMaiIB7b8RO7PJbB1xgwOK37SgAI5rcwnTO+5LNSGnS48eqfWAUUydLi5HIXij4spbdYIYBtg9ikFHg/+56k8s0Qk2F90FDhn9CyZrSygPxud5uSLKKigl+yzj/ub0YNEwE31EB2G+cYxxW+djn6C4G8GW/wkS3yYKk+oT0W9RCm+vndTHLxs6y3stSzD1qG63z+XpBirmr+5euKYFWBsTwPxOMKFK8877E7yW9x7ytvgQvmKig10EOpnP9NHAlActuPPGFNg=",
-        "A5SaveTimeStamp": "20200831013449789",
         "componentFilename": "C:\\4-Trabajos\\TFN\\TFN\\TFN.WebProjects\\TFN.WebProject\\N_FichaTrabajador_PlanillaMensual.a5wcmp",
         "PAliases": {
             "alias": "[PathAlias.ADB_Path]\n",
@@ -2492,6 +2725,40 @@
         "_row_onHover": true,
         "ADB_PATH": "C:\\4-Trabajos\\TFN\\TFN",
         "EXE_PATH": "C:\\Program Files (x86)\\a5V12",
-        "VersionNumber": 4
+        "VersionNumber": 4,
+        "controls": [
+            {
+                "idInternal": "d893db12-3cf3-4c0f-abfd-6955de6fb684",
+                "type": "Button",
+                "Name": "REFRESH",
+                "trailingSeparator": true,
+                "readDataFrom": "GridPart",
+                "actionJSAttribute": "/* actionJavascript:bdb511e0-bff7-45be-acdd-7e7f578eab0b */\nfunction tempfunction_2ef78636_3dd9_4604_af74_388c545f5119() {\nvar dropDownType = 'wait';\nvar title = 'Espere por favor';\nvar msgBody = '';\nvar width = '250px';\nvar oKButtonLabel = '';\nvar cancelButtonLabel = '';\nvar loc = 'center';\nvar onOK = function() { alert('pressed ok'); };\nvar onCancel = function() { };\n{grid.object}.dropDownMessage(dropDownType,title,msgBody,width,oKButtonLabel,cancelButtonLabel,onOK,onCancel, loc);\n\n}\n\nfunction tempfunction_44d22228_2e86_47b8_b62d_3c94e8e7af24() {\n{grid.object}.refresh();\n}\n\nfunction tempfunction_6dbc519b_ddeb_4eca_9be2_ea23a717532c() {\n{grid.object}.dropDownMessageHide();\n}\n\n\nA5.executeThisThenThat(tempfunction_2ef78636_3dd9_4604_af74_388c545f5119,tempfunction_44d22228_2e86_47b8_b62d_3c94e8e7af24,tempfunction_6dbc519b_ddeb_4eca_9be2_ea23a717532c);",
+                "buttonStyle": "Image only",
+                "buttonClass": "[class.gridButton]",
+                "buttonClassHover": "[class.gridButtonHover]",
+                "buttonClassPressed": "[class.gridButtonPressed]",
+                "buttonClassDisabled": "[class.gridButtonDisabled]",
+                "buttonText": "BUTTON",
+                "hyperlinkClass": "[class.gridHyperlinkButton]",
+                "hyperlinkImagePosition": "None",
+                "imageName": "images/$$generic.refresh.color.png.a5image",
+                "readDataFromForClientSideExpns": "GridPart",
+                "precalc": {
+                    "buttonObjectJavascript": "window['{grid.componentName}_BUTTONS_REFRESH'] = new A5.Button({\n\tlayout: 'icon',\n\tclassName: '[class.gridButton]',\n\thoverClassName: '[class.gridButtonHover]',\n\tpressedClassName: '[class.gridButtonPressed]',\n\tdisabledClassName: '[class.gridButtonDisabled]',\n\thtml: 'BUTTON',\n\ticon: 'images/$$generic.refresh.color.png.a5image',\n\tdisabledIcon: 'images/disabled/$$generic.refresh.color.png.a5image',\n\tonClick: function() { /* actionJavascript:bdb511e0-bff7-45be-acdd-7e7f578eab0b */\nfunction tempfunction_2ef78636_3dd9_4604_af74_388c545f5119() {\nvar dropDownType = 'wait';\nvar title = 'Espere por favor';\nvar msgBody = '';\nvar width = '250px';\nvar oKButtonLabel = '';\nvar cancelButtonLabel = '';\nvar loc = 'center';\nvar onOK = function() { alert('pressed ok'); };\nvar onCancel = function() { };\n{grid.object}.dropDownMessage(dropDownType,title,msgBody,width,oKButtonLabel,cancelButtonLabel,onOK,onCancel, loc);\n\n}\n\nfunction tempfunction_44d22228_2e86_47b8_b62d_3c94e8e7af24() {\n{grid.object}.refresh();\n}\n\nfunction tempfunction_6dbc519b_ddeb_4eca_9be2_ea23a717532c() {\n{grid.object}.dropDownMessageHide();\n}\n\n\nA5.executeThisThenThat(tempfunction_2ef78636_3dd9_4604_af74_388c545f5119,tempfunction_44d22228_2e86_47b8_b62d_3c94e8e7af24,tempfunction_6dbc519b_ddeb_4eca_9be2_ea23a717532c);\n},\n\ttheme: '{grid.style}'\n});",
+                    "objectHTML": "<button type=\"button\" id=\"{id}\"></button>&nbsp;",
+                    "objectName": "{grid.componentName}_BUTTONS_REFRESH",
+                    "bindJS": "{grid.componentName}_BUTTONS_REFRESH.bind({bindIdList});"
+                }
+            }
+        ],
+        "CurrentSelectionActionButtons": "d893db12-3cf3-4c0f-abfd-6955de6fb684",
+        "a_actionJavascript": [
+            {
+                "actionGuid": "bdb511e0-bff7-45be-acdd-7e7f578eab0b",
+                "scriptMetaData": "<a_ajs<[1]<display=\"{I:'a5_new_xbasic_script'}{F=Tahoma,10}{C=Dark Blue,White}{B=Blue White,Dark Blue}Inline-Javascript{T=4}{I:'a5_vertical_line'}abrir procesando\">\n<action=\"Inline-Javascript\">\n<icon=\"a5_new_xbasic_script\">\n<isCommentedOut=.F.>\n<comment=\"abrir procesando\">\n<builder=\"a5ajs_Inline(v,dlg_mode,wf)\">\n<metaData=<<%str1%\n<inlineJavascript=<<%str%\nvar dropDownType = 'wait';\nvar title = 'Espere por favor';\nvar msgBody = '';\nvar width = '250px';\nvar oKButtonLabel = '';\nvar cancelButtonLabel = '';\nvar loc = 'center';\nvar onOK = function() { alert('pressed ok'); };\nvar onCancel = function() { };\n{grid.object}.dropDownMessage(dropDownType,title,msgBody,width,oKButtonLabel,cancelButtonLabel,onOK,onCancel, loc);\n%str%>\n%str1%>\n<javascriptAttribute=<<%str%\nvar dropDownType = 'wait';\nvar title = 'Espere por favor';\nvar msgBody = '';\nvar width = '250px';\nvar oKButtonLabel = '';\nvar cancelButtonLabel = '';\nvar loc = 'center';\nvar onOK = function() { alert('pressed ok'); };\nvar onCancel = function() { };\n{grid.object}.dropDownMessage(dropDownType,title,msgBody,width,oKButtonLabel,cancelButtonLabel,onOK,onCancel, loc);\n%str%>\n<Javascriptdeclarations_row=\"\">\n<Javascriptdeclarations_global=\"\">\n<xbasicFunctions=\"\">\n>\n<[2]<action=\"Inline-Javascript\">\n<icon=\"a5_new_xbasic_script\">\n<isCommentedOut=.F.>\n<comment=\"refresh\">\n<builder=\"a5ajs_Inline(v,dlg_mode,wf)\">\n<metaData=<<%str%\n<inlineJavascript=\"{grid.object}.refresh();\">\n%str%>\n<javascriptAttribute=\"{grid.object}.refresh();\">\n<Javascriptdeclarations_row=\"\">\n<Javascriptdeclarations_global=\"\">\n<xbasicFunctions=\"\">\n<display=\"{I:'a5_new_xbasic_script'}{F=Tahoma,10}{C=Dark Blue,White}{B=Blue White,Dark Blue}Inline-Javascript{T=4}{I:'a5_vertical_line'}refresh\">\n>\n<[3]<action=\"Inline-Javascript\">\n<icon=\"a5_new_xbasic_script\">\n<isCommentedOut=.F.>\n<comment=\"cerrar procesando\">\n<builder=\"a5ajs_Inline(v,dlg_mode,wf)\">\n<metaData=<<%str%\n<inlineJavascript=\"{grid.object}.dropDownMessageHide();\">\n%str%>\n<javascriptAttribute=\"{grid.object}.dropDownMessageHide();\">\n<Javascriptdeclarations_row=\"\">\n<Javascriptdeclarations_global=\"\">\n<xbasicFunctions=\"\">\n<display=\"{I:'a5_new_xbasic_script'}{F=Tahoma,10}{C=Dark Blue,White}{B=Blue White,Dark Blue}Inline-Javascript{T=4}{I:'a5_vertical_line'}cerrar procesando\">\n>\n>\n<flagRunSynchronously=.T.>\n<flagWrapInTryCatch=.F.>\n<tryCatchJavascript=\"\">\n"
+            }
+        ],
+        "A5SaveTimeStamp": "20200901141347131"
     }
 }
