@@ -80,8 +80,8 @@ iframe {-webkit-user-select: text;}
 
 </style>
 
-<link palette="" rel="stylesheet" type="text/css" href="css/GrBlue/style.css?buildcount_723">
-<link rel="stylesheet" type="text/css" href="css/_sharedStyles/style.css?buildcount_723">
+<link palette="" rel="stylesheet" type="text/css" href="css/GrBlue/style.css?buildcount_724">
+<link rel="stylesheet" type="text/css" href="css/_sharedStyles/style.css?buildcount_724">
 
 <style type="text/css">
 .icon {
@@ -885,7 +885,7 @@ if(edge=='left'){tLines.unshift('<div class="A5ControlBarVert">');tLines.push('<
 tLines=tLines.join('');if(edge=='left'||edge=='right'){tLines=tLines.replace(/A5CONTROLBARITEMSIZE/gi,'height');tLines=tLines.replace(/A5CONTROLBARSEPCLASSNAME/gi,this.separator.verticalClassName);}else{tLines=tLines.replace(/A5CONTROLBARITEMSIZE/gi,'width');tLines=tLines.replace(/A5CONTROLBARSEPCLASSNAME/gi,this.separator.horizontalClassName);}
 cl._t[edge]=A5.u.template.parse(tLines);}}});};
 A5._windowDefaults={title:{tools:{defaults:{'close':{action:'close',name:'close',image:'a5images/windowbuttonclose.png'}}}}}
-A5.serverSideDateFormat = 'MM/dd/yyyy';
+A5.serverSideDateFormat = 'dd-MM-yyyy';
 A5.u.drag.useDragScrolling = 'auto';
 if(typeof DLG1_DlgObj == 'object') { 
 	DLG1_DlgObj._destroy();
@@ -1552,7 +1552,7 @@ var DLG1_DlgObj = new A5.DialogComponentHelper('DLG1',{
 	dirtyFormIcon: 'css/GrBlue/MessageInfo.png',
 	deleteRecordDialogTitle: 'Delete Record',
 	deleteRecordDialogMessage: 'Are you sure you want to delete this record?',	
-	ssDateFormat: 'MM/dd/yyyy',
+	ssDateFormat: 'dd-MM-yyyy',
 	styleName: 'GrBlue',
 	_fieldHelpers_DIALOG2: [],
 	parentComponentAlias: '',
@@ -11604,11 +11604,11 @@ if(this.multiple ) return;
 	_hasNavigationBar: false,
 	_listGUID: 'ccc58bcf-bfed-48d1-8a16-288ee8c4f12e'
 };
-DLG1_DlgObj._listViewData['LIST1'] = [{'*static': '<div style="color: red; border: solid 1px red;">Could not execute query to get hierarchical JSON data.<br>Error executing query: SELECT  \tN_MonitoreoTrabajador.*, \t((N_FichaTrabajadores.PrimerNombre + \' \') + N_FichaTrabajadores.Apellido) AS Trabajador, \tView_Contactos.Nombre, \tN_Entidad.Referencia  FROM (N_MonitoreoTrabajador N_MonitoreoTrabajador \t LEFT OUTER JOIN N_Entidad N_Entidad \t\t ON  N_MonitoreoTrabajador.Id_Entidad = N_Entidad.Id_Entidad  \t LEFT OUTER JOIN (View_Contactos View_Contactos \t\t LEFT OUTER JOIN WebSecurityUsers WebSecurityUsersCont \t\t\t ON  View_Contactos.Id_Usuario = WebSecurityUsersCont.Id_Usuario ) \t\t ON  N_MonitoreoTrabajador.Id_ContactoFK = View_Contactos.Id_Contacto  \t LEFT OUTER JOIN (N_FichaTrabajadores N_FichaTrabajadores \t\t LEFT OUTER JOIN WebSecurityUsers WebSecurityUsers \t\t\t ON  N_FichaTrabajadores.Id_Usuario = WebSecurityUsers.Id_Usuario ) \t\t ON  N_MonitoreoTrabajador.Id_Trabajador = N_FichaTrabajadores.Id_Trabajador )  WHERE (WebSecurityUsers.Userid = :USERID OR WebSecurityUsersCont.Userid = :USERID) AND  DaysBetweenDates(N_MonitoreoTrabajador.Fecha,  now() ) < 7  AND (N_MonitoreoTrabajador.Temperatura<br><br>Error reported was: <br>Error parsing SQL statement<br>line 1:1106: unexpected token: N_MonitoreoTrabajador<br><br><SQLArguments><br>\t<SQLArgument><br>\t\t<Name>userid</Name><br>\t\t<Data Type="C"></Data><br>\t\t<IsNull Type="L">0</IsNull><br>\t\t<Usage>Input</Usage><br>\t</SQLArgument><br></SQLArguments><br></div>'}]; 
+DLG1_DlgObj._listViewData['LIST1'] = []; 
 DLG1_DlgObj._listViewData['LIST2'] = []; 
 DLG1_DlgObj._listViewData['LIST3'] = []; 
 DLG1_DlgObj._listViewData['LIST4'] = []; 
-DLG1_DlgObj._listViewData['LISTCUARENTENA'] = A5DataArrayToObject(['Id_MonitoreoCobro','Id_Estado','Id_Trabajador','Id_Contacto','FechaMin','FechaMax','NombreContacto','NombreTrabajador','creador','fechaCreacion','__primaryKey','__a5crc'],[['1022','2','0','8614','2020-07-08','2020-07-22','Joni Coquinche Alvarado',null,'marino','07/23/2020 09:19:13 89 am','1022','4294966415'],['1023','2','0','8613','2020-07-08','2020-07-22','Edwin Vargas Chimbo',null,'marino','07/23/2020 09:24:22 09 am','1023','4294920421'],['1025','2','387','0','2020-07-14','2020-07-22',null,'Byron Otavalo','marino','07/23/2020 09:57:53 79 am','1025','4294914087'],['1026','2','316','0','2020-07-16','2020-07-22',null,'Fredy Alomia Izurieta','marino','07/23/2020 09:58:24 46 am','1026','4294963815'],['1027','2','0','8615','2020-07-08','2020-07-22','Luis Ospina Avala',null,'marino','07/23/2020 11:05:54 81 am','1027','4294907890'],['1032','2','344','0','2020-07-01','2020-07-08',null,'Jerry Villafuerte Sanchez','marino','08/03/2020 12:51:03 86 pm','1032','4294929888'],['1033','2','356','0','2020-07-02','2020-07-16',null,'Sixto Uquiña Licuy','marino','08/03/2020 12:56:51 53 pm','1033','4294915953'],['1034','2','318','0','2020-07-10','2020-07-17',null,'Wilmer Alomia Izurieta','marino','08/03/2020 02:28:54 26 pm','1034','4294914894'],['1035','2','368','0','2020-07-07','2020-07-17',null,'Freddy Jipa Pimbo','marino','08/03/2020 02:30:59 88 pm','1035','4294956907'],['1036','2','346','0','2020-07-01','2020-07-27',null,'Darwin Yumbo Tanguila','marino','08/03/2020 03:21:26 85 pm','1036','4294919600'],['1037','2','384','0','2020-07-01','2020-07-11',null,'Carlos Gualinga Santi','marino','08/03/2020 03:24:08 99 pm','1037','4294918225'],['1038','2','366','0','2020-07-10','2020-07-17',null,'Luis Castillo','marino','08/03/2020 03:25:24 02 pm','1038','4294926833'],['1039','2','386','0','2020-07-14','2020-07-25',null,'Jeofre Shiguango','marino','08/03/2020 03:52:29 68 pm','1039','4294947657'],['1041','2','376','8617','2020-06-26','2020-07-14','Wilmer Grefa Condo','Wilmer Grefa Condor','marino','08/03/2020 04:34:02 24 pm','1041','4294931420'],['1042','2','0','8608','2020-07-01','2020-07-14','Sergio Sanmiguel Rivadeneira',null,'marino','08/03/2020 05:30:40 20 pm','1042','4294938375'],['1043','2','0','8607','2020-07-01','2020-07-13','José Tobar Rivera',null,'marino','08/03/2020 05:34:41 54 pm','1043','4294914217'],['1044','2','0','8609','2020-07-01','2020-07-08','GONZALO JIPA YUMBO',null,'marino','08/03/2020 05:40:15 15 pm','1044','4294934441'],['1045','2','0','8610','2020-07-01','2020-07-08','Orlando Sanmiguel Rodriguez',null,'marino','08/03/2020 05:44:06 39 pm','1045','4294905481'],['1046','2','0','8611','2020-07-01','2020-07-25','Miguel Toledo Martinez',null,'marino','08/03/2020 06:08:44 63 pm','1046','4294935498'],['1047','2','0','8612','2020-07-01','2020-07-25','Victor Salazar Grefa',null,'marino','08/03/2020 06:12:27 21 pm','1047','4294965338'],['1048','2','0','8618','2020-07-15','2020-07-24','Luis Portilla Magallon',null,'marino','08/03/2020 06:14:29 05 pm','1048','4294920644'],['1049','2','0','8619','2020-07-24','2020-07-25','Marco Grefa Condo',null,'jarvis','08/03/2020 06:33:11 47 pm','1049','4294935303'],['1050','2','322','0','2020-07-20','2020-07-25',null,'Wiston Castillo Giraldo','jarvis','08/04/2020 12:22:38 96 pm','1050','4294956013']]); 
+DLG1_DlgObj._listViewData['LISTCUARENTENA'] = A5DataArrayToObject(['Id_MonitoreoCobro','Id_Estado','Id_Trabajador','Id_Contacto','FechaMin','FechaMax','NombreContacto','NombreTrabajador','creador','fechaCreacion','__primaryKey','__a5crc'],[['1022','2','0','8614','2020-07-08','2020-07-22','Joni Coquinche Alvarado',null,'marino','23-07-2020 09:19:13 89 am','1022','4294939111'],['1023','2','0','8613','2020-07-08','2020-07-22','Edwin Vargas Chimbo',null,'marino','23-07-2020 09:24:22 09 am','1023','4294963804'],['1025','2','387','0','2020-07-14','2020-07-22',null,'Byron Otavalo','marino','23-07-2020 09:57:53 79 am','1025','4294914245'],['1026','2','316','0','2020-07-16','2020-07-22',null,'Fredy Alomia Izurieta','marino','23-07-2020 09:58:24 46 am','1026','4294933710'],['1027','2','0','8615','2020-07-08','2020-07-22','Luis Ospina Avala',null,'marino','23-07-2020 11:05:54 81 am','1027','4294936961'],['1032','2','344','0','2020-07-01','2020-07-08',null,'Jerry Villafuerte Sanchez','marino','03-08-2020 12:51:03 86 pm','1032','4294908699'],['1033','2','356','0','2020-07-02','2020-07-16',null,'Sixto Uquiña Licuy','marino','03-08-2020 12:56:51 53 pm','1033','4294902206'],['1034','2','318','0','2020-07-10','2020-07-17',null,'Wilmer Alomia Izurieta','marino','03-08-2020 02:28:54 26 pm','1034','4294943359'],['1035','2','368','0','2020-07-07','2020-07-17',null,'Freddy Jipa Pimbo','marino','03-08-2020 02:30:59 88 pm','1035','4294938779'],['1036','2','346','0','2020-07-01','2020-07-27',null,'Darwin Yumbo Tanguila','marino','03-08-2020 03:21:26 85 pm','1036','4294959449'],['1037','2','384','0','2020-07-01','2020-07-11',null,'Carlos Gualinga Santi','marino','03-08-2020 03:24:08 99 pm','1037','4294911762'],['1038','2','366','0','2020-07-10','2020-07-17',null,'Luis Castillo','marino','03-08-2020 03:25:24 02 pm','1038','4294928434'],['1039','2','386','0','2020-07-14','2020-07-25',null,'Jeofre Shiguango','marino','03-08-2020 03:52:29 68 pm','1039','4294929267'],['1041','2','376','8617','2020-06-26','2020-07-14','Wilmer Grefa Condo','Wilmer Grefa Condor','marino','03-08-2020 04:34:02 24 pm','1041','4294931867'],['1042','2','0','8608','2020-07-01','2020-07-14','Sergio Sanmiguel Rivadeneira',null,'marino','03-08-2020 05:30:40 20 pm','1042','4294907375'],['1043','2','0','8607','2020-07-01','2020-07-13','José Tobar Rivera',null,'marino','03-08-2020 05:34:41 54 pm','1043','4294936449'],['1044','2','0','8609','2020-07-01','2020-07-08','GONZALO JIPA YUMBO',null,'marino','03-08-2020 05:40:15 15 pm','1044','4294939516'],['1045','2','0','8610','2020-07-01','2020-07-08','Orlando Sanmiguel Rodriguez',null,'marino','03-08-2020 05:44:06 39 pm','1045','4294921137'],['1046','2','0','8611','2020-07-01','2020-07-25','Miguel Toledo Martinez',null,'marino','03-08-2020 06:08:44 63 pm','1046','4294943304'],['1047','2','0','8612','2020-07-01','2020-07-25','Victor Salazar Grefa',null,'marino','03-08-2020 06:12:27 21 pm','1047','4294938913'],['1048','2','0','8618','2020-07-15','2020-07-24','Luis Portilla Magallon',null,'marino','03-08-2020 06:14:29 05 pm','1048','4294943866'],['1049','2','0','8619','2020-07-24','2020-07-25','Marco Grefa Condo',null,'jarvis','03-08-2020 06:33:11 47 pm','1049','4294934022'],['1050','2','322','0','2020-07-20','2020-07-25',null,'Wiston Castillo Giraldo','jarvis','04-08-2020 12:22:38 96 pm','1050','4294924162']]); 
 DLG1_DlgObj._listViewData['LISTEVALUACION'] = A5DataArrayToObject(['Id_TrabajadorDesempeno','Id_Trabajador','Id_TipoEvaluacion','Id_Evaluador','Fecha','PeriodoDesde','PeriodoHasta','Observaciones','Extension','Documento','Archivo','Tamano','Id_EstadoEvaluacion','FechaCreacion','FechaActualizacion','usuarioCreador','usuarioEdicion','codigoEvaluacion','Id_RegistroEntradaSalida','Userid'],[]);
 ;
 DLG1_DlgObj.setStateInfo({ 	"__dialogGuid": "ac611a65-2859-4193-9133-858cf8b96765", 	"argumentsBoundToCotrols": "", 	"__dtfmt": "yyyy-MM-dd", 	"__tfmt": "", 	"__sgr": "", 	"value":  null  });
@@ -20379,8 +20379,8 @@ DLG1_DlgObj._functions.calcOrientation();
 
 
 var listObj = DLG1_DlgObj.getControl('LIST1');
-if(listObj) listObj._state.recordCount = -1;
-if(listObj) listObj._state.recordCountFormatted = '-1';
+if(listObj) listObj._state.recordCount = 0;
+if(listObj) listObj._state.recordCountFormatted = '0';
 if(listObj) listObj._state.lastBreakValue = '<None>';
 if(listObj) listObj._state.pageCount = 0;
 if(listObj) listObj._state.pageSize = 20;
@@ -20388,9 +20388,9 @@ if(listObj) {var ele = $('DLG1.list1.RECORDCOUNT'); if(ele) ele.innerHTML = list
 if(listObj) listObj._state.paginated = true;
 
 if(listObj) listObj._state.highlight = {  };
-if(listObj) listObj._state.whereClause = '(WebSecurityUsers.Userid = :USERID OR WebSecurityUsersCont.Userid = :USERID) AND  DaysBetweenDates(N_MonitoreoTrabajador.Fecha,  now() ) < 7  AND (N_MonitoreoTrabajador.Temperatura';
+if(listObj) listObj._state.whereClause = '( WebSecurityUsers.Userid = :USERID  OR  WebSecurityUsersCont.Userid = :USERID ) AND  DaysBetweenDates(N_MonitoreoTrabajador.Fecha,  now() ) < 7  AND (N_MonitoreoTrabajador.Temperatura IS NULL  OR  N_MonitoreoTrabajador.Temperatura = \'0\' )';
 if(listObj) listObj._state.whereParameters = '|||C|USERID\n';
-listObj._state.order = '';
+listObj._state.order = 'N_MonitoreoTrabajador.Id_MonitoreoTrabajador DESC';
 		
 		var flagPersist = false;
 		if(typeof listObj._flagPersistDataOK != 'undefined') { 
@@ -20403,6 +20403,7 @@ listObj._state.order = '';
 		
 ;
 if(listObj) listObj._state.pageCount = 0;
+if(listObj) listObj.setDisplay('content-footer',false);
 DLG1_DlgObj._list_executeEvent('LIST1','afterRenderComplete',{});
 listObj._recordNavigatorLinks = ['1','0'];
 if(listObj._refreshStateMessages) listObj._refreshStateMessages();
@@ -20441,9 +20442,9 @@ if(listObj) {var ele = $('DLG1.list2.RECORDCOUNT'); if(ele) ele.innerHTML = list
 if(listObj) listObj._state.paginated = false;
 
 if(listObj) listObj._state.highlight = {  };
-if(listObj) listObj._state.whereClause = '(WebSecurityUsers.Userid = :USERID OR WebSecurityUsersCont.Userid = :USERID) AND  DaysBetweenDates(N_MonitoreoTrabajador.Fecha,  now() ) < 7  AND (N_MonitoreoTrabajador.Temperatura';
+if(listObj) listObj._state.whereClause = '( WebSecurityUsers.Userid = :USERID  OR  WebSecurityUsersCont.Userid = :USERID ) AND  DaysBetweenDates(N_MonitoreoTrabajador.Fecha,  now() ) < 7  AND (N_MonitoreoTrabajador.Temperatura IS NULL  OR  N_MonitoreoTrabajador.Temperatura = \'0\' )';
 if(listObj) listObj._state.whereParameters = '|||C|USERID\n';
-listObj._state.order = '';
+listObj._state.order = 'N_MonitoreoTrabajador.Id_MonitoreoTrabajador DESC';
 		
 		var flagPersist = false;
 		if(typeof listObj._flagPersistDataOK != 'undefined') { 
