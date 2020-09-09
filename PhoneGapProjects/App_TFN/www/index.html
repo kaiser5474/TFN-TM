@@ -80,8 +80,8 @@ iframe {-webkit-user-select: text;}
 
 </style>
 
-<link palette="" rel="stylesheet" type="text/css" href="css/GrBlue/style.css?buildcount_724">
-<link rel="stylesheet" type="text/css" href="css/_sharedStyles/style.css?buildcount_724">
+<link palette="" rel="stylesheet" type="text/css" href="css/GrBlue/style.css?buildcount_805">
+<link rel="stylesheet" type="text/css" href="css/_sharedStyles/style.css?buildcount_805">
 
 <style type="text/css">
 .icon {
@@ -770,6 +770,7 @@ iframe {-webkit-user-select: text;}
 <input type="hidden" id="DLG1.V.R1.LIST4" name="V.R1.LIST4" />
 <input type="hidden" id="DLG1.V.R1.LISTCUARENTENA" name="V.R1.LISTCUARENTENA" />
 <input type="hidden" id="DLG1.V.R1.LISTEVALUACION" name="V.R1.LISTEVALUACION" />
+<input type="hidden" id="DLG1.V.R1.LISTEVALUACIONCAT1" name="V.R1.LISTEVALUACIONCAT1" />
 
 <script type="text/javascript" language="javascript">
 
@@ -960,7 +961,7 @@ if(typeof DLG1_DlgObj == 'object') {
 		}
 	},
 	header: {
-		html: '<div class="A5CWLayout" style="width: " >  <div id="DLG1.V.R1.STATICTEXT_17" title=""  class="" style="box-sizing: border-box; -moz-box-sizing: border-box; -ms-box-sizing: border-box; -webkit-box-sizing: border-box;"   >Bienvenido </div> </div> <div class="A5CWLayout" style="width: 2in" >  <span id="DLG1.V.R1.TEXTBOX1" class="GrBlueGridData " style="width: 100%; box-sizing: border-box; -moz-box-sizing: border-box; -ms-box-sizing: border-box; -webkit-box-sizing: border-box;; display:inline-block" title=""    ></span> </div> <div style="display:none;"></div>',
+		html: '<div class="A5CWLayout" style="width: " >  <div id="DLG1.V.R1.STATICTEXT_17" title=""  class="" style="padding-top: 2px; box-sizing: border-box; -moz-box-sizing: border-box; -ms-box-sizing: border-box; -webkit-box-sizing: border-box;"   >Bienvenido </div> </div> <div class="A5CWLayout" style="width: 2in" >  <span id="DLG1.V.R1.TEXTBOX1" class="GrBlueGridData " style="background-color: rgba(0,0,0,0); width: 100%; box-sizing: border-box; -moz-box-sizing: border-box; -ms-box-sizing: border-box; -webkit-box-sizing: border-box;; display:inline-block" title=""    ></span> </div> <div style="display:none;"></div>',
 		show: true
 	},
 	footer: {
@@ -1350,7 +1351,63 @@ if(typeof DLG1_DlgObj != 'undefined') {var mObj = DLG1_DlgObj.getControl('LISTEV
    }
   }
  }
-if(typeof DLG1_DlgObj != 'undefined' && typeof DLG1_DlgObj._panelCardResize != 'undefined') { DLG1_DlgObj._panelCardResize('PANELCARD_EVALUACION'); };}
+if(typeof DLG1_DlgObj != 'undefined' && typeof DLG1_DlgObj._panelCardResize != 'undefined') { DLG1_DlgObj._panelCardResize('PANELCARD_EVALUACION'); };},
+	onActivate: function() {DLG1_DlgObj.refreshListData('listEvaluacion');}
+})
+},
+{
+	name: 'PANELCARD_DETALLEEVALUACION',
+	src: new A5.PanelCard({
+	theme: 'GrBlue',
+	body: {
+		content: {
+			type: 'html',
+			src: '<div class="A5CWLayout" style="width: 4in" >\r\n \r\n<div  class="GrBlueList"   style="padding:0px; "  >\r\n <div id="DLG1.V.R1.LISTEVALUACIONCAT1.CONTROL"  class="DLG1_LISTEVALUACIONCAT1 <Default>" style="overflow: auto; width: 100%; height: 3in; "></div>\r\n</div>\r\n\r\n</div><br  style="clear:both; " />\r\n<div style="width:;" class="A5CWLayout GrBlueTabT" id="DLG1.V.R1.TAB_1">\r\n <div id="DLG1.V.R1.TAB_1.TABBAND" class="GrBlueTabTBand">\r\n  <a id="DLG1.V.R1.TAB_1.0.TAB" class="" href="#">Evaluacion</a>\r\n  <a id="DLG1.V.R1.TAB_1.1.TAB" class="" href="#">2</a>\r\n <br style="clear: both;" />\r\n </div>\r\n <div id="DLG1.V.R1.TAB_1.PANES" class="GrBlueTabTPanes">\r\n<div id="DLG1.V.R1.TAB_1.0.PANE">\r\n\r\n<div class="A5CWLayout" style="width: 2in" >\r\n <input type="text" id="DLG1.V.R1.TEXTBOX2" title=""     class="GrBlueEdit " style="width: 100%; box-sizing: border-box; -moz-box-sizing: border-box; -ms-box-sizing: border-box; -webkit-box-sizing: border-box;"    name="V.R1.TEXTBOX2"    value=""    />\r\n\r\n</div><div class="A5floatClear"></div>\r\n</div>\r\n<div id="DLG1.V.R1.TAB_1.1.PANE">\r\n\r\n<div class="A5CWLayout" style="width: 2in" >\r\n <input type="text" id="DLG1.V.R1.TEXTBOX3" title=""     class="GrBlueEdit " style="width: 100%; box-sizing: border-box; -moz-box-sizing: border-box; -ms-box-sizing: border-box; -webkit-box-sizing: border-box;"    name="V.R1.TEXTBOX3"    value=""    />\r\n\r\n</div><div class="A5floatClear"></div>\r\n</div>\r\n</div>\r\n</div><br  style="clear:both; " /><div class="A5container">\r\n<div style="width: 5in; text-align:right;;">\r\n<table><tr><td><span id="DLG1.TAB_1.PROGRESS">Step&nbsp;<span id="DLG1.TAB_1.PROGRESS.CURRENT"></span>&nbsp;of&nbsp;<span id="DLG1.TAB_1.PROGRESS.STEPCOUNT"></span>&nbsp;steps.</span>&nbsp;</td><td><button id="DLG1.TAB_1.CANCEL" type="button" class="GrBlueButton" style=""  onmousedown="A5._btn(this,\'onmousedown\',\'GrBlue\'); $e.preventDefault(event);" onmouseup="A5._btn(this,\'onmouseup\',\'GrBlue\');" onmouseover="A5._btn(this,\'onmouseover\',\'GrBlue\');" onmouseout="A5._btn(this,\'onmouseout\',\'GrBlue\');"   >Cancel</button>\r\n<button id="DLG1.TAB_1.PREVIOUS" type="button" class="GrBlueButton" style="display: none; "  onmousedown="A5._btn(this,\'onmousedown\',\'GrBlue\'); $e.preventDefault(event);" onmouseup="A5._btn(this,\'onmouseup\',\'GrBlue\');" onmouseover="A5._btn(this,\'onmouseover\',\'GrBlue\');" onmouseout="A5._btn(this,\'onmouseout\',\'GrBlue\');"   onclick="DLG1_DlgObj.genieObjectNavigate(\'TAB_1\',\'prev\');"  >&lt; Previous</button>\r\n<button id="DLG1.TAB_1.NEXT" type="button" class="GrBlueButton" style=""  onmousedown="A5._btn(this,\'onmousedown\',\'GrBlue\'); $e.preventDefault(event);" onmouseup="A5._btn(this,\'onmouseup\',\'GrBlue\');" onmouseover="A5._btn(this,\'onmouseover\',\'GrBlue\');" onmouseout="A5._btn(this,\'onmouseout\',\'GrBlue\');"   onclick="DLG1_DlgObj.validate(function() {DLG1_DlgObj.genieObjectNavigate(\'TAB_1\',\'next\'); },\'\',\'TAB_1\');"  >Next &gt;</button>\r\n<button id="DLG1.TAB_1.SUBMIT" type="button" class="GrBlueButton" style="display: none; "  onmousedown="A5._btn(this,\'onmousedown\',\'GrBlue\'); $e.preventDefault(event);" onmouseup="A5._btn(this,\'onmouseup\',\'GrBlue\');" onmouseover="A5._btn(this,\'onmouseover\',\'GrBlue\');" onmouseout="A5._btn(this,\'onmouseout\',\'GrBlue\');"   onclick="DLG1_DlgObj.submit();"  >Submit</button>\r\n</td></tr></table>\r\n</div></div><br style="clear:both; " /><div style="height:.1in; font: 0pt;"></div>\r\n<div class="A5floatClear"></div>'
+		},
+		scroll: {
+			axis: 'both',
+			stopPropogation: false,
+			pull: {
+				y: 'auto',
+				x: 'auto'
+			},
+			indicator: {
+				show: true,
+				h: {
+					show: true,
+					location: 'top',
+					offset: '0px',
+					left: '0px',
+					right: '0px'
+				},
+				v: {
+					show: true,
+					location: 'right',
+					offset: '0px',
+					top: '0px',
+					bottom: '0px'
+				}
+			}
+		}
+	},
+	header: {
+		html: '<div class="A5CWLayout" style="width: " >  <button type="button" id="DLG1.V.R1.BUTTON_102"    ></button> </div> <div style="display:none;"></div>',
+		show: true
+	},
+	footer: {
+	},
+	overlay: {
+	},
+	onSize: function() {;
+if(typeof DLG1_DlgObj != 'undefined') {var mObj = DLG1_DlgObj.getControl('LISTEVALUACIONCAT1'); if(mObj) {
+   if(mObj.resize) {
+    mObj.resize();
+   } else {
+    mObj.refresh()
+   }
+  }
+ }
+if(typeof DLG1_DlgObj != 'undefined' && typeof DLG1_DlgObj._panelCardResize != 'undefined') { DLG1_DlgObj._panelCardResize('PANELCARD_DETALLEEVALUACION'); };}
 })
 }
 ],{
@@ -1419,18 +1476,19 @@ DLG1_PanelObj._panelPath = {
 	PANELCARD_EXAMEN: 'PANELCARD_EXAMEN',
 	PANELCARD_CUARENTENA: 'PANELCARD_CUARENTENA',
 	PANELCARD_8: 'PANELCARD_8',
-	PANELCARD_EVALUACION: 'PANELCARD_EVALUACION'
+	PANELCARD_EVALUACION: 'PANELCARD_EVALUACION',
+	PANELCARD_DETALLEEVALUACION: 'PANELCARD_DETALLEEVALUACION'
 }
 DLG1_PanelObj._displayNames = {
-PANEL_LOGIN : 'PANEL_LOGIN',PANELCARD_INICIO : 'PANELCARD_INICIO',PANELCARD_MONITOREO2 : 'PANELCARD_MONITOREO2',PANELCARD_MONITOREO3 : 'PANELCARD_MONITOREO3',PANELCARD_VACUNAS : 'PANELCARD_VACUNAS',PANELCARD_EXAMEN : 'PANELCARD_EXAMEN',PANELCARD_CUARENTENA : 'PANELCARD_CUARENTENA',PANELCARD_8 : 'PANELCARD_8',PANELCARD_EVALUACION : 'PANELCARD_EVALUACION',PANEL_APPLICATIONNAVIGATOR : 'PANEL_APPLICATIONNAVIGATOR'
+PANEL_LOGIN : 'PANEL_LOGIN',PANELCARD_INICIO : 'PANELCARD_INICIO',PANELCARD_MONITOREO2 : 'PANELCARD_MONITOREO2',PANELCARD_MONITOREO3 : 'PANELCARD_MONITOREO3',PANELCARD_VACUNAS : 'PANELCARD_VACUNAS',PANELCARD_EXAMEN : 'PANELCARD_EXAMEN',PANELCARD_CUARENTENA : 'PANELCARD_CUARENTENA',PANELCARD_8 : 'PANELCARD_8',PANELCARD_EVALUACION : 'PANELCARD_EVALUACION',PANELCARD_DETALLEEVALUACION : 'PANELCARD_DETALLEEVALUACION',PANEL_APPLICATIONNAVIGATOR : 'PANEL_APPLICATIONNAVIGATOR'
 };
 if(typeof DLG1_DlgObj == 'object') DLG1_DlgObj._destroy();
 var DLG1_DlgObj = new A5.DialogComponentHelper('DLG1',{
 	ajaxURL: 'https://www.tfntm.com/APP_TFN_LOGIN.a5wcmp?__virtualPage=__a5RunDialog.a5w&__dialogFilename=APP_TFN_LOGIN&__alias=DLG1&__unsaved=no',
 	_embeddedMode: false,
 	_livePreviewInBuilder: false,
-	componentGUID: 'ac611a65-2859-4193-9133-858cf8b96765',
-	columnInfo: {'USERID': {info: {controlType: 'Textbox'}, hiddenVal: false, type: 'input,label', isCalc: false, hlp: '', isArray: false, dataType: 'C'  },'PASSWORD': {info: {controlType: 'Textbox'}, hiddenVal: false, type: 'input,label', isCalc: false, hlp: '', isArray: false, dataType: 'C'  },'TEXTBOX1': {info: {controlType: 'Label'}, hiddenVal: false, type: 'label,label', isCalc: false, hlp: '', isArray: false, dataType: 'C'  },'LABEL4': {info: {controlType: 'label'}, hiddenVal: false, type: 'label,label', isCalc: false, hlp: '', isArray: false, dataType: 'C'  },'LABEL1': {info: {controlType: 'label'}, hiddenVal: false, type: 'label,label', isCalc: false, hlp: '', isArray: false, dataType: 'C'  },'LABEL2': {info: {controlType: 'label'}, hiddenVal: false, type: 'label,label', isCalc: false, hlp: '', isArray: false, dataType: 'C'  },'LABEL5': {info: {controlType: 'label'}, hiddenVal: false, type: 'label,label', isCalc: false, hlp: '', isArray: false, dataType: 'C'  },'FECHAMIN': {info: {controlType: 'textbox'}, hiddenVal: false, type: 'input,label', isCalc: false, hlp: '', isArray: false, dataType: 'D'  },'FECHAMAX': {info: {controlType: 'textbox'}, hiddenVal: false, type: 'input,label', isCalc: false, hlp: '', isArray: false, dataType: 'D'  },'LIST1': {info: {controlType: 'list'}, hiddenVal: false, type: 'control', isCalc: false, hlp: '', isArray: false, dataType: 'C'  },'ID_MONITOREOTRABAJADOR': {info: {controlType: 'Textbox'}, hiddenVal: false, type: 'input,label', isCalc: false, hlp: '', isArray: false, dataType: 'N'  },'ID_MONITOREO': {info: {controlType: 'Textbox'}, hiddenVal: false, type: 'input,label', isCalc: false, hlp: '', isArray: false, dataType: 'N'  },'ID_TRABAJADOR': {info: {controlType: 'Textbox'}, hiddenVal: false, type: 'input,label', isCalc: false, hlp: '', isArray: false, dataType: 'N'  },'TEMPERATURA_1': {info: {controlType: 'Textbox'}, hiddenVal: false, type: 'input,label', isCalc: false, hlp: '', isArray: false, dataType: 'C', validate: function(data,colName,rowNum,instNum) {if($u.s.aTrim(data) == '') return 'La temperatura es obligatoria'; return true; }  },'SATURACIONOXIGENO': {info: {controlType: 'Textbox'}, hiddenVal: false, type: 'input,label', isCalc: false, hlp: '', isArray: false, dataType: 'C'  },'RITMOCARDIACO': {info: {controlType: 'Textbox'}, hiddenVal: false, type: 'input,label', isCalc: false, hlp: '', isArray: false, dataType: 'C'  },'FRECUENCIARESPIRATORIA': {info: {controlType: 'Textbox'}, hiddenVal: false, type: 'input,label', isCalc: false, hlp: '', isArray: false, dataType: 'C'  },'ACERCAMIENTOPERSONA': {info: {controlType: 'Checkbox'}, hiddenVal: false, type: 'input,label', isCalc: false, hlp: '', isArray: false, dataType: 'L'  },'DESCRIPCIONACERCAMIENTO': {info: {controlType: 'TextArea'}, hiddenVal: false, type: 'input,label', isCalc: false, hlp: '', isArray: false, dataType: 'C'  },'ID_MONITOREOTRABAJADORSINTOMA': {info: {controlType: 'Textbox'}, hiddenVal: false, type: 'input,label', isCalc: false, hlp: '', isArray: false, dataType: 'N'  },'ID_SINTOMA': {info: {controlType: 'Textbox'}, hiddenVal: false, type: 'input,label', isCalc: false, hlp: '', isArray: false, dataType: 'N'  },'ID_TRABAJADOR_1': {info: {controlType: 'Textbox'}, hiddenVal: false, type: 'input,label', isCalc: false, hlp: '', isArray: false, dataType: 'N'  },'ID_MONITOREOTRABAJADOR_1': {info: {controlType: 'Textbox'}, hiddenVal: false, type: 'input,label', isCalc: false, hlp: '', isArray: false, dataType: 'N'  },'LIST2': {info: {controlType: 'list'}, hiddenVal: false, type: 'control', isCalc: false, hlp: '', isArray: false, dataType: 'C'  },'SI': {info: {controlType: 'Checkbox'}, hiddenVal: false, type: 'input,label', isCalc: false, hlp: '', isArray: false, dataType: 'L'  },'NO': {info: {controlType: 'Checkbox'}, hiddenVal: false, type: 'input,label', isCalc: false, hlp: '', isArray: false, dataType: 'L'  },'REALIZOPRUEBA': {info: {controlType: 'Checkbox'}, hiddenVal: false, type: 'input,label', isCalc: false, hlp: '', isArray: false, dataType: 'L'  },'ESTADOPRUEBA': {info: {controlType: 'DropDownBox'}, hiddenVal: false, type: 'input,label', isCalc: false, hlp: '', isArray: false, dataType: 'C'  },'IMAGE': {info: {controlType: 'Image'}, hiddenVal: false, type: 'img,img', isCalc: false, hlp: '', isArray: false, dataType: ''  },'IMAGE2': {info: {controlType: 'Image'}, hiddenVal: false, type: 'img,img', isCalc: false, hlp: '', isArray: false, dataType: ''  },'REALIZOPRUEBAPCR': {info: {controlType: 'Checkbox'}, hiddenVal: false, type: 'input,label', isCalc: false, hlp: '', isArray: false, dataType: 'L'  },'ESTADOPRUEBAPCR': {info: {controlType: 'DropDownBox'}, hiddenVal: false, type: 'input,label', isCalc: false, hlp: '', isArray: false, dataType: 'C'  },'IMAGEPCR': {info: {controlType: 'Image'}, hiddenVal: false, type: 'img,img', isCalc: false, hlp: '', isArray: false, dataType: ''  },'IMAGEPCR2': {info: {controlType: 'Image'}, hiddenVal: false, type: 'img,img', isCalc: false, hlp: '', isArray: false, dataType: ''  },'LIST3': {info: {controlType: 'list'}, hiddenVal: false, type: 'control', isCalc: false, hlp: '', isArray: false, dataType: 'C'  },'LIST4': {info: {controlType: 'list'}, hiddenVal: false, type: 'control', isCalc: false, hlp: '', isArray: false, dataType: 'C'  },'LISTCUARENTENA': {info: {controlType: 'list'}, hiddenVal: false, type: 'control', isCalc: false, hlp: '', isArray: false, dataType: 'C'  },'ID_MONITOREOCOBRO': {info: {controlType: 'Textbox'}, hiddenVal: false, type: 'input,label', isCalc: false, hlp: '', isArray: false, dataType: 'N'  },'ID_ESTADO': {info: {controlType: 'Textbox'}, hiddenVal: false, type: 'input,label', isCalc: false, hlp: '', isArray: false, dataType: 'N'  },'ID_TRABAJADOR_2': {info: {controlType: 'Textbox'}, hiddenVal: false, type: 'input,label', isCalc: false, hlp: '', isArray: false, dataType: 'N'  },'ID_CONTACTO': {info: {controlType: 'Textbox'}, hiddenVal: false, type: 'input,label', isCalc: false, hlp: '', isArray: false, dataType: 'N'  },'FECHAMIN_1': {info: {controlType: 'Textbox'}, hiddenVal: false, type: 'input,label', isCalc: false, hlp: '', isArray: false, dataType: 'D'  },'FECHAMAX_1': {info: {controlType: 'Textbox'}, hiddenVal: false, type: 'input,label', isCalc: false, hlp: '', isArray: false, dataType: 'D'  },'NOMBRECONTACTO': {info: {controlType: 'Textbox'}, hiddenVal: false, type: 'input,label', isCalc: false, hlp: '', isArray: false, dataType: 'C'  },'NOMBRETRABAJADOR': {info: {controlType: 'Textbox'}, hiddenVal: false, type: 'input,label', isCalc: false, hlp: '', isArray: false, dataType: 'C'  },'CREADOR': {info: {controlType: 'Textbox'}, hiddenVal: false, type: 'input,label', isCalc: false, hlp: '', isArray: false, dataType: 'C'  },'FECHACREACION': {info: {controlType: 'Textbox'}, hiddenVal: false, type: 'input,label', isCalc: false, hlp: '', isArray: false, dataType: 'T'  },'LISTEVALUACION': {info: {controlType: 'list'}, hiddenVal: false, type: 'control', isCalc: false, hlp: '', isArray: false, dataType: 'C'  }},
+	componentGUID: '8a60dbac-ea3c-41be-8ffe-2623db0b6b00',
+	columnInfo: {'USERID': {info: {controlType: 'Textbox'}, hiddenVal: false, type: 'input,label', isCalc: false, hlp: '', isArray: false, dataType: 'C'  },'PASSWORD': {info: {controlType: 'Textbox'}, hiddenVal: false, type: 'input,label', isCalc: false, hlp: '', isArray: false, dataType: 'C'  },'TEXTBOX1': {info: {controlType: 'Label'}, hiddenVal: false, type: 'label,label', isCalc: false, hlp: '', isArray: false, dataType: 'C'  },'LABEL4': {info: {controlType: 'label'}, hiddenVal: false, type: 'label,label', isCalc: false, hlp: '', isArray: false, dataType: 'C'  },'LABEL1': {info: {controlType: 'label'}, hiddenVal: false, type: 'label,label', isCalc: false, hlp: '', isArray: false, dataType: 'C'  },'LABEL2': {info: {controlType: 'label'}, hiddenVal: false, type: 'label,label', isCalc: false, hlp: '', isArray: false, dataType: 'C'  },'LABEL5': {info: {controlType: 'label'}, hiddenVal: false, type: 'label,label', isCalc: false, hlp: '', isArray: false, dataType: 'C'  },'FECHAMIN': {info: {controlType: 'textbox'}, hiddenVal: false, type: 'input,label', isCalc: false, hlp: '', isArray: false, dataType: 'D'  },'FECHAMAX': {info: {controlType: 'textbox'}, hiddenVal: false, type: 'input,label', isCalc: false, hlp: '', isArray: false, dataType: 'D'  },'LIST1': {info: {controlType: 'list'}, hiddenVal: false, type: 'control', isCalc: false, hlp: '', isArray: false, dataType: 'C'  },'ID_MONITOREOTRABAJADOR': {info: {controlType: 'Textbox'}, hiddenVal: false, type: 'input,label', isCalc: false, hlp: '', isArray: false, dataType: 'N'  },'ID_MONITOREO': {info: {controlType: 'Textbox'}, hiddenVal: false, type: 'input,label', isCalc: false, hlp: '', isArray: false, dataType: 'N'  },'ID_TRABAJADOR': {info: {controlType: 'Textbox'}, hiddenVal: false, type: 'input,label', isCalc: false, hlp: '', isArray: false, dataType: 'N'  },'TEMPERATURA_1': {info: {controlType: 'Textbox'}, hiddenVal: false, type: 'input,label', isCalc: false, hlp: '', isArray: false, dataType: 'C', validate: function(data,colName,rowNum,instNum) {if($u.s.aTrim(data) == '') return 'La temperatura es obligatoria'; return true; }  },'SATURACIONOXIGENO': {info: {controlType: 'Textbox'}, hiddenVal: false, type: 'input,label', isCalc: false, hlp: '', isArray: false, dataType: 'C'  },'RITMOCARDIACO': {info: {controlType: 'Textbox'}, hiddenVal: false, type: 'input,label', isCalc: false, hlp: '', isArray: false, dataType: 'C'  },'FRECUENCIARESPIRATORIA': {info: {controlType: 'Textbox'}, hiddenVal: false, type: 'input,label', isCalc: false, hlp: '', isArray: false, dataType: 'C'  },'ACERCAMIENTOPERSONA': {info: {controlType: 'Checkbox'}, hiddenVal: false, type: 'input,label', isCalc: false, hlp: '', isArray: false, dataType: 'L'  },'DESCRIPCIONACERCAMIENTO': {info: {controlType: 'TextArea'}, hiddenVal: false, type: 'input,label', isCalc: false, hlp: '', isArray: false, dataType: 'C'  },'ID_MONITOREOTRABAJADORSINTOMA': {info: {controlType: 'Textbox'}, hiddenVal: false, type: 'input,label', isCalc: false, hlp: '', isArray: false, dataType: 'N'  },'ID_SINTOMA': {info: {controlType: 'Textbox'}, hiddenVal: false, type: 'input,label', isCalc: false, hlp: '', isArray: false, dataType: 'N'  },'ID_TRABAJADOR_1': {info: {controlType: 'Textbox'}, hiddenVal: false, type: 'input,label', isCalc: false, hlp: '', isArray: false, dataType: 'N'  },'ID_MONITOREOTRABAJADOR_1': {info: {controlType: 'Textbox'}, hiddenVal: false, type: 'input,label', isCalc: false, hlp: '', isArray: false, dataType: 'N'  },'LIST2': {info: {controlType: 'list'}, hiddenVal: false, type: 'control', isCalc: false, hlp: '', isArray: false, dataType: 'C'  },'SI': {info: {controlType: 'Checkbox'}, hiddenVal: false, type: 'input,label', isCalc: false, hlp: '', isArray: false, dataType: 'L'  },'NO': {info: {controlType: 'Checkbox'}, hiddenVal: false, type: 'input,label', isCalc: false, hlp: '', isArray: false, dataType: 'L'  },'REALIZOPRUEBA': {info: {controlType: 'Checkbox'}, hiddenVal: false, type: 'input,label', isCalc: false, hlp: '', isArray: false, dataType: 'L'  },'ESTADOPRUEBA': {info: {controlType: 'DropDownBox'}, hiddenVal: false, type: 'input,label', isCalc: false, hlp: '', isArray: false, dataType: 'C'  },'IMAGE': {info: {controlType: 'Image'}, hiddenVal: false, type: 'img,img', isCalc: false, hlp: '', isArray: false, dataType: ''  },'IMAGE2': {info: {controlType: 'Image'}, hiddenVal: false, type: 'img,img', isCalc: false, hlp: '', isArray: false, dataType: ''  },'REALIZOPRUEBAPCR': {info: {controlType: 'Checkbox'}, hiddenVal: false, type: 'input,label', isCalc: false, hlp: '', isArray: false, dataType: 'L'  },'ESTADOPRUEBAPCR': {info: {controlType: 'DropDownBox'}, hiddenVal: false, type: 'input,label', isCalc: false, hlp: '', isArray: false, dataType: 'C'  },'IMAGEPCR': {info: {controlType: 'Image'}, hiddenVal: false, type: 'img,img', isCalc: false, hlp: '', isArray: false, dataType: ''  },'IMAGEPCR2': {info: {controlType: 'Image'}, hiddenVal: false, type: 'img,img', isCalc: false, hlp: '', isArray: false, dataType: ''  },'LIST3': {info: {controlType: 'list'}, hiddenVal: false, type: 'control', isCalc: false, hlp: '', isArray: false, dataType: 'C'  },'LIST4': {info: {controlType: 'list'}, hiddenVal: false, type: 'control', isCalc: false, hlp: '', isArray: false, dataType: 'C'  },'LISTCUARENTENA': {info: {controlType: 'list'}, hiddenVal: false, type: 'control', isCalc: false, hlp: '', isArray: false, dataType: 'C'  },'ID_MONITOREOCOBRO': {info: {controlType: 'Textbox'}, hiddenVal: false, type: 'input,label', isCalc: false, hlp: '', isArray: false, dataType: 'N'  },'ID_ESTADO': {info: {controlType: 'Textbox'}, hiddenVal: false, type: 'input,label', isCalc: false, hlp: '', isArray: false, dataType: 'N'  },'ID_TRABAJADOR_2': {info: {controlType: 'Textbox'}, hiddenVal: false, type: 'input,label', isCalc: false, hlp: '', isArray: false, dataType: 'N'  },'ID_CONTACTO': {info: {controlType: 'Textbox'}, hiddenVal: false, type: 'input,label', isCalc: false, hlp: '', isArray: false, dataType: 'N'  },'FECHAMIN_1': {info: {controlType: 'Textbox'}, hiddenVal: false, type: 'input,label', isCalc: false, hlp: '', isArray: false, dataType: 'D'  },'FECHAMAX_1': {info: {controlType: 'Textbox'}, hiddenVal: false, type: 'input,label', isCalc: false, hlp: '', isArray: false, dataType: 'D'  },'NOMBRECONTACTO': {info: {controlType: 'Textbox'}, hiddenVal: false, type: 'input,label', isCalc: false, hlp: '', isArray: false, dataType: 'C'  },'NOMBRETRABAJADOR': {info: {controlType: 'Textbox'}, hiddenVal: false, type: 'input,label', isCalc: false, hlp: '', isArray: false, dataType: 'C'  },'CREADOR': {info: {controlType: 'Textbox'}, hiddenVal: false, type: 'input,label', isCalc: false, hlp: '', isArray: false, dataType: 'C'  },'FECHACREACION': {info: {controlType: 'Textbox'}, hiddenVal: false, type: 'input,label', isCalc: false, hlp: '', isArray: false, dataType: 'T'  },'LISTEVALUACION': {info: {controlType: 'list'}, hiddenVal: false, type: 'control', isCalc: false, hlp: '', isArray: false, dataType: 'C'  },'LISTEVALUACIONCAT1': {info: {controlType: 'list'}, hiddenVal: false, type: 'control', isCalc: false, hlp: '', isArray: false, dataType: 'C'  },'TEXTBOX2': {info: {controlType: 'textbox'}, hiddenVal: false, type: 'input,label', isCalc: false, hlp: '', isArray: false, dataType: 'C'  },'TEXTBOX3': {info: {controlType: 'textbox'}, hiddenVal: false, type: 'input,label', isCalc: false, hlp: '', isArray: false, dataType: 'C'  }},
 	originalValues: [{
 	"USERID": "",
 	"PASSWORD": "",
@@ -1483,7 +1541,10 @@ var DLG1_DlgObj = new A5.DialogComponentHelper('DLG1',{
 	"NOMBRETRABAJADOR": "",
 	"CREADOR": "",
 	"FECHACREACION": "",
-	"LISTEVALUACION": ""
+	"LISTEVALUACION": "",
+	"LISTEVALUACIONCAT1": "",
+	"TEXTBOX2": "",
+	"TEXTBOX3": ""
 }],
 	defaultValues: {
 	"USERID": "",
@@ -1537,7 +1598,10 @@ var DLG1_DlgObj = new A5.DialogComponentHelper('DLG1',{
 	"NOMBRETRABAJADOR": "",
 	"CREADOR": "",
 	"FECHACREACION": "",
-	"LISTEVALUACION": ""
+	"LISTEVALUACION": "",
+	"LISTEVALUACIONCAT1": "",
+	"TEXTBOX2": "",
+	"TEXTBOX3": ""
 },
 	datePickerMonthNames: ['January','February','March','April','May','June','July','August','September','October','November','December'],
 	datePickerDayNames: ['Sun','Mon','Tue','Wed','Thu','Fri','Sat'],
@@ -1583,7 +1647,6 @@ DLG1_DlgObj.showWaitMessage('page',{useCSSAnimation: true,cssAnimationSettings: 
 DLG1_DlgObj.hideWaitMessage('page');
 		},
 		onInitializeComplete: function(e) {
-DLG1_DlgObj.ajaxCallback('','','user','',user(),{chunkedResponses: {allow: false},deviceOfflineFunction: function() {  alert('adasda'); }});
 DLG1_DlgObj.runAction('paraInicio');
 document.addEventListener('deviceready', function() {
 var platform = device.platform;
@@ -1636,8 +1699,19 @@ A5.map._fn='https://maps.googleapis.com/maps/api/js?key=AIzaSyCwJ3t4qfu7_Z0VQdc0
 	if(typeof A5.map.defaults == 'undefined') A5.map.defaults = {};
 	if(typeof A5.map.defaults.staticMap == 'undefined') A5.map.defaults.staticMap = {};
 A5.map.defaults.staticMap.key='AIzaSyCwJ3t4qfu7_Z0VQdc0XrFDse_3mWRQADk';
-DLG1_DlgObj._tabObjects = [];
-A5.loadJavascript('function enableLogin(){\nvar data = device.uuid;\nvar enable = false;\n if(data == "410228c0167262c4"){\n  enable = true;\n }\n return enable;\n}\nfunction user(){\nvar user = DLG1_DlgObj.getValue(\'Userid\');\nvar data = A5.ajax.buildURLParam(\'__additionalData\', user);\nreturn data;\n}\n;\n;',true);
+DLG1_DlgObj._tabObjects = ['TAB_1'];
+A5.loadJavascript('function enableLogin(){\nvar data = device.uuid;\nvar enable = false;\n if(data == "410228c0167262c4"){\n  enable = true;\n }\n return enable;\n}\nfunction user(){\nvar user = DLG1_DlgObj.getValue(\'textbox1\');\nvar data = A5.ajax.buildURLParam(\'__additionalData\', user);\nreturn data;\n}\n;\n;',true);
+window['DLG1.V.R1.TAB_1Obj'] = new A5.Tab('DLG1.V.R1.TAB_1',[
+{ 	html: 'Evaluacion', 	value: '1', 	onDynamicLoadDelay: 0, 	show: true, 	disabled: false }, 
+{ 	html: '2', 	value: '2', 	onDynamicLoadDelay: 0, 	show: true, 	disabled: false }
+],
+	{
+	theme: 'GrBlue:Top',
+	onChange: function() {
+DLG1_DlgObj._tabPaneChange('TAB_1');}
+}
+);
+	window['DLG1.V.R1.TAB_1Obj'].select('1');
 if(!DLG1_DlgObj.fieldHelpers['USERID'])DLG1_DlgObj.fieldHelpers['USERID'] = new A5.Edit({
 	watermark: {
 		text: 'Usuario',
@@ -1818,6 +1892,16 @@ if(!DLG1_DlgObj.fieldHelpers['FECHACREACION']) {  DLG1_DlgObj.fieldHelpers['FECH
 	},
 	selectionRequired: false
 });}
+if(!DLG1_DlgObj.fieldHelpers['TEXTBOX2'])DLG1_DlgObj.fieldHelpers['TEXTBOX2'] = new A5.Edit({
+	watermark: {
+		text: 'Textbox2'
+	}
+});
+if(!DLG1_DlgObj.fieldHelpers['TEXTBOX3'])DLG1_DlgObj.fieldHelpers['TEXTBOX3'] = new A5.Edit({
+	watermark: {
+		text: 'Textbox3'
+	}
+});
 DLG1_DlgObj.lookups = {
 };
 DLG1_DlgObj.dialogWatches['SHOWHIDE_LOGOUT_BUTTON'] = {
@@ -2372,7 +2456,7 @@ go._gridCurrentOrder = DLG1_DlgObj._gridOrder;
 go._gridCurrentArguments = DLG1_DlgObj._gridArguments;
 go._gridCurrentDBType = DLG1_DlgObj._gridDBType;
 go.overrideSettings = 'Style_name = `GrBlue`||Style_name = `GrBlue`'+'||';
-go.a5_default_path = 'C_colon_|A5Webroot|livepreview';
+go.a5_default_path = 'C_colon_|Users|ASUS|AppData|Local|Temp|AlphaAnywhere|chromeWorkingPreview|';
 go.windowName = windowName;
 go.synchronizeArguments = true;
 go.showWindowParameters = '';
@@ -2738,7 +2822,7 @@ var options = {
 DLG1_DlgObj.detailViewImageCapturePhoneGap(options);
 }
 DLG1_DlgObj.setStateInfo({
-	"__dialogGuid": "ac611a65-2859-4193-9133-858cf8b96765",
+	"__dialogGuid": "8a60dbac-ea3c-41be-8ffe-2623db0b6b00",
 	"argumentsBoundToCotrols": "",
 	"__dtfmt": "yyyy-MM-dd",
 	"__tfmt": "",
@@ -2748,11 +2832,12 @@ DLG1_DlgObj._cascadingControls = [];
 DLG1_DlgObj._cascadingControlsChildren = [];
 DLG1_DlgObj.setStateInfo({ 	"value":  null  });
 DLG1_DlgObj.setStateInfo({ _dynamicallyAddedArguments2: ''});
-DLG1_DlgObj.setStateInfo({ 	__args_c_USERID: '' })
+DLG1_DlgObj.setStateInfo({ 	__args_c_USERID: '', 	__args_c_USER: 'walomia' })
 A5.msgBox.theme = 'GrBlue';
 A5.msgBox.buttonWidth = '1in';
 DLG1_DlgObj._defaultWindowTitleDirection = 'ltr';
-DLG1_DlgObj._controlContainers = {}
+if($('DLG1.V.R1.TAB_1.TABBAND'))  $('DLG1.V.R1.TAB_1.TABBAND').style.display = 'none';
+DLG1_DlgObj._controlContainers = {'TEXTBOX2' : [{ tab: 'TAB_1', pane: 1}],'TEXTBOX3' : [{ tab: 'TAB_1', pane: 2}]}
 DLG1_DlgObj._panelCardControls = {
 USERID:'PANEL_LOGIN',
 PASSWORD:'PANEL_LOGIN',
@@ -2801,7 +2886,10 @@ NOMBRECONTACTO:'PANELCARD_8',
 NOMBRETRABAJADOR:'PANELCARD_8',
 CREADOR:'PANELCARD_8',
 FECHACREACION:'PANELCARD_8',
-LISTEVALUACION:'PANELCARD_EVALUACION'
+LISTEVALUACION:'PANELCARD_EVALUACION',
+LISTEVALUACIONCAT1:'PANELCARD_DETALLEEVALUACION',
+TEXTBOX2:'PANELCARD_DETALLEEVALUACION',
+TEXTBOX3:'PANELCARD_DETALLEEVALUACION'
 }
 DLG1_DlgObj._controlsOnPanel = {
 	'PANEL_LOGIN' : {controls: ['USERID','PASSWORD']},
@@ -2812,7 +2900,8 @@ DLG1_DlgObj._controlsOnPanel = {
 	'PANELCARD_EXAMEN' : {controls: ['LIST4']},
 	'PANELCARD_CUARENTENA' : {controls: ['LISTCUARENTENA']},
 	'PANELCARD_8' : {controls: ['ID_MONITOREOCOBRO','ID_ESTADO','ID_TRABAJADOR_2','ID_CONTACTO','FECHAMIN_1','FECHAMAX_1','NOMBRECONTACTO','NOMBRETRABAJADOR','CREADOR','FECHACREACION']},
-	'PANELCARD_EVALUACION' : {controls: ['LISTEVALUACION']}
+	'PANELCARD_EVALUACION' : {controls: ['LISTEVALUACION']},
+	'PANELCARD_DETALLEEVALUACION' : {controls: ['LISTEVALUACIONCAT1','TEXTBOX2','TEXTBOX3']}
 }
 DLG1_DlgObj._buttons = {};
 DLG1_DlgObj._buttons['BUTTON_1'] = new A5.Button({
@@ -3017,6 +3106,16 @@ DLG1_DlgObj._buttons['BUTTON_101'] = new A5.Button({
 },
 	theme: 'GrBlue:base'
 });
+DLG1_DlgObj._buttons['BUTTON_102'] = new A5.Button({
+	layout: 'icon text',
+	style: 'box-sizing: border-box; -moz-box-sizing: border-box; -ms-box-sizing: border-box; -webkit-box-sizing: border-box;',
+	html: 'Atr&#0225;s',
+	icon: 'a5images/mininavigateprev.png',
+	disabledIcon: 'a5images/disabledmininavigateprev.png',
+	onClick: function() { 
+},
+	theme: 'GrBlue:base'
+});
 DLG1_DlgObj._buttons['BUTTON_1'].bind('DLG1.V.R1.BUTTON_1');
 DLG1_DlgObj._buttons['BUTTON_94'].bind('DLG1.V.R1.BUTTON_94');
 DLG1_DlgObj._buttons['BUTTON_109'].bind('DLG1.V.R1.BUTTON_109');
@@ -3038,6 +3137,7 @@ DLG1_DlgObj._buttons['BUTTON_107'].bind('DLG1.V.R1.BUTTON_107');
 DLG1_DlgObj._buttons['BUTTON_106'].bind('DLG1.V.R1.BUTTON_106');
 DLG1_DlgObj._buttons['BUTTON_103'].bind('DLG1.V.R1.BUTTON_103');
 DLG1_DlgObj._buttons['BUTTON_101'].bind('DLG1.V.R1.BUTTON_101');
+DLG1_DlgObj._buttons['BUTTON_102'].bind('DLG1.V.R1.BUTTON_102');
 DLG1_DlgObj._buttons['BUTTON_1'].bind('DLG1.V.R1.BUTTON_1');
 DLG1_DlgObj._buttons['BUTTON_94'].bind('DLG1.V.R1.BUTTON_94');
 DLG1_DlgObj._buttons['BUTTON_109'].bind('DLG1.V.R1.BUTTON_109');
@@ -3059,6 +3159,7 @@ DLG1_DlgObj._buttons['BUTTON_107'].bind('DLG1.V.R1.BUTTON_107');
 DLG1_DlgObj._buttons['BUTTON_106'].bind('DLG1.V.R1.BUTTON_106');
 DLG1_DlgObj._buttons['BUTTON_103'].bind('DLG1.V.R1.BUTTON_103');
 DLG1_DlgObj._buttons['BUTTON_101'].bind('DLG1.V.R1.BUTTON_101');
+DLG1_DlgObj._buttons['BUTTON_102'].bind('DLG1.V.R1.BUTTON_102');
 DLG1_DlgObj._listViewSettings['LIST1'] = {
 	_persistListLayout: false,
 	_loadPersistedLayout: false,
@@ -10576,7 +10677,7 @@ DLG1_DlgObj._listViewSettings['LISTEVALUACION'] = {
 	name: 'Documento',
 	defaultValue: 'return this._controlDefaultValueForListField(\'Documento\');',
 	image: {
-		embedded: false,
+		embedded: true,
 		type: 'JPG'
 	}
 },
@@ -10615,6 +10716,10 @@ DLG1_DlgObj._listViewSettings['LISTEVALUACION'] = {
 {
 	name: 'Id_RegistroEntradaSalida',
 	defaultValue: 'return this._controlDefaultValueForListField(\'Id_RegistroEntradaSalida\');'
+},
+{
+	name: 'TipoEvaluacion',
+	defaultValue: 'return this._controlDefaultValueForListField(\'TipoEvaluacion\');'
 },
 {
 	name: 'Userid',
@@ -10735,6 +10840,7 @@ DLG1_DlgObj._listViewSettings['LISTEVALUACION'] = {
 		}
 	},
 	layout: 'Default',
+	calculateValue: function(data) {  {var _val = '' +A5RemoveHTMLWrapper(data.Id_TrabajadorDesempeno); if((_val == '' ||  _val == 'undefined'  )&& typeof data['*rowGUID'] != 'undefined') _val = '_temporaryValue_' + data['*rowGUID']; return _val;}},
 	listVariableName: 'LISTEVALUACION',
 	listVariableNameTrueCase: 'listEvaluacion',
 	_hostComponentId: 'DLG1',
@@ -10812,48 +10918,39 @@ if(this._allrowschecked) {
 var _id = 'DLG1.' + this.listVariableName + '.CHECKBOXALL';
 var ele = $(_id)
 ele.innerHTML = h},
-	childLists: [],
-	childListEndpoints: ['LISTEVALUACION'],
-	_populateAllChildLists: function() { },
-	onSelect: function() {DLG1_DlgObj._listRowSelect('listEvaluacion',this);
+	onItemDraw: function(ele,data,index) {
+var eleImg = $('DLG1.LISTEVALUACION.PARAESTADO.DIMG.' + index); if(eleImg) { if(typeof data.paraEstado != 'undefined' ) { eleImg.src = data.paraEstado.s; } }},
+	childLists: ['LISTEVALUACIONCAT1'],
+	childListEndpoints: ['LISTEVALUACIONCAT1'],
+	_populateAllChildLists: function() { this._emptyAllChildLists();
+this._populateChildList('LISTEVALUACIONCAT1');
+ },
+	onSelect: function() {var _changeWatchState = true; var _dlgObj = window[this._hostComponentId + '_DlgObj']; if(_dlgObj._fireWatchesFlag == false) { _changeWatchState = false; } 
+_dlgObj._fireWatchesFlag = false;
+DLG1_DlgObj._listRowSelect('listEvaluacion',this);
  this._selectedRow = this.selection[0];if(typeof this._selectedRow != 'undefined') { };;
 this._selectedRow = this.selection[0];
+this._emptyAllChildLists();
+this._populateChildList('LISTEVALUACIONCAT1');
+if(_changeWatchState) {  _dlgObj._fireWatchesFlag = true;
+_dlgObj._fireWatches(1);}
 ;},
 	onClick: function() {
+DLG1_DlgObj.runAction('paraMoveEvaluacion');
 DLG1_DlgObj._listSystemOnClick('LISTEVALUACION',this.selection[0]);},
 	layouts: {
 		Default: {
-			type: 'column',
-			showColumnTitles: true,
+			type: 'template',
 			item: {
 			},
-			columns: [
-			{
-				header: {
-					html: 'Periododesde'
-				},
-				resize: false,
-				rcw: 0,
-				data: {
-					template: '<span id="DLG1.LISTEVALUACION.PERIODODESDE.I.{*dataRow}">{PeriodoDesde}&nbsp;</span>'
-				},
-				order: 'PeriodoDesde',
-				width: 'flex(1)'
-			},
-			{
-				header: {
-					html: 'Periodohasta'
-				},
-				resize: false,
-				rcw: 0,
-				data: {
-					template: '<span id="DLG1.LISTEVALUACION.PERIODOHASTA.I.{*dataRow}">{PeriodoHasta}&nbsp;</span>'
-				},
-				order: 'PeriodoHasta',
-				width: 'flex(1)'
-			}],
-			_hasRCW: false,
-			_horizontalScrolling: false
+			template: [
+			'No. <span id="DLG1.LISTEVALUACION.ID_TRABAJADORDESEMPENO.I.{*dataRow}">{Id_TrabajadorDesempeno}&nbsp;</span> <span  id="DLG1.LISTEVALUACION.PARAESTADO.I.{*dataRow}"><img id="DLG1.LISTEVALUACION.PARAESTADO.DIMG.{*dataRow}" src=""       /></span>',
+			'<div class="card card-wide">',
+			'\t<div class="card-content">',
+			'\t\t<h2><span  id="DLG1.LISTEVALUACION.PARAESTADO.I.{*dataRow}"><img id="DLG1.LISTEVALUACION.PARAESTADO.DIMG.{*dataRow}" src=""       /></span> Evaluaci&oacute;n <span id="DLG1.LISTEVALUACION.TIPOEVALUACION.I.{*dataRow}">{TipoEvaluacion}&nbsp;</span></h2>',
+			'\t\t<p>Desde: <span id="DLG1.LISTEVALUACION.PERIODODESDE.I.{*dataRow}">{PeriodoDesde}&nbsp;</span> - Hasta: <span id="DLG1.LISTEVALUACION.PERIODOHASTA.I.{*dataRow}">{PeriodoHasta}&nbsp;</span> </p>\t\t',
+			'\t</div>\t',
+			'</div>']
 		}
 	},
 	__checkedImage: 'svgIcon=#alpha-icon-checkCircle:icon,24',
@@ -10902,6 +10999,7 @@ if (typeof window['cordova'] == 'undefined') {
 }
 }
 		},
+		_afterRenderComplete: function(e) {DLG1_DlgObj.getControl('LISTEVALUACION')._populateMyChildren();},
 		_afterAjaxCallback: function() {this._refreshStateMessages();}
 	},
 	_clientsideSummary: [],
@@ -11304,7 +11402,7 @@ if(!this._searchPartHas) return true;
 	return rv;
 }
 ,
-	allowNullSelection: true,
+	allowNullSelection: false,
 	allowTextSelection: false,
 	allowAnyValue: false,
 	allowNullDeselection: false,
@@ -11372,7 +11470,7 @@ searchFor =  searchFor.replace(/[\-\[\]\/\{\}\(\)\*\+\?\.\\\^\$\|]/g, "\\$&");
 if(searchFor != '') {
 	//fixes bug in Chrome when searching on dates strings that use forward slashes
 	searchFor = searchFor.replace(/\//g,'\\/');
-	this.setFilter({'Id_TrabajadorDesempeno': RegExp('' + searchFor,'i'), 'Id_Trabajador': RegExp('' + searchFor,'i'), 'Id_TipoEvaluacion': RegExp('' + searchFor,'i'), 'Id_Evaluador': RegExp('' + searchFor,'i'), 'Fecha': RegExp('' + searchFor,'i'), 'PeriodoDesde': RegExp('' + searchFor,'i'), 'PeriodoHasta': RegExp('' + searchFor,'i'), 'Observaciones': RegExp('' + searchFor,'i'), 'Extension': RegExp('' + searchFor,'i'), 'Archivo': RegExp('' + searchFor,'i'), 'Tamano': RegExp('' + searchFor,'i'), 'Id_EstadoEvaluacion': RegExp('' + searchFor,'i'), 'FechaCreacion': RegExp('' + searchFor,'i'), 'FechaActualizacion': RegExp('' + searchFor,'i'), 'usuarioCreador': RegExp('' + searchFor,'i'), 'usuarioEdicion': RegExp('' + searchFor,'i'), 'codigoEvaluacion': RegExp('' + searchFor,'i'), 'Id_RegistroEntradaSalida': RegExp('' + searchFor,'i'), 'Userid': RegExp('' + searchFor,'i')});
+	this.setFilter({'Id_TrabajadorDesempeno': RegExp('' + searchFor,'i'), 'Id_Trabajador': RegExp('' + searchFor,'i'), 'Id_TipoEvaluacion': RegExp('' + searchFor,'i'), 'Id_Evaluador': RegExp('' + searchFor,'i'), 'Fecha': RegExp('' + searchFor,'i'), 'PeriodoDesde': RegExp('' + searchFor,'i'), 'PeriodoHasta': RegExp('' + searchFor,'i'), 'Observaciones': RegExp('' + searchFor,'i'), 'Extension': RegExp('' + searchFor,'i'), 'Archivo': RegExp('' + searchFor,'i'), 'Tamano': RegExp('' + searchFor,'i'), 'Id_EstadoEvaluacion': RegExp('' + searchFor,'i'), 'FechaCreacion': RegExp('' + searchFor,'i'), 'FechaActualizacion': RegExp('' + searchFor,'i'), 'usuarioCreador': RegExp('' + searchFor,'i'), 'usuarioEdicion': RegExp('' + searchFor,'i'), 'codigoEvaluacion': RegExp('' + searchFor,'i'), 'Id_RegistroEntradaSalida': RegExp('' + searchFor,'i'), 'TipoEvaluacion': RegExp('' + searchFor,'i'), 'Userid': RegExp('' + searchFor,'i')});
 } else this.setFilter(false);
 var rowCount = this._values.length;
 //var e = {};
@@ -11604,14 +11702,1390 @@ if(this.multiple ) return;
 	_hasNavigationBar: false,
 	_listGUID: 'ccc58bcf-bfed-48d1-8a16-288ee8c4f12e'
 };
+DLG1_DlgObj._listViewSettings['LISTEVALUACIONCAT1'] = {
+	_persistListLayout: false,
+	_loadPersistedLayout: false,
+	saveLayoutSettings: function() {
+		var s = localStorage.listSettings;
+		if(typeof s == 'undefined' || s == null) s = {};
+		if(typeof s == 'string') { 
+			try{s = JSON.parse(s);}catch(err) {return false;}
+		}
+		var sl = s[this._listGUID];
+		if(typeof sl == 'undefined') sl = {};
+		sl.listVariableName = this.listVariableName;
+		sl.layouts = this.layouts;
+		sl.layout = this.layout;
+		s[this._listGUID] = sl ;
+		var str = JSON.stringify(s,'','\t')
+		localStorage.listSettings = str;
+	}
+	,
+	onLayoutUpdate: function(type,args,layoutName) {if(this.saveLayoutSettings) this.saveLayoutSettings();},
+	restoreLayoutSettings: function(dlgObj,mode) { 
+		var str = localStorage.listSettings;
+		if(typeof str == 'undefined' || str == null) {return false;}
+		try{var s = JSON.parse(str);}catch(err) {return false;};
+		var sl = s[this._listGUID];
+		if(typeof sl == 'undefined') {return false;}
+		if(mode == 'delete') { 
+			delete s[this._listGUID];
+			var str = JSON.stringify(s,'','\t')
+			localStorage.listSettings = str;
+			return;
+		}
+		if(mode == 'get') { 
+			return JSON.stringify(sl);
+		}
+		this.layouts = sl.layouts;
+		this.layout = sl.layout;
+		var listSelector = 'listSelector_' + sl.listVariableName ;
+		var that = this;
+		setTimeout(function() {
+			dlgObj.setValue(listSelector,that.layout);
+			delete that;
+		},0);
+		this.refresh();
+		this._flagRestoringLayoutSettings = true;
+	}	
+,
+	_hasDependentLists: false,
+	_dataSourceType: 'SQL',
+	_listFields: [
+{
+	name: 'Id_TrabajadorDesempeno_Categoria',
+	defaultValue: 'return this._controlDefaultValueForListField(\'Id_TrabajadorDesempeno_Categoria\');'
+},
+{
+	name: 'Id_Categoria',
+	defaultValue: 'return this._controlDefaultValueForListField(\'Id_Categoria\');'
+},
+{
+	name: 'Id_Trabajador',
+	defaultValue: 'return this._controlDefaultValueForListField(\'Id_Trabajador\');'
+},
+{
+	name: 'Id_Area',
+	defaultValue: 'return this._controlDefaultValueForListField(\'Id_Area\');'
+},
+{
+	name: 'Id_TrabajadorDesempeno',
+	defaultValue: 'return this._controlDefaultValueForListField(\'Id_TrabajadorDesempeno\');'
+},
+{
+	name: 'Id_TipoEvaluacion',
+	defaultValue: 'return this._controlDefaultValueForListField(\'Id_TipoEvaluacion\');'
+},
+{
+	name: 'Id_TrabajadorDesempeno_Elemento',
+	defaultValue: 'return this._controlDefaultValueForListField(\'Id_TrabajadorDesempeno_Elemento\');'
+},
+{
+	name: 'Id_Elemento',
+	defaultValue: 'return this._controlDefaultValueForListField(\'Id_Elemento\');'
+},
+{
+	name: 'Id_Categoria_1',
+	defaultValue: 'return this._controlDefaultValueForListField(\'Id_Categoria_1\');'
+},
+{
+	name: 'PuntuacionTrabajador',
+	defaultValue: 'return this._controlDefaultValueForListField(\'PuntuacionTrabajador\');'
+},
+{
+	name: 'PuntuacionJefe',
+	defaultValue: 'return this._controlDefaultValueForListField(\'PuntuacionJefe\');'
+},
+{
+	name: 'Id_Trabajador_Categoria',
+	defaultValue: 'return this._controlDefaultValueForListField(\'Id_Trabajador_Categoria\');'
+},
+{
+	name: 'Aprobado',
+	defaultValue: 'return this._controlDefaultValueForListField(\'Aprobado\');'
+},
+{
+	name: 'Observaciones',
+	defaultValue: 'return this._controlDefaultValueForListField(\'Observaciones\');'
+},
+{
+	name: 'Id_Categoria_2',
+	defaultValue: 'return this._controlDefaultValueForListField(\'Id_Categoria_2\');'
+},
+{
+	name: 'Descripcion',
+	defaultValue: 'return this._controlDefaultValueForListField(\'Descripcion\');'
+},
+{
+	name: 'Id_Area_1',
+	defaultValue: 'return this._controlDefaultValueForListField(\'Id_Area_1\');'
+},
+{
+	name: 'Id_Direccion',
+	defaultValue: 'return this._controlDefaultValueForListField(\'Id_Direccion\');'
+},
+{
+	name: 'Id_TipoEvaluacion_1',
+	defaultValue: 'return this._controlDefaultValueForListField(\'Id_TipoEvaluacion_1\');'
+},
+{
+	name: 'Id_TipoCategoria',
+	defaultValue: 'return this._controlDefaultValueForListField(\'Id_TipoCategoria\');'
+},
+{
+	name: 'FechaCreacion',
+	defaultValue: 'return this._controlDefaultValueForListField(\'FechaCreacion\');'
+},
+{
+	name: 'FechaActualizacion',
+	defaultValue: 'return this._controlDefaultValueForListField(\'FechaActualizacion\');'
+},
+{
+	name: 'usuarioCreador',
+	defaultValue: 'return this._controlDefaultValueForListField(\'usuarioCreador\');'
+},
+{
+	name: 'usuarioEdicion',
+	defaultValue: 'return this._controlDefaultValueForListField(\'usuarioEdicion\');'
+},
+{
+	name: 'Id_TipoCategoria_1',
+	defaultValue: 'return this._controlDefaultValueForListField(\'Id_TipoCategoria_1\');'
+},
+{
+	name: 'Descripcion_1',
+	defaultValue: 'return this._controlDefaultValueForListField(\'Descripcion_1\');'
+},
+{
+	name: 'PuntuacionMax',
+	defaultValue: 'return this._controlDefaultValueForListField(\'PuntuacionMax\');'
+},
+{
+	name: 'PuntuacionMin',
+	defaultValue: 'return this._controlDefaultValueForListField(\'PuntuacionMin\');'
+}],
+	_delayRenderTillRefresh: false,
+	_searchPartHas: false,
+	_mediaFields: [],
+	_mediaTypes: {
+},
+	_mediaFieldReadOnly: [],
+	_ignoreMediaFieldsInWWWSubFolder: false,
+	_phoneGap: {
+		mediaFiles: {
+			protectedRead: false,
+			target: 'server',
+			targetFilenameFunction: 'return \'<DeviceId>_\' +e.object.listFieldName + \'_\' + A5.ts() + \'_\' +e.name',
+			showProgress: false,
+			download: {
+				autodownloadFilesOnPullSynch: false,
+				deleteOrphansAfterSync: false,
+				targetFolder: '_AAFiles',
+				showProgress: false,
+				targetFileSystem: 'persistent'
+			},
+			onErrorFunction: function(e) { }
+		}
+	},
+	_incrementalRefreshAfterLoad: function() { },
+	_dvmode: 'enter',
+	_hasDetailView: false,
+	deselectAll: function() { 	
+	var _dlgObj = window[this._hostComponentId + '_DlgObj']; 
+	_dlgObj.setValue(this.listVariableName,'',true);
+	this._deselectAll();
+	if(this.nullOutDetailViewRecord) {
+		this.nullOutDetailViewRecord();
+		for(var i = 0; i < this.childLists.length; i++) { 
+			var lname = this.childLists[i];
+			var lobjC = DLG1_DlgObj.getControl(lname);
+			lobjC.nullOutDetailViewRecord();
+		}
+		if(this._noRecordInListIsSelectedSettingForDetailView ==  'disabledetailview') { 
+			this.disableDetailView()
+			for(var i = 0; i < this.childLists.length; i++) { 
+				var lname = this.childLists[i];
+				var lobjC = DLG1_DlgObj.getControl(lname);
+				lobjC.disableDetailView();
+			}
+		}
+	}
+}
+,
+	showHideColumn: function(columnNumber,flagShow,layoutName,flagSetShowState) { 	if(typeof flagSetShowState == 'undefined') flagSetShowState  = false; //set when this function called from listColumnSelector()
+	if(typeof layoutName == 'undefined') layoutName = this.layout;
+	if(this.layouts[layoutName].columns[columnNumber].show != flagShow) {
+		this.layouts[layoutName].columns[columnNumber].show = flagShow;
+		if(flagSetShowState) this.layouts[layoutName].columns[columnNumber]._showState = flagShow;
+		this.refresh();
+	}
+}
+,
+	showAllColumns: function() { 
+	var l = this.layouts
+	var c = '';
+	var flagRefresh = false;
+	for(var n in l) { 
+		c = l[n].columns;
+		if(typeof c != 'undefined') { 
+			for(var i = 0; i < c.length; i++) { 
+				if(!c[i].initialStateHidden) {
+					var flag = true
+					if(typeof c[i]._showState != 'undefined') { 
+						if(!c[i]._showState) flag = false;
+					}
+					if(flag && !c[i].show) {
+						c[i].show = true;
+						flagRefresh = true;
+					}
+				}
+			}
+		}
+	}
+	if(flagRefresh) {
+		this.refresh();
+	}
+}
+,
+	_hideColumns: function() { 
+}
+,
+	_noRecordInListIsSelectedSettingForDetailView: 'none',
+	_captureLocation: false,
+	_detailViewHas: true,
+	_submitLocationInfo: false,
+	_detailView: {
+		method: 'fieldMap',
+		fieldMap: []
+	},
+	_detailViewGlobalErrorStyle: 'font-family: Arial; font-size: 10pt; color: red; border: solid 1px red; width: 100%;',
+	_autoCommitDetailView: true,
+	_synchBatchSize: 0,
+	_resetMediaFileUploadErrorsFlag: function(data) {
+var r = A5.u.object.each(data,function(name,value,path,result){
+	if(name == '_flagMediaFileUploadError') {
+		result.push({value: false, path: path})
+	}
+});
+for(var i = 0; i < r.length; i++) {
+	A5.u.object.set(data,r[i].path,r[i].value);
+}
+},
+	theme: 'GrBlue',
+	scroll: {
+		axis: 'both',
+		indicator: {
+			show: true,
+			h: {
+				show: true,
+				location: 'top',
+				offset: '0px',
+				left: '0px',
+				right: '0px'
+			},
+			v: {
+				show: true,
+				location: 'right',
+				offset: '0px',
+				top: '0px',
+				bottom: '0px'
+			}
+		},
+		momentum: {
+			allow: true
+		},
+		pull: {
+			y: 'auto',
+			x: 'auto'
+		}
+	},
+	layout: 'Default',
+	listVariableName: 'LISTEVALUACIONCAT1',
+	listVariableNameTrueCase: 'listEvaluacionCat1',
+	_hostComponentId: 'DLG1',
+	_includeCRC: false,
+	parentList: 'listEvaluacion',
+	allParentLists: ['LISTEVALUACION'],
+	_inplaceEditing: {
+		allow: false
+	},
+	__flagPersist: false,
+	__flagIncrementalRefreshAfterLoad: false,
+	onBeforePopulate: function(data) {this.__onPopulateHasFired = false;
+},
+	onPopulate: function(data) {if(!this._isInit) {if (typeof window['cordova'] == 'undefined') { 
+	DLG1_DlgObj._list_executeEvent(this.listVariableName,'detailView.listReadyToPersist',{listSyncMode: 'fullRefresh' });
+}
+};},
+	onBeforeUpdateRow: function(index,data){;},
+	onUpdateRow: function(index,data){;},
+	onBeforeAddRows: function(data,info){;},
+	onAddRows: function(data,info){;},
+	onBeforeRemoveRows: function(rows){;},
+	onRemoveRows: function(rows){;},
+	onResize: function(){var l = this.layout;
+if(this.layouts[l].type == 'column') { 
+	var flagRefresh = false; //prevent multiple refreshes from being done
+	if(this.layouts[l]._hasRCW) {
+		var w = $(this.contId).offsetWidth;
+		if(typeof this._w == 'undefined') {
+			flagRefresh = true;
+			this._w = w;
+		} else { 
+			if(this._w != w) flagRefresh = true;
+			this._w = w;
+		}
+		var _c = this.layouts[l].columns;
+		for(var i = 0; i < _c.length; i++) { 
+			if(_c[i].rcw) { 
+				if(_c[i].rcw != '' && Number(_c[i].rcw) > 0) { 
+					if(typeof _c[i]._show == 'undefined') _c[i]._show = _c[i].show;
+					if(_c[i]._show == _c[i].show) { 
+						if(Number(_c[i].rcw) >= w) {
+							_c[i].show = false;
+						} else {
+							_c[i].show = true;
+						}
+						_c[i]._show = _c[i].show;
+					}
+				}
+			}
+		}
+		var that = this;
+		setTimeout(function() { 
+			if(flagRefresh) that.refresh();
+			console.log('refresh');
+		},0);
+	}
+}
+;},
+	onListDraw: function(data,startIndex) {
+ if(A5.flags.isMobile)  $e.add(this.contId+'.CONTENT','abstractdown',function(e) {$e.preventDefault(e);}); this._hasrun = true;
+this._allrowschecked = true;
+var d = this._data
+for(var i = 0; i < d.length; i++) {
+ if(!d[i].__selected) {
+  this._allrowschecked = false;
+  break;
+ }
+}
+var h ;
+if(this._allrowschecked) {
+ h = A5.u.icon.html(this.__checkedImage);
+} else {
+ h = A5.u.icon.html(this.__uncheckedImage);
+}
+var _id = 'DLG1.' + this.listVariableName + '.CHECKBOXALL';
+var ele = $(_id)
+ele.innerHTML = h},
+	synchronizeImmediately: false,
+	pushServerEditsToClient: false,
+	customization: {
+		dv: {
+			clientSideErrorWarning: 'Cannot save because there are validation errors.',
+			dirtyDetailViewRecord: {
+				title: 'Warning',
+				icon: 'css/GrBlue/MessageQuestion.png',
+				message: 'You must first save or undo the changes you have made to the List\'s Detail View.'
+			},
+			confirmFormResetWarning: {
+				title: 'Warning',
+				icon: 'css/GrBlue/MessageQuestion.png',
+				message: 'Are you sure you want to undo changes made to the List\'s Detail View?'
+			},
+			confirmRowResetWarning: {
+				title: 'Warning',
+				icon: 'css/GrBlue/MessageQuestion.png',
+				message: 'Are you sure you want to undo changes made to this record?'
+			},
+			confirmDeleteWarning: {
+				title: 'Warning',
+				icon: 'css/GrBlue/MessageQuestion.png',
+				message: 'Are you sure you want to delete this record?'
+			},
+			writeConflict: {
+				useMineMessage: 'Use mine (\'{myvalue}\')',
+				useTheirsMessage: 'Use theirs (\'{theirvalue}\')',
+				useMineAll: 'Use mine for all fields',
+				useTheirsAll: 'Use theirs for all fields'
+			},
+			databaseError: {
+				update: 'Record was not updated.|More...|Less',
+				insert: 'Record was not inserted.|More...|Less',
+				delete: 'Record was not deleted.|More...|Less'
+			},
+			useCustomClasses: false,
+			setClassonEditedRows: true,
+			css: {
+			}
+		}
+	},
+	onItemDraw: function(ele,data,index) {
+ var _dirtyRowClassName = '_DLG1_LISTEVALUACIONCAT1_dirtyRow';
+ var _dirtyRowClassNameInherited = '_DLG1_LISTEVALUACIONCAT1_dirtyRowInherited';
+ var _dirtyRowStyle = '_DLG1_LISTEVALUACIONCAT1_dirtyRowStyle';
+ var _hasUnsyncedMediaFilesClassName = '_DLG1_LISTEVALUACIONCAT1_hasUnsyncedMediaFiles';
+ var _errorRowClassName = '_DLG1_LISTEVALUACIONCAT1_hasError';
+ var _errorRowClassNameInherited = '_DLG1_LISTEVALUACIONCAT1_hasErrorInherited _DLG1_LISTEVALUACIONCAT1_dirtyRowInherited';
+ var _errorRowClassNameInherited_1 = '_DLG1_LISTEVALUACIONCAT1_hasErrorInherited';
+ var _errorRowClassNameInherited_2 = '_DLG1_LISTEVALUACIONCAT1_dirtyRowInherited';
+ var _errorRowStyle = '_DLG1_LISTEVALUACIONCAT1_hasErrorStyle';
+ var _newRowClassName = '_DLG1_LISTEVALUACIONCAT1_newRow';
+ var _newRowStyle = '_DLG1_LISTEVALUACIONCAT1_newRowStyle';
+ var _deletedRowClassName = '_DLG1_LISTEVALUACIONCAT1_deletedRow';
+ var _deletedRowStyle = '_DLG1_LISTEVALUACIONCAT1_deletedRowStyle';
+ var _deletedRowClassNameInherited = '_DLG1_LISTEVALUACIONCAT1_deletedRowInherited';
+ var __d = this._rData[index];
+ $rcn(ele,_dirtyRowClassName);
+ $rcn(ele,_dirtyRowClassNameInherited);
+ $rcn(ele,_dirtyRowStyle);
+ $rcn(ele,_errorRowClassName);
+ $rcn(ele,_errorRowClassNameInherited);
+ $rcn(ele,_errorRowClassNameInherited_1);
+ $rcn(ele,_errorRowClassNameInherited_2);
+ $rcn(ele,_errorRowStyle);
+ $rcn(ele,_newRowClassName);
+ $rcn(ele,_newRowStyle);
+ $rcn(ele,_deletedRowClassName);
+ $rcn(ele,_deletedRowStyle);
+ $rcn(ele,_hasUnsyncedMediaFilesClassName);
+ if(data._isDirty && typeof data._isDeleted != 'undefined' && data._isDeleted) {
+  $acn(ele,_deletedRowClassName);
+  $acn(ele,_deletedRowStyle);
+  __d.__displayStyle = 'deletedRow';
+ } else if (data._isDirty && typeof data._oldData != 'undefined' && !data._isNewRow ) {
+  $acn(ele,_dirtyRowClassName);
+  $acn(ele,_dirtyRowStyle);
+  __d.__displayStyle = 'dirtyRow';
+ }
+ if(data._isDirty && typeof data._oldData == 'undefined' && ! (data._isNewRow || data._isDeleted) ) {
+  $acn(ele,_dirtyRowClassNameInherited);
+  $acn(ele,_dirtyRowStyle);
+  __d.__displayStyle = 'dirtyRowInherited';
+ }
+ if(data._isDeleted) {
+  $acn(ele,_deletedRowClassName);
+  $acn(ele,_deletedRowStyle);
+  __d.__displayStyle = 'deletedRow';
+ }
+ if(data._isNewRow) {
+  $acn(ele,_newRowClassName);
+  $acn(ele,_newRowStyle);
+  __d.__displayStyle = 'newRow';
+ }
+ var flagHasGlobalErrors = false;
+ if(typeof data._globalErrors != 'undefined') {
+  if( data._globalErrors != '')  flagHasGlobalErrors = true;
+ }
+ var flagHasWriteConflictErrors = false;
+ if(typeof data._hasWriteConflictErrors) flagHasWriteConflictErrors = data._hasWriteConflictErrors
+ if(data._hasServerSideError || flagHasGlobalErrors || flagHasWriteConflictErrors) {
+  $acn(ele,_errorRowClassName);
+  $acn(ele,_errorRowStyle);
+  __d.__displayStyle = 'errorRow';
+ } else {
+  if(data._flagServerSideErrorInChild || data._flagWriteConflictErrorInChild || data._flagGlobalErrorInChild ){
+    if(!data._isNewRow) {
+     $acn(ele,_errorRowClassNameInherited);
+     __d.__displayStyle = 'errorRowInherited';
+   } else {
+    __d.__displayStyle = 'newRow errorRowInherited';
+    $acn(ele, _errorRowClassNameInherited_1);
+   }
+  }
+ }
+  if (data._hasUnsyncedMediaFiles && data._isDirty  ) {
+  $acn(ele,_hasUnsyncedMediaFilesClassName);
+ }},
+	childLists: [],
+	childListEndpoints: ['LISTEVALUACIONCAT1'],
+	_populateAllChildLists: function() { },
+	onSelect: function() { this.populateUXControls();
+this._selectedRow = this.selection[0];
+DLG1_DlgObj._listRowSelect('listEvaluacionCat1',this);
+ this._selectedRow = this.selection[0];if(typeof this._selectedRow != 'undefined') { };
+;},
+	onBeforeSelect: function() {
+ var c = this.childLists;
+ var lObj = '';
+ if(typeof c != 'undefined') {
+  for(var i = 0; i < c.length; i++) {
+   lObj = DLG1_DlgObj.getControl(c[i]);
+   if(lObj) {
+    var flag = lObj.onBeforeSelect();
+    if(typeof flag != 'undefined') {
+     if(!flag) return false;
+    }
+   }
+  }
+ }
+ if(this._dvmode == 'search') return true;
+ if(!this._autoCommitDetailView) {
+  return this._showDirtyDetailViewWarning();
+ } else {
+  if(this.detailViewIsDirty && this.detailViewIsDirty(true)) {
+   var result =  this.updateListFromUXControls();
+   return result;
+  }
+ }},
+	onClick: function() {
+DLG1_DlgObj._listSystemOnClick('LISTEVALUACIONCAT1',this.selection[0]);},
+	layouts: {
+		Default: {
+			type: 'column',
+			showColumnTitles: true,
+			item: {
+			},
+			columns: [
+			{
+				header: {
+					html: 'Id trabajadordesempeno',
+					style: 'text-align: right;'
+				},
+				resize: false,
+				rcw: 0,
+				data: {
+					template: '<span id="DLG1.LISTEVALUACIONCAT1.ID_TRABAJADORDESEMPENO.I.{*dataRow}">{Id_TrabajadorDesempeno}&nbsp;</span>',
+					style: 'text-align: right;'
+				},
+				order: 'Id_TrabajadorDesempeno',
+				width: 'flex(1)'
+			},
+			{
+				header: {
+					html: 'Puntuaciontrabajador',
+					style: 'text-align: right;'
+				},
+				resize: false,
+				rcw: 0,
+				data: {
+					template: '<span id="DLG1.LISTEVALUACIONCAT1.PUNTUACIONTRABAJADOR.I.{*dataRow}">{PuntuacionTrabajador}&nbsp;</span>',
+					style: 'text-align: right;'
+				},
+				order: 'PuntuacionTrabajador',
+				width: 'flex(1)'
+			},
+			{
+				header: {
+					html: 'Puntuacionjefe',
+					style: 'text-align: right;'
+				},
+				resize: false,
+				rcw: 0,
+				data: {
+					template: '<span id="DLG1.LISTEVALUACIONCAT1.PUNTUACIONJEFE.I.{*dataRow}">{PuntuacionJefe}&nbsp;</span>',
+					style: 'text-align: right;'
+				},
+				order: 'PuntuacionJefe',
+				width: 'flex(1)'
+			}],
+			_hasRCW: false,
+			_horizontalScrolling: false
+		}
+	},
+	__checkedImage: 'svgIcon=#alpha-icon-checkCircle:icon,24',
+	__uncheckedImage: 'svgIcon=#alpha-icon-circle:icon,24',
+	captureFocus: true,
+	content: {
+		header: {
+			show: false
+		},
+		footer: {
+			show: false
+		}
+	},
+	systemEvents: {
+		onTap: function(e) {},
+		afterAjaxCallback: function(e) {},
+		afterClientSideFilter: function(e) {},
+		beforeServerSideSort: function(e) {},
+		afterServerSideSort: function(e) {},
+		onSwipe: function(e) {},
+		onScroll: function(e) {},
+		onPullRelease: function(e) {},
+		onPull: function(e) {},
+		onPullEnd: function(e) {},
+		afterSearchComplete: function(e) {},
+		beforeSearch: function(e) {},
+		onSearchResultTooLarge: function(e) {},
+		onSearchResultTooLargeForLocalStorage: function(e) {},
+		onBeforePersistToLocalStorage: function(e) {},
+		onPersistToLocalStorage: function(e) {},
+		onRestoreFromLocalStorage: function(e) {},
+		onListReady: function(e) {},
+		afterRenderComplete: function(e) {},
+		beforeFetchMore: function(e) {},
+		afterFetchMore: function(e) {},
+		beforePageNavigate: function(e) {},
+		afterPageNavigate: function(e) {},
+		beforeRefreshRow: function(e) {},
+		afterRefreshRow: function(e) {},
+		afterRefreshData: function(e) {},
+		afterServerSideSummaryCompute: function(summary) {},
+		detailView: {
+			canUpdateList: function(e) {},
+			hasClientSideValidationErrors: function(e) {},
+			afterUpdateList: function(e) {},
+			canSynchronizeList: function(e) {},
+			afterSynchronizeListBatch: function(e) {},
+			canCancelBatch: function(e) {},
+			afterCancelBatch: function(e) {},
+			afterSynchronizeList: function(e) {},
+			afterSynchronizeListCompleted: function(e) {},
+			beforeSynchronizeListBatchStart: function(e) {},
+			afterSynchronizeListBatchEnd: function(e) {},
+			afterRefreshListIncremental: function(e) {},
+			canResetRow: function(e) {},
+			canDeleteRow: function(e) {},
+			canUndoEdits: function(e) {},
+			afterResetRow: function(e) {},
+			afterDeleteRow: function(e) {},
+			afterUndoEdits: function(e) {},
+			canNewRecord: function(e) {},
+			afterNewRecord: function(e) {},
+			beforeDetailViewPopulate: function(e) {},
+			afterDetailViewPopulate: function(e) {},
+			afterListRowSelectCancelled: function(e) {},
+			modeChanged: function(e) {},
+			onStateChanged: function(e) {},
+			beforeMediaFilesUploaded: function(e) {},
+			afterMediaFilesUploaded: function(e) {},
+			onMediaFilesUploadErrors: function(e) {},
+			onNoMediaFilesToFetch: function(e) {},
+			beforeMediaFilesDownloaded: function(e) {},
+			afterMediaFilesDownloaded: function(e) {},
+			beforeDeleteOrphanMediaFiles: function(e) {},
+			afterDeleteOrphanMediaFiles: function(e) {},
+			listReadyToPersist: function(e) {},
+			beforeCRUDExecute: function(e) {},
+			_afterRefreshListIncremental: function() { 
+if (typeof window['cordova'] == 'undefined') { 
+	DLG1_DlgObj._list_executeEvent(this.listVariableName,'detailView.listReadyToPersist',{listSyncMode: 'incrementalRefresh' });
+}
+}
+		},
+		_afterAjaxCallback: function() {this._refreshStateMessages();}
+	},
+	_clientsideSummary: [],
+	computeClientSideSummaryValues: function(e) {},
+	_executeEvent: function(event,obj) { 
+	return DLG1_DlgObj._list_executeEvent('LISTEVALUACIONCAT1',event,obj);
+}
+,
+	_selectAll: function() {
+	var v = this._values;
+	var v2 = [].concat(v);
+	this.setValue(v2,false);
+}
+,
+	searchList: function() { 
+	if(this._searchPartStyle == 'querybyform') { 
+		if(this._dvmode != 'search') return false;
+	}
+	if(typeof this.detailViewIsDirty == 'function') {
+		if(this.detailViewIsDirty()) { 
+				if(this._autoCommitDetailView) { 
+					this.updateListFromUXControls();
+				}
+		}
+	}
+	var obj = typeof arguments[0] != 'undefined' ? arguments[0] : {};
+	var mode = 'serverSide';
+	if(typeof obj.searchMode != 'undefined') mode = obj.searchMode;
+	mode = mode.toLowerCase();
+	if(mode.indexOf('auto') == 0) { 
+		var flagCS = false;
+		if(typeof this.detailViewIsDirty == 'function') { 
+			if(this.listIsDirty() || this.detailViewIsDirty()) flagCS = true;
+		} else { 
+			if(this.listIsDirty()) flagCS = true;
+		}
+		if(flagCS) mode = 'clientside';
+		else {
+			if(this._dataSourceType.toLowerCase() == 'sql' || this._dataSourceType.toLowerCase() == 'dbf') {
+				mode = 'serverside';
+			} else { 
+				mode = 'clientside';
+			}
+		}
+	}
+	if(this._dataSourceType.toLowerCase() == 'static') mode = 'clientside';
+	var parentList = this.parentList;
+	if(typeof parentList != 'undefined') {
+		if(parentList != '') mode = 'clientside';
+	}
+	var flagDirty = false;
+	if(this.listIsDirty) flagDirty = this.listIsDirty();
+	var flagResult = DLG1_DlgObj._list_executeEvent(this.listVariableName,'beforeSearch',{searchMode: 'search', searchWhere: mode, listIsDirty: flagDirty});
+	if(!flagResult) return false;
+	if(mode == 'serverside') {
+		this._searchListServerSide(obj);
+	} else if(mode == 'clientside') { 
+		this._searchPartSubmit_clientSideFilter();
+		var rowCount = this._rData.length;
+		DLG1_DlgObj._list_executeEvent(this.listVariableName,'afterSearchComplete',{searchMode: 'search', searchWhere: mode, recordsInQuery: rowCount});
+	}
+}
+,
+	_searchListServerSide: function() { 
+	var obj = typeof arguments[0] != 'undefined' ? arguments[0] : {};
+	var _d={};
+	var flagDirty = false;
+	if(this.listIsDirty) flagDirty = this.listIsDirty();
+	if(flagDirty) { 
+		alert('Can\'t execute server-side search because List has edits that have not yet been synchronized.');
+		return false;
+	}
+	_d.listId = this.listVariableName
+	var _data = A5.ajax.buildURLParam('__searchInfo',JSON.stringify(_d));
+	_data = _data + '&' + A5.ajax.buildURLParam('__searchOptions',JSON.stringify(obj));
+	this.filter = false;
+	DLG1_DlgObj.ajaxCallback('','','system:ListSearchPart','',_data);
+}
+,
+	setListSize: function(height,width) {
+	var l = $(this.contId);
+	if(typeof height != 'undefined') l.style.height = ''+ height; 
+	if(typeof width != 'undefined') l.style.width = '' + width;
+	this.resize();
+}
+,
+	clearSearchList: function() { 
+	var obj = typeof arguments[0] != 'undefined' ? arguments[0] : {};
+	var mode = 'serverSide';
+	if(typeof obj.searchMode != 'undefined') mode = obj.searchMode;
+	mode = mode.toLowerCase();
+	if(mode.indexOf('auto') == 0) { 
+		if(this.listIsDirty()) mode = 'clientside';
+		else mode = 'serverside';
+	}
+	if(this._dataSourceType.toLowerCase() == 'static') mode = 'clientside';
+	var parentList = this.parentList;
+	if(typeof parentList != 'undefined') {
+		if(parentList != '') mode = 'clientside';
+	}
+	var flagResult = DLG1_DlgObj._list_executeEvent(this.listVariableName,'beforeSearch',{searchMode: 'clear', searchWhere: mode});
+	if(!flagResult) return false;
+	if(mode == 'serverside') {
+		this._clearSearchListServerSide();
+	} else if(mode == 'clientside') { 
+		this._searchPartSubmit_clientSideFilterClear();
+		var rowCount = this._rData.length;
+		DLG1_DlgObj._list_executeEvent(this.listVariableName,'afterSearchComplete',{searchMode: 'clear', searchWhere: mode, recordsInQuery: rowCount});
+	}
+}
+,
+	_clearSearchListServerSide: function() { 
+	var _d={};
+	_d.listId = this.listVariableName
+	var _data = A5.ajax.buildURLParam('__searchInfo',JSON.stringify(_d));
+	DLG1_DlgObj.ajaxCallback('','','system:ListSearchPartClear','',_data);
+}
+,
+	_str: function(txt) {
+	txt = txt.replace("'","\\'");
+	txt = '\'' + txt + '\'';
+	return txt;
+}
+,
+	_QBF: function(txt) { 
+	var o = {};
+	o.v2 = '';
+	o.v1 = txt;
+	o.flag = false;
+	if(txt.indexOf('>=') >= 0) {
+		o.op = '>=';
+		o.v1 = txt.substr(2);
+		o.flag = true;
+	} else if (txt.indexOf('<=') >= 0 ) { 
+		o.op = '<=';
+		o.v1 = txt.substr(2);
+		o.flag = true;
+	} else if (txt.indexOf('>') >= 0 ) {
+		o.op = '>';
+		o.v1 = txt.substr(1);
+		o.flag = true;
+	} else if (txt.indexOf('<') >= 0)  { 
+		o.op = '<';
+		o.v1 = txt.substr(1);
+		o.flag = true;
+	} else if (txt.indexOf('..') == 0)  {
+		o.op = '<=';
+		o.v1 = txt.substr(2);
+		o.flag = true;
+	} else if ( txt.indexOf('..', txt.length - '..'.length) !== -1 ) { 
+		//ends with ..
+		o.op = '>=';
+		txt = txt.split('..')
+		o.v1 = txt[0];
+		o.flag = true;
+	} else if (txt.indexOf('..') > 0 ) {
+		o.op = 'between'
+		txt = txt.split('..');
+		o.v1 = txt[0];
+		o.v2 = txt[1];
+		o.flag = true;
+	}
+	return o;
+}
+,
+	_match: function(data,field,val,obj) { 
+	if(obj.qbf && obj.type == 'c') val = $u.s.rTrim(val,',');
+	var flagKeyword = false;
+	if(typeof obj.flagKeyword != 'undefined') flagKeyword = obj.flagKeyword;
+	if(flagKeyword) { 
+		var obj_i = this._searchFieldOptions[field.toUpperCase()];
+		this._setSearchOps(obj,obj_i);
+	}
+	var _d = '';
+	var _v = val;
+	var flagC = false;
+	if(obj.type == 'c') {
+		flagC = true;
+		if(!obj.caseSensitive) _v = _v.toLowerCase();
+	} else { 
+		//non mumeric searches are only mode 1 or -1
+		if(obj.mode > 1) obj.mode = 1;
+		if(obj.mode < -1) obj.mode = -1;
+	}
+	var flag = false;
+	obj.usesQBFOperator = false;
+	if(obj.qbf) { 
+		_v = _v.split(',');
+	} else {
+		_v = [_v];
+	}
+	var o = {}
+	var r = '';
+	var _vals = [];
+	for(var i = 0; i < _v.length; i++) { 
+		if(obj.qbf) {
+			o = this._QBF(_v[i]);
+		} else {
+			o.flag = false;
+			o.v1 = _v[i];
+			o.v2 = '';
+		}
+		if(typeof data[field] != 'undefined') {
+			if(data[field] != null) { 
+				_d = data[field];
+				if(obj.type == 'n') { 
+					o.v1 = Number(o.v1);
+					o.v2 = Number(o.v2);
+					_d = Number(_d);
+				} else if (obj.type == 'l') { 
+					o.v1 = $u.s.toBool(o.v1);
+					o.v2 = $u.s.toBool(o.v2);
+					_d = $u.s.toBool(_d);
+				} else if (obj.type == 'd') { 
+					o.v1 = A5.stringToDate(o.v1,obj.dateFormat);
+					o.v2 = A5.stringToDate(o.v2,obj.dateFormat);
+					if(typeof _d == 'string') _d = A5.stringToDate(_d,obj.dateFormat);
+					if(o.v1 != '' && o.v1 != null ) o.v1 = o.v1.getTime();
+					if(o.v2 != '' && o.v2 != null ) o.v2 = o.v2.getTime();
+					if(_d != '' && _d != null ) _d = _d.getTime();
+				}
+				if(flagC) {if(!obj.caseSensitive && typeof _d == 'string') _d = _d.toLowerCase();}
+				if(o.flag) { 
+					//has qbf operators
+					if(o.op == 'between') {
+						if(flagC) {
+							if(_d.substr(0,o.v1.length) >= o.v1 && _d.substr(0,o.v2.length) <= o.v2 ) flag = true;
+						} else { 
+							if(_d >= o.v1 && _d <= o.v2 && (typeof _d == typeof o.v1)  ) flag = true;
+						}
+					} else { 
+						if(flagC) _d = _d.substr(0,o.v1.length)
+						if(o.op == '>=') if( _d >= o.v1) flag = true;
+						if(o.op == '<=') if( _d <= o.v1) flag = true;
+						if(o.op == '>') if(_d > o.v1) flag = true;
+						if(o.op == '<') if(_d < o.v1) flag = true;
+					}
+				} else { 
+					if(obj.mode == 1 || obj.mode == -1 ) {
+						if(obj.mode == 1) if(_d == o.v1) flag = true;; //match
+						if(obj.mode == -1) if(!(_d == o.v1)) flag = true;; //match
+					} else if (obj.mode == 2 || obj.mode == -2) { 
+						if(obj.mode == 2) if(_d.indexOf(o.v1) > -1) flag = true; //contains
+						if(obj.mode == -2) if(!(_d.indexOf(o.v1) > -1)) flag = true;
+					} else if (obj.mode == 3 || obj.mode == -3) { 
+						if(obj.mode == 3) if(_d.indexOf(o.v1) == 0) flag = true; //starts with
+						if(obj.mode == -3) if(!(_d.indexOf(o.v1) == 0)) flag = true; //starts with
+					}
+				}
+				if(o.v1 != '') {
+					if(_vals.indexOf(o.v1) == -1) { 
+						_vals.push(o.v1);
+					}
+				}
+				if(o.v2 != '') {
+					if(_vals.indexOf(o.v2) == -1) { 
+						_vals.push(o.v2);
+					}
+				}
+			}
+		}
+	}
+	if(flag) { 
+		if(typeof this._state.highlight == 'undefined') this._state.highlight = {};
+		this._state.highlight[field.toUpperCase()] = _vals;
+	} else { 
+		//this._state.highlight[field.toUpperCase()] = [];
+	}
+	return flag;
+}
+,
+	_setSearchOps: function(obj,obj_i) { 
+	obj.mode = obj_i.option;
+	obj.qbf = obj_i.qbf;
+	obj.type = obj_i.type;
+	//obj.treatAs = obj_i.treatAs;
+}
+,
+	_searchPartOperator: '&&',
+	_searchPartSubmit_clientSideFilter: function() { 
+	if(!this._searchPartHas) return true;
+	//_searchPartStyle: 'individualcontrols'
+	this._state.highlight = {};
+	if(this._searchPartStyle == 'singlekeywordcontrol') { 
+		var searchFor = DLG1_DlgObj.getValue(this._keywordSearchControl);
+		var arr = this._keywordSearchFields;
+		var expn = [];
+		var expn_i = '';
+		var obj = {};
+		//obj.caseSensitive = false;
+		//obj.qbf = true;
+		//obj.mode = 1;
+		obj.flagKeyword = true;
+		var objStr = JSON.stringify(obj)
+		for(var i = 0; i < arr.length; i++) { 
+			expn_i = 'this._match(data,' +this._str(arr[i]) + ',' + this._str(searchFor) + ','+objStr+')';
+			expn.push(expn_i);
+		}
+		expn = expn.join('||');
+		//alert(expn);
+	} else if ( this._searchPartStyle == 'individualcontrols' || this._searchPartStyle == 'querybyform'  ) { 
+		var map = this._searchPart.fieldMap;
+		var val = '';
+		var expn = [];
+		var expn_i = '';
+		var obj = {};
+		obj.caseSensitive = false;
+		//obj.qbf = true;
+		//obj.mode = 2;
+		//var objStr = JSON.stringify(obj)
+		var ac = [];
+		var aco = {};
+		var _highlight = {};
+		if(this._searchPartStyle == 'individualcontrols') {
+			for(var i = 0; i < map.length; i++) { 
+				val = DLG1_DlgObj.getValue(map[i].control);
+				if(val != '') {
+					obj_i = this._searchFieldOptions[map[i].field.toUpperCase()];
+					this._setSearchOps(obj,obj_i);
+					expn_i = 'this._match(data,' +this._str(map[i].field) + ',' + this._str(val) + ','+JSON.stringify(obj)+')';
+					expn.push(expn_i);
+				}
+			}
+		} else if (this._searchPartStyle == 'querybyform' ) { 
+			var controlName = '';
+			for(var i = 0; i < this._listFields.length; i++) { 
+				controlName = this._getUXDetailViewControlName(this._listFields[i].name);
+				if(controlName != '') {
+					val = DLG1_DlgObj.getValue(controlName);
+					if(val != '') {
+						obj_i = this._searchFieldOptions[map[i].field.toUpperCase()];
+						this._setSearchOps(obj,obj_i);
+						expn_i = 'this._match(data,' +this._str(this._listFields[i].name) + ',' + this._str(val) + ','+JSON.stringify(obj)+')';
+						expn.push(expn_i);
+						aco.control = controlName;
+						aco.value = val;
+						ac.push(aco);
+					}
+				}
+			}
+			this.__queryByFormValues = ac;
+			DLG1_DlgObj._setDVClean(this);
+		}	
+		var operator = '&&';
+		if(typeof this._searchPartOperator != 'undefined') operator = this._searchPartOperator;
+		expn = expn.join(' '+operator+' ');
+	} 
+	if (this._showSearchDebugInfo) {
+		var ele = $('DLG1.V.R1.' + this._searchDebugPH);
+		if(ele) ele.innerHTML = expn;
+	}
+	//user did not fill in any search fields
+	if(expn == '') return true;
+	var fnTxt = 'if(' + expn + ') {return true;} else { return false;}'
+	var searchFunction = new Function('data',fnTxt);
+	this.setFilter(searchFunction);
+	if(this._rData.length > 0) this.setValue(0);
+}
+,
+	_searchPartSubmit_clientSideFilterClear: function() { 
+if(!this._searchPartHas) return true;
+	this._state.highlight = {};
+	this.setFilter(false);
+	var map = this._searchPart.fieldMap;
+	var val = '';
+	var od = DLG1_DlgObj.originalValues[0];
+	for(var i = 0; i < map.length; i++) {
+		var val = od[map[i].control.toUpperCase()];
+		if(typeof val != 'undefined') DLG1_DlgObj.setValue(map[i].control,val,false);
+	}
+	this.setFilter(false);
+	delete this.__queryByFormValues;
+	DLG1_DlgObj._setDVClean(this);
+	if(this._data.length > 0) this.setValue(0);
+	if (this._showSearchDebugInfo) {
+		var ele = $('DLG1.V.R1.' + this._searchDebugPH);
+		if(ele) ele.innerHTML = '';
+	}
+}
+,
+	_debugListData: function() { 		var debugObj = this._data[this.selection[0]];
+		if(typeof debugObj == 'undefined') {alert('no active row'); return false;}
+			var debugTxt = JSON.stringify(debugObj,'','\t'); 
+		debugTxt = debugTxt.split('\t').join('    '); 
+		var ele = $('DLG1.V.R1.'); 
+		if(ele) {
+			ele.innerHTML = '<div style="color: blue;width: 100%; height: 100%;white-space: pre;border: solid 1px blue; padding: 2px;"></div>';
+			ele.firstChild.innerText = debugTxt; 
+			if(ele.firstChild.innerHTML == '')  { ele.firstChild.innerHTML = debugTxt }      
+		}
+},
+	_refreshDebugInfo: function() {},
+	_showSQL_CRUD: function(txt) { },
+	flagShowAlerts: true,
+	lookupValue: function(key,name,keyValue) {
+	var _d = this._data;
+	var indx = A5FindPropInArray(_d,key,keyValue);
+	var rv = '';
+	if(indx >=0) {
+		if(name == '__rowData__') return _d[indx];
+		rv =  _d[indx][name];
+	} else {
+		//null out all properties in row
+		var _d2 = {};
+		if(typeof _d[0] == 'undefined') { return {}} ;
+		for(var n in _d[0]) {
+			_d2[n] = '&nbsp;';
+		}
+		rv = _d2;
+	}
+	return rv;
+}
+,
+	allowNullSelection: true,
+	allowTextSelection: false,
+	allowAnyValue: false,
+	allowNullDeselection: false,
+	loopNavigate: false,
+	loopNavigateNullSelection: false,
+	refreshChildLists: function() {DLG1_DlgObj._listRefreshCascadingLists('LISTEVALUACIONCAT1'); },
+	rowExpander: function(rowNumber) { 
+	var mode = typeof arguments[2] != 'undefined' ? arguments[2] : 'toggle';
+	if(typeof rowNumber === 'undefined' || rowNumber === '' ) {
+		rowNumber = this.selection[0];
+		if(typeof rowNumber == 'undefined') return false;
+	}
+	var animObj = typeof arguments[1] != 'undefined' ? arguments[1] : {};
+	var ele = $(this._hostComponentId + '.' + this.listVariableName + '.ROWEXPANDER.' + rowNumber);
+	if(ele) {
+		if(mode == 'toggle') A5.u.element.toggle(ele,animObj);
+		if(mode == 'show') A5.u.element.show(ele,animObj);
+		if(mode == 'hide') A5.u.element.hide(ele,animObj);
+	}
+}
+,
+	afterClientSideSummaryCompute: function(csSummary) { },
+	selectCurrentLayout: function(name) { 
+if(this._flagRestoringLayoutSettings) { 
+	this._flagRestoringLayoutSettings = false;
+	return;
+}
+var pl = this.layouts[name];
+if(typeof pl == 'undefined') return false;
+this.setLayout(name);
+if(pl.type == 'column') {
+	this.columnLayout.header.show = this.layouts[name].showColumnTitles; 
+	this.refresh();
+}
+var flagPersist = this._persistListLayout;
+if(flagPersist && this.saveLayoutSettings ) this.saveLayoutSettings()
+},
+	onFilter: function() { 	var e = {}; 
+	e.rowCount = this._values.length;  
+	var ele = $('DLG1.__listId__.RECORDCOUNT'); 
+	if(ele) {ele.innerHTML = e.rowCount;}; 
+	if(this.persistToStorage) { this.persistToStorage({});} 
+	(function(e) {   })(e);
+}
+,
+	serverSideSort: function(column,initialDirection) {
+var e = {};
+this.setOrder(false);
+e.column = column;
+var result = this.systemEvents.beforeServerSideSort(e);
+if(result == false) return false;
+var obj = {};
+obj.cmd = 'sort';
+obj.column = column;
+obj.layoutName = this.layout;
+obj.listState = this._state;
+obj.initialDirection = initialDirection;
+var data = '_listId=LISTEVALUACIONCAT1&' + A5.ajax.buildURLParam('_cmdObj',$u.o.toJSON(obj));
+DLG1_DlgObj.ajaxCallback('','','system:listServerSideSort','',data);
+},
+	filterListClientSide: function(searchFor) {
+searchFor =  searchFor.replace(/[\-\[\]\/\{\}\(\)\*\+\?\.\\\^\$\|]/g, "\\$&");
+//var result = this.systemEvents.beforeClientSideFilter();
+//if(result == false) return false;
+if(searchFor != '') {
+	//fixes bug in Chrome when searching on dates strings that use forward slashes
+	searchFor = searchFor.replace(/\//g,'\\/');
+	this.setFilter({'Id_TrabajadorDesempeno_Categoria': RegExp('' + searchFor,'i'), 'Id_Categoria': RegExp('' + searchFor,'i'), 'Id_Trabajador': RegExp('' + searchFor,'i'), 'Id_Area': RegExp('' + searchFor,'i'), 'Id_TrabajadorDesempeno': RegExp('' + searchFor,'i'), 'Id_TipoEvaluacion': RegExp('' + searchFor,'i'), 'Id_TrabajadorDesempeno_Elemento': RegExp('' + searchFor,'i'), 'Id_Elemento': RegExp('' + searchFor,'i'), 'Id_Categoria_1': RegExp('' + searchFor,'i'), 'PuntuacionTrabajador': RegExp('' + searchFor,'i'), 'PuntuacionJefe': RegExp('' + searchFor,'i'), 'Id_Trabajador_Categoria': RegExp('' + searchFor,'i'), 'Aprobado': RegExp('' + searchFor,'i'), 'Observaciones': RegExp('' + searchFor,'i'), 'Id_Categoria_2': RegExp('' + searchFor,'i'), 'Descripcion': RegExp('' + searchFor,'i'), 'Id_Area_1': RegExp('' + searchFor,'i'), 'Id_Direccion': RegExp('' + searchFor,'i'), 'Id_TipoEvaluacion_1': RegExp('' + searchFor,'i'), 'Id_TipoCategoria': RegExp('' + searchFor,'i'), 'FechaCreacion': RegExp('' + searchFor,'i'), 'FechaActualizacion': RegExp('' + searchFor,'i'), 'usuarioCreador': RegExp('' + searchFor,'i'), 'usuarioEdicion': RegExp('' + searchFor,'i'), 'Id_TipoCategoria_1': RegExp('' + searchFor,'i'), 'Descripcion_1': RegExp('' + searchFor,'i'), 'PuntuacionMax': RegExp('' + searchFor,'i'), 'PuntuacionMin': RegExp('' + searchFor,'i')});
+} else this.setFilter(false);
+var rowCount = this._values.length;
+//var e = {};
+//e.rowCount = rowCount;
+//this.systemEvents.afterClientSideFilter(e);
+var ele = $('DLG1.listEvaluacionCat1.RECORDCOUNT');
+if(ele) ele.innerHTML = rowCount;
+}
+,
+	scrollToClosestValue: function(val) { 	
+	if(typeof val != 'string') val = val.join('');
+	var flagCI = typeof arguments[1] != 'undefined' ? arguments[1] : false;
+	var pos = typeof arguments[2] != 'undefined' ? arguments[2] : 'top';
+	var anim = typeof arguments[3] != 'undefined' ? arguments[3] : {}
+	var _d = this._rData;
+	var len = val.length;
+	var _d2;
+	var i2 = -1;
+	if(flagCI) val = val.toLowerCase();
+	for(var i = 0 ; i < _d.length; i++) {
+		i2 = i;
+		_d2 = String(_d[i]['*value']);
+		_d2 = _d2.substr(0,len);
+		_d2 = $u.s.pad(_d2,len,' ','l');
+		if(flagCI) _d2 = _d2.toLowerCase();
+		if(val <= _d2){
+			 break;
+		}
+	}
+	if(i2 > -1) { 
+		this.scrollToItem(i2,{mode: pos, animation: anim});
+	}
+}
+,
+	_setPageSize: function(pageSize) {
+	this._state.pageSize = pageSize;
+	DLG1_DlgObj._refreshListData(this.listVariableName);
+}
+,
+	_refreshStateMessages: function() {
+	if(DLG1_DlgObj._listStateChange) DLG1_DlgObj._listStateChange(this.listVariableName);
+	var ele = '';
+	ele = $('DLG1.LISTEVALUACIONCAT1.PAGENUMBER');
+	if(ele) ele.innerHTML = this._state.page;
+	ele = $('DLG1.LISTEVALUACIONCAT1.PAGECOUNT');
+	if(ele) ele.innerHTML = this._state.pageCount;
+	ele = $('DLG1.LISTEVALUACIONCAT1.PAGECOUNT.PAGESELECTOR');
+	if(ele) ele.innerHTML = this._state.pageCount;	
+	ele = $('DLG1.LISTEVALUACIONCAT1.LISTSTATE');
+	if(ele) {
+		var listState = $u.o.toJSON(this._state);
+		ele.innerHTML = listState;
+	}
+	if(this._hasNavigationBar) { 
+		var nObj = this._listNavigator;
+		if(!nObj) { 
+			this._listNavigator = DLG1_DlgObj._navigationBar(this._navBarId);
+		}
+		if(nObj) {
+			var obj = nObj.data;
+			obj.settings = this._navigationBar;
+			obj.pageNumber = this._state.page;
+			obj.totalPages = this._state.pageCount;
+			obj.totalRecords = this._state.recordCount;
+			obj.listName = this.listVariableName;
+			nObj.populate(obj);
+		}
+	}
+	//navigation buttons	
+	ele = DLG1_DlgObj._buttons['BUTTON_LISTNAV_NEXT.LISTEVALUACIONCAT1'];
+	if(ele) {
+		if(this._state.page == this._state.pageCount || this._state.pageCount == 0) ele.setDisabled(true);
+		else ele.setDisabled(false);
+	}
+	ele = DLG1_DlgObj._buttons['BUTTON_LISTNAV_LAST.LISTEVALUACIONCAT1'];
+	if(ele) {
+		if(this._state.page == this._state.pageCount || this._state.pageCount == 0) ele.setDisabled(true);
+		else ele.setDisabled(false);
+	}
+	ele = DLG1_DlgObj._buttons['BUTTON_LISTNAV_FIRST.LISTEVALUACIONCAT1'];
+	if(ele) {
+		if(this._state.page == 1 || this._state.pageCount == 0) ele.setDisabled(true);
+		else ele.setDisabled(false);
+	}
+	ele = DLG1_DlgObj._buttons['BUTTON_LISTNAV_PREV.LISTEVALUACIONCAT1'];
+	if(ele) {
+		if(this._state.page == 1 || this._state.pageCount == 0 ) ele.setDisabled(true);
+		else ele.setDisabled(false);
+	}
+	ele = $('DLG1.V.R1.A5SYSTEM_LIST_PAGESELECTOR_LISTEVALUACIONCAT1');
+	if(ele) {
+		var data = this._recordNavigatorLinks;
+		if(data) A5.form.populateSelect(ele,this._state.page,data,true);
+	}
+}
+,
+	header: {
+	},
+	_getRoute: function() { 
+	var mode = typeof arguments[0] != 'undefined' ? arguments[0] : 'rowNumber'; //
+	var obj  = typeof arguments[1] != 'undefined' ? arguments[1] : [];
+	if(typeof this.selection == 'undefined') return false;
+	if(typeof this.selection[0] == 'undefined') return false;
+	if(typeof this.getData(this.selection[0]) == 'undefined') return false;
+	if(mode != 'rowNumber') { 
+		var _d = this.getData(this.selection[0]);
+		if(typeof _d.__primaryKey == 'undefined') { 
+			mode = 'rowNumber';
+		}
+	}
+	var endPoint = typeof arguments[2] != 'undefined' ? arguments[2]: '';
+	if(endPoint != '') { 
+		//if you have sibling children _getRoute() is returning wrong route -- it is including the siblings in the route.
+		//route should only include parents
+		//by passing in the listName to the function we get the route from the top parent to the 'endPoint' list (ignoring siblings)
+		var _dlgObj = window[this._hostComponentId + '_DlgObj'];
+		var ra2 = [];
+		var lObj = _dlgObj.getControl(endPoint);
+		var parentList = lObj.parentList;
+		while(typeof parentList != 'undefined') { 
+			var l2 = _dlgObj.getControl(parentList);
+			var row = '';
+			if(mode == 'rowNumber') { row = l2.selection[0] } else {row = l2.getData(this.selection[0])['*key'] }
+			ra2.push({list: parentList, row: row});
+			parentList = l2.parentList
+		}
+		return ra2.reverse();
+	}
+	if(mode == 'rowNumber') {
+		obj.push({list: this.listVariableName, row: this.getData(this.selection[0])['*key']});
+	} else {
+		var _d = this.getData(this.selection[0]);
+		var _pk = _d.__primaryKey;
+		if(typeof _d.__primaryKey == 'undefined') { 
+			_pk = _d['*rowGUID'];
+		}
+		obj.push({list: this.listVariableName, row: _pk});
+	}
+	for(var i = 0; i < this.childLists.length; i++) { 
+		var lname = this.childLists[i];
+		var lObj = window[this._hostComponentId + '_DlgObj'].getControl(lname);
+		if(lObj) lObj._getRoute(mode,obj);
+	}
+	return obj;
+}
+,
+	_getRouteOLD: function() { 
+	var obj  = typeof arguments[1] != 'undefined' ? arguments[1] : [];
+	var mode = typeof arguments[0] != 'undefined' ? arguments[0] : 'rowNumber'; //
+	if(typeof this.selection == 'undefined') return false;
+	if(typeof this.selection[0] == 'undefined') return false;
+	if(typeof this.getData(this.selection[0]) == 'undefined') return false;
+	if(mode == 'rowNumber') obj.push({list: this.listVariableName, row: this.getData(this.selection[0])['*key']});
+	else obj.push({list: this.listVariableName, row: this.getData(this.selection[0]).__primaryKey});
+	for(var i = 0; i < this.childLists.length; i++) { 
+		var lname = this.childLists[i];
+		var lObj = window[this._hostComponentId + '_DlgObj'].getControl(lname);
+		if(lObj) lObj._getRoute(mode,obj);
+	}
+	return obj;
+}
+,
+	_setRoute: function(route) { 
+if(this.multiple ) return;
+	if(typeof route == 'undefined') { 
+		route = this.__currentRoute;
+		if(typeof route == 'undefined') return false;
+	}
+	var mode = typeof arguments[1] != 'undefined' ? arguments[1] : 'rowNumber'; //
+	if(mode == 'primaryKey') { 
+		if(typeof this._data != 'undefined') { 
+			var _d = this._data;
+			if(typeof _d[0] != 'undefined') { 
+				if(typeof _d[0].__primaryKey == 'undefined') { 
+					mode = 'rowNumber';
+				}
+			}
+		}
+	}
+	var lObj = '';
+	var row = '';
+	var _pk = '';
+	for(var i = 0; i < route.length; i++) {
+		lObj = window[this._hostComponentId + '_DlgObj'].getControl(route[i].list);
+		row = route[i].row;
+		if(mode == 'primaryKey') _pk = row;
+		/*
+		if(mode != 'rowNumber') { 
+			var _d = lObj._rData;
+			var _i2 = -1;
+			for(var j = 0; j < _d.length; j++) { 
+				if(_d[j].__primaryKey == row) { 
+					_i2 = j;
+					break;
+				}
+			}
+			row = _i2
+		}
+		*/
+		var flag = typeof this._restoringList != 'undefined' ? !this._restoringList : true;
+		if(mode == 'rowNumber') { 
+			if(typeof row != 'undefined') {
+				var rowFixed = '';
+				if(typeof lObj._dataMap == 'undefined') return false;
+				if(mode != 'rowNumber')  { 
+					rowFixed = row;
+					} else {
+				rowFixed = lObj._dataMap.indexOf(route[i].row);
+				}
+				lObj.setValue(rowFixed,flag);
+				if(this._clearServerSideErrors) this._clearServerSideErrors();
+				if(this._showServerSideErrors) this._showServerSideErrors();
+				if(this._showWriteConflictErrors) this._showWriteConflictErrors();
+			}
+		} else { 
+			lObj.setValue(''+_pk,flag);
+			if(this._clearServerSideErrors) this._clearServerSideErrors();
+			if(this._showServerSideErrors) this._showServerSideErrors();
+			if(this._showWriteConflictErrors) this._showWriteConflictErrors();
+		}
+	}
+}
+,
+	_useServerSideSyncLog: false,
+	items: {
+},
+	_searchHighlighting: false,
+	_incrementalRefreshTimestampField: '',
+	_hasNavigationBar: false,
+	_listGUID: 'a92f1e1e-fa98-4436-b6df-460fae2d2350'
+};
 DLG1_DlgObj._listViewData['LIST1'] = []; 
 DLG1_DlgObj._listViewData['LIST2'] = []; 
 DLG1_DlgObj._listViewData['LIST3'] = []; 
 DLG1_DlgObj._listViewData['LIST4'] = []; 
 DLG1_DlgObj._listViewData['LISTCUARENTENA'] = A5DataArrayToObject(['Id_MonitoreoCobro','Id_Estado','Id_Trabajador','Id_Contacto','FechaMin','FechaMax','NombreContacto','NombreTrabajador','creador','fechaCreacion','__primaryKey','__a5crc'],[['1022','2','0','8614','2020-07-08','2020-07-22','Joni Coquinche Alvarado',null,'marino','23-07-2020 09:19:13 89 am','1022','4294939111'],['1023','2','0','8613','2020-07-08','2020-07-22','Edwin Vargas Chimbo',null,'marino','23-07-2020 09:24:22 09 am','1023','4294963804'],['1025','2','387','0','2020-07-14','2020-07-22',null,'Byron Otavalo','marino','23-07-2020 09:57:53 79 am','1025','4294914245'],['1026','2','316','0','2020-07-16','2020-07-22',null,'Fredy Alomia Izurieta','marino','23-07-2020 09:58:24 46 am','1026','4294933710'],['1027','2','0','8615','2020-07-08','2020-07-22','Luis Ospina Avala',null,'marino','23-07-2020 11:05:54 81 am','1027','4294936961'],['1032','2','344','0','2020-07-01','2020-07-08',null,'Jerry Villafuerte Sanchez','marino','03-08-2020 12:51:03 86 pm','1032','4294908699'],['1033','2','356','0','2020-07-02','2020-07-16',null,'Sixto Uquiña Licuy','marino','03-08-2020 12:56:51 53 pm','1033','4294902206'],['1034','2','318','0','2020-07-10','2020-07-17',null,'Wilmer Alomia Izurieta','marino','03-08-2020 02:28:54 26 pm','1034','4294943359'],['1035','2','368','0','2020-07-07','2020-07-17',null,'Freddy Jipa Pimbo','marino','03-08-2020 02:30:59 88 pm','1035','4294938779'],['1036','2','346','0','2020-07-01','2020-07-27',null,'Darwin Yumbo Tanguila','marino','03-08-2020 03:21:26 85 pm','1036','4294959449'],['1037','2','384','0','2020-07-01','2020-07-11',null,'Carlos Gualinga Santi','marino','03-08-2020 03:24:08 99 pm','1037','4294911762'],['1038','2','366','0','2020-07-10','2020-07-17',null,'Luis Castillo','marino','03-08-2020 03:25:24 02 pm','1038','4294928434'],['1039','2','386','0','2020-07-14','2020-07-25',null,'Jeofre Shiguango','marino','03-08-2020 03:52:29 68 pm','1039','4294929267'],['1041','2','376','8617','2020-06-26','2020-07-14','Wilmer Grefa Condo','Wilmer Grefa Condor','marino','03-08-2020 04:34:02 24 pm','1041','4294931867'],['1042','2','0','8608','2020-07-01','2020-07-14','Sergio Sanmiguel Rivadeneira',null,'marino','03-08-2020 05:30:40 20 pm','1042','4294907375'],['1043','2','0','8607','2020-07-01','2020-07-13','José Tobar Rivera',null,'marino','03-08-2020 05:34:41 54 pm','1043','4294936449'],['1044','2','0','8609','2020-07-01','2020-07-08','GONZALO JIPA YUMBO',null,'marino','03-08-2020 05:40:15 15 pm','1044','4294939516'],['1045','2','0','8610','2020-07-01','2020-07-08','Orlando Sanmiguel Rodriguez',null,'marino','03-08-2020 05:44:06 39 pm','1045','4294921137'],['1046','2','0','8611','2020-07-01','2020-07-25','Miguel Toledo Martinez',null,'marino','03-08-2020 06:08:44 63 pm','1046','4294943304'],['1047','2','0','8612','2020-07-01','2020-07-25','Victor Salazar Grefa',null,'marino','03-08-2020 06:12:27 21 pm','1047','4294938913'],['1048','2','0','8618','2020-07-15','2020-07-24','Luis Portilla Magallon',null,'marino','03-08-2020 06:14:29 05 pm','1048','4294943866'],['1049','2','0','8619','2020-07-24','2020-07-25','Marco Grefa Condo',null,'jarvis','03-08-2020 06:33:11 47 pm','1049','4294934022'],['1050','2','322','0','2020-07-20','2020-07-25',null,'Wiston Castillo Giraldo','jarvis','04-08-2020 12:22:38 96 pm','1050','4294924162']]); 
-DLG1_DlgObj._listViewData['LISTEVALUACION'] = A5DataArrayToObject(['Id_TrabajadorDesempeno','Id_Trabajador','Id_TipoEvaluacion','Id_Evaluador','Fecha','PeriodoDesde','PeriodoHasta','Observaciones','Extension','Documento','Archivo','Tamano','Id_EstadoEvaluacion','FechaCreacion','FechaActualizacion','usuarioCreador','usuarioEdicion','codigoEvaluacion','Id_RegistroEntradaSalida','Userid'],[]);
+DLG1_DlgObj._listViewData['LISTEVALUACION'] = []; 
+DLG1_DlgObj._listViewData['LISTEVALUACIONCAT1'] = [];
 ;
-DLG1_DlgObj.setStateInfo({ 	"__dialogGuid": "ac611a65-2859-4193-9133-858cf8b96765", 	"argumentsBoundToCotrols": "", 	"__dtfmt": "yyyy-MM-dd", 	"__tfmt": "", 	"__sgr": "", 	"value":  null  });
+DLG1_DlgObj.setStateInfo({ 	"__dialogGuid": "8a60dbac-ea3c-41be-8ffe-2623db0b6b00", 	"argumentsBoundToCotrols": "", 	"__dtfmt": "yyyy-MM-dd", 	"__tfmt": "", 	"__sgr": "", 	"value":  null  });
 DLG1_DlgObj._controls['LIST1'] =  { type: 'list',  data: DLG1_DlgObj._listViewData['LIST1'],  onInitialize: function() { var that = this; setTimeout(function() {that._onSelect(); delete that; },10);
 		var pe = $(this.contId).parentElement;
 		if(typeof this.listVariableName != 'undefined') { 
@@ -11654,6 +13128,13 @@ DLG1_DlgObj._controls['LISTEVALUACION'] =  { type: 'list',  data: DLG1_DlgObj._l
 			$acn(pe,_cn);
 		}
 },  settings: DLG1_DlgObj._listViewSettings['LISTEVALUACION'] }
+DLG1_DlgObj._controls['LISTEVALUACIONCAT1'] =  { type: 'list',  data: DLG1_DlgObj._listViewData['LISTEVALUACIONCAT1'],  onInitialize: function() { 
+		var pe = $(this.contId).parentElement;
+		if(typeof this.listVariableName != 'undefined') { 
+			var _cn = 'DLG1_' + this.listVariableName.toUpperCase() + '_2';
+			$acn(pe,_cn);
+		}
+},  settings: DLG1_DlgObj._listViewSettings['LISTEVALUACIONCAT1'] }
 DLG1_DlgObj.setVariables({});
 DLG1_DlgObj._dataBoundControls = [];
 DLG1_DlgObj._primaryTableAlias = '';
@@ -11662,6 +13143,7 @@ DLG1_DlgObj._actions['afterLogin_App'] = '/* actionJavascript:94aae3aa-976b-4428
 DLG1_DlgObj._actions['abrirTarea'] = '/* actionJavascript:12a01f97-b70c-4fd9-9dbe-2249c25fcc4f   */\nDLG1_DlgObj.panelSetActive(\'PANELCARD_EDITTAREAS\',true);';
 DLG1_DlgObj._actions['paraInicio'] = '/* actionJavascript:5430e688-cd5c-47c4-ae41-ae66b008a496                     */\nfunction tempfunction_1a0509a2_3c31_47d1_9ad1_2d50c9a3ff2e() {\nDLG1_DlgObj.ajaxCallback(\'\',\'\',\'user\',\'\',user(),{chunkedResponses: {allow: false},deviceOfflineFunction: function() {   }});\n}\n\nfunction tempfunction_564f8d34_e03c_4662_a3cc_7b4934eaa21c() {\nDLG1_DlgObj.refreshDataSeries(\'Series1\');\nDLG1_DlgObj.refreshDataSeries(\'Series2\');\nDLG1_DlgObj.refreshDataSeries(\'Series3\');\nDLG1_DlgObj.refreshDataSeries(\'Series4\');\nDLG1_DlgObj.refreshDataSeries(\'Series5\');\n}\n\nfunction tempfunction_2587ae8d_e2b0_4e42_9956_dbaf2e59f32a() {\nvar TotalEnCurso = DLG1_DlgObj._dataSeriesData.Series1.TotalEnCurso;\nDLG1_DlgObj.setValue(\'label1\', TotalEnCurso);\n\n}\n\nfunction tempfunction_5d304028_5722_43eb_b3c0_f3b30a21496c() {\nvar TotalCompletado = DLG1_DlgObj._dataSeriesData.Series2.TotalCompletado;\nDLG1_DlgObj.setValue(\'label2\', TotalCompletado);\n\n}\n\nfunction tempfunction_532874d1_49ed_457a_9bc2_d0bfacffe881() {\nvar TotalValidado = DLG1_DlgObj._dataSeriesData.Series3.TotalValidado;\nDLG1_DlgObj.setValue(\'label3\', TotalValidado);\n\n}\n\nfunction tempfunction_65f0f891_5e80_4cc8_acf0_41cf6560ff36() {\nvar TotalNocomenzado = DLG1_DlgObj._dataSeriesData.Series4.TotalNocomenzado;\nDLG1_DlgObj.setValue(\'label4\', TotalNocomenzado);\n\n}\n\nfunction tempfunction_12c8bf78_4c78_4510_ad9c_b065ad8595bd() {\nvar TotalCancelado = DLG1_DlgObj._dataSeriesData.Series5.TotalCancelado;\nDLG1_DlgObj.setValue(\'label5\', TotalCancelado);\n}\n\n\nA5.executeThisThenThat(tempfunction_1a0509a2_3c31_47d1_9ad1_2d50c9a3ff2e,tempfunction_564f8d34_e03c_4662_a3cc_7b4934eaa21c,tempfunction_2587ae8d_e2b0_4e42_9956_dbaf2e59f32a,tempfunction_5d304028_5722_43eb_b3c0_f3b30a21496c,tempfunction_532874d1_49ed_457a_9bc2_d0bfacffe881,tempfunction_65f0f891_5e80_4cc8_acf0_41cf6560ff36,tempfunction_12c8bf78_4c78_4510_ad9c_b065ad8595bd);';
 DLG1_DlgObj._actions['panelMove2'] = '/* actionJavascript:1dbff3fa-1c99-41e3-844f-27d4ebe06e61   */\nfunction tempfunction_bf82d830_fce8_4a47_b791_c7b4e2b7d30d() {\nDLG1_DlgObj.refreshListData(\'list1\');\n}\n\nfunction tempfunction_23448d7f_2efb_44f9_8508_7254c10867a0() {\nDLG1_DlgObj.panelSetActive(\'PANELCARD_MONITOREO3\',true);\n}\n\n\nA5.executeThisThenThat(tempfunction_bf82d830_fce8_4a47_b791_c7b4e2b7d30d,tempfunction_23448d7f_2efb_44f9_8508_7254c10867a0);';
+DLG1_DlgObj._actions['paraMoveEvaluacion'] = '/* actionJavascript:96033a41-8158-4e38-883a-4308aea3a7ce   */\nDLG1_DlgObj.panelSetActive(\'PANELCARD_DETALLEEVALUACION\',true);';
 DLG1_DlgObj._dataSeries = {}
 DLG1_DlgObj._listControlsInfo = {};
 DLG1_DlgObj._functions.__fillContainer_LIST1 = function() {
@@ -11736,6 +13218,24 @@ DLG1_DlgObj._functions.__fillContainer_LISTCUARENTENA = function() {
 	$(id).innerHTML = '';
 }
 DLG1_DlgObj._functions.__fillContainer_LISTCUARENTENA();
+DLG1_DlgObj._functions.__fillContainer_LISTEVALUACION = function() {
+	var path = DLG1_PanelObj._panelPath['PANELCARD_EVALUACION'];
+	if(typeof path != 'undefined') {
+		var panel = DLG1_PanelObj.getPanel(path);
+		var id = panel.src.getPanelId('body');
+	} else {
+		var id = DLG1_PanelObj.getPanelId('body');
+	}
+	//removing scrolling from the PanelBody since we will be obliterating the Panel with a control that fills the body
+	if($(id + '.SCROLLWRAPPER')) {
+		A5.u.drag.remove(id,'scroll');
+	}
+	DLG1_DlgObj._listViewSettings['LISTEVALUACION'].containerId = id;
+	DLG1_DlgObj._listViewSettings['LISTEVALUACION'].className = '<Default>';
+	//blow away any existing content in the panel
+	$(id).innerHTML = '';
+}
+DLG1_DlgObj._functions.__fillContainer_LISTEVALUACION();
 DLG1_DlgObj._hasPanels = true;
 DLG1_DlgObj._hasOnSynchronizeEvent = false;
 A5.__dtfmt = 'yyyy-MM-dd';A5.__tfmt = '';
@@ -16531,7 +18031,11 @@ PANELHEADER_23: [],
 PANELHEADER_24: [],
 PANELFOOTER_11: [],
 PANELHEADER_25: [],
-PANELHEADER_26: []
+PANELHEADER_26: [],
+PANELHEADER_27: [],
+TAB_1: ['tabPane:TAB_1#1','tabPane:TAB_1#2'],
+"TAB_1#1": ['textbox2'],
+"TAB_1#2": ['textbox3']
 }
 DLG1_DlgObj._listsDV = ['LIST1','LIST2','LISTCUARENTENA'];
 //Add methods to the List prototype for Lists with Detail Views
@@ -19757,8 +21261,8 @@ $u.o.assign(A5.ListBox.prototype,
 }
 )
 //End section - Add methods to List prototype
-DLG1_DlgObj._listControls = ['list1','list2','list3','list4','listCuarentena','listEvaluacion']
-DLG1_DlgObj._localStorageSettings = {namespace: 'ALPHA_ac611a65285941939133858cf8b96765',friendlyName: '',description: '',persistVariableValues: true,variablesToNotPersist: '',__version: 1,persistComponentState: false,workingPreviewTestingFolder: '',restore: {variables: true,data: true,state: false},compressData: false,minify: false,workingPreviewTestingMode: 'Browser',compressListData: false}
+DLG1_DlgObj._listControls = ['list1','list2','list3','list4','listCuarentena','listEvaluacion','listEvaluacionCat1']
+DLG1_DlgObj._localStorageSettings = {namespace: 'ALPHA_8a60dbacea3c41be8ffe2623db0b6b00',friendlyName: '',description: '',persistVariableValues: true,variablesToNotPersist: '',__version: 1,persistComponentState: false,workingPreviewTestingFolder: '',restore: {variables: true,data: true,state: false},compressData: false,minify: false,workingPreviewTestingMode: 'Browser',compressListData: false}
 ;
 DLG1_DlgObj.__r = [];
 DLG1_DlgObj._staticHTMLMode = false
@@ -19808,27 +21312,27 @@ DLG1_DlgObj.__r = [];
 DLG1_DlgObj.applyServerSideRules();
 
 $e.add('DLG1.V.R1.BUTTON_1',A5.d.evnts.click,function(e) {
-function tempfunction_dae8021f_758b_4750_a0c3_6d693f10041b() {
+function tempfunction_2e98b0a9_c08d_4918_9fe1_6e333e7cf5dc() {
 DLG1_DlgObj.login(1)
 }
-function tempfunction_78f03a8d_14be_4ed3_8041_46f6e682e566() {
+function tempfunction_7f88a7bb_2478_44b7_9a1d_c607cb74c1af() {
 DLG1_DlgObj.ajaxCallback('','','insertarMonitoreo','','',{chunkedResponses: {allow: false},deviceOfflineFunction: function() {   }});
 }
-function tempfunction_65f40035_baca_42da_9ee9_ecbd551a5d77() {
+function tempfunction_a0d1fe80_df35_4502_9fe3_3b743c831de6() {
 DLG1_DlgObj.refreshListData('listaTareas');
 }
-function tempfunction_c4b646ec_3a4c_4241_a38e_75778e067b40() {
+function tempfunction_dff687fb_f2fe_4548_b411_5b55116faf48() {
 DLG1_DlgObj.refreshListData('list1');
 }
-function tempfunction_b33183db_aec8_4612_9237_a4dc8c81ec93() {
+function tempfunction_de5623ff_7ab7_4c4e_9a91_c698642da66a() {
 if(dialog.isLoggedIn = true){
 DLG1_DlgObj.panelSetActive('PANELCARD_INICIO',true);
 }
 }
-function tempfunction_01893f4e_4c0b_4bd6_bc4c_2df8633625bf() {
+function tempfunction_724fd684_52bc_4686_8965_433323cdc70c() {
 DLG1_DlgObj.panelSetActive('PANELCARD_INICIO',true);
 }
-A5.executeThisThenThat(tempfunction_dae8021f_758b_4750_a0c3_6d693f10041b,tempfunction_78f03a8d_14be_4ed3_8041_46f6e682e566,tempfunction_65f40035_baca_42da_9ee9_ecbd551a5d77,tempfunction_c4b646ec_3a4c_4241_a38e_75778e067b40,tempfunction_b33183db_aec8_4612_9237_a4dc8c81ec93,tempfunction_01893f4e_4c0b_4bd6_bc4c_2df8633625bf);
+A5.executeThisThenThat(tempfunction_2e98b0a9_c08d_4918_9fe1_6e333e7cf5dc,tempfunction_7f88a7bb_2478_44b7_9a1d_c607cb74c1af,tempfunction_a0d1fe80_df35_4502_9fe3_3b743c831de6,tempfunction_dff687fb_f2fe_4548_b411_5b55116faf48,tempfunction_de5623ff_7ab7_4c4e_9a91_c698642da66a,tempfunction_724fd684_52bc_4686_8965_433323cdc70c);
 },this,false,'DLG1.V.R1.BUTTON_1');
 
 
@@ -19872,7 +21376,13 @@ DLG1_DlgObj.panelSetActive('PANELCARD_MONITOREO2',true);
 },this,false,'DLG1.V.R1.STATICTEXT_5');
 
 $e.add('DLG1.V.R1.STATICTEXT_11',A5.d.evnts.click,function(e) {
+function tempfunction_aa864d78_8411_4bc3_99fc_99d99192c125() {
+DLG1_DlgObj.ajaxCallback('','','user','',user(),{chunkedResponses: {allow: false},deviceOfflineFunction: function() {   }});
+}
+function tempfunction_93187081_9593_47a5_b39e_b70164c42692() {
 DLG1_DlgObj.panelSetActive('PANELCARD_EVALUACION',true);
+}
+A5.executeThisThenThat(tempfunction_aa864d78_8411_4bc3_99fc_99d99192c125,tempfunction_93187081_9593_47a5_b39e_b70164c42692);
 },this,false,'DLG1.V.R1.STATICTEXT_11');
 
 $e.add('DLG1.V.R1.STATICTEXT_7',A5.d.evnts.click,function(e) {
@@ -20305,6 +21815,15 @@ $e.add('DLG1.V.R1.BUTTON_101',A5.d.evnts.click,function(e) {
 DLG1_DlgObj.panelSetActive('PANELCARD_INICIO',true);
 },this,false,'DLG1.V.R1.BUTTON_101');
 
+
+
+
+
+
+$e.add('DLG1.V.R1.BUTTON_102',A5.d.evnts.click,function(e) {
+DLG1_DlgObj.panelSetActive('PANELCARD_EVALUACION',true);
+},this,false,'DLG1.V.R1.BUTTON_102');
+
 DLG1_DlgObj.prepare();DLG1_DlgObj.populate(DLG1_DlgObj.originalValues[0]);
 DLG1_DlgObj._fireWatches(1);
 
@@ -20313,6 +21832,7 @@ if(!A5.flags.isMobile) $e.add(window,'resize',DLG1_DlgObj._functions.calcOrienta
 else $e.add(window,'orientationchange',DLG1_DlgObj._orientationChangeHandler,DLG1_DlgObj,true,'DLG1.DIALOG');
 DLG1_DlgObj._functions.calcOrientation();
 
+DLG1_DlgObj._tabPaneChange('TAB_1');
 ;
 
 
@@ -20389,7 +21909,7 @@ if(listObj) listObj._state.paginated = true;
 
 if(listObj) listObj._state.highlight = {  };
 if(listObj) listObj._state.whereClause = '( WebSecurityUsers.Userid = :USERID  OR  WebSecurityUsersCont.Userid = :USERID ) AND  DaysBetweenDates(N_MonitoreoTrabajador.Fecha,  now() ) < 7  AND (N_MonitoreoTrabajador.Temperatura IS NULL  OR  N_MonitoreoTrabajador.Temperatura = \'0\' )';
-if(listObj) listObj._state.whereParameters = '|||C|USERID\n';
+if(listObj) listObj._state.whereParameters = '|||C|USERID\nwalomia|||C|USER\n';
 listObj._state.order = 'N_MonitoreoTrabajador.Id_MonitoreoTrabajador DESC';
 		
 		var flagPersist = false;
@@ -20443,7 +21963,7 @@ if(listObj) listObj._state.paginated = false;
 
 if(listObj) listObj._state.highlight = {  };
 if(listObj) listObj._state.whereClause = '( WebSecurityUsers.Userid = :USERID  OR  WebSecurityUsersCont.Userid = :USERID ) AND  DaysBetweenDates(N_MonitoreoTrabajador.Fecha,  now() ) < 7  AND (N_MonitoreoTrabajador.Temperatura IS NULL  OR  N_MonitoreoTrabajador.Temperatura = \'0\' )';
-if(listObj) listObj._state.whereParameters = '|||C|USERID\n';
+if(listObj) listObj._state.whereParameters = '|||C|USERID\nwalomia|||C|USER\n';
 listObj._state.order = 'N_MonitoreoTrabajador.Id_MonitoreoTrabajador DESC';
 		
 		var flagPersist = false;
@@ -20512,7 +22032,7 @@ if(listObj) listObj._state.paginated = false;
 if(listObj) listObj._state._optimizedJSON = true;
 if(listObj) listObj._state.highlight = {  };
 if(listObj) listObj._state.whereClause = 'WebSecurityUsers.Userid = :USERID';
-if(listObj) listObj._state.whereParameters = '|||C|USERID\n';
+if(listObj) listObj._state.whereParameters = '|||C|USERID\nwalomia|||C|USER\n';
 listObj._state.order = '';
 		
 		var flagPersist = false;
@@ -20545,7 +22065,7 @@ if(listObj) listObj._state.paginated = false;
 if(listObj) listObj._state._optimizedJSON = true;
 if(listObj) listObj._state.highlight = {  };
 if(listObj) listObj._state.whereClause = 'WebSecurityUsers.Userid = :USERID';
-if(listObj) listObj._state.whereParameters = '|||C|USERID\n';
+if(listObj) listObj._state.whereParameters = '|||C|USERID\nwalomia|||C|USER\n';
 listObj._state.order = '';
 		
 		var flagPersist = false;
@@ -20578,7 +22098,7 @@ if(listObj) listObj._state.paginated = false;
 if(listObj) listObj._state._optimizedJSON = false;
 if(listObj) listObj._state.highlight = {  };
 if(listObj) listObj._state.whereClause = '';
-if(listObj) listObj._state.whereParameters = '|||C|USERID\n';
+if(listObj) listObj._state.whereParameters = '|||C|USERID\nwalomia|||C|USER\n';
 listObj._state.order = '';
 		
 		var flagPersist = false;
@@ -20631,7 +22151,7 @@ if(listObj) listObj._state.paginated = false;
 if(listObj) listObj._state._optimizedJSON = false;
 if(listObj) listObj._state.highlight = {  };
 if(listObj) listObj._state.whereClause = 'WebSecurityUsers.Userid = :USERID';
-if(listObj) listObj._state.whereParameters = '|||C|USERID\n';
+if(listObj) listObj._state.whereParameters = '|||C|USERID\nwalomia|||C|USER\n';
 listObj._state.order = '';
 		
 		var flagPersist = false;
@@ -20651,7 +22171,48 @@ if(listObj._refreshStateMessages) listObj._refreshStateMessages();
 
 
 
+
+
+var listObj = DLG1_DlgObj.getControl('LISTEVALUACIONCAT1');
+if(listObj) listObj._state.recordCount = 0;
+if(listObj) listObj._state.recordCountFormatted = '0';
+if(listObj) listObj._state.lastBreakValue = '';
+if(listObj) listObj._state.pageCount = 0;
+if(listObj) listObj._state.pageSize = 20;
+if(listObj) {var ele = $('DLG1.listEvaluacionCat1.RECORDCOUNT'); if(ele) ele.innerHTML = listObj._state.recordCountFormatted;};
+if(listObj) listObj._state.paginated = false;
+if(listObj) listObj._state._optimizedJSON = false;
+if(listObj) listObj._state.highlight = {  };
+if(listObj) listObj._state.whereClause = 'WebSecurityUsers.Userid = :USERID';
+if(listObj) listObj._state.whereParameters = '|||C|USERID\nwalomia|||C|USER\n';
+listObj._state.order = '';
+		
+		var flagPersist = false;
+		if(typeof listObj._flagPersistDataOK != 'undefined') { 
+			if(listObj._flagPersistDataOK) { 
+				var data = listObj._data;
+				listObj.persistToStorage({mode:'populate', data: data, submode: 'ListViewData'});
+			}
+		}
+		
+		
+;
+if(listObj) listObj._state.pageCount = 0;
+DLG1_DlgObj._list_executeEvent('LISTEVALUACIONCAT1','afterRenderComplete',{});
+
+if(listObj._refreshStateMessages) listObj._refreshStateMessages();
+
+
+
+
+
+
+
+
+
 var obj = DLG1_DlgObj.getControl('LIST2');
+obj._hasBeenRendered = false;
+var obj = DLG1_DlgObj.getControl('LISTEVALUACIONCAT1');
 obj._hasBeenRendered = false;
 ;
 var lObj = DLG1_DlgObj.getControl('LIST1');
@@ -20677,6 +22238,10 @@ if(lObj) $u.o.assign(lObj,__obj);;;
 var lObj = DLG1_DlgObj.getControl('LISTEVALUACION');
 var __obj = {
 };
+if(lObj) $u.o.assign(lObj,__obj);;;
+var lObj = DLG1_DlgObj.getControl('LISTEVALUACIONCAT1');
+var __obj = {
+};
 if(lObj) $u.o.assign(lObj,__obj);;
 
 
@@ -20690,6 +22255,9 @@ $e.add(lObj.contId,'abstractdbltap',function(e) {
 	var index = lObj.indexFromPoint(e.abstractData.startX,e.abstractData.startY);
 	lObj._onDblTap(index,e);
 });
+
+
+
 
 
 

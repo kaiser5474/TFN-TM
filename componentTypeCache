@@ -459,5 +459,6 @@
 {monitoreo.a5wcmp}|Pagelayout
 {N_MonitoreoTrabajador_Cobro2.a5wcmp}|Grid
 {N_Contactos_Salud.a5wcmp}|Grid
-{app_TFN_Login.a5wcmp}|Dialog2
 {app_MRG_Login.a5wcmp}|Dialog2
+{app_TFN_Login2.a5wcmp}|Dialog2
+{app_TFN_Login.a5wcmp}|Dialog2
