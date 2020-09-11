@@ -56,5 +56,7 @@
 		"_ajaxurl": "https://www.mariloginsa.net/TFN"
 	},
 	"_sqlitedbdefined": false,
-	"_channels": ""
+	"_channels": "",
+	"_appImagesGenerated": false,
+	"_ionicAppflowRepoFolder": ""
 }

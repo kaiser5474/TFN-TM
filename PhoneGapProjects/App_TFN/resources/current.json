@@ -245,6 +245,10 @@
 		"name": "\\css\\A5System\\Images\\designModeTip.png"
 	},
 	{
+		"crc": 4294960644,
+		"name": "\\css\\A5System\\Images\\loading.gif"
+	},
+	{
 		"crc": 4294933586,
 		"name": "\\css\\A5System\\Images\\menuCheck.png"
 	},
@@ -1345,11 +1349,11 @@
 		"name": "\\Images\\Aereo.png"
 	},
 	{
-		"crc": 4294916996,
+		"crc": 4294960507,
 		"name": "\\javascript\\a5.js"
 	},
 	{
-		"crc": 4294910896,
+		"crc": 4294965849,
 		"name": "\\javascript\\A5jQueryWithUI.js"
 	},
 	{
@@ -1370,7 +1374,7 @@
 		"name": "\\icon.png"
 	},
 	{
-		"crc": 4294946889,
+		"crc": 4294966678,
 		"name": "\\index.html"
 	},
 	{
@@ -1386,7 +1390,7 @@
 		"name": "\\splash.png"
 	},
 	{
-		"crc": 4294918127,
+		"crc": 4294944876,
 		"name": "\\version.json"
 	},
 	{

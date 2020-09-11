@@ -43,6 +43,16 @@ iframe {-webkit-user-select: text;}
 
 
 
+.A5FloatingLabelCont {	position: relative;	margin-top: ;}
+.A5FloatingLabelInsideCont {	position: relative;	}
+.A5FloatingLabelInsideCont input, .A5FloatingLabelInsideCont select, .A5FloatingLabelInsideCont textarea {	padding-top:  !important;}
+
+.A5FloatingLabel, .A5FloatingLabelInside {pointer-events:none;	position: absolute;	opacity: .5;	top: 50%;	left: 10px;;	right: 10px;; transform: translate(0px,-51%);	transition: transform 300ms, top 300ms, font-size 300ms;}
+.A5FloatingLabelFloat .A5FloatingLabel {	font-size: vv.floatedFontSize;	top: 0px;	opacity: 1;	transform: translate(0px,-100%);}
+.A5FloatingLabelFloat .A5FloatingLabelInside {	font-size: vv.floatedFontSize;	top: 0px;	opacity: 1;	transform: translate(0px,6px);}
+
+
+
 
 
 .A5AccordionTitleOn, .A5AccordionTitleOff, .A5AccordionTitleDisabled {display: block;border: 1px solid #999;padding: 2px;text-decoration: none;cursor: pointer;margin-bottom: 2px; padding: 2px}
@@ -80,24 +90,22 @@ iframe {-webkit-user-select: text;}
 
 </style>
 
-<link palette="" rel="stylesheet" type="text/css" href="css/GrBlue/style.css?buildcount_805">
-<link rel="stylesheet" type="text/css" href="css/_sharedStyles/style.css?buildcount_805">
+<link palette="" rel="stylesheet" type="text/css" href="css/GrBlue/style.css?buildcount_826">
+<link rel="stylesheet" type="text/css" href="css/_sharedStyles/style.css?buildcount_826">
 
 <style type="text/css">
 .icon {
   vertical-align: middle;
   width: 26px;
   height: 26px;
-  fill: #333;
-  stroke: #333; }
+  fill: #000;
+  stroke: #000; }
 .iconSizeable {
   vertical-align: middle;
-  width: auto;
-  height: auto;
-  fill: #333;
-  stroke: #333; }
+  fill: #000;
+  stroke: #000; }
 .iconDisabled {
-  opacity: .25; }
+  opacity: .75; }
 .DLG1_LIST1_2 .card {
   color: #333;
   background: #fff;
@@ -416,6 +424,74 @@ iframe {-webkit-user-select: text;}
   padding: 0px 16px;
   margin-bottom: 4px;
   border-radius: 6px; }
+.DLG1_LISTEVALUACIONCAT1_2 .card-wide {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center; }
+.DLG1_LISTEVALUACIONCAT1_2 .card-wide .card-image {
+  overflow: hidden;
+  width: 100px; }
+.DLG1_LISTEVALUACIONCAT1_2 .card-wide .card-image > img {
+  margin-left: 50%;
+  width: auto;
+  min-width: 100%;
+  max-width: 150px;
+  min-height: 100%;
+  transform: translateX(-50%); }
+.DLG1_LISTEVALUACIONCAT1_2 .card-wide .card-content {
+  flex: 1; }
+.DLG1_LISTEVALUACIONCAT1_2 .card-wide .card-buttons {
+  background: transparent;
+  padding: 8px;
+  flex-direction: column; }
+.DLG1_LISTEVALUACIONCAT1_2 .card-wide .card-buttons > button {
+  padding: 0px 16px;
+  margin-bottom: 4px;
+  border-radius: 6px; }
+.DLG1_LISTEVALUACIONCAT1_2 .card {
+  box-sizing: border-box;
+  perspective: 1500px; }
+.DLG1_LISTEVALUACIONCAT1_2 .card .content {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  transition: transform 0.8s cubic-bezier(0.75, 0, 0.85, 1); }
+.DLG1_LISTEVALUACIONCAT1_2 .card * {
+  box-sizing: border-box; }
+.DLG1_LISTEVALUACIONCAT1_2 .more {
+  display: none; }
+.DLG1_LISTEVALUACIONCAT1_2 .more:checked ~ .content {
+  transform: rotateY(180deg); }
+.DLG1_LISTEVALUACIONCAT1_2 .front, .DLG1_LISTEVALUACIONCAT1_2 .back {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 6px;
+  backface-visibility: hidden;
+  transform-style: preserve-3d; }
+.DLG1_LISTEVALUACIONCAT1_2 .front .inner, .DLG1_LISTEVALUACIONCAT1_2 .back .inner {
+  display: flex;
+  height: 100%;
+  transform: translateZ(80px) scale(0.94);
+  flex-direction: column; }
+.DLG1_LISTEVALUACIONCAT1_2 .front .inner div:first-child, .DLG1_LISTEVALUACIONCAT1_2 .back .inner div:first-child {
+  text-align: center;
+  flex: 1 1; }
+.DLG1_LISTEVALUACIONCAT1_2 .front .inner div:last-child, .DLG1_LISTEVALUACIONCAT1_2 .back .inner div:last-child {
+  text-align: center; }
+.DLG1_LISTEVALUACIONCAT1_2 .back {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 6px;
+  backface-visibility: hidden;
+  transform-style: preserve-3d; }
 ._DLG1_LIST1_dirtyRow {
   position: relative; }
 ._DLG1_LIST1_dirtyRow:before {
@@ -740,6 +816,114 @@ iframe {-webkit-user-select: text;}
   border-left-width: 0px;
   border-bottom-color: transparent;
   opacity: .3; }
+._DLG1_LISTEVALUACIONCAT1_dirtyRow {
+  position: relative; }
+._DLG1_LISTEVALUACIONCAT1_dirtyRow:before {
+  content: "";
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  opacity: 1;
+  border: 10px solid orange;
+  border-top-width: 0px;
+  border-left-width: 0px;
+  border-bottom-color: transparent; }
+._DLG1_LISTEVALUACIONCAT1_newRow {
+  position: relative; }
+._DLG1_LISTEVALUACIONCAT1_newRow:before {
+  content: "";
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  opacity: 1;
+  border: 10px solid blue;
+  border-top-width: 0px;
+  border-left-width: 0px;
+  border-bottom-color: transparent; }
+._DLG1_LISTEVALUACIONCAT1_hasError {
+  position: relative; }
+._DLG1_LISTEVALUACIONCAT1_hasError:after {
+  content: "";
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+  opacity: 1;
+  border: 10px solid red;
+  border-bottom-width: 0px;
+  border-left-width: 0px;
+  border-top-color: transparent; }
+._DLG1_LISTEVALUACIONCAT1_deletedRow {
+  position: relative; }
+._DLG1_LISTEVALUACIONCAT1_deletedRow:before {
+  content: "";
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  opacity: 1;
+  border: 10px solid purple;
+  border-top-width: 0px;
+  border-left-width: 0px;
+  border-bottom-color: transparent; }
+._DLG1_LISTEVALUACIONCAT1_dirtyRowInherited {
+  position: relative; }
+._DLG1_LISTEVALUACIONCAT1_dirtyRowInherited:before {
+  content: "";
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  border: 10px solid orange;
+  border-top-width: 0px;
+  border-left-width: 0px;
+  border-bottom-color: transparent;
+  opacity: .3; }
+._DLG1_LISTEVALUACIONCAT1_deletedRowInherited {
+  position: relative; }
+._DLG1_LISTEVALUACIONCAT1_deletedRowInherited:before {
+  content: "";
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  border: 10px solid purple;
+  border-top-width: 0px;
+  border-left-width: 0px;
+  border-bottom-color: transparent;
+  opacity: .3; }
+._DLG1_LISTEVALUACIONCAT1_newRowInherited {
+  position: relative; }
+._DLG1_LISTEVALUACIONCAT1_newRowInherited:before {
+  content: "";
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  border: 10px solid blue;
+  border-top-width: 0px;
+  border-left-width: 0px;
+  border-bottom-color: transparent;
+  opacity: .3; }
+._DLG1_LISTEVALUACIONCAT1_hasErrorInherited {
+  position: relative; }
+._DLG1_LISTEVALUACIONCAT1_hasErrorInherited:after {
+  content: "";
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+  border: 10px solid red;
+  border-bottom-width: 0px;
+  border-left-width: 0px;
+  border-top-color: transparent;
+  opacity: .3; }
+.parentDeleted {
+  position: relative; }
+.parentIsDeleted .parentDeleted:before {
+  content: "";
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  border: 10px solid purple;
+  border-top-width: 0px;
+  border-left-width: 0px;
+  border-bottom-color: transparent;
+  opacity: .3; }
 </style>
 <style>
 </style>
@@ -759,8 +943,7 @@ iframe {-webkit-user-select: text;}
 </ head>
 <script type="text/javascript" src="_phoneGapSettings.js"></script>
 
-<title></title>
-</head>
+<title></title></head>
 <body class="GrBluePage">
 <iframe style="display:none;" id="DLG1.__IFRAME1"></iframe>
 <input type="hidden" value="" id="DLG1.PARAMETERBUCKET"/>
@@ -870,7 +1053,7 @@ if(this._oid==id)this._isdc=true;else{this._isdc=false;this._oid=id;}}}}}
 delete r;},_dblClick:function(e,ci){if(!this._isdc)return false;var r=ci._aEle(e);if(r){if($ga(r.ele,'a5-disabled')!='true'&&!r.ele.disabled){var iObj=ci.items[r.i];if(iObj){var iTObj=A5.controlBar.items[iObj.type];if(iTObj){if(iTObj.event)iTObj.event.call(ci,'dblclick',r.i,r.v,iObj,r.ele,e);}}}}
 delete r;},_rClick:function(e,ci){var r=ci._aEle(e);if(r){if($ga(r.ele,'a5-disabled')!='true'&&!r.ele.disabled){var iObj=ci.items[r.i];if(iObj){var iTObj=A5.controlBar.items[iObj.type];if(iTObj){if(iTObj.event)iTObj.event.call(ci,'contextclick',r.i,r.v,iObj,r.ele,e);}}}}
 delete r;},_downHold:function(e,ci){var r=ci._aEle(e);if(r){if($ga(r.ele,'a5-disabled')!='true'&&!r.ele.disabled){var iObj=ci.items[r.i];if(iObj){var iTObj=A5.controlBar.items[iObj.type];if(iTObj){if(iTObj.event)iTObj.event.call(ci,'downhold',r.i,r.v,iObj,r.ele,e);}}}}
-delete r;},_swipe:function(e,ci){if(ci._startItem){var r=ci._startItem;var ele=$(r.id);if($ga(ele,'a5-disabled')!='true'&&!ele.disabled){var iObj=ci.items[r.i];if(iObj){var iTObj=A5.controlBar.items[iObj.type];if(iTObj){if(iTObj.event)iTObj.event.call(ci,'swipe',r.i,r.v,iObj,r.ele,e);}}}}},_aEle:function(e){var cEle=$(this.contId);var coor=$e.getCoors(e);var ele=document.elementFromPoint(coor.clientX,coor.clientY);if(!ele)return false;var result=false;var i='';while(ele!=cEle&&ele!=document.body){if(!result){i=$ga(ele,'a5-item');if(i!=null&&i!=''){var v=this._getValue(ele);result={i:i,v:v,ele:ele,p:'disclosure'};}}
+delete r;},_swipe:function(e,ci){if(ci._startItem){var r=ci._startItem;var ele=$(r.id);if($ga(ele,'a5-disabled')!='true'&&!ele.disabled){var iObj=ci.items[r.i];if(iObj){var iTObj=A5.controlBar.items[iObj.type];if(iTObj){if(iTObj.event)iTObj.event.call(ci,'swipe',r.i,r.v,iObj,ele,e);}}}}},_aEle:function(e){var cEle=$(this.contId);var coor=$e.getCoors(e);var ele=document.elementFromPoint(coor.clientX,coor.clientY);if(!ele)return false;var result=false;var i='';while(ele!=cEle&&ele!=document.body){if(!result){i=$ga(ele,'a5-item');if(i!=null&&i!=''){var v=this._getValue(ele);result={i:i,v:v,ele:ele,p:'disclosure'};}}
 ele=ele.parentNode;}
 if(ele==cEle&&result)result.p='main';return result;},_getValue:function(ele){var v=$ga(ele,'a5-value');if(v==''||v==null)v=ele.id;return v;},_bindEvents:function(ele){var egName='CONTROLBAR.'+this.contId;$e.add(ele,A5.d.evnts.dblClick,this._dblClick,this,false,egName);$e.add(ele,'contextmenu',this._rClick,this,false,egName);$e.add(ele,A5.d.evnts.down,this._down,this,false,egName);$e.add(ele,A5.d.evnts.up,this._up,this,false,egName);$e.add(ele,'abstractdownhold',this._downHold,this,false,egName);$e.add(ele,'abstractswipe',this._swipe,this,false,egName);},_compileTemplate:function(cl,edge){if(typeof cl._t=='undefined')cl._t={};if(typeof cl._t[edge]=='undefined'){var tLines=[];var l=null;var ti=null;var cn='';var temp=[];var name='';var tHTML='';var tPH='';for(var i=0;i<cl.lines.length;i++){l=cl.lines[i];$u.o.assign(l,A5.controlBar._.lDefs,true);cn='A5ControlBarLine';if(l.type!='custom'){if(l.middle.items.length==0){if(l.before.items.length==0)cn='A5ControlBarLine A5ControlBarLineAfter';else cn='A5ControlBarLine A5ControlBarLineBefore';}}else cn='A5ControlBarLineCust';temp=['<div class="'+cn+' '+l.className+'" style="'+l.style+'">'];if(l.type=='custom'){tHTML=l.html;for(var item in this.items){tPH='['+item+']';if(tHTML.indexOf(tPH)!=-1)tHTML=tHTML.split(tPH).join(this.items[item].template);}
 temp.push(tHTML);}else{if(l.before.items.length!=0){temp.push('<div class="A5ControlBarLineContentBefore">&#65279;');for(var k=0;k<l.before.items.length;k++){name=l.before.items[k];if(name=='-'){temp.push('<div class="A5ControlBarItem A5CONTROLBARSEPCLASSNAME">&#65279;</div>');}else if(name[0]=='<'){name=name.substring(1,name.length-1).trim();temp.push('<div class="A5ControlBarItem" style="A5CONTROLBARITEMSIZE: '+name+';"></div>');}else if(this.items[name])temp.push(this.items[name].template);}
@@ -1017,7 +1200,7 @@ if(typeof DLG1_DlgObj == 'object') {
 	overlay: {
 	},
 	onSize: function() {;
-if(typeof DLG1_DlgObj != 'undefined') {var mObj = DLG1_DlgObj.getControl('LIST1'); if(mObj) {
+if(typeof DLG1_DlgObj != 'undefined' && DLG1_DlgObj ) {var mObj = DLG1_DlgObj.getControl('LIST1'); if(mObj) {
    if(mObj.resize) {
     mObj.resize();
    } else {
@@ -1036,7 +1219,7 @@ if(typeof DLG1_DlgObj != 'undefined' && typeof DLG1_DlgObj._panelCardResize != '
 	body: {
 		content: {
 			type: 'html',
-			src: '<div  id="DLG1.V.R1.CONTAINER_9"   \r\n   class="A5CWLayout "  style=""  >\r\n<div class="A5CWLayout" style="width: 50%" >\r\n <label id="DLG1.LBL.R1.TEMPERATURA_1" for="DLG1.V.R1.TEMPERATURA_1" title="" class="GrBlueDialogLabel" style="float: left; box-sizing: border-box; -moz-box-sizing: border-box; -ms-box-sizing: border-box; -webkit-box-sizing: border-box;">Temperatura</label>\r\n<div style="margin-left:  ;"><input type="number" id="DLG1.V.R1.TEMPERATURA_1" title=""     class="GrBlueEdit " style="width: 100%; box-sizing: border-box; -moz-box-sizing: border-box; -ms-box-sizing: border-box; -webkit-box-sizing: border-box;"    name="V.R1.TEMPERATURA_1"   maxlength="6"  value=""    />\r\n</div>\r\n</div>\r\n<div class="A5CWLayout" style="width: 50%" >\r\n <label id="DLG1.LBL.R1.SATURACIONOXIGENO" for="DLG1.V.R1.SATURACIONOXIGENO" title="" class="GrBlueDialogLabel" style="display:block;">S.O %</label>\r\n\r\n <input type="number" id="DLG1.V.R1.SATURACIONOXIGENO" title=""     class="GrBlueEdit " style="width: 100%; box-sizing: border-box; -moz-box-sizing: border-box; -ms-box-sizing: border-box; -webkit-box-sizing: border-box;"    name="V.R1.SATURACIONOXIGENO"    value=""    />\r\n\r\n</div><br  style="clear:both; " />\r\n<div class="A5CWLayout" style="width: 50%" >\r\n <label id="DLG1.LBL.R1.RITMOCARDIACO" for="DLG1.V.R1.RITMOCARDIACO" title="" class="GrBlueDialogLabel" style="display:block;">R.C</label>\r\n\r\n <input type="number" id="DLG1.V.R1.RITMOCARDIACO" title=""     class="GrBlueEdit " style="width: 100%; box-sizing: border-box; -moz-box-sizing: border-box; -ms-box-sizing: border-box; -webkit-box-sizing: border-box;"    name="V.R1.RITMOCARDIACO"    value=""    />\r\n\r\n</div>\r\n<div class="A5CWLayout" style="width: 50%" >\r\n <label id="DLG1.LBL.R1.FRECUENCIARESPIRATORIA" for="DLG1.V.R1.FRECUENCIARESPIRATORIA" title="" class="GrBlueDialogLabel" style="display:block;">F.R</label>\r\n\r\n <input type="number" id="DLG1.V.R1.FRECUENCIARESPIRATORIA" title=""     class="GrBlueEdit " style="width: 100%; box-sizing: border-box; -moz-box-sizing: border-box; -ms-box-sizing: border-box; -webkit-box-sizing: border-box;"    name="V.R1.FRECUENCIARESPIRATORIA"    value=""    />\r\n\r\n</div><br  style="clear:both; " />\r\n<div class="A5CWLayout" style="width: 50%" >\r\n <label id="DLG1.LBL.R1.ACERCAMIENTOPERSONA" for="DLG1.V.R1.ACERCAMIENTOPERSONA" title="" class="GrBlueDialogLabel" style="float: left; box-sizing: border-box; -moz-box-sizing: border-box; -ms-box-sizing: border-box; -webkit-box-sizing: border-box;">Contacto COVID-19</label>\r\n<div style="margin-left:  ;"><span title="" ><span  id="DLG1.V.R1.ACERCAMIENTOPERSONA.CONTAINER" ><input type="checkbox" id="DLG1.V.R1.ACERCAMIENTOPERSONA" name="V.R1.ACERCAMIENTOPERSONA"  value="True"   /><label for="DLG1.V.R1.ACERCAMIENTOPERSONA"></label></span></span> \r\n  </div>\r\n</div><br  style="clear:both; " />\r\n<div class="A5CWLayout" style="width: 100%" >\r\n <label id="DLG1.LBL.R1.DESCRIPCIONACERCAMIENTO" for="DLG1.V.R1.DESCRIPCIONACERCAMIENTO" title="" class="GrBlueDialogLabel" style="display:block;">Descripci&oacute;n Contacto</label>\r\n\r\n <textarea id="DLG1.V.R1.DESCRIPCIONACERCAMIENTO" class="GrBlueEdit " title="" style="width: 100%; box-sizing: border-box; -moz-box-sizing: border-box; -ms-box-sizing: border-box; -webkit-box-sizing: border-box;" rows="2" cols="20"    name="V.R1.DESCRIPCIONACERCAMIENTO"  ></textarea>\r\n\r\n</div><br  style="clear:both; " />\r\n<div class="A5CWLayout" style="width: 50%" >\r\n \r\n<div  class="GrBlueList"   style="padding:0px; "  >\r\n <div id="DLG1.V.R1.LIST2.CONTROL"  class="DLG1_LIST2 <Default>" style="overflow: auto; width: 100%; height: 2in; "></div>\r\n</div>\r\n\r\n</div>\r\n<div class="A5CWLayout" style="width: 23%" >\r\n <label id="DLG1.LBL.R1.SI" for="DLG1.V.R1.SI" title="" class="GrBlueDialogLabel" style="text-align: Right; float: left; box-sizing: border-box; -moz-box-sizing: border-box; -ms-box-sizing: border-box; -webkit-box-sizing: border-box;">Si</label>\r\n<div style="margin-left:  ;"><span title="" ><span  id="DLG1.V.R1.SI.CONTAINER" ><input type="checkbox" id="DLG1.V.R1.SI" name="V.R1.SI"  value="True"   /><label for="DLG1.V.R1.SI"></label></span></span> \r\n  </div>\r\n</div>\r\n<div class="A5CWLayout" style="width: 23%" >\r\n <label id="DLG1.LBL.R1.NO" for="DLG1.V.R1.NO" title="" class="GrBlueDialogLabel" style="float: left; box-sizing: border-box; -moz-box-sizing: border-box; -ms-box-sizing: border-box; -webkit-box-sizing: border-box;">No</label>\r\n<div style="margin-left:  ;"><span title="" ><span  id="DLG1.V.R1.NO.CONTAINER" ><input type="checkbox" id="DLG1.V.R1.NO" name="V.R1.NO"  value="True"   /><label for="DLG1.V.R1.NO"></label></span></span> \r\n  </div>\r\n</div>\r\n<div class="A5CWLayout"     style="width: 100%; width: 100%; "  >\r\n <div>\r\n <fieldset id="DLG1.V.R1.FRAME_1" class="" style="-moz-border-radius: 8px;display:inline; width: 100%; box-sizing: border-box; -moz-box-sizing: border-box; -ms-box-sizing: border-box; -webkit-box-sizing: border-box;" >\r\n <legend class="" style=""  >Prueba R&aacute;pida</legend>\r\n<div class="A5CWLayout" style="width: 50%" >\r\n <label id="DLG1.LBL.R1.REALIZOPRUEBA" for="DLG1.V.R1.REALIZOPRUEBA" title="" class="GrBlueDialogLabel" style="float: left; box-sizing: border-box; -moz-box-sizing: border-box; -ms-box-sizing: border-box; -webkit-box-sizing: border-box;">Realizada</label>\r\n<div style="margin-left:  ;"><span title="" ><span  id="DLG1.V.R1.REALIZOPRUEBA.CONTAINER" ><input type="checkbox" id="DLG1.V.R1.REALIZOPRUEBA" name="V.R1.REALIZOPRUEBA"  value="True"   /><label for="DLG1.V.R1.REALIZOPRUEBA"></label></span></span> \r\n  </div>\r\n</div>\r\n<div class="A5CWLayout" style="width: 50%" >\r\n <label id="DLG1.LBL.R1.ESTADOPRUEBA" for="DLG1.V.R1.ESTADOPRUEBA" title="" class="GrBlueDialogLabel" style="float: left; box-sizing: border-box; -moz-box-sizing: border-box; -ms-box-sizing: border-box; -webkit-box-sizing: border-box;">Estado</label>\r\n<div style="margin-left:  ;"><select  \r\n  size="1" \r\n  class="GrBlueEdit "  \r\n  name="V.R1.ESTADOPRUEBA" \r\n  title=""\r\n  style="width: 100%; box-sizing: border-box; -moz-box-sizing: border-box; -ms-box-sizing: border-box; -webkit-box-sizing: border-box;"\r\n  id="DLG1.V.R1.ESTADOPRUEBA"  \r\n    \r\n  \r\n  \r\n   >\r\n<option value=""></option> <option value="Invalido">Invalido</option> <option value="Negativo">Negativo</option> <option value="Positivo">Positivo</option> \r\n</select>\r\n</div>\r\n</div><br  style="clear:both; " />\r\n<div class="A5CWLayout" style="width: 50%" >\r\n <label id="DLG1.LBL.R1.IMAGE" for="DLG1.V.R1.IMAGE" title="" class="" style="display:block;">Imagen 1</label>\r\n\r\n <img src="" id="DLG1.V.R1.IMAGE" class=" " title="" style="width: 100%; height: 1in; box-sizing: border-box; -moz-box-sizing: border-box; -ms-box-sizing: border-box; -webkit-box-sizing: border-box;"  onerror="if(typeof DLG1_DlgObj != \'undefined\') DLG1_DlgObj._executeEvent(\'onImageError\',{element: this});"  /><input type="hidden" id="DLG1.V.R1.IMAGE_HIDDENA5FN" name="V.R1.IMAGE_HIDDENA5FN" >\r\n</div>\r\n<div class="A5CWLayout" style="width: 50%" >\r\n <label id="DLG1.LBL.R1.IMAGE2" for="DLG1.V.R1.IMAGE2" title="" class="GrBlueDialogLabel" style="display:block;">Imagen 2</label>\r\n\r\n <img src="" id="DLG1.V.R1.IMAGE2" class=" " title="" style="width: 100%; height: 1in; box-sizing: border-box; -moz-box-sizing: border-box; -ms-box-sizing: border-box; -webkit-box-sizing: border-box;"  onerror="if(typeof DLG1_DlgObj != \'undefined\') DLG1_DlgObj._executeEvent(\'onImageError\',{element: this});"  /><input type="hidden" id="DLG1.V.R1.IMAGE2_HIDDENA5FN" name="V.R1.IMAGE2_HIDDENA5FN" >\r\n</div><br  style="clear:both; " />\r\n<div  id="DLG1.V.R1.CONTAINER_1"   \r\n   class="A5CWLayout "  style="display: flex; width: 50%; justify-content: center; "  >\r\n<div class="A5CWLayout"  style=" padding: 0px; ">\r\n<div class="A5CWLayout" style="width: " >\r\n <div id="DLG1.V.R1.IMAGE_1" style="z-index:10000; box-sizing: border-box; -moz-box-sizing: border-box; -ms-box-sizing: border-box; -webkit-box-sizing: border-box; ; padding:0;margin:0;"    >\r\n  <svg     class="" style="box-sizing: border-box; -moz-box-sizing: border-box; -ms-box-sizing: border-box; -webkit-box-sizing: border-box; fill: #081f7a;" title="" onerror="if(typeof DLG1_DlgObj != \'undefined\') DLG1_DlgObj._executeEvent(\'onImageError\',{element: this});" width="30" height="30" ><use x="0" y="0" width="100%" height="100%" xlink:href="#alpha-icon-camera"  pointer-events="none" /></svg>\r\n </div>\r\n</div>\r\n<div class="A5CWLayout" style="width: " >\r\n <div id="DLG1.V.R1.IMAGE_11" style="z-index:10000; box-sizing: border-box; -moz-box-sizing: border-box; -ms-box-sizing: border-box; -webkit-box-sizing: border-box; ; padding:0;margin:0;"    >\r\n  <svg     class="" style="box-sizing: border-box; -moz-box-sizing: border-box; -ms-box-sizing: border-box; -webkit-box-sizing: border-box; fill: #081f7a;" title="" onerror="if(typeof DLG1_DlgObj != \'undefined\') DLG1_DlgObj._executeEvent(\'onImageError\',{element: this});" width="30" height="30" ><use x="0" y="0" width="100%" height="100%" xlink:href="#alpha-icon-bookAdd"  pointer-events="none" /></svg>\r\n </div>\r\n</div>\r\n</div><div style="font: 0pt arial;clear:both;"></div>\r\n </div>\r\n\r\n<div  id="DLG1.V.R1.CONTAINER_2"   \r\n   class="A5CWLayout "  style="display: flex; width: 50%; justify-content: center; "  >\r\n<div class="A5CWLayout"  style=" padding: 0px; ">\r\n<div class="A5CWLayout" style="width: " >\r\n <div id="DLG1.V.R1.IMAGE_2" style="z-index:10000; box-sizing: border-box; -moz-box-sizing: border-box; -ms-box-sizing: border-box; -webkit-box-sizing: border-box; ; padding:0;margin:0;"    >\r\n  <svg     class="" style="box-sizing: border-box; -moz-box-sizing: border-box; -ms-box-sizing: border-box; -webkit-box-sizing: border-box; fill: #081f7a;" title="" onerror="if(typeof DLG1_DlgObj != \'undefined\') DLG1_DlgObj._executeEvent(\'onImageError\',{element: this});" width="30" height="30" ><use x="0" y="0" width="100%" height="100%" xlink:href="#alpha-icon-camera"  pointer-events="none" /></svg>\r\n </div>\r\n</div>\r\n<div class="A5CWLayout" style="width: " >\r\n <div id="DLG1.V.R1.IMAGE_13" style="z-index:10000; box-sizing: border-box; -moz-box-sizing: border-box; -ms-box-sizing: border-box; -webkit-box-sizing: border-box; ; padding:0;margin:0;"    >\r\n  <svg     class="" style="box-sizing: border-box; -moz-box-sizing: border-box; -ms-box-sizing: border-box; -webkit-box-sizing: border-box; fill: #081f7a;" title="" onerror="if(typeof DLG1_DlgObj != \'undefined\') DLG1_DlgObj._executeEvent(\'onImageError\',{element: this});" width="30" height="30" ><use x="0" y="0" width="100%" height="100%" xlink:href="#alpha-icon-bookAdd"  pointer-events="none" /></svg>\r\n </div>\r\n</div>\r\n</div><div style="font: 0pt arial;clear:both;"></div>\r\n </div>\r\n<br  id="DLG1.V.R1.CONTAINER_2.BREAK"  style="clear:both; " />\r\n</fieldset>\r\n</div>\r\n</div>\r\n<br  style="clear:both; " />\r\n<div class="A5CWLayout"     style="width: 100%; width: 100%; "  >\r\n <div>\r\n <fieldset id="DLG1.V.R1.FRAME_2" class="" style="-moz-border-radius: 8px;display:inline; width: 100%; box-sizing: border-box; -moz-box-sizing: border-box; -ms-box-sizing: border-box; -webkit-box-sizing: border-box;" >\r\n <legend class="" style=""  >Prueba PCR</legend>\r\n<div class="A5CWLayout" style="width: 50%" >\r\n <label id="DLG1.LBL.R1.REALIZOPRUEBAPCR" for="DLG1.V.R1.REALIZOPRUEBAPCR" title="" class="GrBlueDialogLabel" style="float: left; box-sizing: border-box; -moz-box-sizing: border-box; -ms-box-sizing: border-box; -webkit-box-sizing: border-box;">Realizada</label>\r\n<div style="margin-left:  ;"><span title="" ><span  id="DLG1.V.R1.REALIZOPRUEBAPCR.CONTAINER" ><input type="checkbox" id="DLG1.V.R1.REALIZOPRUEBAPCR" name="V.R1.REALIZOPRUEBAPCR"  value="True"   /><label for="DLG1.V.R1.REALIZOPRUEBAPCR"></label></span></span> \r\n  </div>\r\n</div>\r\n<div class="A5CWLayout" style="width: 50%" >\r\n <label id="DLG1.LBL.R1.ESTADOPRUEBAPCR" for="DLG1.V.R1.ESTADOPRUEBAPCR" title="" class="GrBlueDialogLabel" style="display:block;">Estado</label>\r\n\r\n <select  \r\n  size="1" \r\n  class="GrBlueEdit "  \r\n  name="V.R1.ESTADOPRUEBAPCR" \r\n  title=""\r\n  style="width: 100%; box-sizing: border-box; -moz-box-sizing: border-box; -ms-box-sizing: border-box; -webkit-box-sizing: border-box;"\r\n  id="DLG1.V.R1.ESTADOPRUEBAPCR"  \r\n    \r\n  \r\n  \r\n   >\r\n<option value=""></option> <option value="Invalido">Invalido</option> <option value="Negativo">Negativo</option> <option value="Positivo">Positivo</option> \r\n</select>\r\n\r\n</div><br  style="clear:both; " />\r\n<div class="A5CWLayout" style="width: 50%" >\r\n <label id="DLG1.LBL.R1.IMAGEPCR" for="DLG1.V.R1.IMAGEPCR" title="" class="GrBlueDialogLabel" style="text-align: Center; display: block; ">Imagen 1</label>\r\n\r\n <img src="" id="DLG1.V.R1.IMAGEPCR" class=" " title="" style="width: 100%; height: 1in; box-sizing: border-box; -moz-box-sizing: border-box; -ms-box-sizing: border-box; -webkit-box-sizing: border-box;"  onerror="if(typeof DLG1_DlgObj != \'undefined\') DLG1_DlgObj._executeEvent(\'onImageError\',{element: this});"  /><input type="hidden" id="DLG1.V.R1.IMAGEPCR_HIDDENA5FN" name="V.R1.IMAGEPCR_HIDDENA5FN" >\r\n</div>\r\n<div class="A5CWLayout" style="width: 50%" >\r\n <label id="DLG1.LBL.R1.IMAGEPCR2" for="DLG1.V.R1.IMAGEPCR2" title="" class="GrBlueDialogLabel" style="text-align: Center; display: block; ">Imagen 2</label>\r\n\r\n <img src="" id="DLG1.V.R1.IMAGEPCR2" class=" " title="" style="width: 100%; height: 1in; box-sizing: border-box; -moz-box-sizing: border-box; -ms-box-sizing: border-box; -webkit-box-sizing: border-box;"  onerror="if(typeof DLG1_DlgObj != \'undefined\') DLG1_DlgObj._executeEvent(\'onImageError\',{element: this});"  /><input type="hidden" id="DLG1.V.R1.IMAGEPCR2_HIDDENA5FN" name="V.R1.IMAGEPCR2_HIDDENA5FN" >\r\n</div><br  style="clear:both; " />\r\n<div  id="DLG1.V.R1.CONTAINER_8"   \r\n   class="A5CWLayout "  style="display: flex; width: 50%; justify-content: center; "  >\r\n<div class="A5CWLayout"  style=" padding: 0px; ">\r\n<div class="A5CWLayout" style="width: " >\r\n <div id="DLG1.V.R1.IMAGE_3" style="z-index:10000; box-sizing: border-box; -moz-box-sizing: border-box; -ms-box-sizing: border-box; -webkit-box-sizing: border-box; ; padding:0;margin:0;"    >\r\n  <svg     class="" style="box-sizing: border-box; -moz-box-sizing: border-box; -ms-box-sizing: border-box; -webkit-box-sizing: border-box; fill: #081f7a;" title="" onerror="if(typeof DLG1_DlgObj != \'undefined\') DLG1_DlgObj._executeEvent(\'onImageError\',{element: this});" width="30" height="30" ><use x="0" y="0" width="100%" height="100%" xlink:href="#alpha-icon-camera"  pointer-events="none" /></svg>\r\n </div>\r\n</div>\r\n<div class="A5CWLayout" style="width: " >\r\n <div id="DLG1.V.R1.IMAGE_5" style="z-index:10000; box-sizing: border-box; -moz-box-sizing: border-box; -ms-box-sizing: border-box; -webkit-box-sizing: border-box; ; padding:0;margin:0;"    >\r\n  <svg      class=" file" style="box-sizing: border-box; -moz-box-sizing: border-box; -ms-box-sizing: border-box; -webkit-box-sizing: border-box; fill: #081f7a;" title="" onerror="if(typeof DLG1_DlgObj != \'undefined\') DLG1_DlgObj._executeEvent(\'onImageError\',{element: this});" width="30" height="30" ><use x="0" y="0" width="100%" height="100%" xlink:href="#alpha-icon-bookAdd"  pointer-events="none" /></svg>\r\n </div>\r\n</div>\r\n</div><div style="font: 0pt arial;clear:both;"></div>\r\n </div>\r\n\r\n<div  id="DLG1.V.R1.CONTAINER_10"   \r\n   class="A5CWLayout "  style="display: flex; width: 50%; justify-content: center; "  >\r\n<div class="A5CWLayout"  style=" padding: 0px; ">\r\n<div class="A5CWLayout" style="width: " >\r\n <div id="DLG1.V.R1.IMAGE_4" style="z-index:10000; box-sizing: border-box; -moz-box-sizing: border-box; -ms-box-sizing: border-box; -webkit-box-sizing: border-box; ; padding:0;margin:0;"    >\r\n  <svg     class="" style="box-sizing: border-box; -moz-box-sizing: border-box; -ms-box-sizing: border-box; -webkit-box-sizing: border-box; fill: #081f7a;" title="" onerror="if(typeof DLG1_DlgObj != \'undefined\') DLG1_DlgObj._executeEvent(\'onImageError\',{element: this});" width="30" height="30" ><use x="0" y="0" width="100%" height="100%" xlink:href="#alpha-icon-camera"  pointer-events="none" /></svg>\r\n </div>\r\n</div>\r\n<div class="A5CWLayout" style="width: " >\r\n <div id="DLG1.V.R1.IMAGE_6" style="z-index:10000; box-sizing: border-box; -moz-box-sizing: border-box; -ms-box-sizing: border-box; -webkit-box-sizing: border-box; ; padding:0;margin:0;"    >\r\n  <svg     class="" style="box-sizing: border-box; -moz-box-sizing: border-box; -ms-box-sizing: border-box; -webkit-box-sizing: border-box; fill: #081f7a;" title="" onerror="if(typeof DLG1_DlgObj != \'undefined\') DLG1_DlgObj._executeEvent(\'onImageError\',{element: this});" width="30" height="30" ><use x="0" y="0" width="100%" height="100%" xlink:href="#alpha-icon-bookAdd"  pointer-events="none" /></svg>\r\n </div>\r\n</div>\r\n</div><div style="font: 0pt arial;clear:both;"></div>\r\n </div>\r\n<br  id="DLG1.V.R1.CONTAINER_10.BREAK"  style="clear:both; " />\r\n</fieldset>\r\n</div>\r\n</div>\r\n<br  style="clear:both; " />\r\n<div style="font: 0pt arial;clear:both;"></div>\r\n </div>\r\n<br  id="DLG1.V.R1.CONTAINER_9.BREAK"  style="clear:both; " />\r\n<div style="display:none;"><span><input type="text" id="DLG1.V.R1.ID_MONITOREOTRABAJADOR" title=""     class="GrBlueEdit " style=""    name="V.R1.ID_MONITOREOTRABAJADOR"    value=""    />\r\n</span>\r\n<span><input type="text" id="DLG1.V.R1.ID_MONITOREO" title=""     class="GrBlueEdit " style=""    name="V.R1.ID_MONITOREO"    value=""    />\r\n</span>\r\n<span><input type="text" id="DLG1.V.R1.ID_TRABAJADOR" title=""     class="GrBlueEdit " style=""    name="V.R1.ID_TRABAJADOR"    value=""    />\r\n</span>\r\n<span><input type="text" id="DLG1.V.R1.ID_MONITOREOTRABAJADORSINTOMA" title=""     class="GrBlueEdit " style=""    name="V.R1.ID_MONITOREOTRABAJADORSINTOMA"    value=""    />\r\n</span>\r\n<span><input type="text" id="DLG1.V.R1.ID_SINTOMA" title=""     class="GrBlueEdit " style=""    name="V.R1.ID_SINTOMA"    value=""    />\r\n</span>\r\n<span><input type="text" id="DLG1.V.R1.ID_TRABAJADOR_1" title=""     class="GrBlueEdit " style=""    name="V.R1.ID_TRABAJADOR_1"    value=""    />\r\n</span>\r\n<span><input type="text" id="DLG1.V.R1.ID_MONITOREOTRABAJADOR_1" title=""     class="GrBlueEdit " style=""    name="V.R1.ID_MONITOREOTRABAJADOR_1"    value=""    />\r\n</span>\r\n</div><div class="A5floatClear"></div>'
+			src: '<div  id="DLG1.V.R1.CONTAINER_9"   \r\n   class="A5CWLayout "  style=""  >\r\n<div class="A5CWLayout" style="width: 50%" >\r\n <label id="DLG1.LBL.R1.TEMPERATURA_1" for="DLG1.V.R1.TEMPERATURA_1" title="" class="GrBlueDialogLabel" style="float: left; box-sizing: border-box; -moz-box-sizing: border-box; -ms-box-sizing: border-box; -webkit-box-sizing: border-box;">Temperatura</label>\r\n<div style="margin-left:  ;"><input type="number" id="DLG1.V.R1.TEMPERATURA_1" title=""     class="GrBlueEdit " style="width: 100%; box-sizing: border-box; -moz-box-sizing: border-box; -ms-box-sizing: border-box; -webkit-box-sizing: border-box;"    name="V.R1.TEMPERATURA_1"   maxlength="6"  value=""    />\r\n</div>\r\n</div>\r\n<div class="A5CWLayout" style="width: 50%" >\r\n <label id="DLG1.LBL.R1.SATURACIONOXIGENO" for="DLG1.V.R1.SATURACIONOXIGENO" title="" class="GrBlueDialogLabel" style="display:block;">S.O %</label>\r\n\r\n <input type="number" id="DLG1.V.R1.SATURACIONOXIGENO" title=""     class="GrBlueEdit " style="width: 100%; box-sizing: border-box; -moz-box-sizing: border-box; -ms-box-sizing: border-box; -webkit-box-sizing: border-box;"    name="V.R1.SATURACIONOXIGENO"    value=""    />\r\n\r\n</div><br  style="clear:both; " />\r\n<div class="A5CWLayout" style="width: 50%" >\r\n <label id="DLG1.LBL.R1.RITMOCARDIACO" for="DLG1.V.R1.RITMOCARDIACO" title="" class="GrBlueDialogLabel" style="display:block;">R.C</label>\r\n\r\n <input type="number" id="DLG1.V.R1.RITMOCARDIACO" title=""     class="GrBlueEdit " style="width: 100%; box-sizing: border-box; -moz-box-sizing: border-box; -ms-box-sizing: border-box; -webkit-box-sizing: border-box;"    name="V.R1.RITMOCARDIACO"    value=""    />\r\n\r\n</div>\r\n<div class="A5CWLayout" style="width: 50%" >\r\n <label id="DLG1.LBL.R1.FRECUENCIARESPIRATORIA" for="DLG1.V.R1.FRECUENCIARESPIRATORIA" title="" class="GrBlueDialogLabel" style="display:block;">F.R</label>\r\n\r\n <input type="number" id="DLG1.V.R1.FRECUENCIARESPIRATORIA" title=""     class="GrBlueEdit " style="width: 100%; box-sizing: border-box; -moz-box-sizing: border-box; -ms-box-sizing: border-box; -webkit-box-sizing: border-box;"    name="V.R1.FRECUENCIARESPIRATORIA"    value=""    />\r\n\r\n</div><br  style="clear:both; " />\r\n<div class="A5CWLayout" style="width: 50%" >\r\n <label id="DLG1.LBL.R1.ACERCAMIENTOPERSONA" for="DLG1.V.R1.ACERCAMIENTOPERSONA" title="" class="GrBlueDialogLabel" style="float: left; box-sizing: border-box; -moz-box-sizing: border-box; -ms-box-sizing: border-box; -webkit-box-sizing: border-box;">Contacto COVID-19</label>\r\n<div style="margin-left:  ;"><span title="" ><span  id="DLG1.V.R1.ACERCAMIENTOPERSONA.CONTAINER" ><input type="checkbox" id="DLG1.V.R1.ACERCAMIENTOPERSONA" name="V.R1.ACERCAMIENTOPERSONA"  value="True"   /><label for="DLG1.V.R1.ACERCAMIENTOPERSONA"></label></span></span> \r\n  </div>\r\n</div><br  style="clear:both; " />\r\n<div class="A5CWLayout" style="width: 100%" >\r\n <label id="DLG1.LBL.R1.DESCRIPCIONACERCAMIENTO" for="DLG1.V.R1.DESCRIPCIONACERCAMIENTO" title="" class="GrBlueDialogLabel" style="display:block;">Descripci&oacute;n Contacto</label>\r\n\r\n <textarea id="DLG1.V.R1.DESCRIPCIONACERCAMIENTO" class="GrBlueEdit " title="" style="width: 100%; box-sizing: border-box; -moz-box-sizing: border-box; -ms-box-sizing: border-box; -webkit-box-sizing: border-box;" rows="2" cols="20"    name="V.R1.DESCRIPCIONACERCAMIENTO"  ></textarea>\r\n\r\n</div><br  style="clear:both; " />\r\n<div class="A5CWLayout" style="width: 50%" >\r\n \r\n<div  class="GrBlueList"   style="padding:0px; "  >\r\n <div id="DLG1.V.R1.LIST2.CONTROL"  class="DLG1_LIST2 <Default>" style="overflow: auto; width: 100%; height: 2in; "></div>\r\n</div>\r\n\r\n</div>\r\n<div class="A5CWLayout" style="width: 23%" >\r\n <label id="DLG1.LBL.R1.SI" for="DLG1.V.R1.SI" title="" class="GrBlueDialogLabel" style="text-align: Right; float: left; box-sizing: border-box; -moz-box-sizing: border-box; -ms-box-sizing: border-box; -webkit-box-sizing: border-box;">Si</label>\r\n<div style="margin-left:  ;"><span title="" ><span  id="DLG1.V.R1.SI.CONTAINER" ><input type="checkbox" id="DLG1.V.R1.SI" name="V.R1.SI"  value="True"   /><label for="DLG1.V.R1.SI"></label></span></span> \r\n  </div>\r\n</div>\r\n<div class="A5CWLayout" style="width: 23%" >\r\n <label id="DLG1.LBL.R1.NO" for="DLG1.V.R1.NO" title="" class="GrBlueDialogLabel" style="float: left; box-sizing: border-box; -moz-box-sizing: border-box; -ms-box-sizing: border-box; -webkit-box-sizing: border-box;">No</label>\r\n<div style="margin-left:  ;"><span title="" ><span  id="DLG1.V.R1.NO.CONTAINER" ><input type="checkbox" id="DLG1.V.R1.NO" name="V.R1.NO"  value="True"   /><label for="DLG1.V.R1.NO"></label></span></span> \r\n  </div>\r\n</div>\r\n<div class="A5CWLayout"     style="width: 100%; width: 100%; "  >\r\n <div>\r\n <fieldset id="DLG1.V.R1.FRAME_1" class="" style="-moz-border-radius: 8px;display:inline; width: 100%; box-sizing: border-box; -moz-box-sizing: border-box; -ms-box-sizing: border-box; -webkit-box-sizing: border-box;" >\r\n <legend class="" style=""  >Prueba R&aacute;pida</legend>\r\n<div class="A5CWLayout" style="width: 50%" >\r\n <label id="DLG1.LBL.R1.REALIZOPRUEBA" for="DLG1.V.R1.REALIZOPRUEBA" title="" class="GrBlueDialogLabel" style="float: left; box-sizing: border-box; -moz-box-sizing: border-box; -ms-box-sizing: border-box; -webkit-box-sizing: border-box;">Realizada</label>\r\n<div style="margin-left:  ;"><span title="" ><span  id="DLG1.V.R1.REALIZOPRUEBA.CONTAINER" ><input type="checkbox" id="DLG1.V.R1.REALIZOPRUEBA" name="V.R1.REALIZOPRUEBA"  value="True"   /><label for="DLG1.V.R1.REALIZOPRUEBA"></label></span></span> \r\n  </div>\r\n</div>\r\n<div class="A5CWLayout" style="width: 50%" >\r\n <label id="DLG1.LBL.R1.ESTADOPRUEBA" for="DLG1.V.R1.ESTADOPRUEBA" title="" class="GrBlueDialogLabel" style="float: left; box-sizing: border-box; -moz-box-sizing: border-box; -ms-box-sizing: border-box; -webkit-box-sizing: border-box;">Estado</label>\r\n<div style="margin-left:  ;"><select  \r\n  size="1" \r\n  class="GrBlueEdit "  \r\n  name="V.R1.ESTADOPRUEBA" \r\n  title=""\r\n  style="width: 100%; box-sizing: border-box; -moz-box-sizing: border-box; -ms-box-sizing: border-box; -webkit-box-sizing: border-box;"\r\n  id="DLG1.V.R1.ESTADOPRUEBA"  \r\n    \r\n  \r\n  \r\n   >\r\n<option value=""></option> <option value="Invalido">Invalido</option> <option value="Negativo">Negativo</option> <option value="Positivo">Positivo</option> \r\n</select>\r\n</div>\r\n</div><br  style="clear:both; " />\r\n<div class="A5CWLayout" style="width: 50%" >\r\n <label id="DLG1.LBL.R1.IMAGE" for="DLG1.V.R1.IMAGE" title="" class="" style="display:block;">Imagen 1</label>\r\n\r\n <img src="" id="DLG1.V.R1.IMAGE" class=" " title="" style="width: 100%; height: 1in; box-sizing: border-box; -moz-box-sizing: border-box; -ms-box-sizing: border-box; -webkit-box-sizing: border-box;"  onerror="if(typeof DLG1_DlgObj != \'undefined\') DLG1_DlgObj._executeEvent(\'onImageError\',{element: this});"  /><input type="hidden" id="DLG1.V.R1.IMAGE_HIDDENA5FN" name="V.R1.IMAGE_HIDDENA5FN" >\r\n</div>\r\n<div class="A5CWLayout" style="width: 50%" >\r\n <label id="DLG1.LBL.R1.IMAGE2" for="DLG1.V.R1.IMAGE2" title="" class="GrBlueDialogLabel" style="display:block;">Imagen 2</label>\r\n\r\n <img src="" id="DLG1.V.R1.IMAGE2" class=" " title="" style="width: 100%; height: 1in; box-sizing: border-box; -moz-box-sizing: border-box; -ms-box-sizing: border-box; -webkit-box-sizing: border-box;"  onerror="if(typeof DLG1_DlgObj != \'undefined\') DLG1_DlgObj._executeEvent(\'onImageError\',{element: this});"  /><input type="hidden" id="DLG1.V.R1.IMAGE2_HIDDENA5FN" name="V.R1.IMAGE2_HIDDENA5FN" >\r\n</div><br  style="clear:both; " />\r\n<div  id="DLG1.V.R1.CONTAINER_1"   \r\n   class="A5CWLayout "  style="display: flex; width: 50%; justify-content: center; "  >\r\n<div class="A5CWLayout"  style=" padding: 0px; ">\r\n<div class="A5CWLayout" style="width: " >\r\n <div id="DLG1.V.R1.IMAGE_1" style="z-index:10000; box-sizing: border-box; -moz-box-sizing: border-box; -ms-box-sizing: border-box; -webkit-box-sizing: border-box; ; padding:0;margin:0;"    >\r\n  <svg     class="" style="box-sizing: border-box; -moz-box-sizing: border-box; -ms-box-sizing: border-box; -webkit-box-sizing: border-box; fill: #081f7a;" title="" onerror="if(typeof DLG1_DlgObj != \'undefined\') DLG1_DlgObj._executeEvent(\'onImageError\',{element: this});" width="30" height="30" ><use x="0" y="0" width="100%" height="100%" xlink:href="#alpha-icon-camera"  pointer-events="none" /></svg>\r\n </div>\r\n</div>\r\n<div class="A5CWLayout" style="width: " >\r\n <div id="DLG1.V.R1.IMAGE_11" style="z-index:10000; box-sizing: border-box; -moz-box-sizing: border-box; -ms-box-sizing: border-box; -webkit-box-sizing: border-box; ; padding:0;margin:0;"    >\r\n  <svg     class="" style="box-sizing: border-box; -moz-box-sizing: border-box; -ms-box-sizing: border-box; -webkit-box-sizing: border-box; fill: #081f7a;" title="" onerror="if(typeof DLG1_DlgObj != \'undefined\') DLG1_DlgObj._executeEvent(\'onImageError\',{element: this});" width="30" height="30" ><use x="0" y="0" width="100%" height="100%" xlink:href="#alpha-icon-bookAdd"  pointer-events="none" /></svg>\r\n </div>\r\n</div>\r\n</div><div style="font: 0pt arial;clear:both;"></div>\r\n </div>\r\n\r\n<div  id="DLG1.V.R1.CONTAINER_2"   \r\n   class="A5CWLayout "  style="display: flex; width: 50%; justify-content: center; "  >\r\n<div class="A5CWLayout"  style=" padding: 0px; ">\r\n<div class="A5CWLayout" style="width: " >\r\n <div id="DLG1.V.R1.IMAGE_2" style="z-index:10000; box-sizing: border-box; -moz-box-sizing: border-box; -ms-box-sizing: border-box; -webkit-box-sizing: border-box; ; padding:0;margin:0;"    >\r\n  <svg     class="" style="box-sizing: border-box; -moz-box-sizing: border-box; -ms-box-sizing: border-box; -webkit-box-sizing: border-box; fill: #081f7a;" title="" onerror="if(typeof DLG1_DlgObj != \'undefined\') DLG1_DlgObj._executeEvent(\'onImageError\',{element: this});" width="30" height="30" ><use x="0" y="0" width="100%" height="100%" xlink:href="#alpha-icon-camera"  pointer-events="none" /></svg>\r\n </div>\r\n</div>\r\n<div class="A5CWLayout" style="width: " >\r\n <div id="DLG1.V.R1.IMAGE_13" style="z-index:10000; box-sizing: border-box; -moz-box-sizing: border-box; -ms-box-sizing: border-box; -webkit-box-sizing: border-box; ; padding:0;margin:0;"    >\r\n  <svg     class="" style="box-sizing: border-box; -moz-box-sizing: border-box; -ms-box-sizing: border-box; -webkit-box-sizing: border-box; fill: #081f7a;" title="" onerror="if(typeof DLG1_DlgObj != \'undefined\') DLG1_DlgObj._executeEvent(\'onImageError\',{element: this});" width="30" height="30" ><use x="0" y="0" width="100%" height="100%" xlink:href="#alpha-icon-bookAdd"  pointer-events="none" /></svg>\r\n </div>\r\n</div>\r\n</div><div style="font: 0pt arial;clear:both;"></div>\r\n </div>\r\n<br  id="DLG1.V.R1.CONTAINER_2.BREAK"  style="clear:both; " />\r\n</fieldset>\r\n</div>\r\n</div>\r\n<br  style="clear:both; " />\r\n<div class="A5CWLayout"     style="width: 100%; width: 100%; "  >\r\n <div>\r\n <fieldset id="DLG1.V.R1.FRAME_2" class="" style="-moz-border-radius: 8px;display:inline; width: 100%; box-sizing: border-box; -moz-box-sizing: border-box; -ms-box-sizing: border-box; -webkit-box-sizing: border-box;" >\r\n <legend class="" style=""  >Prueba PCR</legend>\r\n<div class="A5CWLayout" style="width: 50%" >\r\n <label id="DLG1.LBL.R1.REALIZOPRUEBAPCR" for="DLG1.V.R1.REALIZOPRUEBAPCR" title="" class="GrBlueDialogLabel" style="float: left; box-sizing: border-box; -moz-box-sizing: border-box; -ms-box-sizing: border-box; -webkit-box-sizing: border-box;">Realizada</label>\r\n<div style="margin-left:  ;"><span title="" ><span  id="DLG1.V.R1.REALIZOPRUEBAPCR.CONTAINER" ><input type="checkbox" id="DLG1.V.R1.REALIZOPRUEBAPCR" name="V.R1.REALIZOPRUEBAPCR"  value="True"   /><label for="DLG1.V.R1.REALIZOPRUEBAPCR"></label></span></span> \r\n  </div>\r\n</div>\r\n<div class="A5CWLayout" style="width: 50%" >\r\n <label id="DLG1.LBL.R1.ESTADOPRUEBAPCR" for="DLG1.V.R1.ESTADOPRUEBAPCR" title="" class="GrBlueDialogLabel" style="display:block;">Estado</label>\r\n\r\n <select  \r\n  size="1" \r\n  class="GrBlueEdit "  \r\n  name="V.R1.ESTADOPRUEBAPCR" \r\n  title=""\r\n  style="width: 100%; box-sizing: border-box; -moz-box-sizing: border-box; -ms-box-sizing: border-box; -webkit-box-sizing: border-box;"\r\n  id="DLG1.V.R1.ESTADOPRUEBAPCR"  \r\n    \r\n  \r\n  \r\n   >\r\n<option value=""></option> <option value="Invalido">Invalido</option> <option value="Negativo">Negativo</option> <option value="Positivo">Positivo</option> \r\n</select>\r\n\r\n</div><br  style="clear:both; " />\r\n<div class="A5CWLayout" style="width: 50%" >\r\n <label id="DLG1.LBL.R1.IMAGEPCR" for="DLG1.V.R1.IMAGEPCR" title="" class="GrBlueDialogLabel" style="text-align: Center; display: block; ">Imagen 1</label>\r\n\r\n <img src="" id="DLG1.V.R1.IMAGEPCR" class=" " title="" style="width: 100%; height: 1in; box-sizing: border-box; -moz-box-sizing: border-box; -ms-box-sizing: border-box; -webkit-box-sizing: border-box;"  onerror="if(typeof DLG1_DlgObj != \'undefined\') DLG1_DlgObj._executeEvent(\'onImageError\',{element: this});"  /><input type="hidden" id="DLG1.V.R1.IMAGEPCR_HIDDENA5FN" name="V.R1.IMAGEPCR_HIDDENA5FN" >\r\n</div>\r\n<div class="A5CWLayout" style="width: 50%" >\r\n <label id="DLG1.LBL.R1.IMAGEPCR2" for="DLG1.V.R1.IMAGEPCR2" title="" class="GrBlueDialogLabel" style="text-align: Center; display: block; ">Imagen 2</label>\r\n\r\n <img src="" id="DLG1.V.R1.IMAGEPCR2" class=" " title="" style="width: 100%; height: 1in; box-sizing: border-box; -moz-box-sizing: border-box; -ms-box-sizing: border-box; -webkit-box-sizing: border-box;"  onerror="if(typeof DLG1_DlgObj != \'undefined\') DLG1_DlgObj._executeEvent(\'onImageError\',{element: this});"  /><input type="hidden" id="DLG1.V.R1.IMAGEPCR2_HIDDENA5FN" name="V.R1.IMAGEPCR2_HIDDENA5FN" >\r\n</div><br  style="clear:both; " />\r\n<div  id="DLG1.V.R1.CONTAINER_8"   \r\n   class="A5CWLayout "  style="display: flex; width: 50%; justify-content: center; "  >\r\n<div class="A5CWLayout"  style=" padding: 0px; ">\r\n<div class="A5CWLayout" style="width: " >\r\n <div id="DLG1.V.R1.IMAGE_3" style="z-index:10000; box-sizing: border-box; -moz-box-sizing: border-box; -ms-box-sizing: border-box; -webkit-box-sizing: border-box; ; padding:0;margin:0;"    >\r\n  <svg     class="" style="box-sizing: border-box; -moz-box-sizing: border-box; -ms-box-sizing: border-box; -webkit-box-sizing: border-box; fill: #081f7a;" title="" onerror="if(typeof DLG1_DlgObj != \'undefined\') DLG1_DlgObj._executeEvent(\'onImageError\',{element: this});" width="30" height="30" ><use x="0" y="0" width="100%" height="100%" xlink:href="#alpha-icon-camera"  pointer-events="none" /></svg>\r\n </div>\r\n</div>\r\n<div class="A5CWLayout" style="width: " >\r\n <div id="DLG1.V.R1.IMAGE_5" style="z-index:10000; box-sizing: border-box; -moz-box-sizing: border-box; -ms-box-sizing: border-box; -webkit-box-sizing: border-box; ; padding:0;margin:0;"    >\r\n  <svg      class=" file" style="box-sizing: border-box; -moz-box-sizing: border-box; -ms-box-sizing: border-box; -webkit-box-sizing: border-box; fill: #081f7a;" title="" onerror="if(typeof DLG1_DlgObj != \'undefined\') DLG1_DlgObj._executeEvent(\'onImageError\',{element: this});" width="30" height="30" ><use x="0" y="0" width="100%" height="100%" xlink:href="#alpha-icon-bookAdd"  pointer-events="none" /></svg>\r\n </div>\r\n</div>\r\n</div><div style="font: 0pt arial;clear:both;"></div>\r\n </div>\r\n\r\n<div  id="DLG1.V.R1.CONTAINER_10"   \r\n   class="A5CWLayout "  style="display: flex; width: 50%; justify-content: center; "  >\r\n<div class="A5CWLayout"  style=" padding: 0px; ">\r\n<div class="A5CWLayout" style="width: " >\r\n <div id="DLG1.V.R1.IMAGE_4" style="z-index:10000; box-sizing: border-box; -moz-box-sizing: border-box; -ms-box-sizing: border-box; -webkit-box-sizing: border-box; ; padding:0;margin:0;"    >\r\n  <svg     class="" style="box-sizing: border-box; -moz-box-sizing: border-box; -ms-box-sizing: border-box; -webkit-box-sizing: border-box; fill: #081f7a;" title="" onerror="if(typeof DLG1_DlgObj != \'undefined\') DLG1_DlgObj._executeEvent(\'onImageError\',{element: this});" width="30" height="30" ><use x="0" y="0" width="100%" height="100%" xlink:href="#alpha-icon-camera"  pointer-events="none" /></svg>\r\n </div>\r\n</div>\r\n<div class="A5CWLayout" style="width: " >\r\n <div id="DLG1.V.R1.IMAGE_6" style="z-index:10000; box-sizing: border-box; -moz-box-sizing: border-box; -ms-box-sizing: border-box; -webkit-box-sizing: border-box; ; padding:0;margin:0;"    >\r\n  <svg     class="" style="box-sizing: border-box; -moz-box-sizing: border-box; -ms-box-sizing: border-box; -webkit-box-sizing: border-box; fill: #081f7a;" title="" onerror="if(typeof DLG1_DlgObj != \'undefined\') DLG1_DlgObj._executeEvent(\'onImageError\',{element: this});" width="30" height="30" ><use x="0" y="0" width="100%" height="100%" xlink:href="#alpha-icon-bookAdd"  pointer-events="none" /></svg>\r\n </div>\r\n</div>\r\n</div><div style="font: 0pt arial;clear:both;"></div>\r\n </div>\r\n<br  id="DLG1.V.R1.CONTAINER_10.BREAK"  style="clear:both; " />\r\n</fieldset>\r\n</div>\r\n</div>\r\n<br  style="clear:both; " />\r\n<div style="font: 0pt arial;clear:both;"></div>\r\n </div>\r\n<br  id="DLG1.V.R1.CONTAINER_9.BREAK"  style="clear:both; " />\r\n<div class="A5floatClear"></div>'
 		},
 		scroll: {
 			axis: 'both',
@@ -1075,7 +1258,7 @@ if(typeof DLG1_DlgObj != 'undefined' && typeof DLG1_DlgObj._panelCardResize != '
 	overlay: {
 	},
 	onSize: function() {;
-if(typeof DLG1_DlgObj != 'undefined') {var mObj = DLG1_DlgObj.getControl('LIST2'); if(mObj) {
+if(typeof DLG1_DlgObj != 'undefined' && DLG1_DlgObj ) {var mObj = DLG1_DlgObj.getControl('LIST2'); if(mObj) {
    if(mObj.resize) {
     mObj.resize();
    } else {
@@ -1130,7 +1313,7 @@ if(typeof DLG1_DlgObj != 'undefined' && typeof DLG1_DlgObj._panelCardResize != '
 	overlay: {
 	},
 	onSize: function() {;
-if(typeof DLG1_DlgObj != 'undefined') {var mObj = DLG1_DlgObj.getControl('LIST3'); if(mObj) {
+if(typeof DLG1_DlgObj != 'undefined' && DLG1_DlgObj ) {var mObj = DLG1_DlgObj.getControl('LIST3'); if(mObj) {
    if(mObj.resize) {
     mObj.resize();
    } else {
@@ -1185,7 +1368,7 @@ if(typeof DLG1_DlgObj != 'undefined' && typeof DLG1_DlgObj._panelCardResize != '
 	overlay: {
 	},
 	onSize: function() {;
-if(typeof DLG1_DlgObj != 'undefined') {var mObj = DLG1_DlgObj.getControl('LIST4'); if(mObj) {
+if(typeof DLG1_DlgObj != 'undefined' && DLG1_DlgObj ) {var mObj = DLG1_DlgObj.getControl('LIST4'); if(mObj) {
    if(mObj.resize) {
     mObj.resize();
    } else {
@@ -1242,7 +1425,7 @@ if(typeof DLG1_DlgObj != 'undefined' && typeof DLG1_DlgObj._panelCardResize != '
 	overlay: {
 	},
 	onSize: function() {;
-if(typeof DLG1_DlgObj != 'undefined') {var mObj = DLG1_DlgObj.getControl('LISTCUARENTENA'); if(mObj) {
+if(typeof DLG1_DlgObj != 'undefined' && DLG1_DlgObj ) {var mObj = DLG1_DlgObj.getControl('LISTCUARENTENA'); if(mObj) {
    if(mObj.resize) {
     mObj.resize();
    } else {
@@ -1343,7 +1526,7 @@ if(typeof DLG1_DlgObj != 'undefined' && typeof DLG1_DlgObj._panelCardResize != '
 	overlay: {
 	},
 	onSize: function() {;
-if(typeof DLG1_DlgObj != 'undefined') {var mObj = DLG1_DlgObj.getControl('LISTEVALUACION'); if(mObj) {
+if(typeof DLG1_DlgObj != 'undefined' && DLG1_DlgObj ) {var mObj = DLG1_DlgObj.getControl('LISTEVALUACION'); if(mObj) {
    if(mObj.resize) {
     mObj.resize();
    } else {
@@ -1362,7 +1545,7 @@ if(typeof DLG1_DlgObj != 'undefined' && typeof DLG1_DlgObj._panelCardResize != '
 	body: {
 		content: {
 			type: 'html',
-			src: '<div class="A5CWLayout" style="width: 4in" >\r\n \r\n<div  class="GrBlueList"   style="padding:0px; "  >\r\n <div id="DLG1.V.R1.LISTEVALUACIONCAT1.CONTROL"  class="DLG1_LISTEVALUACIONCAT1 <Default>" style="overflow: auto; width: 100%; height: 3in; "></div>\r\n</div>\r\n\r\n</div><br  style="clear:both; " />\r\n<div style="width:;" class="A5CWLayout GrBlueTabT" id="DLG1.V.R1.TAB_1">\r\n <div id="DLG1.V.R1.TAB_1.TABBAND" class="GrBlueTabTBand">\r\n  <a id="DLG1.V.R1.TAB_1.0.TAB" class="" href="#">Evaluacion</a>\r\n  <a id="DLG1.V.R1.TAB_1.1.TAB" class="" href="#">2</a>\r\n <br style="clear: both;" />\r\n </div>\r\n <div id="DLG1.V.R1.TAB_1.PANES" class="GrBlueTabTPanes">\r\n<div id="DLG1.V.R1.TAB_1.0.PANE">\r\n\r\n<div class="A5CWLayout" style="width: 2in" >\r\n <input type="text" id="DLG1.V.R1.TEXTBOX2" title=""     class="GrBlueEdit " style="width: 100%; box-sizing: border-box; -moz-box-sizing: border-box; -ms-box-sizing: border-box; -webkit-box-sizing: border-box;"    name="V.R1.TEXTBOX2"    value=""    />\r\n\r\n</div><div class="A5floatClear"></div>\r\n</div>\r\n<div id="DLG1.V.R1.TAB_1.1.PANE">\r\n\r\n<div class="A5CWLayout" style="width: 2in" >\r\n <input type="text" id="DLG1.V.R1.TEXTBOX3" title=""     class="GrBlueEdit " style="width: 100%; box-sizing: border-box; -moz-box-sizing: border-box; -ms-box-sizing: border-box; -webkit-box-sizing: border-box;"    name="V.R1.TEXTBOX3"    value=""    />\r\n\r\n</div><div class="A5floatClear"></div>\r\n</div>\r\n</div>\r\n</div><br  style="clear:both; " /><div class="A5container">\r\n<div style="width: 5in; text-align:right;;">\r\n<table><tr><td><span id="DLG1.TAB_1.PROGRESS">Step&nbsp;<span id="DLG1.TAB_1.PROGRESS.CURRENT"></span>&nbsp;of&nbsp;<span id="DLG1.TAB_1.PROGRESS.STEPCOUNT"></span>&nbsp;steps.</span>&nbsp;</td><td><button id="DLG1.TAB_1.CANCEL" type="button" class="GrBlueButton" style=""  onmousedown="A5._btn(this,\'onmousedown\',\'GrBlue\'); $e.preventDefault(event);" onmouseup="A5._btn(this,\'onmouseup\',\'GrBlue\');" onmouseover="A5._btn(this,\'onmouseover\',\'GrBlue\');" onmouseout="A5._btn(this,\'onmouseout\',\'GrBlue\');"   >Cancel</button>\r\n<button id="DLG1.TAB_1.PREVIOUS" type="button" class="GrBlueButton" style="display: none; "  onmousedown="A5._btn(this,\'onmousedown\',\'GrBlue\'); $e.preventDefault(event);" onmouseup="A5._btn(this,\'onmouseup\',\'GrBlue\');" onmouseover="A5._btn(this,\'onmouseover\',\'GrBlue\');" onmouseout="A5._btn(this,\'onmouseout\',\'GrBlue\');"   onclick="DLG1_DlgObj.genieObjectNavigate(\'TAB_1\',\'prev\');"  >&lt; Previous</button>\r\n<button id="DLG1.TAB_1.NEXT" type="button" class="GrBlueButton" style=""  onmousedown="A5._btn(this,\'onmousedown\',\'GrBlue\'); $e.preventDefault(event);" onmouseup="A5._btn(this,\'onmouseup\',\'GrBlue\');" onmouseover="A5._btn(this,\'onmouseover\',\'GrBlue\');" onmouseout="A5._btn(this,\'onmouseout\',\'GrBlue\');"   onclick="DLG1_DlgObj.validate(function() {DLG1_DlgObj.genieObjectNavigate(\'TAB_1\',\'next\'); },\'\',\'TAB_1\');"  >Next &gt;</button>\r\n<button id="DLG1.TAB_1.SUBMIT" type="button" class="GrBlueButton" style="display: none; "  onmousedown="A5._btn(this,\'onmousedown\',\'GrBlue\'); $e.preventDefault(event);" onmouseup="A5._btn(this,\'onmouseup\',\'GrBlue\');" onmouseover="A5._btn(this,\'onmouseover\',\'GrBlue\');" onmouseout="A5._btn(this,\'onmouseout\',\'GrBlue\');"   onclick="DLG1_DlgObj.submit();"  >Submit</button>\r\n</td></tr></table>\r\n</div></div><br style="clear:both; " /><div style="height:.1in; font: 0pt;"></div>\r\n<div class="A5floatClear"></div>'
+			src: '<div style="width:;" class="A5CWLayout GrBlueTabT" id="DLG1.V.R1.TAB_1">\r\n <div id="DLG1.V.R1.TAB_1.TABBAND" class="GrBlueTabTBand">\r\n  <a id="DLG1.V.R1.TAB_1.0.TAB" class="" href="#">Evaluacion</a>\r\n  <a id="DLG1.V.R1.TAB_1.1.TAB" class="" href="#">2</a>\r\n <br style="clear: both;" />\r\n </div>\r\n <div id="DLG1.V.R1.TAB_1.PANES" class="GrBlueTabTPanes">\r\n<div id="DLG1.V.R1.TAB_1.0.PANE">\r\n\r\n<div class="A5CWLayout" style="width: 100%" >\r\n \r\n<div  class="GrBlueList"   style="padding:0px; "  >\r\n <div id="DLG1.V.R1.LISTEVALUACIONCAT1.CONTROL"  class="DLG1_LISTEVALUACIONCAT1 <Default>" style="overflow: auto; width: 100%; height: 4in; "></div>\r\n</div>\r\n\r\n</div>\r\n<div class="A5CWLayout" style="width: 50%" >\r\n <label id="DLG1.LBL.R1.ID_TRABAJADORDESEMPENO_ELEMENTO" for="DLG1.V.R1.ID_TRABAJADORDESEMPENO_ELEMENTO" title="" class="GrBlueDialogLabel" style="display:block;">Id TrabajadorDesempeno Elemento</label>\r\n\r\n <input type="text" id="DLG1.V.R1.ID_TRABAJADORDESEMPENO_ELEMENTO" title=""     class="GrBlueEdit " style="width: 100%; box-sizing: border-box; -moz-box-sizing: border-box; -ms-box-sizing: border-box; -webkit-box-sizing: border-box;"    name="V.R1.ID_TRABAJADORDESEMPENO_ELEMENTO"    value=""    />\r\n\r\n</div><br  style="clear:both; " />\r\n<div class="A5CWLayout" style="width: 50%" >\r\n <label id="DLG1.LBL.R1.PUNTUACIONTRABAJADOR" for="DLG1.V.R1.PUNTUACIONTRABAJADOR" title="" class="GrBlueDialogLabel" style="display:block;">Autoevaluaci&oacute;n</label>\r\n\r\n <input type="text" id="DLG1.V.R1.PUNTUACIONTRABAJADOR" title=""     class="GrBlueEdit " style="width: 100%; box-sizing: border-box; -moz-box-sizing: border-box; -ms-box-sizing: border-box; -webkit-box-sizing: border-box;"    name="V.R1.PUNTUACIONTRABAJADOR"    value=""    />\r\n\r\n</div><br  style="clear:both; " />\r\n<div class="A5CWLayout" style="width: 50%" >\r\n <label id="DLG1.LBL.R1.PUNTUACIONJEFE" for="DLG1.V.R1.PUNTUACIONJEFE" title="" class="GrBlueDialogLabel" style="display:block;">Evaluador</label>\r\n\r\n <input type="text" id="DLG1.V.R1.PUNTUACIONJEFE" title=""     class="GrBlueEdit " style="width: 100%; box-sizing: border-box; -moz-box-sizing: border-box; -ms-box-sizing: border-box; -webkit-box-sizing: border-box;"    name="V.R1.PUNTUACIONJEFE"    value=""    />\r\n\r\n</div><br  style="clear:both; " />\r\n<div class="A5CWLayout" style="width: " >\r\n <button type="button" id="DLG1.V.R1.BUTTON_DVSAVE_LISTEVALUACIONCAT1"    ></button>\r\n</div>\r\n<div class="A5CWLayout" style="width: " >\r\n <button type="button" id="DLG1.V.R1.BUTTON_DVSYNCHRONIZE_LISTEVALUACIONCAT1"    ></button>\r\n</div><div class="A5floatClear"></div>\r\n</div>\r\n<div id="DLG1.V.R1.TAB_1.1.PANE">\r\n\r\n<div class="A5CWLayout" style="width: 2in" >\r\n <input type="text" id="DLG1.V.R1.TEXTBOX3" title=""     class="GrBlueEdit " style="width: 100%; box-sizing: border-box; -moz-box-sizing: border-box; -ms-box-sizing: border-box; -webkit-box-sizing: border-box;"    name="V.R1.TEXTBOX3"    value=""    />\r\n\r\n</div><div class="A5floatClear"></div>\r\n</div>\r\n</div>\r\n</div><br  style="clear:both; " /><div class="A5container">\r\n<div style="width: 5in; text-align:right;;">\r\n<table><tr><td><span id="DLG1.TAB_1.PROGRESS">Step&nbsp;<span id="DLG1.TAB_1.PROGRESS.CURRENT"></span>&nbsp;of&nbsp;<span id="DLG1.TAB_1.PROGRESS.STEPCOUNT"></span>&nbsp;steps.</span>&nbsp;</td><td><button id="DLG1.TAB_1.CANCEL" type="button" class="GrBlueButton" style=""  onmousedown="A5._btn(this,\'onmousedown\',\'GrBlue\'); $e.preventDefault(event);" onmouseup="A5._btn(this,\'onmouseup\',\'GrBlue\');" onmouseover="A5._btn(this,\'onmouseover\',\'GrBlue\');" onmouseout="A5._btn(this,\'onmouseout\',\'GrBlue\');"   >Cancelar</button>\r\n<button id="DLG1.TAB_1.PREVIOUS" type="button" class="GrBlueButton" style="display: none; "  onmousedown="A5._btn(this,\'onmousedown\',\'GrBlue\'); $e.preventDefault(event);" onmouseup="A5._btn(this,\'onmouseup\',\'GrBlue\');" onmouseover="A5._btn(this,\'onmouseover\',\'GrBlue\');" onmouseout="A5._btn(this,\'onmouseout\',\'GrBlue\');"   onclick="DLG1_DlgObj.genieObjectNavigate(\'TAB_1\',\'prev\');"  >&lt; Previous</button>\r\n<button id="DLG1.TAB_1.NEXT" type="button" class="GrBlueButton" style=""  onmousedown="A5._btn(this,\'onmousedown\',\'GrBlue\'); $e.preventDefault(event);" onmouseup="A5._btn(this,\'onmouseup\',\'GrBlue\');" onmouseover="A5._btn(this,\'onmouseover\',\'GrBlue\');" onmouseout="A5._btn(this,\'onmouseout\',\'GrBlue\');"   onclick="DLG1_DlgObj.validate(function() {DLG1_DlgObj.genieObjectNavigate(\'TAB_1\',\'next\'); },\'\',\'TAB_1\');"  >Next &gt;</button>\r\n<button id="DLG1.TAB_1.SUBMIT" type="button" class="GrBlueButton" style="display: none; "  onmousedown="A5._btn(this,\'onmousedown\',\'GrBlue\'); $e.preventDefault(event);" onmouseup="A5._btn(this,\'onmouseup\',\'GrBlue\');" onmouseover="A5._btn(this,\'onmouseover\',\'GrBlue\');" onmouseout="A5._btn(this,\'onmouseout\',\'GrBlue\');"   onclick="DLG1_DlgObj.submit();"  >Submit</button>\r\n</td></tr></table>\r\n</div></div><br style="clear:both; " /><div style="height:.1in; font: 0pt;"></div>\r\n<div class="A5floatClear"></div>'
 		},
 		scroll: {
 			axis: 'both',
@@ -1399,7 +1582,7 @@ if(typeof DLG1_DlgObj != 'undefined' && typeof DLG1_DlgObj._panelCardResize != '
 	overlay: {
 	},
 	onSize: function() {;
-if(typeof DLG1_DlgObj != 'undefined') {var mObj = DLG1_DlgObj.getControl('LISTEVALUACIONCAT1'); if(mObj) {
+if(typeof DLG1_DlgObj != 'undefined' && DLG1_DlgObj ) {var mObj = DLG1_DlgObj.getControl('LISTEVALUACIONCAT1'); if(mObj) {
    if(mObj.resize) {
     mObj.resize();
    } else {
@@ -1488,7 +1671,7 @@ var DLG1_DlgObj = new A5.DialogComponentHelper('DLG1',{
 	_embeddedMode: false,
 	_livePreviewInBuilder: false,
 	componentGUID: '8a60dbac-ea3c-41be-8ffe-2623db0b6b00',
-	columnInfo: {'USERID': {info: {controlType: 'Textbox'}, hiddenVal: false, type: 'input,label', isCalc: false, hlp: '', isArray: false, dataType: 'C'  },'PASSWORD': {info: {controlType: 'Textbox'}, hiddenVal: false, type: 'input,label', isCalc: false, hlp: '', isArray: false, dataType: 'C'  },'TEXTBOX1': {info: {controlType: 'Label'}, hiddenVal: false, type: 'label,label', isCalc: false, hlp: '', isArray: false, dataType: 'C'  },'LABEL4': {info: {controlType: 'label'}, hiddenVal: false, type: 'label,label', isCalc: false, hlp: '', isArray: false, dataType: 'C'  },'LABEL1': {info: {controlType: 'label'}, hiddenVal: false, type: 'label,label', isCalc: false, hlp: '', isArray: false, dataType: 'C'  },'LABEL2': {info: {controlType: 'label'}, hiddenVal: false, type: 'label,label', isCalc: false, hlp: '', isArray: false, dataType: 'C'  },'LABEL5': {info: {controlType: 'label'}, hiddenVal: false, type: 'label,label', isCalc: false, hlp: '', isArray: false, dataType: 'C'  },'FECHAMIN': {info: {controlType: 'textbox'}, hiddenVal: false, type: 'input,label', isCalc: false, hlp: '', isArray: false, dataType: 'D'  },'FECHAMAX': {info: {controlType: 'textbox'}, hiddenVal: false, type: 'input,label', isCalc: false, hlp: '', isArray: false, dataType: 'D'  },'LIST1': {info: {controlType: 'list'}, hiddenVal: false, type: 'control', isCalc: false, hlp: '', isArray: false, dataType: 'C'  },'ID_MONITOREOTRABAJADOR': {info: {controlType: 'Textbox'}, hiddenVal: false, type: 'input,label', isCalc: false, hlp: '', isArray: false, dataType: 'N'  },'ID_MONITOREO': {info: {controlType: 'Textbox'}, hiddenVal: false, type: 'input,label', isCalc: false, hlp: '', isArray: false, dataType: 'N'  },'ID_TRABAJADOR': {info: {controlType: 'Textbox'}, hiddenVal: false, type: 'input,label', isCalc: false, hlp: '', isArray: false, dataType: 'N'  },'TEMPERATURA_1': {info: {controlType: 'Textbox'}, hiddenVal: false, type: 'input,label', isCalc: false, hlp: '', isArray: false, dataType: 'C', validate: function(data,colName,rowNum,instNum) {if($u.s.aTrim(data) == '') return 'La temperatura es obligatoria'; return true; }  },'SATURACIONOXIGENO': {info: {controlType: 'Textbox'}, hiddenVal: false, type: 'input,label', isCalc: false, hlp: '', isArray: false, dataType: 'C'  },'RITMOCARDIACO': {info: {controlType: 'Textbox'}, hiddenVal: false, type: 'input,label', isCalc: false, hlp: '', isArray: false, dataType: 'C'  },'FRECUENCIARESPIRATORIA': {info: {controlType: 'Textbox'}, hiddenVal: false, type: 'input,label', isCalc: false, hlp: '', isArray: false, dataType: 'C'  },'ACERCAMIENTOPERSONA': {info: {controlType: 'Checkbox'}, hiddenVal: false, type: 'input,label', isCalc: false, hlp: '', isArray: false, dataType: 'L'  },'DESCRIPCIONACERCAMIENTO': {info: {controlType: 'TextArea'}, hiddenVal: false, type: 'input,label', isCalc: false, hlp: '', isArray: false, dataType: 'C'  },'ID_MONITOREOTRABAJADORSINTOMA': {info: {controlType: 'Textbox'}, hiddenVal: false, type: 'input,label', isCalc: false, hlp: '', isArray: false, dataType: 'N'  },'ID_SINTOMA': {info: {controlType: 'Textbox'}, hiddenVal: false, type: 'input,label', isCalc: false, hlp: '', isArray: false, dataType: 'N'  },'ID_TRABAJADOR_1': {info: {controlType: 'Textbox'}, hiddenVal: false, type: 'input,label', isCalc: false, hlp: '', isArray: false, dataType: 'N'  },'ID_MONITOREOTRABAJADOR_1': {info: {controlType: 'Textbox'}, hiddenVal: false, type: 'input,label', isCalc: false, hlp: '', isArray: false, dataType: 'N'  },'LIST2': {info: {controlType: 'list'}, hiddenVal: false, type: 'control', isCalc: false, hlp: '', isArray: false, dataType: 'C'  },'SI': {info: {controlType: 'Checkbox'}, hiddenVal: false, type: 'input,label', isCalc: false, hlp: '', isArray: false, dataType: 'L'  },'NO': {info: {controlType: 'Checkbox'}, hiddenVal: false, type: 'input,label', isCalc: false, hlp: '', isArray: false, dataType: 'L'  },'REALIZOPRUEBA': {info: {controlType: 'Checkbox'}, hiddenVal: false, type: 'input,label', isCalc: false, hlp: '', isArray: false, dataType: 'L'  },'ESTADOPRUEBA': {info: {controlType: 'DropDownBox'}, hiddenVal: false, type: 'input,label', isCalc: false, hlp: '', isArray: false, dataType: 'C'  },'IMAGE': {info: {controlType: 'Image'}, hiddenVal: false, type: 'img,img', isCalc: false, hlp: '', isArray: false, dataType: ''  },'IMAGE2': {info: {controlType: 'Image'}, hiddenVal: false, type: 'img,img', isCalc: false, hlp: '', isArray: false, dataType: ''  },'REALIZOPRUEBAPCR': {info: {controlType: 'Checkbox'}, hiddenVal: false, type: 'input,label', isCalc: false, hlp: '', isArray: false, dataType: 'L'  },'ESTADOPRUEBAPCR': {info: {controlType: 'DropDownBox'}, hiddenVal: false, type: 'input,label', isCalc: false, hlp: '', isArray: false, dataType: 'C'  },'IMAGEPCR': {info: {controlType: 'Image'}, hiddenVal: false, type: 'img,img', isCalc: false, hlp: '', isArray: false, dataType: ''  },'IMAGEPCR2': {info: {controlType: 'Image'}, hiddenVal: false, type: 'img,img', isCalc: false, hlp: '', isArray: false, dataType: ''  },'LIST3': {info: {controlType: 'list'}, hiddenVal: false, type: 'control', isCalc: false, hlp: '', isArray: false, dataType: 'C'  },'LIST4': {info: {controlType: 'list'}, hiddenVal: false, type: 'control', isCalc: false, hlp: '', isArray: false, dataType: 'C'  },'LISTCUARENTENA': {info: {controlType: 'list'}, hiddenVal: false, type: 'control', isCalc: false, hlp: '', isArray: false, dataType: 'C'  },'ID_MONITOREOCOBRO': {info: {controlType: 'Textbox'}, hiddenVal: false, type: 'input,label', isCalc: false, hlp: '', isArray: false, dataType: 'N'  },'ID_ESTADO': {info: {controlType: 'Textbox'}, hiddenVal: false, type: 'input,label', isCalc: false, hlp: '', isArray: false, dataType: 'N'  },'ID_TRABAJADOR_2': {info: {controlType: 'Textbox'}, hiddenVal: false, type: 'input,label', isCalc: false, hlp: '', isArray: false, dataType: 'N'  },'ID_CONTACTO': {info: {controlType: 'Textbox'}, hiddenVal: false, type: 'input,label', isCalc: false, hlp: '', isArray: false, dataType: 'N'  },'FECHAMIN_1': {info: {controlType: 'Textbox'}, hiddenVal: false, type: 'input,label', isCalc: false, hlp: '', isArray: false, dataType: 'D'  },'FECHAMAX_1': {info: {controlType: 'Textbox'}, hiddenVal: false, type: 'input,label', isCalc: false, hlp: '', isArray: false, dataType: 'D'  },'NOMBRECONTACTO': {info: {controlType: 'Textbox'}, hiddenVal: false, type: 'input,label', isCalc: false, hlp: '', isArray: false, dataType: 'C'  },'NOMBRETRABAJADOR': {info: {controlType: 'Textbox'}, hiddenVal: false, type: 'input,label', isCalc: false, hlp: '', isArray: false, dataType: 'C'  },'CREADOR': {info: {controlType: 'Textbox'}, hiddenVal: false, type: 'input,label', isCalc: false, hlp: '', isArray: false, dataType: 'C'  },'FECHACREACION': {info: {controlType: 'Textbox'}, hiddenVal: false, type: 'input,label', isCalc: false, hlp: '', isArray: false, dataType: 'T'  },'LISTEVALUACION': {info: {controlType: 'list'}, hiddenVal: false, type: 'control', isCalc: false, hlp: '', isArray: false, dataType: 'C'  },'LISTEVALUACIONCAT1': {info: {controlType: 'list'}, hiddenVal: false, type: 'control', isCalc: false, hlp: '', isArray: false, dataType: 'C'  },'TEXTBOX2': {info: {controlType: 'textbox'}, hiddenVal: false, type: 'input,label', isCalc: false, hlp: '', isArray: false, dataType: 'C'  },'TEXTBOX3': {info: {controlType: 'textbox'}, hiddenVal: false, type: 'input,label', isCalc: false, hlp: '', isArray: false, dataType: 'C'  }},
+	columnInfo: {'USERID': {info: {controlType: 'Textbox'}, hiddenVal: false, type: 'input,label', isCalc: false, hlp: '', isArray: false, dataType: 'C'  },'PASSWORD': {info: {controlType: 'Textbox'}, hiddenVal: false, type: 'input,label', isCalc: false, hlp: '', isArray: false, dataType: 'C'  },'TEXTBOX1': {info: {controlType: 'Label'}, hiddenVal: false, type: 'label,label', isCalc: false, hlp: '', isArray: false, dataType: 'C'  },'LABEL4': {info: {controlType: 'label'}, hiddenVal: false, type: 'label,label', isCalc: false, hlp: '', isArray: false, dataType: 'C'  },'LABEL1': {info: {controlType: 'label'}, hiddenVal: false, type: 'label,label', isCalc: false, hlp: '', isArray: false, dataType: 'C'  },'LABEL2': {info: {controlType: 'label'}, hiddenVal: false, type: 'label,label', isCalc: false, hlp: '', isArray: false, dataType: 'C'  },'LABEL5': {info: {controlType: 'label'}, hiddenVal: false, type: 'label,label', isCalc: false, hlp: '', isArray: false, dataType: 'C'  },'FECHAMIN': {info: {controlType: 'textbox'}, hiddenVal: false, type: 'input,label', isCalc: false, hlp: '', isArray: false, dataType: 'D'  },'FECHAMAX': {info: {controlType: 'textbox'}, hiddenVal: false, type: 'input,label', isCalc: false, hlp: '', isArray: false, dataType: 'D'  },'LIST1': {info: {controlType: 'list'}, hiddenVal: false, type: 'control', isCalc: false, hlp: '', isArray: false, dataType: 'C'  },'ID_MONITOREOTRABAJADOR': {info: {controlType: 'Textbox'}, hiddenVal: false, type: 'input,label', isCalc: false, hlp: '', isArray: false, dataType: 'N'  },'ID_MONITOREO': {info: {controlType: 'Textbox'}, hiddenVal: false, type: 'input,label', isCalc: false, hlp: '', isArray: false, dataType: 'N'  },'ID_TRABAJADOR': {info: {controlType: 'Textbox'}, hiddenVal: false, type: 'input,label', isCalc: false, hlp: '', isArray: false, dataType: 'N'  },'TEMPERATURA_1': {info: {controlType: 'Textbox'}, hiddenVal: false, type: 'input,label', isCalc: false, hlp: '', isArray: false, dataType: 'C', validate: function(data,colName,rowNum,instNum) {if($u.s.aTrim(data) == '') return 'La temperatura es obligatoria'; return true; }  },'SATURACIONOXIGENO': {info: {controlType: 'Textbox'}, hiddenVal: false, type: 'input,label', isCalc: false, hlp: '', isArray: false, dataType: 'C'  },'RITMOCARDIACO': {info: {controlType: 'Textbox'}, hiddenVal: false, type: 'input,label', isCalc: false, hlp: '', isArray: false, dataType: 'C'  },'FRECUENCIARESPIRATORIA': {info: {controlType: 'Textbox'}, hiddenVal: false, type: 'input,label', isCalc: false, hlp: '', isArray: false, dataType: 'C'  },'ACERCAMIENTOPERSONA': {info: {controlType: 'Checkbox'}, hiddenVal: false, type: 'input,label', isCalc: false, hlp: '', isArray: false, dataType: 'L'  },'DESCRIPCIONACERCAMIENTO': {info: {controlType: 'TextArea'}, hiddenVal: false, type: 'input,label', isCalc: false, hlp: '', isArray: false, dataType: 'C'  },'ID_MONITOREOTRABAJADORSINTOMA': {info: {controlType: 'Textbox'}, hiddenVal: false, type: 'input,label', isCalc: false, hlp: '', isArray: false, dataType: 'N'  },'ID_SINTOMA': {info: {controlType: 'Textbox'}, hiddenVal: false, type: 'input,label', isCalc: false, hlp: '', isArray: false, dataType: 'N'  },'ID_TRABAJADOR_1': {info: {controlType: 'Textbox'}, hiddenVal: false, type: 'input,label', isCalc: false, hlp: '', isArray: false, dataType: 'N'  },'ID_MONITOREOTRABAJADOR_1': {info: {controlType: 'Textbox'}, hiddenVal: false, type: 'input,label', isCalc: false, hlp: '', isArray: false, dataType: 'N'  },'LIST2': {info: {controlType: 'list'}, hiddenVal: false, type: 'control', isCalc: false, hlp: '', isArray: false, dataType: 'C'  },'SI': {info: {controlType: 'Checkbox'}, hiddenVal: false, type: 'input,label', isCalc: false, hlp: '', isArray: false, dataType: 'L'  },'NO': {info: {controlType: 'Checkbox'}, hiddenVal: false, type: 'input,label', isCalc: false, hlp: '', isArray: false, dataType: 'L'  },'REALIZOPRUEBA': {info: {controlType: 'Checkbox'}, hiddenVal: false, type: 'input,label', isCalc: false, hlp: '', isArray: false, dataType: 'L'  },'ESTADOPRUEBA': {info: {controlType: 'DropDownBox'}, hiddenVal: false, type: 'input,label', isCalc: false, hlp: '', isArray: false, dataType: 'C'  },'IMAGE': {info: {controlType: 'Image'}, hiddenVal: false, type: 'img,img', isCalc: false, hlp: '', isArray: false, dataType: ''  },'IMAGE2': {info: {controlType: 'Image'}, hiddenVal: false, type: 'img,img', isCalc: false, hlp: '', isArray: false, dataType: ''  },'REALIZOPRUEBAPCR': {info: {controlType: 'Checkbox'}, hiddenVal: false, type: 'input,label', isCalc: false, hlp: '', isArray: false, dataType: 'L'  },'ESTADOPRUEBAPCR': {info: {controlType: 'DropDownBox'}, hiddenVal: false, type: 'input,label', isCalc: false, hlp: '', isArray: false, dataType: 'C'  },'IMAGEPCR': {info: {controlType: 'Image'}, hiddenVal: false, type: 'img,img', isCalc: false, hlp: '', isArray: false, dataType: ''  },'IMAGEPCR2': {info: {controlType: 'Image'}, hiddenVal: false, type: 'img,img', isCalc: false, hlp: '', isArray: false, dataType: ''  },'LIST3': {info: {controlType: 'list'}, hiddenVal: false, type: 'control', isCalc: false, hlp: '', isArray: false, dataType: 'C'  },'LIST4': {info: {controlType: 'list'}, hiddenVal: false, type: 'control', isCalc: false, hlp: '', isArray: false, dataType: 'C'  },'LISTCUARENTENA': {info: {controlType: 'list'}, hiddenVal: false, type: 'control', isCalc: false, hlp: '', isArray: false, dataType: 'C'  },'ID_MONITOREOCOBRO': {info: {controlType: 'Textbox'}, hiddenVal: false, type: 'input,label', isCalc: false, hlp: '', isArray: false, dataType: 'N'  },'ID_ESTADO': {info: {controlType: 'Textbox'}, hiddenVal: false, type: 'input,label', isCalc: false, hlp: '', isArray: false, dataType: 'N'  },'ID_TRABAJADOR_2': {info: {controlType: 'Textbox'}, hiddenVal: false, type: 'input,label', isCalc: false, hlp: '', isArray: false, dataType: 'N'  },'ID_CONTACTO': {info: {controlType: 'Textbox'}, hiddenVal: false, type: 'input,label', isCalc: false, hlp: '', isArray: false, dataType: 'N'  },'FECHAMIN_1': {info: {controlType: 'Textbox'}, hiddenVal: false, type: 'input,label', isCalc: false, hlp: '', isArray: false, dataType: 'D'  },'FECHAMAX_1': {info: {controlType: 'Textbox'}, hiddenVal: false, type: 'input,label', isCalc: false, hlp: '', isArray: false, dataType: 'D'  },'NOMBRECONTACTO': {info: {controlType: 'Textbox'}, hiddenVal: false, type: 'input,label', isCalc: false, hlp: '', isArray: false, dataType: 'C'  },'NOMBRETRABAJADOR': {info: {controlType: 'Textbox'}, hiddenVal: false, type: 'input,label', isCalc: false, hlp: '', isArray: false, dataType: 'C'  },'CREADOR': {info: {controlType: 'Textbox'}, hiddenVal: false, type: 'input,label', isCalc: false, hlp: '', isArray: false, dataType: 'C'  },'FECHACREACION': {info: {controlType: 'Textbox'}, hiddenVal: false, type: 'input,label', isCalc: false, hlp: '', isArray: false, dataType: 'T'  },'LISTEVALUACION': {info: {controlType: 'list'}, hiddenVal: false, type: 'control', isCalc: false, hlp: '', isArray: false, dataType: 'C'  },'LISTEVALUACIONCAT1': {info: {controlType: 'list'}, hiddenVal: false, type: 'control', isCalc: false, hlp: '', isArray: false, dataType: 'C'  },'TEXTBOX2': {info: {controlType: 'textbox'}, hiddenVal: false, type: 'input,label', isCalc: false, hlp: '', isArray: false, dataType: 'C'  },'ID_TRABAJADORDESEMPENO_ELEMENTO': {info: {controlType: 'Textbox'}, hiddenVal: false, type: 'input,label', isCalc: false, hlp: '', isArray: false, dataType: 'N'  },'PUNTUACIONTRABAJADOR': {info: {controlType: 'Textbox'}, hiddenVal: false, type: 'input,label', isCalc: false, hlp: '', isArray: false, dataType: 'N'  },'PUNTUACIONJEFE': {info: {controlType: 'Textbox'}, hiddenVal: false, type: 'input,label', isCalc: false, hlp: '', isArray: false, dataType: 'N'  },'TEXTBOX3': {info: {controlType: 'textbox'}, hiddenVal: false, type: 'input,label', isCalc: false, hlp: '', isArray: false, dataType: 'C'  }},
 	originalValues: [{
 	"USERID": "",
 	"PASSWORD": "",
@@ -1544,6 +1727,9 @@ var DLG1_DlgObj = new A5.DialogComponentHelper('DLG1',{
 	"LISTEVALUACION": "",
 	"LISTEVALUACIONCAT1": "",
 	"TEXTBOX2": "",
+	"ID_TRABAJADORDESEMPENO_ELEMENTO": "",
+	"PUNTUACIONTRABAJADOR": "",
+	"PUNTUACIONJEFE": "",
 	"TEXTBOX3": ""
 }],
 	defaultValues: {
@@ -1601,6 +1787,9 @@ var DLG1_DlgObj = new A5.DialogComponentHelper('DLG1',{
 	"LISTEVALUACION": "",
 	"LISTEVALUACIONCAT1": "",
 	"TEXTBOX2": "",
+	"ID_TRABAJADORDESEMPENO_ELEMENTO": "",
+	"PUNTUACIONTRABAJADOR": "",
+	"PUNTUACIONJEFE": "",
 	"TEXTBOX3": ""
 },
 	datePickerMonthNames: ['January','February','March','April','May','June','July','August','September','October','November','December'],
@@ -1707,6 +1896,7 @@ window['DLG1.V.R1.TAB_1Obj'] = new A5.Tab('DLG1.V.R1.TAB_1',[
 ],
 	{
 	theme: 'GrBlue:Top',
+	paneClassName: '',
 	onChange: function() {
 DLG1_DlgObj._tabPaneChange('TAB_1');}
 }
@@ -2429,6 +2619,44 @@ DLG1_DlgObj.dialogWatches['ENABLE_BUTTON_106'] = {
 	;;
 	DLG1_DlgObj._executeEvent('onWatchEvent',{type: 'enable', control: 'BUTTON_106', flag: enable});}
 }
+DLG1_DlgObj.dialogWatches['ENABLE_BUTTON_DVSAVE_LISTEVALUACIONCAT1'] = {
+		watch: [],
+		variables: [],
+		onChange: function(data) {
+	var dialog = {};
+	var summary = {};
+	DLG1_DlgObj._getDialogVariables(dialog,summary,data);
+	var enable = ((dialog.listDetailView.LISTEVALUACIONCAT1.isDirty == true) && (dialog.listDetailView.LISTEVALUACIONCAT1.mode != 'search'));
+	var eles = $cetp($n('V.R' + data.rowNumber + '.BUTTON_DVSAVE_LISTEVALUACIONCAT1'),$('DLG1.R'+data.rowNumber));
+	if(typeof eles.length == 'undefined' || eles.length == 0) eles = [$('DLG1.'+'V.R' + data.rowNumber + '.BUTTON_DVSAVE_LISTEVALUACIONCAT1')];
+	var pObj = DLG1_DlgObj.getControl('BUTTON_DVSAVE_LISTEVALUACIONCAT1'); if(pObj) { if(typeof pObj.setDisabled != 'undefined') {  pObj.setDisabled(!enable,eles); return true;  } }
+	if(typeof DLG1_DlgObj._buttons['BUTTON_DVSAVE_LISTEVALUACIONCAT1'] != 'undefined') {
+	DLG1_DlgObj._buttons['BUTTON_DVSAVE_LISTEVALUACIONCAT1'].setDisabled(!enable,eles)
+	} else {
+	for(var i=0; i<eles.length;i++) eles[i].disabled = !enable;
+	}
+	;;
+	DLG1_DlgObj._executeEvent('onWatchEvent',{type: 'enable', control: 'BUTTON_DVSAVE_LISTEVALUACIONCAT1', flag: enable});}
+}
+DLG1_DlgObj.dialogWatches['ENABLE_BUTTON_DVSYNCHRONIZE_LISTEVALUACIONCAT1'] = {
+		watch: [],
+		variables: [],
+		onChange: function(data) {
+	var dialog = {};
+	var summary = {};
+	DLG1_DlgObj._getDialogVariables(dialog,summary,data);
+	var enable = ((dialog.list.LISTEVALUACIONCAT1.isDirty == true) && (dialog.listDetailView.LISTEVALUACIONCAT1.mode != 'search'));
+	var eles = $cetp($n('V.R' + data.rowNumber + '.BUTTON_DVSYNCHRONIZE_LISTEVALUACIONCAT1'),$('DLG1.R'+data.rowNumber));
+	if(typeof eles.length == 'undefined' || eles.length == 0) eles = [$('DLG1.'+'V.R' + data.rowNumber + '.BUTTON_DVSYNCHRONIZE_LISTEVALUACIONCAT1')];
+	var pObj = DLG1_DlgObj.getControl('BUTTON_DVSYNCHRONIZE_LISTEVALUACIONCAT1'); if(pObj) { if(typeof pObj.setDisabled != 'undefined') {  pObj.setDisabled(!enable,eles); return true;  } }
+	if(typeof DLG1_DlgObj._buttons['BUTTON_DVSYNCHRONIZE_LISTEVALUACIONCAT1'] != 'undefined') {
+	DLG1_DlgObj._buttons['BUTTON_DVSYNCHRONIZE_LISTEVALUACIONCAT1'].setDisabled(!enable,eles)
+	} else {
+	for(var i=0; i<eles.length;i++) eles[i].disabled = !enable;
+	}
+	;;
+	DLG1_DlgObj._executeEvent('onWatchEvent',{type: 'enable', control: 'BUTTON_DVSYNCHRONIZE_LISTEVALUACIONCAT1', flag: enable});}
+}
 window['DLG1_O_CFDFFBBD29A34CAF8C7A32E90E3F332E'] = function(rowNum,rowId,objEle) {
 var windowName = 'WINDOW_650086f0_e0ed_49ba_9190_47438e5f137b';
 var currWindow = DLG1_DlgObj.getWindow(windowName);
@@ -2456,7 +2684,7 @@ go._gridCurrentOrder = DLG1_DlgObj._gridOrder;
 go._gridCurrentArguments = DLG1_DlgObj._gridArguments;
 go._gridCurrentDBType = DLG1_DlgObj._gridDBType;
 go.overrideSettings = 'Style_name = `GrBlue`||Style_name = `GrBlue`'+'||';
-go.a5_default_path = 'C_colon_|Users|ASUS|AppData|Local|Temp|AlphaAnywhere|chromeWorkingPreview|';
+go.a5_default_path = 'C_colon_|A5Webroot|livepreview';
 go.windowName = windowName;
 go.synchronizeArguments = true;
 go.showWindowParameters = '';
@@ -2837,7 +3065,7 @@ A5.msgBox.theme = 'GrBlue';
 A5.msgBox.buttonWidth = '1in';
 DLG1_DlgObj._defaultWindowTitleDirection = 'ltr';
 if($('DLG1.V.R1.TAB_1.TABBAND'))  $('DLG1.V.R1.TAB_1.TABBAND').style.display = 'none';
-DLG1_DlgObj._controlContainers = {'TEXTBOX2' : [{ tab: 'TAB_1', pane: 1}],'TEXTBOX3' : [{ tab: 'TAB_1', pane: 2}]}
+DLG1_DlgObj._controlContainers = {'LISTEVALUACIONCAT1' : [{ tab: 'TAB_1', pane: 1}],'TEXTBOX2' : [{ tab: 'TAB_1', pane: 1}],'ID_TRABAJADORDESEMPENO_ELEMENTO' : [{ tab: 'TAB_1', pane: 1}],'PUNTUACIONTRABAJADOR' : [{ tab: 'TAB_1', pane: 1}],'PUNTUACIONJEFE' : [{ tab: 'TAB_1', pane: 1}],'TEXTBOX3' : [{ tab: 'TAB_1', pane: 2}]}
 DLG1_DlgObj._panelCardControls = {
 USERID:'PANEL_LOGIN',
 PASSWORD:'PANEL_LOGIN',
@@ -2889,6 +3117,9 @@ FECHACREACION:'PANELCARD_8',
 LISTEVALUACION:'PANELCARD_EVALUACION',
 LISTEVALUACIONCAT1:'PANELCARD_DETALLEEVALUACION',
 TEXTBOX2:'PANELCARD_DETALLEEVALUACION',
+ID_TRABAJADORDESEMPENO_ELEMENTO:'PANELCARD_DETALLEEVALUACION',
+PUNTUACIONTRABAJADOR:'PANELCARD_DETALLEEVALUACION',
+PUNTUACIONJEFE:'PANELCARD_DETALLEEVALUACION',
 TEXTBOX3:'PANELCARD_DETALLEEVALUACION'
 }
 DLG1_DlgObj._controlsOnPanel = {
@@ -2901,8 +3132,14 @@ DLG1_DlgObj._controlsOnPanel = {
 	'PANELCARD_CUARENTENA' : {controls: ['LISTCUARENTENA']},
 	'PANELCARD_8' : {controls: ['ID_MONITOREOCOBRO','ID_ESTADO','ID_TRABAJADOR_2','ID_CONTACTO','FECHAMIN_1','FECHAMAX_1','NOMBRECONTACTO','NOMBRETRABAJADOR','CREADOR','FECHACREACION']},
 	'PANELCARD_EVALUACION' : {controls: ['LISTEVALUACION']},
-	'PANELCARD_DETALLEEVALUACION' : {controls: ['LISTEVALUACIONCAT1','TEXTBOX2','TEXTBOX3']}
+	'PANELCARD_DETALLEEVALUACION' : {controls: ['LISTEVALUACIONCAT1','TEXTBOX2','ID_TRABAJADORDESEMPENO_ELEMENTO','PUNTUACIONTRABAJADOR','PUNTUACIONJEFE','TEXTBOX3']}
 }
+window['DLG1.V.R1.TAB_1Obj'].panes[0].onChange = function() {
+	var lObj = DLG1_DlgObj.getControl('LISTEVALUACIONCAT1'); lObj.refresh(); 
+	if(Number(this.value) != 1) DLG1_DlgObj._initialListRender('LISTEVALUACIONCAT1');
+	var lObj = DLG1_DlgObj.getControl('LISTEVALUACIONCAT1'); lObj.refresh();lObj.resize();;
+	DLG1_DlgObj._tabPaneChange('TAB_1');
+};
 DLG1_DlgObj._buttons = {};
 DLG1_DlgObj._buttons['BUTTON_1'] = new A5.Button({
 	layout: 'text',
@@ -3116,6 +3353,28 @@ DLG1_DlgObj._buttons['BUTTON_102'] = new A5.Button({
 },
 	theme: 'GrBlue:base'
 });
+DLG1_DlgObj._buttons['BUTTON_DVSAVE_LISTEVALUACIONCAT1'] = new A5.Button({
+	layout: 'icon text',
+	style: 'box-sizing: border-box; -moz-box-sizing: border-box; -ms-box-sizing: border-box; -webkit-box-sizing: border-box;',
+	tip: 'Save edits',
+	html: 'Save',
+	icon: 'css/GrBlue/GridRowSave.png',
+	disabledIcon: 'css/GrBlue/GridRowSaveDisabled.png',
+	onClick: function() { 
+},
+	theme: 'GrBlue'
+});
+DLG1_DlgObj._buttons['BUTTON_DVSYNCHRONIZE_LISTEVALUACIONCAT1'] = new A5.Button({
+	layout: 'icon text',
+	style: 'box-sizing: border-box; -moz-box-sizing: border-box; -ms-box-sizing: border-box; -webkit-box-sizing: border-box;',
+	tip: 'Synchronize data - push local edits back to the server',
+	html: 'Synchronize',
+	icon: 'css/GrBlue/GridRowSave.png',
+	disabledIcon: 'css/GrBlue/GridRowSaveDisabled.png',
+	onClick: function() { 
+},
+	theme: 'GrBlue'
+});
 DLG1_DlgObj._buttons['BUTTON_1'].bind('DLG1.V.R1.BUTTON_1');
 DLG1_DlgObj._buttons['BUTTON_94'].bind('DLG1.V.R1.BUTTON_94');
 DLG1_DlgObj._buttons['BUTTON_109'].bind('DLG1.V.R1.BUTTON_109');
@@ -3138,6 +3397,8 @@ DLG1_DlgObj._buttons['BUTTON_106'].bind('DLG1.V.R1.BUTTON_106');
 DLG1_DlgObj._buttons['BUTTON_103'].bind('DLG1.V.R1.BUTTON_103');
 DLG1_DlgObj._buttons['BUTTON_101'].bind('DLG1.V.R1.BUTTON_101');
 DLG1_DlgObj._buttons['BUTTON_102'].bind('DLG1.V.R1.BUTTON_102');
+DLG1_DlgObj._buttons['BUTTON_DVSAVE_LISTEVALUACIONCAT1'].bind('DLG1.V.R1.BUTTON_DVSAVE_LISTEVALUACIONCAT1');
+DLG1_DlgObj._buttons['BUTTON_DVSYNCHRONIZE_LISTEVALUACIONCAT1'].bind('DLG1.V.R1.BUTTON_DVSYNCHRONIZE_LISTEVALUACIONCAT1');
 DLG1_DlgObj._buttons['BUTTON_1'].bind('DLG1.V.R1.BUTTON_1');
 DLG1_DlgObj._buttons['BUTTON_94'].bind('DLG1.V.R1.BUTTON_94');
 DLG1_DlgObj._buttons['BUTTON_109'].bind('DLG1.V.R1.BUTTON_109');
@@ -3160,7 +3421,13 @@ DLG1_DlgObj._buttons['BUTTON_106'].bind('DLG1.V.R1.BUTTON_106');
 DLG1_DlgObj._buttons['BUTTON_103'].bind('DLG1.V.R1.BUTTON_103');
 DLG1_DlgObj._buttons['BUTTON_101'].bind('DLG1.V.R1.BUTTON_101');
 DLG1_DlgObj._buttons['BUTTON_102'].bind('DLG1.V.R1.BUTTON_102');
+DLG1_DlgObj._buttons['BUTTON_DVSAVE_LISTEVALUACIONCAT1'].bind('DLG1.V.R1.BUTTON_DVSAVE_LISTEVALUACIONCAT1');
+DLG1_DlgObj._buttons['BUTTON_DVSYNCHRONIZE_LISTEVALUACIONCAT1'].bind('DLG1.V.R1.BUTTON_DVSYNCHRONIZE_LISTEVALUACIONCAT1');
 DLG1_DlgObj._listViewSettings['LIST1'] = {
+	_switchInfo: {
+},
+	_setupAlphabetSearch: function() { },
+	_flagAutoFetchMore: false,
 	_persistListLayout: false,
 	_loadPersistedLayout: false,
 	saveLayoutSettings: function() {
@@ -3788,6 +4055,7 @@ for(var i = 0; i < d.length; i++) {
   break;
  }
 }
+if (d.length == 0) this._allrowschecked = false;
 var h ;
 if(this._allrowschecked) {
  h = A5.u.icon.html(this.__checkedImage);
@@ -3960,6 +4228,9 @@ DLG1_DlgObj.runAction('panelMove2');
 DLG1_DlgObj._listSystemOnClick('LIST1',this.selection[0]);},
 	layouts: {
 		Default: {
+			group: {
+				auto:  null 
+			},
 			type: 'template',
 			item: {
 			},
@@ -4423,6 +4694,7 @@ if(!this._searchPartHas) return true;
 	var od = DLG1_DlgObj.originalValues[0];
 	for(var i = 0; i < map.length; i++) {
 		var val = od[map[i].control.toUpperCase()];
+		//selwyn 8/6/20 -- used to be false, but then the floating label is not resotred to its initial position when the form is cleared
 		if(typeof val != 'undefined') DLG1_DlgObj.setValue(map[i].control,val,false);
 	}
 	this.setFilter(false);
@@ -4544,6 +4816,7 @@ var rowCount = this._values.length;
 //this.systemEvents.afterClientSideFilter(e);
 var ele = $('DLG1.list1.RECORDCOUNT');
 if(ele) ele.innerHTML = rowCount;
+if(this._showHideFetchMoreSpinner) this._showHideFetchMoreSpinner();
 }
 ,
 	scrollToClosestValue: function(val) { 	
@@ -4776,6 +5049,22 @@ if(this.multiple ) return;
 	_listGUID: 'b7ef4bfb-6b77-4293-ae36-55db61984979'
 };
 DLG1_DlgObj._listViewSettings['LIST2'] = {
+	_switchInfo: {
+},
+	_setupAlphabetSearch: function() { },
+	hasPendingEdits: function() { 	var lObj = this;
+	var flag = false;		
+		if(lObj && this._editing.dirty) { 
+			var rowsInEditMode = 0;
+			var rowsInEnterMode = 0; 
+			try{rowsInEditMode = lObj._editing.rows.length;}catch(e) { } ;
+			try{rowsInEnterMode = lObj._editing.nRows.length;}catch(e) { } ;
+			if(rowsInEditMode + rowsInEnterMode > 0) { flag = true;}
+		}
+		return flag;
+}
+,
+	_flagAutoFetchMore: false,
 	_persistListLayout: false,
 	_loadPersistedLayout: false,
 	saveLayoutSettings: function() {
@@ -5066,7 +5355,7 @@ return '';},
 return '';}
 		}
 	},
-	_showInplaceEditAddRowIcon: function() {var sg = '';
+	_showInplaceEditAddRowIcon: function(rowNumber,data,lObj) {var sg = '';
 if(sg == '') {
 	var flagSecurity = true;
 } else { 
@@ -5080,7 +5369,21 @@ if(flagCustomJS == false || flagSecurity == false) flag = false;
 else flag = true;
 return flag;
 },
-	_showInplaceEditEditRowIcon: function() {var sg = '';
+	_showInplaceEditEditRowIcon: function(rowNumber,data,lObj) {var sg = '';
+if(sg == '') {
+	var flagSecurity = true;
+} else { 
+	var flagSecurity = this.__securityAllowEdit(sg);
+}
+var flagCustomJS = function() {
+}();
+var flag;
+if(typeof flagCustomJS == 'undefined') flagCustomJS = true;
+if(flagCustomJS == false || flagSecurity == false) flag = false;
+else flag = true;
+return flag;
+},
+	_showInplaceEditDeleteRowIcon: function(rowNumber,data,lObj) {var sg = '';
 if(sg == '') {
 	var flagSecurity = true;
 } else { 
@@ -5158,6 +5461,7 @@ return flag;
 	editInplacePickerShow: function(row,name,value,type,settings,controlType) {
 	var flagjs = false;
 	var lObj = this;
+	//debugger;
 	lObj._pickerRow = row;
 	settings.control = {
 		name:name,
@@ -5428,6 +5732,23 @@ if(!this._editing){
 						drawList: function(){
 							var _data = this.data;
 							var flagTemplate = false;
+							var lObj = DLG1_DlgObj.getControl(this.listId);
+							var _style = '';
+							var _className = '';
+							var _headingClassName = '';
+							var _windowBodyStyle = '';
+							try{ 
+								_style = lObj._inplaceEditing.settings[this.control.controlType][this.control.name].windowRowStyle
+							}catch(e) { _style = '';}
+							try{ 
+								_className= lObj._inplaceEditing.settings[this.control.controlType][this.control.name].windowRowClass
+							}catch(e) {_className = '';}
+							try{ 
+								_headingClassName= lObj._inplaceEditing.settings[this.control.controlType][this.control.name].windowHeadingClass
+							}catch(e) { _headingClassName = '';}
+							try{ 
+								_windowBodyStyle= lObj._inplaceEditing.settings[this.control.controlType][this.control.name].windowBodyStyle
+							}catch(e) { _windowBodyStyle = '';}
 							if(_data.constructor == Object) { 
 								flagTemplate = true;
 								var template = [];
@@ -5436,23 +5757,11 @@ if(!this._editing){
 								var w = '';
 								var ws = '';
 								var lObj = DLG1_DlgObj.getControl(this.listId);
-								var _style = '';
-								var _className = '';
-								var _headingClassName = '';
-								var _windowBodyStyle = '';
+								var flagShowHeading = true;
 								try{ 
-									_style = lObj._inplaceEditing.settings[this.control.controlType][this.control.name].windowRowStyle
-								}catch(e) { _style = '';}
-								try{ 
-									_className= lObj._inplaceEditing.settings[this.control.controlType][this.control.name].windowRowClass
-								}catch(e) { _className = '';}
-								try{ 
-									_headingClassName= lObj._inplaceEditing.settings[this.control.controlType][this.control.name].windowHeadingClass
-								}catch(e) { _headingClassName = '';}
-								try{ 
-									_windowBodyStyle= lObj._inplaceEditing.settings[this.control.controlType][this.control.name].windowBodyStyle
-								}catch(e) { _windowBodyStyle = '';}
-								//alert('10: ' + _windowBodyStyle);
+									var _fieldsToDisplay = lObj._inplaceEditing.settings[this.control.controlType][this.control.name].dynamic.fieldsTodisplay;
+									if(_fieldsToDisplay.split(',').length == 1) flagShowHeading = false;
+								}catch(e) { };
 								for(var i = 0; i < _data.settings.columns.length; i++) { 
 									col = _data.settings.columns[i];
 									w = col.width.trim();
@@ -5475,7 +5784,7 @@ if(!this._editing){
 									header.push(col.name);
 									header.push('</div>');
 									//add in the row style sr```
-									template.push('<div class=" '+_className+' "  onmouseover="A5.u.element.cls(this,\'+=\')" onmouseout="A5.u.element.cls(this,\'-=\')" style="'+_style+'; overflow: hidden; box-sizing: border-box;' + ws +'">' );
+									template.push('<div class=" '+_className+' "  onmouseover="A5.u.element.cls(this,\'+=\')" onmouseout="A5.u.element.cls(this,\'-=\')" style="'+_style+'; overflow: hidden; box-sizing: border-box;' + ws +'; ' +_style+'">' );
 									if(col.type.toLowerCase() == 'image') { 
 										template.push('{A5.u.icon.html(' + col.src);
 										if(col.imageStyle) { 
@@ -5489,6 +5798,8 @@ if(!this._editing){
 								}
 								header.push('</div>');
 								header = header.join('');
+								if(!flagShowHeading) header = '';
+								//header = ''; //turn off header if only 1 field to display
 								template = template.join('');
 								template = {template: A5.u.template.parse(template)};
 								_data = _data.data;
@@ -5519,7 +5830,7 @@ if(!this._editing){
 										tValue = d;
 									}
 									//if you want to control the style of each item in the list, put code here 'sr`````
-									html.push('<div a5-item="listItem:'+i+'" a5-value="'+tValue+'" id="'+this.contId+'.'+i+'" class="GrBlueListItem" onmouseover="A5.u.element.cls(this,\'+=GrBlueListItemHover\')" onmouseout="A5.u.element.cls(this,\'-=GrBlueListItemHover\')" style="xxbackground-color: pink;display:flex;white-space:nowrap;">'+tHTML+'</div>');
+									html.push('<div a5-item="listItem:'+i+'" a5-value="'+tValue+'" id="'+this.contId+'.'+i+'" class="GrBlueListItem '+_className+' " onmouseover="A5.u.element.cls(this,\'+=GrBlueListItemHover\')" onmouseout="A5.u.element.cls(this,\'-=GrBlueListItemHover\')" style="xxbackground-color: pink;display:flex;white-space:nowrap; '+_style+' ">'+tHTML+'</div>');
 								}
 							}
 							var pEle = hEle.parentNode;
@@ -5535,6 +5846,7 @@ if(!this._editing){
 									var lObj = DLG1_DlgObj.getControl(this.listId);
 									if(this.data.constructor == Object) { 
 										var fObj = this.data.settings.fill;
+										//debugger; //eavan77
 										if(fObj) { 
 											var _d = this.data.data[ia];
 											if(typeof _d == 'object') { 
@@ -5543,11 +5855,17 @@ if(!this._editing){
 													var tVal = '';
 													for(var i = 0; i < fObj.length; i++) { 
 														tVal = _d[fObj[i].src];
-														if(tVal) {
+														if(tVal == null) tVal = '';
+														if(tVal || tVal =='' ) {
 															var ele = $(lObj.listVariableName+'.'+p.cur.row + '.' + fObj[i].name.toUpperCase()+'.CONTROL');
 															if(ele) { 
 																ele.value = tVal;
 																$e.execute(ele,'change');
+															} else { 
+																//control is probaby allow edit = false, so update the data directly
+																lObj._editing.set(lObj,p.cur.row,fObj[i].name,tVal,'');
+																var ele = $('DLG1.' + lObj.listVariableName + '.' + fObj[i].name.toUpperCase() + '.I.' + p.cur.row);
+																if(ele) ele.innerHTML = tVal + '&nbsp;';
 															}
 														}
 													}
@@ -5605,6 +5923,7 @@ if(!this._editing){
 					this.datePicker.format =  settings.format;
 					var _d = new Date();
 					this.datePicker._parsedFormat = _d._parseFormat(settings.format);
+					if(value == null) value = '';
 					this.datePicker.setValue(value);
 				},
 				show: function(value,settings,ele){
@@ -5968,6 +6287,7 @@ for(var i = 0; i < d.length; i++) {
   break;
  }
 }
+if (d.length == 0) this._allrowschecked = false;
 var h ;
 if(this._allrowschecked) {
  h = A5.u.icon.html(this.__checkedImage);
@@ -6155,6 +6475,9 @@ DLG1_DlgObj._listRowSelect('list2',this);
 DLG1_DlgObj._listSystemOnClick('LIST2',this.selection[0]);},
 	layouts: {
 		Default: {
+			group: {
+				auto:  null 
+			},
 			type: 'column',
 			showColumnTitles: true,
 			item: {
@@ -6165,10 +6488,11 @@ DLG1_DlgObj._listSystemOnClick('LIST2',this.selection[0]);},
 				header: {
 					html: 'S&iacute;ntomas'
 				},
+				_name: 'Sintoma',
 				resize: false,
 				rcw: 0,
 				data: {
-					template: '<span id="DLG1.LIST2.SINTOMA.I.{*dataRow}">{*ensure __edit}{*if __edit}<div style="padding-right: 20px; padding-left: 0px;"><input  \ta5-on-change="Sintoma" \ta5-on-blur="Sintoma" \ta5-on-focus="Sintoma" \ta5-on-keypress="Sintoma" \ta5-on-keyup="Sintoma" \ta5-on-keydown="Sintoma" \ta5-index="{[temp].info.index}" \ta5-item = "A5EDITNOOP" \t \ta5-name="Sintoma"  \tonchange="DLG1_DlgObj._controlInst[\'R1.LIST2\']._editing.store(DLG1_DlgObj._controlInst[\'R1.LIST2\'],{[temp].info.index}); "  \tvalue="{[scope]._editing.data[\'R\'+[temp].info.index].Sintoma}"  \tclass="GrBlueEdit"  \tid="LIST2.{[temp].info.index}.SINTOMA.CONTROL" \tontouchstart="$e.stopPropagation(event);" \tplaceholder="" \t   \t \tstyle="width: 100%;"/> {[scope]._editing.getError([scope],[temp].info.index,\'Sintoma\')}</div>{*else}{Sintoma} {*endif}</span>'
+					template: '<span id="DLG1.LIST2.SINTOMA.I.{*dataRow}">{*ensure __edit}{*if __edit}<div style="padding-right: 20px; padding-left: 0px;"><input  \ta5-on-change="Sintoma" \ta5-on-blur="Sintoma" \ta5-on-focus="Sintoma" \ta5-on-keypress="Sintoma" \ta5-on-keyup="Sintoma" \ta5-on-keydown="Sintoma" \ta5-index="{[temp].info.index}" \ta5-item = "A5EDITNOOP" \t \ta5-name="Sintoma"  \tonchange="DLG1_DlgObj._controlInst[\'R1.LIST2\']._editing.store(DLG1_DlgObj._controlInst[\'R1.LIST2\'],{[temp].info.index}); "  \tvalue="{[scope]._editing.data[\'R\'+[temp].info.index].Sintoma:escape}"  \tclass="GrBlueEdit"  \tid="LIST2.{[temp].info.index}.SINTOMA.CONTROL" \tontouchstart="$e.stopPropagation(event);" \tplaceholder="" \t   \t \tstyle="width: 100%;"/> {[scope]._editing.getError([scope],[temp].info.index,\'Sintoma\')}</div>{*else}{Sintoma} {*endif}</span>'
 				},
 				order: 'Sintoma',
 				width: 'flex(1)'
@@ -6626,6 +6950,7 @@ if(!this._searchPartHas) return true;
 	var od = DLG1_DlgObj.originalValues[0];
 	for(var i = 0; i < map.length; i++) {
 		var val = od[map[i].control.toUpperCase()];
+		//selwyn 8/6/20 -- used to be false, but then the floating label is not resotred to its initial position when the form is cleared
 		if(typeof val != 'undefined') DLG1_DlgObj.setValue(map[i].control,val,false);
 	}
 	this.setFilter(false);
@@ -6783,6 +7108,7 @@ var rowCount = this._values.length;
 //this.systemEvents.afterClientSideFilter(e);
 var ele = $('DLG1.list2.RECORDCOUNT');
 if(ele) ele.innerHTML = rowCount;
+if(this._showHideFetchMoreSpinner) this._showHideFetchMoreSpinner();
 }
 ,
 	scrollToClosestValue: function(val) { 	
@@ -7005,12 +7331,12 @@ if(this.multiple ) return;
 	"itemName": "A5EDIT",
 	"selectable": false,
 	"onClick": function(index,v,args) { 					var data = this._data[this._dataMap[index]];
-					(function(rowNumber,value,ia,data,lObj,listObj) { if(lObj._inplaceEditing.editingMode == 'OneRowAtATime') {
- lObj.editInplaceSaveAll();
-}
-if(typeof lObj.onEditStart == 'function'){
+					(function(rowNumber,value,ia,data,lObj,listObj) { if(typeof lObj.onEditStart == 'function'){
  var res = lObj.onEditStart.call(lObj,data,rowNumber);
  if(!res && typeof res == 'boolean') return false;
+}
+if(lObj._inplaceEditing.editingMode == 'OneRowAtATime') {
+ lObj.editInplaceSaveAll();
 }
 lObj.__previousFocusRow = false;
 var key = data['*key'];
@@ -7039,6 +7365,30 @@ var ele = $(lObj.contId+'.'+rowNumber)
 var eles = ele.getElementsByTagName('input');
 if(eles[0]) eles[0].focus();
 lObj._editing._updateState(lObj,key); }(index,v,args,data,this,this))
+				}
+},
+'A5EDITDELETERECORD' : {
+	"itemName": "A5EDITDELETERECORD",
+	"selectable": false,
+	"onClick": function(index,v,args) { 					var data = this._data[this._dataMap[index]];
+					(function(rowNumber,value,ia,data,lObj,listObj) { lObj.setValue(rowNumber,false);
+var flag = true;
+if(lObj.onInplaceEditDeleteRow){
+ var d = lObj._data;
+ flag = lObj.onInplaceEditDeleteRow.call(lObj,d,rowNumber);
+}
+if(typeof flag == 'undefined') flag = true;
+if(flag) {
+ if(lObj._hasDetailView) {
+  lObj.deleteRow();
+ } else {
+  var _row = rowNumber;
+  lObj.setValue(_row,false);
+  if(typeof _row != 'undefined') {
+   lObj.removeRows([_row]);
+  }
+ };
+}; }(index,v,args,data,this,this))
 				}
 },
 'A5EDITSAVE' : {
@@ -7204,6 +7554,10 @@ lObj.refresh(); }(index,v,args,data,this,this))
 	_listGUID: 'a6a77fb0-463a-4f45-b519-b5b9457b6a71'
 };
 DLG1_DlgObj._listViewSettings['LIST3'] = {
+	_switchInfo: {
+},
+	_setupAlphabetSearch: function() { },
+	_flagAutoFetchMore: false,
 	_persistListLayout: false,
 	_loadPersistedLayout: false,
 	saveLayoutSettings: function() {
@@ -7456,6 +7810,7 @@ for(var i = 0; i < d.length; i++) {
   break;
  }
 }
+if (d.length == 0) this._allrowschecked = false;
 var h ;
 if(this._allrowschecked) {
  h = A5.u.icon.html(this.__checkedImage);
@@ -7476,6 +7831,9 @@ this._selectedRow = this.selection[0];
 DLG1_DlgObj._listSystemOnClick('LIST3',this.selection[0]);},
 	layouts: {
 		Default: {
+			group: {
+				auto:  null 
+			},
 			type: 'template',
 			item: {
 			},
@@ -7903,6 +8261,7 @@ if(!this._searchPartHas) return true;
 	var od = DLG1_DlgObj.originalValues[0];
 	for(var i = 0; i < map.length; i++) {
 		var val = od[map[i].control.toUpperCase()];
+		//selwyn 8/6/20 -- used to be false, but then the floating label is not resotred to its initial position when the form is cleared
 		if(typeof val != 'undefined') DLG1_DlgObj.setValue(map[i].control,val,false);
 	}
 	this.setFilter(false);
@@ -8013,6 +8372,7 @@ var rowCount = this._values.length;
 //this.systemEvents.afterClientSideFilter(e);
 var ele = $('DLG1.list3.RECORDCOUNT');
 if(ele) ele.innerHTML = rowCount;
+if(this._showHideFetchMoreSpinner) this._showHideFetchMoreSpinner();
 }
 ,
 	scrollToClosestValue: function(val) { 	
@@ -8238,6 +8598,10 @@ if(this.multiple ) return;
 	_listGUID: 'a9104f03-067c-49dd-92a0-a7e8369a92cd'
 };
 DLG1_DlgObj._listViewSettings['LIST4'] = {
+	_switchInfo: {
+},
+	_setupAlphabetSearch: function() { },
+	_flagAutoFetchMore: false,
 	_persistListLayout: false,
 	_loadPersistedLayout: false,
 	saveLayoutSettings: function() {
@@ -8486,6 +8850,7 @@ for(var i = 0; i < d.length; i++) {
   break;
  }
 }
+if (d.length == 0) this._allrowschecked = false;
 var h ;
 if(this._allrowschecked) {
  h = A5.u.icon.html(this.__checkedImage);
@@ -8506,6 +8871,9 @@ this._selectedRow = this.selection[0];
 DLG1_DlgObj._listSystemOnClick('LIST4',this.selection[0]);},
 	layouts: {
 		Default: {
+			group: {
+				auto:  null 
+			},
 			type: 'template',
 			item: {
 			},
@@ -8933,6 +9301,7 @@ if(!this._searchPartHas) return true;
 	var od = DLG1_DlgObj.originalValues[0];
 	for(var i = 0; i < map.length; i++) {
 		var val = od[map[i].control.toUpperCase()];
+		//selwyn 8/6/20 -- used to be false, but then the floating label is not resotred to its initial position when the form is cleared
 		if(typeof val != 'undefined') DLG1_DlgObj.setValue(map[i].control,val,false);
 	}
 	this.setFilter(false);
@@ -9043,6 +9412,7 @@ var rowCount = this._values.length;
 //this.systemEvents.afterClientSideFilter(e);
 var ele = $('DLG1.list4.RECORDCOUNT');
 if(ele) ele.innerHTML = rowCount;
+if(this._showHideFetchMoreSpinner) this._showHideFetchMoreSpinner();
 }
 ,
 	scrollToClosestValue: function(val) { 	
@@ -9268,6 +9638,10 @@ if(this.multiple ) return;
 	_listGUID: 'a9104f03-067c-49dd-92a0-a7e8369a92cd'
 };
 DLG1_DlgObj._listViewSettings['LISTCUARENTENA'] = {
+	_switchInfo: {
+},
+	_setupAlphabetSearch: function() { },
+	_flagAutoFetchMore: false,
 	_persistListLayout: false,
 	_loadPersistedLayout: false,
 	saveLayoutSettings: function() {
@@ -9618,6 +9992,7 @@ for(var i = 0; i < d.length; i++) {
   break;
  }
 }
+if (d.length == 0) this._allrowschecked = false;
 var h ;
 if(this._allrowschecked) {
  h = A5.u.icon.html(this.__checkedImage);
@@ -9781,6 +10156,9 @@ DLG1_DlgObj._listRowSelect('listCuarentena',this);
 DLG1_DlgObj._listSystemOnClick('LISTCUARENTENA',this.selection[0]);},
 	layouts: {
 		Default: {
+			group: {
+				auto:  null 
+			},
 			type: 'template',
 			item: {
 			},
@@ -10242,6 +10620,7 @@ if(!this._searchPartHas) return true;
 	var od = DLG1_DlgObj.originalValues[0];
 	for(var i = 0; i < map.length; i++) {
 		var val = od[map[i].control.toUpperCase()];
+		//selwyn 8/6/20 -- used to be false, but then the floating label is not resotred to its initial position when the form is cleared
 		if(typeof val != 'undefined') DLG1_DlgObj.setValue(map[i].control,val,false);
 	}
 	this.setFilter(false);
@@ -10363,6 +10742,7 @@ var rowCount = this._values.length;
 //this.systemEvents.afterClientSideFilter(e);
 var ele = $('DLG1.listCuarentena.RECORDCOUNT');
 if(ele) ele.innerHTML = rowCount;
+if(this._showHideFetchMoreSpinner) this._showHideFetchMoreSpinner();
 }
 ,
 	scrollToClosestValue: function(val) { 	
@@ -10588,6 +10968,10 @@ if(this.multiple ) return;
 	_listGUID: '4ea3e724-a5d7-45ad-9afb-9be2f5f1c2f8'
 };
 DLG1_DlgObj._listViewSettings['LISTEVALUACION'] = {
+	_switchInfo: {
+},
+	_setupAlphabetSearch: function() { },
+	_flagAutoFetchMore: false,
 	_persistListLayout: false,
 	_loadPersistedLayout: false,
 	saveLayoutSettings: function() {
@@ -10909,6 +11293,7 @@ for(var i = 0; i < d.length; i++) {
   break;
  }
 }
+if (d.length == 0) this._allrowschecked = false;
 var h ;
 if(this._allrowschecked) {
  h = A5.u.icon.html(this.__checkedImage);
@@ -10940,6 +11325,9 @@ DLG1_DlgObj.runAction('paraMoveEvaluacion');
 DLG1_DlgObj._listSystemOnClick('LISTEVALUACION',this.selection[0]);},
 	layouts: {
 		Default: {
+			group: {
+				auto:  null 
+			},
 			type: 'template',
 			item: {
 			},
@@ -11368,6 +11756,7 @@ if(!this._searchPartHas) return true;
 	var od = DLG1_DlgObj.originalValues[0];
 	for(var i = 0; i < map.length; i++) {
 		var val = od[map[i].control.toUpperCase()];
+		//selwyn 8/6/20 -- used to be false, but then the floating label is not resotred to its initial position when the form is cleared
 		if(typeof val != 'undefined') DLG1_DlgObj.setValue(map[i].control,val,false);
 	}
 	this.setFilter(false);
@@ -11478,6 +11867,7 @@ var rowCount = this._values.length;
 //this.systemEvents.afterClientSideFilter(e);
 var ele = $('DLG1.listEvaluacion.RECORDCOUNT');
 if(ele) ele.innerHTML = rowCount;
+if(this._showHideFetchMoreSpinner) this._showHideFetchMoreSpinner();
 }
 ,
 	scrollToClosestValue: function(val) { 	
@@ -11703,6 +12093,10 @@ if(this.multiple ) return;
 	_listGUID: 'ccc58bcf-bfed-48d1-8a16-288ee8c4f12e'
 };
 DLG1_DlgObj._listViewSettings['LISTEVALUACIONCAT1'] = {
+	_switchInfo: {
+},
+	_setupAlphabetSearch: function() { },
+	_flagAutoFetchMore: false,
 	_persistListLayout: false,
 	_loadPersistedLayout: false,
 	saveLayoutSettings: function() {
@@ -11753,40 +12147,12 @@ DLG1_DlgObj._listViewSettings['LISTEVALUACIONCAT1'] = {
 	_dataSourceType: 'SQL',
 	_listFields: [
 {
-	name: 'Id_TrabajadorDesempeno_Categoria',
-	defaultValue: 'return this._controlDefaultValueForListField(\'Id_TrabajadorDesempeno_Categoria\');'
-},
-{
-	name: 'Id_Categoria',
-	defaultValue: 'return this._controlDefaultValueForListField(\'Id_Categoria\');'
-},
-{
-	name: 'Id_Trabajador',
-	defaultValue: 'return this._controlDefaultValueForListField(\'Id_Trabajador\');'
-},
-{
-	name: 'Id_Area',
-	defaultValue: 'return this._controlDefaultValueForListField(\'Id_Area\');'
-},
-{
-	name: 'Id_TrabajadorDesempeno',
-	defaultValue: 'return this._controlDefaultValueForListField(\'Id_TrabajadorDesempeno\');'
-},
-{
-	name: 'Id_TipoEvaluacion',
-	defaultValue: 'return this._controlDefaultValueForListField(\'Id_TipoEvaluacion\');'
+	name: 'Descripcion',
+	defaultValue: 'return this._controlDefaultValueForListField(\'Descripcion\');'
 },
 {
 	name: 'Id_TrabajadorDesempeno_Elemento',
 	defaultValue: 'return this._controlDefaultValueForListField(\'Id_TrabajadorDesempeno_Elemento\');'
-},
-{
-	name: 'Id_Elemento',
-	defaultValue: 'return this._controlDefaultValueForListField(\'Id_Elemento\');'
-},
-{
-	name: 'Id_Categoria_1',
-	defaultValue: 'return this._controlDefaultValueForListField(\'Id_Categoria_1\');'
 },
 {
 	name: 'PuntuacionTrabajador',
@@ -11797,72 +12163,12 @@ DLG1_DlgObj._listViewSettings['LISTEVALUACIONCAT1'] = {
 	defaultValue: 'return this._controlDefaultValueForListField(\'PuntuacionJefe\');'
 },
 {
-	name: 'Id_Trabajador_Categoria',
-	defaultValue: 'return this._controlDefaultValueForListField(\'Id_Trabajador_Categoria\');'
-},
-{
-	name: 'Aprobado',
-	defaultValue: 'return this._controlDefaultValueForListField(\'Aprobado\');'
-},
-{
-	name: 'Observaciones',
-	defaultValue: 'return this._controlDefaultValueForListField(\'Observaciones\');'
-},
-{
-	name: 'Id_Categoria_2',
-	defaultValue: 'return this._controlDefaultValueForListField(\'Id_Categoria_2\');'
-},
-{
-	name: 'Descripcion',
-	defaultValue: 'return this._controlDefaultValueForListField(\'Descripcion\');'
-},
-{
-	name: 'Id_Area_1',
-	defaultValue: 'return this._controlDefaultValueForListField(\'Id_Area_1\');'
-},
-{
-	name: 'Id_Direccion',
-	defaultValue: 'return this._controlDefaultValueForListField(\'Id_Direccion\');'
-},
-{
-	name: 'Id_TipoEvaluacion_1',
-	defaultValue: 'return this._controlDefaultValueForListField(\'Id_TipoEvaluacion_1\');'
+	name: 'Id_TrabajadorDesempeno',
+	defaultValue: 'return this._controlDefaultValueForListField(\'Id_TrabajadorDesempeno\');'
 },
 {
 	name: 'Id_TipoCategoria',
 	defaultValue: 'return this._controlDefaultValueForListField(\'Id_TipoCategoria\');'
-},
-{
-	name: 'FechaCreacion',
-	defaultValue: 'return this._controlDefaultValueForListField(\'FechaCreacion\');'
-},
-{
-	name: 'FechaActualizacion',
-	defaultValue: 'return this._controlDefaultValueForListField(\'FechaActualizacion\');'
-},
-{
-	name: 'usuarioCreador',
-	defaultValue: 'return this._controlDefaultValueForListField(\'usuarioCreador\');'
-},
-{
-	name: 'usuarioEdicion',
-	defaultValue: 'return this._controlDefaultValueForListField(\'usuarioEdicion\');'
-},
-{
-	name: 'Id_TipoCategoria_1',
-	defaultValue: 'return this._controlDefaultValueForListField(\'Id_TipoCategoria_1\');'
-},
-{
-	name: 'Descripcion_1',
-	defaultValue: 'return this._controlDefaultValueForListField(\'Descripcion_1\');'
-},
-{
-	name: 'PuntuacionMax',
-	defaultValue: 'return this._controlDefaultValueForListField(\'PuntuacionMax\');'
-},
-{
-	name: 'PuntuacionMin',
-	defaultValue: 'return this._controlDefaultValueForListField(\'PuntuacionMin\');'
 }],
 	_delayRenderTillRefresh: false,
 	_searchPartHas: false,
@@ -11889,7 +12195,7 @@ DLG1_DlgObj._listViewSettings['LISTEVALUACIONCAT1'] = {
 	},
 	_incrementalRefreshAfterLoad: function() { },
 	_dvmode: 'enter',
-	_hasDetailView: false,
+	_hasDetailView: true,
 	deselectAll: function() { 	
 	var _dlgObj = window[this._hostComponentId + '_DlgObj']; 
 	_dlgObj.setValue(this.listVariableName,'',true);
@@ -11956,7 +12262,19 @@ DLG1_DlgObj._listViewSettings['LISTEVALUACIONCAT1'] = {
 	_submitLocationInfo: false,
 	_detailView: {
 		method: 'fieldMap',
-		fieldMap: []
+		fieldMap: [
+{
+	field: 'Id_TrabajadorDesempeno_Elemento',
+	control: 'Id_TrabajadorDesempeno_Elemento'
+},
+{
+	field: 'PuntuacionTrabajador',
+	control: 'PuntuacionTrabajador'
+},
+{
+	field: 'PuntuacionJefe',
+	control: 'PuntuacionJefe'
+}]
 	},
 	_detailViewGlobalErrorStyle: 'font-family: Arial; font-size: 10pt; color: red; border: solid 1px red; width: 100%;',
 	_autoCommitDetailView: true,
@@ -12000,10 +12318,13 @@ for(var i = 0; i < r.length; i++) {
 		}
 	},
 	layout: 'Default',
+	calculateValue: function(data) {  {var _val = '' +(function(data) {if(typeof data.__primaryKey != 'undefined') {return data.__primaryKey;} else { 
+try{} catch(err) { return undefined }
+}})(data); if((_val == '' ||  _val == 'undefined'  )&& typeof data['*rowGUID'] != 'undefined') _val = '_temporaryValue_' + data['*rowGUID']; return _val;}},
 	listVariableName: 'LISTEVALUACIONCAT1',
 	listVariableNameTrueCase: 'listEvaluacionCat1',
 	_hostComponentId: 'DLG1',
-	_includeCRC: false,
+	_includeCRC: true,
 	parentList: 'listEvaluacion',
 	allParentLists: ['LISTEVALUACION'],
 	_inplaceEditing: {
@@ -12013,7 +12334,21 @@ for(var i = 0; i < r.length; i++) {
 	__flagIncrementalRefreshAfterLoad: false,
 	onBeforePopulate: function(data) {this.__onPopulateHasFired = false;
 },
-	onPopulate: function(data) {if(!this._isInit) {if (typeof window['cordova'] == 'undefined') { 
+	onPopulate: function(data) {	
+	var ls = DLG1_DlgObj._localStorageSettings;
+	if(typeof ls == 'object') {
+		var lsr = ls.restore;
+		if(typeof lsr != 'undefined') { 
+			if(!lsr.data) { 
+				//since ux does not restore from storage (which would have fired _fetchMediaFiles(), we fire it here
+				var lObj = this;
+				//sr 2-28-19 turned off because was casing the _fetchMediaFiles to get executed twice.
+				//should be no need to do this because the UX issues a _fetchMediaFiles call when the UX is rendered and when a List is refreshed.
+				//DLG1_DlgObj._delayTillPhoneGapReady(lObj._fetchMediaFiles,lObj);
+			}
+		}
+	}
+if(!this._isInit) {if (typeof window['cordova'] == 'undefined') { 
 	DLG1_DlgObj._list_executeEvent(this.listVariableName,'detailView.listReadyToPersist',{listSyncMode: 'fullRefresh' });
 }
 };},
@@ -12069,6 +12404,7 @@ for(var i = 0; i < d.length; i++) {
   break;
  }
 }
+if (d.length == 0) this._allrowschecked = false;
 var h ;
 if(this._allrowschecked) {
  h = A5.u.icon.html(this.__checkedImage);
@@ -12232,55 +12568,21 @@ DLG1_DlgObj._listRowSelect('listEvaluacionCat1',this);
 DLG1_DlgObj._listSystemOnClick('LISTEVALUACIONCAT1',this.selection[0]);},
 	layouts: {
 		Default: {
-			type: 'column',
-			showColumnTitles: true,
+			group: {
+				auto:  null 
+			},
+			type: 'template',
 			item: {
+				className: 'GrBlueListItem'
 			},
-			columns: [
-			{
-				header: {
-					html: 'Id trabajadordesempeno',
-					style: 'text-align: right;'
-				},
-				resize: false,
-				rcw: 0,
-				data: {
-					template: '<span id="DLG1.LISTEVALUACIONCAT1.ID_TRABAJADORDESEMPENO.I.{*dataRow}">{Id_TrabajadorDesempeno}&nbsp;</span>',
-					style: 'text-align: right;'
-				},
-				order: 'Id_TrabajadorDesempeno',
-				width: 'flex(1)'
-			},
-			{
-				header: {
-					html: 'Puntuaciontrabajador',
-					style: 'text-align: right;'
-				},
-				resize: false,
-				rcw: 0,
-				data: {
-					template: '<span id="DLG1.LISTEVALUACIONCAT1.PUNTUACIONTRABAJADOR.I.{*dataRow}">{PuntuacionTrabajador}&nbsp;</span>',
-					style: 'text-align: right;'
-				},
-				order: 'PuntuacionTrabajador',
-				width: 'flex(1)'
-			},
-			{
-				header: {
-					html: 'Puntuacionjefe',
-					style: 'text-align: right;'
-				},
-				resize: false,
-				rcw: 0,
-				data: {
-					template: '<span id="DLG1.LISTEVALUACIONCAT1.PUNTUACIONJEFE.I.{*dataRow}">{PuntuacionJefe}&nbsp;</span>',
-					style: 'text-align: right;'
-				},
-				order: 'PuntuacionJefe',
-				width: 'flex(1)'
-			}],
-			_hasRCW: false,
-			_horizontalScrolling: false
+			template: [
+			'<div class="card card-wide">',
+			'\t\t<h2><span id="DLG1.LISTEVALUACIONCAT1.DESCRIPCION.I.{*dataRow}">{Descripcion}&nbsp;</span></h2>',
+			'\t\t<p>Autoevaluaci&oacute;n: <span id="DLG1.LISTEVALUACIONCAT1.PUNTUACIONTRABAJADOR.I.{*dataRow}">{PuntuacionTrabajador}&nbsp;</span> Evaluador: <span id="DLG1.LISTEVALUACIONCAT1.PUNTUACIONJEFE.I.{*dataRow}">{PuntuacionJefe}&nbsp;</span></p>',
+			'\t<div class="card-content">',
+			'\t\t',
+			'\t</div>',
+			'</div>']
 		}
 	},
 	__checkedImage: 'svgIcon=#alpha-icon-checkCircle:icon,24',
@@ -12732,6 +13034,7 @@ if(!this._searchPartHas) return true;
 	var od = DLG1_DlgObj.originalValues[0];
 	for(var i = 0; i < map.length; i++) {
 		var val = od[map[i].control.toUpperCase()];
+		//selwyn 8/6/20 -- used to be false, but then the floating label is not resotred to its initial position when the form is cleared
 		if(typeof val != 'undefined') DLG1_DlgObj.setValue(map[i].control,val,false);
 	}
 	this.setFilter(false);
@@ -12845,7 +13148,7 @@ searchFor =  searchFor.replace(/[\-\[\]\/\{\}\(\)\*\+\?\.\\\^\$\|]/g, "\\$&");
 if(searchFor != '') {
 	//fixes bug in Chrome when searching on dates strings that use forward slashes
 	searchFor = searchFor.replace(/\//g,'\\/');
-	this.setFilter({'Id_TrabajadorDesempeno_Categoria': RegExp('' + searchFor,'i'), 'Id_Categoria': RegExp('' + searchFor,'i'), 'Id_Trabajador': RegExp('' + searchFor,'i'), 'Id_Area': RegExp('' + searchFor,'i'), 'Id_TrabajadorDesempeno': RegExp('' + searchFor,'i'), 'Id_TipoEvaluacion': RegExp('' + searchFor,'i'), 'Id_TrabajadorDesempeno_Elemento': RegExp('' + searchFor,'i'), 'Id_Elemento': RegExp('' + searchFor,'i'), 'Id_Categoria_1': RegExp('' + searchFor,'i'), 'PuntuacionTrabajador': RegExp('' + searchFor,'i'), 'PuntuacionJefe': RegExp('' + searchFor,'i'), 'Id_Trabajador_Categoria': RegExp('' + searchFor,'i'), 'Aprobado': RegExp('' + searchFor,'i'), 'Observaciones': RegExp('' + searchFor,'i'), 'Id_Categoria_2': RegExp('' + searchFor,'i'), 'Descripcion': RegExp('' + searchFor,'i'), 'Id_Area_1': RegExp('' + searchFor,'i'), 'Id_Direccion': RegExp('' + searchFor,'i'), 'Id_TipoEvaluacion_1': RegExp('' + searchFor,'i'), 'Id_TipoCategoria': RegExp('' + searchFor,'i'), 'FechaCreacion': RegExp('' + searchFor,'i'), 'FechaActualizacion': RegExp('' + searchFor,'i'), 'usuarioCreador': RegExp('' + searchFor,'i'), 'usuarioEdicion': RegExp('' + searchFor,'i'), 'Id_TipoCategoria_1': RegExp('' + searchFor,'i'), 'Descripcion_1': RegExp('' + searchFor,'i'), 'PuntuacionMax': RegExp('' + searchFor,'i'), 'PuntuacionMin': RegExp('' + searchFor,'i')});
+	this.setFilter({'Descripcion': RegExp('' + searchFor,'i'), 'Id_TrabajadorDesempeno_Elemento': RegExp('' + searchFor,'i'), 'PuntuacionTrabajador': RegExp('' + searchFor,'i'), 'PuntuacionJefe': RegExp('' + searchFor,'i'), 'Id_TrabajadorDesempeno': RegExp('' + searchFor,'i'), 'Id_TipoCategoria': RegExp('' + searchFor,'i')});
 } else this.setFilter(false);
 var rowCount = this._values.length;
 //var e = {};
@@ -12853,6 +13156,7 @@ var rowCount = this._values.length;
 //this.systemEvents.afterClientSideFilter(e);
 var ele = $('DLG1.listEvaluacionCat1.RECORDCOUNT');
 if(ele) ele.innerHTML = rowCount;
+if(this._showHideFetchMoreSpinner) this._showHideFetchMoreSpinner();
 }
 ,
 	scrollToClosestValue: function(val) { 	
@@ -13070,8 +13374,6 @@ if(this.multiple ) return;
 }
 ,
 	_useServerSideSyncLog: false,
-	items: {
-},
 	_searchHighlighting: false,
 	_incrementalRefreshTimestampField: '',
 	_hasNavigationBar: false,
@@ -13081,7 +13383,7 @@ DLG1_DlgObj._listViewData['LIST1'] = [];
 DLG1_DlgObj._listViewData['LIST2'] = []; 
 DLG1_DlgObj._listViewData['LIST3'] = []; 
 DLG1_DlgObj._listViewData['LIST4'] = []; 
-DLG1_DlgObj._listViewData['LISTCUARENTENA'] = A5DataArrayToObject(['Id_MonitoreoCobro','Id_Estado','Id_Trabajador','Id_Contacto','FechaMin','FechaMax','NombreContacto','NombreTrabajador','creador','fechaCreacion','__primaryKey','__a5crc'],[['1022','2','0','8614','2020-07-08','2020-07-22','Joni Coquinche Alvarado',null,'marino','23-07-2020 09:19:13 89 am','1022','4294939111'],['1023','2','0','8613','2020-07-08','2020-07-22','Edwin Vargas Chimbo',null,'marino','23-07-2020 09:24:22 09 am','1023','4294963804'],['1025','2','387','0','2020-07-14','2020-07-22',null,'Byron Otavalo','marino','23-07-2020 09:57:53 79 am','1025','4294914245'],['1026','2','316','0','2020-07-16','2020-07-22',null,'Fredy Alomia Izurieta','marino','23-07-2020 09:58:24 46 am','1026','4294933710'],['1027','2','0','8615','2020-07-08','2020-07-22','Luis Ospina Avala',null,'marino','23-07-2020 11:05:54 81 am','1027','4294936961'],['1032','2','344','0','2020-07-01','2020-07-08',null,'Jerry Villafuerte Sanchez','marino','03-08-2020 12:51:03 86 pm','1032','4294908699'],['1033','2','356','0','2020-07-02','2020-07-16',null,'Sixto Uquiña Licuy','marino','03-08-2020 12:56:51 53 pm','1033','4294902206'],['1034','2','318','0','2020-07-10','2020-07-17',null,'Wilmer Alomia Izurieta','marino','03-08-2020 02:28:54 26 pm','1034','4294943359'],['1035','2','368','0','2020-07-07','2020-07-17',null,'Freddy Jipa Pimbo','marino','03-08-2020 02:30:59 88 pm','1035','4294938779'],['1036','2','346','0','2020-07-01','2020-07-27',null,'Darwin Yumbo Tanguila','marino','03-08-2020 03:21:26 85 pm','1036','4294959449'],['1037','2','384','0','2020-07-01','2020-07-11',null,'Carlos Gualinga Santi','marino','03-08-2020 03:24:08 99 pm','1037','4294911762'],['1038','2','366','0','2020-07-10','2020-07-17',null,'Luis Castillo','marino','03-08-2020 03:25:24 02 pm','1038','4294928434'],['1039','2','386','0','2020-07-14','2020-07-25',null,'Jeofre Shiguango','marino','03-08-2020 03:52:29 68 pm','1039','4294929267'],['1041','2','376','8617','2020-06-26','2020-07-14','Wilmer Grefa Condo','Wilmer Grefa Condor','marino','03-08-2020 04:34:02 24 pm','1041','4294931867'],['1042','2','0','8608','2020-07-01','2020-07-14','Sergio Sanmiguel Rivadeneira',null,'marino','03-08-2020 05:30:40 20 pm','1042','4294907375'],['1043','2','0','8607','2020-07-01','2020-07-13','José Tobar Rivera',null,'marino','03-08-2020 05:34:41 54 pm','1043','4294936449'],['1044','2','0','8609','2020-07-01','2020-07-08','GONZALO JIPA YUMBO',null,'marino','03-08-2020 05:40:15 15 pm','1044','4294939516'],['1045','2','0','8610','2020-07-01','2020-07-08','Orlando Sanmiguel Rodriguez',null,'marino','03-08-2020 05:44:06 39 pm','1045','4294921137'],['1046','2','0','8611','2020-07-01','2020-07-25','Miguel Toledo Martinez',null,'marino','03-08-2020 06:08:44 63 pm','1046','4294943304'],['1047','2','0','8612','2020-07-01','2020-07-25','Victor Salazar Grefa',null,'marino','03-08-2020 06:12:27 21 pm','1047','4294938913'],['1048','2','0','8618','2020-07-15','2020-07-24','Luis Portilla Magallon',null,'marino','03-08-2020 06:14:29 05 pm','1048','4294943866'],['1049','2','0','8619','2020-07-24','2020-07-25','Marco Grefa Condo',null,'jarvis','03-08-2020 06:33:11 47 pm','1049','4294934022'],['1050','2','322','0','2020-07-20','2020-07-25',null,'Wiston Castillo Giraldo','jarvis','04-08-2020 12:22:38 96 pm','1050','4294924162']]); 
+DLG1_DlgObj._listViewData['LISTCUARENTENA'] = A5DataArrayToObject(['Id_MonitoreoCobro','Id_Estado','Id_Trabajador','Id_Contacto','FechaMin','FechaMax','NombreContacto','NombreTrabajador','creador','fechaCreacion','__primaryKey','__a5crc'],[['1022','2','0','8614','2020-07-08','2020-07-22','Joni Coquinche Alvarado',null,'marino','23-07-2020 09:19:13 89 am','1022','4294939111'],['1023','2','0','8613','2020-07-08','2020-07-22','Edwin Vargas Chimbo',null,'marino','23-07-2020 09:24:22 09 am','1023','4294963804'],['1025','2','387','0','2020-07-14','2020-07-22',null,'Byron Otavalo','marino','23-07-2020 09:57:53 79 am','1025','4294914245'],['1026','2','316','0','2020-07-16','2020-07-22',null,'Fredy Alomia Izurieta','marino','23-07-2020 09:58:24 46 am','1026','4294933710'],['1027','2','0','8615','2020-07-08','2020-07-22','Luis Ospina Avala',null,'marino','23-07-2020 11:05:54 81 am','1027','4294936961'],['1032','2','344','0','2020-07-01','2020-07-08',null,'Jerry Villafuerte Sanchez','marino','03-08-2020 12:51:03 86 pm','1032','4294908699'],['1033','2','356','0','2020-07-02','2020-07-16',null,'Sixto Uquiña Licuy','marino','03-08-2020 12:56:51 53 pm','1033','4294902206'],['1034','2','318','0','2020-07-10','2020-07-17',null,'Wilmer Alomia Izurieta','marino','03-08-2020 02:28:54 26 pm','1034','4294943359'],['1035','2','368','0','2020-07-07','2020-07-17',null,'Freddy Jipa Pimbo','marino','03-08-2020 02:30:59 88 pm','1035','4294938779'],['1036','2','346','0','2020-07-01','2020-07-27',null,'Darwin Yumbo Tanguila','marino','03-08-2020 03:21:26 85 pm','1036','4294959449'],['1037','2','384','0','2020-07-01','2020-07-11',null,'Carlos Gualinga Santi','marino','03-08-2020 03:24:08 99 pm','1037','4294911762'],['1038','2','366','0','2020-07-10','2020-07-17',null,'Luis Castillo','marino','03-08-2020 03:25:24 02 pm','1038','4294928434'],['1039','2','386','0','2020-07-14','2020-07-25',null,'Jeofre Shiguango','marino','03-08-2020 03:52:29 68 pm','1039','4294929267'],['1041','2','376','8617','2020-06-26','2020-07-14','Wilmer Grefa Condo','Wilmer Grefa Condor','marino','03-08-2020 04:34:02 24 pm','1041','4294931867'],['1042','2','0','8608','2020-07-01','2020-07-14','Sergio Sanmiguel Rivadeneira',null,'marino','03-08-2020 05:30:40 20 pm','1042','4294907375'],['1043','2','0','8607','2020-07-01','2020-07-13','José Tobar Rivera',null,'marino','03-08-2020 05:34:41 54 pm','1043','4294936449'],['1044','2','0','8609','2020-07-01','2020-07-08','GONZALO JIPA YUMBO',null,'marino','03-08-2020 05:40:15 15 pm','1044','4294939516'],['1045','2','0','8610','2020-07-01','2020-07-08','Orlando Sanmiguel Rodriguez',null,'marino','03-08-2020 05:44:06 39 pm','1045','4294921137'],['1046','2','0','8611','2020-07-01','2020-07-25','Miguel Toledo Martinez',null,'marino','03-08-2020 06:08:44 63 pm','1046','4294943304'],['1047','2','0','8612','2020-07-01','2020-07-25','Victor Salazar Grefa',null,'marino','03-08-2020 06:12:27 21 pm','1047','4294938913'],['1048','2','0','8618','2020-07-15','2020-07-24','Luis Portilla Magallon',null,'marino','03-08-2020 06:14:29 05 pm','1048','4294943866'],['1049','2','0','8619','2020-07-24','2020-07-25','Marco Grefa Condo',null,'jarvis','03-08-2020 06:33:11 47 pm','1049','4294934022'],['1050','2','322','0','2020-07-20','2020-07-25',null,'Wiston Castillo Giraldo','jarvis','04-08-2020 12:22:38 96 pm','1050','4294924162'],['1052','2','0','8609','2020-08-28','2020-09-09','GONZALO JIPA YUMBO',null,'marino','09-09-2020 09:10:05 11 pm','1052','4294914728'],['1053','2','0','8609','2020-08-28','2020-09-09','GONZALO JIPA YUMBO',null,'marino','09-09-2020 09:10:05 24 pm','1053','4294944816'],['1054','2','0','8609','2020-08-28','2020-09-09','GONZALO JIPA YUMBO',null,'marino','09-09-2020 09:10:05 72 pm','1054','4294920917']]); 
 DLG1_DlgObj._listViewData['LISTEVALUACION'] = []; 
 DLG1_DlgObj._listViewData['LISTEVALUACIONCAT1'] = [];
 ;
@@ -13099,7 +13401,8 @@ DLG1_DlgObj._controls['LIST2'] =  { type: 'list',  data: DLG1_DlgObj._listViewDa
 			var _cn = 'DLG1_' + this.listVariableName.toUpperCase() + '_2';
 			$acn(pe,_cn);
 		}
-},  settings: DLG1_DlgObj._listViewSettings['LIST2'] }
+//generate picklists for dropdown controls that have a dynamic javascript picklist
+; if(this._setupAlphabetSearch) this._setupAlphabetSearch.call(this)},  settings: DLG1_DlgObj._listViewSettings['LIST2'] }
 DLG1_DlgObj._controls['LIST3'] =  { type: 'list',  data: DLG1_DlgObj._listViewData['LIST3'],  onInitialize: function() { 
 		var pe = $(this.contId).parentElement;
 		if(typeof this.listVariableName != 'undefined') { 
@@ -13128,13 +13431,13 @@ DLG1_DlgObj._controls['LISTEVALUACION'] =  { type: 'list',  data: DLG1_DlgObj._l
 			$acn(pe,_cn);
 		}
 },  settings: DLG1_DlgObj._listViewSettings['LISTEVALUACION'] }
-DLG1_DlgObj._controls['LISTEVALUACIONCAT1'] =  { type: 'list',  data: DLG1_DlgObj._listViewData['LISTEVALUACIONCAT1'],  onInitialize: function() { 
+DLG1_DlgObj._controls['LISTEVALUACIONCAT1'] =  { type: 'list',  data: DLG1_DlgObj._listViewData['LISTEVALUACIONCAT1'],  onInitialize: function() { var that = this; setTimeout(function() {that._onSelect(); delete that; },10);
 		var pe = $(this.contId).parentElement;
 		if(typeof this.listVariableName != 'undefined') { 
 			var _cn = 'DLG1_' + this.listVariableName.toUpperCase() + '_2';
 			$acn(pe,_cn);
 		}
-},  settings: DLG1_DlgObj._listViewSettings['LISTEVALUACIONCAT1'] }
+; if(this._setupAlphabetSearch) this._setupAlphabetSearch.call(this)},  settings: DLG1_DlgObj._listViewSettings['LISTEVALUACIONCAT1'] }
 DLG1_DlgObj.setVariables({});
 DLG1_DlgObj._dataBoundControls = [];
 DLG1_DlgObj._primaryTableAlias = '';
@@ -13482,6 +13785,29 @@ licensed copy of the Alpha Five Application Server or the Alpha Anywhere Applica
 		}
 		ops.parseExifOrientation = function(dataUrl) {
 			try {
+				// Some of the more current browsers set the default image_orientation property to from-image
+				// It was previously always set to none. This check insures that the image is not rotated twice.
+				/* -----------------
+				* // 8-13-2020: modified to return null for all iOS browsers
+				* if (parseFloat(A5.flags.iOSVersion)>= 13.2) {
+				* // if running on an iOS device then check version, do not rotate for versions 13.2 snd greater
+				* return null;
+				* ------------------
+				*/
+				if (A5.flags.browserSpecs.name == "Safari") {
+					return null;
+				} else if ((A5.flags.browserSpecs.name == "Chrome") && (parseFloat(A5.flags.browserSpecs.version) >= 83)) {
+					//if running on Chrome version 81 or greater, do not rotate
+					return null;
+				} else if ((A5.flags.browserSpecs.name == "Firefox") && (parseFloat(A5.flags.browserSpecs.version) >= 75)) {
+					//if running on Firefox version 75 or greater, do not rotate
+					return null;
+				}
+				// This universal check should work with all modern browsers (Opera, etc.) that set the default value of imageOrientation to "from-image"
+				var _obj = getComputedStyle(document.body);
+				if (obj.imageOrientation == "from-image") {
+					return null;
+				}
 				var _byteString = atob(dataUrl.split(',')[1]);
 				var _binaryFile = new EXIF.BinaryFile(_byteString, 0, _byteString.length);
 				var _exif = EXIF.findEXIFinJPEG(_binaryFile);
@@ -13494,6 +13820,7 @@ licensed copy of the Alpha Five Application Server or the Alpha Anywhere Applica
 			} catch (e) {
 				// Error parsing EXIF data.
 				console.log('Error loading EXIF data', e);
+				return null;
 			}
 		}
 		ops.renderImgToCanvas = function(_file,_orientation,_sourceFileName) {
@@ -14089,13 +14416,6 @@ DLG1_DlgObj.addCustomSchemeForAlphaWkWebView = function(fileURL) {
 				} else {
 					xhr.setRequestHeader('x-amz-acl', 'authenticated-read');
 				}
-				//var _url = DLG1_DlgObj.ajaxURL.split('/LivePreview')[0];
-				//_url = _url.split('//')[1];
-				//alert(_url);
-				//xhr.setRequestHeader('host','ohioalphaanywheretest.s3.amazonaws.com');
-				//alert(1);
-				//https://alphapics.s3.amazonaws.com/57BCA053-3FE1-40E7-A8F2-CC801C4E2879.jpeg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAJ5ICQ44VBDW7T2UQ%2F20190507%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20190507T154548Z&X-Amz-Expires=600&X-Amz-SignedHeaders=host%3Bx-amz-acl&X-Amz-Signature=507fa1f335409fba3b6a72577051182364c763cecb7188fb25a2afce19496d43
-				//johnsmith.s3.amazonaws.com
 			} else {
 				//don't bother with headers. they will get set automatically becuase we will be .send()ing a FormData() object
 			}
@@ -16599,7 +16919,10 @@ DLG1_DlgObj.phoneGapUnzipFiles =  function(explicitFileName,filesystemSource,fol
 				ok.call(this);
 			}
 		}
-		else fail.call(this);
+		else {
+			//alert('in unzip: ' + e); sr55
+			fail.call(this);
+		}
 	}
 	if(typeof zip == 'undefined') {
 		alert('FATAL ERROR - Cordova Zip plugin not loaded');
@@ -16651,7 +16974,9 @@ DLG1_DlgObj.phoneGapDownloadManifestFiles = function(manifest,folder,cbAllDone,o
 		if(manifestName == '') return localStorage.getItem('transFormOnDeviceManifest');
 		else {
 			var manifestObj = DLG1_DlgObj.__getManifestObj();
-			return JSON.stringify(manifestObj[name]);
+			var m = manifestObj[name];
+			return m;
+			//return JSON.stringify(manifestObj[name]);
 		}
 	}
 	function getManifestStorageLocation(manifestName) {
@@ -16673,7 +16998,7 @@ DLG1_DlgObj.phoneGapDownloadManifestFiles = function(manifest,folder,cbAllDone,o
 	//var oldManifest = localStorage.getItem('transFormOnDeviceManifest');
 	//var oldManifest = getManifest(manifestName);
 	//var m = localStorage.transFormOnDeviceManifest;
-	//var m = getManifest(manifestNamae);
+	//var m = getManifest(manifestName);
 	/////////////////////////////////////////////////////////
 	if(typeof manifestName == 'undefined') manifestName = '';
 	var obj = DLG1_DlgObj.__getManifestObj('manifestInfo');
@@ -16750,8 +17075,10 @@ if(typeof flagMoveSQLiteFiles == 'undefined') flagMoveSQLiteFiles = true;
 				for(var j = 0; j < om.length; j++) {
 					if(om[j].url == url && om[j].type == type) {
 						var oldVersion = om[j].version;
+						if(typeof oldVersion == 'undefined') oldVersion = -1;
 						if(typeof oldVersion == 'number') {
 							var newVersion = arr[i].version;
+							if(typeof newVersion == 'undefined') newVersion = -1;
 							if(typeof newVersion == 'number') {
 								if(newVersion <= oldVersion) {
 									arr[i].mustFetch = false;
@@ -16806,7 +17133,7 @@ if(typeof flagMoveSQLiteFiles == 'undefined') flagMoveSQLiteFiles = true;
 	var onOK = function(data) {
 		try{
 			var arr = JSON.parse(data);
-			DLG1_DlgObj.phoneGapDownloadManifestFiles(arr,accountId,cbAllDone,optionsIn,fileSystemPart,flagMoveSQLiteFiles);
+			DLG1_DlgObj.phoneGapDownloadManifestFiles(arr,accountId,cbAllDone,optionsIn,fileSystemPart,flagMoveSQLiteFiles,manifestName);
 		}catch(e) {
 			//alert('Error - could not read the TransForm manifest file.' + JSON.stringify(e));
 			var cbObj = {error: true, errorText: 'Could not read the manifest file.'};
@@ -16828,6 +17155,7 @@ if(typeof flagMoveSQLiteFiles == 'undefined') flagMoveSQLiteFiles = true;
 		return;
 	}
 	//var oldManifest = localStorage.getItem('transFormOnDeviceManifest');
+	//debugger;
 	var oldManifest = getManifest(manifestName);
 	var obj = {};
 	var newManifest = manifest;
@@ -17022,7 +17350,7 @@ if(typeof flagMoveSQLiteFiles == 'undefined') flagMoveSQLiteFiles = true;
 		//sr00
 		if(flagMustUpdateOnDeviceManifest) {
 			//var m = localStorage.transFormOnDeviceManifest;
-			var m = getManifest(manifestNamae);
+			var m = getManifest(manifestName);
 			var mObj = JSON.parse(m);
 			var url_i = '';
 			var mObj2 = mObj[folder];
@@ -17144,8 +17472,9 @@ if(typeof flagMoveSQLiteFiles == 'undefined') flagMoveSQLiteFiles = true;
 				var _getcbfail = function(index,arrIn) {
 						var i = index;
 						var arr = arrIn;
-						var ok = function() {
-							alert('folder UNZIP Fail: ' + i);
+						var ok = function(err) {
+							//alert('failed');
+							alert('UNZIP folder failed: ' + i);
 							arr[i].postProcessDone = true;
 							arr[i].postProcessError = true;
 							postProcessComplete(arr)
@@ -17595,6 +17924,8 @@ DLG1_DlgObj.moveSQLiteFilesFromSubfolder = function(accountIn, cbDone, cbError) 
 	//alert(cbDone.toString());
 	var _ok = _makeOK(accountIn,cbDone);
 	var _err = function(e) { };
+	var _err = _ok; //sr 6-12-2020 on android, if there are no sqlite databases, then the _err function will get called and as a result, the onComplete event was  not firing
+	//therefore make the _err() function same as the _ok() function
 	//need to specify a blank account because the sqlite unzip creates subfolders at the root level of the sqlite folder and these are the files we want to move
 	var account = '';
 	DLG1_DlgObj.phoneGapGetSQLiteDatabases(account,_ok,_err);
@@ -18034,10 +18365,10 @@ PANELHEADER_25: [],
 PANELHEADER_26: [],
 PANELHEADER_27: [],
 TAB_1: ['tabPane:TAB_1#1','tabPane:TAB_1#2'],
-"TAB_1#1": ['textbox2'],
+"TAB_1#1": ['listEvaluacionCat1','textbox2','Id_TrabajadorDesempeno_Elemento','PuntuacionTrabajador','PuntuacionJefe'],
 "TAB_1#2": ['textbox3']
 }
-DLG1_DlgObj._listsDV = ['LIST1','LIST2','LISTCUARENTENA'];
+DLG1_DlgObj._listsDV = ['LIST1','LIST2','LISTCUARENTENA','LISTEVALUACIONCAT1'];
 //Add methods to the List prototype for Lists with Detail Views
 $u.o.assign(A5.ListBox.prototype,
 {
@@ -18304,6 +18635,9 @@ $u.o.assign(A5.ListBox.prototype,
  this._currentDetailViewKey = _d['*key'];
  _dlgObj._list_executeEvent(this.listVariableName,'detailView.beforeDetailViewPopulate',{});
  window[this._hostComponentId + '_DlgObj']._populateUXControlsWithListData(_d,argIn,ops);
+ for(var id in window[this._hostComponentId + '_DlgObj']._floatingLabels) {
+  window[this._hostComponentId + '_DlgObj']._floatingLabels[id](id);
+ };
  this._clearServerSideErrors();
  this._showServerSideErrors();
  this._showWriteConflictErrors();
@@ -19524,6 +19858,24 @@ $u.o.assign(A5.ListBox.prototype,
   window[this._hostComponentId + '_DlgObj'].refreshClientSideComputations();
  }
  ,
+ nullOutDetailViewRecord: function() {  var flagDisable = typeof arguments[0] != 'undefined' ? arguments[0] : false;
+  var val = '';
+  var flagParentListHasActiveRow = this._parentListHasActiveRow();
+  if(flagDisable) {
+   if(flagParentListHasActiveRow) flagDisable = false;
+  }
+  var debugMsg = 'CurrentList: ' + this.listVariableName + ' - flagDisable is set to: ' + flagDisable + ' my parentList has active row: ' +  this._parentListHasActiveRow();
+  var controlName = '';
+  for(var i = 0; i < this._listFields.length; i++) {
+   controlName = this._getUXDetailViewControlName(this._listFields[i].name);
+   window[this._hostComponentId + '_DlgObj'].setValue(controlName,val,false);
+  }
+  this._deselectAll();
+  this._clearServerSideErrors();
+  if(flagDisable) this.disableDetailView(true);
+  else this.disableDetailView(false)
+ }
+ ,
  _stripHTML: function(txt,length) {   var ele = document.createElement('div');
   ele.innerHTML = txt;
   var txt2 = ele.textContent;
@@ -20031,24 +20383,6 @@ $u.o.assign(A5.ListBox.prototype,
   var s = l.selection[0];
   if(typeof s == 'undefined') return false;
   return true;
- }
- ,
- nullOutDetailViewRecord: function() {  var flagDisable = typeof arguments[0] != 'undefined' ? arguments[0] : false;
-  var val = '';
-  var flagParentListHasActiveRow = this._parentListHasActiveRow();
-  if(flagDisable) {
-   if(flagParentListHasActiveRow) flagDisable = false;
-  }
-  var debugMsg = 'CurrentList: ' + this.listVariableName + ' - flagDisable is set to: ' + flagDisable + ' my parentList has active row: ' +  this._parentListHasActiveRow();
-  var controlName = '';
-  for(var i = 0; i < this._listFields.length; i++) {
-   controlName = this._getUXDetailViewControlName(this._listFields[i].name);
-   window[this._hostComponentId + '_DlgObj'].setValue(controlName,val,false);
-  }
-  this._deselectAll();
-  this._clearServerSideErrors();
-  if(flagDisable) this.disableDetailView(true);
-  else this.disableDetailView(false)
  }
  ,
  newDetailViewRecord: function() {
@@ -21265,7 +21599,7 @@ DLG1_DlgObj._listControls = ['list1','list2','list3','list4','listCuarentena','l
 DLG1_DlgObj._localStorageSettings = {namespace: 'ALPHA_8a60dbacea3c41be8ffe2623db0b6b00',friendlyName: '',description: '',persistVariableValues: true,variablesToNotPersist: '',__version: 1,persistComponentState: false,workingPreviewTestingFolder: '',restore: {variables: true,data: true,state: false},compressData: false,minify: false,workingPreviewTestingMode: 'Browser',compressListData: false}
 ;
 DLG1_DlgObj.__r = [];
-DLG1_DlgObj._staticHTMLMode = false
+DLG1_DlgObj.__flagIsStaticHTML = true;
 DLG1_DlgObj._EDITOR_EDITORSET = {};
 DLG1_DlgObj.styleName = 'GrBlue';
 DLG1_DlgObj.styleVersion = 2
@@ -21295,21 +21629,18 @@ DLG1_DlgObj._dataSeriesData = {
 DLG1_DlgObj._mobilePreview = false;
 DLG1_DlgObj._modernFrames = {};
 DLG1_DlgObj._listsWithDependentTFControls = DLG1_DlgObj._listsWithDependentTFControls = {}
-DLG1_DlgObj._functions._windowResize = function() { 
-	var _d = 50;
-	if(typeof DLG1_DlgObj._windowResizeDelay != 'undefined') _d = DLG1_DlgObj._windowResizeDelay;
-	clearTimeout(DLG1_DlgObj._wrTO);
-	DLG1_DlgObj._wrTo = setTimeout(function() { 
-		DLG1_DlgObj._executeEvent('onWindowResize',{});
-	},_d);
-}
-$e.add(window,'resize',DLG1_DlgObj._functions._windowResize,null,false,'DLG1.DIALOG');
-setTimeout(function() { if(DLG1_DlgObj.resizeLists) { DLG1_DlgObj.resizeLists(); }  },0);
 DLG1_DlgObj.__r = [];
-//end 1
+var ele2 = $('DLG1.R1'); if(ele2) {
+var ele = document.createElement('div');
+ele.innerHTML = '\n\n\n\n<div style="display:none;"><span><input\ttype="text" id="DLG1.V.R1.ID_MONITOREOTRABAJADOR" title=""     class="[theme:edit.base.className|class.dialogInput] " style=""    name="V.R1.ID_MONITOREOTRABAJADOR"    value=""    />\n</span>\n<span><input\ttype="text" id="DLG1.V.R1.ID_MONITOREO" title=""     class="[theme:edit.base.className|class.dialogInput] " style=""    name="V.R1.ID_MONITOREO"    value=""    />\n</span>\n<span><input\ttype="text" id="DLG1.V.R1.ID_TRABAJADOR" title=""     class="[theme:edit.base.className|class.dialogInput] " style=""    name="V.R1.ID_TRABAJADOR"    value=""    />\n</span>\n<span><input\ttype="text" id="DLG1.V.R1.ID_MONITOREOTRABAJADORSINTOMA" title=""     class="[theme:edit.base.className|class.dialogInput] " style=""    name="V.R1.ID_MONITOREOTRABAJADORSINTOMA"    value=""    />\n</span>\n<span><input\ttype="text" id="DLG1.V.R1.ID_SINTOMA" title=""     class="[theme:edit.base.className|class.dialogInput] " style=""    name="V.R1.ID_SINTOMA"    value=""    />\n</span>\n<span><input\ttype="text" id="DLG1.V.R1.ID_TRABAJADOR_1" title=""     class="[theme:edit.base.className|class.dialogInput] " style=""    name="V.R1.ID_TRABAJADOR_1"    value=""    />\n</span>\n<span><input\ttype="text" id="DLG1.V.R1.ID_MONITOREOTRABAJADOR_1" title=""     class="[theme:edit.base.className|class.dialogInput] " style=""    name="V.R1.ID_MONITOREOTRABAJADOR_1"    value=""    />\n</span>\n</div>\n\n\n\n\n\n<div style="display:none;"><span><input\ttype="text" id="DLG1.V.R1.TEXTBOX2" title=""     class="[theme:edit.base.className|class.dialogInput] " style=""    name="V.R1.TEXTBOX2"    value=""    />\n</span>\n</div>';
+ele2.appendChild(ele);
+};
+function __preventDefault(event) { event.preventDefault()};
+setTimeout(function() {; },100);
+DLG1_DlgObj.__flagIsStaticHTML = true;
 ;
 ;
-DLG1_DlgObj.applyServerSideRules();
+DLG1_DlgObj.applyServerSideRules(3);
 
 $e.add('DLG1.V.R1.BUTTON_1',A5.d.evnts.click,function(e) {
 function tempfunction_2e98b0a9_c08d_4918_9fe1_6e333e7cf5dc() {
@@ -21824,6 +22155,32 @@ $e.add('DLG1.V.R1.BUTTON_102',A5.d.evnts.click,function(e) {
 DLG1_DlgObj.panelSetActive('PANELCARD_EVALUACION',true);
 },this,false,'DLG1.V.R1.BUTTON_102');
 
+
+
+
+
+
+
+
+
+$e.add('DLG1.V.R1.BUTTON_DVSAVE_LISTEVALUACIONCAT1',A5.d.evnts.click,function(e) {
+var lObj = DLG1_DlgObj.getControl('listEvaluacionCat1');
+if(lObj.selection[0] != 'undefined') {
+ lObj._selectedRow = lObj.selection[0];
+}
+lObj.updateListFromUXControls();
+},this,false,'DLG1.V.R1.BUTTON_DVSAVE_LISTEVALUACIONCAT1');
+
+$e.add('DLG1.V.R1.BUTTON_DVSYNCHRONIZE_LISTEVALUACIONCAT1',A5.d.evnts.click,function(e) {
+function tempfunction_c27ebbc7_0eca_47e2_b50b_abb9ee9fb8c5() {
+DLG1_DlgObj.saveListEdits('LISTEVALUACION',{rows: 'allRows', ajax: { timeOut: 15000, onAjaxFail: function() { } , onDeviceOffline: function() { } } });
+}
+function tempfunction_25bd6904_c86f_4698_ac23_51c58b8867fb() {
+DLG1_DlgObj.saveListEdits('LISTEVALUACIONCAT1',{rows: 'allRows', ajax: { timeOut: 15000, onAjaxFail: function() { } , onDeviceOffline: function() { } } });
+}
+A5.executeThisThenThat(tempfunction_c27ebbc7_0eca_47e2_b50b_abb9ee9fb8c5,tempfunction_25bd6904_c86f_4698_ac23_51c58b8867fb);
+},this,false,'DLG1.V.R1.BUTTON_DVSYNCHRONIZE_LISTEVALUACIONCAT1');
+
 DLG1_DlgObj.prepare();DLG1_DlgObj.populate(DLG1_DlgObj.originalValues[0]);
 DLG1_DlgObj._fireWatches(1);
 
@@ -21833,6 +22190,17 @@ else $e.add(window,'orientationchange',DLG1_DlgObj._orientationChangeHandler,DLG
 DLG1_DlgObj._functions.calcOrientation();
 
 DLG1_DlgObj._tabPaneChange('TAB_1');
+DLG1_DlgObj._functions._windowResize = function() { 
+	var _d = 50;
+	if(typeof DLG1_DlgObj._windowResizeDelay != 'undefined') _d = DLG1_DlgObj._windowResizeDelay;
+	clearTimeout(DLG1_DlgObj._wrTO);
+	DLG1_DlgObj._wrTo = setTimeout(function() { 
+		DLG1_DlgObj._executeEvent('onWindowResize',{});
+	},_d);
+}
+$e.add(window,'resize',DLG1_DlgObj._functions._windowResize,null,false,'DLG1.DIALOG');
+setTimeout(function() { if(DLG1_DlgObj.resizeLists) { DLG1_DlgObj.resizeLists(); }  },0);
+
 ;
 
 
@@ -22088,8 +22456,8 @@ if(listObj._refreshStateMessages) listObj._refreshStateMessages();
 
 
 var listObj = DLG1_DlgObj.getControl('LISTCUARENTENA');
-if(listObj) listObj._state.recordCount = 23;
-if(listObj) listObj._state.recordCountFormatted = '23';
+if(listObj) listObj._state.recordCount = 26;
+if(listObj) listObj._state.recordCountFormatted = '26';
 if(listObj) listObj._state.lastBreakValue = '';
 if(listObj) listObj._state.pageCount = 1;
 if(listObj) listObj._state.pageSize = 20;
@@ -22173,6 +22541,8 @@ if(listObj._refreshStateMessages) listObj._refreshStateMessages();
 
 
 
+
+
 var listObj = DLG1_DlgObj.getControl('LISTEVALUACIONCAT1');
 if(listObj) listObj._state.recordCount = 0;
 if(listObj) listObj._state.recordCountFormatted = '0';
@@ -22201,6 +22571,9 @@ if(listObj) listObj._state.pageCount = 0;
 DLG1_DlgObj._list_executeEvent('LISTEVALUACIONCAT1','afterRenderComplete',{});
 
 if(listObj._refreshStateMessages) listObj._refreshStateMessages();
+
+
+
 
 
 
@@ -22562,7 +22935,7 @@ DLG1_DlgObj.refreshListData('list1');
 if(DLG1_DlgObj.restoreListLayouts) DLG1_DlgObj.restoreListLayouts();
 setTimeout(function() {
 ;},10);;
-DLG1_DlgObj.applyServerSideRules();
+DLG1_DlgObj.applyServerSideRules(4);
 setTimeout(function() { },10);;
 DLG1_DlgObj._activeLanguage = '<Default>';
 </script>
@@ -23168,6 +23541,9 @@ _arr.push('<path d="m 14,13.999999 c 0,0.552285 -0.447715,1 -1,1 -0.552285,0 -1,
 _arr.push('<path d="M 16.535534,10.464465 17.242641,9.757358 M 8.757359,18.24264 9.464466,17.535533 M 8.757359,9.757358 9.464466,10.464465 M 18,13.999999 h 1 m -12,0 h 1 m 5,5 v 1 m 0,-12 v 1" style="fill: none; stroke: inherit; stroke-width: 0.75; stroke-linecap: round; stroke-linejoin: miter; stroke-miterlimit: 4; stroke-dasharray: none; stroke-opacity: 1;" />');
 _arr.push('</symbol><symbol id="alpha-icon-cloud" viewBox="0 0 26 26">');
 _arr.push('<path d="m 20.5,18.5 c 1.656854,0 3,-1.34315 3,-3 0,-1.65685 -1.343146,-3 -3,-3 -0.203487,8.9e-4 -0.406354,0.0225 -0.605469,0.0644 C 19.964189,12.2139 19.999512,11.8574 20,11.5 20,8.462434 17.537566,6 14.5,6 12.48263,6.000473 10.627418,7.105354 9.666016,8.878906 9.326595,8.63365 8.918755,8.501118 8.5,8.5 c -1.104569,0 -2,0.89543 -2,2 -2.209139,0 -4,1.79086 -4,4 0,2.20914 1.790861,4 4,4 z" style="opacity: 1; fill: none; fill-opacity: 1; stroke: inherit; stroke-width: 1; stroke-linecap: round; stroke-linejoin: round; stroke-miterlimit: 4; stroke-dasharray: none; stroke-dashoffset: 0; stroke-opacity: 1;" />');
+_arr.push('</symbol><symbol id="alpha-icon-cloudLightning" viewBox="0 0 26 26">');
+_arr.push('<path d="m 17.5,16.5 h 3 c 1.65685,0 3,-1.34315 3,-3 0,-1.65685 -1.34315,-3 -3,-3 -0.20349,8.9e-4 -0.40635,0.0225 -0.60547,0.0644 C 19.96423,10.2139 19.99951,9.8574 20,9.5 20,6.462434 17.53757,4 14.5,4 12.48263,4.000473 10.62742,5.105354 9.66602,6.878906 9.32659,6.63365 8.91876,6.501118 8.5,6.5 c -1.10457,0 -2,0.89543 -2,2 -2.20914,0 -4,1.79086 -4,4 0,2.20914 1.79086,4 4,4 H 8" style="opacity: 1; fill: none; fill-opacity: 1; stroke: inherit; stroke-width: 1; stroke-linecap: round; stroke-linejoin: round; stroke-miterlimit: 4; stroke-dasharray: none; stroke-dashoffset: 0; stroke-opacity: 1;" />');
+_arr.push('<path d="m 16,9 -6.5,7.5 3,1 -2.5,6.5 6.5,-7.5 -3,-1 z" style="fill: inherit; fill-opacity: 1; stroke: none; stroke-width: 1px; stroke-linecap: butt; stroke-linejoin: round; stroke-opacity: 1;" />');
 _arr.push('</symbol><symbol id="alpha-icon-codeBug" viewBox="0 0 26 26">');
 _arr.push('<path d="M 8.072266,6.560547 C 7.75,6.53125 7.375,6.625 7,7 6,8 7,9 7,9 6,10 7,12.5 9,12.5 L 12.5,9 C 12.5,7 10,6 9,7 9,7 8.609375,6.609375 8.072266,6.560547 Z M 15,9 9,15 c 5,5 8.5,3.5 8.5,3.5 l -4.5,-5 0.5,-0.5 5,4.5 C 18.5,17.5 20,14 15,9 Z" style="fill: inherit; fill-opacity: 1; stroke: none; stroke-width: 1px; stroke-linecap: butt; stroke-linejoin: miter; stroke-opacity: 1;" />');
 _arr.push('<path d="m 8,19 3,-3 m 5,-5 3,-3 m 3.16,4.66 c -3,-3 -5,-0.5 -5,-0.5 m -5,5 c 0,0 -2.5,2 0.5,5 M 4.5,13 c 3,3 4.5,1.5 5,1 L 14,9.5 c 0.5,-0.5 2,-2 -1,-5" style="fill: none; stroke: inherit; stroke-width: 1px; stroke-linecap: round; stroke-linejoin: miter; stroke-opacity: 1;" />');
@@ -23272,6 +23648,9 @@ _arr.push('</symbol><symbol id="alpha-icon-compress" viewBox="0 0 26 26">');
 _arr.push('<path d="M 21.007812 5.5 C 20.88132 5.4935503 20.748463 5.541581 20.630859 5.6640625 C 17.336754 8.9581675 16.583984 8.8886719 16.583984 8.8886719 L 14.851562 7.1542969 C 14.537126 6.8400779 14.000173 7.0632865 14 7.5078125 L 14 12.5 C 14.000028 12.775639 14.224361 12.999972 14.5 13 L 19.492188 13 C 19.936713 12.999826 20.159921 12.462874 19.845703 12.148438 L 18.111328 10.416016 C 18.111328 10.416016 18.052319 9.6527576 21.335938 6.3691406 C 21.703382 6.0163294 21.38729 5.519349 21.007812 5.5 z M 7.5078125 14 C 7.0632865 14.000174 6.8400789 14.537126 7.1542969 14.851562 L 8.8886719 16.583984 C 8.8886719 16.583984 8.7601765 17.534758 5.6640625 20.630859 C 5.1741365 21.101274 5.8987246 21.825863 6.3691406 21.335938 C 9.5069956 18.198083 10.416016 18.111328 10.416016 18.111328 L 12.148438 19.845703 C 12.462874 20.159922 12.999827 19.936713 13 19.492188 L 13 14.5 C 12.999972 14.224361 12.775639 14.000028 12.5 14 L 7.5078125 14 z " style="opacity: 1; fill: inherit; fill-opacity: 1; stroke: none; stroke-width: 1px; stroke-linecap: butt; stroke-linejoin: round; stroke-miterlimit: 4; stroke-dasharray: none; stroke-dashoffset: 0; stroke-opacity: 1;" />');
 _arr.push('</symbol><symbol id="alpha-icon-compressAlt" viewBox="0 0 26 26">');
 _arr.push('<path d="m 5.9920953,5.5 c 0.126492,-0.00645 0.259349,0.041581 0.376953,0.1640625 3.294105,3.294105 4.0468747,3.2246094 4.0468747,3.2246094 l 1.732422,-1.734375 c 0.314436,-0.314219 0.851389,-0.09101 0.851562,0.3535156 V 12.5 c -2.8e-5,0.275639 -0.224361,0.499972 -0.5,0.5 H 7.5077193 c -0.444525,-1.74e-4 -0.667733,-0.537126 -0.353515,-0.851562 l 1.734375,-1.732422 c 0,0 0.059009,-0.7632584 -3.22461,-4.0468754 C 5.2965253,6.0163294 5.6126173,5.519349 5.9920953,5.5 Z M 19.492095,14 c 0.444526,1.74e-4 0.667733,0.537126 0.353515,0.851562 l -1.734375,1.732422 c 0,0 0.128496,0.950774 3.22461,4.046875 0.489926,0.470415 -0.234662,1.195004 -0.705078,0.705079 -3.137855,-3.137855 -4.046876,-3.22461 -4.046876,-3.22461 l -1.732422,1.734375 c -0.314436,0.314219 -0.851389,0.09101 -0.851562,-0.353515 V 14.5 c 2.8e-5,-0.275639 0.224361,-0.499972 0.5,-0.5 z" style="opacity: 1; fill: inherit; fill-opacity: 1; stroke: none; stroke-width: 1px; stroke-linecap: butt; stroke-linejoin: round; stroke-miterlimit: 4; stroke-dasharray: none; stroke-dashoffset: 0; stroke-opacity: 1;" />');
+_arr.push('</symbol><symbol id="alpha-icon-contains" viewBox="0 0 26 26">');
+_arr.push('<path d="m 15,11.5 h 3 l -3,4 h 3 m -10.5,0 H 9 m 3,0 h 1.5 M 9,13.5 h 3 m -4,2 2.5,-6 2.5,6" style="fill: none; stroke: inherit; stroke-width: 1px; stroke-linecap: round; stroke-linejoin: round; stroke-opacity: 1;" />');
+_arr.push('<path d="m 6,7 h 14 c 1.108,0 2,0.892 2,2 v 8 c 0,1.108 -0.892,2.000004 -2,2.000004 H 6 C 4.892,19.000004 4,18.108 4,17 V 9 C 4,7.892 4.892,7 6,7 Z" style="fill: none; stroke: inherit; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; stroke-miterlimit: 4; stroke-dasharray: none;" />');
 _arr.push('</symbol><symbol id="alpha-icon-creditCard" viewBox="0 0 26 26">');
 _arr.push('<rect x="3.5" y="6.5" width="19" height="13" style="opacity: 1; fill: none; fill-opacity: 1; stroke: inherit; stroke-width: 1; stroke-linecap: round; stroke-linejoin: round; stroke-miterlimit: 4; stroke-dasharray: none; stroke-dashoffset: 0; stroke-opacity: 1;" />');
 _arr.push('<rect x="3" y="8" width="20" height="3" style="opacity: 1; fill: inherit; fill-opacity: 1; stroke: none; stroke-width: 1; stroke-linecap: round; stroke-linejoin: round; stroke-miterlimit: 4; stroke-dasharray: none; stroke-dashoffset: 0; stroke-opacity: 1;" />');
@@ -23539,6 +23918,9 @@ _arr.push('</symbol><symbol id="alpha-icon-ellipsisHorizontal" viewBox="0 0 26 2
 _arr.push('<path d="M 5.5 11 C 5.223 11 5 11.223 5 11.5 L 5 14.5 C 5 14.777 5.223 15 5.5 15 L 8.5 15 C 8.777 15 9 14.777 9 14.5 L 9 11.5 C 9 11.223 8.777 11 8.5 11 L 5.5 11 z M 11.5 11 C 11.223 11 11 11.223 11 11.5 L 11 14.5 C 11 14.777 11.223 15 11.5 15 L 14.5 15 C 14.777 15 15 14.777 15 14.5 L 15 11.5 C 15 11.223 14.777 11 14.5 11 L 11.5 11 z M 17.5 11 C 17.223 11 17 11.223 17 11.5 L 17 14.5 C 17 14.777 17.223 15 17.5 15 L 20.5 15 C 20.777 15 21 14.777 21 14.5 L 21 11.5 C 21 11.223 20.777 11 20.5 11 L 17.5 11 z " style="opacity: 1; fill: inherit; fill-opacity: 1; stroke: none; stroke-width: 1; stroke-linecap: round; stroke-linejoin: round; stroke-miterlimit: 4; stroke-dasharray: none; stroke-dashoffset: 0; stroke-opacity: 1;" />');
 _arr.push('</symbol><symbol id="alpha-icon-ellipsisVertical" viewBox="0 0 26 26">');
 _arr.push('<path d="M 15,5.5 C 15,5.223 14.777,5 14.5,5 l -3,0 C 11.223,5 11,5.223 11,5.5 l 0,3 C 11,8.777 11.223,9 11.5,9 l 3,0 C 14.777,9 15,8.777 15,8.5 l 0,-3 z m 0,6 C 15,11.223 14.777,11 14.5,11 l -3,0 C 11.223,11 11,11.223 11,11.5 l 0,3 c 0,0.277 0.223,0.5 0.5,0.5 l 3,0 c 0.277,0 0.5,-0.223 0.5,-0.5 l 0,-3 z m 0,6 C 15,17.223 14.777,17 14.5,17 l -3,0 C 11.223,17 11,17.223 11,17.5 l 0,3 c 0,0.277 0.223,0.5 0.5,0.5 l 3,0 c 0.277,0 0.5,-0.223 0.5,-0.5 l 0,-3 z" style="opacity: 1; fill: inherit; fill-opacity: 1; stroke: none; stroke-width: 1; stroke-linecap: round; stroke-linejoin: round; stroke-miterlimit: 4; stroke-dasharray: none; stroke-dashoffset: 0; stroke-opacity: 1;" />');
+_arr.push('</symbol><symbol id="alpha-icon-endsWith" viewBox="0 0 26 26">');
+_arr.push('<path d="m 15,11.5 h 3 l -3,4 h 3 m -10.5,0 H 9 m 3,0 h 1.5 M 9,13.5 h 3 m -4,2 2.5,-6 2.5,6" style="fill: none; stroke: inherit; stroke-width: 1px; stroke-linecap: round; stroke-linejoin: round; stroke-opacity: 1;" />');
+_arr.push('<path d="m 4,7 h 16 c 1.108,0 2,0.892 2,2 v 8 c 0,1.108 -0.892,2 -2,2 H 4" style="fill: none; stroke: inherit; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; stroke-miterlimit: 4; stroke-dasharray: none;" />');
 _arr.push('</symbol><symbol id="alpha-icon-enter" viewBox="0 0 26 26">');
 _arr.push('<path d="m 4,14 6.441915,0 -3.941406,5 2.5,0 4.289062,-5.386719 c 0.280572,-0.360866 0.280571,-0.865696 0,-1.226562 L 9.000509,7 l -2.5,0 3.941406,5 L 4,12 4,13 Z" style="opacity: 1; fill: inherit; fill-opacity: 1; stroke: none; stroke-width: 2; stroke-linecap: butt; stroke-linejoin: round; stroke-miterlimit: 4; stroke-dasharray: none; stroke-dashoffset: 0; stroke-opacity: 1;" />');
 _arr.push('<path d="M 13.5,4 C 13.223,4 13,4.223 13,4.5 l 0,2 C 13,6.777 13.223,7 13.5,7 l 4.5,0 0,12 -4.5,0 C 13.223,19 13,19.223 13,19.5 l 0,2 c 0,0.277 0.223,0.5 0.5,0.5 l 7,0 c 0.277,0 0.5,-0.223 0.5,-0.5 l 0,-17 C 21,4.223 20.777,4 20.5,4 Z" style="opacity: 1; fill: inherit; fill-opacity: 1; stroke: none; stroke-width: 2; stroke-linecap: butt; stroke-linejoin: round; stroke-miterlimit: 4; stroke-dasharray: none; stroke-dashoffset: 0; stroke-opacity: 0.55357139;" />');
@@ -23599,6 +23981,8 @@ _arr.push('</symbol><symbol id="alpha-icon-envelopesSolid" viewBox="0 0 26 26">'
 _arr.push('<path d="M 7.5,6 A 0.50005,0.50005 0 0 0 7,6.5 v 10 A 0.50005,0.50005 0 0 0 7.5,17 h 15 A 0.50005,0.50005 0 0 0 23,16.5 V 6.5 A 0.50005,0.50005 0 0 0 22.5,6 Z m 13.990234,0.9960938 a 0.50004997,0.50004997 0 0 1 0.357422,0.8613281 L 18.207031,11.5 l 3.640625,3.642578 a 0.50004997,0.50004997 0 1 1 -0.707031,0.707031 L 17.5,12.207031 15.353516,14.353516 a 0.50004997,0.50004997 0 0 1 -0.707032,0 L 12.5,12.207031 8.859375,15.849609 A 0.50004997,0.50004997 0 1 1 8.1523438,15.142578 L 11.792969,11.5 8.1523438,7.8574219 A 0.50004997,0.50004997 0 0 1 8.5,7 0.50004997,0.50004997 0 0 1 8.859375,7.1503906 l 3.919922,3.9218754 a 0.50004997,0.50004997 0 0 0 0.002,0.002 0.50004997,0.50004997 0 0 1 0.144531,0.144531 L 15,13.292969 17.078125,11.214844 a 0.50004997,0.50004997 0 0 1 0.140625,-0.140625 l 3.921875,-3.9238284 a 0.50004997,0.50004997 0 0 1 0.349609,-0.1542968 z" style="opacity: 1; fill: inherit; fill-opacity: 1; stroke: none; stroke-width: 1px; stroke-linecap: butt; stroke-linejoin: round; stroke-miterlimit: 4; stroke-dasharray: none; stroke-dashoffset: 0; stroke-opacity: 1;" />');
 _arr.push('<path d="m 20.899951,17 v 1.5 H 5.5470531 V 8.5 H 7.082343" style="fill: none; stroke: inherit; stroke-width: 1px; stroke-linecap: round; stroke-linejoin: round; stroke-opacity: 1;" />');
 _arr.push('<path d="m 18.852899,19 v 1.5 H 3.5000001 v -10 h 1.5352898" style="fill: none; stroke: inherit; stroke-width: 1px; stroke-linecap: round; stroke-linejoin: round; stroke-opacity: 1;" />');
+_arr.push('</symbol><symbol id="alpha-icon-equals" viewBox="0 0 26 26">');
+_arr.push('<path d="M 6.5,9 C 6.223,9 6,9.223 6,9.5 v 2 C 6,11.777 6.223,12 6.5,12 h 13 c 0.277,0 0.5,-0.223 0.5,-0.5 v -2 C 20,9.223 19.777,9 19.5,9 Z m 0,5 C 6.223,14 6,14.223 6,14.5 v 2 C 6,16.777 6.223,17 6.5,17 h 13 c 0.277,0 0.5,-0.223 0.5,-0.5 v -2 C 20,14.223 19.777,14 19.5,14 Z" style="opacity: 1; fill: inherit; fill-opacity: 1; stroke: none; stroke-width: 1; stroke-linecap: round; stroke-linejoin: round; stroke-miterlimit: 4; stroke-dasharray: none; stroke-dashoffset: 0; stroke-opacity: 1;" />');
 _arr.push('</symbol><symbol id="alpha-icon-eraser" viewBox="0 0 26 26">');
 _arr.push('<path d="M 15.492188 3.5 C 15.3623 3.50207 15.238317 3.554606 15.146484 3.6464844 L 2.6464844 16.146484 C 2.4512997 16.341749 2.4512997 16.658251 2.6464844 16.853516 L 7.6464844 21.853516 C 7.7402403 21.947284 7.8674006 21.999975 8 22 L 20.5 22 C 21.176161 22.0096 21.176161 20.990437 20.5 21 L 12.207031 21 L 22.353516 10.853516 C 22.548701 10.658251 22.548701 10.341749 22.353516 10.146484 L 15.853516 3.6464844 C 15.757854 3.5507785 15.627488 3.4979278 15.492188 3.5 z M 7.3535156 12.853516 L 13.146484 18.646484 L 10.792969 21 L 8.2070312 21 L 3.7070312 16.5 L 7.3535156 12.853516 z " style="opacity: 1; fill: inherit; fill-opacity: 1; stroke: none; stroke-width: 1px; stroke-linecap: round; stroke-linejoin: round; stroke-miterlimit: 4; stroke-dasharray: none; stroke-dashoffset: 0; stroke-opacity: 1;" />');
 _arr.push('</symbol><symbol id="alpha-icon-exclamation" viewBox="0 0 26 26">');
@@ -23638,6 +24022,12 @@ _arr.push('<path d="m 4.5,5.5 15,0 -6,7 0,4 -3,2 0,-6 z" style="fill: none; fill
 _arr.push('<rect x="12" y="19" width="2" height="2" rx="0.5" ry="0.5" style="opacity: 1; fill: inherit; fill-opacity: 1; stroke: none; stroke-width: 1; stroke-linecap: round; stroke-linejoin: round; stroke-miterlimit: 4; stroke-dasharray: none; stroke-dashoffset: 0; stroke-opacity: 1;" />');
 _arr.push('<rect x="15" y="19" width="2" height="2" rx="0.5" ry="0.5" style="opacity: 1; fill: inherit; fill-opacity: 1; stroke: none; stroke-width: 1; stroke-linecap: round; stroke-linejoin: round; stroke-miterlimit: 4; stroke-dasharray: none; stroke-dashoffset: 0; stroke-opacity: 1;" />');
 _arr.push('<rect x="18" y="19" width="2" height="2" rx="0.5" ry="0.5" style="opacity: 1; fill: inherit; fill-opacity: 1; stroke: none; stroke-width: 1; stroke-linecap: round; stroke-linejoin: round; stroke-miterlimit: 4; stroke-dasharray: none; stroke-dashoffset: 0; stroke-opacity: 1;" />');
+_arr.push('</symbol><symbol id="alpha-icon-filterFull" viewBox="0 0 26 26">');
+_arr.push('<path d="m 4.5,5.5 15,0 -6,7 0,4 -3,2 0,-6 z" style="fill: none; fill-opacity: 1; stroke: inherit; stroke-width: 1px; stroke-linecap: butt; stroke-linejoin: round; stroke-opacity: 1;" />');
+_arr.push('<rect x="12" y="19" width="2" height="2" rx="0.5" ry="0.5" style="opacity: 1; fill: inherit; fill-opacity: 1; stroke: none; stroke-width: 1; stroke-linecap: round; stroke-linejoin: round; stroke-miterlimit: 4; stroke-dasharray: none; stroke-dashoffset: 0; stroke-opacity: 1;" />');
+_arr.push('<rect x="15" y="19" width="2" height="2" rx="0.5" ry="0.5" style="opacity: 1; fill: inherit; fill-opacity: 1; stroke: none; stroke-width: 1; stroke-linecap: round; stroke-linejoin: round; stroke-miterlimit: 4; stroke-dasharray: none; stroke-dashoffset: 0; stroke-opacity: 1;" />');
+_arr.push('<rect x="18" y="19" width="2" height="2" rx="0.5" ry="0.5" style="opacity: 1; fill: inherit; fill-opacity: 1; stroke: none; stroke-width: 1; stroke-linecap: round; stroke-linejoin: round; stroke-miterlimit: 4; stroke-dasharray: none; stroke-dashoffset: 0; stroke-opacity: 1;" />');
+_arr.push('<path d="M 6.5,6.5 12,13 17.5,6.5 C 14,8 10,8 6.5,6.5 Z" style="fill: inherit; fill-opacity: 1; stroke: none; stroke-width: 1px; stroke-linecap: butt; stroke-linejoin: miter; stroke-opacity: 1;" />');
 _arr.push('</symbol><symbol id="alpha-icon-filterOff" viewBox="0 0 26 26">');
 _arr.push('<path d="m 18.5,7.5 h 2 l -6,7 v 4 l -3,2 v -6 M 8.5,11 5.5,7.5 h 7" style="fill: none; fill-opacity: 1; stroke: inherit; stroke-width: 1px; stroke-linecap: round; stroke-linejoin: round; stroke-opacity: 1;" />');
 _arr.push('<path d="m 6.5,16.5 12,-12" style="fill: none; stroke: inherit; stroke-width: 1px; stroke-linecap: round; stroke-linejoin: miter; stroke-opacity: 1;" />');
@@ -23980,9 +24370,18 @@ _arr.push('</symbol><symbol id="alpha-icon-lockCheck" viewBox="0 0 26 26">');
 _arr.push('<path d="M 7 11 C 6.446 11 6 11.446 6 12 L 6 20 C 6 20.554 6.446 21 7 21 L 13.324219 21 C 13.02701 20.433605 13.106484 19.704041 13.576172 19.234375 L 14.283203 18.527344 C 14.858495 17.952078 15.829005 17.952078 16.404297 18.527344 L 17.033203 19.15625 L 19.546875 16.25 L 19.476562 16.341797 C 19.614327 16.139811 19.801611 15.999401 20 15.902344 L 20 12 C 20 11.446 19.554 11 19 11 L 7 11 z M 13 14 C 13.276142 14 13.5 14.223858 13.5 14.5 L 14 17.5 C 14.04554 17.773231 13.777 18 13.5 18 L 12.5 18 C 12.223 18 11.95446 17.773231 12 17.5 L 12.5 14.5 C 12.5 14.223858 12.723858 14 13 14 z " style="opacity: 1; fill: inherit; fill-opacity: 1; stroke: #1e4177; stroke-width: 0; stroke-linecap: round; stroke-linejoin: round; stroke-miterlimit: 4; stroke-dasharray: none; stroke-dashoffset: 0; stroke-opacity: 1;" />');
 _arr.push('<path d="M 9,10.985758 9,8.880976 c 0,-5.174635 8,-5.174635 8,0 l 0,2.104782" style="fill: none; stroke: inherit; stroke-width: 2; stroke-linecap: butt; stroke-linejoin: round; stroke-miterlimit: 4; stroke-dasharray: none; stroke-opacity: 1;" />');
 _arr.push('<path d="m 20.642277,16.746535 c 0.132784,0.004 0.269253,0.0603 0.367188,0.15821 l 0.707031,0.70898 c 0.195869,0.19587 0.195869,0.51116 0,0.70703 l -4.277344,4.77735 c -0.195869,0.19586 -0.511162,0.19586 -0.707031,0 l -2.449219,-2.44922 c -0.195869,-0.19587 -0.195869,-0.51117 0,-0.70703 l 0.707031,-0.70704 c 0.195869,-0.19586 0.511163,-0.19586 0.707032,0 l 1.388672,1.38868 3.216796,-3.71875 c 0.07804,-0.11442 0.207061,-0.16233 0.339844,-0.15821 z" style="opacity: 1; fill: inherit; fill-opacity: 1; stroke: none; stroke-width: 0.99999988; stroke-linecap: round; stroke-linejoin: round; stroke-miterlimit: 4; stroke-dasharray: none; stroke-dashoffset: 0; stroke-opacity: 1;" />');
+_arr.push('</symbol><symbol id="alpha-icon-lockError" viewBox="0 0 26 26">');
+_arr.push('<path d="m 7.0000005,11 c -0.554,0 -1,0.446 -1,1 v 8 c 0,0.554 0.446,1 1,1 H 17 v -7 c 0,-0.813703 0.6863,-1.5 1.5,-1.5 H 20 V 12 c 0,-0.554 -0.446,-1 -1,-1 z M 13,14 c 0.276141,0 0.5,0.223857 0.5,0.5 l 0.5,3 c 0.0455,0.27323 -0.222999,0.5 -0.5,0.5 h -1 C 12.223,18 11.954461,17.77323 12,17.5 l 0.5,-3 C 12.5,14.223858 12.72386,14 13,14 Z" style="opacity: 1; fill: inherit; fill-opacity: 1; stroke: #1e4177; stroke-width: 0; stroke-linecap: round; stroke-linejoin: round; stroke-miterlimit: 4; stroke-dasharray: none; stroke-dashoffset: 0; stroke-opacity: 1;" />');
+_arr.push('<path d="M 9.0000005,10.985758 V 8.8809762 c 0,-5.1746349 7.9999995,-5.1746349 7.9999995,0 v 2.1047818" style="fill: none; stroke: inherit; stroke-width: 2; stroke-linecap: butt; stroke-linejoin: round; stroke-miterlimit: 4; stroke-dasharray: none; stroke-opacity: 1;" />');
+_arr.push('<path d="m 18.5,13.5 h 1 c 0.277001,0 0.5,0.223 0.5,0.5 v 5 c 0,0.276999 -0.222999,0.5 -0.5,0.5 h -1 C 18.223,19.5 18,19.277 18,19 v -5 c 0,-0.277 0.223,-0.5 0.5,-0.5 z" style="opacity: 1; fill: inherit; fill-opacity: 1; stroke: none; stroke-width: 1; stroke-linecap: round; stroke-linejoin: round; stroke-miterlimit: 4; stroke-dasharray: none; stroke-dashoffset: 0; stroke-opacity: 1;" />');
+_arr.push('<path d="m 18.5,21.5 h 1 c 0.277001,0 0.5,0.223 0.5,0.5 v 1 c 0,0.277 -0.222999,0.5 -0.5,0.5 h -1 C 18.223,23.5 18,23.277 18,23 v -1 c 0,-0.277 0.223,-0.5 0.5,-0.5 z" style="opacity: 1; fill: inherit; fill-opacity: 1; stroke: none; stroke-width: 1; stroke-linecap: round; stroke-linejoin: round; stroke-miterlimit: 4; stroke-dasharray: none; stroke-dashoffset: 0; stroke-opacity: 1;" />');
 _arr.push('</symbol><symbol id="alpha-icon-lockOpen" viewBox="0 0 26 26">');
 _arr.push('<path d="M 7 11 C 6.446 11 6 11.446 6 12 L 6 20 C 6 20.554 6.446 21 7 21 L 19 21 C 19.554 21 20 20.554 20 20 L 20 12 C 20 11.446 19.554 11 19 11 L 7 11 z M 13 14 C 13.276142 14 13.5 14.223858 13.5 14.5 L 14 17.5 C 14.045539 17.773231 13.777 18 13.5 18 L 12.5 18 C 12.223 18 11.95446 17.773231 12 17.5 L 12.5 14.5 C 12.5 14.223858 12.723858 14 13 14 z " style="opacity: 1; fill: inherit; fill-opacity: 1; stroke: #1e4177; stroke-width: 0; stroke-linecap: round; stroke-linejoin: round; stroke-miterlimit: 4; stroke-dasharray: none; stroke-dashoffset: 0; stroke-opacity: 1;" />');
 _arr.push('<path d="M 9,10.985758 9,8.880976 c 0,-2.5873175 2,-3.8809762 4,-3.8809762 1,0 2,0.3234147 2.75,0.970244" style="fill: none; stroke: inherit; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; stroke-miterlimit: 4; stroke-dasharray: none; stroke-opacity: 1;" />');
+_arr.push('</symbol><symbol id="alpha-icon-lockQuestion" viewBox="0 0 26 26">');
+_arr.push('<path d="m 7.0000006,11 c -0.5540001,0 -1.0000001,0.446 -1.0000001,1 v 8 c 0,0.554 0.446,1 1.0000001,1 H 17.42187 C 17.17299,20.731072 17,20.385707 17,20 c 0,-1.729818 1.04788,-2.876009 1.585941,-3.414062 0.241669,-0.241678 0.33913,-0.34358 0.36718,-0.375 -0.11197,-0.03765 -0.258121,-0.08594 -0.45312,-0.08594 -0.21837,0 -0.41991,0.05114 -0.52148,0.0918 -0.0479,0.326223 -0.19596,0.655471 -0.44141,0.884765 C 17.236831,17.382071 16.84958,17.5 16.5,17.5 h -0.999999 c -0.8137,0 -1.5,-0.686297 -1.5,-1.5 0,-1.262681 0.63397,-2.329653 1.50391,-2.964844 C 16.373841,12.399965 17.44246,12.125 18.5,12.125 c 0.50557,0 1.01228,0.06813 1.5,0.203125 V 12 c 0,-0.554 -0.446,-1 -1,-1 z M 17.97852,16.216797 Z M 13.000001,14 c 0.27614,0 0.5,0.223857 0.5,0.5 l 0.5,3 c 0.0455,0.27323 -0.223,0.5 -0.5,0.5 h -1 c -0.277,0 -0.54554,-0.22677 -0.5,-0.5 l 0.5,-3 c 0,-0.276142 0.22386,-0.5 0.5,-0.5 z" style="opacity: 1; fill: inherit; fill-opacity: 1; stroke: #1e4177; stroke-width: 0; stroke-linecap: round; stroke-linejoin: round; stroke-miterlimit: 4; stroke-dasharray: none; stroke-dashoffset: 0; stroke-opacity: 1;" />');
+_arr.push('<path d="M 9.0000006,10.985758 V 8.8809762 c 0,-5.1746349 7.9999994,-5.1746349 7.9999994,0 v 2.1047818" style="fill: none; stroke: inherit; stroke-width: 2; stroke-linecap: butt; stroke-linejoin: round; stroke-miterlimit: 4; stroke-dasharray: none; stroke-opacity: 1;" />');
+_arr.push('<path d="m 18.5,13.125 c -1.75,0 -3.499999,0.958333 -3.499999,2.875 0,0.277 0.223,0.5 0.5,0.5 H 16.5 c 0.277001,0 0.5,-0.175405 0.5,-0.5 0,-1.166667 3,-1.166667 3,0 0,0.666667 -0.20703,0.792969 -0.70703,1.292969 C 18.79297,17.792969 18,18.666667 18,20 c 0,0.277 0.223,0.5 0.5,0.5 h 1 c 0.277001,0 0.5,-0.175405 0.5,-0.5 0,-0.666667 0.20703,-0.792969 0.70703,-1.292969 C 21.20703,18.207031 22,17.333333 22,16 22,14.083333 20.25,13.125 18.5,13.125 Z m 0,8.375 C 18.223,21.5 18,21.723 18,22 v 1 c 0,0.277 0.223,0.5 0.5,0.5 h 1 c 0.277001,0 0.5,-0.223 0.5,-0.5 v -1 c 0,-0.277 -0.222999,-0.5 -0.5,-0.5 z" style="opacity: 1; fill: inherit; fill-opacity: 1; stroke: none; stroke-width: 2; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 4; stroke-dasharray: none; stroke-dashoffset: 0; stroke-opacity: 1;" />');
 _arr.push('</symbol><symbol id="alpha-icon-lockX" viewBox="0 0 26 26">');
 _arr.push('<path d="M 7 11 C 6.446 11 6 11.446 6 12 L 6 20 C 6 20.554 6.446 21 7 21 L 14.171875 21 L 15.171875 20 L 14.111328 18.939453 C 13.844536 18.672658 13.706879 18.320773 13.6875 17.962891 C 13.627706 17.985263 13.564589 18 13.5 18 L 12.5 18 C 12.223 18 11.95446 17.773231 12 17.5 L 12.5 14.5 C 12.5 14.223858 12.723858 14 13 14 C 13.276142 14 13.5 14.223858 13.5 14.5 L 13.923828 17.046875 C 13.977256 16.965459 14.040426 16.889259 14.111328 16.818359 L 14.818359 16.111328 C 15.106046 15.82364 15.492418 15.679688 15.878906 15.679688 C 16.265394 15.679687 16.651767 15.82364 16.939453 16.111328 L 18 17.171875 L 19.060547 16.111328 C 19.318098 15.853776 19.655019 15.718385 20 15.691406 L 20 12 C 20 11.446 19.554 11 19 11 L 7 11 z " style="opacity: 1; fill: inherit; fill-opacity: 1; stroke: #1e4177; stroke-width: 0; stroke-linecap: round; stroke-linejoin: round; stroke-miterlimit: 4; stroke-dasharray: none; stroke-dashoffset: 0; stroke-opacity: 1;" />');
 _arr.push('<path d="M 9,10.985758 9,8.880976 c 0,-5.174635 8,-5.174635 8,0 l 0,2.104782" style="fill: none; stroke: inherit; stroke-width: 2; stroke-linecap: butt; stroke-linejoin: round; stroke-miterlimit: 4; stroke-dasharray: none; stroke-opacity: 1;" />');
@@ -24042,6 +24441,10 @@ _arr.push('<path d="m 18,5.9999997 -5,4 V 16 l 5,4 h 0.5 C 18.777,20 19,19.777 1
 _arr.push('</symbol><symbol id="alpha-icon-megaphoneOff" viewBox="0 0 26 26">');
 _arr.push('<path d="m 13,16 5,4 h 0.5 C 18.777,20 19,19.777 19,19.5 V 6.5 Z M 7,10 c -1.656854,0 -3,1.343146 -3,3 0,1.656854 1.343146,3 3,3 L 8.171875,17.951172 12,11.765625 V 10.5 C 12,10.223 11.777,10 11.5,10 Z m 13,1 v 4 c 1.104569,0 2,-0.895431 2,-2 0,-1.104569 -0.895431,-2 -2,-2 z M 11.140625,18.851562 10,21 h 2 z" style="opacity: 1; fill: inherit; fill-opacity: 1; stroke: none; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; stroke-miterlimit: 4; stroke-dasharray: none; stroke-dashoffset: 0; stroke-opacity: 1;" />');
 _arr.push('<path d="M 6.503772,23.493938 19.496225,2.5060626" style="fill: none; stroke: inherit; stroke-width: 1px; stroke-linecap: round; stroke-linejoin: miter; stroke-opacity: 1;" />');
+_arr.push('</symbol><symbol id="alpha-icon-megaphoneOn" viewBox="0 0 26 26">');
+_arr.push('<path d="m 16,7 -4,3 v 6 l 4,3 h 0.5 C 16.777,19 17,18.777 17,18.5 V 7.5 C 17,7.223 16.5,7 16.5,7 Z m -9,3 c -1.65685,0 -3,1.34315 -3,3 0,1.65685 1.34315,3 3,3 l 3,5 h 2 l -2,-5 h 0.5 c 0.277,0 0.5,-0.223 0.5,-0.5 v -5 C 11,10.223 10.777,10 10.5,10 Z m 11,1 v 4 c 1.10457,0 2,-0.89543 2,-2 0,-1.10457 -0.89543,-2 -2,-2 z" style="opacity: 1; fill: inherit; fill-opacity: 1; stroke: none; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; stroke-miterlimit: 4; stroke-dasharray: none; stroke-dashoffset: 0; stroke-opacity: 1;" />');
+_arr.push('<path d="M 18.607771,9.5531729 A 3.5,3.5 0 0 1 21.500002,13 3.5,3.5 0 0 1 18.607771,16.446827" style="opacity: 1; fill: none; fill-opacity: 0.489899; stroke: inherit; stroke-width: 1; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 4; stroke-dasharray: none; stroke-dashoffset: 0; stroke-opacity: 1;" />');
+_arr.push('<path d="M 18.955067,7.5835574 A 5.5,5.5 0 0 1 23.500002,13 5.5,5.5 0 0 1 18.955067,18.416443" style="opacity: 1; fill: none; fill-opacity: 0.489899; stroke: inherit; stroke-width: 1; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 4; stroke-dasharray: none; stroke-dashoffset: 0; stroke-opacity: 1;" />');
 _arr.push('</symbol><symbol id="alpha-icon-mic" viewBox="0 0 26 26">');
 _arr.push('<path d="M 12.5 3 C 10.838 3 9.5 4.338 9.5 6 L 9.5 14 C 9.5 15.662 10.838 17 12.5 17 C 14.162 17 15.5 15.662 15.5 14 L 15.5 6 C 15.5 4.338 14.162 3 12.5 3 z M 7.4921875 13.492188 A 0.50005 0.50005 0 0 0 7 14 C 6.9999999 15.964159 8.0489883 17.781592 9.75 18.763672 C 10.4533 19.169723 11.224907 19.398471 12.007812 19.46875 A 0.50005 0.50005 0 0 0 12.007812 19.498047 L 11.994141 23 L 8.5078125 23 A 0.50005 0.50005 0 1 0 8.5078125 24 L 12.410156 24 A 0.50005 0.50005 0 0 0 12.574219 24 L 16.492188 24 A 0.50005 0.50005 0 1 0 16.492188 23 L 12.994141 23 L 13.007812 19.501953 A 0.50005 0.50005 0 0 0 13.005859 19.46875 C 13.784095 19.396944 14.550773 19.167371 15.25 18.763672 C 16.951012 17.781592 18 15.964159 18 14 A 0.50005 0.50005 0 1 0 17 14 C 17 15.608497 16.142999 17.092236 14.75 17.896484 C 13.357001 18.700733 11.642999 18.700733 10.25 17.896484 C 8.857001 17.092236 7.9999999 15.608497 8 14 A 0.50005 0.50005 0 0 0 7.4921875 13.492188 z " style="opacity: 1; fill: inherit; fill-opacity: 1; stroke: none; stroke-width: 1; stroke-linecap: square; stroke-linejoin: round; stroke-miterlimit: 4; stroke-dasharray: none; stroke-dashoffset: 0; stroke-opacity: 1;" />');
 _arr.push('</symbol><symbol id="alpha-icon-micOff" viewBox="0 0 26 26">');
@@ -24049,6 +24452,9 @@ _arr.push('<path d="M 12.5 3 C 10.838 3 9.5 4.338 9.5 6 L 9.5 13.800781 L 15.5 9
 _arr.push('<path d="M 4.5058041,19.49584 20.494196,7.5041645" style="fill: none; stroke: inherit; stroke-width: 1px; stroke-linecap: round; stroke-linejoin: miter; stroke-opacity: 1;" />');
 _arr.push('</symbol><symbol id="alpha-icon-na" viewBox="0 0 26 26">');
 _arr.push('<path d="M 15,7 9.9999999,19 H 12 L 17,7 Z M 3,9 v 8 h 2 v -5 l 3,5 H 9.9999999 V 9 H 8 v 5 L 5,9 Z m 15,0 -3,8 h 2 l 0.72656,-2 h 2.54688 L 21,17 h 2 L 20,9 Z m 1,2.5 0.9082,2.5 h -1.8164 z" style="opacity: 1; fill: inherit; fill-opacity: 1; stroke: none; stroke-width: 2; stroke-linecap: butt; stroke-linejoin: round; stroke-miterlimit: 4; stroke-dasharray: none; stroke-dashoffset: 0; stroke-opacity: 1;" />');
+_arr.push('</symbol><symbol id="alpha-icon-notContains" viewBox="0 0 26 26">');
+_arr.push('<path d="M 6,6 C 4.3553,6 3,7.355297 3,9 v 8 c 0,1.644703 1.3553,3 3,3 H 7 A 1.5,1.5 0 0 1 7.23828,19.189453 L 8.00391,18 H 6 C 5.4287,18 5,17.571297 5,17 V 9 C 5,8.428703 5.4287,8 6,8 h 8.43164 L 15.7168,6 Z M 19,6 A 1.5,1.5 0 0 1 18.76172,6.810547 L 17.99609,8 H 20 c 0.5713,0 1,0.428703 1,1 v 8 c 0,0.571297 -0.4287,1 -1,1 H 11.56836 L 10.2832,20 H 20 c 1.6447,0 3,-1.355297 3,-3 V 9 C 23,7.355297 21.6447,6 20,6 Z" style="opacity: 1; fill: inherit; fill-opacity: 1; stroke: none; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; stroke-miterlimit: 4; stroke-dasharray: none; stroke-dashoffset: 0; stroke-opacity: 1;" />');
+_arr.push('<path d="m 8.5,20 9,-14 M 16,11.5 h 2 l -3,4 h 3 m -10.5,0 H 9 m 4.5,0 H 13 m -4,-2 h 1.5 m -2.5,2 2.5,-6 1.13497,2.723936" style="fill: none; stroke: inherit; stroke-width: 1; stroke-linecap: round; stroke-linejoin: round; stroke-miterlimit: 4; stroke-dasharray: none; stroke-opacity: 1;" />');
 _arr.push('</symbol><symbol id="alpha-icon-note" viewBox="0 0 26 26">');
 _arr.push('<path d="m 20.5,16.5 h -4 v 4 m -11,-15 h 15 v 11 l -4,4 h -11 z" style="fill: none; stroke: inherit; stroke-width: 1px; stroke-linecap: butt; stroke-linejoin: round; stroke-opacity: 1;" />');
 _arr.push('</symbol><symbol id="alpha-icon-noteAdd" viewBox="0 0 26 26">');
@@ -24067,6 +24473,13 @@ _arr.push('<path d="M 18.5,5.5 22,9.000001 18,13 m 2.5,3.499879 h -4 v 4 m 4,-7 
 _arr.push('</symbol><symbol id="alpha-icon-noteEditSolid" viewBox="0 0 26 26">');
 _arr.push('<path d="m 21.146485,2.147684 -2,1.999821 c -0.195181,0.195252 -0.195181,0.511726 0,0.706968 l 2,1.99982 c 0.19527,0.195174 0.511772,0.195174 0.707032,0 l 2,-1.99982 c 0.19519,-0.195242 0.19519,-0.511716 0,-0.706968 l -2,-1.999821 c -0.205166,-0.218735 -0.541015,-0.173812 -0.707032,0 z m -4,3.999641 -4,3.999731 c -0.195181,0.195253 -0.195181,0.511716 0,0.706969 l 2,1.999819 c 0.19527,0.195162 0.511772,0.195162 0.707032,0 l 4,-3.99973 c 0.19519,-0.195252 0.19519,-0.511716 0,-0.706968 l -2,-1.999821 c -0.244229,-0.253889 -0.463436,-0.210919 -0.707032,0 z M 12.052735,11.277814 11,13.75 12.25,15 14.722656,13.947493 c 0.305521,-0.152276 0.372011,-0.559111 0.130861,-0.80071 l -2,-1.999819 c -0.292959,-0.261005 -0.715409,-0.09123 -0.800782,0.130848 z M 10.75,14.25 10,16 11.75,15.25 Z M 5.5,4.999999 c -0.27613,2.8e-5 -0.49997,0.223869 -0.5,0.5 V 20.5 c 3e-5,0.276131 0.22387,0.499972 0.5,0.5 H 16 v -4.5 c 3e-5,-0.276131 0.22387,-0.499972 0.5,-0.5 H 21 v -3.878906 l -1.92578,1.925781 c -0.2921,0.304203 -0.74365,0.48949 -1.15039,0.46875 l -2.75586,0.326172 -5.2207,2.552734 C 9.0876,17.824416 8.17558,16.912399 8.60547,16.052734 L 11.1582,10.83203 16.92188,4.999999 Z M 17,17 v 3.707031 L 20.70703,17 Z" style="opacity: 1; fill: inherit; fill-opacity: 1; stroke: none; stroke-width: 1px; stroke-linecap: round; stroke-linejoin: miter; stroke-miterlimit: 4; stroke-dasharray: none; stroke-dashoffset: 0; stroke-opacity: 1;" />');
 _arr.push('<path d="m 18.500001,5.5 3.5,3.500001 -4,3.999999" style="fill: none; stroke: inherit; stroke-width: 1px; stroke-linecap: round; stroke-linejoin: round; stroke-opacity: 1;" />');
+_arr.push('</symbol><symbol id="alpha-icon-notEndsWith" viewBox="0 0 26 26">');
+_arr.push('<path d="M 4,6 A 1,1 0 0 0 3,7 1,1 0 0 0 4,8 H 14.43164 L 15.7168,6 Z M 19,6 A 1.5,1.5 0 0 1 18.76172,6.810547 L 17.99609,8 H 20 c 0.5713,0 1,0.428703 1,1 v 7.999997 c 0,0.5713 -0.4287,1 -1,1 h -8.43164 l -1.28516,2 H 20 c 1.6447,0 3,-1.35529 3,-3 V 9 C 23,7.355297 21.6447,6 20,6 Z M 4,17.999997 a 1,1 0 0 0 -1,1 1,1 0 0 0 1,1 h 3 a 1.5,1.5 0 0 1 0.23828,-0.81054 l 0.76563,-1.18946 z" style="opacity: 1; fill: inherit; fill-opacity: 1; stroke: none; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; stroke-miterlimit: 4; stroke-dasharray: none; stroke-dashoffset: 0; stroke-opacity: 1;" />');
+_arr.push('<path d="M 8.5,19.999997 17.5,6 M 16,11.499997 h 2 l -3,4 h 3 m -10.5,0 H 9 m 4.5,0 H 13 m -4,-2 h 1.5 m -2.5,2 L 10.5,9.5 l 1.13497,2.723937" style="fill: none; stroke: inherit; stroke-width: 1; stroke-linecap: round; stroke-linejoin: round; stroke-miterlimit: 4; stroke-dasharray: none; stroke-opacity: 1;" />');
+_arr.push('</symbol><symbol id="alpha-icon-notEquals" viewBox="0 0 26 26">');
+_arr.push('<path d="M 6.5,9 C 6.223,9 6,9.223 6,9.5 v 2 C 6,11.777 6.223,12 6.5,12 h 5.359375 l 1.929687,-3 z m 10.853516,0 -1.927735,3 H 19.5 c 0.277,0 0.5,-0.223 0.5,-0.5 v -2 C 20,9.223 19.777,9 19.5,9 Z M 6.5,14 C 6.223,14 6,14.223 6,14.5 v 2 C 6,16.777 6.223,17 6.5,17 h 2.146484 l 1.927735,-3 z m 7.640625,0 -1.929687,3 H 19.5 c 0.277,0 0.5,-0.223 0.5,-0.5 v -2 C 20,14.223 19.777,14 19.5,14 Z" style="opacity: 1; fill: inherit; fill-opacity: 1; stroke: none; stroke-width: 1; stroke-linecap: round; stroke-linejoin: round; stroke-miterlimit: 4; stroke-dasharray: none; stroke-dashoffset: 0; stroke-opacity: 1;" />');
+_arr.push('<path d="m 8.5,20 9,-14" style="fill: none; stroke: inherit; stroke-width: 1; stroke-linecap: round; stroke-linejoin: round; stroke-miterlimit: 4; stroke-dasharray: none; stroke-opacity: 1;" />');
+_arr.push('<path d="m 8.5,20 9,-14" style="fill: none; stroke: inherit; stroke-width: 1; stroke-linecap: round; stroke-linejoin: round; stroke-miterlimit: 4; stroke-dasharray: none; stroke-opacity: 1;" />');
 _arr.push('</symbol><symbol id="alpha-icon-noteRemove" viewBox="0 0 26 26">');
 _arr.push('<path d="M 9.5,12 C 9.223,12 9,12.223 9,12.5 v 1 C 9,13.777 9.223,14 9.5,14 h 7 c 0.277,0 0.5,-0.223 0.5,-0.5 v -1 C 17,12.223 16.777,12 16.5,12 Z" style="opacity: 1; fill: inherit; fill-opacity: 1; stroke: none; stroke-width: 2.00000024; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 4; stroke-dasharray: none; stroke-dashoffset: 0; stroke-opacity: 1;" />');
 _arr.push('<path d="m 20.5,16.5 h -4 v 4 M 5.5,5.4999996 h 15 V 16.5 l -4,4 h -11 z" style="fill: none; stroke: inherit; stroke-width: 1px; stroke-linecap: butt; stroke-linejoin: round; stroke-opacity: 1;" />');
@@ -24079,12 +24492,40 @@ _arr.push('<path d="m 10.87891,9.67188 c -0.12781,0 -0.25559,0.0485 -0.35352,0.1
 _arr.push('<path d="m 20.5,16.5 h -4 v 4 M 5.5,5.5000001 h 15 V 16.5 l -4,4 h -11 z" style="fill: none; stroke: inherit; stroke-width: 1px; stroke-linecap: butt; stroke-linejoin: round; stroke-opacity: 1;" />');
 _arr.push('</symbol><symbol id="alpha-icon-noteXSolid" viewBox="0 0 26 26">');
 _arr.push('<path d="m 5.5,5.0000003 a 0.50005,0.50005 0 0 0 -0.5,0.5 V 20.5 A 0.50005,0.50005 0 0 0 5.5,21 H 16 V 16.5 A 0.50005,0.50005 0 0 1 16.5,16 H 21 V 5.5000003 a 0.50005,0.50005 0 0 0 -0.5,-0.5 z m 5.37891,4.671875 c 0.1278,-10e-6 0.25561,0.04858 0.35351,0.146484 L 13,11.585938 14.76758,9.8183593 c 0.19587,-0.19587 0.51116,-0.19587 0.70703,0 l 0.70703,0.7070317 c 0.19587,0.19586 0.19587,0.511161 0,0.707031 L 14.41406,13 l 1.26758,1.267578 c 0.19587,0.19587 0.19587,0.511171 0,0.707031 l -0.70703,0.707032 c -0.19586,0.19587 -0.51116,0.19587 -0.70703,0 L 13,14.414062 11.23242,16.181641 c -0.19587,0.19587 -0.51117,0.19587 -0.70703,0 L 9.81836,15.474609 c -0.19587,-0.19586 -0.19587,-0.511161 0,-0.707031 L 11.58594,13 9.81836,11.232422 c -0.19587,-0.19587 -0.19587,-0.511161 0,-0.707031 l 0.70703,-0.7070317 c 0.0979,-0.09798 0.22571,-0.146484 0.35352,-0.146484 z M 17,17 v 3.707031 L 20.70703,17 Z" style="opacity: 1; fill: inherit; fill-opacity: 1; stroke: none; stroke-width: 1; stroke-linecap: round; stroke-linejoin: round; stroke-miterlimit: 4; stroke-dasharray: none; stroke-dashoffset: 0; stroke-opacity: 1;" />');
+_arr.push('</symbol><symbol id="alpha-icon-notStartsWith" viewBox="0 0 26 26">');
+_arr.push('<path d="M 6,6 C 4.355297,6 3,7.355297 3,9 v 8 c 0,1.644703 1.355297,3 3,3 H 7 A 1.5,1.5 0 0 1 7.23828,19.189453 L 8.00391,18 H 6 C 5.4287,18 5,17.571297 5,17 V 9 C 5,8.428703 5.4287,8 6,8 h 8.43164 L 15.7168,6 Z M 19,6 A 1.5,1.5 0 0 1 18.76172,6.810547 L 17.99609,8 H 22 A 1,1 0 0 0 23,7 1,1 0 0 0 22,6 Z M 11.56836,18 10.2832,20 H 22 a 1,1 0 0 0 1,-1 1,1 0 0 0 -1,-1 z" style="opacity: 1; fill: inherit; fill-opacity: 1; stroke: none; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; stroke-miterlimit: 4; stroke-dasharray: none; stroke-dashoffset: 0; stroke-opacity: 1;" />');
+_arr.push('<path d="m 8.5,20 9,-14 M 16,11.5 h 2 l -3,4 h 3 m -10.5,0 H 9 m 4.5,0 H 13 m -4,-2 h 1.5 m -2.5,2 2.5,-6 1.13497,2.723936" style="fill: none; stroke: inherit; stroke-width: 1; stroke-linecap: round; stroke-linejoin: round; stroke-miterlimit: 4; stroke-dasharray: none; stroke-opacity: 1;" />');
 _arr.push('</symbol><symbol id="alpha-icon-offline" viewBox="0 0 26 26">');
 _arr.push('<path d="M 11.5 6 C 11.223 6 10.96564 6.225139 11 6.5 L 12 14.5 C 12.034358 14.774861 12.223 15 12.5 15 L 13.5 15 C 13.777 15 13.96564 14.774861 14 14.5 L 15 6.5 C 15.034358 6.225139 14.777 6 14.5 6 L 11.5 6 z M 13 16 A 2 2 0 0 0 11 18 A 2 2 0 0 0 13 20 A 2 2 0 0 0 15 18 A 2 2 0 0 0 13 16 z " style="opacity: 1; fill: inherit; fill-opacity: 1; stroke: none; stroke-width: 2; stroke-linecap: butt; stroke-linejoin: round; stroke-miterlimit: 4; stroke-dasharray: none; stroke-dashoffset: 0; stroke-opacity: 0.55357139;" />');
 _arr.push('<path d="m 7.699219,12.699219 c 0.68414,-0.684791 1.487029,-1.223682 2.360315,-1.596611 m 5.880932,-1.3e-5 c 0.873286,0.372934 1.676175,0.911833 2.360315,1.596624 m 2.119141,-2.119141 C 19.262155,9.4208433 17.861346,8.5601185 16.337105,8.0475545 m -6.67421,-1e-6 C 8.138654,8.5601176 6.737845,9.4208432 5.580078,10.580078 m 10.59961,4.240235 C 15.990727,14.63108 15.786656,14.460402 15.570305,14.309456 m -5.14061,-2e-6 c -0.216351,0.150947 -0.420422,0.321625 -0.609383,0.510859" style="opacity: 1; fill: none; fill-opacity: 1; stroke: inherit; stroke-width: 1; stroke-linecap: round; stroke-linejoin: round; stroke-miterlimit: 4; stroke-dasharray: none; stroke-dashoffset: 0; stroke-opacity: 1;" />');
 _arr.push('</symbol><symbol id="alpha-icon-online" viewBox="0 0 26 26">');
 _arr.push('<circle cx="13" cy="18" r="2" style="opacity: 1; fill: inherit; fill-opacity: 1; stroke: none; stroke-width: 2; stroke-linecap: butt; stroke-linejoin: round; stroke-miterlimit: 4; stroke-dasharray: none; stroke-dashoffset: 0; stroke-opacity: 0.55357139;" />');
 _arr.push('<path d="M 7.699219,12.699219 C 9.104712,11.292389 11.011388,10.501336 13,10.5 c 1.988612,0.0013 3.895288,0.792389 5.300781,2.199219 m 2.119141,-2.119141 C 18.452711,8.6103739 15.783819,7.5024923 13,7.5000001 10.216181,7.5024901 7.547289,8.6103739 5.580078,10.580078 m 10.59961,4.240235 C 15.336711,13.97612 14.193009,13.501216 13,13.5 c -1.193009,0.0012 -2.336711,0.476119 -3.179688,1.320313" style="opacity: 1; fill: none; fill-opacity: 1; stroke: inherit; stroke-width: 1; stroke-linecap: round; stroke-linejoin: round; stroke-miterlimit: 4; stroke-dasharray: none; stroke-dashoffset: 0; stroke-opacity: 1;" />');
+_arr.push('</symbol><symbol id="alpha-icon-paintBrush" viewBox="0 0 26 26">');
+_arr.push('<path d="m 16.5,4.5 -4.35352,4.3535159 5,5.0000001 L 21.5,9.4999999 Z M 17,6 l -2,2.9999999 2,-1 -1,2 3,-2 L 17,11 19,9.9999999 17.70703,13 13.0332,8.3261719 Z M 11.5,9.4999999 10.5,10.5 C 11,11 11,13.5 10.5,14 10,14.5 6,16 6,20 c 4,0 5.5,-4 6,-4.5 0.5,-0.5 3,-0.5 3.5,0 l 1,-1 z M 8.5,16.5 c 0.55228,0 1,0.447715 1,1 0,0.552285 -0.44772,1 -1,1 -0.55228,0 -1,-0.447715 -1,-1 0,-0.552285 0.44772,-1 1,-1 z" style="fill: inherit; fill-opacity: 1; stroke: none; stroke-width: 1px; stroke-linecap: butt; stroke-linejoin: miter; stroke-opacity: 1;" />');
+_arr.push('</symbol><symbol id="alpha-icon-paintBrushApply" viewBox="0 0 26 26">');
+_arr.push('<path d="m 23.5,5.5 -2,2.0000005 M 22.5,3.5 20,6.0000005 M 20.5,2.5 l -2,2" style="fill: none; stroke: inherit; stroke-width: 1px; stroke-linecap: round; stroke-linejoin: round; stroke-opacity: 1;" />');
+_arr.push('<path d="m 16.5,4.5 -4.35352,4.3535165 5,4.9999995 L 21.5,9.5000005 Z m 0.5,1.5000005 -2,3 2,-1 L 16,10 19,8.0000005 17,11 19,10 17.70703,13 13.0332,8.3261725 Z m -5.5,3.5 L 10.5,10.5 C 11,11 11,13.5 10.5,14 10,14.5 6,16 6,20 c 4,0 5.5,-4 6,-4.5 0.5,-0.5 3,-0.5 3.5,0 l 1,-1 z M 8.5,16.5 c 0.55228,0 1,0.447715 1,1 0,0.552285 -0.44772,1 -1,1 -0.55228,0 -1,-0.447715 -1,-1 0,-0.552285 0.44772,-1 1,-1 z" style="fill: inherit; fill-opacity: 1; stroke: none; stroke-width: 1px; stroke-linecap: butt; stroke-linejoin: miter; stroke-opacity: 1;" />');
+_arr.push('</symbol><symbol id="alpha-icon-paintBrushOff" viewBox="0 0 26 26">');
+_arr.push('<path d="M 16.49995,4.5 12.14643,8.853516 14.2812,10.988281 15.26167,10.554688 13.03315,8.326172 16.99995,6 l -2,3 2,-1 -1,2 3,-2 -0.85547,1.285156 2.17969,-0.960937 z m -5,5 -1,1 c 0.27751,0.277506 0.39577,1.168341 0.36523,1.994141 l 2.51758,-1.111329 z m 7.16992,2.830078 -0.83203,0.367188 L 17.70698,13 l -0.16992,-0.169922 -0.98242,0.431641 0.59179,0.591797 z m -3.01172,1.328125 -6.71289,2.958985 C 9.27024,16.782307 9.49995,17.11052 9.49995,17.5 c 0,0.552285 -0.44772,1 -1,1 -0.55228,0 -1,-0.447715 -1,-1 0,-0.09578 0.0296,-0.181829 0.0547,-0.269531 l -1.0332,0.455078 C 6.20644,18.34581 5.99995,19.107451 5.99995,20 c 4,0 5.5,-4 6,-4.5 0.5,-0.5 3,-0.5 3.5,0 l 1,-1 z" style="fill: inherit; fill-opacity: 1; stroke: none; stroke-width: 1px; stroke-linecap: butt; stroke-linejoin: miter; stroke-opacity: 1;" />');
+_arr.push('<path d="M 22.4949,9.00505 5.505,16.494948" style="fill: none; stroke: inherit; stroke-width: 1px; stroke-linecap: round; stroke-linejoin: miter; stroke-opacity: 1;" />');
+_arr.push('</symbol><symbol id="alpha-icon-paintBrushX" viewBox="0 0 26 26">');
+_arr.push('<path d="m 16.5,4.5 -4.35352,4.353516 2.67188,2.671875 0.70703,-0.707032 L 13.0332,8.326172 17,6 15,9 17,8 16,10 19,8 17.56641,10.152344 17.94336,10.529297 19,10 18.52148,11.107422 19.20703,11.792969 21.5,9.5 Z m -5,5 -1,1 C 11,11 11,13.5 10.5,14 10,14.5 6,16 6,20 c 4,0 5.5,-4 6,-4.5 0.44091,-0.440914 2.4337,-0.492956 3.24219,-0.15625 L 15.58594,15 13.81836,13.232422 c -0.1703,-0.218468 -0.19587,-0.511161 0,-0.707031 l 0.35351,-0.353516 z m 5.37891,2.171875 c -0.12781,0 -0.25559,0.04855 -0.35352,0.146484 l -0.70703,0.707032 c -0.19587,0.19587 -0.19587,0.511161 0,0.707031 L 17.58594,15 15.81836,16.767578 c -0.19587,0.19587 -0.19587,0.511171 0,0.707031 l 0.70703,0.707032 c 0.19586,0.19587 0.51116,0.19587 0.70703,0 L 19,16.414062 l 1.76758,1.767579 c 0.19587,0.19587 0.51117,0.19587 0.70703,0 l 0.70703,-0.707032 c 0.19587,-0.19586 0.19587,-0.511161 0,-0.707031 L 20.41406,15 22.18164,13.232422 c 0.19587,-0.19587 0.19587,-0.511171 0,-0.707031 l -0.70703,-0.707032 c -0.19587,-0.19587 -0.51116,-0.19587 -0.70703,0 L 19,13.585938 17.23242,11.818359 c -0.0979,-0.09793 -0.22571,-0.146484 -0.35351,-0.146484 z M 8.5,16.5 c 0.55228,0 1,0.447715 1,1 0,0.552285 -0.44772,1 -1,1 -0.55228,0 -1,-0.447715 -1,-1 0,-0.552285 0.44772,-1 1,-1 z" style="fill: inherit; fill-opacity: 1; stroke: none; stroke-width: 1px; stroke-linecap: butt; stroke-linejoin: miter; stroke-opacity: 1;" />');
+_arr.push('</symbol><symbol id="alpha-icon-paintRoller" viewBox="0 0 26 26">');
+_arr.push('<rect x="12.481726" y="-6.7019405" width="11.806116" height="4.9192157" rx="0.99970376" ry="0.99970376" transform="matrix(0.70712358,0.70708998,-0.70712358,0.70708998,0,0)" style="opacity: 1; fill: inherit; fill-opacity: 1; stroke: none; stroke-width: 1px; stroke-linecap: round; stroke-linejoin: miter; stroke-miterlimit: 4; stroke-dasharray: none; stroke-dashoffset: 0; stroke-opacity: 1;" />');
+_arr.push('<path d="m 11.5,5.4998923 10,10.0000007 -3,3 c -1,1 -6.5,-4.500001 -7.5,-3.5 l -1,1" style="fill: none; stroke: inherit; stroke-width: 1px; stroke-linecap: round; stroke-linejoin: round; stroke-opacity: 1;" />');
+_arr.push('<path d="m 5.5,20.499893 4.0000003,-4" style="fill: none; stroke: inherit; stroke-width: 2.5; stroke-linecap: round; stroke-linejoin: miter; stroke-miterlimit: 4; stroke-dasharray: none; stroke-opacity: 1;" />');
+_arr.push('</symbol><symbol id="alpha-icon-paintRollerApply" viewBox="0 0 26 26">');
+_arr.push('<rect x="12.481802" y="-6.70191" width="11.806116" height="4.9192157" rx="0.99970376" ry="0.99970376" transform="matrix(0.70712358,0.70708998,-0.70712358,0.70708998,0,0)" style="opacity: 1; fill: inherit; fill-opacity: 1; stroke: none; stroke-width: 1px; stroke-linecap: round; stroke-linejoin: miter; stroke-miterlimit: 4; stroke-dasharray: none; stroke-dashoffset: 0; stroke-opacity: 1;" />');
+_arr.push('<path d="m 5.5,20.5 4,-4" style="fill: none; stroke: inherit; stroke-width: 2.5; stroke-linecap: round; stroke-linejoin: miter; stroke-miterlimit: 4; stroke-dasharray: none; stroke-opacity: 1;" />');
+_arr.push('<path d="M 22.5,9.4999996 21.5,10.5 m 1,-4 L 20,8.9999996 M 20.5,5.5 18.5,7.4999996 M 19.5,3.5 17,6 m 0.5,-3.5 -2,2 m -4,1 10,10 -3,3 C 17.5,19.5 12,14 11,15 l -1,1" style="fill: none; stroke: inherit; stroke-width: 1px; stroke-linecap: round; stroke-linejoin: round; stroke-opacity: 1;" />');
+_arr.push('</symbol><symbol id="alpha-icon-paintRollerOff" viewBox="0 0 26 26">');
+_arr.push('<path d="m 13.564763,4.5 c -0.25555,0 -0.51121,0.09716 -0.70703,0.292969 l -0.67773,0.679687 -0.32617,-0.326172 a 0.50005,0.50005 0 0 0 -0.35938,-0.152343 0.50005,0.50005 0 0 0 -0.34766,0.859375 l 0.32618,0.326172 -0.67969,0.677734 c -0.39163,0.391612 -0.39163,1.022451 0,1.414062 l 3.90625,3.908204 3.48047,-3.480469 -3.90821,-3.90625 C 14.075983,4.597163 13.820313,4.5 13.564763,4.5 Z m 6.73633,6.320312 -3.48047,3.480469 0.90821,0.90625 c 0.39163,0.391612 1.02243,0.391612 1.41406,0 l 0.67773,-0.679687 0.97266,0.972656 -2.625,2.626953 h -0.002 c -0.0122,-7.01e-4 -0.0489,-0.0021 -0.13086,-0.01953 -0.16635,-0.03537 -0.43777,-0.146402 -0.75195,-0.314453 -0.62837,-0.336103 -1.43555,-0.890625 -2.24805,-1.453125 -0.0507,-0.03507 -0.0997,-0.06844 -0.15039,-0.103516 l -0.7207,0.720703 c 0.10169,0.07009 0.19857,0.132366 0.30078,0.203125 0.8125,0.5625 1.63032,1.132978 2.3457,1.515625 0.35769,0.191324 0.68784,0.338101 1.01758,0.408203 0.32974,0.0701 0.73834,0.05658 1.02539,-0.230468 l 3,-3 a 0.50005,0.50005 0 0 0 0,-0.707032 l -1.32617,-1.326172 0.67968,-0.677734 c 0.39164,-0.391612 0.39164,-1.022451 0,-1.414062 z m -8.88867,3.5625 c -0.26748,-0.01231 -0.55034,0.04839 -0.76563,0.263672 l -0.6777297,0.677735 a 1.250125,1.250125 0 0 0 -0.002,-0.002 1.250125,1.250125 0 0 0 -0.49219,-0.08399 1.250125,1.250125 0 0 0 -0.85937,0.376953 l -4.0000002,4 a 1.2512478,1.2512478 0 0 0 0.60156,2.103568 1.50015,1.50015 0 0 1 0.2285101,-0.285156 l 5.2734398,-5.273438 a 1.250125,1.250125 0 0 0 -0.043,-0.130859 l 0.65625,-0.65625 h 0.002 c 0.0122,7.02e-4 0.0489,0.0021 0.13086,0.01953 0.004,8.73e-4 0.0114,0.0049 0.0156,0.0059 l 0.78125,-0.78125 c -0.19965,-0.08769 -0.39599,-0.15996 -0.58984,-0.201172 -0.0824,-0.01753 -0.17061,-0.0291 -0.25977,-0.0332 z" style="opacity: 1; fill: inherit; fill-opacity: 1; stroke: none; stroke-width: 1px; stroke-linecap: round; stroke-linejoin: miter; stroke-miterlimit: 4; stroke-dasharray: none; stroke-dashoffset: 0; stroke-opacity: 1;" />');
+_arr.push('<path d="M 6.5053632,22.49495 22.495263,6.505049" style="fill: none; stroke: inherit; stroke-width: 1px; stroke-linecap: round; stroke-linejoin: miter; stroke-opacity: 1;" />');
+_arr.push('</symbol><symbol id="alpha-icon-paintRollerX" viewBox="0 0 26 26">');
+_arr.push('<path d="m 16.87891,3.6714185 c -0.12781,0 -0.25559,0.04855 -0.35352,0.146484 l -0.70703,0.707032 c -0.19587,0.19587 -0.19587,0.511161 0,0.707031 l 1.76758,1.767578 -1.76758,1.767578 c -0.19587,0.19587 -0.19587,0.511171 0,0.707031 l 0.70703,0.7070325 c 0.19586,0.19587 0.51116,0.19587 0.70703,0 L 19,8.4136065 20.76758,10.181184 c 0.19587,0.19587 0.51117,0.19587 0.70703,0 l 0.70703,-0.7070315 c 0.19587,-0.19586 0.19587,-0.511161 0,-0.707031 l -1.76758,-1.767578 1.76758,-1.767578 c 0.19587,-0.19587 0.19587,-0.511171 0,-0.707031 l -0.70703,-0.707032 c -0.19587,-0.19587 -0.51116,-0.19587 -0.70703,0 L 19,5.5854815 17.23242,3.8179025 c -0.0979,-0.09793 -0.22571,-0.146484 -0.35351,-0.146484 z m -3.31446,0.828125 c -0.25555,0 -0.51121,0.09716 -0.70703,0.292969 l -2.06445,2.064453 c -0.39163,0.391612 -0.39163,1.022451 0,1.414062 l 6.93555,6.9355455 c 0.39163,0.391613 1.02243,0.391613 1.41406,0 l 2.06445,-2.064451 c 0.39163,-0.391612 0.39163,-1.022451 0,-1.414062 l -0.46094,-0.460938 c -0.2527,-0.06338 -0.4921,-0.185466 -0.68554,-0.378907 L 19,9.8276685 17.93945,10.888215 c -0.57537,0.575374 -1.54572,0.575403 -2.12109,0 l -0.70703,-0.707031 c -0.5754,-0.5753745 -0.57538,-1.5457195 0,-2.1210935 l 1.06054,-1.060547 -1.06054,-1.060547 C 14.91789,5.7455615 14.79579,5.5061595 14.73242,5.2534495 L 14.27148,4.7925125 C 14.07567,4.5967065 13.82,4.4995435 13.56445,4.4995435 Z" style="opacity: 1; fill: inherit; fill-opacity: 1; stroke: none; stroke-width: 1px; stroke-linecap: round; stroke-linejoin: miter; stroke-miterlimit: 4; stroke-dasharray: none; stroke-dashoffset: 0; stroke-opacity: 1;" />');
+_arr.push('<path d="m 11.5,5.4995435 2.5,2.5 m 5,5.0000005 2.5,2.5 -3,3 c -1,1 -6.5,-4.5 -7.5,-3.5 l -1,1" style="fill: none; stroke: inherit; stroke-width: 1px; stroke-linecap: round; stroke-linejoin: round; stroke-opacity: 1;" />');
+_arr.push('<path d="m 5.5,20.499544 4,-4" style="fill: none; stroke: inherit; stroke-width: 2.5; stroke-linecap: round; stroke-linejoin: miter; stroke-miterlimit: 4; stroke-dasharray: none; stroke-opacity: 1;" />');
 _arr.push('</symbol><symbol id="alpha-icon-palette" viewBox="0 0 26 26">');
 _arr.push('<path d="M 12 6 C 7 6 3.5 9.5 3.5 13 C 3.5 16.5 8 16 8.5 16.5 C 9.7747548 17.774755 8 21.5 14 21.5 C 18.5 21.5 22 18 22 14 C 22 10 17 6 12 6 z M 10 8.5 A 1.5 1.5 0 0 1 11.5 10 A 1.5 1.5 0 0 1 10 11.5 A 1.5 1.5 0 0 1 8.5 10 A 1.5 1.5 0 0 1 10 8.5 z M 14 8.5 A 1.5 1.5 0 0 1 15.5 10 A 1.5 1.5 0 0 1 14 11.5 A 1.5 1.5 0 0 1 12.5 10 A 1.5 1.5 0 0 1 14 8.5 z M 18 10.5 A 1.5 1.5 0 0 1 19.5 12 A 1.5 1.5 0 0 1 18 13.5 A 1.5 1.5 0 0 1 16.5 12 A 1.5 1.5 0 0 1 18 10.5 z M 7 11.5 A 1.5 1.5 0 0 1 8.5 13 A 1.5 1.5 0 0 1 7 14.5 A 1.5 1.5 0 0 1 5.5 13 A 1.5 1.5 0 0 1 7 11.5 z M 13 16 A 2 2 0 0 1 15 18 A 2 2 0 0 1 13 20 A 2 2 0 0 1 11 18 A 2 2 0 0 1 13 16 z " style="opacity: 1; fill: inherit; fill-opacity: 1; stroke: none; stroke-width: 1px; stroke-linecap: butt; stroke-linejoin: miter; stroke-opacity: 1;" />');
 _arr.push('</symbol><symbol id="alpha-icon-paperclip" viewBox="0 0 26 26">');
@@ -24455,6 +24896,9 @@ _arr.push('</symbol><symbol id="alpha-icon-starHalfSolid" viewBox="0 0 26 26">')
 _arr.push('<path d="m 12.976562,4 c -0.189069,0.00892 -0.356897,0.12383 -0.433593,0.296875 L 10.044922,9.9199219 4.4453125,10.541016 c -0.4356221,0.04713 -0.6042837,0.59194 -0.2714844,0.876953 l 4.3300781,3.710937 -1.8671874,6.226563 c -0.1352245,0.448736 0.3657153,0.820234 0.7558593,0.560547 L 13,18.177734 l 5.607422,3.738282 c 0.396211,0.264483 0.902776,-0.122349 0.751953,-0.574219 L 17.496094,15.75 21.853516,11.392578 c 0.298014,-0.296601 0.119178,-0.806224 -0.298828,-0.851562 L 15.955078,9.9199219 13.457031,4.296875 C 13.37344,4.1082863 13.182622,3.9903823 12.976562,4 Z M 13,5.7324219 15.158203,10.587891 c 0.07254,0.162203 0.225704,0.273731 0.402344,0.292968 l 4.851562,0.539063 -3.841797,3.841797 c -0.134033,0.133867 -0.180914,0.331979 -0.121093,0.511719 l 1.5,4.501953 -4.671875,-3.115235 C 13.193369,17.104182 13.096684,17.076195 13,17.076195 Z" style="opacity: 1; fill: inherit; fill-opacity: 1; stroke: none; stroke-width: 1px; stroke-linecap: butt; stroke-linejoin: round; stroke-miterlimit: 4; stroke-dasharray: none; stroke-dashoffset: 0; stroke-opacity: 1;" />');
 _arr.push('</symbol><symbol id="alpha-icon-starSolid" viewBox="0 0 26 26">');
 _arr.push('<path d="M 12.976562,4 A 0.50005,0.50005 0 0 0 12.542969,4.296875 L 10.044922,9.9199219 4.4453125,10.541016 a 0.50005,0.50005 0 0 0 -0.2714844,0.876953 l 4.3300781,3.710937 -1.8671874,6.226563 a 0.50005,0.50005 0 0 0 0.7558593,0.560547 L 13,18.177734 l 5.607422,3.738282 a 0.50005,0.50005 0 0 0 0.751953,-0.574219 L 17.496094,15.75 21.853516,11.392578 A 0.50005,0.50005 0 0 0 21.554688,10.541016 L 15.955078,9.9199219 13.457031,4.296875 A 0.50005,0.50005 0 0 0 12.976562,4 Z" style="opacity: 1; fill: inherit; fill-opacity: 1; stroke: none; stroke-width: 1px; stroke-linecap: butt; stroke-linejoin: round; stroke-miterlimit: 4; stroke-dasharray: none; stroke-dashoffset: 0; stroke-opacity: 1;" />');
+_arr.push('</symbol><symbol id="alpha-icon-startsWith" viewBox="0 0 26 26">');
+_arr.push('<path d="m 15,11.5 h 3 l -3,4 h 3 m -10.5,0 H 9 m 3,0 h 1.5 M 9,13.5 h 3 m -4,2 2.5,-6 2.5,6" style="fill: none; stroke: inherit; stroke-width: 1px; stroke-linecap: round; stroke-linejoin: round; stroke-opacity: 1;" />');
+_arr.push('<path d="M 22,19 H 6 C 4.892,19 4,18.108 4,17 V 9 C 4,7.892 4.892,7 6,7 h 16" style="fill: none; stroke: inherit; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; stroke-miterlimit: 4; stroke-dasharray: none;" />');
 _arr.push('</symbol><symbol id="alpha-icon-stop" viewBox="0 0 26 26">');
 _arr.push('<path d="m 4.5,4 17,0 C 21.777,4 22,4.223 22,4.5 l 0,17 c 0,0.277 -0.223,0.5 -0.5,0.5 l -17,0 C 4.223,22 4,21.777 4,21.5 L 4,4.5 C 4,4.223 4.223,4 4.5,4 Z" style="opacity: 1; fill: inherit; fill-opacity: 1; stroke: none; stroke-width: 1; stroke-linecap: round; stroke-linejoin: round; stroke-miterlimit: 4; stroke-dasharray: none; stroke-dashoffset: 0; stroke-opacity: 1;" />');
 _arr.push('</symbol><symbol id="alpha-icon-symbolAt" viewBox="0 0 26 26">');
@@ -24592,6 +25036,8 @@ _arr.push('</symbol><symbol id="alpha-icon-transformTranslateX" viewBox="0 0 26 
 _arr.push('<path d="m 14.500019,13.508927 c 0,1.10457 -0.895431,2.000001 -1.999999,2.000001 -1.104569,0 -2,-0.895431 -2,-2.000001 0,-1.104569 0.895431,-2 2,-2 1.104568,0 1.999999,0.895431 1.999999,2 z m -9.0000392,-2 -2.0000005,2 2.0000005,2.000001 m 2,-2.000001 h -3 m 15.0000392,-2 2,2 -2,2.000001 m -2,-2.000001 h 3 M 12.5,17.508948 v 5 m 0,-13.0000408 V 4.5089071" style="opacity: 1; fill: none; fill-opacity: 1; stroke: inherit; stroke-width: 1.25; stroke-linecap: round; stroke-linejoin: round; stroke-miterlimit: 4; stroke-dasharray: none; stroke-dashoffset: 0; stroke-opacity: 1;" />');
 _arr.push('</symbol><symbol id="alpha-icon-transformTranslateY" viewBox="0 0 26 26">');
 _arr.push('<path d="m 12.5,15.508947 c -1.10457,0 -2.000001,-0.895431 -2.000001,-1.999999 0,-1.104569 0.895431,-2 2.000001,-2 1.104569,0 2,0.895431 2,2 0,1.104568 -0.895431,1.999999 -2,1.999999 z m 2,-9.0000388 -2,-2.0000005 -2.000001,2.0000005 m 2.000001,2 v -3 m 2,15.0000388 -2,2 -2.000001,-2 m 2.000001,-2 v 3 M 8.4999787,13.508928 h -5 m 13.0000413,0 h 5" style="opacity: 1; fill: none; fill-opacity: 1; stroke: inherit; stroke-width: 1.25; stroke-linecap: round; stroke-linejoin: round; stroke-miterlimit: 4; stroke-dasharray: none; stroke-dashoffset: 0; stroke-opacity: 1;" />');
+_arr.push('</symbol><symbol id="alpha-icon-transportPlane" viewBox="0 0 26 26">');
+_arr.push('<path d="M 21.44531,3.8206524 C 20.71875,3.8440924 19.5,4.5003394 18,6.0003394 l -2,2 h -3 l 1,-1 -1.5,-1.5 -2.5,2.5 H 3 v 1 l 9,2.9999996 c -1,1 -3,3.5 -3,3.5 l -4,0.5 -1,1 3.5,0.5 -1,1.5 0.5,0.5 1.5,-1 0.5,3.5 1,-1 0.5,-4 c 0,0 2.5,-2 3.5,-3 l 3,9 h 1 v -7 l 2.5,-2.499999 -1.5,-1.500001 -1,1 v -3 l 2,-1.9999996 c 2.5,-2.5 2.65625,-4.21875 1.44531,-4.179687 z" style="fill: inherit; fill-opacity: 1; stroke: none; stroke-width: 1px; stroke-linecap: butt; stroke-linejoin: miter; stroke-opacity: 1;" />');
 _arr.push('</symbol><symbol id="alpha-icon-trash" viewBox="0 0 26 26">');
 _arr.push('<path d="m 4.5,5.5 16,0" style="fill: none; stroke: inherit; stroke-width: 1px; stroke-linecap: round; stroke-linejoin: miter; stroke-opacity: 1;" />');
 _arr.push('<path d="m 9.5,5.5000001 0,-1.0000002 C 9.5,3.946 9.946,3.5 10.5,3.5 l 4,0 c 0.554,0 1,0.446 1,0.9999999 l 0,1.0000002" style="opacity: 1; fill: none; fill-opacity: 1; stroke: inherit; stroke-width: 1; stroke-linecap: round; stroke-linejoin: round; stroke-miterlimit: 4; stroke-dasharray: none; stroke-dashoffset: 0; stroke-opacity: 1;" />');
