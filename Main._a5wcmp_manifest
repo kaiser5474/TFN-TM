@@ -1,4 +1,4 @@
-A5SaveTimeStamp:20200825130931414
+A5SaveTimeStamp:20200924171624405
 css:GrBlue
 subComponent:MarinePictures.a5wcmp
 subComponent:DashBoard.a5wcmp
@@ -13,6 +13,7 @@ subComponent:RRHH_TrabajadorDesempenoUsuarios.a5wcmp
 subComponent:Registro_Eventos.a5wcmp
 subComponent:Registro_Entrada_Salida.a5wcmp
 subComponent:N_Cargas.a5wcmp
+subComponent:N_FichaTrabajador_PlanillaMensual.a5wcmp
 subComponent:N_Tareas.a5wcmp
 subComponent:N_SubTareas.a5wcmp
 subComponent:monitoreo.a5wcmp
@@ -80,6 +81,7 @@ subComponent:RRHH_TrabajadorDesempenoUsuarios
 subComponent:Registro_Eventos
 subComponent:Registro_Entrada_Salida
 subComponent:N_Cargas
+subComponent:N_FichaTrabajador_PlanillaMensual
 subComponent:N_Tareas
 subComponent:N_SubTareas
 subComponent:N_MonitoreoSalud_Global

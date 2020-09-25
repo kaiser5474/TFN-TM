@@ -1362,11 +1362,11 @@
 	}],
 	"rootfiles": [
 	{
-		"crc": 4294920117,
+		"crc": 4294945466,
 		"name": "\\baseline.zip"
 	},
 	{
-		"crc": 4294913868,
+		"crc": 4294936163,
 		"name": "\\config.xml"
 	},
 	{
@@ -1374,7 +1374,7 @@
 		"name": "\\icon.png"
 	},
 	{
-		"crc": 4294957495,
+		"crc": 4294927875,
 		"name": "\\index.html"
 	},
 	{
@@ -1390,32 +1390,32 @@
 		"name": "\\splash.png"
 	},
 	{
-		"crc": 4294953942,
+		"crc": 4294962994,
 		"name": "\\version.json"
 	},
 	{
-		"crc": 4294915510,
+		"crc": 4294941836,
 		"name": "\\_instantUpdateSettings.js"
 	},
 	{
-		"crc": 4294944033,
+		"crc": 4294928542,
 		"name": "\\_phoneGapSettings.js"
 	}],
 	"plugins": [
 	{
 		"name": "cordova-plugin-device",
 		"source": "npm",
-		"version": "1.1.7"
+		"version": "2.0.3"
 	},
 	{
 		"name": "cordova-plugin-network-information",
 		"source": "npm",
-		"version": "1.3.4"
+		"version": "2.0.2"
 	},
 	{
 		"name": "cordova-plugin-splashscreen",
 		"source": "npm",
-		"version": "5.0.2"
+		"version": "5.0.3"
 	},
 	{
 		"name": "cordova-plugin-whitelist",
@@ -1435,7 +1435,7 @@
 	{
 		"name": "cordova-plugin-dialogs",
 		"source": "npm",
-		"version": "1.3.4"
+		"version": "2.0.2"
 	},
 	{
 		"name": "cordova-plugin-zip",
@@ -1450,17 +1450,12 @@
 	{
 		"name": "cordova-plugin-camera",
 		"source": "npm",
-		"version": "2.4.1"
+		"version": "4.1.0"
 	},
 	{
 		"name": "cordova-plugin-media-capture",
 		"source": "npm",
 		"version": "1.4.3"
-	},
-	{
-		"name": "",
-		"source": "git",
-		"version": ""
 	},
 	{
 		"name": "cordova-plugin-file-opener2-base64",
@@ -1474,6 +1469,11 @@
 	},
 	{
 		"name": "",
+		"source": "git",
+		"version": ""
+	},
+	{
+		"name": "cordova-open",
 		"source": "git",
 		"version": ""
 	}]
