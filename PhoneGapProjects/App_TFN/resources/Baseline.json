@@ -1349,7 +1349,7 @@
 		"name": "\\Images\\Aereo.png"
 	},
 	{
-		"crc": 4294960507,
+		"crc": 4294937227,
 		"name": "\\javascript\\a5.js"
 	},
 	{
@@ -1362,11 +1362,11 @@
 	}],
 	"rootfiles": [
 	{
-		"crc": 4294928227,
+		"crc": 4294931969,
 		"name": "\\baseline.zip"
 	},
 	{
-		"crc": 4294936163,
+		"crc": 4294942618,
 		"name": "\\config.xml"
 	},
 	{
@@ -1374,7 +1374,7 @@
 		"name": "\\icon.png"
 	},
 	{
-		"crc": 4294941846,
+		"crc": 4294925668,
 		"name": "\\index.html"
 	},
 	{
@@ -1390,11 +1390,11 @@
 		"name": "\\splash.png"
 	},
 	{
-		"crc": 4294907309,
+		"crc": 4294948470,
 		"name": "\\version.json"
 	},
 	{
-		"crc": 4294927249,
+		"crc": 4294903528,
 		"name": "\\_instantUpdateSettings.js"
 	},
 	{
@@ -1474,6 +1474,11 @@
 	},
 	{
 		"name": "cordova-open",
+		"source": "git",
+		"version": ""
+	},
+	{
+		"name": "cordova-plugin-alpha-wkwebview-file-xhr",
 		"source": "git",
 		"version": ""
 	}]

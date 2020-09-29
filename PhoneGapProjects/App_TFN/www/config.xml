@@ -118,48 +118,32 @@
 	<splash platform="android" density="port-xhdpi" src="res/screen/android/screen-xhdpi-portrait.png" />
 	<splash platform="android" density="port-xxhdpi" src="res/screen/android/screen-xxhdpi-portrait.png" />
 	<splash platform="android" density="port-xxxhdpi" src="res/screen/android/screen-xxxhdpi-portrait.png" />
-    <splash platform="android" density="land-xxxhdpi" src="res/screen/android/screen-xxxhdpi-landscape.png"  />
+	<splash platform="android" density="land-xxxhdpi" src="res/screen/android/screen-xxxhdpi-landscape.png"  />
 	<splash platform="android" density="land-xxhdpi" src="res/screen/android/screen-xxhdpi-landscape.png"  />
 	<splash platform="android" density="land-xhdpi" src="res/screen/android/screen-xhdpi-landscape.png"  />
 	<splash platform="android" density="land-hdpi" src="res/screen/android/screen-hdpi-landscape.png"  />
 	<splash platform="android" density="land-mdpi" src="res/screen/android/screen-mdpi-landscape.png"  />
 	<splash platform="android" density="land-ldpi" src="res/screen/android/screen-ldpi-landscape.png"  />
 <!-- end Android legacy -->
+
 		
-<!-- Android 9 patch -->	
+<!-- Android 9 patch -->
 <!-- end Android 9 patch -->
    
 <!-- iOS -->
 
-<!-- iOS legacy --> 
-	<!-- iPhone and iPod Touch -->
-	<splash platform="ios" src="res/screen/ios/screen-iphone-portrait.png" width="320" height="480"  />
-	<splash platform="ios" src="res/screen/ios/screen-iphone-portrait-2x.png" width="640" height="960"  />
-	<!-- iPhone 5 and iPod Touch (5th generation) -->
-	<splash platform="ios" src="res/screen/ios/screen-iphone-portrait-568h-2x.png" width="640" height="1136" />
-	<!-- iPhone 6, 7, 8 -->
-	<splash platform="ios" src="res/screen/ios/screen-iphone-portrait-667h-2x.png" width="750" height="1334" />
-	<splash platform="ios" src="res/screen/ios/screen-iphone-portrait-736h-3x.png" width="1242" height="2208" />
-	<splash platform="ios" src="res/screen/ios/screen-iphone-landscape-736h-3x.png" width="2208" height="1242" />
-	<!-- iPhone X -->
-	<splash platform="ios" src="res/screen/ios/screen-iphonex-portrait.png" width="1125" height="2436"  />
-	<splash platform="ios" src="res/screen/ios/screen-iphonex-landscape.png" width="2436" height="1125"  />
-	<!-- iPad -->
-	<splash platform="ios" src="res/screen/ios/screen-ipad-portrait.png" width="768" height="1024"  />
-	<splash platform="ios" src="res/screen/ios/screen-ipad-landscape.png" width="1024" height="768"  />
-	<!-- Retina iPad -->
-	<splash platform="ios" src="res/screen/ios/screen-ipad-portrait-2x.png" width="1536" height="2048"  />
-	<splash platform="ios" src="res/screen/ios/screen-ipad-landscape-2x.png" width="2048" height="1536" />
-	<!-- Retina 10.5 iPad Pro -->
-	<splash platform="ios" src="res/screen/ios/screen-ipad-pro10-portrait-3x.png" width="1668" height="2224"  />
-	<splash platform="ios" src="res/screen/ios/screen-ipad-pro10-landscape-3x.png" width="2224" height="1668" />
-	<!-- Retina iPad Pro -->
-	<splash platform="ios" src="res/screen/ios/screen-ipad-pro-portrait-3x.png" width="2048" height="2732"  />
-	<splash platform="ios" src="res/screen/ios/screen-ipad-pro-landscape-3x.png" width="2732" height="2048" />
+<!-- iOS legacy -->
 <!-- end iOS Legacy -->
 		
 <!-- iOS storyboards -->
+	<splash platform="ios" src="res/screen/ios/Default@2x~universal~anyany.png" />
+	<splash platform="ios" src="res/screen/ios/Default@2x~universal~comany.png" />
+	<splash platform="ios" src="res/screen/ios/Default@2x~universal~comcom.png" />
+	<splash platform="ios" src="res/screen/ios/Default@3x~universal~anyany.png" />
+	<splash platform="ios" src="res/screen/ios/Default@3x~universal~comany.png" />
+	<splash platform="ios" src="res/screen/ios/Default@3x~universal~anycom.png" />
 <!-- end iOS storyboards -->
+
 	
 <!-- Windows 8 -->
 	<splash platform="winphone" src="res/screen/windows-phone/screen-portrait.jpg" />
@@ -209,7 +193,31 @@
 
 	<plugin name="cordova-plugin-file-opener2-base64" source="npm" />
 	<plugin spec="https://github.com/zho/phonegap-imeiplugin.git" source="git" />
-	<platform name="winphone" />
 	<plugin spec="https://github.com/ivanchaz/cordova-plugin-uid" source="git" />
 	<plugin name="cordova-open" spec="https://github.com/remoorejr/cordova-open.git" source="git" />
+	<!-- cordova-plugin-wkwebview-engine support -->
+	<platform name = "ios">
+	
+	<plugin name="cordova-plugin-alpha-wkwebview-file-xhr" spec="https://github.com/remoorejr/cordova-plugin-alpha-wkwebview-file-xhr.git" source="git" />
+	
+	<!-- this preference requires cordova-ios release 5.1.1, compliled code will not reference UIWebView -->
+	<!-- Note: PhoneGap Build CLI-9.0.0 uses cordova-ios release 5.0.1, this preference is ignored by cordova-ios release 5.0.1 -->
+	<preference name="WKWebViewOnly" value="true" />
+	
+	<feature name="CDVWKWebViewEngine">
+  		<param name="ios-package" value="CDVWKWebViewEngine" />
+	</feature>
+	
+	<preference name="CordovaWebViewEngine" value="CDVWKWebViewEngine" />
+	
+	<!--wkwebview-file-xhr options -->
+	<preference name="InterceptRemoteRequests" value="all" />
+	<preference name="NoS3Intercepts" value="true" />
+	
+	<!-- for Instant Update Support -->
+	<allow-navigation href="*" />
+	
+	</platform>
+	<!-- end cordova-plugin-wkwebview-engine support -->
+
 </widget>

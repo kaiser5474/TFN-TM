@@ -9923,7 +9923,6 @@ synchronizeGrid: function(go) {
 		$(windowDiv).innerHTML = windowHTML;
 		currWindow.ok = onOK;
 		currWindow.cancel = onCancel;
-		currWindow.setSize(width,'');
 		if(typeof loc == 'undefined') loc = 'top + 10px';
 		if(loc == 'center') {
 			currWindow.show('center');
@@ -10102,20 +10101,11 @@ A5.component.runGenericComponent = function(go) {
 
 
 
-
-
 	var __componentName = '';
 	var componentObject = '';
 
 	if(go.type == 'dialog2') {
 
-
-		///////////////////
-		if(typeof go.panelCardId == 'undefined') go.panelCardId = '';
-		arr.push(A5.ajax.buildURLParam('__addDynamicPanelServerSide','false'));
-		arr.push(A5.ajax.buildURLParam('__dynamicPanelId',go.panelCardId));
-
-		//////
 
 
 
@@ -12102,11 +12092,6 @@ A5.DialogComponentHelper.prototype = {
         }
         this.tabTimersStopAll();
 
-        clearTimeout(this._sessionTimeoutSetInterval);
-		clearTimeout(this._wrTo);
-		clearInterval(this._expirationMessageSetInterval);
-
-
         for(var i = 0; i < this._objectsToDestroy.length; i++) {
         	if (typeof window[ this._objectsToDestroy[i]] == 'object') {
         		if(typeof window[ this._objectsToDestroy[i]].destroy == 'function') {
@@ -12682,7 +12667,7 @@ A5.DialogComponentHelper.prototype = {
 		if(typeof columns != 'undefined') flagColumns = true;
 
 		var flagComplexColumns = false;
-		if(typeof columns != 'undefined' && columns.constructor == Array) {
+		if(columns.constructor == Array) {
 			if(columns[0].constructor == Object) flagComplexColumns = true;
 		}
 		if(flagComplexColumns) {
@@ -13910,7 +13895,7 @@ _listRowSelect: function(listId,lObj) {
 	},
 
 	_storeCurrentValue: function(objX) {
-		if(this.currentValues) this.currentValues[0][objX.controlName] = objX.currVal;
+		this.currentValues[0][objX.controlName] = objX.currVal;
 	},
 
 	persistVariablesToLocalStorage: function(objX) {
@@ -20394,19 +20379,6 @@ _listRowSelect: function(listId,lObj) {
 		}
 		if(otherData!='') data=data + '&' + otherData;
 		data = data + '&' + this.getStateInfo();
-
-
-
-		if(xbasicFunction == 'system:submitDialog') {
-			var jwt = '';
-			if(typeof this.__jwt != 'undefined') jwt = this.__jwt;
-			var _jwtdata
-			_jwtdata = A5.ajax.buildURLParam('__jwt',jwt);
-			data = data + '&' + _jwtdata;
-
-		}
-
-
 
 		data = data + '&__componentGUID=' + this.componentGUID + '&__instanceGUID=' + this._getInstanceId(false);
 
