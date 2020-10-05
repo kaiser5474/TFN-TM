@@ -162,22 +162,6 @@
 	<plugin name="cordova-plugin-zip" source="npm" version="3.1.0" />
 	<plugin name="cordova-plugin-x-toast" source="npm" version="2.6.0" />
 	<feature name="https://api.phonegap.com/1.0/camera" />
-	<plugin name="cordova-plugin-camera" source="npm" version="4.1.0" />
-	<!-- cordova-plugin-camera support -->
-		<edit-config target="NSCameraUsageDescription" file="*-Info.plist" mode="merge">
-  		  	<string>This app requires camera access to take pictures</string>
-		</edit-config>
-		<edit-config target="NSPhotoLibraryUsageDescription" file="*-Info.plist" mode="merge">
- 		   <string>This app requires photo library access to read photo library pictures</string>
-		</edit-config>
-		<edit-config target="NSLocationWhenInUseUsageDescription" file="*-Info.plist" mode="merge">
-		    <string>This app requires location access to geo-tag photos</string>
-		</edit-config>
-		<edit-config target="NSPhotoLibraryAddUsageDescription" file="*-Info.plist" mode="merge">
-		    <string>This app requires photo library write access to save pictures in the photo library</string>
-		</edit-config>
-	<!-- end cordova-plugin-camera support -->
-
 	<plugin name="cordova-plugin-media-capture" source="npm" version="1.4.3" />
 	<!-- cordova-plugin-media-capture support -->
 		<edit-config target="NSMicrophoneUsageDescription" file="*-Info.plist" mode="merge">
@@ -220,4 +204,5 @@
 	</platform>
 	<!-- end cordova-plugin-wkwebview-engine support -->
 
+	<plugin name="cordova-plugin-camera-with-exif" source="npm" />
 </widget>

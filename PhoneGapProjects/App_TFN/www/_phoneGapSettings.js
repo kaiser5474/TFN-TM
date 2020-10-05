@@ -55,12 +55,12 @@ function _phoneGapSettings() {
         "cordova-plugin-dialogs": "npm",
         "cordova-plugin-zip": "npm",
         "cordova-plugin-x-toast": "npm",
-        "cordova-plugin-camera": "npm",
         "cordova-plugin-media-capture": "npm",
         "cordova-plugin-file-opener2-base64": "npm",
         "https://github.com/zho/phonegap-imeiplugin.git": "git",
         "https://github.com/ivanchaz/cordova-plugin-uid": "git",
-        "cordova-openhttps://github.com/remoorejr/cordova-open.git": "git"
+        "cordova-openhttps://github.com/remoorejr/cordova-open.git": "git",
+        "cordova-plugin-camera-with-exif": "npm"
     }
 };
 }

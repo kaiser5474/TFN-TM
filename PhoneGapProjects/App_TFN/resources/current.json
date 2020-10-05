@@ -33,6 +33,10 @@
 		"name": "\\a5images\\disabledapplicationadobepdf.png"
 	},
 	{
+		"crc": 4294958548,
+		"name": "\\a5images\\disabledcontrolactionselectText.png"
+	},
+	{
 		"crc": 4294912748,
 		"name": "\\a5images\\disabledgenericrefreshcolor.png"
 	},
@@ -1349,7 +1353,7 @@
 		"name": "\\Images\\Aereo.png"
 	},
 	{
-		"crc": 4294960507,
+		"crc": 4294937227,
 		"name": "\\javascript\\a5.js"
 	},
 	{
@@ -1362,11 +1366,11 @@
 	}],
 	"rootfiles": [
 	{
-		"crc": 4294940944,
+		"crc": 4294957788,
 		"name": "\\baseline.zip"
 	},
 	{
-		"crc": 4294936163,
+		"crc": 4294942618,
 		"name": "\\config.xml"
 	},
 	{
@@ -1374,7 +1378,7 @@
 		"name": "\\icon.png"
 	},
 	{
-		"crc": 4294964714,
+		"crc": 4294954509,
 		"name": "\\index.html"
 	},
 	{
@@ -1390,11 +1394,11 @@
 		"name": "\\splash.png"
 	},
 	{
-		"crc": 4294916946,
+		"crc": 4294942629,
 		"name": "\\version.json"
 	},
 	{
-		"crc": 4294950663,
+		"crc": 4294932245,
 		"name": "\\_instantUpdateSettings.js"
 	},
 	{
@@ -1474,6 +1478,11 @@
 	},
 	{
 		"name": "cordova-open",
+		"source": "git",
+		"version": ""
+	},
+	{
+		"name": "cordova-plugin-alpha-wkwebview-file-xhr",
 		"source": "git",
 		"version": ""
 	}]

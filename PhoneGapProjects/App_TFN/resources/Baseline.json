@@ -33,6 +33,10 @@
 		"name": "\\a5images\\disabledapplicationadobepdf.png"
 	},
 	{
+		"crc": 4294958548,
+		"name": "\\a5images\\disabledcontrolactionselectText.png"
+	},
+	{
 		"crc": 4294912748,
 		"name": "\\a5images\\disabledgenericrefreshcolor.png"
 	},
@@ -1362,11 +1366,11 @@
 	}],
 	"rootfiles": [
 	{
-		"crc": 4294931969,
+		"crc": 4294945156,
 		"name": "\\baseline.zip"
 	},
 	{
-		"crc": 4294942618,
+		"crc": 4294901927,
 		"name": "\\config.xml"
 	},
 	{
@@ -1374,7 +1378,7 @@
 		"name": "\\icon.png"
 	},
 	{
-		"crc": 4294925668,
+		"crc": 4294947128,
 		"name": "\\index.html"
 	},
 	{
@@ -1390,15 +1394,15 @@
 		"name": "\\splash.png"
 	},
 	{
-		"crc": 4294948470,
+		"crc": 4294936556,
 		"name": "\\version.json"
 	},
 	{
-		"crc": 4294903528,
+		"crc": 4294930186,
 		"name": "\\_instantUpdateSettings.js"
 	},
 	{
-		"crc": 4294928542,
+		"crc": 4294924938,
 		"name": "\\_phoneGapSettings.js"
 	}],
 	"plugins": [
@@ -1448,11 +1452,6 @@
 		"version": "2.6.0"
 	},
 	{
-		"name": "cordova-plugin-camera",
-		"source": "npm",
-		"version": "4.1.0"
-	},
-	{
 		"name": "cordova-plugin-media-capture",
 		"source": "npm",
 		"version": "1.4.3"
@@ -1480,6 +1479,11 @@
 	{
 		"name": "cordova-plugin-alpha-wkwebview-file-xhr",
 		"source": "git",
+		"version": ""
+	},
+	{
+		"name": "cordova-plugin-camera-with-exif",
+		"source": "npm",
 		"version": ""
 	}]
 }
