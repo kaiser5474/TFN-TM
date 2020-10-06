@@ -1366,11 +1366,11 @@
 	}],
 	"rootfiles": [
 	{
-		"crc": 4294957788,
+		"crc": 4294931111,
 		"name": "\\baseline.zip"
 	},
 	{
-		"crc": 4294942618,
+		"crc": 4294901927,
 		"name": "\\config.xml"
 	},
 	{
@@ -1378,7 +1378,7 @@
 		"name": "\\icon.png"
 	},
 	{
-		"crc": 4294954509,
+		"crc": 4294932889,
 		"name": "\\index.html"
 	},
 	{
@@ -1394,15 +1394,15 @@
 		"name": "\\splash.png"
 	},
 	{
-		"crc": 4294942629,
+		"crc": 4294931532,
 		"name": "\\version.json"
 	},
 	{
-		"crc": 4294932245,
+		"crc": 4294922698,
 		"name": "\\_instantUpdateSettings.js"
 	},
 	{
-		"crc": 4294928542,
+		"crc": 4294924938,
 		"name": "\\_phoneGapSettings.js"
 	}],
 	"plugins": [
@@ -1452,11 +1452,6 @@
 		"version": "2.6.0"
 	},
 	{
-		"name": "cordova-plugin-camera",
-		"source": "npm",
-		"version": "4.1.0"
-	},
-	{
 		"name": "cordova-plugin-media-capture",
 		"source": "npm",
 		"version": "1.4.3"
@@ -1484,6 +1479,11 @@
 	{
 		"name": "cordova-plugin-alpha-wkwebview-file-xhr",
 		"source": "git",
+		"version": ""
+	},
+	{
+		"name": "cordova-plugin-camera-with-exif",
+		"source": "npm",
 		"version": ""
 	}]
 }
