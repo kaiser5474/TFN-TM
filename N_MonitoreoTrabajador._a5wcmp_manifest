@@ -1,0 +1,15 @@
+A5SaveTimeStamp:20201007145340568
+css:GrBlue
+subComponent:N_Monitoreo_Sintomas_Trabajador.a5wcmp
+subComponent:N_Monitoreo_Sintomas_Familiar.a5wcmp
+subComponent:N_Monitoreo_Trabajador_Encomienda.a5wcmp
+subComponent:N_Monitoreo_Prueba.a5wcmp
+subComponent:N_Monitoreo_PruebaPCR.a5wcmp
+subComponent:N_Monitoreo_Certificado.a5wcmp
+subComponent:N_Monitoreo_Trabajador_Medicacion.a5wcmp
+subComponent:N_Monitoreo_Trabajador_EPP.a5wcmp
+subComponent:N_Monitoreo_Trabajador_Cobro.a5wcmp
+copyfile:{D:\TFN\TFN.WebProjects\TFN.WebProject\N_Monitoreo_Prueba_PCR.a5rpt}
+copyfile:{D:\TFN\TFN.WebProjects\TFN.WebProject\N_Monitoreo_Prueba_PDR.a5rpt}
+copyfile:{D:\TFN\TFN.WebProjects\TFN.WebProject\N_Monitoreo_Certificado.a5rpt}
+copyfile:{D:\TFN\TFN.WebProjects\TFN.WebProject\Monitoreo_Trabajador_RenunciaCuarentena.a5rpt}

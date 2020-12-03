@@ -2586,4 +2586,12 @@
 <action="allow">
 <groups="">
 >
+<[648]<page="Resumen_Planilla_Mensual_APP.a5rpt">
+<action="allow">
+<groups="">
+>
+<[649]<page="Rol_de_Pagos_APP.a5rpt">
+<action="allow">
+<groups="">
+>
 >
