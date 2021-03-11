@@ -1,4 +1,4 @@
-A5SaveTimeStamp:20210311030100329
+A5SaveTimeStamp:20210311172321641
 css:<Project>
 subComponent:RRHH_Detalles
 subComponent:RRHH_Observaciones
@@ -15,6 +15,7 @@ subComponent:Registro_Entrada_Salida
 subComponent:EditarDatosTrabajador
 subComponent:N_FichaTrabajador_PlanillaMensual
 subComponent:N_FichaTrabajadores_Experiencia
+subComponent:N_FichaTrabajadores_Estudios
 copyfile:{C:\4-Trabajos\TFN\TFN\TFN.WebProjects\TFN-2.WebProject\Ficha_del_Trabajador.a5rpt}
 copyfile:{C:\4-Trabajos\TFN\TFN\TFN.WebProjects\TFN-2.WebProject\Visita_Seguridad.a5rpt}
 copyfile:{C:\4-Trabajos\TFN\TFN\TFN.WebProjects\TFN-2.WebProject\Lista_Trabajador.a5rpt}

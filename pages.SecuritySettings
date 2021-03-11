@@ -3254,5 +3254,10 @@
 		"page": "N_FichaTrabajadores_Experiencia.a5wcmp",
 		"action": "allow",
 		"groups": ""
+	},
+	{
+		"page": "N_FichaTrabajadores_Estudios.a5wcmp",
+		"action": "allow",
+		"groups": ""
 	}]
 }
