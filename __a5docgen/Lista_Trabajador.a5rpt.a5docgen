@@ -1,0 +1,27 @@
+{
+    "data": {
+        "legacy": "../Lista_Trabajador.a5rpt"
+    },
+    "layout": {
+        "info": {
+            "PageWidth": 15840,
+            "PageHeight": 12240,
+            "MarginLeft": 720,
+            "MarginTop": 720,
+            "MarginRight": 720,
+            "MarginBottom": 720
+        },
+        "block": {
+            "Content": [
+                {
+                    "Field": "image",
+                    "ContentType": "ExternalImage",
+                    "image": {
+                        "width": 14400
+                    }
+                }
+            ],
+            "startNew": "Page"
+        }
+    }
+}

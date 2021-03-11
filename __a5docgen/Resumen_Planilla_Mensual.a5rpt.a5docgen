@@ -1,0 +1,27 @@
+{
+    "data": {
+        "legacy": "../Resumen_Planilla_Mensual.a5rpt"
+    },
+    "layout": {
+        "info": {
+            "PageWidth": 19451,
+            "PageHeight": 10080,
+            "MarginLeft": 720,
+            "MarginTop": 720,
+            "MarginRight": 720,
+            "MarginBottom": 720
+        },
+        "block": {
+            "Content": [
+                {
+                    "Field": "image",
+                    "ContentType": "ExternalImage",
+                    "image": {
+                        "width": 18011
+                    }
+                }
+            ],
+            "startNew": "Page"
+        }
+    }
+}

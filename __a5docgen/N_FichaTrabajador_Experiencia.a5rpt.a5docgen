@@ -1,0 +1,27 @@
+{
+    "data": {
+        "legacy": "../N_FichaTrabajador_Experiencia.a5rpt"
+    },
+    "layout": {
+        "info": {
+            "PageWidth": 12240,
+            "PageHeight": 15840,
+            "MarginLeft": 720,
+            "MarginTop": 720,
+            "MarginRight": 720,
+            "MarginBottom": 720
+        },
+        "block": {
+            "Content": [
+                {
+                    "Field": "image",
+                    "ContentType": "ExternalImage",
+                    "image": {
+                        "width": 10800
+                    }
+                }
+            ],
+            "startNew": "Page"
+        }
+    }
+}
